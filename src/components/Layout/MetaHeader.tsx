@@ -3,7 +3,7 @@ import { URL_SITE } from "@/constant";
 
 export const MetaHeader = () => (
   <Head>
-    <title>Suite d&apos;outils numériques</title>
+    <title>La Suite numérique</title>
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="Travailler avec La Suite numérique" />
     <meta
