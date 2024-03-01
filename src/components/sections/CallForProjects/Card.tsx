@@ -8,7 +8,10 @@ export interface CardProps {
 }
 
 export const Card = ({ title, body, index }: CardProps) => (
-  <div className="bg-dinum-blue-1 text-dinum-white-0 text-left px-6 py-14 sm:p-14 relative">
+  <div
+    tabIndex={0}
+    className="bg-dinum-blue-1 text-dinum-white-0 text-left px-6 py-14 sm:p-14 relative focus:m-2"
+  >
     <h3 className="text-3xl font-extrabold mb-7">
       Qu’est ce qu’un <Br /> {title}&nbsp;?
     </h3>
