@@ -4,7 +4,7 @@ import { Layout } from "@/components/Layout";
 
 export default function Landing() {
   return (
-    <Layout>
+    <Layout title="Le Fonds Communs Numériques">
       <div className="hero relative overflow-hidden bg-dinum-white-0 ">
         <div className="flex flex-col justify-between items-center gap-11 py-10 md:py-20 max-w-[40em] mx-auto">
           <Image

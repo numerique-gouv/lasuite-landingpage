@@ -8,7 +8,7 @@ import { Section as ProConnect } from "@/components/sections/ProConnect";
 
 export default function Landing() {
   return (
-    <Layout className="text-center">
+    <Layout className="text-center" title="La Suite numérique">
       <Hero />
       <ProConnect />
       <DigitalCommons />
