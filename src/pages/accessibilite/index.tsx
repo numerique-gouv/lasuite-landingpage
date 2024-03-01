@@ -46,7 +46,7 @@ export default function Accessibilite() {
             <li>
               E-mail :{" "}
               <a
-                href={`mailto: ${CONTACT_EMAIL}`}
+                href={`mailto:${CONTACT_EMAIL}`}
                 aria-label={`écrire à ${CONTACT_EMAIL}`}
               >
                 {CONTACT_EMAIL}
