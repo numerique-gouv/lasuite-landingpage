@@ -21,9 +21,9 @@ export const Card = ({ title, quote, img, entity }: CardProps) => (
     </h3>
     <div className="flex flex-row items-center mt-7 gap-4 pb-5">
       <Image src="/testimony/account.svg" height={60} width={60} alt="" />
-      <p className="text-sm font-bold text-dinum-grey-2">{title}</p>
+      <p className="font-bold text-dinum-grey-2">{title}</p>
     </div>
-    <blockquote className="text-sm text-dinum-grey-1 leading-6 text-pretty">
+    <blockquote className="text-dinum-grey-1 leading-6 text-pretty">
       {quote}
     </blockquote>
   </div>
