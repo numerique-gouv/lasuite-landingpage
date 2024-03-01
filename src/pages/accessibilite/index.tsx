@@ -7,7 +7,7 @@ import { Layout, ContentSection } from "@/components/Layout";
 
 export default function Accessibilite() {
   return (
-    <Layout>
+    <Layout title="Accessibilité">
       <Header>Accessibilité</Header>
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <Text>

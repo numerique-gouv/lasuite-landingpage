@@ -6,7 +6,7 @@ import { ADDRESS_DINUM, CONTACT_EMAIL } from "@/constant";
 
 export default function Apropos() {
   return (
-    <Layout>
+    <Layout title="À propos">
       <Header>À propos</Header>
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <div>
