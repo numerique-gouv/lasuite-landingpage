@@ -36,7 +36,7 @@ export const Footer = () => (
           <p>
             <ButtonExternalLink
               href={NEWSLETTER_FORM}
-              title="le formulaire d'inscription à la newsletter"
+              title="S'inscrire à la newsletter"
             >
               S&apos;inscrire
             </ButtonExternalLink>
@@ -93,7 +93,6 @@ export const Footer = () => (
                 >
                   <Link
                     {...link}
-                    aria-label={`${link.children}`}
                     className={twMerge("border-dinum-grey-1", hover)}
                   >
                     {link.children}
@@ -111,7 +110,6 @@ export const Footer = () => (
                   "relative underline underline-offset-4 external-link-grey",
                   hover,
                 )}
-                title="la Licence etalab-2.0"
               >
                 licence etalab-2.0
               </ExternalLink>

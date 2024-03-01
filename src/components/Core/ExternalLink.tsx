@@ -5,6 +5,12 @@ import { twMerge } from "tailwind-merge";
 
 export interface LinkProps extends CommonProps {
   href: string;
+  /**
+   * The text vocalized by screen readers. If none is passed, '{content} - nouvelle fenêtre}' is set,
+   * to let screen reader users know it opens a new window.
+   *
+   * Use this only to add context to the link if the default text is not enough to understand the link on its own.
+   */
   title?: string;
 }
 
@@ -22,7 +28,7 @@ export const ExternalLink: React.FC<LinkProps> = ({
 }) => (
   <a
     target="_blank"
-    aria-label={`Visiter ${title || subProps.href} - nouvelle fenêtre`}
+    aria-label={`${title || children} - nouvelle fenêtre`}
     {...subProps}
   >
     {children}

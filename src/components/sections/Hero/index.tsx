@@ -29,7 +29,7 @@ export const Section = () => (
       <Image
         src={heroImage}
         width={1000}
-        alt="La Suite numérique est une suite d'outil disponible sur téléphone, tablette et ordinateur"
+        alt="La Suite numérique est une suite d'outils disponible sur téléphones, tablettes et ordinateurs"
         className="mr-[-12%] hidden md:flex z-10"
         priority
         placeholder="blur"
@@ -37,7 +37,7 @@ export const Section = () => (
       <Image
         src={heroImageMobile}
         width={800}
-        alt="La Suite numérique est une suite d'outil disponible sur téléphone, tablette et ordinateur"
+        alt="La Suite numérique est une suite d'outils disponible sur téléphones, tablettes et ordinateurs"
         className="md:hidden z-10 pb-8"
         priority
         placeholder="blur"
