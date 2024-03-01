@@ -67,9 +67,9 @@ export default function Landing() {
         </div>
       </div>
       <div className="w-full justify-center flex">
-        <h1 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 py-[4rem] max-w-[31em] text-balance">
+        <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 py-[4rem] max-w-[31em] text-balance">
           Un programme en 2 temps sur 2024
-        </h1>
+        </h2>
       </div>
       <div className="w-full justify-center flex">
         <Image src="/desktop-communs.svg" width={800} height={640} alt="" />
