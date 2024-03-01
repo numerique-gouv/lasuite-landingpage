@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { ExternalLink, LinkProps } from "@/components/Core";
 
-export interface CardProps extends Omit<LinkProps, "children"> {
+export interface CardProps {
+  title: string;
+  href: string;
   img: string;
 }
 
@@ -13,7 +15,7 @@ export const Card: React.FC<CardProps> = (props) => (
       <ExternalLink
         className="text-sm underline text-dinum-blue-1 external-link-blue"
         href={props.href}
-        title={`${props.title} - En savoir plus`}
+        aria-label={`${props.title} - En savoir plus`}
       >
         En savoir plus
       </ExternalLink>
