@@ -5,7 +5,7 @@ import { CommonProps } from "@/types";
 
 interface ButtonProps extends CommonProps {
   href?: string;
-  ariaLabel?: string;
+  "aria-label"?: string;
 }
 
 export const ButtonStyle =
@@ -15,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   href,
   className,
-  ariaLabel,
+  "aria-label": ariaLabel,
 }) => (
   <>
     {href ? (

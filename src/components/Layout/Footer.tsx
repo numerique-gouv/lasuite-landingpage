@@ -40,7 +40,7 @@ export const Footer = () => (
           <p>
             <ButtonExternalLink
               href={NEWSLETTER_FORM}
-              title="S'inscrire à la newsletter"
+              aria-label="S'inscrire à la newsletter"
             >
               S&apos;inscrire
             </ButtonExternalLink>
