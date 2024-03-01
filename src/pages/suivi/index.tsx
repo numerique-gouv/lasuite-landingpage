@@ -3,7 +3,7 @@ import { SubTitle, Header, Text } from "@/components/LegalTerms";
 
 export default function Suivi() {
   return (
-    <Layout>
+    <Layout title="Suivi d'audience et vie privée">
       <Header>Suivi d&apos;audience et vie privée</Header>
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <div>
