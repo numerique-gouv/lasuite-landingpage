@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { NEWSLETTER_FORM } from "@/constant";
-import {ExternalLink, ButtonExternalLink, LinkProps, Br} from "@/components/Core";
+import {
+  ExternalLink,
+  ButtonExternalLink,
+  LinkProps,
+  Br,
+} from "@/components/Core";
 
 const hover =
   "hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer";
-
 
 const externalLinks: LinkProps[] = [
   { href: "https://legifrance.gouv.fr/fr/", children: "legifrance.gouv.fr" },
