@@ -71,7 +71,6 @@ export default function Accessibilite() {
               <ExternalLink
                 href="https://formulaire.defenseurdesdroits.fr/formulaire_saisine/"
                 className="underline underline-offset-4"
-                title="Défenseur des droits"
               >
                 Défenseur des droits
               </ExternalLink>
@@ -81,7 +80,6 @@ export default function Accessibilite() {
               <ExternalLink
                 href="https://www.defenseurdesdroits.fr/carte-des-delegues"
                 className="underline underline-offset-4"
-                title="Défenseur des droits dans votre région"
               >
                 Défenseur des droits dans votre région
               </ExternalLink>

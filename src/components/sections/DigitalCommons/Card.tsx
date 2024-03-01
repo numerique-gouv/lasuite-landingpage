@@ -12,7 +12,8 @@ export const Card: React.FC<CardProps> = (props) => (
     <div className="flex gap-1 justify-center items-center">
       <ExternalLink
         className="text-sm underline text-dinum-blue-1 external-link-blue"
-        {...props}
+        href={props.href}
+        title={`${props.title} - En savoir plus`}
       >
         En savoir plus
       </ExternalLink>

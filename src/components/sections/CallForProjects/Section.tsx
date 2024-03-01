@@ -35,7 +35,12 @@ export const Section = () => (
         du fonds communs numériques pour la suite collaborative.
       </p>
       <p>
-        <Button href="/communs">En savoir plus</Button>
+        <Button
+          ariaLabel="En savoir plus sur comment contribuer à La Suite numérique"
+          href="/communs"
+        >
+          En savoir plus
+        </Button>
       </p>
     </ContentSection>
     <ContentSection
