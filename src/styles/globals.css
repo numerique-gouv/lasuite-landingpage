@@ -139,4 +139,8 @@ h6 {
 
 .swiper-pagination-bullet-active {
   background: #000091 !important;
+  outline-offset: 3px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #000091;
 }
