@@ -33,12 +33,14 @@ export const Footer = () => (
             Restez informés des prochaines avancées de La Suite en recevant la
             newsletter !
           </p>
-          <ButtonExternalLink
-            href={NEWSLETTER_FORM}
-            title="le formulaire d'inscription à la newsletter"
-          >
-            S&apos;inscrire
-          </ButtonExternalLink>
+          <p>
+            <ButtonExternalLink
+              href={NEWSLETTER_FORM}
+              title="le formulaire d'inscription à la newsletter"
+            >
+              S&apos;inscrire
+            </ButtonExternalLink>
+          </p>
         </div>
       </div>
     </div>

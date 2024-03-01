@@ -34,7 +34,9 @@ export const Section = () => (
         <Strong>accompagnement</Strong> pour travailler avec nous, dans le cadre
         du fonds communs numériques pour la suite collaborative.
       </p>
-      <Button href="/communs">En savoir plus</Button>
+      <p>
+        <Button href="/communs">En savoir plus</Button>
+      </p>
     </ContentSection>
     <ContentSection
       className="bg-dinum-white-0 pt-0 sm:pt-[50px]"
