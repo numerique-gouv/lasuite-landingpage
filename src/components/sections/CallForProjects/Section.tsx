@@ -36,7 +36,7 @@ export const Section = () => (
       </p>
       <p>
         <Button
-          ariaLabel="En savoir plus sur comment contribuer à La Suite numérique"
+          aria-label="En savoir plus sur comment contribuer à La Suite numérique"
           href="/communs"
         >
           En savoir plus
