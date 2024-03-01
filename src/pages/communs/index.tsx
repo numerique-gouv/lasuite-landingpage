@@ -76,7 +76,11 @@ export default function Landing() {
       </div>
       <div className="flex flex-col">
         <div className="text-left px-4 text-lg text-dinum-grey-1 max-w-[40em] mx-auto">
-          <p className="mb-[1.75rem] mt-[1.75rem]">
+          <h3 className="mt-[1.75rem] text-xl text-black font-bold ">
+            Mars 2024
+          </h3>
+
+          <p className="mb-[1.75rem] mt-[0.875rem]">
             <Strong>Objectif de ce premier temps :</Strong> tester et concevoir
             la meilleure façon pour l&apos;État français de travailler avec les
             équipes et les projets de Communs Numériques.
@@ -90,7 +94,8 @@ export default function Landing() {
           </p>
         </div>
         <div className="text-left px-4 text-lg text-dinum-grey-1 max-w-[40em] mx-auto">
-          <p className="mb-[1.75rem] mt-[1.75rem]">
+          <h3 className="text-xl text-black font-bold ">Septembre 2024</h3>
+          <p className="mb-[1.75rem] mt-[0.875rem]">
             <Strong>Objectif de ce deuxième temps :</Strong> étendre la
             collaboration à d&apos;autres projets de Communs Numériques.
           </p>
