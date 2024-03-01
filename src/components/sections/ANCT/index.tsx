@@ -47,9 +47,25 @@ export const Section = () => (
       </p>
     </div>
     <div className="flex flex-col gap-8 items-center md:flex-row mb-10">
-      <Image src="/anct/anct.svg" height={60} width={136} alt="" />
-      <Image src="/anct/anssi.svg" height={60} width={60} alt="" />
-      <Image src="/anct/france-2030.svg" height={60} width={60} alt="" />
+      <h3 className="sr-only">Acteurs de la Suite Territoriale</h3>
+      <Image
+        src="/anct/anct.svg"
+        height={60}
+        width={136}
+        alt="Agence nationale de la cohésion des territoires"
+      />
+      <Image
+        src="/anct/anssi.svg"
+        height={60}
+        width={60}
+        alt="Agence nationale de la sécurité des systèmes d'information"
+      />
+      <Image
+        src="/anct/france-2030.svg"
+        height={60}
+        width={60}
+        alt="France 2030"
+      />
     </div>
   </ContentSection>
 );
