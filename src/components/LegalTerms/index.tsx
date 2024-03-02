@@ -5,7 +5,7 @@ import { CommonProps } from "@/types";
 export const SubTitle: React.FC<CommonProps> = ({ children, className }) => (
   <h2
     className={twMerge(
-      "text-[2rem] leading-9 font-bold mb-4 text-pretty",
+      "text-[1.5rem] md:text-[1.75rem] leading-9 font-bold mb-4 text-pretty",
       className,
     )}
   >
