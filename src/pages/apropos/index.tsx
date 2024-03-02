@@ -34,7 +34,7 @@ export default function Apropos() {
             à{" "}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="underline decoration-2 underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer"
+              className="underline decoration-1 hover:decoration-2 underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer"
               aria-label={`écrire à ${CONTACT_EMAIL}`}
             >
               {CONTACT_EMAIL}

@@ -48,21 +48,21 @@ export default function Suivi() {
             Nous utilisons pour cela{" "}
             <ExternalLink
               href="https://matomo.org/"
-              className="underline underline-offset-4"
+              className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
             >
               Matomo
             </ExternalLink>
             , un outil{" "}
             <ExternalLink
               href="https://matomo.org/free-software/"
-              className="underline underline-offset-4"
+              className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
             >
               libre
             </ExternalLink>
             , paramétré pour être en conformité avec la{" "}
             <ExternalLink
               href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience"
-              className="underline underline-offset-4"
+              className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
             >
               recommandation « Cookies »
             </ExternalLink>{" "}
@@ -81,7 +81,7 @@ export default function Suivi() {
             dont {URL_SITE}, sont disponibles en accès libre sur{" "}
             <ExternalLink
               href="https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=21&period=range&date=previous30#?period=range&date=previous30&module=VisitsSummary&action=index&idSite=21&category=Dashboard_Dashboard&subcategory=1"
-              className="underline underline-offset-4"
+              className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
             >
               stats.data.gouv.fr
             </ExternalLink>{" "}
