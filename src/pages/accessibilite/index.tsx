@@ -70,7 +70,7 @@ export default function Accessibilite() {
               Écrire un message au{" "}
               <ExternalLink
                 href="https://formulaire.defenseurdesdroits.fr/formulaire_saisine/"
-                className="underline underline-offset-4"
+                className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
               >
                 Défenseur des droits
               </ExternalLink>
@@ -79,7 +79,7 @@ export default function Accessibilite() {
               Contacter le délégué du{" "}
               <ExternalLink
                 href="https://www.defenseurdesdroits.fr/carte-des-delegues"
-                className="underline underline-offset-4"
+                className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
               >
                 Défenseur des droits dans votre région
               </ExternalLink>
