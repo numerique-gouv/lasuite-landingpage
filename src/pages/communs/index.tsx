@@ -37,7 +37,7 @@ export default function Landing() {
               forme de commun numérique&nbsp;? <Br />{" "}
               <b className="text-dinum-grey-2">
                 Obtenez un financement et un accompagnement pour travailler avec
-                nous, dans le cadre du fonds communs numériques pour La Suite
+                nous, dans le cadre du Fonds Communs Numériques pour La Suite
                 numérique.
               </b>
             </p>
@@ -83,7 +83,7 @@ export default function Landing() {
           <p className="mb-[1.75rem] mt-[0.875rem]">
             <Strong>Objectif de ce premier temps :</Strong> tester et concevoir
             la meilleure façon pour l&apos;État français de travailler avec les
-            équipes et les projets de Communs Numériques.
+            équipes et les projets de communs numériques.
           </p>
           <p className="mb-[42px]">
             <Strong>Comment :</Strong> en utilisant le projet de La Suite
@@ -97,12 +97,12 @@ export default function Landing() {
           <h3 className="text-xl text-black font-bold ">Septembre 2024</h3>
           <p className="mb-[1.75rem] mt-[0.875rem]">
             <Strong>Objectif de ce deuxième temps :</Strong> étendre la
-            collaboration à d&apos;autres projets de Communs Numériques.
+            collaboration à d&apos;autres projets de communs numériques.
           </p>
           <p className="mb-[42px]">
             <Strong>Comment :</Strong> en utilisant les apprentissages du
-            premier lot, contribuer à d&apos;autres projets de Communs
-            Numériques autour des thématiques de La Suite numérique,
+            premier lot, contribuer à d&apos;autres projets de communs
+            numériques autour des thématiques de La Suite numérique,
             c&apos;est-à-dire tout outil collaboratif qui peut aider les agents
             publics à faire leur travail de manière plus efficace.
           </p>
