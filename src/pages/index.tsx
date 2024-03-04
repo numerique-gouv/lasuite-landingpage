@@ -5,10 +5,11 @@ import { Section as ANCT } from "@/components/sections/ANCT";
 import { Section as Testimony } from "@/components/sections/Testimony";
 import { Section as CallForProjects } from "@/components/sections/CallForProjects";
 import { Section as ProConnect } from "@/components/sections/ProConnect";
+import { TITLE_SITE } from "@/constant";
 
 export default function Landing() {
   return (
-    <Layout className="text-center" title="La Suite numérique">
+    <Layout className="text-center" title={TITLE_SITE}>
       <Hero />
       <ProConnect />
       <DigitalCommons />
