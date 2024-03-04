@@ -5,7 +5,7 @@ export type QuestionProps = Omit<CardProps, "index">;
 export const data: QuestionProps[] = [
   {
     title: "Commun Numérique",
-    body: "Le terme &quot;Commun Numérique&quot; fait référence à un ensemble de ressources ou de connaissances partagées en ligne, accessibles à un large public. Ces ressources peuvent inclure des logiciels, des données, des documents, des informations ou d'autres contenus numériques qui sont disponibles de manière collective et souvent gratuite. L'idée sous-jacente est de favoriser l’accès ouvert et partagé à des biens numériques dans l'intérêt commun, encourageant ainsi la collaboration et la création collective dans le monde numérique.",
+    body: "Le terme &quot;Commun Numérique&quot; fait référence à un ensemble de ressources ou de connaissances partagées en ligne, accessibles à un large public. Ces ressources peuvent inclure des logiciels, des données, des documents ou d'autres contenus numériques qui sont maintenus de façon collaborative et souvent gratuite. L'idée sous-jacente est de favoriser l’accès ouvert et partagé à des biens numériques dans l'intérêt commun, encourageant ainsi la collaboration et la création collective dans le monde numérique.",
   },
   {
     title: "Logiciel libre",
