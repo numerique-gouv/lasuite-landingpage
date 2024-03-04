@@ -3,8 +3,9 @@ import { CommonProps } from "@/types";
 import { ButtonStyle } from "@/components/Core/Button";
 import { twMerge } from "tailwind-merge";
 
-export interface LinkProps extends CommonProps {
+export type LinkProps = Omit<CommonProps, "children"> & {
   href: string;
+  children: string;
   /**
    * The text vocalized by screen readers.
    * Use this only to add context to the link if the default text is not enough to understand the link on its own.
@@ -13,16 +14,24 @@ export interface LinkProps extends CommonProps {
    * whether you pass one or not.
    */
   "aria-label"?: string;
-}
+};
+
+/**
+ * our ButtonExternalLink passes html to ExternalLink.
+ * In that case, aria-label is mandatory as it can't be guessed from a children string anymore.
+ */
+type ComplexChildrenLinkProps = Omit<LinkProps, "children" | "aria-label"> & {
+  children: React.ReactNode;
+  "aria-label": string;
+};
 
 /**
  * ExternalLink Component
  *
  * A React functional component for rendering an external link that opens in a new window.
  * By default, its aria-label is formatted to let screen reader users know we open a new window.
- *
  */
-export const ExternalLink: React.FC<LinkProps> = ({
+export const ExternalLink: React.FC<LinkProps | ComplexChildrenLinkProps> = ({
   children,
   "aria-label": ariaLabel,
   ...subProps
@@ -39,9 +48,14 @@ export const ExternalLink: React.FC<LinkProps> = ({
 export const ButtonExternalLink: React.FC<LinkProps> = ({
   className,
   children,
+  "aria-label": ariaLabel,
   ...subprops
 }) => (
-  <ExternalLink className={twMerge(ButtonStyle, className)} {...subprops}>
+  <ExternalLink
+    className={twMerge(ButtonStyle, className)}
+    {...subprops}
+    aria-label={ariaLabel || children}
+  >
     <span>{children}</span>
     <span className="mr-[-0.125rem] ml-[0.5rem]">
       <Image
