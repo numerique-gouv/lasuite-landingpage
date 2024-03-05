@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ContentSection } from "@/components/Layout";
+import { ContentSection } from "@/components/sections";
 import { Strong } from "@/components/Core";
 
 export const Section = () => (
