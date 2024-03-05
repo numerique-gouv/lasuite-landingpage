@@ -35,8 +35,9 @@ export const Footer = () => (
         </Link>
         <div className="basis-full md:basis-2/3 max-w-2xl">
           <p className="text-sm leading-6 text-dinum-grey-5">
-            Ce site est géré par La Suite Numérique à la Direction
-            Interministérielle du Numérique (DINUM).
+            Ce site est géré par La Suite Numérique de la direction
+            interministérielle du numérique (DINUM) en charge de la
+            transformation numérique de l’État.
           </p>
           <ul className="flex flex-wrap align-middle mt-2">
             {externalLinks.map((link) => (
