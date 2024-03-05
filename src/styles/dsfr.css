@@ -1,19 +1,10 @@
-/* code taken from @gouvfr/dsfr */
-
-[tabindex]:focus,
-a:focus,
-button:focus {
-  outline-color: #0a76f6;
-  outline-offset: 2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-[tabindex]:focus:not(:focus-visible),
-button:focus:not(:focus-visible),
-a:focus:not(:focus-visible) {
-  outline-style: none;
-}
+/* code taken from @gouvfr/dsfr
+ *
+ * This file contain styles that are copy/paste from the DSFR.
+ *
+ * It's included after tailwind classes to prevent specifity issues,
+ * but before our own classes in case we want to override specific things.
+ */
 
 .fr-enlarge-link {
   position: relative;

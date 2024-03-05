@@ -1,0 +1,22 @@
+/* code taken from @gouvfr/dsfr
+ *
+ * This file is meant to contain only base tag styles that are copy/paste from the DSFR.
+ *
+ * It's included early in the css build (before tailwind classes and our classes)
+ * to prevent specifity issues.
+ */
+
+[tabindex]:focus,
+a:focus,
+button:focus {
+  outline-color: #0a76f6;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+[tabindex]:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline-style: none;
+}
