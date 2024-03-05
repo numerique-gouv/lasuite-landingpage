@@ -49,7 +49,7 @@ export const Footer = () => (
       </div>
     </div>
     <footer className="pt-8 border-t-2 border-dinum-blue-1 pb-40">
-      <div id="container" className="max-w-[78rem] px-[24px] mx-auto">
+      <div className="fr-container">
         <div className="flex flex-wrap justify-between mb-6">
           <Link
             className="w-fit md:flex items-center gap-10 hover:bg-dinum-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] "
