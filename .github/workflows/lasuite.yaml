@@ -1,4 +1,4 @@
-name: Linters
+name: lasuite
 
 on:
   push:
@@ -28,3 +28,22 @@ jobs:
         run: pip install --user requests gitlint
       - name: Lint commit messages added to main
         run: ~/.local/bin/gitlint --commits origin/${{ github.event.pull_request.base.ref }}..HEAD
+
+  lint-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Lint sources
+        run: yarn lint
+      - name: Format sources
+        run: yarn format
+      - name: Build sources
+        run: yarn build
