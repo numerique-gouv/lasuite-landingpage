@@ -80,7 +80,7 @@ export const Footer = () => (
               href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
               className={twMerge(
                 "relative underline underline-offset-4 external-link-grey",
-                hover
+                hover,
               )}
             >
               licence etalab-2.0
