@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Br, Button } from "@/components/Core";
+import { Br, ButtonExternalLink } from "@/components/Core";
 import { Layout } from "@/components/Layout";
 
 export default function Landing() {
@@ -34,12 +34,16 @@ export default function Landing() {
               consolider les écosystèmes autour des produits et briques
               techniques que nous utilisons. Vous êtes une entité publique ou
               privée et vous portez une solution collaborative structurée sous
-              forme de commun numérique&nbsp;? <Br />{" "}
+              forme de commun numérique&nbsp;? <Br className="inline" />{" "}
               <b className="text-dinum-grey-2">
                 Obtenez un financement et un accompagnement pour travailler avec
                 nous, dans le cadre du Fonds Communs Numériques pour La Suite
                 numérique.
-              </b>
+              </b>{" "}
+              Le fonds a vocation à soutenir des projets visant le développement
+              de nouvelles fonctionnalités autant que des projets visant à
+              favoriser la pérennité et à l’évolutivité des produits (ex :
+              re-factorisation)
             </p>
             <h2 className="text-xl font-bold mb-[1.75rem]">
               {" "}
@@ -67,8 +71,8 @@ export default function Landing() {
         </div>
       </div>
       <div className="w-full justify-center flex">
-        <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 py-[4rem] max-w-[31em] text-balance">
-          Un programme en 2 temps sur 2024
+        <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 py-[4rem] max-w-[31em] text-balance text-center">
+          Un calendrier en 2 temps sur 2024
         </h2>
       </div>
       <div className="w-full justify-center flex">
@@ -79,18 +83,16 @@ export default function Landing() {
           <h3 className="mt-[1.75rem] text-xl text-black font-bold ">
             Mars 2024
           </h3>
-
           <p className="mb-[1.75rem] mt-[0.875rem]">
-            <strong>Objectif de ce premier temps :</strong> tester et concevoir
-            la meilleure façon pour l&apos;État français de travailler avec les
-            équipes et les projets de communs numériques.
+            <strong>Objectif de ce premier temps :</strong> Tester la meilleure
+            façon pour la DINUM de travailler avec les porteurs de communs
+            numériques.
           </p>
           <p className="mb-[42px]">
             <strong>Comment :</strong> en utilisant le projet de La Suite
-            numérique comme point de départ, travailler main dans la main avec 2
-            projets de biens communs numériques sélectionnés pour tester et
-            itérer sur les apprentissages (par exemple sur le soutien, la mise
-            en réseau, le partage des ressources, etc.)
+            numérique comme point de départ, travailler main dans la main avec
+            un petit nombre de projets pour tester et itérer sur les
+            apprentissages de la coopération.
           </p>
         </div>
         <div className="text-left px-4 text-lg text-dinum-grey-1 max-w-[40em] mx-auto">
@@ -108,8 +110,16 @@ export default function Landing() {
           </p>
         </div>
       </div>
+      <div className="w-full items-center flex flex-col">
+        <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 pb-[2rem] max-w-[31em] text-center text-balance">
+          Processus de sélection
+        </h2>
+        <Image src="/financement-communs.svg" width={800} height={640} alt="" />
+      </div>
       <div className="w-full justify-center flex pt-10 pb-40">
-        <Button>Je propose mon projet !</Button>
+        <ButtonExternalLink href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique">
+          Je propose mon projet !
+        </ButtonExternalLink>
       </div>
     </Layout>
   );
