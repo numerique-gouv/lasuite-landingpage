@@ -9,6 +9,12 @@ button:focus {
   outline-width: 2px;
 }
 
+[tabindex]:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline-style: none;
+}
+
 .fr-enlarge-link {
   position: relative;
 }
