@@ -20,6 +20,16 @@ const config: Config = {
       "4xl": ["2rem", "2.5rem"],
     },
     /*
+     * we don't want to use thin font-weights as they are not very readable depending on the device
+     * and we dont have a "black" variant of Marianne so prevent using it
+     */
+    fontWeight: {
+      normal: "400",
+      medium: "500",
+      bold: "700",
+      extrabold: "800",
+    },
+    /*
      * we convert px media queries to em so that text-only zooms trigger
      * responsive breakpoints. We want the website to render correctly with
      * up to 200% text zoom (RGAA criteria) and this is the easiest way to achieve that.
