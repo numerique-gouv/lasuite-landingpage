@@ -1,13 +1,12 @@
-import { Layout, ContentSection } from "@/components/Layout";
-import { SubTitle, Header, Text } from "@/components/LegalTerms";
+import { ContentPage, ContentSection } from "@/components/Layout";
+import { SubTitle, Text } from "@/components/LegalTerms";
 import { ExternalLink } from "@/components/Core";
 import React from "react";
 import { URL_SITE } from "@/constant";
 
 export default function Suivi() {
   return (
-    <Layout title="Suivi d'audience et vie privée">
-      <Header>Suivi d&apos;audience et vie privée</Header>
+    <ContentPage title="Suivi d’audience et vie privée">
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <div>
           <SubTitle>Cookies déposés</SubTitle>
@@ -89,6 +88,6 @@ export default function Suivi() {
           </Text>
         </div>
       </ContentSection>
-    </Layout>
+    </ContentPage>
   );
 }
