@@ -1,8 +1,16 @@
-# Subsetted fonts
+# Fonts handling
 
-The fonts here are a result of passing the fonts from the parent directory through [glyphhanger](https://github.com/zachleat/glyphhanger).
+We track Marianne source files in `./sources` and "subsetted" files in `./subsetted`. Those files are finally used by Next to actually render fonts through next/fonts.
+
+The subsetted fonts are a result of passing the source fonts through [glyphhanger](https://github.com/zachleat/glyphhanger).
 
 Glyphhanger is a tool to remove characters from a font file, with the main purpose of reducing file size and website load time. Here we use it in a kind of static way, by telling it precisely what characters we want to remove. It's also usable in a more dynamic way, where it reads your website and removes unused characters accordingly, but it requires a bit more configuration. This will do just fine!
+
+## :warning: Disclaimer
+
+Doing this is OK while we control 100% of the content we render. For now the subsetted fonts don't include common characters of swedish names for example, like Å or ö. If we happen to render a connected user name from an external API or database, we'd have to add a bunch of other characters in the subsetted fonts, or even stop doing this technique entirely.
+
+## How to use
 
 > Glyphhanger is not integrated locally as it requires a few python dependencies… if needed, install glyphhanger locally on your machine to update the files.
 > Glyphhanger v5.0.0 was used.
@@ -10,11 +18,11 @@ Glyphhanger is a tool to remove characters from a font file, with the main purpo
 Command used to generate files in this folder:
 
 ```bash
-# pwd = public/assets/fonts/subsetted
+# pwd = src/fonts
 glyphhanger \
-	--subset="../*.woff2" \
+	--subset="./sources/*.woff2" \
 	--formats=woff2 \
-	--output=. \
+	--output=./subsetted \
 	--whitelist="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀàâÇçèÉÊËéêëÏîïÔôùûŒœÆ  &•#…€$~˚°%\_=+-×÷\*/[]{}()<>,.:;?@«»©™←↑→↓↖↗↘↙√≤≥'\!\’\“\”\\\`\""
 ```
 

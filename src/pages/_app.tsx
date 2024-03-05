@@ -1,3 +1,4 @@
+import localFont from "next/font/local";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
@@ -10,6 +11,43 @@ declare global {
     _mtm?: any[];
   }
 }
+
+const marianne = localFont({
+  src: [
+    {
+      path: "../fonts/subsetted/Marianne-Regular-subset.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/subsetted/Marianne-Regular_Italic-subset.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/subsetted/Marianne-Medium-subset.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/subsetted/Marianne-Bold-subset.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/subsetted/Marianne-ExtraBold-subset.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  /**
+   * sadly Next.js doesn't allow us to preload only a specific font variant.
+   * Since we have a few, it's actually counter-productive to preload them all,
+   * it's better to not preloading anything.
+   */
+  preload: false,
+  variable: "--font-marianne",
+});
 
 /**
  * Initializes Matomo tracking as per the Matomo integration guide.
@@ -43,7 +81,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head />
-      <Component {...pageProps} />
+      {/* this wrapper is required for the next/font loaded fonts to work with tailwind */}
+      <div className={`${marianne.variable} font-sans`}>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
