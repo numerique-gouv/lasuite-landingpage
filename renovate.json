@@ -1,0 +1,12 @@
+{
+  "extends": ["github>numerique-gouv/renovate-configuration"],
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "ignored js dependencies",
+      "matchManagers": ["yarn"],
+      "matchPackageNames": ["node"]
+    }
+  ]
+}
