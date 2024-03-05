@@ -1,0 +1,30 @@
+name: Linters
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  lint-git:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' # Makes sense only for pull requests
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: show
+        run: git log
+      - name: Check absence of fixup commits
+        run: |
+          ! git log | grep 'fixup!'
+      - name: Install gitlint
+        run: pip install --user requests gitlint
+      - name: Lint commit messages added to main
+        run: ~/.local/bin/gitlint --commits origin/${{ github.event.pull_request.base.ref }}..HEAD
