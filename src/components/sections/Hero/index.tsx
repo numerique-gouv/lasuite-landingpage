@@ -21,8 +21,8 @@ export const Section = () => (
       </h1>
       <p className="text-lg text-dinum-grey-1 max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
         <strong>
-          La Suite numérique fédère tous les agents et professionnels de la
-          sphère publique{" "}
+          La Suite numérique vise à fédèrer tous les agents et professionnels de
+          la sphère publique{" "}
         </strong>{" "}
         autour d’applications disponibles à la carte et interconnectées, pour
         une gestion fluide et efficace du travail quotidien.

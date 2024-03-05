@@ -57,9 +57,11 @@ export const Section = () => (
       {/*  La Suite est un ensemble de communs numériques libres reliés grâce au bouton Pro Connect*/}
       {/*</Callout>*/}
       <p className="text-lg text-dinum-grey-1 max-w-[38em] text-left sm:text-center">
-        Les applications de La Suite numérique respectent{" "}
-        <strong> un cahier des charges vertueux</strong> : être des logiciels
-        libres et respecter une charte graphique commune.
+        Les applications de La Suite numérique respectent un cahier des charges
+        vertueux:{" "}
+        <strong>
+          être des logiciels libres et respecter une charte graphique commune.
+        </strong>
       </p>
     </ContentSection>
   </>

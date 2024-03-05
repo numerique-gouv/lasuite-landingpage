@@ -4,11 +4,11 @@ export type QuestionProps = Omit<CardProps, "index">;
 
 export const data: QuestionProps[] = [
   {
-    title: "Commun Numérique",
-    body: "Le terme &quot;Commun Numérique&quot; fait référence à un ensemble de ressources ou de connaissances partagées en ligne, accessibles à un large public. Ces ressources peuvent inclure des logiciels, des données, des documents ou d'autres contenus numériques qui sont maintenus de façon collaborative et souvent gratuite. L'idée sous-jacente est de favoriser l’accès ouvert et partagé à des biens numériques dans l'intérêt commun, encourageant ainsi la collaboration et la création collective dans le monde numérique.",
+    title: "commun numérique",
+    body: "Les communs numériques sont des ressources partagées sous forme de biens immatériels utilisables librement. Ils sont produits et gérés par une communauté ouverte d’acteurs partageant des valeurs et des règles de collaboration ou de gouvernance. Il peut s’agir : de logiciels et librairies libres exploitables dans de nouvelles solutions, de standards ouverts, de données et contenus ouverts.",
   },
   {
-    title: "Logiciel libre",
+    title: "logiciel libre",
     body: "Un logiciel libre est un programme informatique dont l’utilisation, la modification et la distribution sont permises, généralement sans coût financier. L’aspect clé des logiciels libres réside dans la liberté qu'ils offrent à leurs utilisateurs. Cela signifie que les utilisateurs ont le droit d’exécuter, copier, distribuer, étudier, modifier et améliorer le logiciel. Ces libertés sont garanties par des licences spécifiques. Les logiciels libres encouragent la collaboration et la transparence, favorisant ainsi la création et le partage ouvert de connaissances informatiques.",
   },
 ];
