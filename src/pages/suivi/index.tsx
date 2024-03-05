@@ -39,7 +39,7 @@ export default function Suivi() {
         d’audience, correctement configurés pour respecter la vie privée, sont
         exemptés d’autorisation préalable.
       </Text>
-      <p className="mb-3">
+      <Text>
         Nous utilisons pour cela{" "}
         <ExternalLink
           href="https://matomo.org/"
@@ -65,7 +65,7 @@ export default function Suivi() {
         signifie que votre adresse IP, par exemple, est anonymisée avant d’être
         enregistrée. Il est donc impossible d’associer vos visites sur ce site à
         votre personne.
-      </p>
+      </Text>
       <SubTitle>
         Je contribue à enrichir vos données, puis-je y accéder ?
       </SubTitle>
