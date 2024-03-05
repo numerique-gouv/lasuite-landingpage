@@ -19,12 +19,17 @@ const config: Config = {
       "3xl": ["1.953rem", "2.25rem"],
       "4xl": ["2rem", "2.5rem"],
     },
+    /*
+     * we convert px media queries to em so that text-only zooms trigger
+     * responsive breakpoints. We want the website to render correctly with
+     * up to 200% text zoom (RGAA criteria) and this is the easiest way to achieve that.
+     */
     screens: {
-      sm: "40em",
-      md: "48em",
-      lg: "64em",
-      xl: "80em",
-      "2xl": "96em",
+      sm: "40em", // 640px
+      md: "48em", // 768px
+      lg: "64em", // 1024px
+      xl: "80em", // 1280px
+      "2xl": "96em", // 1536px
     },
     extend: {
       fontFamily: {

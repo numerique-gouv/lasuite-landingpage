@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./dsfr.css";
 
 body {
   background-color: white;
@@ -13,15 +14,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-[tabindex]:focus,
-a:focus,
-button:focus {
-  outline-color: #0a76f6;
-  outline-offset: 2px;
-  outline-style: solid;
-  outline-width: 2px;
 }
 
 p,
