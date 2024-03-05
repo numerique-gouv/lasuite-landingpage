@@ -59,8 +59,8 @@ export const Section = () => (
       {/*</Callout>*/}
       <p className="text-lg text-dinum-grey-1 max-w-[38em] text-left sm:text-center">
         Les applications de La Suite numérique respectent{" "}
-        <Strong> un cahier des charges vertueux</Strong> : être des logiciels libres
-        et respecter une charte graphique commune.
+        <Strong> un cahier des charges vertueux</Strong> : être des logiciels
+        libres et respecter une charte graphique commune.
       </p>
     </ContentSection>
   </>
