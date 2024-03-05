@@ -1,38 +1,37 @@
 import React from "react";
 
-import { List, SubTitle, Text } from "@/components/LegalTerms";
 import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from "@/constant";
-import { ExternalLink, Strong } from "@/components/Core";
+import { ExternalLink } from "@/components/Core";
 import { ContentPage } from "@/components/Layout";
 
 export default function Accessibilite() {
   return (
     <ContentPage title="Accessibilité">
-      <Text>
-        <Strong>La Suite numérique</Strong> s’engage à rendre ses services
+      <p>
+        <strong>La Suite numérique</strong> s’engage à rendre ses services
         numériques accessibles, conformément à l’article 47 de la loi n°
         2005-102 du 11 février 2005.
-      </Text>
-      <SubTitle>Déclaration d’accessibilité</SubTitle>
-      <Text>
+      </p>
+      <h2>Déclaration d’accessibilité</h2>
+      <p>
         <em>Établie le 20 décembre 2023.</em>
-      </Text>
-      <Text>
+      </p>
+      <p>
         Cette déclaration d’accessibilité s’applique au site{" "}
-        <Strong>{URL_SITE}</Strong>.
-      </Text>
-      <SubTitle>État de conformité</SubTitle>
-      <Text>
+        <strong>{URL_SITE}</strong>.
+      </p>
+      <h2>État de conformité</h2>
+      <p>
         {URL_SITE} est non conforme avec le RGAA 4.1. Le site n’a{" "}
-        <Strong>pas encore été audité</Strong>.
-      </Text>
-      <SubTitle>Amélioration et contact</SubTitle>
-      <Text>
+        <strong>pas encore été audité</strong>.
+      </p>
+      <h2>Amélioration et contact</h2>
+      <p>
         Si vous n’arrivez pas à accéder à un contenu ou à un service, vous
         pouvez contacter le responsable de {URL_SITE} pour être orienté vers une
         alternative accessible ou obtenir le contenu sous une autre forme.
-      </Text>
-      <List>
+      </p>
+      <ul>
         <li>
           E-mail :{" "}
           <a
@@ -43,17 +42,17 @@ export default function Accessibilite() {
           </a>
         </li>
         <li>Adresse : {ADDRESS_DINUM}</li>
-      </List>
-      <Text>Nous essayons de répondre dans les 2 jours ouvrés.</Text>
-      <SubTitle>Voie de recours</SubTitle>
-      <Text>
+      </ul>
+      <p>Nous essayons de répondre dans les 2 jours ouvrés.</p>
+      <h2>Voie de recours</h2>
+      <p>
         Cette procédure est à utiliser dans le cas suivant : vous avez signalé
         au responsable du site internet un défaut d’accessibilité qui vous
         empêche d’accéder à un contenu ou à un des services du portail et vous
         n’avez pas obtenu de réponse satisfaisante.
-      </Text>
-      <Text>Vous pouvez :</Text>
-      <List>
+      </p>
+      <p>Vous pouvez :</p>
+      <ul>
         <li>
           Écrire un message au{" "}
           <ExternalLink
@@ -76,7 +75,7 @@ export default function Accessibilite() {
           Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) :
           Défenseur des droits Libre réponse 71120 75342 Paris CEDEX 07
         </li>
-      </List>
+      </ul>
     </ContentPage>
   );
 }
