@@ -103,8 +103,8 @@
 
 .swiper-pagination-bullet-active {
   background: #000091 !important;
-  outline-offset: 3px;
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: #000091;
+  /* fake an outline with 2 box-shadows to prevent old safari not supporting rounded outlines */
+  box-shadow:
+    0 0 0 3px white,
+    0 0 0 4px #000091;
 }
