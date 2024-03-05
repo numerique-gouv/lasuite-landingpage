@@ -1,11 +1,13 @@
 /**
  * import order is important to prevent specifity issues:
  *
- * 1. first include base-related css (css reset, html tag styles)
- * 2. then include tailwind classes
- * 3. then include DSFR classes
- * 4. then include app-specific classes
+ * 1. first include custom fonts to load them as early as possible
+ * 2. then include base-related css (css reset, html tag styles)
+ * 3. then include tailwind classes
+ * 4. then include DSFR classes
+ * 5. then include app-specific classes
  */
+@import "./fonts.css";
 @import "./base-tailwind.css";
 @import "./base-dsfr.css";
 @import "./base-app.css";
