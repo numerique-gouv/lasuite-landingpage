@@ -11,7 +11,9 @@ export const ContentPage: React.FC<{
   return (
     <Layout title={title}>
       <Header>{title}</Header>
-      {children}
+      <div className="fr-container page-content py-12">
+        <div className="max-w-[50rem]">{children}</div>
+      </div>
     </Layout>
   );
 };
