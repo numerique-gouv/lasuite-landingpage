@@ -1,14 +1,13 @@
 import React from "react";
 
-import { Header, List, SubTitle, Text } from "@/components/LegalTerms";
+import { List, SubTitle, Text } from "@/components/LegalTerms";
 import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from "@/constant";
 import { ExternalLink, Strong } from "@/components/Core";
-import { Layout, ContentSection } from "@/components/Layout";
+import { ContentPage, ContentSection } from "@/components/Layout";
 
 export default function Accessibilite() {
   return (
-    <Layout title="Accessibilité">
-      <Header>Accessibilité</Header>
+    <ContentPage title="Accessibilité">
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <Text>
           <Strong>La Suite numérique</Strong> s’engage à rendre ses services
@@ -92,6 +91,6 @@ export default function Accessibilite() {
           </List>
         </div>
       </ContentSection>
-    </Layout>
+    </ContentPage>
   );
 }

@@ -1,13 +1,12 @@
 import React from "react";
 
-import { Layout, ContentSection } from "@/components/Layout";
-import { Header, SubTitle, Text } from "@/components/LegalTerms";
+import { ContentPage, ContentSection } from "@/components/Layout";
+import { SubTitle, Text } from "@/components/LegalTerms";
 import { ADDRESS_DINUM, CONTACT_EMAIL } from "@/constant";
 
 export default function Apropos() {
   return (
-    <Layout title="À propos">
-      <Header>À propos</Header>
+    <ContentPage title="À propos">
       <ContentSection classNameChildren="items-start max-w-[54rem]">
         <div>
           <SubTitle>Éditeur</SubTitle>
@@ -43,6 +42,6 @@ export default function Apropos() {
           </Text>
         </div>
       </ContentSection>
-    </Layout>
+    </ContentPage>
   );
 }
