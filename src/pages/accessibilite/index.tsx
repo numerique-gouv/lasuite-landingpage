@@ -26,9 +26,7 @@ export default function Accessibilite() {
         {URL_SITE} est non conforme avec le RGAA 4.1. Le site n’a{" "}
         <Strong>pas encore été audité</Strong>.
       </Text>
-      <SubTitle className="text-[2rem] leading-9 font-bold mb-4">
-        Amélioration et contact
-      </SubTitle>
+      <SubTitle>Amélioration et contact</SubTitle>
       <Text>
         Si vous n’arrivez pas à accéder à un contenu ou à un service, vous
         pouvez contacter le responsable de {URL_SITE} pour être orienté vers une
