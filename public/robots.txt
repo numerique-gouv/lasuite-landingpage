@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://lasuite.numerique.gouv.fr/sitemap.xml
