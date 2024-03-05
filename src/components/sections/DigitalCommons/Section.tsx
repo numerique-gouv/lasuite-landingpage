@@ -1,4 +1,4 @@
-import { ContentSection } from "@/components/Layout";
+import { ContentSection } from "@/components/sections";
 import { SwiperWrapper as Swiper } from "@/components/Swiper";
 import Image from "next/image";
 import { Strong } from "@/components/Core";
