@@ -43,7 +43,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Marianne", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-marianne)", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         dinum: {
