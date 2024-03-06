@@ -1,4 +1,4 @@
-import { Br, Strong } from "@/components/Core";
+import { Br } from "@/components/Core";
 import { CardProps } from "./Card";
 
 export const data: CardProps[] = [
@@ -6,16 +6,16 @@ export const data: CardProps[] = [
     quote: (
       <p className="text-dinum-grey-1">
         Je suis proviseur adjoint d’une cité scolaire.{" "}
-        <Strong>
+        <strong>
           Tchap est une application respectueuse des données personnelles.
-        </Strong>{" "}
+        </strong>{" "}
         Je m’en sers pour cloisonner le monde personnel et professionnel parce
         que le monde enseignant peut devenir invasif.{" "}
-        <Strong>
+        <strong>
           Je m’en sers avec le personnel de l’éducation nationale en fonction
           des missions, avec des collègues du même bassin, aussi pour des
           échanges directs plus informels.
-        </Strong>
+        </strong>
       </p>
     ),
     title: "Agent",
@@ -28,17 +28,17 @@ export const data: CardProps[] = [
       <p className="text-dinum-grey-1">
         Je fais de l’animation de projets inter-collectivités donc j&apos;ai
         beaucoup de liens avec des partenaires de l’Etat.{" "}
-        <Strong>
+        <strong>
           J’utilise Tchap parce que j&apos;étais intéressé par l’open source.
-        </Strong>
+        </strong>
         <Br />
         <Br />
         Mon prédécesseur avait fait une expérimentation avec quelques
         collectivités mais nous{" "}
-        <Strong>
+        <strong>
           on veut l&apos;utiliser tous les jours, pour l&apos;animation au
           quotidien des nos communautés.
-        </Strong>
+        </strong>
       </p>
     ),
     title: "Agent de la collectivité territoriale",
@@ -50,8 +50,8 @@ export const data: CardProps[] = [
     quote: (
       <p className="text-dinum-grey-1">
         Avec la dernière mise à jour de Tchap, on a les{" "}
-        <Strong>mêmes fonctionnalités qu’avec WhatsApp,</Strong> mais en{" "}
-        <Strong>plus confidentiel.</Strong> Bravo !
+        <strong>mêmes fonctionnalités qu’avec WhatsApp,</strong> mais en{" "}
+        <strong>plus confidentiel.</strong> Bravo !
       </p>
     ),
     title: "Agent",

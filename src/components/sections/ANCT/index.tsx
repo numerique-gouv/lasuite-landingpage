@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ContentSection } from "@/components/sections";
-import { Strong } from "@/components/Core";
 
 export const Section = () => (
   <ContentSection className="bg-dinum-white-0">
@@ -15,33 +14,33 @@ export const Section = () => (
     <div className="flex flex-col gap-4">
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
         Afin de{" "}
-        <Strong>
+        <strong>
           renforcer la cybersécurité des collectivités territoriales,
-        </Strong>{" "}
+        </strong>{" "}
         ANCT et ANSSI proposent de contribuer à l’ouverture de la Suite
         numérique aux élus locaux et agents publics territoriaux.
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
-        <Strong>
+        <strong>
           La Suite territoriale vise ainsi à mettre à disposition des
           collectivités un ensemble de services numériques sécurisés,
-        </Strong>{" "}
+        </strong>{" "}
         notamment nom de domaine, serveur mail et espace de stockage minimal.
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
-        <Strong>
+        <strong>
           Ces services de base seront complétés par des services opérés au
           niveau national
-        </Strong>{" "}
-        (DINUM, ANCT, ANSSI) <Strong>comme au niveau local</Strong> (opérateurs
+        </strong>{" "}
+        (DINUM, ANCT, ANSSI) <strong>comme au niveau local</strong> (opérateurs
         publics de services numériques) à travers la Suite numérique :
         visioconférence, transfert de fichiers lourds, tableur collaboratif…
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
-        <Strong>
+        <strong>
           L&apos;ANCT propose aux collectivités territoriales et partenaires
           locaux de participer aux développements de la Suite territoriale
-        </Strong>{" "}
+        </strong>{" "}
         en rejoignant le groupe pilote ainsi que les ateliers ouverts organisés
         à partir de mars 2024.
       </p>

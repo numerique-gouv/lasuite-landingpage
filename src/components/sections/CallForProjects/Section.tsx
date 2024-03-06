@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SwiperWrapper } from "@/components/Swiper";
 import { ContentSection } from "@/components/sections";
-import { Strong, Button } from "@/components/Core";
+import { Button } from "@/components/Core";
 
 import { data } from "./data";
 import { Card } from "./Card";
@@ -25,13 +25,13 @@ export const Section = () => (
         Vous êtes une entité publique ou privée et vous portez une solution
         collaborative structurée sous forme de commun numérique ou de logiciel
         libre ? Vous pouvez intégrer La Suite numérique{" "}
-        <Strong>
+        <strong>
           pour être utile à des milliers d&apos;agents publics en France&nbsp;!
-        </Strong>
+        </strong>
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
-        Obtenez un <Strong>financement</Strong> et un{" "}
-        <Strong>accompagnement</Strong> pour travailler avec nous, dans le cadre
+        Obtenez un <strong>financement</strong> et un{" "}
+        <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
         du fonds communs numériques pour la suite collaborative.
       </p>
       <p>

@@ -13,7 +13,7 @@ export const Section = () => (
     </h2>
     <Image src="/france-connect.svg" height={246} width={540} alt="" />
     {/*<p className="text-lg text-dinum-grey-1 max-w-[44rem]">*/}
-    {/*  Le bouton Pro Connect est au cœur de La Suite numérique. <Br />Au même titre que France Connect relie les services publics numériques des citoyens et citoyennes, <Strong>Pro Connect crée le lien entre les outils numériques des professionnels de la sphère publique.</Strong>*/}
+    {/*  Le bouton Pro Connect est au cœur de La Suite numérique. <Br />Au même titre que France Connect relie les services publics numériques des citoyens et citoyennes, <strong>Pro Connect crée le lien entre les outils numériques des professionnels de la sphère publique.</strong>*/}
     {/*</p>*/}
     {/*<Image src="/button-fc.svg" height={150} width={350} alt="" />*/}
     {/*<h3 className="text-2xl text-dinum-blue-1 font-bold">Grâce au bouton Pro Connect, La Suite permet une action&nbsp;…</h3>*/}

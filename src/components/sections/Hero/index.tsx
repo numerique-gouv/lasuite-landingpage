@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Callout } from "@/components/Callout";
-import { Br, Strong } from "@/components/Core";
+import { Br } from "@/components/Core";
 import { URL_SITE } from "@/constant";
 
 import heroImage from "../../../../public/hero/visuel-home.webp";
@@ -19,10 +19,10 @@ export const Section = () => (
         />
       </h1>
       <p className="text-lg text-dinum-grey-1 max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
-        <Strong>
+        <strong>
           La Suite numérique fédère tous les agents et professionnels de la
           sphère publique{" "}
-        </Strong>{" "}
+        </strong>{" "}
         autour d’applications disponibles à la carte et interconnectées, pour
         une gestion fluide et efficace du travail quotidien.
       </p>

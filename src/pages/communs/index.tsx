@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Br, Strong, Button } from "@/components/Core";
+import { Br, Button } from "@/components/Core";
 import { Layout } from "@/components/Layout";
 
 export default function Landing() {
@@ -22,7 +22,7 @@ export default function Landing() {
               Qu&apos;est-ce que le Fonds&nbsp;?
             </h2>
             <p className="text-lg text-dinum-grey-1 mb-[1.75rem]">
-              Avec <Strong>La Suite numérique</Strong>, notre défi est
+              Avec <strong>La Suite numérique</strong>, notre défi est
               d’apporter aux agents publics de nouveaux outils de travail
               ouverts et propices aux usages collaboratifs.
             </p>
@@ -48,18 +48,18 @@ export default function Landing() {
             <ul className="text-lg text-dinum-grey-1 list-disc pl-10">
               <li>
                 Un ticket de financement allant jusqu&apos;à{" "}
-                <Strong>40.000 euros renouvelable.</Strong>
+                <strong>40.000 euros renouvelable.</strong>
               </li>
               <li>
-                Un <Strong>interlocuteur permanent</Strong> qui aide à discuter
+                Un <strong>interlocuteur permanent</strong> qui aide à discuter
                 avec les différentes équipes de la DINUM.
               </li>
               <li>
-                Un <Strong>feedback et une contribution technique</Strong> par
+                Un <strong>feedback et une contribution technique</strong> par
                 les équipes de la DINUM.
               </li>
               <li>
-                La <Strong>possibilité de communiquer</Strong> sur le soutien de
+                La <strong>possibilité de communiquer</strong> sur le soutien de
                 la DINUM et de l&apos;Etat français.
               </li>
             </ul>
@@ -81,12 +81,12 @@ export default function Landing() {
           </h3>
 
           <p className="mb-[1.75rem] mt-[0.875rem]">
-            <Strong>Objectif de ce premier temps :</Strong> tester et concevoir
+            <strong>Objectif de ce premier temps :</strong> tester et concevoir
             la meilleure façon pour l&apos;État français de travailler avec les
             équipes et les projets de communs numériques.
           </p>
           <p className="mb-[42px]">
-            <Strong>Comment :</Strong> en utilisant le projet de La Suite
+            <strong>Comment :</strong> en utilisant le projet de La Suite
             numérique comme point de départ, travailler main dans la main avec 2
             projets de biens communs numériques sélectionnés pour tester et
             itérer sur les apprentissages (par exemple sur le soutien, la mise
@@ -96,11 +96,11 @@ export default function Landing() {
         <div className="text-left px-4 text-lg text-dinum-grey-1 max-w-[40em] mx-auto">
           <h3 className="text-xl text-black font-bold ">Septembre 2024</h3>
           <p className="mb-[1.75rem] mt-[0.875rem]">
-            <Strong>Objectif de ce deuxième temps :</Strong> étendre la
+            <strong>Objectif de ce deuxième temps :</strong> étendre la
             collaboration à d&apos;autres projets de communs numériques.
           </p>
           <p className="mb-[42px]">
-            <Strong>Comment :</Strong> en utilisant les apprentissages du
+            <strong>Comment :</strong> en utilisant les apprentissages du
             premier lot, contribuer à d&apos;autres projets de communs
             numériques autour des thématiques de La Suite numérique,
             c&apos;est-à-dire tout outil collaboratif qui peut aider les agents

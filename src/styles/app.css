@@ -172,7 +172,3 @@
   margin-bottom: 1.5rem;
   padding-left: 1rem;
 }
-
-.page-content strong {
-  @apply text-dinum-grey-2;
-}
