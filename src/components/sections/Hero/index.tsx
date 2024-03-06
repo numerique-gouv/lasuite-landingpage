@@ -16,6 +16,7 @@ export const Section = () => (
           width={480}
           alt={URL_SITE}
           className="max-w-[80%]"
+          priority
         />
       </h1>
       <p className="text-lg text-dinum-grey-1 max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
