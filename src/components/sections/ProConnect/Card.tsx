@@ -1,4 +1,4 @@
-import { Br, Strong } from "@/components/Core";
+import { Br } from "@/components/Core";
 
 export interface CardProps {
   title: string;
@@ -12,7 +12,7 @@ export const Card = ({ title, target, text }: CardProps) => (
       <span className="font-extrabold text-3xl text-dinum-blue-1">{title}</span>
       <Br className="inline" />
       <span className="text-lg text-dinum-grey-1">
-        pour&nbsp;<Strong>{target}</Strong>
+        pour&nbsp;<strong>{target}</strong>
       </span>
     </h3>
     <p className="mt-8 text-lg text-dinum-grey-1 text-pretty">{text}</p>

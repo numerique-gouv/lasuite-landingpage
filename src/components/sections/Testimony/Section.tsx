@@ -1,7 +1,7 @@
 import { SwiperWrapper } from "@/components/Swiper";
 import { ContentSection } from "@/components/sections";
 
-import { Strong, Br } from "@/components/Core";
+import { Br } from "@/components/Core";
 
 import { Card } from "./Card";
 import { data } from "./data";
@@ -14,10 +14,10 @@ export const Section = () => (
     <p className="text-lg text-dinum-grey-1 max-w-[38rem]">
       La Suite est un projet en construction, certaines de ses applications sont
       encore en phase de test, mais{" "}
-      <Strong>
+      <strong>
         d&apos;autres sont déjà utilisées par des milliers d&apos;agents et
         toujours plus chaque jour !{" "}
-      </Strong>
+      </strong>
       <Br />
       Découvrez les applications stars de La Suite :
     </p>

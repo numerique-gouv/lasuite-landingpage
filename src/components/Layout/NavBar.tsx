@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Br, Strong } from "@/components/Core";
+import { Br } from "@/components/Core";
 
 /**
  * NavBar Component
@@ -23,7 +23,7 @@ export const NavBar = () => (
               href="/"
               aria-label="Accueil - lasuite.numerique.gouv.fr"
             >
-              <Strong>lasuite.numerique.gouv.</Strong>
+              <strong>lasuite.numerique.gouv.</strong>
               <i>fr</i>
             </Link>
             <span className="block text-xs sm:text-sm text-dinum-black-1">
