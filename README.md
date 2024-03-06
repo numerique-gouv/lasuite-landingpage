@@ -1,3 +1,8 @@
+# La Suite
+
+This repository houses the code and assets for *La Suite* landing page.
+
+*La Suite* is currently under construction, and we anticipate ongoing updates and enhancements to our content.  Stay tuned!
 
 ## Getting Started
 
