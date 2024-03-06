@@ -1,5 +1,4 @@
 import { Layout } from "@/components/Layout";
-import { Header } from "@/components/LegalTerms";
 
 export const ContentPage: React.FC<{
   /**
