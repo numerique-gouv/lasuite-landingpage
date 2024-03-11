@@ -1,5 +1,5 @@
-import { ContentPage } from "@/components/Layout";
-import { ExternalLink } from "@/components/Core";
+import { ContentPage } from "@/components";
+import { ExternalLink } from "@/components";
 import React from "react";
 import { URL_SITE } from "@/constant";
 

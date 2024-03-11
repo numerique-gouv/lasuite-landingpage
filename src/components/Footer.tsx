@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
-import { ExternalLink, LinkProps, Br } from "@/components/Core";
+import { ExternalLink, LinkProps, Br } from "@/components";
 
 const hover =
   "hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CommonProps } from "@/types";
-import { ButtonStyle } from "@/components/Core/Button";
+import { ButtonStyle } from "@/components/Button";
 import { twMerge } from "tailwind-merge";
 
 export type LinkProps = Omit<CommonProps, "children"> & {

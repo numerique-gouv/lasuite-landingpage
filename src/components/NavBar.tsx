@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Br } from "@/components/Core";
+import { Br } from "@/components";
 
 /**
  * NavBar Component

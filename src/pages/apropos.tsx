@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ContentPage } from "@/components/Layout";
+import { ContentPage } from "@/components";
 import { ADDRESS_DINUM, CONTACT_EMAIL } from "@/constant";
 
 export default function Apropos() {

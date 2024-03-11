@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Br, ButtonExternalLink } from "@/components/Core";
+import { Br, ButtonExternalLink } from "@/components";
 import { Layout } from "@/components/Layout";
 
 export default function Communs() {

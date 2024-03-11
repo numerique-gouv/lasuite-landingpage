@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { NavBar } from "@/components/Layout/NavBar";
-import { Footer } from "@/components/Layout/Footer";
+import { NavBar } from "@/components/";
+import { Footer } from "@/components";
 import { CommonProps } from "@/types";
 import { TITLE_SITE } from "@/constant";
 
