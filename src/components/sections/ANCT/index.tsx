@@ -17,7 +17,7 @@ export const Section = () => (
         <strong>
           renforcer la cybersécurité des collectivités territoriales,
         </strong>{" "}
-        ANCT et ANSSI proposent de contribuer à l’ouverture de la Suite
+        ANCT et ANSSI proposent de contribuer à l’ouverture de La Suite
         numérique aux élus locaux et agents publics territoriaux.
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
@@ -33,20 +33,20 @@ export const Section = () => (
           niveau national
         </strong>{" "}
         (DINUM, ANCT, ANSSI) <strong>comme au niveau local</strong> (opérateurs
-        publics de services numériques) à travers la Suite numérique :
+        publics de services numériques) à travers La Suite numérique :
         visioconférence, transfert de fichiers lourds, tableur collaboratif…
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
         <strong>
           L&apos;ANCT propose aux collectivités territoriales et partenaires
-          locaux de participer aux développements de la Suite territoriale
+          locaux de participer aux développements de La Suite territoriale
         </strong>{" "}
         en rejoignant le groupe pilote ainsi que les ateliers ouverts organisés
         à partir de mars 2024.
       </p>
     </div>
     <div className="flex flex-col gap-8 items-center md:flex-row mb-10">
-      <h3 className="sr-only">Acteurs de la Suite Territoriale</h3>
+      <h3 className="sr-only">Acteurs de La Suite Territoriale</h3>
       <Image
         src="/anct/anct.svg"
         height={60}
