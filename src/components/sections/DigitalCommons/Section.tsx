@@ -37,7 +37,7 @@ export const Section = () => (
         aria-hidden={true}
         className="text-3xl md:text-4xl max-w-[33rem] font-bold"
       >
-        … basées sur des Communs Numériques Libres
+        … basées sur des communs numériques libres
       </div>
       <ul className="hidden md:flex gap-6 flex-wrap justify-center py-10">
         {content.map((digitalCommon) => (
@@ -58,7 +58,7 @@ export const Section = () => (
       {/*</Callout>*/}
       <p className="text-lg text-dinum-grey-1 max-w-[38em] text-left sm:text-center">
         Les applications de La Suite numérique respectent un cahier des charges
-        vertueux:{" "}
+        vertueux :{" "}
         <strong>
           être des logiciels libres et respecter une charte graphique commune.
         </strong>

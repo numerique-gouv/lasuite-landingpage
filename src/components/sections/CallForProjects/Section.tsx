@@ -32,7 +32,7 @@ export const Section = () => (
       <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
         Obtenez un <strong>financement</strong> et un{" "}
         <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
-        du fonds communs numériques pour la suite collaborative.
+        du fonds communs numériques pour La Suite collaborative.
       </p>
       <p>
         <Button
