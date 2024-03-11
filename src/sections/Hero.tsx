@@ -3,10 +3,10 @@ import { Callout } from "@/components/Callout";
 import { Br } from "@/components";
 import { URL_SITE } from "@/constant";
 
-import heroImage from "../../../public/hero/visuel-home.webp";
-import heroImageMobile from "../../../public/hero/visuel-home-mobile.webp";
+import heroImage from "../../public/hero/visuel-home.webp";
+import heroImageMobile from "../../public/hero/visuel-home-mobile.webp";
 
-export const Section = () => (
+export const Hero = () => (
   <div className="hero relative overflow-hidden bg-dinum-white-0 ">
     <div className="flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-[url(/hero/nid-abeille.webp)] md:bg-no-repeat md:bg-center">
       <h1 className="w-full flex justify-center pb-11">

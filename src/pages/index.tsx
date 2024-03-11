@@ -1,11 +1,11 @@
-import { Section as DigitalCommons } from "@/sections/DigitalCommons";
-import { Section as Hero } from "@/sections/Hero";
+import { DigitalCommons } from "@/sections/DigitalCommons";
+import { Hero } from "@/sections/Hero";
 import { Layout } from "@/components/Layout";
-import { Section as ANCT } from "@/sections/ANCT";
-import { Section as Testimony } from "@/sections/Testimony";
-import { Section as CallForProjects } from "@/sections/CallForProjects";
-import { Section as ProConnect } from "@/sections/ProConnect";
-import { Section as Newsletter } from "@/sections/Newsletter";
+import { Anct } from "@/sections/Anct";
+import { Testimonies } from "@/sections/Testimonies";
+import { Initiatives } from "@/sections/Initiatives";
+import { ProConnect } from "@/sections/ProConnect";
+import { Newsletter } from "@/sections/Newsletter";
 import { TITLE_SITE } from "@/constant";
 
 export default function Landing() {
@@ -14,9 +14,9 @@ export default function Landing() {
       <Hero />
       {/*<ProConnect />*/}
       <DigitalCommons />
-      <CallForProjects />
-      <Testimony />
-      <ANCT />
+      <Initiatives />
+      <Testimonies />
+      <Anct />
       <Newsletter />
     </Layout>
   );
