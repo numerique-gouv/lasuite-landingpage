@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Br } from "@/components";
+import { Br } from "@/components/BreakLine";
 
 /**
  * NavBar Component

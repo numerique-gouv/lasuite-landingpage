@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
-import { MetaHeader as Head } from "@/components";
+import { MetaHeader as Head } from "@/components/MetaHeader";
 import { MATOMO_ID } from "@/constant";
 import { useEffect } from "react";
 
