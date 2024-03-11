@@ -3,8 +3,8 @@ import { Callout } from "@/components/Callout";
 import { Br } from "@/components";
 import { URL_SITE } from "@/constant";
 
-import heroImage from "../../../../public/hero/visuel-home.webp";
-import heroImageMobile from "../../../../public/hero/visuel-home-mobile.webp";
+import heroImage from "../../../public/hero/visuel-home.webp";
+import heroImageMobile from "../../../public/hero/visuel-home-mobile.webp";
 
 export const Section = () => (
   <div className="hero relative overflow-hidden bg-dinum-white-0 ">

@@ -1,11 +1,11 @@
-import { Section as DigitalCommons } from "@/components/sections/DigitalCommons";
-import { Section as Hero } from "@/components/sections/Hero";
+import { Section as DigitalCommons } from "@/sections/DigitalCommons";
+import { Section as Hero } from "@/sections/Hero";
 import { Layout } from "@/components/Layout";
-import { Section as ANCT } from "@/components/sections/ANCT";
-import { Section as Testimony } from "@/components/sections/Testimony";
-import { Section as CallForProjects } from "@/components/sections/CallForProjects";
-import { Section as ProConnect } from "@/components/sections/ProConnect";
-import { Section as Newsletter } from "@/components/sections/Newsletter";
+import { Section as ANCT } from "@/sections/ANCT";
+import { Section as Testimony } from "@/sections/Testimony";
+import { Section as CallForProjects } from "@/sections/CallForProjects";
+import { Section as ProConnect } from "@/sections/ProConnect";
+import { Section as Newsletter } from "@/sections/Newsletter";
 import { TITLE_SITE } from "@/constant";
 
 export default function Landing() {

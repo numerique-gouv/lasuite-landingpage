@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ContentSection } from "@/components/sections";
+import { ContentSection } from "@/sections";
 
 export const Section = () => (
   <ContentSection className="bg-dinum-white-0">

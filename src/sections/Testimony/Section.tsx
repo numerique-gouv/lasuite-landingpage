@@ -1,5 +1,5 @@
 import { SwiperWrapper } from "@/components/Swiper";
-import { ContentSection } from "@/components/sections";
+import { ContentSection } from "@/sections";
 
 import { Br } from "@/components";
 
