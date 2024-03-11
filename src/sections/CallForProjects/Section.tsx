@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { SwiperWrapper } from "@/components/Swiper";
-import { ContentSection } from "@/components/sections";
+import { ContentSection } from "@/sections";
 import { Button } from "@/components";
 
 import { data } from "./data";
 import { Card } from "./Card";
 
-import IllustrationIdea from "../../../../public/call-for-projects/illustration.webp";
+import IllustrationIdea from "../../../public/call-for-projects/illustration.webp";
 
 export const Section = () => (
   <>

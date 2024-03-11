@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SwiperWrapper } from "@/components/Swiper";
-import { ContentSection } from "@/components/sections";
+import { ContentSection } from "@/sections";
 import { Br } from "@/components";
 
 import { Card } from "./Card";
