@@ -1,7 +1,7 @@
 import { ButtonExternalLink } from "@/components";
 import { NEWSLETTER_FORM } from "@/constant";
 
-export const Section = () => (
+export const Newsletter = () => (
   <div className="bg-dsfr-blue-1 py-8 text-left">
     <div className="fr-container">
       <div className="flex flex-col items-start justify-between">

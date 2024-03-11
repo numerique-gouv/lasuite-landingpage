@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ContentSection } from "@/components/ContentSection";
 
-export const Section = () => (
+export const Anct = () => (
   <ContentSection className="bg-dinum-white-0">
     <h2 className="text-3xl md:text-4xl font-bold flex flex-row items-center gap-6">
       <Image
