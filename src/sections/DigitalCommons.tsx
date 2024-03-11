@@ -1,7 +1,7 @@
 import { ContentSection } from "@/components/ContentSection";
 import { SwiperWrapper as Swiper } from "@/components/Swiper";
 import Image, {StaticImageData} from "next/image";
-import {ExternalLink} from "@/components";
+import {ExternalLink} from "@/components/ExternalLink";
 
 import BigBlueButtonPng from "@/assets/logo/commons/big-blue-button.png"
 import CollaboraPng from "@/assets/logo/commons/collabora.png"
