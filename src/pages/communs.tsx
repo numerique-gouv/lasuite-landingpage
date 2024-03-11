@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Br, ButtonExternalLink } from "@/components/Core";
 import { Layout } from "@/components/Layout";
 
-export default function Landing() {
+export default function Communs() {
   return (
     <Layout title="Le Fonds Communs Numériques">
       <div className="hero relative overflow-hidden bg-dinum-white-0 ">
