@@ -21,7 +21,7 @@ const config: Config = {
     },
     /*
      * we don't want to use thin font-weights as they are not very readable depending on the device
-     * and we dont have a "black" variant of Marianne so prevent using it
+     * and we don't have a "black" variant of Marianne so prevent using it
      */
     fontWeight: {
       normal: "400",
