@@ -1,4 +1,4 @@
-import { ContentSection } from "@/sections";
+import { ContentSection } from "@/components/ContentSection";
 import { SwiperWrapper as Swiper } from "@/components/Swiper";
 import Image from "next/image";
 
