@@ -3,12 +3,17 @@ import { ContentSection } from "@/components/ContentSection";
 
 import { Br } from "@/components";
 
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import { ReactElement } from "react";
+
+import AccountSvg from "@/assets/account.svg"
+import AnctSvg from "@/assets/logo/anct.svg"
+import InterieurSvg from "@/assets/logo/ministere-interieur.svg"
+import EducationNationaleSvg from "@/assets/logo/education-nationale.svg"
 
 
 interface CardProps {
-  img: string;
+  img: StaticImageData;
   title: string;
   key: string;
   quote: ReactElement;
@@ -26,7 +31,7 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
       />
     </h3>
     <div className="flex flex-row items-center mt-7 gap-4 pb-5">
-      <Image src="/testimony/account.svg" height={60} width={60} alt="" />
+      <Image src={AccountSvg} height={60} width={60} alt="" />
       <p className="font-bold text-dinum-grey-2">{title}</p>
     </div>
     <blockquote className="text-dinum-grey-1 leading-6 text-pretty">
@@ -53,7 +58,7 @@ const data: CardProps[] = [
       </p>
     ),
     title: "Agent",
-    img: "/testimony/logo-education-nationale.svg",
+    img: EducationNationaleSvg,
     key: "educ-nat",
     entity: "Ministère de l'éducation nationale et de la jeunesse",
   },
@@ -76,7 +81,7 @@ const data: CardProps[] = [
       </p>
     ),
     title: "Agent de la collectivité territoriale",
-    img: "/testimony/logo-anct.svg",
+    img: AnctSvg,
     key: "anct",
     entity: "Agence nationale de la cohésion des territoires",
   },
@@ -89,7 +94,7 @@ const data: CardProps[] = [
       </p>
     ),
     title: "Agent",
-    img: "/testimony/logo-interieur.svg",
+    img: InterieurSvg,
     key: "interieur",
     entity: "Ministère de l'intérieur",
   },

@@ -2,13 +2,17 @@ import Image from "next/image";
 import { Br, ButtonExternalLink } from "@/components";
 import { Layout } from "@/components/Layout";
 
+import LogoSvg from "@/assets/logo/suite-numerique.svg"
+import InitiativesPlaning from "@/assets/initiatives-planing.svg"
+import InitiativesFinance from "@/assets/initiatives-finance.svg"
+
 export default function Communs() {
   return (
     <Layout title="Le Fonds Communs Numériques">
       <div className="hero relative overflow-hidden bg-dinum-white-0 ">
         <div className="flex flex-col justify-between items-center gap-11 py-10 md:py-20 max-w-[40em] mx-auto">
           <Image
-            src="/logo.svg"
+            src={LogoSvg}
             height={168}
             width={480}
             alt=""
@@ -76,7 +80,7 @@ export default function Communs() {
         </h2>
       </div>
       <div className="w-full justify-center flex">
-        <Image src="/desktop-communs.svg" width={800} height={640} alt="" />
+        <Image src={InitiativesPlaning} width={800} height={640} alt="" />
       </div>
       <div className="flex flex-col">
         <div className="text-left px-4 text-lg text-dinum-grey-1 max-w-[40em] mx-auto">
@@ -114,7 +118,7 @@ export default function Communs() {
         <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 pb-[2rem] max-w-[31em] text-center text-balance">
           Processus de sélection
         </h2>
-        <Image src="/financement-communs.svg" width={800} height={640} alt="" />
+        <Image src={InitiativesFinance} width={800} height={640} alt="" />
       </div>
       <div className="w-full justify-center flex pt-10 pb-40">
         <ButtonExternalLink href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique">

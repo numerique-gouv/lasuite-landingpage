@@ -6,7 +6,7 @@
 .logo:before {
   content: "";
   display: block;
-  background-image: url("../../public/marianne.svg");
+  background-image: url("/assets/marianne.svg");
   background-position:
     0 -0.046875rem,
     0 0,
@@ -23,7 +23,7 @@
 .logo:after {
   content: "";
   display: block;
-  background-image: url("../../public/devise.svg");
+  background-image: url("/assets/devise.svg");
   background-repeat: no-repeat;
 
   background-position: 0 calc(100% + 0.008rem);
@@ -71,13 +71,13 @@
 }
 
 .external-link-grey:after {
-  content: url("../../public/assets/icons/external-link-grey.svg");
+  content: url("/assets/external-link-grey.svg");
   vertical-align: middle;
   padding-left: 0.25rem;
 }
 
 .external-link-blue:after {
-  content: url("../../public/assets/icons/external-link-blue.svg");
+  content: url("/assets/external-link-blue.svg");
   vertical-align: middle;
   padding-left: 0.25rem;
 }
