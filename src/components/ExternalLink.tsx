@@ -3,6 +3,8 @@ import { CommonProps } from "@/types";
 import { ButtonStyle } from "@/components/Button";
 import { twMerge } from "tailwind-merge";
 
+import LinkWhiteSvg from "@/assets/link-white.svg"
+
 export type LinkProps = Omit<CommonProps, "children"> & {
   href: string;
   children: string;
@@ -59,7 +61,7 @@ export const ButtonExternalLink: React.FC<LinkProps> = ({
     <span>{children}</span>
     <span className="mr-[-0.125rem] ml-[0.5rem]">
       <Image
-        src="./assets/icons/external-link-white.svg"
+        src={LinkWhiteSvg}
         height={16}
         width={16}
         alt=""

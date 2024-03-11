@@ -1,12 +1,22 @@
 import { ContentSection } from "@/components/ContentSection";
 import { SwiperWrapper as Swiper } from "@/components/Swiper";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import {ExternalLink} from "@/components";
+
+import BigBlueButtonPng from "@/assets/logo/commons/big-blue-button.png"
+import CollaboraPng from "@/assets/logo/commons/collabora.png"
+import OnlyOfficePng from "@/assets/logo/commons/only-office.png"
+import OpenXChangePng from "@/assets/logo/commons/ox.png"
+import GristPng from "@/assets/logo/commons/grist.png"
+import JitsiPng from "@/assets/logo/commons/jitsi.png"
+import MatrixPng from "@/assets/logo/commons/matrix.png"
+import MarianneApplicationsSvg from "@/assets/marianne-applications.svg"
+import MarianneApplicationsMobileSvg from "@/assets/marianne-applications-mobile.svg"
 
 interface CardProps {
   title: string;
   href: string;
-  img: string;
+  img: StaticImageData;
 }
 
 const Card: React.FC<CardProps> = ({ img, title, href }) => (
@@ -29,37 +39,37 @@ const data: CardProps[] = [
   {
     title: "Big Blue Button",
     href: "https://bigbluebutton.org/",
-    img: "/digital-commons/big-blue-button.png",
+    img: BigBlueButtonPng,
   },
   {
     title: "Collabora",
     href: "https://www.collaboraoffice.com/",
-    img: "/digital-commons/collabora.png",
+    img: CollaboraPng,
   },
   {
     title: "Only Office",
     href: "https://www.onlyoffice.com/fr/",
-    img: "/digital-commons/only-office.png",
+    img: OnlyOfficePng,
   },
   {
     title: "OpenXChange",
     href: "https://www.open-xchange.com/",
-    img: "/digital-commons/ox.png",
+    img: OpenXChangePng,
   },
   {
     title: "Grist",
     href: "https://www.getgrist.com/",
-    img: "/digital-commons/grist.png",
+    img: GristPng,
   },
   {
     title: "Jitsi",
     href: "https://jitsimeet.fr/",
-    img: "/digital-commons/jitsi.png",
+    img: JitsiPng,
   },
   {
     title: "Matrix",
     href: "https://matrix.org/",
-    img: "/digital-commons/matrix.png",
+    img: MatrixPng,
   },
 ];
 
@@ -76,14 +86,14 @@ export const DigitalCommons = () => (
         </span>
       </h2>
       <Image
-        src="/logos-applications.svg"
+        src={MarianneApplicationsSvg}
         height={400}
         width={1300}
         className="md:mt-5 hidden sm:flex"
         alt=""
       />
       <Image
-        src="/logos-applications-mobile.svg"
+        src={MarianneApplicationsMobileSvg}
         height={400}
         width={390}
         alt=""

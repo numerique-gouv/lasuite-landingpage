@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { ContentSection } from "@/components/ContentSection";
 
+import SuiteTerritoriale from "@/assets/logo/suite-territoriale.svg";
+import AnctSvg from "@/assets/logo/anct.svg";
+import AnssiSvg from "@/assets/logo/anssi.svg";
+import France20230Svg from "@/assets/logo/france-2030.svg";
+
 export const Anct = () => (
   <ContentSection className="bg-dinum-white-0">
     <h2 className="text-3xl md:text-4xl font-bold flex flex-row items-center gap-6">
       <Image
-        src="/anct/suite-territoriale.svg"
+        src={SuiteTerritoriale}
         height={132}
         width={250}
         alt="La Suite Territoriale"
@@ -48,19 +53,19 @@ export const Anct = () => (
     <div className="flex flex-col gap-8 items-center md:flex-row mb-10">
       <h3 className="sr-only">Acteurs de La Suite Territoriale</h3>
       <Image
-        src="/anct/anct.svg"
+        src={AnctSvg}
         height={60}
         width={136}
         alt="Agence nationale de la cohésion des territoires"
       />
       <Image
-        src="/anct/anssi.svg"
+        src={AnssiSvg}
         height={60}
         width={60}
         alt="Agence nationale de la sécurité des systèmes d'information"
       />
       <Image
-        src="/anct/france-2030.svg"
+        src={France20230Svg}
         height={60}
         width={60}
         alt="France 2030"

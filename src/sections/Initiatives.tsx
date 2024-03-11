@@ -5,18 +5,9 @@ import {Br, Button} from "@/components";
 import {CommonProps} from "@/types";
 import {twMerge} from "tailwind-merge";
 
-import IllustrationIdea from "../../public/call-for-projects/illustration.webp";
+import IllustrationIdea from "@/assets/idea.webp";
+import StripeWhiteSvg from "@/assets/stripe-white.svg";
 
-
-const WhiteUnion: React.FC<Omit<CommonProps, "children">> = ({ className }) => (
-  <Image
-    className={twMerge("absolute", className)}
-    src="/call-for-projects/white-union.svg"
-    width={30}
-    height={30}
-    alt=""
-  />
-);
 
 const WhiteSquare: React.FC<Omit<CommonProps, "children">> = ({ className}) => (
   <span
@@ -34,7 +25,13 @@ const DecorationOdd = () => (
     <WhiteSquare className="bottom-[28px] left-0" />
     <WhiteSquare className="bottom-0 left-[28px]" />
     <WhiteSquare className="bottom-0 left-[56px]" />
-    <WhiteUnion className="bottom-[20px] right-[20px]" />
+    <Image
+      className="absolute bottom-[20px] right-[20px]"
+      src={StripeWhiteSvg}
+      width={30}
+      height={30}
+      alt=""
+    />
   </>
 );
 
@@ -42,7 +39,13 @@ const DecorationEven = () => (
   <>
     <WhiteSquare className="bottom-0 right-0" />
     <WhiteSquare className="bottom-[28px] right-[28px]" />
-    <WhiteUnion className="top-[20px] left-[20px] rotate-180" />
+    <Image
+      className="absolute top-[20px] left-[20px] rotate-180"
+      src={StripeWhiteSvg}
+      width={30}
+      height={30}
+      alt=""
+    />
   </>
 );
 
