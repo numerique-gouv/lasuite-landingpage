@@ -1,4 +1,4 @@
-import { Br } from "@/components/Core";
+import { Br } from "@/components";
 
 export interface CardProps {
   title: string;

@@ -1,8 +1,8 @@
 import React from "react";
 
 import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from "@/constant";
-import { ExternalLink } from "@/components/Core";
-import { ContentPage } from "@/components/Layout";
+import { ExternalLink } from "@/components";
+import { ContentPage } from "@/components";
 
 export default function Accessibilite() {
   return (

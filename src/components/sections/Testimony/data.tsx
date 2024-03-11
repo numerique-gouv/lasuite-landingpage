@@ -1,4 +1,4 @@
-import { Br } from "@/components/Core";
+import { Br } from "@/components";
 import { CardProps } from "./Card";
 
 export const data: CardProps[] = [

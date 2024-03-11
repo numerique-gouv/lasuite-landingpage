@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink, LinkProps } from "@/components/Core";
+import { ExternalLink, LinkProps } from "@/components";
 
 export interface CardProps {
   title: string;

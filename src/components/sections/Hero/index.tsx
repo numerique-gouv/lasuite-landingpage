@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Callout } from "@/components/Callout";
-import { Br } from "@/components/Core";
+import { Br } from "@/components";
 import { URL_SITE } from "@/constant";
 
 import heroImage from "../../../../public/hero/visuel-home.webp";

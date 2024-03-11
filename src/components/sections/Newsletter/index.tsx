@@ -1,4 +1,4 @@
-import { ButtonExternalLink } from "@/components/Core";
+import { ButtonExternalLink } from "@/components";
 import { NEWSLETTER_FORM } from "@/constant";
 
 export const Section = () => (
