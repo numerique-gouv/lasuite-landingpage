@@ -56,6 +56,8 @@ const config: Config = {
     colors: {
       ...figmaColors,
       white: '#FFFFFF',
+      body: figmaColors['grey-1'],
+      title: figmaColors['black-1'],
       dsfr: {
         'blue-1': '#f5f5fe',
         'blue-2': '#1212ff',

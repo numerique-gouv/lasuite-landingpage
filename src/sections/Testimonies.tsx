@@ -33,16 +33,14 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
       <Image src={AccountSvg} height={60} width={60} alt="" />
       <p className="font-bold text-grey-2">{title}</p>
     </div>
-    <blockquote className="text-grey-1 leading-6 text-pretty">
-      {quote}
-    </blockquote>
+    <blockquote className="text-body leading-6 text-pretty">{quote}</blockquote>
   </div>
 )
 
 const data: CardProps[] = [
   {
     quote: (
-      <p className="text-grey-1">
+      <p>
         Je suis proviseur adjoint d’une cité scolaire.{' '}
         <strong>
           Tchap est une application respectueuse des données personnelles.
@@ -63,21 +61,25 @@ const data: CardProps[] = [
   },
   {
     quote: (
-      <p className="text-grey-1">
-        Je fais de l’animation de projets inter-collectivités donc j&apos;ai
-        beaucoup de liens avec des partenaires de l’Etat.{' '}
-        <strong>
-          J’utilise Tchap parce que j&apos;étais intéressé par l’open source.
-        </strong>
-        <Br />
-        <Br />
-        Mon prédécesseur avait fait une expérimentation avec quelques
-        collectivités mais nous{' '}
-        <strong>
-          on veut l&apos;utiliser tous les jours, pour l&apos;animation au
-          quotidien des nos communautés.
-        </strong>
-      </p>
+      <>
+        <p>
+          Je fais de l’animation de projets inter-collectivités donc j&apos;ai
+          beaucoup de liens avec des partenaires de l’Etat.{' '}
+          <strong>
+            J’utilise Tchap parce que j&apos;étais intéressé par l’open source.
+          </strong>
+          <Br />
+        </p>
+        <p>
+          <Br />
+          Mon prédécesseur avait fait une expérimentation avec quelques
+          collectivités mais nous{' '}
+          <strong>
+            on veut l&apos;utiliser tous les jours, pour l&apos;animation au
+            quotidien des nos communautés.
+          </strong>
+        </p>
+      </>
     ),
     title: 'Agent de la collectivité territoriale',
     img: AnctSvg,
@@ -86,7 +88,7 @@ const data: CardProps[] = [
   },
   {
     quote: (
-      <p className="text-grey-1">
+      <p>
         Avec la dernière mise à jour de Tchap, on a les{' '}
         <strong>mêmes fonctionnalités qu’avec WhatsApp,</strong> mais en{' '}
         <strong>plus confidentiel.</strong> Bravo !
@@ -100,11 +102,11 @@ const data: CardProps[] = [
 ]
 
 export const Testimonies = () => (
-  <ContentSection className="bg-white-1 text-left sm:text-center">
+  <ContentSection className="bg-white-1 text-body text-left sm:text-center">
     <h2 className="text-3xl md:text-4xl font-bold max-w-[30rem] text-center px-4 ">
       Ils utilisent déjà des applications de La&nbsp;Suite…
     </h2>
-    <p className="text-lg text-grey-1 max-w-[38rem]">
+    <p className="text-lg max-w-[38rem]">
       La Suite est un projet en construction, certaines de ses applications sont
       encore en phase de test, mais{' '}
       <strong>

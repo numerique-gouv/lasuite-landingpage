@@ -8,7 +8,7 @@ export const Newsletter = () => (
         <h2 className="text-[1.375rem] leading-7 font-bold mb-3">
           Recevoir la newsletter de La Suite
         </h2>
-        <p className="text-[.875rem] leading-6 mb-6">
+        <p className="text-[.875rem] text-grey-5 leading-6 mb-6">
           Restez informés des prochaines avancées de La Suite en recevant la
           newsletter !
         </p>

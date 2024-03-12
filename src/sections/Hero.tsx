@@ -20,7 +20,7 @@ export const Hero = () => (
           priority
         />
       </h1>
-      <p className="text-lg text-grey-1 max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
+      <p className="text-lg text-body max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
         <strong>
           La Suite numérique vise à fédèrer tous les agents et professionnels de
           la sphère publique{' '}
