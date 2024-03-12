@@ -13,10 +13,7 @@ const WhiteSquare: React.FC<Omit<CommonProps, 'children'>> = ({
   className,
 }) => (
   <span
-    className={twMerge(
-      'h-[28px] w-[28px] bg-dinum-white-0 absolute z-10',
-      className
-    )}
+    className={twMerge('h-[28px] w-[28px] bg-white-0 absolute z-10', className)}
   />
 )
 
@@ -60,7 +57,7 @@ interface CardProps {
 const Card = ({ title, body, index }: CardProps) => (
   <div
     tabIndex={0}
-    className="bg-dinum-blue-1 text-dinum-white-0 text-left px-6 py-14 sm:p-14 relative focus-visible:m-2 md:basis-1/2"
+    className="bg-blue-1 text-white-0 text-left px-6 py-14 sm:p-14 relative focus-visible:m-2 md:basis-1/2"
   >
     <h3 className="text-3xl font-extrabold mb-7">
       Qu’est ce qu’un <Br /> {title}&nbsp;?
@@ -83,7 +80,7 @@ const data: Omit<CardProps, 'index'>[] = [
 
 export const Initiatives = () => (
   <>
-    <ContentSection className="bg-dinum-white-1 text-left sm:text-center">
+    <ContentSection className="bg-white-1 text-left sm:text-center">
       <h2 className="text-3xl md:text-4xl font-bold max-w-[34rem] text-center">
         Contribuer à La&nbsp;Suite numérique, c’est possible&nbsp;!
       </h2>
@@ -94,7 +91,7 @@ export const Initiatives = () => (
         alt=""
         placeholder="blur"
       />
-      <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
+      <p className="text-lg text-grey-1 max-w-[38rem] text-pretty">
         Vous êtes une entité publique ou privée et vous portez une solution
         collaborative structurée sous forme de commun numérique ou de logiciel
         libre ? Vous pouvez intégrer La Suite numérique{' '}
@@ -102,7 +99,7 @@ export const Initiatives = () => (
           pour être utile à des milliers d&apos;agents publics en France&nbsp;!
         </strong>
       </p>
-      <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
+      <p className="text-lg text-grey-1 max-w-[38rem] text-pretty">
         Obtenez un <strong>financement</strong> et un{' '}
         <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
         du fonds communs numériques pour La Suite collaborative.
@@ -117,7 +114,7 @@ export const Initiatives = () => (
       </p>
     </ContentSection>
     <ContentSection
-      className="bg-dinum-white-0 pt-0 sm:pt-[50px]"
+      className="bg-white-0 pt-0 sm:pt-[50px]"
       classNameChildren="px-0 sm:px-4"
     >
       <div className="hidden md:flex flex-row gap-10">

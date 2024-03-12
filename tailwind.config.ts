@@ -41,28 +41,26 @@ const config: Config = {
       xl: '80em', // 1280px
       '2xl': '96em', // 1536px
     },
+    colors: {
+      'white-0': '#FFFFFF',
+      'white-1': '#F8F8F8',
+      'grey-0': '#D9D9D9',
+      'grey-1': '#7F7E7E',
+      'grey-2': '#161616',
+      'grey-3': '#666666',
+      'grey-4': '#DDDDDD',
+      'grey-5': '#3A3A3A',
+      'blue-1': '#000091',
+      'black-1': '#161616',
+      dsfr: {
+        'blue-1': '#f5f5fe',
+        'blue-2': '#1212ff',
+        'blue-3': '#f3f6fe',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-marianne)', ...defaultTheme.fontFamily.sans],
-      },
-      colors: {
-        dinum: {
-          'white-0': '#FFFFFF',
-          'white-1': '#F8F8F8',
-          'grey-0': '#D9D9D9',
-          'grey-1': '#7F7E7E',
-          'grey-2': '#161616',
-          'grey-3': '#666666',
-          'grey-4': '#DDDDDD',
-          'grey-5': '#3A3A3A',
-          'blue-1': '#000091',
-          'black-1': '#161616',
-        },
-        dsfr: {
-          'blue-1': '#f5f5fe',
-          'blue-2': '#1212ff',
-          'blue-3': '#f3f6fe',
-        },
       },
     },
   },

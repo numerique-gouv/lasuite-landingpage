@@ -20,11 +20,11 @@ const pages: LinkProps[] = [
 ]
 
 export const Footer = () => (
-  <footer className="pt-8 border-t-2 border-dinum-blue-1 pb-40">
+  <footer className="pt-8 border-t-2 border-blue-1 pb-40">
     <div className="fr-container">
       <div className="flex flex-wrap justify-between mb-6">
         <Link
-          className="w-fit md:flex items-center gap-10 hover:bg-dinum-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] "
+          className="w-fit md:flex items-center gap-10 hover:bg-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] "
           href="/"
           aria-label="Retour à l'accueil"
         >
@@ -35,7 +35,7 @@ export const Footer = () => (
           </p>
         </Link>
         <div className="basis-full md:basis-2/3 max-w-2xl">
-          <p className="text-sm leading-6 text-dinum-grey-5">
+          <p className="text-sm leading-6 text-grey-5">
             Ce site est géré par La Suite Numérique de la direction
             interministérielle du numérique (DINUM) en charge de la
             transformation numérique de l’État.
@@ -44,10 +44,10 @@ export const Footer = () => (
             {externalLinks.map((link) => (
               <li
                 key={link.href}
-                className={twMerge('mr-6 my-2 decoration-dinum-grey-5', hover)}
+                className={twMerge('mr-6 my-2 decoration-grey-5', hover)}
               >
                 <ExternalLink
-                  className="font-bold text-sm text-dinum-grey-5 external-link-grey"
+                  className="font-bold text-sm text-grey-5 external-link-grey"
                   {...link}
                 >
                   {link.children}
@@ -57,18 +57,15 @@ export const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="mt-4 border-t border-dinum-grey-0 flex flex-row flex-wrap">
+      <div className="mt-4 border-t border-grey-0 flex flex-row flex-wrap">
         <div className="mt-2 mb-4 sm:mb-0 w-[75%] m-w-[75%]">
           <ul className="block justify-start flex-wrap">
             {pages.map((link) => (
               <li
                 key={link.href}
-                className="inline internal-link-footer text-xs text-dinum-grey-3"
+                className="inline internal-link-footer text-xs text-grey-3"
               >
-                <Link
-                  {...link}
-                  className={twMerge('border-dinum-grey-1', hover)}
-                >
+                <Link {...link} className={twMerge('border-grey-1', hover)}>
                   {link.children}
                 </Link>
               </li>
@@ -76,7 +73,7 @@ export const Footer = () => (
           </ul>
         </div>
         <div className="mt-2">
-          <p className="inline text-xs text-dinum-grey-3 leading-5">
+          <p className="inline text-xs text-grey-3 leading-5">
             Sauf mention contraire, tous les contenus de ce site sont sous{' '}
             <ExternalLink
               href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
