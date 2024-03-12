@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { SwiperWrapper } from "@/components/Swiper";
+import { SwiperWrapper } from "@/components/SwiperWrapper";
 import { ContentSection } from "@/components/ContentSection";
-import { Br } from "@/components/BreakLine";
+import { Br } from "@/components/Br";
 
 import ProConnectSvg from "@/assets/pro-connect.svg"
 import ProConnectButtonSvg from "@/assets/pro-connect-button.svg"

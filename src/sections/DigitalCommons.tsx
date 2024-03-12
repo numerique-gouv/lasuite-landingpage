@@ -1,5 +1,5 @@
 import { ContentSection } from "@/components/ContentSection";
-import { SwiperWrapper as Swiper } from "@/components/Swiper";
+import { SwiperWrapper } from "@/components/SwiperWrapper";
 import Image, {StaticImageData} from "next/image";
 import {ExternalLink} from "@/components/ExternalLink";
 
@@ -115,7 +115,7 @@ export const DigitalCommons = () => (
         ))}
       </ul>
       <div className="w-full md:hidden">
-        <Swiper
+        <SwiperWrapper
           slides={data.map((digitalCommon) => (
             <Card key={digitalCommon.title} {...digitalCommon} />
           ))}

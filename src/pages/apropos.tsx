@@ -1,11 +1,11 @@
 import React from "react";
 
-import { ContentPage } from "@/components/ContentPage";
+import { PageLayout } from "@/components/PageLayout";
 import { ADDRESS_DINUM, CONTACT_EMAIL } from "@/constant";
 
 export default function Apropos() {
   return (
-    <ContentPage title="À propos">
+    <PageLayout title="À propos">
       <h2>Éditeur</h2>
       <p>
         Équipe La Suite Numérique de la Direction interministérielle du
@@ -30,6 +30,6 @@ export default function Apropos() {
         </a>
         .
       </p>
-    </ContentPage>
+    </PageLayout>
   );
 }

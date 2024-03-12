@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { SwiperWrapper } from "@/components/Swiper";
+import { SwiperWrapper } from "@/components/SwiperWrapper";
 import { ContentSection } from "@/components/ContentSection";
-import {Br} from "@/components/BreakLine";
+import {Br} from "@/components/Br";
 import {Button} from "@/components/Button";
 import {CommonProps} from "@/types";
 import {twMerge} from "tailwind-merge";
