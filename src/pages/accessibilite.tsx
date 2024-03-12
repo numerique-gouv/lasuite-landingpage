@@ -2,11 +2,11 @@ import React from "react";
 
 import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from "@/constant";
 import { ExternalLink } from "@/components/ExternalLink";
-import { ContentPage } from "@/components/ContentPage";
+import { PageLayout } from "@/components/PageLayout";
 
 export default function Accessibilite() {
   return (
-    <ContentPage title="Accessibilité">
+    <PageLayout title="Accessibilité">
       <p>
         <strong>La Suite numérique</strong> s’engage à rendre ses services
         numériques accessibles, conformément à l’article 47 de la loi n°
@@ -76,6 +76,6 @@ export default function Accessibilite() {
           Défenseur des droits Libre réponse 71120 75342 Paris CEDEX 07
         </li>
       </ul>
-    </ContentPage>
+    </PageLayout>
   );
 }

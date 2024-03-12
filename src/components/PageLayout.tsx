@@ -1,6 +1,6 @@
 import { Layout } from "@/components/Layout";
 
-export const ContentPage: React.FC<{
+export const PageLayout: React.FC<{
   /**
    * Text to use as page title and visible heading in the page header.
    */

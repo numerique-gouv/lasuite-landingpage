@@ -1,7 +1,7 @@
-import { SwiperWrapper } from "@/components/Swiper";
+import { SwiperWrapper } from "@/components/SwiperWrapper";
 import { ContentSection } from "@/components/ContentSection";
 
-import { Br } from "@/components/BreakLine";
+import { Br } from "@/components/Br";
 
 import Image, {StaticImageData} from "next/image";
 import { ReactElement } from "react";

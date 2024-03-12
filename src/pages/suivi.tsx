@@ -1,11 +1,11 @@
-import { ContentPage } from "@/components/ContentPage";
+import { PageLayout } from "@/components/PageLayout";
 import { ExternalLink } from "@/components/ExternalLink";
 import React from "react";
 import { URL_SITE } from "@/constant";
 
 export default function Suivi() {
   return (
-    <ContentPage title="Suivi d’audience et vie privée">
+    <PageLayout title="Suivi d’audience et vie privée">
       <h2>Cookies déposés</h2>
       <p>
         Ce site dépose un petit fichier texte (un « cookie ») sur votre
@@ -77,6 +77,6 @@ export default function Suivi() {
         </ExternalLink>{" "}
         .
       </p>
-    </ContentPage>
+    </PageLayout>
   );
 }

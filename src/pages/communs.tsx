@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ButtonExternalLink } from "@/components/ExternalLink";
-import { Br } from "@/components/BreakLine";
+import { Br } from "@/components/Br";
 import { Layout } from "@/components/Layout";
 
 import LogoSvg from "@/assets/logo/suite-numerique.svg"
