@@ -1,20 +1,20 @@
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
-import { CommonProps } from "@/types";
+import Link from 'next/link'
+import { twMerge } from 'tailwind-merge'
+import { CommonProps } from '@/types'
 
 interface ButtonProps extends CommonProps {
-  href?: string;
-  "aria-label"?: string;
+  href?: string
+  'aria-label'?: string
 }
 
 export const ButtonStyle =
-  "flex justify-center align-middle items-center min-h-10 text-base font-medium text-dinum-white-0 px-6 sm:w-auto bg-dinum-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center";
+  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-dinum-white-0 px-6 sm:w-auto bg-dinum-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
   className,
-  "aria-label": ariaLabel,
+  'aria-label': ariaLabel,
 }) => (
   <>
     {href ? (
@@ -29,4 +29,4 @@ export const Button: React.FC<ButtonProps> = ({
       <button className={twMerge(ButtonStyle, className)}>{children}</button>
     )}
   </>
-);
+)

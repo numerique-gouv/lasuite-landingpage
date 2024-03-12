@@ -1,33 +1,33 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     fontSize: {
-      xs: ["0.75rem", "1rem"],
-      sm: ["0.8rem", "1.25rem"],
-      base: ["1rem", "1.5rem"],
-      lg: ["1.125rem", "1.75rem"],
-      xl: ["1.25rem", "1.75rem"],
-      "2xl": ["1.563rem", "2rem"],
-      "3xl": ["1.953rem", "2.25rem"],
-      "4xl": ["2rem", "2.5rem"],
+      xs: ['0.75rem', '1rem'],
+      sm: ['0.8rem', '1.25rem'],
+      base: ['1rem', '1.5rem'],
+      lg: ['1.125rem', '1.75rem'],
+      xl: ['1.25rem', '1.75rem'],
+      '2xl': ['1.563rem', '2rem'],
+      '3xl': ['1.953rem', '2.25rem'],
+      '4xl': ['2rem', '2.5rem'],
     },
     /*
      * we don't want to use thin font-weights as they are not very readable depending on the device
      * and we don't have a "black" variant of Marianne so prevent using it
      */
     fontWeight: {
-      normal: "400",
-      medium: "500",
-      bold: "700",
-      extrabold: "800",
+      normal: '400',
+      medium: '500',
+      bold: '700',
+      extrabold: '800',
     },
     /*
      * we convert px media queries to em so that text-only zooms trigger
@@ -35,37 +35,37 @@ const config: Config = {
      * up to 200% text zoom (RGAA criteria) and this is the easiest way to achieve that.
      */
     screens: {
-      sm: "40em", // 640px
-      md: "48em", // 768px
-      lg: "64em", // 1024px
-      xl: "80em", // 1280px
-      "2xl": "96em", // 1536px
+      sm: '40em', // 640px
+      md: '48em', // 768px
+      lg: '64em', // 1024px
+      xl: '80em', // 1280px
+      '2xl': '96em', // 1536px
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-marianne)", ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-marianne)', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         dinum: {
-          "white-0": "#FFFFFF",
-          "white-1": "#F8F8F8",
-          "grey-0": "#D9D9D9",
-          "grey-1": "#7F7E7E",
-          "grey-2": "#161616",
-          "grey-3": "#666666",
-          "grey-4": "#DDDDDD",
-          "grey-5": "#3A3A3A",
-          "blue-1": "#000091",
-          "black-1": "#161616",
+          'white-0': '#FFFFFF',
+          'white-1': '#F8F8F8',
+          'grey-0': '#D9D9D9',
+          'grey-1': '#7F7E7E',
+          'grey-2': '#161616',
+          'grey-3': '#666666',
+          'grey-4': '#DDDDDD',
+          'grey-5': '#3A3A3A',
+          'blue-1': '#000091',
+          'black-1': '#161616',
         },
         dsfr: {
-          "blue-1": "#f5f5fe",
-          "blue-2": "#1212ff",
-          "blue-3": "#f3f6fe",
+          'blue-1': '#f5f5fe',
+          'blue-2': '#1212ff',
+          'blue-3': '#f3f6fe',
         },
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config

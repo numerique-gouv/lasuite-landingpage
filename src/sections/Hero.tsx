@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { Callout } from "@/components/Callout";
-import { Br } from "@/components/Br";
-import { URL_SITE } from "@/constant";
+import Image from 'next/image'
+import { Callout } from '@/components/Callout'
+import { Br } from '@/components/Br'
+import { URL_SITE } from '@/constant'
 
-import heroImage from "@/assets/hero-desktop.webp";
-import heroImageMobile from "@/assets/hero-mobile.webp";
-import LogoSvg from "@/assets/logo/suite-numerique.svg"
+import heroImage from '@/assets/hero-desktop.webp'
+import heroImageMobile from '@/assets/hero-mobile.webp'
+import LogoSvg from '@/assets/logo/suite-numerique.svg'
 
 export const Hero = () => (
   <div className="hero relative overflow-hidden bg-dinum-white-0 ">
@@ -23,8 +23,8 @@ export const Hero = () => (
       <p className="text-lg text-dinum-grey-1 max-w-[44rem] text-left sm:text-center pb-8 md:pb-0">
         <strong>
           La Suite numérique vise à fédèrer tous les agents et professionnels de
-          la sphère publique{" "}
-        </strong>{" "}
+          la sphère publique{' '}
+        </strong>{' '}
         autour d’applications disponibles à la carte et interconnectées, pour
         une gestion fluide et efficace du travail quotidien.
       </p>
@@ -50,4 +50,4 @@ export const Hero = () => (
       </Callout>
     </div>
   </div>
-);
+)

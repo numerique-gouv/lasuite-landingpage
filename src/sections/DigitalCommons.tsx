@@ -1,22 +1,22 @@
-import { ContentSection } from "@/components/ContentSection";
-import { SwiperWrapper } from "@/components/SwiperWrapper";
-import Image, {StaticImageData} from "next/image";
-import {ExternalLink} from "@/components/ExternalLink";
+import { ContentSection } from '@/components/ContentSection'
+import { SwiperWrapper } from '@/components/SwiperWrapper'
+import Image, { StaticImageData } from 'next/image'
+import { ExternalLink } from '@/components/ExternalLink'
 
-import BigBlueButtonPng from "@/assets/logo/commons/big-blue-button.png"
-import CollaboraPng from "@/assets/logo/commons/collabora.png"
-import OnlyOfficePng from "@/assets/logo/commons/only-office.png"
-import OpenXChangePng from "@/assets/logo/commons/ox.png"
-import GristPng from "@/assets/logo/commons/grist.png"
-import JitsiPng from "@/assets/logo/commons/jitsi.png"
-import MatrixPng from "@/assets/logo/commons/matrix.png"
-import MarianneApplicationsSvg from "@/assets/marianne-applications.svg"
-import MarianneApplicationsMobileSvg from "@/assets/marianne-applications-mobile.svg"
+import BigBlueButtonPng from '@/assets/logo/commons/big-blue-button.png'
+import CollaboraPng from '@/assets/logo/commons/collabora.png'
+import OnlyOfficePng from '@/assets/logo/commons/only-office.png'
+import OpenXChangePng from '@/assets/logo/commons/ox.png'
+import GristPng from '@/assets/logo/commons/grist.png'
+import JitsiPng from '@/assets/logo/commons/jitsi.png'
+import MatrixPng from '@/assets/logo/commons/matrix.png'
+import MarianneApplicationsSvg from '@/assets/marianne-applications.svg'
+import MarianneApplicationsMobileSvg from '@/assets/marianne-applications-mobile.svg'
 
 interface CardProps {
-  title: string;
-  href: string;
-  img: StaticImageData;
+  title: string
+  href: string
+  img: StaticImageData
 }
 
 const Card: React.FC<CardProps> = ({ img, title, href }) => (
@@ -33,45 +33,45 @@ const Card: React.FC<CardProps> = ({ img, title, href }) => (
       </ExternalLink>
     </div>
   </div>
-);
+)
 
 const data: CardProps[] = [
   {
-    title: "Big Blue Button",
-    href: "https://bigbluebutton.org/",
+    title: 'Big Blue Button',
+    href: 'https://bigbluebutton.org/',
     img: BigBlueButtonPng,
   },
   {
-    title: "Collabora",
-    href: "https://www.collaboraoffice.com/",
+    title: 'Collabora',
+    href: 'https://www.collaboraoffice.com/',
     img: CollaboraPng,
   },
   {
-    title: "Only Office",
-    href: "https://www.onlyoffice.com/fr/",
+    title: 'Only Office',
+    href: 'https://www.onlyoffice.com/fr/',
     img: OnlyOfficePng,
   },
   {
-    title: "OpenXChange",
-    href: "https://www.open-xchange.com/",
+    title: 'OpenXChange',
+    href: 'https://www.open-xchange.com/',
     img: OpenXChangePng,
   },
   {
-    title: "Grist",
-    href: "https://www.getgrist.com/",
+    title: 'Grist',
+    href: 'https://www.getgrist.com/',
     img: GristPng,
   },
   {
-    title: "Jitsi",
-    href: "https://jitsimeet.fr/",
+    title: 'Jitsi',
+    href: 'https://jitsimeet.fr/',
     img: JitsiPng,
   },
   {
-    title: "Matrix",
-    href: "https://matrix.org/",
+    title: 'Matrix',
+    href: 'https://matrix.org/',
     img: MatrixPng,
   },
-];
+]
 
 export const DigitalCommons = () => (
   <>
@@ -126,11 +126,11 @@ export const DigitalCommons = () => (
       {/*</Callout>*/}
       <p className="text-lg text-dinum-grey-1 max-w-[38em] text-left sm:text-center">
         Les applications de La Suite numérique respectent un cahier des charges
-        vertueux :{" "}
+        vertueux :{' '}
         <strong>
           être des logiciels libres et respecter une charte graphique commune.
         </strong>
       </p>
     </ContentSection>
   </>
-);
+)

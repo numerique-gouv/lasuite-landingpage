@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { ButtonExternalLink } from "@/components/ExternalLink";
-import { Br } from "@/components/Br";
-import { Layout } from "@/components/Layout";
+import Image from 'next/image'
+import { ButtonExternalLink } from '@/components/ExternalLink'
+import { Br } from '@/components/Br'
+import { Layout } from '@/components/Layout'
 
-import LogoSvg from "@/assets/logo/suite-numerique.svg"
-import InitiativesPlaning from "@/assets/initiatives-planing.svg"
-import InitiativesFinance from "@/assets/initiatives-finance.svg"
+import LogoSvg from '@/assets/logo/suite-numerique.svg'
+import InitiativesPlaning from '@/assets/initiatives-planing.svg'
+import InitiativesFinance from '@/assets/initiatives-finance.svg'
 
 export default function Communs() {
   return (
@@ -39,24 +39,24 @@ export default function Communs() {
               consolider les écosystèmes autour des produits et briques
               techniques que nous utilisons. Vous êtes une entité publique ou
               privée et vous portez une solution collaborative structurée sous
-              forme de commun numérique&nbsp;? <Br className="inline" />{" "}
+              forme de commun numérique&nbsp;? <Br className="inline" />{' '}
               <b className="text-dinum-grey-2">
                 Obtenez un financement et un accompagnement pour travailler avec
                 nous, dans le cadre du Fonds Communs Numériques pour La Suite
                 numérique.
-              </b>{" "}
+              </b>{' '}
               Le fonds a vocation à soutenir des projets visant le développement
               de nouvelles fonctionnalités autant que des projets visant à
               favoriser la pérennité et à l’évolutivité des produits (ex :
               re-factorisation)
             </p>
             <h2 className="text-xl font-bold mb-[1.75rem]">
-              {" "}
+              {' '}
               De quoi bénéficient les projets sélectionnés&nbsp;?
             </h2>
             <ul className="text-lg text-dinum-grey-1 list-disc pl-10">
               <li>
-                Un ticket de financement allant jusqu&apos;à{" "}
+                Un ticket de financement allant jusqu&apos;à{' '}
                 <strong>40.000 euros renouvelable.</strong>
               </li>
               <li>
@@ -127,5 +127,5 @@ export default function Communs() {
         </ButtonExternalLink>
       </div>
     </Layout>
-  );
+  )
 }

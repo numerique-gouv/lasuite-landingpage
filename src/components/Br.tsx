@@ -1,6 +1,6 @@
-import { twMerge } from "tailwind-merge";
-import React from "react";
-import { CommonProps } from "@/types";
+import { twMerge } from 'tailwind-merge'
+import React from 'react'
+import { CommonProps } from '@/types'
 
 /**
  * Line Break Component
@@ -13,6 +13,6 @@ import { CommonProps } from "@/types";
  * should be ignored by screen readers.
  *
  */
-export const Br: React.FC<Omit<CommonProps, "children">> = ({ className }) => (
-  <br className={twMerge("hidden sm:inline", className)} aria-hidden={true} />
-);
+export const Br: React.FC<Omit<CommonProps, 'children'>> = ({ className }) => (
+  <br className={twMerge('hidden sm:inline', className)} aria-hidden={true} />
+)

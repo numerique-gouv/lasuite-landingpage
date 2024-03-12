@@ -1,11 +1,11 @@
-import { Layout } from "@/components/Layout";
+import { Layout } from '@/components/Layout'
 
 export const PageLayout: React.FC<{
   /**
    * Text to use as page title and visible heading in the page header.
    */
-  title: string;
-  children: React.ReactNode;
+  title: string
+  children: React.ReactNode
 }> = ({ title, children }) => {
   return (
     <Layout title={title}>
@@ -18,5 +18,5 @@ export const PageLayout: React.FC<{
         <div className="max-w-[50rem]">{children}</div>
       </div>
     </Layout>
-  );
-};
+  )
+}

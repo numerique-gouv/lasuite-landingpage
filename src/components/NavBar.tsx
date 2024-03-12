@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Br } from "@/components/Br";
+import Link from 'next/link'
+import { Br } from '@/components/Br'
 
 /**
  * NavBar Component
@@ -34,4 +34,4 @@ export const NavBar = () => (
       </div>
     </div>
   </header>
-);
+)

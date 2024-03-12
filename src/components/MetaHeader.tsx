@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { URL_SITE } from "@/constant";
+import Head from 'next/head'
+import { URL_SITE } from '@/constant'
 
 export const MetaHeader = () => (
   <Head>
@@ -15,6 +15,9 @@ export const MetaHeader = () => (
       property="og:image"
       content={`https://${URL_SITE}/thumbnail.webp`}
     />
-    <meta name="google-site-verification" content="3aBlUYDu-74uaKsSb6HXnyW_PhHwgti18SbcZGdYbl4" />
+    <meta
+      name="google-site-verification"
+      content="3aBlUYDu-74uaKsSb6HXnyW_PhHwgti18SbcZGdYbl4"
+    />
   </Head>
-);
+)

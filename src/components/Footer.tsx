@@ -1,23 +1,23 @@
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
-import { Br } from "@/components/Br";
-import { ExternalLink, LinkProps } from "@/components/ExternalLink";
+import Link from 'next/link'
+import { twMerge } from 'tailwind-merge'
+import { Br } from '@/components/Br'
+import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 
 const hover =
-  "hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer";
+  'hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer'
 
 const externalLinks: LinkProps[] = [
-  { href: "https://legifrance.gouv.fr/fr/", children: "legifrance.gouv.fr" },
-  { href: "https://gouvernement.fr/fr/", children: "gouvernement.fr" },
-  { href: "https://www.service-public.fr/", children: "service-public.fr" },
-  { href: "https://www.data.gouv.fr/fr/", children: "data.gouv.fr" },
-];
+  { href: 'https://legifrance.gouv.fr/fr/', children: 'legifrance.gouv.fr' },
+  { href: 'https://gouvernement.fr/fr/', children: 'gouvernement.fr' },
+  { href: 'https://www.service-public.fr/', children: 'service-public.fr' },
+  { href: 'https://www.data.gouv.fr/fr/', children: 'data.gouv.fr' },
+]
 
 const pages: LinkProps[] = [
-  { href: "/apropos", children: "Mentions Légales" },
-  { href: "/suivi", children: "Données personnelles et cookies" },
-  { href: "/accessibilite", children: "Accessibilité: audit en cours" },
-];
+  { href: '/apropos', children: 'Mentions Légales' },
+  { href: '/suivi', children: 'Données personnelles et cookies' },
+  { href: '/accessibilite', children: 'Accessibilité: audit en cours' },
+]
 
 export const Footer = () => (
   <footer className="pt-8 border-t-2 border-dinum-blue-1 pb-40">
@@ -44,7 +44,7 @@ export const Footer = () => (
             {externalLinks.map((link) => (
               <li
                 key={link.href}
-                className={twMerge("mr-6 my-2 decoration-dinum-grey-5", hover)}
+                className={twMerge('mr-6 my-2 decoration-dinum-grey-5', hover)}
               >
                 <ExternalLink
                   className="font-bold text-sm text-dinum-grey-5 external-link-grey"
@@ -67,7 +67,7 @@ export const Footer = () => (
               >
                 <Link
                   {...link}
-                  className={twMerge("border-dinum-grey-1", hover)}
+                  className={twMerge('border-dinum-grey-1', hover)}
                 >
                   {link.children}
                 </Link>
@@ -77,12 +77,12 @@ export const Footer = () => (
         </div>
         <div className="mt-2">
           <p className="inline text-xs text-dinum-grey-3 leading-5">
-            Sauf mention contraire, tous les contenus de ce site sont sous{" "}
+            Sauf mention contraire, tous les contenus de ce site sont sous{' '}
             <ExternalLink
               href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
               className={twMerge(
-                "relative underline underline-offset-4 external-link-grey",
-                hover,
+                'relative underline underline-offset-4 external-link-grey',
+                hover
               )}
             >
               licence etalab-2.0
@@ -92,4 +92,4 @@ export const Footer = () => (
       </div>
     </div>
   </footer>
-);
+)

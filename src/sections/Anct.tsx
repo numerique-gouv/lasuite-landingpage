@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { ContentSection } from "@/components/ContentSection";
+import Image from 'next/image'
+import { ContentSection } from '@/components/ContentSection'
 
-import SuiteTerritoriale from "@/assets/logo/suite-territoriale.svg";
-import AnctSvg from "@/assets/logo/anct.svg";
-import AnssiSvg from "@/assets/logo/anssi.svg";
-import France20230Svg from "@/assets/logo/france-2030.svg";
+import SuiteTerritoriale from '@/assets/logo/suite-territoriale.svg'
+import AnctSvg from '@/assets/logo/anct.svg'
+import AnssiSvg from '@/assets/logo/anssi.svg'
+import France20230Svg from '@/assets/logo/france-2030.svg'
 
 export const Anct = () => (
   <ContentSection className="bg-dinum-white-0">
@@ -18,10 +18,10 @@ export const Anct = () => (
     </h2>
     <div className="flex flex-col gap-4">
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
-        Afin de{" "}
+        Afin de{' '}
         <strong>
           renforcer la cybersécurité des collectivités territoriales,
-        </strong>{" "}
+        </strong>{' '}
         ANCT et ANSSI proposent de contribuer à l’ouverture de La Suite
         numérique aux élus locaux et agents publics territoriaux.
       </p>
@@ -29,14 +29,14 @@ export const Anct = () => (
         <strong>
           La Suite territoriale vise ainsi à mettre à disposition des
           collectivités un ensemble de services numériques sécurisés,
-        </strong>{" "}
+        </strong>{' '}
         notamment nom de domaine, serveur mail et espace de stockage minimal.
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[45em] text-left sm:text-center">
         <strong>
           Ces services de base seront complétés par des services opérés au
           niveau national
-        </strong>{" "}
+        </strong>{' '}
         (DINUM, ANCT, ANSSI) <strong>comme au niveau local</strong> (opérateurs
         publics de services numériques) à travers La Suite numérique :
         visioconférence, transfert de fichiers lourds, tableur collaboratif…
@@ -45,7 +45,7 @@ export const Anct = () => (
         <strong>
           L&apos;ANCT propose aux collectivités territoriales et partenaires
           locaux de participer aux développements de La Suite territoriale
-        </strong>{" "}
+        </strong>{' '}
         en rejoignant le groupe pilote ainsi que les ateliers ouverts organisés
         à partir de mars 2024.
       </p>
@@ -64,12 +64,7 @@ export const Anct = () => (
         width={60}
         alt="Agence nationale de la sécurité des systèmes d'information"
       />
-      <Image
-        src={France20230Svg}
-        height={60}
-        width={60}
-        alt="France 2030"
-      />
+      <Image src={France20230Svg} height={60} width={60} alt="France 2030" />
     </div>
   </ContentSection>
-);
+)

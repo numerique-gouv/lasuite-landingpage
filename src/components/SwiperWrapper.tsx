@@ -1,13 +1,13 @@
-import "swiper/css";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
 
-type Slide = any;
+type Slide = any
 
 interface SwiperWrapperProps {
-  slides: Array<Slide>;
-  slidesPerView?: number;
+  slides: Array<Slide>
+  slidesPerView?: number
 }
 
 export const SwiperWrapper = ({
@@ -25,5 +25,5 @@ export const SwiperWrapper = ({
         <SwiperSlide key={i}>{s}</SwiperSlide>
       ))}
     </Swiper>
-  );
-};
+  )
+}

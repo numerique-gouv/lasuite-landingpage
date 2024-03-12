@@ -1,23 +1,22 @@
-import { SwiperWrapper } from "@/components/SwiperWrapper";
-import { ContentSection } from "@/components/ContentSection";
+import { SwiperWrapper } from '@/components/SwiperWrapper'
+import { ContentSection } from '@/components/ContentSection'
 
-import { Br } from "@/components/Br";
+import { Br } from '@/components/Br'
 
-import Image, {StaticImageData} from "next/image";
-import { ReactElement } from "react";
+import Image, { StaticImageData } from 'next/image'
+import { ReactElement } from 'react'
 
-import AccountSvg from "@/assets/account.svg"
-import AnctSvg from "@/assets/logo/anct.svg"
-import InterieurSvg from "@/assets/logo/ministere-interieur.svg"
-import EducationNationaleSvg from "@/assets/logo/education-nationale.svg"
-
+import AccountSvg from '@/assets/account.svg'
+import AnctSvg from '@/assets/logo/anct.svg'
+import InterieurSvg from '@/assets/logo/ministere-interieur.svg'
+import EducationNationaleSvg from '@/assets/logo/education-nationale.svg'
 
 interface CardProps {
-  img: StaticImageData;
-  title: string;
-  key: string;
-  quote: ReactElement;
-  entity: string;
+  img: StaticImageData
+  title: string
+  key: string
+  quote: ReactElement
+  entity: string
 }
 
 const Card = ({ title, quote, img, entity }: CardProps) => (
@@ -25,8 +24,8 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
     <h3 className="h-[114px] w-[140px] relative">
       <Image
         src={img}
-        layout={"fill"}
-        objectFit={"contain"}
+        layout={'fill'}
+        objectFit={'contain'}
         alt={`Témoignage - ${entity}`}
       />
     </h3>
@@ -38,18 +37,18 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
       {quote}
     </blockquote>
   </div>
-);
+)
 
 const data: CardProps[] = [
   {
     quote: (
       <p className="text-dinum-grey-1">
-        Je suis proviseur adjoint d’une cité scolaire.{" "}
+        Je suis proviseur adjoint d’une cité scolaire.{' '}
         <strong>
           Tchap est une application respectueuse des données personnelles.
-        </strong>{" "}
+        </strong>{' '}
         Je m’en sers pour cloisonner le monde personnel et professionnel parce
-        que le monde enseignant peut devenir invasif.{" "}
+        que le monde enseignant peut devenir invasif.{' '}
         <strong>
           Je m’en sers avec le personnel de l’éducation nationale en fonction
           des missions, avec des collègues du même bassin, aussi pour des
@@ -57,48 +56,48 @@ const data: CardProps[] = [
         </strong>
       </p>
     ),
-    title: "Agent",
+    title: 'Agent',
     img: EducationNationaleSvg,
-    key: "educ-nat",
+    key: 'educ-nat',
     entity: "Ministère de l'éducation nationale et de la jeunesse",
   },
   {
     quote: (
       <p className="text-dinum-grey-1">
         Je fais de l’animation de projets inter-collectivités donc j&apos;ai
-        beaucoup de liens avec des partenaires de l’Etat.{" "}
+        beaucoup de liens avec des partenaires de l’Etat.{' '}
         <strong>
           J’utilise Tchap parce que j&apos;étais intéressé par l’open source.
         </strong>
         <Br />
         <Br />
         Mon prédécesseur avait fait une expérimentation avec quelques
-        collectivités mais nous{" "}
+        collectivités mais nous{' '}
         <strong>
           on veut l&apos;utiliser tous les jours, pour l&apos;animation au
           quotidien des nos communautés.
         </strong>
       </p>
     ),
-    title: "Agent de la collectivité territoriale",
+    title: 'Agent de la collectivité territoriale',
     img: AnctSvg,
-    key: "anct",
-    entity: "Agence nationale de la cohésion des territoires",
+    key: 'anct',
+    entity: 'Agence nationale de la cohésion des territoires',
   },
   {
     quote: (
       <p className="text-dinum-grey-1">
-        Avec la dernière mise à jour de Tchap, on a les{" "}
-        <strong>mêmes fonctionnalités qu’avec WhatsApp,</strong> mais en{" "}
+        Avec la dernière mise à jour de Tchap, on a les{' '}
+        <strong>mêmes fonctionnalités qu’avec WhatsApp,</strong> mais en{' '}
         <strong>plus confidentiel.</strong> Bravo !
       </p>
     ),
-    title: "Agent",
+    title: 'Agent',
     img: InterieurSvg,
-    key: "interieur",
+    key: 'interieur',
     entity: "Ministère de l'intérieur",
   },
-];
+]
 
 export const Testimonies = () => (
   <ContentSection className="bg-dinum-white-1 text-left sm:text-center">
@@ -107,10 +106,10 @@ export const Testimonies = () => (
     </h2>
     <p className="text-lg text-dinum-grey-1 max-w-[38rem]">
       La Suite est un projet en construction, certaines de ses applications sont
-      encore en phase de test, mais{" "}
+      encore en phase de test, mais{' '}
       <strong>
         d&apos;autres sont déjà utilisées par des milliers d&apos;agents et
-        toujours plus chaque jour !{" "}
+        toujours plus chaque jour !{' '}
       </strong>
       <Br />
       Découvrez les applications stars de La Suite :
@@ -128,4 +127,4 @@ export const Testimonies = () => (
       />
     </div>
   </ContentSection>
-);
+)
