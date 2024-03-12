@@ -8,7 +8,7 @@ import { Br } from '@/components/Br'
  * We kinda match DSFR styling here but with custom dom/classes for our specific use case.
  */
 export const NavBar = () => (
-  <header className="bg-white-0 navbar-shadow">
+  <header className="bg-white navbar-shadow">
     <div className="fr-container">
       <div className="-mx-4 lg:w-fit lg:py-2">
         <div className="sm:flex items-center fr-enlarge-link hover:bg-white-1 rounded transition ease-in-out delay-50 duration-300">

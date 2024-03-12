@@ -8,7 +8,7 @@ import heroImageMobile from '@/assets/hero-mobile.webp'
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
 
 export const Hero = () => (
-  <div className="hero relative overflow-hidden bg-white-0 ">
+  <div className="hero relative overflow-hidden bg-white ">
     <div className="flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center">
       <h1 className="w-full flex justify-center pb-11">
         <Image

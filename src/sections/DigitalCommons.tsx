@@ -75,7 +75,7 @@ const data: CardProps[] = [
 
 export const DigitalCommons = () => (
   <>
-    <ContentSection className="bg-white-0 text">
+    <ContentSection className="bg-white text">
       <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold">
         <span aria-hidden={true}>
           Des applications à la carte et inter-connectées…
@@ -100,7 +100,7 @@ export const DigitalCommons = () => (
         className="mb-[-3rem] mt-[-1.5rem] sm:hidden"
       />
     </ContentSection>
-    <ContentSection className="bg-white-0 pt-0 md:pt-0">
+    <ContentSection className="bg-white pt-0 md:pt-0">
       <div
         aria-hidden={true}
         className="text-3xl md:text-4xl max-w-[33rem] font-bold"

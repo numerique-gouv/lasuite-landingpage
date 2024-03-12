@@ -2,6 +2,18 @@ import type { Config } from 'tailwindcss'
 
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+const figmaColors = {
+  'white-1': '#F8F8F8',
+  'grey-0': '#D9D9D9',
+  'grey-1': '#7F7E7E',
+  'grey-2': '#161616',
+  'grey-3': '#666666',
+  'grey-4': '#DDDDDD',
+  'grey-5': '#3A3A3A',
+  'blue-1': '#000091',
+  'black-1': '#161616',
+}
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -42,16 +54,8 @@ const config: Config = {
       '2xl': '96em', // 1536px
     },
     colors: {
-      'white-0': '#FFFFFF',
-      'white-1': '#F8F8F8',
-      'grey-0': '#D9D9D9',
-      'grey-1': '#7F7E7E',
-      'grey-2': '#161616',
-      'grey-3': '#666666',
-      'grey-4': '#DDDDDD',
-      'grey-5': '#3A3A3A',
-      'blue-1': '#000091',
-      'black-1': '#161616',
+      ...figmaColors,
+      white: '#FFFFFF',
       dsfr: {
         'blue-1': '#f5f5fe',
         'blue-2': '#1212ff',
