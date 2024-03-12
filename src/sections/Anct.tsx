@@ -16,7 +16,7 @@ export const Anct = () => (
         alt="La Suite Territoriale"
       />
     </h2>
-    <div className="flex flex-col gap-4 text-lg max-w-[45em] text-left sm:text-center">
+    <div className="flex flex-col gap-4 text-lg max-w-[45em] text-left">
       <p>
         Afin de{' '}
         <strong>
