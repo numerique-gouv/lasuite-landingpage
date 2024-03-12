@@ -7,7 +7,7 @@ const figmaColors = {
   'grey-0': '#D9D9D9',
   'grey-1': '#7F7E7E',
   'grey-2': '#161616',
-  'grey-3': '#666666',
+  'grey-3': '#4D4D4D',
   'grey-4': '#DDDDDD',
   'grey-5': '#3A3A3A',
   'blue-1': '#000091',
@@ -56,7 +56,7 @@ const config: Config = {
     colors: {
       ...figmaColors,
       white: '#FFFFFF',
-      body: figmaColors['grey-1'],
+      body: figmaColors['grey-3'],
       title: figmaColors['black-1'],
       dsfr: {
         'blue-1': '#f5f5fe',
