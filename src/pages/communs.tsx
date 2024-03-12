@@ -10,7 +10,7 @@ import InitiativesFinance from '@/assets/initiatives-finance.svg'
 export default function Communs() {
   return (
     <Layout title="Le Fonds Communs Numériques">
-      <div className="hero relative overflow-hidden bg-white-0 ">
+      <div className="hero relative overflow-hidden bg-white ">
         <div className="flex flex-col justify-between items-center gap-11 py-10 md:py-20 max-w-[40em] mx-auto">
           <Image
             src={LogoSvg}

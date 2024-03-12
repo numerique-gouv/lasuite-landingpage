@@ -13,7 +13,7 @@ interface CardProps {
 }
 
 const Card = ({ title, target, text }: CardProps) => (
-  <div className="bg-white-0 p-8 w-full text-left">
+  <div className="bg-white p-8 w-full text-left">
     <h3>
       <span className="font-extrabold text-3xl text-blue-1">{title}</span>
       <Br className="inline" />

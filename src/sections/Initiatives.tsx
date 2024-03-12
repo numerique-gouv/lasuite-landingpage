@@ -13,7 +13,7 @@ const WhiteSquare: React.FC<Omit<CommonProps, 'children'>> = ({
   className,
 }) => (
   <span
-    className={twMerge('h-[28px] w-[28px] bg-white-0 absolute z-10', className)}
+    className={twMerge('h-[28px] w-[28px] bg-white absolute z-10', className)}
   />
 )
 
@@ -57,7 +57,7 @@ interface CardProps {
 const Card = ({ title, body, index }: CardProps) => (
   <div
     tabIndex={0}
-    className="bg-blue-1 text-white-0 text-left px-6 py-14 sm:p-14 relative focus-visible:m-2 md:basis-1/2"
+    className="bg-blue-1 text-white text-left px-6 py-14 sm:p-14 relative focus-visible:m-2 md:basis-1/2"
   >
     <h3 className="text-3xl font-extrabold mb-7">
       Qu’est ce qu’un <Br /> {title}&nbsp;?
@@ -114,7 +114,7 @@ export const Initiatives = () => (
       </p>
     </ContentSection>
     <ContentSection
-      className="bg-white-0 pt-0 sm:pt-[50px]"
+      className="bg-white pt-0 sm:pt-[50px]"
       classNameChildren="px-0 sm:px-4"
     >
       <div className="hidden md:flex flex-row gap-10">
