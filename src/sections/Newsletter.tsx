@@ -1,5 +1,5 @@
-import { ButtonExternalLink } from "@/components/ExternalLink";
-import { NEWSLETTER_FORM } from "@/constant";
+import { ButtonExternalLink } from '@/components/ExternalLink'
+import { NEWSLETTER_FORM } from '@/constant'
 
 export const Newsletter = () => (
   <div className="bg-dsfr-blue-1 py-8 text-left">
@@ -23,4 +23,4 @@ export const Newsletter = () => (
       </div>
     </div>
   </div>
-);
+)

@@ -1,23 +1,24 @@
-import Image from "next/image";
-import { SwiperWrapper } from "@/components/SwiperWrapper";
-import { ContentSection } from "@/components/ContentSection";
-import {Br} from "@/components/Br";
-import {Button} from "@/components/Button";
-import {CommonProps} from "@/types";
-import {twMerge} from "tailwind-merge";
+import Image from 'next/image'
+import { SwiperWrapper } from '@/components/SwiperWrapper'
+import { ContentSection } from '@/components/ContentSection'
+import { Br } from '@/components/Br'
+import { Button } from '@/components/Button'
+import { CommonProps } from '@/types'
+import { twMerge } from 'tailwind-merge'
 
-import IllustrationIdea from "@/assets/idea.webp";
-import StripeWhiteSvg from "@/assets/stripe-white.svg";
+import IllustrationIdea from '@/assets/idea.webp'
+import StripeWhiteSvg from '@/assets/stripe-white.svg'
 
-
-const WhiteSquare: React.FC<Omit<CommonProps, "children">> = ({ className}) => (
+const WhiteSquare: React.FC<Omit<CommonProps, 'children'>> = ({
+  className,
+}) => (
   <span
     className={twMerge(
-      "h-[28px] w-[28px] bg-dinum-white-0 absolute z-10",
-      className,
+      'h-[28px] w-[28px] bg-dinum-white-0 absolute z-10',
+      className
     )}
   />
-);
+)
 
 const DecorationOdd = () => (
   <>
@@ -34,7 +35,7 @@ const DecorationOdd = () => (
       alt=""
     />
   </>
-);
+)
 
 const DecorationEven = () => (
   <>
@@ -48,12 +49,12 @@ const DecorationEven = () => (
       alt=""
     />
   </>
-);
+)
 
 interface CardProps {
-  title: string;
-  body: any;
-  index: number;
+  title: string
+  body: any
+  index: number
 }
 
 const Card = ({ title, body, index }: CardProps) => (
@@ -67,19 +68,18 @@ const Card = ({ title, body, index }: CardProps) => (
     <p className="text-lg" dangerouslySetInnerHTML={{ __html: body }} />
     {index % 2 === 0 ? <DecorationEven /> : <DecorationOdd />}
   </div>
-);
+)
 
-const data: Omit<CardProps, "index">[] = [
+const data: Omit<CardProps, 'index'>[] = [
   {
-    title: "commun numérique",
-    body: "Les communs numériques sont des ressources partagées sous forme de biens immatériels utilisables librement. Ils sont produits et gérés par une communauté ouverte d’acteurs partageant des valeurs et des règles de collaboration ou de gouvernance. Il peut s’agir : de logiciels et librairies libres exploitables dans de nouvelles solutions, de standards ouverts, de données et contenus ouverts.",
+    title: 'commun numérique',
+    body: 'Les communs numériques sont des ressources partagées sous forme de biens immatériels utilisables librement. Ils sont produits et gérés par une communauté ouverte d’acteurs partageant des valeurs et des règles de collaboration ou de gouvernance. Il peut s’agir : de logiciels et librairies libres exploitables dans de nouvelles solutions, de standards ouverts, de données et contenus ouverts.',
   },
   {
-    title: "logiciel libre",
+    title: 'logiciel libre',
     body: "Un logiciel libre est un programme informatique dont l’utilisation, la modification et la distribution sont permises, généralement sans coût financier. L’aspect clé des logiciels libres réside dans la liberté qu'ils offrent à leurs utilisateurs. Cela signifie que les utilisateurs ont le droit d’exécuter, copier, distribuer, étudier, modifier et améliorer le logiciel. Ces libertés sont garanties par des licences spécifiques. Les logiciels libres encouragent la collaboration et la transparence, favorisant ainsi la création et le partage ouvert de connaissances informatiques.",
   },
-];
-
+]
 
 export const Initiatives = () => (
   <>
@@ -97,13 +97,13 @@ export const Initiatives = () => (
       <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
         Vous êtes une entité publique ou privée et vous portez une solution
         collaborative structurée sous forme de commun numérique ou de logiciel
-        libre ? Vous pouvez intégrer La Suite numérique{" "}
+        libre ? Vous pouvez intégrer La Suite numérique{' '}
         <strong>
           pour être utile à des milliers d&apos;agents publics en France&nbsp;!
         </strong>
       </p>
       <p className="text-lg text-dinum-grey-1 max-w-[38rem] text-pretty">
-        Obtenez un <strong>financement</strong> et un{" "}
+        Obtenez un <strong>financement</strong> et un{' '}
         <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
         du fonds communs numériques pour La Suite collaborative.
       </p>
@@ -134,4 +134,4 @@ export const Initiatives = () => (
       </div>
     </ContentSection>
   </>
-);
+)

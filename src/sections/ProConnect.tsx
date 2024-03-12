@@ -1,15 +1,15 @@
-import Image from "next/image";
-import { SwiperWrapper } from "@/components/SwiperWrapper";
-import { ContentSection } from "@/components/ContentSection";
-import { Br } from "@/components/Br";
+import Image from 'next/image'
+import { SwiperWrapper } from '@/components/SwiperWrapper'
+import { ContentSection } from '@/components/ContentSection'
+import { Br } from '@/components/Br'
 
-import ProConnectSvg from "@/assets/pro-connect.svg"
-import ProConnectButtonSvg from "@/assets/pro-connect-button.svg"
+import ProConnectSvg from '@/assets/pro-connect.svg'
+import ProConnectButtonSvg from '@/assets/pro-connect-button.svg'
 
 interface CardProps {
-  title: string;
-  target: string;
-  text: string;
+  title: string
+  target: string
+  text: string
 }
 
 const Card = ({ title, target, text }: CardProps) => (
@@ -23,26 +23,25 @@ const Card = ({ title, target, text }: CardProps) => (
     </h3>
     <p className="mt-8 text-lg text-dinum-grey-1 text-pretty">{text}</p>
   </div>
-);
+)
 
 const data: CardProps[] = [
   {
-    title: "Simple",
+    title: 'Simple',
     target: "l'Agent Public.",
     text: "Une seule connexion suffit à accéder à toutes les applications de La Suite. Fini la multitude d'identifiants et de mots de passes !",
   },
   {
-    title: "Efficace",
-    target: "les Organisations.",
-    text: "Les applications de La Suite sont interconnectées, ce qui facilite la collaboration entre les différentes organisations de la sphère publique.",
+    title: 'Efficace',
+    target: 'les Organisations.',
+    text: 'Les applications de La Suite sont interconnectées, ce qui facilite la collaboration entre les différentes organisations de la sphère publique.',
   },
   {
-    title: "Souveraine",
-    target: "Nous.",
-    text: "Les applications de La Suite sont des Communs Numériques Libres et contribuent ainsi à notre souveraineté numérique.",
+    title: 'Souveraine',
+    target: 'Nous.',
+    text: 'Les applications de La Suite sont des Communs Numériques Libres et contribuent ainsi à notre souveraineté numérique.',
   },
-];
-
+]
 
 export const ProConnect = () => (
   <ContentSection className="bg-dinum-white-1 text-left sm:text-center">
@@ -53,7 +52,7 @@ export const ProConnect = () => (
     <p className="text-lg text-dinum-grey-1 max-w-[44rem]">
       Le bouton Pro Connect est au cœur de La Suite numérique. <Br />
       Au même titre que France Connect relie les services publics numériques des
-      citoyens et citoyennes,{" "}
+      citoyens et citoyennes,{' '}
       <strong>
         Pro Connect crée le lien entre les outils numériques des professionnels
         de la sphère publique.
@@ -76,4 +75,4 @@ export const ProConnect = () => (
       />
     </div>
   </ContentSection>
-);
+)

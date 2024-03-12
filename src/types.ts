@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
 export interface CommonProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }

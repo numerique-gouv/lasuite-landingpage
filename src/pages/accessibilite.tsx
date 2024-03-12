@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from "@/constant";
-import { ExternalLink } from "@/components/ExternalLink";
-import { PageLayout } from "@/components/PageLayout";
+import { ADDRESS_DINUM, CONTACT_EMAIL, URL_SITE } from '@/constant'
+import { ExternalLink } from '@/components/ExternalLink'
+import { PageLayout } from '@/components/PageLayout'
 
 export default function Accessibilite() {
   return (
@@ -17,12 +17,12 @@ export default function Accessibilite() {
         <em>Établie le 20 décembre 2023.</em>
       </p>
       <p>
-        Cette déclaration d’accessibilité s’applique au site{" "}
+        Cette déclaration d’accessibilité s’applique au site{' '}
         <strong>{URL_SITE}</strong>.
       </p>
       <h2>État de conformité</h2>
       <p>
-        {URL_SITE} est non conforme avec le RGAA 4.1. Le site n’a{" "}
+        {URL_SITE} est non conforme avec le RGAA 4.1. Le site n’a{' '}
         <strong>pas encore été audité</strong>.
       </p>
       <h2>Amélioration et contact</h2>
@@ -33,7 +33,7 @@ export default function Accessibilite() {
       </p>
       <ul>
         <li>
-          E-mail :{" "}
+          E-mail :{' '}
           <a
             href={`mailto:${CONTACT_EMAIL}`}
             aria-label={`écrire à ${CONTACT_EMAIL}`}
@@ -54,7 +54,7 @@ export default function Accessibilite() {
       <p>Vous pouvez :</p>
       <ul>
         <li>
-          Écrire un message au{" "}
+          Écrire un message au{' '}
           <ExternalLink
             href="https://formulaire.defenseurdesdroits.fr/formulaire_saisine/"
             className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
@@ -63,7 +63,7 @@ export default function Accessibilite() {
           </ExternalLink>
         </li>
         <li>
-          Contacter le délégué du{" "}
+          Contacter le délégué du{' '}
           <ExternalLink
             href="https://www.defenseurdesdroits.fr/carte-des-delegues"
             className="underline decoration-1 hover:decoration-2 transition ease-in-out delay-50 duration-300 underline-offset-4"
@@ -77,5 +77,5 @@ export default function Accessibilite() {
         </li>
       </ul>
     </PageLayout>
-  );
+  )
 }
