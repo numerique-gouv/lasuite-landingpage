@@ -14,7 +14,7 @@ export const PageLayout: React.FC<{
           {title}
         </h1>
       </div>
-      <div className="fr-container page-content py-12">
+      <div className="fr-container page-content py-12 bg-white text-body">
         <div className="max-w-[50rem]">{children}</div>
       </div>
     </Layout>

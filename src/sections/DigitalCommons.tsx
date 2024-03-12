@@ -22,7 +22,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ img, title, href }) => (
   <div className="flex flex-col items-center">
     <Image src={img} height={92} width={92} alt="" />
-    <h3 className="text-lg text-grey-1 mt-6 mb-4">{title}</h3>
+    <h3 className="text-lg text-body mt-6 mb-4">{title}</h3>
     <div className="flex gap-1 justify-center items-center">
       <ExternalLink
         className="text-sm underline text-blue-1 external-link-blue"
@@ -75,7 +75,7 @@ const data: CardProps[] = [
 
 export const DigitalCommons = () => (
   <>
-    <ContentSection className="bg-white text">
+    <ContentSection className="bg-white text-body">
       <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold">
         <span aria-hidden={true}>
           Des applications à la carte et inter-connectées…
@@ -100,10 +100,10 @@ export const DigitalCommons = () => (
         className="mb-[-3rem] mt-[-1.5rem] sm:hidden"
       />
     </ContentSection>
-    <ContentSection className="bg-white pt-0 md:pt-0">
+    <ContentSection className="bg-white text-body pt-0 md:pt-0">
       <div
         aria-hidden={true}
-        className="text-3xl md:text-4xl max-w-[33rem] font-bold"
+        className="text-3xl text-title md:text-4xl max-w-[33rem] font-bold"
       >
         … basées sur des communs numériques libres
       </div>
@@ -124,7 +124,7 @@ export const DigitalCommons = () => (
       {/*<Callout>*/}
       {/*  La Suite est un ensemble de communs numériques libres reliés grâce au bouton Pro Connect*/}
       {/*</Callout>*/}
-      <p className="text-lg text-grey-1 max-w-[38em] text-left sm:text-center">
+      <p className="text-lg max-w-[38em] text-left sm:text-center">
         Les applications de La Suite numérique respectent un cahier des charges
         vertueux :{' '}
         <strong>

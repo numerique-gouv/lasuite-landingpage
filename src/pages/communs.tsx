@@ -9,8 +9,8 @@ import InitiativesFinance from '@/assets/initiatives-finance.svg'
 
 export default function Communs() {
   return (
-    <Layout title="Le Fonds Communs Numériques">
-      <div className="hero relative overflow-hidden bg-white ">
+    <Layout title="Le Fonds Communs Numériques" className="bg-white text-body">
+      <div className="hero relative overflow-hidden">
         <div className="flex flex-col justify-between items-center gap-11 py-10 md:py-20 max-w-[40em] mx-auto">
           <Image
             src={LogoSvg}
@@ -26,12 +26,12 @@ export default function Communs() {
             <h2 className="text-xl font-bold mb-[1.75rem]">
               Qu&apos;est-ce que le Fonds&nbsp;?
             </h2>
-            <p className="text-lg text-grey-1 mb-[1.75rem]">
+            <p className="text-lg mb-[1.75rem]">
               Avec <strong>La Suite numérique</strong>, notre défi est
               d’apporter aux agents publics de nouveaux outils de travail
               ouverts et propices aux usages collaboratifs.
             </p>
-            <p className="text-lg text-grey-1 mb-[3rem]">
+            <p className="text-lg mb-[3rem]">
               La DINUM ne développe pas directement les produits de La Suite
               numérique, mais s’emploie à constituer un système inter-opérable
               et simple d’utilisation, composé d’outils développés par d’autres
@@ -54,7 +54,7 @@ export default function Communs() {
               {' '}
               De quoi bénéficient les projets sélectionnés&nbsp;?
             </h2>
-            <ul className="text-lg text-grey-1 list-disc pl-10">
+            <ul className="text-lg list-disc pl-10">
               <li>
                 Un ticket de financement allant jusqu&apos;à{' '}
                 <strong>40.000 euros renouvelable.</strong>
@@ -84,7 +84,7 @@ export default function Communs() {
         <Image src={InitiativesPlaning} width={800} height={640} alt="" />
       </div>
       <div className="flex flex-col">
-        <div className="text-left px-4 text-lg text-grey-1 max-w-[40em] mx-auto">
+        <div className="text-left px-4 text-lg max-w-[40em] mx-auto">
           <h3 className="mt-[1.75rem] text-xl text-black font-bold ">
             Mars 2024
           </h3>
@@ -100,7 +100,7 @@ export default function Communs() {
             apprentissages de la coopération.
           </p>
         </div>
-        <div className="text-left px-4 text-lg text-grey-1 max-w-[40em] mx-auto">
+        <div className="text-left px-4 text-lg max-w-[40em] mx-auto">
           <h3 className="text-xl text-black font-bold ">Septembre 2024</h3>
           <p className="mb-[1.75rem] mt-[0.875rem]">
             <strong>Objectif de ce deuxième temps :</strong> étendre la
