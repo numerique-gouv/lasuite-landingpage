@@ -31,9 +31,9 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
     </h3>
     <div className="flex flex-row items-center mt-7 gap-4 pb-5">
       <Image src={AccountSvg} height={60} width={60} alt="" />
-      <p className="font-bold text-dinum-grey-2">{title}</p>
+      <p className="font-bold text-grey-2">{title}</p>
     </div>
-    <blockquote className="text-dinum-grey-1 leading-6 text-pretty">
+    <blockquote className="text-grey-1 leading-6 text-pretty">
       {quote}
     </blockquote>
   </div>
@@ -42,7 +42,7 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
 const data: CardProps[] = [
   {
     quote: (
-      <p className="text-dinum-grey-1">
+      <p className="text-grey-1">
         Je suis proviseur adjoint d’une cité scolaire.{' '}
         <strong>
           Tchap est une application respectueuse des données personnelles.
@@ -63,7 +63,7 @@ const data: CardProps[] = [
   },
   {
     quote: (
-      <p className="text-dinum-grey-1">
+      <p className="text-grey-1">
         Je fais de l’animation de projets inter-collectivités donc j&apos;ai
         beaucoup de liens avec des partenaires de l’Etat.{' '}
         <strong>
@@ -86,7 +86,7 @@ const data: CardProps[] = [
   },
   {
     quote: (
-      <p className="text-dinum-grey-1">
+      <p className="text-grey-1">
         Avec la dernière mise à jour de Tchap, on a les{' '}
         <strong>mêmes fonctionnalités qu’avec WhatsApp,</strong> mais en{' '}
         <strong>plus confidentiel.</strong> Bravo !
@@ -100,11 +100,11 @@ const data: CardProps[] = [
 ]
 
 export const Testimonies = () => (
-  <ContentSection className="bg-dinum-white-1 text-left sm:text-center">
+  <ContentSection className="bg-white-1 text-left sm:text-center">
     <h2 className="text-3xl md:text-4xl font-bold max-w-[30rem] text-center px-4 ">
       Ils utilisent déjà des applications de La&nbsp;Suite…
     </h2>
-    <p className="text-lg text-dinum-grey-1 max-w-[38rem]">
+    <p className="text-lg text-grey-1 max-w-[38rem]">
       La Suite est un projet en construction, certaines de ses applications sont
       encore en phase de test, mais{' '}
       <strong>

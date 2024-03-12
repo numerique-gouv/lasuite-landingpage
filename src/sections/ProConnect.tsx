@@ -13,15 +13,15 @@ interface CardProps {
 }
 
 const Card = ({ title, target, text }: CardProps) => (
-  <div className="bg-dinum-white-0 p-8 w-full text-left">
+  <div className="bg-white-0 p-8 w-full text-left">
     <h3>
-      <span className="font-extrabold text-3xl text-dinum-blue-1">{title}</span>
+      <span className="font-extrabold text-3xl text-blue-1">{title}</span>
       <Br className="inline" />
-      <span className="text-lg text-dinum-grey-1">
+      <span className="text-lg text-grey-1">
         pour&nbsp;<strong>{target}</strong>
       </span>
     </h3>
-    <p className="mt-8 text-lg text-dinum-grey-1 text-pretty">{text}</p>
+    <p className="mt-8 text-lg text-grey-1 text-pretty">{text}</p>
   </div>
 )
 
@@ -44,12 +44,12 @@ const data: CardProps[] = [
 ]
 
 export const ProConnect = () => (
-  <ContentSection className="bg-dinum-white-1 text-left sm:text-center">
+  <ContentSection className="bg-white-1 text-left sm:text-center">
     <h2 className="px-4 text-3xl md:text-4xl font-bold text-center">
       Connecter tous les intervenants <Br /> de la sphère publique
     </h2>
     <Image src={ProConnectSvg} height={246} width={540} alt="" />
-    <p className="text-lg text-dinum-grey-1 max-w-[44rem]">
+    <p className="text-lg text-grey-1 max-w-[44rem]">
       Le bouton Pro Connect est au cœur de La Suite numérique. <Br />
       Au même titre que France Connect relie les services publics numériques des
       citoyens et citoyennes,{' '}
@@ -59,7 +59,7 @@ export const ProConnect = () => (
       </strong>
     </p>
     <Image src={ProConnectButtonSvg} height={150} width={350} alt="" />
-    <h3 className="text-2xl text-dinum-blue-1 font-bold">
+    <h3 className="text-2xl text-blue-1 font-bold">
       Grâce au bouton Pro Connect, La Suite permet une action&nbsp;…
     </h3>
     <div className="hidden md:flex flex-row gap-3 md:gap-6 max-w-[54em]">
