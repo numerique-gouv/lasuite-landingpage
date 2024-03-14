@@ -220,11 +220,12 @@ export default function Communs() {
           </h3>
         </div>
       </div>
-      <div className="w-full justify-center flex pt-10 pb-40">
+      <h2 className="sr-only">Proposer un projet</h2>
+      <p className="w-full justify-center flex pt-10 pb-40">
         <ButtonExternalLink href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique">
-          Je propose mon projet !
+          Je propose mon projet&nbsp;!
         </ButtonExternalLink>
-      </div>
+      </p>
     </Layout>
   )
 }
