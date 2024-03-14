@@ -4,8 +4,10 @@ import { Br } from '@/components/Br'
 import { Layout } from '@/components/Layout'
 
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
-import InitiativesPlaning from '@/assets/initiatives-planing.svg'
 import InitiativesFinance from '@/assets/initiatives-finance.svg'
+import InitiativesPlaningDesktop from '@/assets/initiatives-planing-desktop.svg'
+import InitiativesPlaningMobile1 from '@/assets/initiatives-planing-mobile-1.svg'
+import InitiativesPlaningMobile2 from '@/assets/initiatives-planing-mobile-2.svg'
 
 export default function Communs() {
   return (
@@ -80,8 +82,34 @@ export default function Communs() {
           Un calendrier en 2 temps sur 2024
         </h2>
       </div>
-      <div className="w-full justify-center flex">
-        <Image src={InitiativesPlaning} width={800} height={640} alt="" />
+      <div className="w-full hidden md:flex justify-center">
+        <Image
+          src={InitiativesPlaningDesktop}
+          width={800}
+          height={640}
+          alt=""
+        />
+      </div>
+      <div className="w-full max-w-[25rem] mx-auto md:hidden">
+        <SwiperWrapper
+          slides={[
+            // slides have a tabIndex so that keyboard users on small screens can view each slide by pressing the tab key. But the actual text alternative is written after, visible by everyone. We add an alt here just so that mobile screen reader users dont get to focus something that is empty, they get the info they must go forward.
+            <Image
+              key="1"
+              tabIndex={0}
+              src={InitiativesPlaningMobile1}
+              width={400}
+              alt="Premier temps détaillé ci-dessous"
+            />,
+            <Image
+              key="2"
+              tabIndex={0}
+              src={InitiativesPlaningMobile2}
+              width={400}
+              alt="Deuxième temps détaillé ci-dessous"
+            />,
+          ]}
+        />
       </div>
       <div className="flex flex-col">
         <div className="text-left px-4 text-lg max-w-[40em] mx-auto">
