@@ -4,10 +4,15 @@ import { Br } from '@/components/Br'
 import { Layout } from '@/components/Layout'
 
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
-import InitiativesFinance from '@/assets/initiatives-finance.svg'
 import InitiativesPlaningDesktop from '@/assets/initiatives-planing-desktop.svg'
 import InitiativesPlaningMobile1 from '@/assets/initiatives-planing-mobile-1.svg'
 import InitiativesPlaningMobile2 from '@/assets/initiatives-planing-mobile-2.svg'
+import InitiativesFinanceDesktop from '@/assets/initiatives-finance-desktop.svg'
+import InitiativesFinanceMobile1 from '@/assets/initiatives-finance-mobile-1.svg'
+import InitiativesFinanceMobile2 from '@/assets/initiatives-finance-mobile-2.svg'
+import InitiativesFinanceMobile3 from '@/assets/initiatives-finance-mobile-3.svg'
+import InitiativesFinanceMobile4 from '@/assets/initiatives-finance-mobile-4.svg'
+import { SwiperWrapper } from '@/components/SwiperWrapper'
 
 export default function Communs() {
   return (
@@ -147,7 +152,73 @@ export default function Communs() {
         <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 pb-[2rem] max-w-[31em] text-center text-balance">
           Processus de sélection
         </h2>
-        <Image src={InitiativesFinance} width={800} height={640} alt="" />
+
+        <div className="hidden md:block">
+          <Image
+            src={InitiativesFinanceDesktop}
+            width={800}
+            height={640}
+            alt=""
+          />
+        </div>
+        <div className="w-full max-w-[25rem] mx-auto md:hidden">
+          <SwiperWrapper
+            slides={[
+              // slides have a tabIndex so that keyboard users on small screens can view each slide by pressing the tab key. But for screen reader users, the text alternative is written after, to get some semantic html. We add an alt here just so that screen reader users dont get to focus something that is empty and get the info they must go forward.
+              <Image
+                key="1"
+                tabIndex={0}
+                src={InitiativesFinanceMobile1}
+                width={400}
+                alt="1ère étape détaillée ci-dessous"
+              />,
+              <Image
+                key="2"
+                tabIndex={0}
+                src={InitiativesFinanceMobile2}
+                width={400}
+                alt="2e étape détaillée ci-dessous"
+              />,
+              <Image
+                key="3"
+                tabIndex={0}
+                src={InitiativesFinanceMobile3}
+                width={400}
+                alt="3e étape détaillée ci-dessous"
+              />,
+              <Image
+                key="4"
+                tabIndex={0}
+                src={InitiativesFinanceMobile4}
+                width={400}
+                alt="4e étape détaillée ci-dessous"
+              />,
+            ]}
+          />
+        </div>
+        <div className="sr-only">
+          <h3 className="text-xl text-black font-bold">
+            Étape 1 : Revue de la proposition
+          </h3>
+          <p className="mb-[1.75rem] mt-[0.875rem]">
+            La proposition est-elle éligible et de qualité suffisante ?
+          </p>
+          <h3 className="text-xl text-black font-bold">
+            Étape 2 : Discussion avec les projets
+          </h3>
+          <p className="mb-[1.75rem] mt-[0.875rem]">
+            Clarification des attentes et améliorations du projet initial
+          </p>
+          <h3 className="text-xl text-black font-bold">
+            Étape 3 : Validation (comité de sélection de la DINUM)
+          </h3>
+          <p className="mb-[1.75rem] mt-[0.875rem]">
+            Sur la base des objectifs et des besoins prioritaires
+          </p>
+          <h3 className="text-xl text-black font-bold">
+            Étape 4 : Début du travail ensemble
+          </h3>
+        </div>
       </div>
       <div className="w-full justify-center flex pt-10 pb-40">
         <ButtonExternalLink href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique">
