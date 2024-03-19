@@ -47,6 +47,7 @@ const config: Config = {
      * up to 200% text zoom (RGAA criteria) and this is the easiest way to achieve that.
      */
     screens: {
+      xs: '24em', // 384px
       sm: '40em', // 640px
       md: '48em', // 768px
       lg: '64em', // 1024px
