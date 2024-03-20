@@ -16,7 +16,7 @@ export const Layout: React.FC<
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   return (
-    <>
+    <div className={twMerge('min-h-screen flex flex-col', layoutClassName)}>
       <Head>
         <title>{pageTitle}</title>
         <meta
@@ -30,6 +30,6 @@ export const Layout: React.FC<
       <NavBar />
       <main {...props}>{props.children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
