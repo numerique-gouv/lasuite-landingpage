@@ -24,17 +24,23 @@ export const Footer = () => (
     <div className="fr-container">
       <div className="flex flex-wrap justify-between mb-6">
         <Link
-          className="w-fit md:flex items-center gap-10 hover:bg-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] "
+          className="w-fit flex no-wrap items-center gap-2 xs:gap-6 hover:bg-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] overflow-hidden"
           href="/"
           aria-label="Retour à l'accueil"
         >
-          <p className="logo text-[0.7875rem] font-bold leading-[1.0317460317em] tracking-[-.01em] pl-2 uppercase align-middle inline-block">
-            république
+          <p className="logo-footer text-base xs:text-xl font-bold leading-[1.0317460317em] tracking-[-.01em] pl-2 uppercase align-middle inline-block">
+            Gouvernement
+          </p>
+          <span className="logo-footer-separator" />
+          <p className="font-bold leading-5 text-sm xs:text-base">
+            Direction
             <Br className="inline" />
-            française
+            interministérielle
+            <Br className="inline" />
+            du numérique
           </p>
         </Link>
-        <div className="basis-full md:basis-2/3 max-w-2xl">
+        <div className="basis-full md:basis-2/4 max-w-2xl">
           <p className="text-sm leading-6 text-grey-5">
             Ce site est géré par La Suite Numérique de la direction
             interministérielle du numérique (DINUM) en charge de la
