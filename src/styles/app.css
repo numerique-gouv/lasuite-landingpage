@@ -32,6 +32,29 @@
   padding-top: 1.65625rem;
 }
 
+.logo-footer:before {
+  content: "";
+  display: block;
+  background-image: url("/assets/marianne.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.25rem;
+  margin-bottom: 0.2rem;
+  width: 3rem;
+}
+
+.logo-footer:after {
+  content: "";
+  display: block;
+  background-image: url("/assets/devise.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 2.313rem;
+  margin-top: 0.2rem;
+  width: 3.25rem;
+}
+
 .navbar-shadow {
   position: relative;
   z-index: 10;
@@ -51,6 +74,19 @@
   content: "";
   display: inline-block;
   height: 1rem;
+  margin-right: 0.75rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  position: relative;
+  vertical-align: middle;
+  width: 1px;
+}
+
+.logo-footer-separator:after {
+  box-shadow: inset 0 0 0 1px #000000;
+  content: "";
+  display: inline-block;
+  height: 5rem;
   margin-right: 0.75rem;
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
