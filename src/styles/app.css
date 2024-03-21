@@ -106,13 +106,13 @@
 }
 
 .external-link-grey:after {
-  content: url('/assets/external-link-grey.svg');
+  content: url('/assets/link-grey.svg');
   vertical-align: middle;
   padding-left: 0.25rem;
 }
 
 .external-link-blue:after {
-  content: url('/assets/external-link-blue.svg');
+  content: url('/assets/link-blue.svg');
   vertical-align: middle;
   padding-left: 0.25rem;
 }
