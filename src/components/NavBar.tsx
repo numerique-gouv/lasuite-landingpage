@@ -13,9 +13,7 @@ export const NavBar = () => (
       <div className="-mx-4 lg:w-fit lg:py-2">
         <div className="sm:flex items-center fr-enlarge-link hover:bg-white-1 rounded transition ease-in-out delay-50 duration-300">
           <p className="p-4 logo text-[0.7875rem] font-bold leading-[1.0317460317em] tracking-[-.01em] uppercase align-middle inline-block">
-            république
-            <Br className="inline" />
-            française
+            Gouvernement
           </p>
           <p className="p-4 border-t border-grey-4 sm:border-0">
             <Link

@@ -25,11 +25,10 @@
   display: block;
   background-image: url('/assets/devise.svg');
   background-repeat: no-repeat;
-
-  background-position: 0 calc(100% + 0.008rem);
-  background-size: 2.4rem 1.4rem;
-  min-width: 1.96875rem;
-  padding-top: 1.65625rem;
+  background-size: contain;
+  width: 2.5rem;
+  height: 1.7857142857142858rem;
+  margin-top: 0.25rem;
 }
 
 .logo-footer:before {
