@@ -1,25 +1,25 @@
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 
 type Slide = any
 
-interface SwiperWrapperProps {
+interface SwiperWrapperProps extends SwiperProps {
   slides: Array<Slide>
-  slidesPerView?: number
 }
 
 export const SwiperWrapper = ({
   slides,
-  slidesPerView = 1,
+  ...swiperProps
 }: SwiperWrapperProps) => {
   return (
     <Swiper
       spaceBetween={50}
-      slidesPerView={slidesPerView}
+      slidesPerView={1}
       pagination={true}
       modules={[Pagination]}
+      {...swiperProps}
     >
       {slides.map((s, i) => (
         <SwiperSlide key={i}>{s}</SwiperSlide>
