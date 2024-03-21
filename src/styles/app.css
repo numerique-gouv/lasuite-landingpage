@@ -4,9 +4,9 @@
 }
 
 .logo:before {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("/assets/marianne.svg");
+  background-image: url('/assets/marianne.svg');
   background-position:
     0 -0.046875rem,
     0 0,
@@ -21,9 +21,9 @@
 }
 
 .logo:after {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("/assets/devise.svg");
+  background-image: url('/assets/devise.svg');
   background-repeat: no-repeat;
 
   background-position: 0 calc(100% + 0.008rem);
@@ -33,9 +33,9 @@
 }
 
 .logo-footer:before {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("/assets/marianne.svg");
+  background-image: url('/assets/marianne.svg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 1.25rem;
@@ -44,9 +44,9 @@
 }
 
 .logo-footer:after {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("/assets/devise.svg");
+  background-image: url('/assets/devise.svg');
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -71,7 +71,7 @@
 
 .internal-link-footer:before {
   box-shadow: inset 0 0 0 1px #ddd;
-  content: "";
+  content: '';
   display: inline-block;
   height: 1rem;
   margin-right: 0.75rem;
@@ -84,7 +84,7 @@
 
 .logo-footer-separator:after {
   box-shadow: inset 0 0 0 1px #000000;
-  content: "";
+  content: '';
   display: inline-block;
   height: 5rem;
   margin-right: 0.75rem;
@@ -107,13 +107,13 @@
 }
 
 .external-link-grey:after {
-  content: url("/assets/external-link-grey.svg");
+  content: url('/assets/external-link-grey.svg');
   vertical-align: middle;
   padding-left: 0.25rem;
 }
 
 .external-link-blue:after {
-  content: url("/assets/external-link-blue.svg");
+  content: url('/assets/external-link-blue.svg');
   vertical-align: middle;
   padding-left: 0.25rem;
 }

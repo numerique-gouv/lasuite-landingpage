@@ -6,9 +6,9 @@
  * 3. then include DSFR classes
  * 4. then include app-specific classes
  */
-@import "./base-tailwind.css";
-@import "./base-dsfr.css";
-@import "./base-app.css";
-@import "./tailwind.css";
-@import "./dsfr.css";
-@import "./app.css";
+@import './base-tailwind.css';
+@import './base-dsfr.css';
+@import './base-app.css';
+@import './tailwind.css';
+@import './dsfr.css';
+@import './app.css';
