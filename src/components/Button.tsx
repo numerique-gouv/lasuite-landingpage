@@ -5,6 +5,7 @@ import { CommonProps } from '@/types'
 interface ButtonProps extends CommonProps {
   href?: string
   'aria-label'?: string
+  variant?: 'outline'
 }
 
 export const ButtonStyle =
@@ -14,19 +15,24 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   href,
   className,
+  variant,
   'aria-label': ariaLabel,
-}) => (
-  <>
-    {href ? (
-      <Link
-        href={href}
-        className={twMerge(ButtonStyle, className)}
-        aria-label={ariaLabel}
-      >
-        {children}
-      </Link>
-    ) : (
-      <button className={twMerge(ButtonStyle, className)}>{children}</button>
-    )}
-  </>
-)
+}) => {
+  const classNames = twMerge(
+    ButtonStyle,
+    variant === 'outline' &&
+      'bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:bg-dsfr-hover-tint',
+    className
+  )
+  return (
+    <>
+      {href ? (
+        <Link href={href} className={classNames} aria-label={ariaLabel}>
+          {children}
+        </Link>
+      ) : (
+        <button className={classNames}>{children}</button>
+      )}
+    </>
+  )
+}
