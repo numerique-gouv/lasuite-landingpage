@@ -145,6 +145,28 @@
     0 0 0 4px #000091;
 }
 
+.scrollbars {
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+}
+.scrollbars::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbars::-webkit-scrollbar-track {
+  background: 0 0;
+}
+.scrollbars::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 6px;
+}
+.scrollbars:not(:hover, :focus) {
+  scrollbar-color: transparent transparent;
+}
+.scrollbars:not(:hover, :focus):-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
 /**
  * page content styles to easily write pure html without having to deal with tailwind css/react components
  * most of this is taken from the DSFR styles, just prefixed with a class to only use them on content pages */
