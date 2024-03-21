@@ -4,7 +4,7 @@ import { ContentSection } from '@/components/ContentSection'
 import { Br } from '@/components/Br'
 
 import Image, { StaticImageData } from 'next/image'
-import { ReactElement } from 'react'
+import { ReactElement, useEffect } from 'react'
 
 import AccountSvg from '@/assets/account.svg'
 import AnctSvg from '@/assets/logo/anct.svg'
@@ -20,7 +20,7 @@ interface CardProps {
 }
 
 const Card = ({ title, quote, img, entity }: CardProps) => (
-  <div className="flex flex-col bg-white p-7 text-left flex-1">
+  <div className="flex flex-col bg-white p-7 text-left flex-1 max-w-[36rem] lg:min-w-[18rem]">
     <h3 className="h-[114px] w-[140px] relative">
       <Image
         src={img}
@@ -99,34 +99,73 @@ const data: CardProps[] = [
     key: 'interieur',
     entity: "Ministère de l'intérieur",
   },
+  {
+    quote: (
+      <p>
+        Je suis enseignant et dans mon établissement j’ai mis en place le
+        workflow de <strong>RESANA</strong> pour la gestion d’actions qui
+        nécessitent plusieurs étapes de validation, cette GED permet de{' '}
+        <strong>dématérialiser ce processus simplement</strong>.
+      </p>
+    ),
+    title: 'Agent',
+    img: EducationNationaleSvg,
+    key: 'educ-nat-2',
+    entity: "Ministère de l'éducation nationale et de la jeunesse",
+  },
+  {
+    quote: (
+      <p>
+        La <strong>coédition</strong> nous permet de travailler sur des dossiers
+        et partager les documents et ce, même avec des parties prenantes
+        externes.
+        <strong>
+          Je promeus RESANA pour sa facilité de prise en main et l’ensemble des
+          outils disponibles
+        </strong>
+        .
+      </p>
+    ),
+    title: 'Agent',
+    img: EducationNationaleSvg,
+    key: 'educ-nat-4',
+    entity: "Ministère de l'éducation nationale et de la jeunesse",
+  },
 ]
 
-export const Testimonies = () => (
-  <ContentSection className="bg-white-1 text-body text-left sm:text-center">
-    <h2 className="text-3xl md:text-4xl font-bold max-w-[30rem] text-center px-4 ">
-      Ils utilisent déjà des applications de La&nbsp;Suite…
-    </h2>
-    <p className="text-lg max-w-[38rem]">
-      La Suite est un projet en construction, certaines de ses applications sont
-      encore en phase de test, mais{' '}
-      <strong>
-        d&apos;autres sont déjà utilisées par des milliers d&apos;agents et
-        toujours plus chaque jour !{' '}
-      </strong>
-      <Br />
-      Découvrez les applications stars de La Suite :
-    </p>
-    <div className="hidden md:flex flex-row gap-7">
-      {data.map((testimony) => (
-        <Card {...testimony} key={testimony.key} />
-      ))}
-    </div>
-    <div className="w-full md:hidden">
-      <SwiperWrapper
-        slides={data.map((testimony) => (
+export const Testimonies = () => {
+  // desktop view of testimonies is a simple overflowing div,
+  // we improve UX a bit by having the mouse behave as finger with a tiny client-side only lib
+  useEffect(() => {
+    import('dragscroll')
+  }, [])
+  return (
+    <ContentSection className="bg-white-1 text-body text-left sm:text-center">
+      <h2 className="text-3xl md:text-4xl font-bold max-w-[30rem] text-center px-4 ">
+        Ils utilisent déjà des applications de La&nbsp;Suite…
+      </h2>
+      <p className="text-lg max-w-[38rem]">
+        La Suite est un projet en construction, certaines de ses applications
+        sont encore en phase de test, mais{' '}
+        <strong>
+          d&apos;autres sont déjà utilisées par des milliers d&apos;agents et
+          toujours plus chaque jour !{' '}
+        </strong>
+        <Br />
+        Découvrez les applications stars de La Suite :
+      </p>
+      <div className="dragscroll scrollbars hidden lg:flex flex-row gap-7 overflow-auto w-full">
+        {data.map((testimony) => (
           <Card {...testimony} key={testimony.key} />
         ))}
-      />
-    </div>
-  </ContentSection>
-)
+      </div>
+      <div className="w-full lg:hidden">
+        <SwiperWrapper
+          slides={data.map((testimony) => (
+            <Card {...testimony} key={testimony.key} />
+          ))}
+        />
+      </div>
+    </ContentSection>
+  )
+}
