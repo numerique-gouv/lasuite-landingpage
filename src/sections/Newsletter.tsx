@@ -9,7 +9,7 @@ export const Newsletter = () => (
           Recevoir la newsletter de La Suite
         </h2>
         <p className="text-[.875rem] text-grey-5 leading-6 mb-6">
-          Restez informés des prochaines avancées de La Suite en recevant la
+          Restez informé des prochaines avancées de La Suite en recevant la
           newsletter !
         </p>
         <p>
