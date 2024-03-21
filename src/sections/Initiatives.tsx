@@ -105,11 +105,8 @@ export const Initiatives = () => (
         du fonds communs numériques pour La Suite collaborative.
       </p>
       <p>
-        <Button
-          aria-label="En savoir plus sur comment contribuer à La Suite numérique"
-          href="/communs"
-        >
-          En savoir plus
+        <Button href="/communs" variant="outline" className="hover:bg-white">
+          Comment proposer mon projet ?
         </Button>
       </p>
     </ContentSection>

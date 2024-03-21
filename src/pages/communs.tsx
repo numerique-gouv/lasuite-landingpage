@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ButtonExternalLink } from '@/components/ExternalLink'
+import { Button } from '@/components/Button'
 import { Br } from '@/components/Br'
 import { Layout } from '@/components/Layout'
 
@@ -222,9 +222,12 @@ export default function Communs() {
       </div>
       <h2 className="sr-only">Proposer un projet</h2>
       <p className="w-full justify-center flex pt-10 pb-40">
-        <ButtonExternalLink href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique">
+        <Button
+          variant="outline"
+          href="https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique"
+        >
           Je propose mon projet&nbsp;!
-        </ButtonExternalLink>
+        </Button>
       </p>
     </Layout>
   )
