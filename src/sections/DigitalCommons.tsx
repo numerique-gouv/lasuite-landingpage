@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ img, title, href }) => (
     <h3 className="text-lg text-body mt-6 mb-4">{title}</h3>
     <div className="flex gap-1 justify-center items-center">
       <ExternalLink
-        className="text-sm underline text-blue-1 external-link-blue"
+        className="text-sm underline hover:no-underline active:underline text-blue-1 external-link-blue"
         href={href}
         aria-label={`${title} - En savoir plus`}
       >

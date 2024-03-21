@@ -5,28 +5,37 @@ import { CommonProps } from '@/types'
 interface ButtonProps extends CommonProps {
   href?: string
   'aria-label'?: string
+  variant?: 'outline'
+  size?: 'large'
 }
 
 export const ButtonStyle =
-  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-white px-6 sm:w-auto bg-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
+  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-white py-2.5 px-6 w-fit bg-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
   className,
+  size,
+  variant,
   'aria-label': ariaLabel,
-}) => (
-  <>
-    {href ? (
-      <Link
-        href={href}
-        className={twMerge(ButtonStyle, className)}
-        aria-label={ariaLabel}
-      >
-        {children}
-      </Link>
-    ) : (
-      <button className={twMerge(ButtonStyle, className)}>{children}</button>
-    )}
-  </>
-)
+}) => {
+  const classNames = twMerge(
+    ButtonStyle,
+    size === 'large' && 'text-xl py-6 px-14 w-fit',
+    variant === 'outline' &&
+      'bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:bg-dsfr-hover-tint',
+    className
+  )
+  return (
+    <>
+      {href ? (
+        <Link href={href} className={classNames} aria-label={ariaLabel}>
+          {children}
+        </Link>
+      ) : (
+        <button className={classNames}>{children}</button>
+      )}
+    </>
+  )
+}

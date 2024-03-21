@@ -106,10 +106,12 @@ export const Initiatives = () => (
       </p>
       <p>
         <Button
-          aria-label="En savoir plus sur comment contribuer à La Suite numérique"
           href="/communs"
+          variant="outline"
+          size="large"
+          className="hover:bg-white"
         >
-          En savoir plus
+          Comment proposer mon projet ?
         </Button>
       </p>
     </ContentSection>

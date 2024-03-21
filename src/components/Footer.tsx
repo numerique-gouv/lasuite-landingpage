@@ -20,7 +20,7 @@ const pages: LinkProps[] = [
 ]
 
 export const Footer = () => (
-  <footer className="pt-8 border-t-2 bg-white border-blue-1 pb-40">
+  <footer className="py-8 mt-auto border-t-2 bg-white border-blue-1">
     <div className="fr-container">
       <div className="flex flex-wrap justify-between mb-6">
         <Link

@@ -9,15 +9,16 @@ export const Newsletter = () => (
           Recevoir la newsletter de La Suite
         </h2>
         <p className="text-[.875rem] text-grey-5 leading-6 mb-6">
-          Restez informés des prochaines avancées de La Suite en recevant la
+          Restez informé des prochaines avancées de La Suite en recevant la
           newsletter !
         </p>
         <p>
           <ButtonExternalLink
             href={NEWSLETTER_FORM}
-            aria-label="S'inscrire à la newsletter"
+            aria-label="S'abonner à la newsletter"
+            className="text-lg"
           >
-            S&apos;inscrire
+            S&apos;abonner
           </ButtonExternalLink>
         </p>
       </div>

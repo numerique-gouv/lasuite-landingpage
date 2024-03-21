@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { twMerge } from 'tailwind-merge'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { CommonProps } from '@/types'
@@ -11,12 +12,13 @@ export const Layout: React.FC<
      * The website name is appended to the title automatically.
      */
     title: string
+    layoutClassName?: string
   }
-> = ({ title, ...props }) => {
+> = ({ title, layoutClassName, ...props }) => {
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   return (
-    <>
+    <div className={twMerge('min-h-screen flex flex-col', layoutClassName)}>
       <Head>
         <title>{pageTitle}</title>
         <meta
@@ -30,6 +32,6 @@ export const Layout: React.FC<
       <NavBar />
       <main {...props}>{props.children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
