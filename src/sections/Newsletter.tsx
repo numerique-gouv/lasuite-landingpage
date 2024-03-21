@@ -15,9 +15,10 @@ export const Newsletter = () => (
         <p>
           <ButtonExternalLink
             href={NEWSLETTER_FORM}
-            aria-label="S'inscrire à la newsletter"
+            aria-label="S'abonner à la newsletter"
+            className="text-lg"
           >
-            S&apos;inscrire
+            S&apos;abonner
           </ButtonExternalLink>
         </p>
       </div>
