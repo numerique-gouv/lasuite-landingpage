@@ -8,7 +8,7 @@ interface ButtonProps extends CommonProps {
 }
 
 export const ButtonStyle =
-  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-white px-6 w-fit bg-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
+  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-white py-2.5 px-6 w-fit bg-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
 
 export const Button: React.FC<ButtonProps> = ({
   children,
