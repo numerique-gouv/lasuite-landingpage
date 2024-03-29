@@ -17,7 +17,9 @@ export const SwiperWrapper = ({
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      pagination={true}
+      pagination={{
+        clickable: true,
+      }}
       modules={[Pagination]}
       {...swiperProps}
     >
