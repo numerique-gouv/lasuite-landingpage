@@ -20,7 +20,10 @@ interface CardProps {
 }
 
 const Card = ({ title, quote, img, entity }: CardProps) => (
-  <div className="flex flex-col bg-white p-7 text-left flex-1 max-w-[36rem] lg:min-w-[18rem]">
+  <div
+    tabIndex={0}
+    className="flex flex-col bg-white p-7 text-left flex-1 max-w-[36rem] lg:min-w-[18rem]"
+  >
     <h3 className="h-[114px] w-[140px] relative">
       <Image
         src={img}
