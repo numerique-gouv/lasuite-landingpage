@@ -34,9 +34,9 @@ export const Footer = () => (
           <span className="logo-footer-separator" />
           <p className="font-bold leading-5 text-sm xs:text-base">
             Direction
-            <Br className="inline" />
+            <Br showOnMobile />
             interministérielle
-            <Br className="inline" />
+            <Br showOnMobile />
             du numérique
           </p>
         </Link>
