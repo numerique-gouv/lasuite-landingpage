@@ -27,8 +27,8 @@ const Card = ({ title, quote, img, entity }: CardProps) => (
     <h3 className="h-[114px] w-[140px] relative">
       <Image
         src={img}
-        layout={'fill'}
-        objectFit={'contain'}
+        className="object-contain"
+        fill
         alt={`Témoignage - ${entity}`}
       />
     </h3>
