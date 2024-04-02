@@ -78,10 +78,10 @@ export const DigitalCommons = () => (
     <ContentSection className="bg-white text-body">
       <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold">
         <span aria-hidden={true}>
-          Des applications à la carte et inter-connectées…
+          Des applications à la carte et interconnectées…
         </span>
         <span className="sr-only">
-          Des applications à la carte et inter-connectées basées sur des Communs
+          Des applications à la carte et interconnectées basées sur des Communs
           Numériques Libres
         </span>
       </h2>

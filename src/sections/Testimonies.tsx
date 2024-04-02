@@ -121,7 +121,7 @@ const data: CardProps[] = [
       <p>
         La <strong>coédition</strong> nous permet de travailler sur des dossiers
         et partager les documents et ce, même avec des parties prenantes
-        externes.
+        externes.{' '}
         <strong>
           Je promeus RESANA pour sa facilité de prise en main et l’ensemble des
           outils disponibles
@@ -145,8 +145,8 @@ export const Testimonies = () => (
       La Suite est un projet en construction, certaines de ses applications sont
       encore en phase de test, mais{' '}
       <strong>
-        d&apos;autres sont déjà utilisées par des milliers d&apos;agents et
-        toujours plus chaque jour !{' '}
+        d&apos;autres sont déjà utilisées par des centaines de milliers
+        d&apos;agents et toujours plus chaque jour !{' '}
       </strong>
       <Br />
       Découvrez les applications stars de La Suite :
