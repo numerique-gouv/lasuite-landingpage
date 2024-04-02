@@ -15,10 +15,8 @@ export default function NotFound() {
           s’afficher correctement.
         </p>
 
-        <p>
-          <Button className="m-auto" href="/">
-            Retour à la page d’accueil
-          </Button>
+        <p className="flex justify-center">
+          <Button href="/">Retour à la page d’accueil</Button>
         </p>
       </div>
     </Layout>
