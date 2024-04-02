@@ -46,7 +46,7 @@ export default function Communs() {
               consolider les écosystèmes autour des produits et briques
               techniques que nous utilisons. Vous êtes une entité publique ou
               privée et vous portez une solution collaborative structurée sous
-              forme de commun numérique&nbsp;? <Br className="inline" />{' '}
+              forme de commun numérique&nbsp;? <Br showOnMobile />{' '}
               <b className="text-grey-2">
                 Obtenez un financement et un accompagnement pour travailler avec
                 nous, dans le cadre du Fonds Communs Numériques pour La Suite

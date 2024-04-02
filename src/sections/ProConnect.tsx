@@ -16,7 +16,7 @@ const Card = ({ title, target, text }: CardProps) => (
   <div className="bg-white p-8 w-full text-left">
     <h3>
       <span className="font-extrabold text-3xl text-blue-1">{title}</span>
-      <Br className="inline" />
+      <Br showOnMobile />
       <span className="text-lg text-grey-1">
         pour&nbsp;<strong>{target}</strong>
       </span>
