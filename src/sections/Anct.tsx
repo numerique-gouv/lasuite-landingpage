@@ -7,7 +7,7 @@ import AnssiSvg from '@/assets/logo/anssi.svg'
 import France20230Svg from '@/assets/logo/france-2030.svg'
 
 export const Anct = () => (
-  <ContentSection className="bg-white text-body">
+  <ContentSection>
     <h2 className="text-3xl md:text-4xl font-bold flex flex-row items-center gap-6">
       <Image
         src={SuiteTerritoriale}

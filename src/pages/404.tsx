@@ -5,12 +5,8 @@ import { Button } from '@/components/Button'
 
 export default function NotFound() {
   return (
-    <Layout
-      title="Page introuvable"
-      className="px-4 py-16 md:py-24"
-      layoutClassName="bg-white-1"
-    >
-      <div className="text-center max-w-[26rem] m-auto">
+    <Layout title="Page introuvable" background="gray">
+      <div className="text-center max-w-[26rem] m-auto px-4 py-16 md:py-24">
         <Image src={QuestionMark} alt="" className="m-auto mb-8" />
         <h1 className="text-3xl font-bold mb-8">Ooops&nbsp;!</h1>
 
