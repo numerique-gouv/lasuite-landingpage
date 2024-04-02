@@ -137,11 +137,11 @@ const data: CardProps[] = [
 ]
 
 export const Testimonies = () => (
-  <ContentSection className="bg-white-1 text-left sm:text-center">
+  <ContentSection background="gray">
     <h2 className="text-3xl md:text-4xl font-bold max-w-[30rem] text-center px-4 ">
       Ils utilisent déjà des applications de La&nbsp;Suite…
     </h2>
-    <p className="text-lg max-w-[38rem]">
+    <p className="text-lg max-w-[38rem] text-left sm:text-center">
       La Suite est un projet en construction, certaines de ses applications sont
       encore en phase de test, mais{' '}
       <strong>
