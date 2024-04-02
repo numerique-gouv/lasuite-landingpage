@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
-import { CommonProps } from '@/types'
+import React from 'react'
 
-interface ButtonProps extends CommonProps {
+interface ButtonProps {
+  children: React.ReactNode
   href?: string
   'aria-label'?: string
   variant?: 'outline'
@@ -14,15 +15,13 @@ export const ButtonStyle =
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
-  className,
   variant,
   'aria-label': ariaLabel,
 }) => {
   const classNames = twMerge(
     ButtonStyle,
     variant === 'outline' &&
-      'bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:bg-dsfr-hover-tint',
-    className
+      'bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent'
   )
   return (
     <>
