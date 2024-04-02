@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import { CommonProps } from '@/types'
 import { ButtonStyle } from '@/components/Button'
 import { twMerge } from 'tailwind-merge'
 
 import LinkWhiteSvg from '@/assets/link-white.svg'
 
-export type LinkProps = Omit<CommonProps, 'children'> & {
+export type LinkProps = {
   href: string
   children: string
   /**
@@ -16,6 +15,7 @@ export type LinkProps = Omit<CommonProps, 'children'> & {
    * whether you pass one or not.
    */
   'aria-label'?: string
+  className?: string
 }
 
 /**
