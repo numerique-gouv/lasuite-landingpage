@@ -100,21 +100,21 @@ export const DigitalCommons = () => (
         className="mb-[-3rem] mt-[-1.5rem] sm:hidden"
       />
     </ContentSection>
-    <ContentSection className="pt-0 md:pt-0">
+    <ContentSection padding={false}>
       <div
         aria-hidden={true}
-        className="text-3xl text-title md:text-4xl max-w-[33rem] font-bold text-center"
+        className="text-3xl text-title md:text-4xl max-w-[33rem] font-bold text-center px-4"
       >
         … basées sur des communs numériques libres
       </div>
-      <ul className="hidden md:flex gap-6 flex-wrap justify-center py-10">
+      <ul className="hidden md:flex gap-6 flex-wrap justify-center py-10 px-4">
         {data.map((digitalCommon) => (
           <li key={digitalCommon.title}>
             <Card {...digitalCommon} />
           </li>
         ))}
       </ul>
-      <div className="w-full md:hidden">
+      <div className="w-full md:hidden px-4">
         <SwiperWrapper
           slides={data.map((digitalCommon) => (
             <Card key={digitalCommon.title} {...digitalCommon} />
@@ -124,7 +124,7 @@ export const DigitalCommons = () => (
       {/*<Callout>*/}
       {/*  La Suite est un ensemble de communs numériques libres reliés grâce au bouton Pro Connect*/}
       {/*</Callout>*/}
-      <p className="text-lg max-w-[38em] text-left sm:text-center">
+      <p className="text-lg max-w-[38em] text-left sm:text-center pb-[50px] md:pb-20 px-4">
         Les applications de La Suite numérique respectent un cahier des charges
         vertueux :{' '}
         <strong>

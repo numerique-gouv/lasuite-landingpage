@@ -80,7 +80,7 @@ const data: Omit<CardProps, 'index'>[] = [
 
 export const Initiatives = () => (
   <>
-    <ContentSection className="bg-white-1 text-left sm:text-center">
+    <ContentSection background="gray">
       <h2 className="text-3xl md:text-4xl font-bold max-w-[34rem] text-center">
         Contribuer à La&nbsp;Suite numérique, c’est possible&nbsp;!
       </h2>
@@ -91,7 +91,7 @@ export const Initiatives = () => (
         alt=""
         placeholder="blur"
       />
-      <p className="text-lg max-w-[38rem] text-pretty">
+      <p className="text-lg max-w-[38rem] text-pretty text-left sm:text-center">
         Vous êtes une entité publique ou privée et vous portez une solution
         collaborative structurée sous forme de commun numérique ou de logiciel
         libre ? Vous pouvez intégrer La Suite numérique{' '}
@@ -99,7 +99,7 @@ export const Initiatives = () => (
           pour être utile à des milliers d&apos;agents publics en France&nbsp;!
         </strong>
       </p>
-      <p className="text-lg max-w-[38rem] text-pretty">
+      <p className="text-lg max-w-[38rem] text-pretty text-left sm:text-center">
         Obtenez un <strong>financement</strong> et un{' '}
         <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
         du fonds communs numériques pour La Suite collaborative.
@@ -110,16 +110,13 @@ export const Initiatives = () => (
         </Button>
       </p>
     </ContentSection>
-    <ContentSection
-      className="pt-0 sm:pt-[50px]"
-      classNameChildren="px-0 sm:px-4"
-    >
-      <div className="hidden md:flex flex-row gap-10">
+    <ContentSection padding={false}>
+      <div className="hidden md:flex flex-row gap-10 md:py-20 md:px-4">
         {data.map((value, index) => (
           <Card {...value} key={value?.title} index={index} />
         ))}
       </div>
-      <div className="w-full md:hidden">
+      <div className="w-full md:hidden pb-[50px]">
         <SwiperWrapper
           slides={data.map((value, index) => (
             <Card {...value} key={value?.title} index={index} />

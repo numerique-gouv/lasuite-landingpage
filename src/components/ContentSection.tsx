@@ -1,24 +1,31 @@
 import { HTMLAttributes, PropsWithChildren } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-export const ContentSection = ({
+interface ContentSectionProps
+  extends PropsWithChildren,
+    Omit<HTMLAttributes<HTMLDivElement>, 'className'> {
+  background?: 'gray'
+  padding?: boolean
+}
+
+export const ContentSection: React.FC<ContentSectionProps> = ({
   children,
-  className,
-  classNameChildren,
+  background,
+  padding = true,
   ...props
-}: PropsWithChildren &
-  HTMLAttributes<HTMLDivElement> & { classNameChildren?: string }) => {
+}) => {
+  const classNames = twMerge(
+    'overflow-hidden flex justify-center',
+    background == 'gray' && 'bg-white-1',
+    padding && 'py-[50px] md:py-20'
+  )
+
   return (
-    <div
-      className={twMerge(
-        'overflow-hidden flex justify-center py-[50px] md:py-20',
-        className
-      )}
-    >
+    <div className={classNames}>
       <div
         className={twMerge(
-          'flex flex-col items-center w-full lg:w-[64em] px-4 gap-[50px]',
-          classNameChildren
+          'flex flex-col items-center w-full lg:w-[64em] gap-[50px]',
+          padding && 'px-4'
         )}
         {...props}
       >
