@@ -75,8 +75,8 @@ const data: CardProps[] = [
 
 export const DigitalCommons = () => (
   <>
-    <ContentSection className="bg-white text-body">
-      <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold">
+    <ContentSection>
+      <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold text-center">
         <span aria-hidden={true}>
           Des applications à la carte et interconnectées…
         </span>
@@ -100,10 +100,10 @@ export const DigitalCommons = () => (
         className="mb-[-3rem] mt-[-1.5rem] sm:hidden"
       />
     </ContentSection>
-    <ContentSection className="bg-white text-body pt-0 md:pt-0">
+    <ContentSection className="pt-0 md:pt-0">
       <div
         aria-hidden={true}
-        className="text-3xl text-title md:text-4xl max-w-[33rem] font-bold"
+        className="text-3xl text-title md:text-4xl max-w-[33rem] font-bold text-center"
       >
         … basées sur des communs numériques libres
       </div>

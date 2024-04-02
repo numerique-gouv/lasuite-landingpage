@@ -16,7 +16,7 @@ import { SwiperWrapper } from '@/components/SwiperWrapper'
 
 export default function Communs() {
   return (
-    <Layout title="Le Fonds Communs Numériques" className="bg-white text-body">
+    <Layout title="Le Fonds Communs Numériques">
       <div className="hero relative overflow-hidden">
         <div className="flex flex-col justify-between items-center gap-11 py-10 md:py-20 max-w-[40em] mx-auto">
           <Image

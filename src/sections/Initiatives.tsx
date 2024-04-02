@@ -80,7 +80,7 @@ const data: Omit<CardProps, 'index'>[] = [
 
 export const Initiatives = () => (
   <>
-    <ContentSection className="bg-white-1 text-body text-left sm:text-center">
+    <ContentSection className="bg-white-1 text-left sm:text-center">
       <h2 className="text-3xl md:text-4xl font-bold max-w-[34rem] text-center">
         Contribuer à La&nbsp;Suite numérique, c’est possible&nbsp;!
       </h2>
@@ -111,7 +111,7 @@ export const Initiatives = () => (
       </p>
     </ContentSection>
     <ContentSection
-      className="bg-white text-body pt-0 sm:pt-[50px]"
+      className="pt-0 sm:pt-[50px]"
       classNameChildren="px-0 sm:px-4"
     >
       <div className="hidden md:flex flex-row gap-10">

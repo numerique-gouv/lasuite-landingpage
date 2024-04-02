@@ -10,7 +10,7 @@ import { TITLE_SITE } from '@/constant'
 
 export default function Landing() {
   return (
-    <Layout className="text-center" title={TITLE_SITE}>
+    <Layout title={TITLE_SITE}>
       <Hero />
       {/*<ProConnect />*/}
       <DigitalCommons />
