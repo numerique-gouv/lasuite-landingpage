@@ -3,14 +3,13 @@ import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { ContentSection } from '@/components/ContentSection'
 import { Br } from '@/components/Br'
 import { Button } from '@/components/Button'
-import { twMerge } from 'tailwind-merge'
 
 import IllustrationIdea from '@/assets/idea.webp'
 import StripeWhiteSvg from '@/assets/stripe-white.svg'
 
 const WhiteSquare: React.FC<{ className: string }> = ({ className }) => (
   <span
-    className={twMerge('h-[28px] w-[28px] bg-white absolute z-10', className)}
+    className={`h-[28px] w-[28px] bg-white absolute z-10 ${className || ''}`}
   />
 )
 

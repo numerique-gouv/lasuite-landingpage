@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { ButtonStyle } from '@/components/Button'
-import { twMerge } from 'tailwind-merge'
+import { buttonStyles } from '@/components/Button'
 
 import LinkWhiteSvg from '@/assets/link-white.svg'
 
@@ -54,7 +53,7 @@ export const ButtonExternalLink: React.FC<LinkProps> = ({
   ...subprops
 }) => (
   <ExternalLink
-    className={twMerge(ButtonStyle, className)}
+    className={`${buttonStyles.default} ${className || ''}`}
     {...subprops}
     aria-label={ariaLabel || children}
   >
