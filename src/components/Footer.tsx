@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { twMerge } from 'tailwind-merge'
 import { Br } from '@/components/Br'
 import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 
@@ -45,7 +44,7 @@ export const Footer = () => (
             {externalLinks.map((link) => (
               <li
                 key={link.href}
-                className={twMerge('mr-6 my-2 decoration-grey-5', hover)}
+                className={`mr-6 my-2 decoration-grey-5 ${hover}`}
               >
                 <ExternalLink
                   className="font-bold text-sm text-grey-5 external-link-grey"
@@ -66,7 +65,7 @@ export const Footer = () => (
                 key={link.href}
                 className="inline internal-link-footer text-xs text-grey-3"
               >
-                <Link {...link} className={twMerge('border-grey-1', hover)}>
+                <Link {...link} className={`border-grey-1 ${hover}`}>
                   {link.children}
                 </Link>
               </li>
@@ -78,10 +77,7 @@ export const Footer = () => (
             Sauf mention contraire, tous les contenus de ce site sont sous{' '}
             <ExternalLink
               href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
-              className={twMerge(
-                'relative underline underline-offset-4 external-link-grey',
-                hover
-              )}
+              className={`relative underline underline-offset-4 external-link-grey ${hover}`}
             >
               licence etalab-2.0
             </ExternalLink>

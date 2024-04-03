@@ -1,4 +1,3 @@
-import { twMerge } from 'tailwind-merge'
 import React from 'react'
 
 interface BrProps {
@@ -18,7 +17,7 @@ interface BrProps {
  */
 export const Br: React.FC<BrProps> = ({ showOnMobile = false }) => (
   <br
-    className={twMerge('hidden sm:inline', showOnMobile && 'inline')}
+    className={showOnMobile ? 'inline' : 'hidden sm:inline'}
     aria-hidden={true}
   />
 )

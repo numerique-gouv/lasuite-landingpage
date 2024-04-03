@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { twMerge } from 'tailwind-merge'
 import React from 'react'
 
 interface ButtonProps {
@@ -9,8 +8,14 @@ interface ButtonProps {
   variant?: 'outline'
 }
 
-export const ButtonStyle =
-  'flex justify-center align-middle items-center min-h-10 text-base font-medium text-white py-2.5 px-6 w-fit bg-blue-1 hover:bg-dsfr-blue-2 transition ease-in-out delay-50 duration-300 text-center'
+const transition = 'transition ease-in-out delay-50 duration-300'
+const core =
+  'flex justify-center align-middle items-center py-2.5 px-6 min-h-10 text-base w-fit text-center'
+
+export const buttonStyles = {
+  default: `${core} ${transition} font-medium text-white bg-blue-1 hover:bg-dsfr-blue-2`,
+  outline: `${core} ${transition} bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
+}
 
 export const Button: React.FC<ButtonProps> = ({
   children,
@@ -18,11 +23,9 @@ export const Button: React.FC<ButtonProps> = ({
   variant,
   'aria-label': ariaLabel,
 }) => {
-  const classNames = twMerge(
-    ButtonStyle,
-    variant === 'outline' &&
-      'bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent'
-  )
+  const classNames =
+    variant === 'outline' ? buttonStyles.outline : buttonStyles.default
+
   return (
     <>
       {href ? (

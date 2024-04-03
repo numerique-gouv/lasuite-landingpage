@@ -3,7 +3,6 @@ import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { TITLE_SITE } from '@/constant'
 import React from 'react'
-import { twMerge } from 'tailwind-merge'
 
 export const Layout: React.FC<{
   children: React.ReactNode
@@ -17,13 +16,10 @@ export const Layout: React.FC<{
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
 
-  const classNames = twMerge(
-    'min-h-screen flex flex-col bg-white text-body',
-    background == 'gray' && 'bg-white-1'
-  )
-
   return (
-    <div className={classNames}>
+    <div
+      className={`min-h-screen flex flex-col text-body ${background === 'gray' ? 'bg-white-1' : 'bg-white'}`}
+    >
       <Head>
         <title>{pageTitle}</title>
         <meta
