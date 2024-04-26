@@ -7,7 +7,7 @@ const hover =
 
 const externalLinks: LinkProps[] = [
   { href: 'https://legifrance.gouv.fr/fr/', children: 'legifrance.gouv.fr' },
-  { href: 'https://gouvernement.fr/fr/', children: 'gouvernement.fr' },
+  { href: 'https://info.gouv.fr/fr/', children: 'info.gouv.fr' },
   { href: 'https://www.service-public.fr/', children: 'service-public.fr' },
   { href: 'https://www.data.gouv.fr/fr/', children: 'data.gouv.fr' },
 ]
