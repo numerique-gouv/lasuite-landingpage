@@ -5,6 +5,7 @@ import { Br } from '@/components/Br'
 
 import ProConnectSvg from '@/assets/pro-connect.svg'
 import ProConnectButtonSvg from '@/assets/pro-connect-button.svg'
+import { Button } from '@/components/Button'
 
 interface CardProps {
   title: string
@@ -74,5 +75,13 @@ export const ProConnect = () => (
         ))}
       />
     </div>
+    <p>
+      <Button
+        href="https://proconnect-landing-page.osc-fr1.scalingo.io/"
+        variant="outline"
+      >
+        En savoir plus
+      </Button>
+    </p>
   </ContentSection>
 )
