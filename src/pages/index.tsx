@@ -12,7 +12,7 @@ export default function Landing() {
   return (
     <Layout title={TITLE_SITE}>
       <Hero />
-      {/*<ProConnect />*/}
+      <ProConnect />
       <DigitalCommons />
       <Initiatives />
       <Testimonies />
