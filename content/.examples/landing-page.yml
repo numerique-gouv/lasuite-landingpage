@@ -1,0 +1,258 @@
+title: Notepad
+hero:
+  title: "**Notepad de l’État** <br>, Le meilleur moyen d’écrire <br> et partager
+    votre savoir"
+  subtitle: "Écrivez, collaborez, diffusez : le Notepad est le point central de
+    vos prises de notes."
+  image: ""
+  embed: '<div style="position: relative; padding-top: 56.25%;"><iframe
+    title="Vidéo de présentation de Tchap" width="100%" height="100%"
+    src="https://tube.numerique.gouv.fr/videos/embed/39dca3f3-8420-4fb9-8b84-ee741d079fab?title=0&warningTitle=0&peertubeLink=0&p2p=0"
+    frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts
+    allow-popups" style="position: absolute; inset: 0px;"></iframe></div>'
+  actions:
+    - label: Commencer à écrire
+      href: https://pad.numerique.gouv.fr/
+      primary: true
+    - label: Plus d'info
+      href: https://pad.numerique.gouv.fr/apropos
+flexible_content:
+  - type: cards
+    items:
+      - title: Prenez des notes facilement
+        body: "L'outil est rapide et intuitif : écrivez comme bon vous semble sur une
+          page blanche épurée. Via le format markdown, vous pouvez tant écrire
+          du texte brut simple que construire des graphiques ou des formules
+          mathématiques complexes."
+        image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+          24 24' fill='%23000091' %3E%3Cpath d='M21 1.99669C6 1.99669 4 15.9967
+          3 21.9967C3.66667 21.9967 4.33275 21.9967 4.99824 21.9967C5.66421
+          18.6636 7.33146 16.8303 10 16.4967C14 15.9967 17 12.4967 18
+          9.49669L16.5 8.49669C16.8333 8.16336 17.1667 7.83002 17.5 7.49669C18.5
+          6.49669 19.5042 4.99669 21 1.99669Z'%3E%3C/path%3E%3C/svg%3E
+      - title: Collaborez en temps réel
+        body: Partagez le lien de votre note pour collaborer avec vos collègues en
+          direct et voir leurs modifications en temps réel. Laissez aussi des
+          commentaires pour discuter de vos idées de façon asynchrone.
+        image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+          24 24' fill='%23000091'%3E%3Cpath d='M2 22C2 17.5817 5.58172 14 10
+          14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629
+          16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10
+          1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14
+          9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10
+          11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564
+          19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962
+          3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252
+          16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016
+          5.92603 17.041 5.35635L17.5962 3.41321Z'%3E%3C/path%3E%3C/svg%3E
+      - title: Ne perdez pas vos idées
+        body: "Que vous perdiez votre connexion Internet dans le train, ou que vous
+          fermiez votre onglet sans faire exprès, aucune crainte : votre travail
+          est sauvegardé en local à tout instant."
+        image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+          24 24' fill='%23000091'%3E%3Cpath d='M12.0001 18C12.7144 18 13.3704
+          18.2497 13.8856 18.6665L12.0001 21L10.1145 18.6665C10.6297 18.2497
+          11.2857 18 12.0001 18ZM2.80766 1.39343L20.4853 19.0711L19.0711
+          20.4853L13.8913 15.3042C13.2967 15.1069 12.6609 15 12.0001 15C10.5719
+          15 9.26024 15.499 8.22998 16.3322L6.97363 14.7759C8.24961 13.7442
+          9.84925 13.0969 11.5964 13.01L9.00025 10.414C7.55273 10.8234 6.22651
+          11.5217 5.0878 12.4426L3.83099 10.8868C4.89946 10.0226 6.10763 9.32438
+          7.41633 8.83118L5.13168 6.5451C3.98878 7.08913 2.92058 7.76472 1.94666
+          8.55228L0.689453 6.99674C1.60358 6.25747 2.59156 5.60589 3.64058
+          5.05479L1.39345 2.80765L2.80766 1.39343ZM14.5004 10.2854L12.2165
+          8.00243L12 8C15.0947 8 17.9369 9.08141 20.1693 10.8869L18.9123
+          12.4426C17.6438 11.4167 16.1427 10.6672 14.5004 10.2854ZM12.0001
+          3.00003C16.2849 3.00003 20.22 4.49719 23.3109 6.99691L22.0534
+          8.55228C19.3061 6.33062 15.8085 5.00003 12.0001 5.00003C11.122 5.00003
+          10.2604 5.07077 9.42075 5.20685L7.72455 3.51088C9.09498 3.17702
+          10.5268 3.00003 12.0001 3.00003Z'%3E%3C/path%3E%3C/svg%3E
+  - type: content
+    title: Comparatif
+    body: |-
+      Comment le Notepad se positionne-t-il face à des outils similaires ?
+
+      ![Tableau comparatif](/content/uploads/pad-compare.png)
+  - type: screenshot
+    bg: orange
+    title: Focus sur les interfaces
+    body: "Le Notepad de l'État est simplement ce qu'il est : un bloc-notes. Écrivez
+      votre texte sur la partie gauche, et voyez le rendu en temps réel sur la
+      partie droite"
+    image: /content/uploads/pad-hero2.png
+    image_position: right
+  - type: screenshot
+    bg: orange
+    title: Comptez les moutons
+    body: Là je suis à court d'idée pour remplir avec du contenu cohérent, du coup,
+      je vous propose de regarder cette belle image
+    image: /content/uploads/pad-screenshot.png
+    image_position: left
+  - type: testimonies
+    bg: false
+    title: Témoignages
+    items:
+      - quote: Le Notepad est un outil indispensable pour moi. Je l'utilise tous les
+          jours pour prendre des notes en réunion, et je peux facilement les
+          partager avec mes collègues.
+        author: Tewfiq, designer à la [DINUM](https://www.numerique.gouv.fr/dinum/)
+      - quote: Pouvoir écrire des notes dans un outil similaire à un éditeur de code,
+          mais spécialement conçu pour les notes, c'est un vrai plus pour moi !
+        author: Marie, développeuse chez La Suite numérique
+      - quote: L'outil est complet et permet d'aller jusqu'à générer des slides de
+          présentation. C'est un vrai couteau suisse !
+        author: Jacques, libriste de type non velu
+      - quote: Le Notepad est un outil indispensable pour moi. Je l'utilise tous les
+          jours pour prendre des notes en réunion, et je peux facilement les
+          partager avec mes collègues.
+        author: Tewfiq, designer à la [DINUM](https://www.numerique.gouv.fr/dinum/)
+      - quote: Pouvoir écrire des notes dans un outil similaire à un éditeur de code,
+          mais spécialement conçu pour les notes, c'est un vrai plus pour moi !
+        author: Marie, développeuse chez La Suite numérique
+      - quote: L'outil est complet et permet d'aller jusqu'à générer des slides de
+          présentation. C'est un vrai couteau suisse !
+        author: Jacques, libriste de type non velu
+  - type: faq
+    title: Questions fréquentes
+    items:
+      - question: Qui a accès au Notepad de l'État ?
+        answer: >-
+          Pour **écrire** des notes, vous devez être un agent de l'État. Pas
+          besoin de créer de compte utilisateur : votre adresse e-mail
+          professionnelle est reconnue directement.
+
+
+          Pour **lire** des notes, vous n'avez besoin de rien : si la note est bien configurée pour être publique, il vous suffit de cliquer sur le lien de la note, que vous soyiez un agent de l'État ou non.
+      - question: Mes notes sont-elles privées ?
+        answer: Par défaut, une note est visible et modifiable par tout agent de l'État
+          ayant connaissance de l'URL de la note. Vous pouvez décider de rendre
+          la note totalement privée, accessible uniquement en lecture, voire de
+          la rendre totalement publique. Tout se fait en un clic via le bouton
+          de partage en haut à droite d'une note.
+      - question: Puis-je exporter mes données ?
+        answer: "Oui ! Vos notes utilisent le format markdown, un format de texte brut
+          très répandu. Pas de problème de compatibilité à l'horizon : si vous
+          ne voulez plus utiliser le Notepad de l'État, vos notes sont
+          utilisables en dehors de l'outil en un clic."
+      - question: Comment organiser mes notes ?
+        answer: Vous pouvez organiser vos notes facilement via des étiquettes à décrire
+          dans le texte de la note elle-même. Filtrez ensuite vos notes via la
+          barre de recherche dans l'historique.
+  - type: pictures
+    title: Nos partenaires
+    body: Le Notepad est un projet porté par la DINUM, la Direction
+      interministérielle du numérique. Il utilise le projet libre
+      [Hedgedoc](https://hedgedoc.org/).
+    items:
+      - alt: DINUM
+        image: /content/uploads/dinum.jpg
+        href: https://www.numerique.gouv.fr/dinum/
+      - alt: beta.gouv.fr
+        image: data:image/svg+xml,%3Csvg width='167' height='57' viewBox='0 0 117 40'
+          xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd'
+          clip-rule='evenodd' stroke-linejoin='round'
+          stroke-miterlimit='1.414'%3E%3Cg fill='%23373c42'
+          fill-rule='nonzero'%3E%3Cpath d='M4.573
+          25.052V12.784h2.343V16.7c.459-.427.92-.731 1.383-.912.462-.181
+          1.012-.272 1.649-.272.931 0 1.772.211 2.524.633a4.562 4.562 0 0 1
+          1.766 1.747c.425.743.638 1.574.638 2.493 0 1.249-.382 2.338-1.146
+          3.268-.896 1.076-2.102 1.614-3.618 1.614-.724
+          0-1.344-.106-1.861-.316-.517-.211-1.028-.571-1.533-1.079v1.176H4.573zm5.005-7.509c-.816
+          0-1.486.271-2.012.811-.525.541-.788 1.23-.788 2.068 0 .827.27 1.504.81
+          2.031.54.527 1.232.791 2.076.791.838 0 1.522-.261
+          2.05-.783.529-.521.793-1.201.793-2.039
+          0-.849-.272-1.541-.814-2.076-.543-.535-1.248-.803-2.115-.803zM26.844
+          21.435h-7.572c.144.557.457.998.939 1.322.483.324 1.071.487
+          1.766.487.483 0 .885-.069
+          1.206-.207.322-.138.635-.374.939-.71h2.559c-.138.417-.396.844-.776
+          1.282-1.01 1.108-2.302 1.662-3.876 1.662a5.84 5.84 0 0 1-2.085-.373
+          5.255 5.255 0 0 1-1.684-1.01 4.71 4.71 0 0 1-1.115-1.524 4.39 4.39 0 0
+          1-.414-1.877c0-.887.228-1.702.685-2.445a4.908 4.908 0 0 1 1.869-1.76
+          5.356 5.356 0 0 1 2.598-.644c.959 0 1.823.212 2.593.636a4.612 4.612 0
+          0 1 1.804 1.768c.434.754.651 1.601.651 2.542 0
+          .303-.029.587-.087.851zm-7.64-1.946h5.418c-.149-.589-.457-1.04-.922-1.354-.465-.313-1.059-.47-1.783-.47-.701
+          0-1.282.155-1.744.466-.463.311-.786.764-.969 1.358zM29.527
+          25.052V17.86h-1.146v-2.011h1.146v-3.065h2.343v3.065h1.413v2.011H31.87v7.192h-2.343zM45.131
+          15.849v9.203h-2.145V23.86c-.471.503-.958.863-1.46
+          1.082-.503.219-1.098.329-1.788.329-.941 0-1.787-.204-2.536-.612a4.448
+          4.448 0 0 1-1.758-1.707c-.422-.73-.633-1.552-.633-2.465
+          0-.925.213-1.756.637-2.494a4.519 4.519 0 0 1 1.775-1.731c.758-.416
+          1.614-.624 2.567-.624.707 0 1.315.115 1.826.344.512.23.968.596 1.37
+          1.099v-1.232h2.145zm-5.134 1.816c-.816
+          0-1.489.27-2.02.811-.531.54-.797 1.227-.797 2.059 0 .806.268 1.459.805
+          1.959s1.234.75 2.089.75c.85 0 1.535-.254
+          2.055-.763.52-.508.78-1.173.78-1.994
+          0-.833-.272-1.511-.815-2.035-.542-.525-1.241-.787-2.097-.787zM49.175
+          23.391a.957.957 0 0 0-.971.947c0 .481.441.897.953.897.547 0 1.006-.399
+          1.006-.897 0-.515-.459-.947-.988-.947zM60.764 15.849h2.24v7.46c0
+          .913-.085 1.671-.254 2.274a3.858 3.858 0 0 1-.823 1.545c-.93
+          1.065-2.259 1.597-3.988 1.597-1.195 0-2.231-.257-3.11-.77a4.491 4.491
+          0 0 1-1.912-2.157h2.662c.344.357.703.609 1.076.758.374.149.833.223
+          1.379.223.873 0 1.536-.243
+          1.99-.73.453-.486.7-1.224.74-2.213-.459.508-.937.874-1.434
+          1.098-.497.225-1.09.337-1.779.337-.919 0-1.744-.208-2.476-.625a4.38
+          4.38 0 0 1-1.71-1.739c-.408-.743-.612-1.582-.612-2.518
+          0-1.362.457-2.494 1.37-3.397.913-.903 2.061-1.354 3.445-1.354 1.402 0
+          2.467.459 3.196 1.378v-1.167zm-2.963 1.816c-.804
+          0-1.451.258-1.942.774-.491.517-.737 1.199-.737 2.048 0 .838.248
+          1.507.745 2.007.497.5 1.165.75 2.003.75.85 0 1.528-.253
+          2.033-.759.505-.505.758-1.182.758-2.031
+          0-.832-.263-1.505-.788-2.019-.526-.513-1.216-.77-2.072-.77zM70.571
+          15.638c.93 0 1.792.216 2.584.649a4.942 4.942 0 0 1 1.878
+          1.763c.46.743.689 1.55.689 2.421 0 .864-.231 1.666-.693 2.404a4.958
+          4.958 0 0 1-1.891 1.751 5.397 5.397 0 0 1-2.601.645 5.443 5.443 0 0
+          1-2.615-.645 4.981 4.981 0 0 1-1.899-1.751 4.418 4.418 0 0
+          1-.698-2.404c0-.66.136-1.288.409-1.886a4.735 4.735 0 0 1 1.111-1.54
+          5.305 5.305 0 0 1 1.676-1.026 5.573 5.573 0 0 1 2.05-.381zm-.095
+          2.027c-.758 0-1.411.274-1.959.823-.549.549-.823 1.204-.823 1.966 0
+          .768.275 1.425.827 1.971a2.725 2.725 0 0 0 1.99.819c.781 0 1.45-.272
+          2.007-.815.557-.544.835-1.196.835-1.958
+          0-.79-.278-1.455-.835-1.995-.557-.541-1.238-.811-2.042-.811zM86.701
+          15.849v9.203H84.53v-.884c-.448.405-.88.691-1.297.855-.416.165-.917.248-1.503.248-.66
+          0-1.252-.126-1.774-.377a3.201 3.201 0 0 1-1.267-1.075 3.631 3.631 0 0
+          1-.534-1.232c-.103-.449-.155-1.049-.155-1.8v-4.938h2.352v4.5c0
+          .638.037 1.136.112 1.496.074.359.201.642.379.847.339.368.792.552
+          1.361.552.408 0 .771-.077
+          1.09-.231.318-.155.561-.372.728-.653.126-.206.213-.472.262-.799.049-.327.073-.785.073-1.374v-4.338h2.344zM92.519
+          25.052l-3.937-9.203h2.61l2.257 6.097 2.223-6.097h2.653l-3.937
+          9.203h-1.869zM99.561 23.392c-.498 0-.913.415-.913.946 0
+          .481.415.896.896.896.515 0 .946-.398.946-.896
+          0-.515-.431-.946-.929-.946z'/%3E%3Cpath d='M102.675
+          16.537h1.928l-1.949 9.023c-.508 2.33-1.207 3.495-2.118 3.495-.254
+          0-.424-.148-.424-.36 0-.063.022-.106.085-.212a.63.63 0 0 0
+          .106-.36.832.832 0 0 0-.847-.826c-.445 0-.784.403-.784.911 0 .72.741
+          1.292 1.673 1.292 1.928 0 3.432-2.118
+          4.364-6.079l1.588-6.884h2.352l.127-.678h-2.309c.635-3.389 1.461-4.893
+          2.648-4.893.296 0 .466.106.466.275 0 .043-.022.106-.085.212a.72.72 0 0
+          0-.127.445c0 .508.318.847.784.847.487 0 .91-.402.91-.868
+          0-.784-.783-1.377-1.842-1.377-1.038 0-1.886.466-2.669
+          1.462-.636.847-1.081 1.821-1.737 3.897h-1.991l-.149.678zM110.153
+          25.052c1.165-3.707 1.525-4.575 2.499-6.206.741-1.208 1.334-1.864
+          1.694-1.864.149 0 .255.084.361.296.169.36.338.466.762.466.636 0
+          .996-.381.996-1.059 0-.678-.403-1.101-.996-1.101-.487
+          0-1.08.317-1.631.91-.89.89-1.779 2.182-2.118 3.008l-.318.784
+          1.186-4.66-.063-.042c-1.546.275-1.779.317-3.326.572v.36c.466-.085.551-.106.721-.106.466
+          0 .741.212.741.593 0 .275-.17 1.144-.339 1.779l-1.8
+          6.27h1.631z'/%3E%3C/g%3E%3C/svg%3E%0A
+        href: https://beta.gouv.fr
+      - alt: HedgeDoc
+        image: /content/uploads/hedgedoc.png
+        href: https://hedgedoc.org/
+  - type: cta
+    bg: green
+    title: Écrivez votre première note
+    body: Le Notepad de l'État n'attend que vous. On y va ?
+    cta:
+      label: Utiliser le Notepad de l'État
+      href: https://pad.numerique.gouv.fr/
+      target: _blank
+newsletter:
+  enable: true
+  body: Restez informé des nouveautés sur le Notepad de l'État.
+  cta:
+    href: https://pad.numerique.gouv.fr/newsletter
+  cta_href: https://test.com
+networks:
+  enable: true
+  twitter: https://twitter.com/numeriquegouv
+  linkedin: https://www.linkedin.com/company/la-dinum/
+id: pad
