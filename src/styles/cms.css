@@ -1,0 +1,73 @@
+.cms-block-bg--blue {
+  background-color: #f4f4fe;
+}
+.cms-block-bg--red {
+  background-color: #fef4f4;
+}
+.cms-block-bg--yellow {
+  background-color: #fef6e3;
+}
+.cms-block-bg--green {
+  background-color: #e6feda;
+}
+.cms-block-bg--orange {
+  background-color: #fef4f2;
+}
+.cms-block-bg--rose {
+  background-color: #fef4f3;
+}
+
+.cms-block {
+  padding: 6rem 0;
+}
+
+.cms-block > .fr-container > h2 {
+  font-size: 2rem;
+}
+
+.cms-text-width > * {
+  width: 100%;
+  max-width: 54rem;
+}
+
+.cms-content > p > svg:only-child,
+.cms-content > p > img:only-child,
+.cms-content > svg,
+.cms-content > img {
+  margin: auto;
+  display: block;
+}
+
+@media (min-width: 48em) {
+  .cms-block > .fr-container > h2 {
+    font-size: 2.25rem;
+  }
+
+  .cms-answer p,
+  .cms-content > p {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+}
+
+/* selectors are doubled because DSFR styles are loaded _after_ this one (next doesn't let us easily load global stylesheets in components) */
+.cms-testimony.cms-testimony {
+  padding-left: 0;
+  background-image: none;
+}
+
+.cms-testimony.cms-testimony blockquote p {
+  font-weight: normal;
+}
+
+.cms-testimony.cms-testimony .fr-quote__author a {
+  color: var(--text-title-blue-france);
+}
+
+.cms-image-link {
+  background-image: none;
+}
+
+.cms-image-link.cms-image-link::after {
+  content: none;
+}

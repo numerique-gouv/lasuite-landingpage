@@ -8,17 +8,32 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check \"**/*.{css,ts,tsx,md,json,cjs,js}\"",
-    "format:fix": "prettier --write \"**/*.{css,ts,tsx,md,json,cjs,js}\""
+    "format:fix": "prettier --write \"**/*.{css,ts,tsx,md,json,cjs,js}\"",
+    "cms": "npx decap-server"
   },
   "dependencies": {
-    "@gouvfr-lasuite/integration": "1.0.1",
+    "@bradgarropy/rehype-image-links": "^1.1.1",
+    "@gouvfr-lasuite/integration": "^1.0.1",
+    "@gouvfr/dsfr": "^1.11.2",
     "classnames": "2.5.1",
+    "decap-cms-app": "^3.1.10",
+    "decap-server": "^3.0.4",
+    "js-yaml": "^4.1.0",
     "next": "14.1.0",
+    "postcss-prefix-selector": "^1.16.1",
+    "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swiper": "11.0.5"
+    "rehype-stringify": "^10.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "remark-unwrap-images": "^4.0.0",
+    "swiper": "11.0.5",
+    "unified": "^11.0.4"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "20.11.10",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
