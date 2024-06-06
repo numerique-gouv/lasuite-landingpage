@@ -14,6 +14,12 @@ First, install project dependencies:
 yarn install
 ```
 
+Copy the example env file:
+
+```
+cp .env.example .env
+```
+
 Run the development server:
 
 ```bash
