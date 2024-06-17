@@ -8,6 +8,7 @@ type background =
   | 'purple'
 
 export type LandingPageSchema = {
+  enabled: boolean
   hero: {
     actions: {
       primary: boolean

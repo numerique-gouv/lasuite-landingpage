@@ -15,9 +15,11 @@ import { LandingPageSchema } from '@/cms/landing-page.schema'
 export const LandingPageContent = ({
   id,
   data,
+  isPreview = false,
 }: {
   id: string
   data: LandingPageSchema
+  isPreview?: boolean
 }) => {
   useEffect(() => {
     async function loadDsfr() {
@@ -48,7 +50,7 @@ export const LandingPageContent = ({
             component = <CtaBlock {...block} />
             break
           case 'faq':
-            component = <QandA {...block} />
+            component = <QandA opened={isPreview} {...block} />
             break
           case 'pictures':
             component = <Pictures {...block} />
