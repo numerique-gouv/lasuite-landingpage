@@ -4,9 +4,11 @@ import { Raw } from './Raw'
 export const QandA = ({
   title,
   items,
+  opened = false,
 }: {
   title?: string
   items: Array<{ question: string; answer: string }>
+  opened?: boolean
 }) => {
   const id = useId()
   if (!items.length) return null
@@ -20,15 +22,19 @@ export const QandA = ({
               <h3 className="fr-accordion__title">
                 <button
                   className="fr-accordion__btn fr-btn--lg fr-py-4v"
-                  aria-expanded="false"
+                  aria-expanded={opened ? 'true' : 'false'}
                   aria-controls={`${id}-${i}`}
                 >
                   {item.question}
                 </button>
               </h3>
               <div
-                className="fr-collapse cms-answer fr-mx-0 fr-px-3w"
+                className={`fr-collapse cms-answer fr-mx-0 fr-px-3w ${opened ? 'fr-collapse--expanded' : ''}`}
                 id={`${id}-${i}`}
+                style={{
+                  /* @ts-ignore */
+                  '--collapse-max-height': opened ? 'none' : undefined,
+                }}
               >
                 <Raw className="cms-text-width">{item.answer}</Raw>
               </div>

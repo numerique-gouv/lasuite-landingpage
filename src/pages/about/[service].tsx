@@ -2,7 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 import { GetStaticProps } from 'next'
-import { parseMarkdown } from '@/utils/cms'
+import { addAutoBackgrounds, parseMarkdown } from '@/utils/cms'
 import { LandingPage } from '@/components/LandingPage'
 import { LandingPageSchema } from '@/cms/landing-page.schema'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
@@ -62,27 +62,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
     throw Error(`Error parsing ${context.params.service}.json file`)
   }
 
-  // little tricks to alternate backgrounds if none are set,
-  // making sure to also alternate between blocks that have set bgs
-  service.flexible_content.forEach((block, i) => {
-    if (i === 0 && (block.bg === 'auto' || block.bg === undefined)) {
-      block.bg = 'blue'
-      return
+  if (service.enabled === false) {
+    return {
+      notFound: true,
     }
-    if (
-      (block.bg === 'auto' || block.bg === undefined) &&
-      (!service.flexible_content[i - 1].bg ||
-        service.flexible_content[i - 1].bg === 'auto')
-    ) {
-      block.bg = 'blue'
-      return
-    }
-  })
+  }
 
   return {
     props: {
       id: context.params.service,
-      data: service,
+      data: addAutoBackgrounds(service),
     },
   }
 }

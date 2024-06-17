@@ -1,6 +1,4 @@
 import dynamic from 'next/dynamic'
-// import dsfr from '!!raw-loader!@gouvfr/dsfr/dist/dsfr/dsfr.css'
-// import globalStyles from '!!raw-loader!@/styles/globals.css'
 import LandingPagePreview from '@/components/LandingPagePreview'
 import type { CMS, CmsConfig } from 'decap-cms-core'
 
@@ -19,12 +17,8 @@ const CMS = dynamic(
       const CMS = cms as unknown as CMS
       CMS.init({ config })
       CMS.registerPreviewTemplate('landing-page', LandingPagePreview)
-      // CMS.registerPreviewStyle(dsfr.toString(), {
-      //   raw: true,
-      // })
-      // CMS.registerPreviewStyle(globalStyles.toString(), {
-      //   raw: true,
-      // })
+      CMS.registerPreviewStyle('/assets/cms/globals.css')
+      CMS.registerPreviewStyle('/assets/cms/dsfr/dsfr.min.css')
     })
   },
   {

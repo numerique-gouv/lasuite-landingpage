@@ -10,6 +10,10 @@
 !/content/landing-pages/fr/
 !/public/content/uploads
 !/public/content/uploads/.gitkeep
+/public/assets/cms/**
+!/public/assets/cms/.gitkeep
+!/public/assets/cms/dsfr
+!/public/assets/cms/dsfr/.gitkeep
 
 # dependencies
 /node_modules

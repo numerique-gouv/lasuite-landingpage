@@ -20,6 +20,7 @@ const bgField: CmsFieldBase & CmsFieldSelect = {
 
 const config: Omit<CmsConfig, 'backend'> = {
   load_config_file: false,
+  site_url: '/',
   media_folder: 'public/content/uploads',
   public_folder: '/content/uploads',
   locale: 'fr',
@@ -35,9 +36,18 @@ const config: Omit<CmsConfig, 'backend'> = {
       identifier_field: 'id',
       format: 'yml',
       folder: 'content/landing-pages',
+      preview_path: '/about/{{id}}',
       i18n: true,
       create: true,
       fields: [
+        {
+          label: 'Page activée ?',
+          hint: 'Décocher cette case rendra la page inaccessible sur le site',
+          name: 'enabled',
+          widget: 'boolean',
+          required: false,
+          default: true,
+        },
         {
           label: 'Service',
           hint: "Si votre service n'est pas listé, contactez-nous !",
