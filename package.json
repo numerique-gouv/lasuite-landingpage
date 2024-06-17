@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run copy-cms-assets && next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check \"**/*.{css,ts,tsx,md,json,cjs,js}\"",
     "format:fix": "prettier --write \"**/*.{css,ts,tsx,md,json,cjs,js}\"",
-    "cms": "npx decap-server"
+    "cms": "npx decap-server",
+    "copy-cms-dsfr": "cp -r node_modules/@gouvfr/dsfr/dist/ public/assets/cms/dsfr",
+    "copy-cms-styles": "postcss src/styles/globals.css -o public/assets/cms/globals.css",
+    "copy-cms-assets": "npm run copy-cms-dsfr && npm run copy-cms-styles",
+    "postinstall": "npm run copy-cms-assets"
   },
   "dependencies": {
     "@bradgarropy/rehype-image-links": "^1.1.1",
@@ -20,8 +24,9 @@
     "decap-server": "^3.0.4",
     "js-yaml": "^4.1.0",
     "next": "14.1.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
     "postcss-prefix-selector": "^1.16.1",
-    "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rehype-stringify": "^10.0.0",
