@@ -6,6 +6,9 @@
 !/public/assets/cms/dsfr
 !/public/assets/cms/dsfr/.gitkeep
 
+# testing content
+/content/**/__test__.yml
+
 # dependencies
 /node_modules
 /.pnp
