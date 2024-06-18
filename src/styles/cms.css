@@ -1,3 +1,69 @@
+/**
+ * page content styles to easily write pure html without having to deal with tailwind css/react components
+ * most of this is taken from the DSFR styles, just prefixed with a class to only use them on content pages */
+.content-page h4 {
+  font-size: 1.375rem;
+}
+
+.content-page h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content-page :where(h2, h3) {
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+}
+
+.content-page h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+.content-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin: 0 0 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .content-page h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .content-page h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .content-page h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .content-page h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+.content-page :where(h2, h3, h4):not(:first-child) {
+  margin-top: 3rem;
+}
+
+.content-page p {
+  margin-bottom: 1.5rem;
+}
+
+.content-page ul {
+  list-style: disc;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.content-page a:not([class]) {
+  @apply underlined-link;
+}
+
 .cms-block-bg--blue {
   background-color: #f4f4fe;
 }

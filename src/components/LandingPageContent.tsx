@@ -10,15 +10,13 @@ import { CtaBlock } from '@/components/cms/CtaBlock'
 import { QandA } from '@/components/cms/QandA'
 import { SuiteNumerique } from '@/components/cms/SuiteNumerique'
 import { Screenshot } from '@/components/cms/Screenshot'
-import { LandingPageSchema } from '@/cms/landing-page.schema'
+import { type EntrySchema } from '@/cms/collections/landing-page'
 
 export const LandingPageContent = ({
-  id,
   data,
   isPreview = false,
 }: {
-  id: string
-  data: LandingPageSchema
+  data: EntrySchema
   isPreview?: boolean
 }) => {
   useEffect(() => {
@@ -84,7 +82,7 @@ export const LandingPageContent = ({
           socials={data.socials || { enable: false }}
         />
       )}
-      <SuiteNumerique {...{ title: data.title, id }} />
+      <SuiteNumerique {...{ title: data.title, id: data.id }} />
     </main>
   )
 }

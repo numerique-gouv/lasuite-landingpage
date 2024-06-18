@@ -5,6 +5,7 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import { rehypeImageLinks } from '@bradgarropy/rehype-image-links'
 import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
+import allConstants from '@/constant'
 
 export const toHtml = async (markdown: string, { inline = false } = {}) => {
   const data = await unified()
@@ -16,7 +17,7 @@ export const toHtml = async (markdown: string, { inline = false } = {}) => {
     .use(rehypeStringify)
     .process(markdown)
 
-  const result = String(data)
+  let result = String(data)
 
   // dirty way of checking for loney <p> tags: I don't have the time to better check the remark API
   const isOneP =
@@ -27,5 +28,10 @@ export const toHtml = async (markdown: string, { inline = false } = {}) => {
   if (isOneP) {
     return result.slice(3, -4)
   }
+
+  // replace constants
+  Object.entries(allConstants).forEach(([key, value]) => {
+    result = result.replace(new RegExp(`{${key}}`, 'g'), value)
+  })
   return result
 }

@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import LandingPagePreview from '@/components/LandingPagePreview'
+import collections from '@/cms/collections'
 import type { CMS, CmsConfig } from 'decap-cms-core'
 
 const CMS = dynamic(
@@ -13,10 +13,19 @@ const CMS = dynamic(
     } else {
       config = (await import('@/cms/config.dev')).default
     }
+
     return import('decap-cms-app').then((cms) => {
       const CMS = cms as unknown as CMS
       CMS.init({ config })
-      CMS.registerPreviewTemplate('landing-page', LandingPagePreview)
+      ;[
+        ...collections.fileCollections,
+        ...collections.folderCollections,
+      ].forEach((c) =>
+        CMS.registerPreviewTemplate(c.config.name, c.EntryPreview)
+      )
+      CMS.registerPreviewStyle(`:root { --font-marianne: 'Marianne'; }`, {
+        raw: true,
+      })
       CMS.registerPreviewStyle('/assets/cms/globals.css')
       CMS.registerPreviewStyle('/assets/cms/dsfr/dsfr.min.css')
     })

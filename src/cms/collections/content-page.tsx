@@ -1,0 +1,74 @@
+import type { CmsCollection } from 'decap-cms-core'
+import { toHtml } from '@/utils/markdown'
+import { PageContent } from '@/components/PageContent'
+import { createCollection } from '../createCollection'
+
+const config: CmsCollection = {
+  label: 'Pages de contenu',
+  name: 'content-page',
+  identifier_field: 'title',
+  slug: '{{fields.slug}}',
+  format: 'yml',
+  folder: 'content/content-pages',
+  preview_path: '/{{id}}',
+  i18n: true,
+  create: true,
+  fields: [
+    {
+      label: 'Page activée ?',
+      hint: 'Décocher cette case rendra la page inaccessible sur le site',
+      name: 'enabled',
+      widget: 'boolean',
+      required: false,
+      default: true,
+    },
+    {
+      label: 'slug',
+      hint: 'Écrivez un texte tout en minuscules, sans accent, espace ou caractère spécial. Il est utilisé comme URL de la page',
+      name: 'slug',
+      widget: 'string',
+    },
+    {
+      label: 'Titre de la page',
+      name: 'title',
+      widget: 'string',
+      i18n: true,
+    },
+    {
+      label: 'Contenu',
+      name: 'body',
+      widget: 'markdown',
+      hint: 'vous pouvez utiliser [**les variables suivantes**](https://github.com/numerique-gouv/lasuite-landingpage/blob/main/src/constant.ts) dans le contenu en les mettant entre accolades. Exemple : {CONTACT_EMAIL}.',
+      i18n: true,
+    },
+  ],
+}
+
+const entryParser = async (json: EntrySchema) => {
+  const data = structuredClone(json)
+  data.body = await toHtml(data.body)
+  return data
+}
+
+const entryPreview = (data: EntrySchema) => (
+  <PageContent title={data.title}>
+    <div
+      dangerouslySetInnerHTML={{
+        __html: data.body,
+      }}
+    />
+  </PageContent>
+)
+
+export type EntrySchema = {
+  enabled: boolean
+  slug: string
+  title: string
+  body: string
+}
+
+export const collection = createCollection<EntrySchema>({
+  config,
+  entryParser,
+  entryPreview,
+})

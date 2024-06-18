@@ -1,20 +1,39 @@
 import { promises as fs } from 'fs'
 import path from 'path'
-import yaml from 'js-yaml'
 import { GetStaticProps } from 'next'
-import { addAutoBackgrounds, parseMarkdown } from '@/utils/cms'
-import { LandingPage } from '@/components/LandingPage'
-import { LandingPageSchema } from '@/cms/landing-page.schema'
+import { collection, type EntrySchema } from '@/cms/collections/landing-page'
+import { DsfrFooter } from '@/components/DsfrFooter'
+import { DsfrHeader } from '@/components/DsfrHeader'
+import { LandingPageContent } from '@/components/LandingPageContent'
+import { TITLE_SITE } from '@/constant'
+import Head from 'next/head'
+import Script from 'next/script'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
+import { getCollectionEntry } from '@/cms/getEntry'
 
-export default function ServiceLandingPage({
-  id,
-  data,
-}: {
-  id: string
-  data: LandingPageSchema
-}) {
-  return <LandingPage {...{ id, data }} />
+export default function ServiceLandingPage({ data }: { data: EntrySchema }) {
+  return (
+    <>
+      <Script
+        src="https://integration.lasuite.numerique.gouv.fr/api/v1/gaufre.js"
+        strategy="lazyOnload"
+        id="lasuite-gaufre-script"
+      />
+      <Head>
+        <title>{`${data.title} - ${TITLE_SITE}`}</title>
+        <meta
+          key="ogtitle"
+          property="og:title"
+          content={`${data.title} - ${TITLE_SITE}`}
+        />
+      </Head>
+      <div className="enable-dsfr">
+        <DsfrHeader />
+        <LandingPageContent data={data} />
+        <DsfrFooter />
+      </div>
+    </>
+  )
 }
 
 export const getStaticPaths = async () => {
@@ -33,36 +52,13 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  if (!context.params?.service) {
+  if (!context.params?.service || Array.isArray(context.params.service)) {
     throw Error('No service provided')
   }
 
-  let serviceFile
-  try {
-    serviceFile = await fs.readFile(
-      path.join(
-        process.cwd(),
-        'content',
-        'landing-pages',
-        'fr',
-        `${context.params.service}.yml`
-      ),
-      'utf8'
-    )
-  } catch (error) {
-    throw Error(`No data found for ${context.params.service}`)
-  }
+  const content = await getCollectionEntry(collection, context.params.service)
 
-  let service: LandingPageSchema
-  try {
-    service = await parseMarkdown(yaml.load(serviceFile) as LandingPageSchema)
-  } catch (error) {
-    console.log(error)
-
-    throw Error(`Error parsing ${context.params.service}.json file`)
-  }
-
-  if (service.enabled === false) {
+  if (content.enabled === false) {
     return {
       notFound: true,
     }
@@ -70,8 +66,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      id: context.params.service,
-      data: addAutoBackgrounds(service),
+      data: content,
     },
   }
 }
