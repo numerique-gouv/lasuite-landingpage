@@ -1,0 +1,126 @@
+fr:
+  newsletter_link: https://4f0df3d6.sibforms.com/serve/MUIFAKrbltNDRgRE9y7Ijv8nF1SN65VwHtbGH33ZGje0x0-VS9Rr8bbD3LefzRQE0Eu3KtRtSBbaDueFVEARVVYp2Bb3JLj9LBk9SNK1XX2rSgs9adgkR67Xhi1RUqGU7wcVv2U42hHq7IIyH3N3Eu82Ci39-aYzr2HUoNERYKoTbYfeINulmU8Y-BX6jaK5QNlZg6wyBhMl52sq
+  testimonies_items:
+    - quote: Je suis proviseur adjoint d’une cité scolaire. **Tchap est une
+        application respectueuse des données personnelles.** Je m’en sers pour
+        cloisonner le monde personnel et professionnel parce que le monde
+        enseignant peut devenir invasif. **Je m’en sers avec le personnel de
+        l’éducation nationale en fonction des missions, avec des collègues du
+        même bassin, aussi pour des échanges directs plus informels.**
+      author: Agent
+      image: /content/uploads/education-nationale.svg
+    - quote: >-
+        Je fais de l’animation de projets inter-collectivités donc j'ai beaucoup
+        de liens avec des partenaires de l’Etat. **J’utilise Tchap parce que
+        j'étais intéressé par l’open source.**
+
+
+        Mon prédécesseur avait fait une expérimentation avec quelques collectivités mais nous **on veut l'utiliser tous les jours, pour l'animation au quotidien des nos communautés.**
+      author: Agent de la collectivité territoriale
+      image: /content/uploads/anct.svg
+    - quote:
+        Avec la dernière mise à jour de Tchap, on a les **mêmes fonctionnalités
+        qu'avec WhatsApp**, mais en **plus confidentiel.** Bravo !
+      author: Agent
+      image: /content/uploads/ministere-interieur.svg
+    - quote: Je suis enseignant et dans mon établissement j’ai mis en place le
+        workflow de **RESANA** pour la gestion d’actions qui nécessitent
+        plusieurs étapes de validation, cette GED permet de **dématérialiser ce
+        processus simplement.**
+      author: Agent
+      image: /content/uploads/education-nationale.svg
+    - quote:
+        La **coédition** nous permet de travailler sur des dossiers et partager
+        les documents et ce, même avec des parties prenantes externes. **Je
+        promeus RESANA pour sa facilité de prise en main et l’ensemble des
+        outils disponibles.**
+      author: Agent
+      image: /content/uploads/education-nationale.svg
+  initiatives_description: >-
+    Vous êtes une entité publique ou privée et vous portez une solution
+    collaborative structurée sous forme de commun numérique ou de logiciel libre
+    ? Vous pouvez intégrer La Suite numérique **pour être utile à des milliers
+    d'agents publics en France !**
+
+
+    Obtenez un **financement** et un **accompagnement** pour travailler avec nous, dans le cadre du fonds communs numériques pour La Suite collaborative.
+  intro:
+    '**La Suite numérique vise à fédérer tous les agents et professionnels de
+    la sphère publique** autour d’applications disponibles à la carte et
+    interconnectées, pour une gestion fluide et efficace du travail quotidien.'
+  apps_description: 'Les applications de La Suite numérique respectent un cahier
+    des charges vertueux : **être des logiciels libres et respecter une charte
+    graphique commune**.'
+  callout: |-
+    Travailler avec La Suite numérique,  
+    c’est contribuer à notre souveraineté numérique.
+  faq:
+    - question: |-
+        Qu’est ce qu’un  
+        commun numérique ?
+      answer:
+        'Les communs numériques sont des ressources partagées sous forme de
+        biens immatériels utilisables librement. Ils sont produits et gérés par
+        une communauté ouverte d’acteurs partageant des valeurs et des règles de
+        collaboration ou de gouvernance. Il peut s’agir : de logiciels et
+        librairies libres exploitables dans de nouvelles solutions, de standards
+        ouverts, de données et contenus ouverts.'
+    - question: |-
+        Qu’est ce qu’un  
+        logiciel libre ?
+      answer:
+        Un logiciel libre est un programme informatique dont l’utilisation, la
+        modification et la distribution sont permises, généralement sans coût
+        financier. L’aspect clé des logiciels libres réside dans la liberté
+        qu'ils offrent à leurs utilisateurs. Cela signifie que les utilisateurs
+        ont le droit d’exécuter, copier, distribuer, étudier, modifier et
+        améliorer le logiciel. Ces libertés sont garanties par des licences
+        spécifiques. Les logiciels libres encouragent la collaboration et la
+        transparence, favorisant ainsi la création et le partage ouvert de
+        connaissances informatiques.
+  initiatives_cta:
+    label: Comment proposer mon projet ?
+    href: /communs
+  testimonies_title: Ils utilisent déjà des applications de La Suite…
+  anct_description: >
+    Afin de **renforcer la cybersécurité des collectivités territoriales**, ANCT
+    et ANSSI proposent de contribuer à l’ouverture de La Suite numérique aux
+    élus locaux et agents publics territoriaux.
+
+
+    **La Suite territoriale vise ainsi à mettre à disposition des collectivités un ensemble de services numériques sécurisés**, notamment nom de domaine, serveur mail et espace de stockage minimal.
+
+
+    **Ces services de base seront complétés par des services opérés au niveau national** (DINUM, ANCT, ANSSI) **comme au niveau local** (opérateurs publics de services numériques) à travers La Suite numérique : visioconférence, transfert de fichiers lourds, tableur collaboratif…
+
+
+    **L'ANCT propose aux collectivités territoriales et partenaires locaux de participer aux développements de La Suite territoriale** en rejoignant le groupe pilote ainsi que les ateliers ouverts organisés à partir de mars 2024.
+  anct_partenaires:
+    - image: /content/uploads/anct.svg
+      alt: ANCT Agence Nationale de la Cohésion des Territoires
+    - image: /content/uploads/anssi.svg
+      alt: ANSSI Agence nationale de la sécurité des systèmes d'information
+    - image: /content/uploads/france-2030.svg
+      alt: France 2030
+  testimonies_description: >-
+    La Suite est un projet en construction, certaines de ses applications sont
+    encore en phase de test, **mais d'autres sont déjà utilisées par des
+    centaines de milliers d'agents et toujours plus chaque jour !**  
+
+    Découvrez les applications stars de La Suite :
+de:
+  contribute_cta:
+    href: azd
+    target_blank: null
+  newsletter_link: https://4f0df3d6.sibforms.com/serve/MUIFAKrbltNDRgRE9y7Ijv8nF1SN65VwHtbGH33ZGje0x0-VS9Rr8bbD3LefzRQE0Eu3KtRtSBbaDueFVEARVVYp2Bb3JLj9LBk9SNK1XX2rSgs9adgkR67Xhi1RUqGU7wcVv2U42hHq7IIyH3N3Eu82Ci39-aYzr2HUoNERYKoTbYfeINulmU8Y-BX6jaK5QNlZg6wyBhMl52sq
+  initiatives_cta:
+    href: /communs
+    target_blank: null
+en:
+  contribute_cta:
+    href: azd
+    target_blank: null
+  newsletter_link: https://4f0df3d6.sibforms.com/serve/MUIFAKrbltNDRgRE9y7Ijv8nF1SN65VwHtbGH33ZGje0x0-VS9Rr8bbD3LefzRQE0Eu3KtRtSBbaDueFVEARVVYp2Bb3JLj9LBk9SNK1XX2rSgs9adgkR67Xhi1RUqGU7wcVv2U42hHq7IIyH3N3Eu82Ci39-aYzr2HUoNERYKoTbYfeINulmU8Y-BX6jaK5QNlZg6wyBhMl52sq
+  initiatives_cta:
+    href: /communs
+    target_blank: null

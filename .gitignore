@@ -1,15 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# content
-/content/**
-/public/content/**
-!.gitkeep
-!/content/.examples/
-!/content/.examples/**
-!/content/landing-pages/
-!/content/landing-pages/fr/
-!/public/content/uploads
-!/public/content/uploads/.gitkeep
+# cms preview-related assets (copied from our src via package.json script)
 /public/assets/cms/**
 !/public/assets/cms/.gitkeep
 !/public/assets/cms/dsfr
