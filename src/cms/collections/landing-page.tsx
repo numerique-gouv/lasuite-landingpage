@@ -465,6 +465,9 @@ const config: CmsCollection = {
 const addAutoBackgrounds = (service: EntrySchema) => {
   // little tricks to alternate backgrounds if none are set,
   // making sure to also alternate between blocks that have set bgs
+  if (!service.flexible_content?.length) {
+    return service
+  }
   service.flexible_content.forEach((block, i) => {
     if (i === 0 && (block.bg === 'auto' || block.bg === undefined)) {
       block.bg = 'blue'
