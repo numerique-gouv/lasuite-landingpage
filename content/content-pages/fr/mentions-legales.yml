@@ -1,0 +1,28 @@
+enabled: true
+id: mentions-legales
+title: Mentions légales
+body: >-
+  ## Éditeur
+
+
+  Équipe La Suite Numérique de la Direction interministérielle du numérique
+
+  {ADDRESS_DINUM}.
+
+
+  ## Directeur de la publication
+
+
+  Directeur interministériel du numérique.
+
+
+  ## Copyright
+
+
+  Illustrations de la page accueil: Shutter Stock. Toute autre illustration : DINUM
+
+
+  ## Plus d'infos ?
+
+
+  L'équipe de La Suite Numérique peut être contactée directement à [lasuite@modernisation.gouv.fr](mailto:lasuite@modernisation.gouv.fr).

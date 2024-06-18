@@ -62,7 +62,7 @@ export const DsfrFooter = () => {
         <div className="fr-footer__bottom">
           <ul className="fr-footer__bottom-list">
             <li className="fr-footer__bottom-item">
-              <Link className="fr-footer__bottom-link" href="/apropos">
+              <Link className="fr-footer__bottom-link" href="/mentions-legales">
                 Mentions légales
               </Link>
             </li>

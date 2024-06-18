@@ -13,7 +13,7 @@ const externalLinks: LinkProps[] = [
 ]
 
 const pages: LinkProps[] = [
-  { href: '/apropos', children: 'Mentions Légales' },
+  { href: '/mentions-legales', children: 'Mentions Légales' },
   { href: '/suivi', children: 'Données personnelles et cookies' },
   { href: '/accessibilite', children: 'Accessibilité: audit en cours' },
 ]
