@@ -1,6 +1,5 @@
 import type { CmsConfig } from 'decap-cms-core'
 import config from './config.common'
-import path from 'path'
 
 const prodConfig: CmsConfig = {
   ...config,

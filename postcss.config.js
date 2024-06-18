@@ -21,9 +21,11 @@ module.exports = {
           if (selector === 'body' || selector === ':root') {
             return prefix
           }
-          return prefixedSelector
+          /* for some reason, `selector` and `prefixedSelector` sometimes contain the prefix multiples
+          times (like 7 or 8) and I can't get why. We make sure it's there only once */
+          return `${prefix} ${selector.replaceAll(prefix, '')}`
         }
-        return selector
+        return selector.replaceAll(prefix, '')
       },
     },
     autoprefixer: {},
