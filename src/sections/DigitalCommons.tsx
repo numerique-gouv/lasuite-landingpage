@@ -12,6 +12,7 @@ import JitsiPng from '@/assets/logo/commons/jitsi.png'
 import MatrixPng from '@/assets/logo/commons/matrix.png'
 import MarianneApplicationsSvg from '@/assets/marianne-applications.svg'
 import MarianneApplicationsMobileSvg from '@/assets/marianne-applications-mobile.svg'
+import type { ReactElement } from 'react'
 
 interface CardProps {
   title: string
@@ -73,7 +74,11 @@ const data: CardProps[] = [
   },
 ]
 
-export const DigitalCommons = () => (
+export const DigitalCommons = ({
+  description,
+}: {
+  description: ReactElement | string
+}) => (
   <>
     <ContentSection>
       <h2 className="text-3xl md:text-4xl max-w-[33rem] font-bold text-center">
@@ -124,13 +129,9 @@ export const DigitalCommons = () => (
       {/*<Callout>*/}
       {/*  La Suite est un ensemble de communs numériques libres reliés grâce au bouton Pro Connect*/}
       {/*</Callout>*/}
-      <p className="text-lg max-w-[38em] text-left sm:text-center pb-[50px] md:pb-20 px-4">
-        Les applications de La Suite numérique respectent un cahier des charges
-        vertueux :{' '}
-        <strong>
-          être des logiciels libres et respecter une charte graphique commune.
-        </strong>
-      </p>
+      <div className="text-lg max-w-[38em] text-left sm:text-center pb-[50px] md:pb-20 px-4">
+        {description}
+      </div>
     </ContentSection>
   </>
 )

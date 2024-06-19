@@ -1,7 +1,7 @@
 import { ButtonExternalLink } from '@/components/ExternalLink'
 import { NEWSLETTER_FORM } from '@/constant'
 
-export const Newsletter = () => (
+export const Newsletter = ({ url = NEWSLETTER_FORM }) => (
   <div className="bg-dsfr-blue-1 py-8 text-left">
     <div className="fr-container">
       <div className="flex flex-col items-start justify-between">
@@ -14,7 +14,7 @@ export const Newsletter = () => (
         </p>
         <p>
           <ButtonExternalLink
-            href={NEWSLETTER_FORM}
+            href={url}
             aria-label="S'abonner à la newsletter"
             className="text-lg"
           >
