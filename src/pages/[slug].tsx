@@ -1,33 +1,26 @@
-import { promises as fs } from 'fs'
-import path from 'path'
 import { GetStaticProps } from 'next'
 import { collection, type EntrySchema } from '@/cms/collections/content-page'
+import { getCollectionEntry } from '@/cms/getEntry'
+import { getSlugs } from '@/cms/getSlugs'
 import { Layout } from '@/components/Layout'
 import { PageContent } from '@/components/PageContent'
-import { getCollectionEntry } from '@/cms/getEntry'
-import pages from '.'
+import { Raw } from '@/components/Raw'
 
 export default function ContentPage({ data }: { data: EntrySchema }) {
   return (
     <Layout title={data.title}>
       <PageContent title={data.title}>
-        <div dangerouslySetInnerHTML={{ __html: data.body }} />
+        <Raw>{data.body}</Raw>
       </PageContent>
     </Layout>
   )
 }
 
 export const getStaticPaths = async () => {
-  const pages = await fs
-    .readdir(path.join(process.cwd(), 'content', 'content-pages', 'fr'))
-    .then((files) =>
-      files
-        .filter((file) => file.endsWith('.yml'))
-        .map((file) => file.replace(/\.yml$/, ''))
-    )
+  const slugs = await getSlugs(collection)
 
   return {
-    paths: pages.map((slug) => ({ params: { slug } })),
+    paths: slugs.map((slug) => ({ params: { slug } })),
     fallback: false,
   }
 }

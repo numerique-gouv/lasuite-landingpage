@@ -1,15 +1,14 @@
-import { promises as fs } from 'fs'
-import path from 'path'
 import { GetStaticProps } from 'next'
 import { collection, type EntrySchema } from '@/cms/collections/landing-page'
-import { DsfrFooter } from '@/components/DsfrFooter'
-import { DsfrHeader } from '@/components/DsfrHeader'
-import { LandingPageContent } from '@/components/LandingPageContent'
-import { TITLE_SITE } from '@/constant'
+import { getCollectionEntry } from '@/cms/getEntry'
+import { getSlugs } from '@/cms/getSlugs'
 import Head from 'next/head'
 import Script from 'next/script'
+import { DsfrHeader } from '@/components/DsfrHeader'
+import { DsfrFooter } from '@/components/DsfrFooter'
+import { LandingPageContent } from '@/components/LandingPageContent'
+import { TITLE_SITE } from '@/constant'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
-import { getCollectionEntry } from '@/cms/getEntry'
 
 export default function ServiceLandingPage({ data }: { data: EntrySchema }) {
   return (
@@ -37,16 +36,10 @@ export default function ServiceLandingPage({ data }: { data: EntrySchema }) {
 }
 
 export const getStaticPaths = async () => {
-  const enabledServices = await fs
-    .readdir(path.join(process.cwd(), 'content', 'landing-pages', 'fr'))
-    .then((files) =>
-      files
-        .filter((file) => file.endsWith('.yml'))
-        .map((file) => file.replace(/\.yml$/, ''))
-    )
+  const slugs = await getSlugs(collection)
 
   return {
-    paths: enabledServices.map((service) => ({ params: { service } })),
+    paths: slugs.map((service) => ({ params: { service } })),
     fallback: false,
   }
 }
