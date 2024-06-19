@@ -166,24 +166,37 @@ const entryParser = async (json: EntrySchema) => {
     'testimonies_title',
     'newsletter_link',
   ] as const
-  mdFields.forEach(async (field) => {
-    if (homepage[field]) {
-      homepage[field] = await toHtml(homepage[field])
-    }
-  })
-  inlineMdFields.forEach(async (field) => {
-    if (homepage[field]) {
-      homepage[field] = await toHtml(homepage[field], { inline: true })
-    }
-  })
-  homepage.faq?.forEach(async (item, i, arr) => {
-    arr[i].question = await toHtml(item.question, { inline: true })
-    arr[i].answer = await toHtml(item.answer)
-  })
-  homepage.testimonies_items?.forEach(async (item, i, arr) => {
-    arr[i].author = await toHtml(item.author, { inline: true })
-    arr[i].quote = await toHtml(item.quote)
-  })
+
+  const transforms = [
+    ...mdFields.map(async (field) => {
+      if (homepage[field]) {
+        homepage[field] = await toHtml(homepage[field])
+      }
+    }),
+    ...inlineMdFields.map(async (field) => {
+      if (homepage[field]) {
+        homepage[field] = await toHtml(homepage[field], { inline: true })
+      }
+    }),
+  ]
+  if (homepage.faq) {
+    transforms.push(
+      ...homepage.faq.map(async (item) => {
+        item.question = await toHtml(item.question, { inline: true })
+        item.answer = await toHtml(item.answer)
+      })
+    )
+  }
+  if (homepage.testimonies_items) {
+    transforms.push(
+      ...homepage.testimonies_items.map(async (item) => {
+        item.author = await toHtml(item.author, { inline: true })
+        item.quote = await toHtml(item.quote)
+      })
+    )
+  }
+
+  await Promise.all(transforms)
   return homepage
 }
 
