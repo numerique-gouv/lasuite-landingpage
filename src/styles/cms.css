@@ -137,3 +137,16 @@
 .cms-image-link.cms-image-link::after {
   content: none;
 }
+
+.communs-cms-content h2,
+.communs-cms-content h3 {
+  @apply text-xl font-bold mb-[1.75rem];
+}
+
+.communs-cms-content p {
+  @apply text-lg mb-[1.75rem];
+}
+
+.communs-cms-content ul {
+  @apply text-lg list-disc pl-10;
+}
