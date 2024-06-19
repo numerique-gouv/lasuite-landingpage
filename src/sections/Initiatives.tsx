@@ -1,3 +1,4 @@
+import type { ReactElement } from 'react'
 import Image from 'next/image'
 import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { ContentSection } from '@/components/ContentSection'
@@ -5,7 +6,6 @@ import { Button } from '@/components/Button'
 
 import IllustrationIdea from '@/assets/idea.webp'
 import StripeWhiteSvg from '@/assets/stripe-white.svg'
-import type { ReactElement } from 'react'
 
 const WhiteSquare: React.FC<{ className: string }> = ({ className }) => (
   <span
@@ -45,8 +45,8 @@ const DecorationEven = () => (
 )
 
 interface CardProps {
-  question: string
-  answer: any
+  question: ReactElement | string
+  answer: ReactElement | string
   index: number
 }
 
@@ -97,13 +97,13 @@ export const Initiatives = ({
     <ContentSection padding={false}>
       <div className="hidden md:flex flex-row gap-10 md:py-20 md:px-4">
         {items.map((value, index) => (
-          <Card {...value} key={value?.question} index={index} />
+          <Card {...value} key={index} index={index} />
         ))}
       </div>
       <div className="w-full md:hidden pb-[50px]">
         <SwiperWrapper
           slides={items.map((value, index) => (
-            <Card {...value} key={value?.question} index={index} />
+            <Card {...value} key={index} index={index} />
           ))}
         />
       </div>
