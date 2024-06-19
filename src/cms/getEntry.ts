@@ -4,7 +4,7 @@ import yaml from 'js-yaml'
 import type { FileCollection, FolderCollection } from './types'
 
 /**
- * helper to easily retrieve content from a cms yaml file
+ * retrieve content from a cms yaml file
  *
  * @param collection collection object created with `createCollection`
  * @param slug (optional) for a folder collection, pass the slug of the entry you want to retrieve
