@@ -19,14 +19,14 @@ type BaseCollection<Schema> = {
   EntryPreview: ({ entry }: PreviewTemplateComponentProps) => JSX.Element
 }
 
-export type FolderCollection<Schema> = BaseCollection<Schema> & {
+export type FolderCollection<Schema = any> = BaseCollection<Schema> & {
   /**
    * DecapCMS folder collection configuration
    */
   config: CmsCollection
 }
 
-export type FileCollection<Schema> = BaseCollection<Schema> & {
+export type FileCollection<Schema = any> = BaseCollection<Schema> & {
   /**
    * DecapCMS file collection configuration
    */

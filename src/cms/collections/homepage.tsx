@@ -154,18 +154,18 @@ const config: CmsCollectionFile = {
  */
 const entryParser = async (json: EntrySchema) => {
   const homepage = structuredClone(json)
-  const mdFields: Array<keyof EntrySchema> = [
+  const mdFields = [
     'intro',
     'apps_description',
     'initiatives_description',
     'testimonies_description',
     'anct_description',
-  ]
-  const inlineMdFields: Array<keyof EntrySchema> = [
+  ] as const
+  const inlineMdFields = [
     'callout',
     'testimonies_title',
     'newsletter_link',
-  ]
+  ] as const
   mdFields.forEach(async (field) => {
     if (homepage[field]) {
       homepage[field] = await toHtml(homepage[field])

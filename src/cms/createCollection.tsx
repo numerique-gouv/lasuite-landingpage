@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
-import type { PreviewTemplateComponentProps } from 'decap-cms-core'
-import type { Collection } from './types'
+import type {
+  CmsCollection,
+  CmsCollectionFile,
+  PreviewTemplateComponentProps,
+} from 'decap-cms-core'
+import type { Collection, FileCollection, FolderCollection } from './types'
 
 type CollectionParams<EntrySchema> = {
   config: Collection<EntrySchema>['config']
@@ -17,21 +21,37 @@ type CollectionParams<EntrySchema> = {
  * @param options.entryPreview function taking the parsed entry data as input, returning a JSX element to display the entry in the preview template
  * @returns a collection object with `config`, `entryParser` and `EntryPreview` properties
  */
-export const createCollection = <EntrySchema,>({
+export function createCollection<EntrySchema>(
+  params: CollectionParams<EntrySchema> & { config: CmsCollectionFile }
+): FileCollection<EntrySchema>
+export function createCollection<EntrySchema>(
+  params: CollectionParams<EntrySchema> & { config: CmsCollection }
+): FolderCollection<EntrySchema>
+export function createCollection<EntrySchema>({
   config,
   entryParser,
   entryPreview,
-}: CollectionParams<EntrySchema>): Collection<EntrySchema> => {
+}: CollectionParams<EntrySchema>): Collection<EntrySchema> {
   const EntryPreview = createPreviewComponent<EntrySchema>(
     entryParser,
     entryPreview
   )
 
-  return {
+  const collection = {
     config,
     entryParser,
     EntryPreview,
   }
+
+  return isFileCollection(config)
+    ? (collection as FileCollection<EntrySchema>)
+    : (collection as FolderCollection<EntrySchema>)
+}
+
+const isFileCollection = (
+  config: CmsCollection | CmsCollectionFile
+): config is CmsCollectionFile => {
+  return 'file' in config
 }
 
 /**
