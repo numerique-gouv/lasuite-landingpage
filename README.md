@@ -40,7 +40,7 @@ You can also decide to directly edit yaml files in the `/content` directory, fol
 
 If you want to test the CMS locally, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
 
-For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files.
+For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files. An example landing page yml file can be copied to help (`/content/.examples/landing-page.yml`).
 
 ## Contributing
 
