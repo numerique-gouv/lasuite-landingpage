@@ -1,4 +1,6 @@
+import { EntryImage } from '@/cms/types'
 import type { ReactElement } from 'react'
+import { CmsImage } from '../CmsImage'
 
 export const Pictures = ({
   title,
@@ -7,7 +9,7 @@ export const Pictures = ({
 }: {
   title?: string
   body?: ReactElement | string
-  items: Array<{ image: string; alt: string; href?: string }>
+  items: Array<{ alt: string; href?: string } & EntryImage>
 }) => {
   if (!items.length) return null
   return (
@@ -18,9 +20,10 @@ export const Pictures = ({
         <div className="flex flex-wrap justify-center mt-8 gap-16">
           {items.map((item, i) => {
             const img = (
-              <img
+              <CmsImage
                 className="w-auto h-24"
                 src={item.image}
+                {...item.image_object}
                 title={item.alt}
                 alt={item.alt}
               />

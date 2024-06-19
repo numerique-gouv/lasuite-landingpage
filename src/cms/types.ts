@@ -36,3 +36,13 @@ export type FileCollection<Schema> = BaseCollection<Schema> & {
 export type Collection<Schema> =
   | FolderCollection<Schema>
   | FileCollection<Schema>
+
+export type EntryImage = {
+  image: string
+  image_object?: {
+    src: string
+    width?: number
+    height?: number
+    fill?: true
+  }
+}
