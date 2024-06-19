@@ -2,6 +2,7 @@ import type { CmsCollection } from 'decap-cms-core'
 import { toHtml } from '@/utils/markdown'
 import { PageContent } from '@/components/PageContent'
 import { createCollection } from '../createCollection'
+import { Raw } from '@/components/Raw'
 
 const config: CmsCollection = {
   label: 'Pages de contenu',
@@ -52,11 +53,7 @@ const entryParser = async (json: EntrySchema) => {
 
 const entryPreview = (data: EntrySchema) => (
   <PageContent title={data.title}>
-    <div
-      dangerouslySetInnerHTML={{
-        __html: data.body,
-      }}
-    />
+    <Raw>{data.body}</Raw>
   </PageContent>
 )
 

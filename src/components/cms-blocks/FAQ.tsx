@@ -1,13 +1,15 @@
-import { useId } from 'react'
-import { Raw } from './Raw'
+import { ReactElement, useId } from 'react'
 
-export const QandA = ({
+export const FAQ = ({
   title,
   items,
   opened = false,
 }: {
   title?: string
-  items: Array<{ question: string; answer: string }>
+  items: Array<{
+    question: ReactElement | string
+    answer: ReactElement | string
+  }>
   opened?: boolean
 }) => {
   const id = useId()
@@ -36,7 +38,7 @@ export const QandA = ({
                   '--collapse-max-height': opened ? 'none' : undefined,
                 }}
               >
-                <Raw className="cms-text-width">{item.answer}</Raw>
+                <div className="cms-text-width">{item.answer}</div>
               </div>
             </div>
           ))}

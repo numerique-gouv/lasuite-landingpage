@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { Raw } from './Raw'
+import type { ReactElement } from 'react'
 
 export const Screenshot = ({
   title,
@@ -8,7 +8,7 @@ export const Screenshot = ({
   image_position = 'right',
 }: {
   title?: string
-  body: string
+  body: ReactElement | string
   image: string
   image_position?: string
 }) => {
@@ -22,7 +22,7 @@ export const Screenshot = ({
             })}
           >
             {!!title && <h2>{title}</h2>}
-            <Raw className="cms-content cms-text-width">{body}</Raw>
+            <div className="cms-content cms-text-width">{body}</div>
           </div>
           <div className="fr-col">
             <a href={image}>

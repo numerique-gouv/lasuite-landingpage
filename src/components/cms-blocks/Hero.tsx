@@ -1,5 +1,6 @@
 import classNames from 'classnames'
-import { Raw } from './Raw'
+import { Raw } from '../Raw'
+import type { ReactElement } from 'react'
 
 export const Hero = ({
   title,
@@ -8,8 +9,8 @@ export const Hero = ({
   embed,
   actions = [],
 }: {
-  title: string
-  subtitle?: string
+  title: ReactElement | string
+  subtitle?: ReactElement | string
   image?: string
   embed?: string
   actions: Array<{
@@ -26,12 +27,8 @@ export const Hero = ({
         <div className="fr-grid-row fr-grid-row--gutters fr-my-0">
           <div className="fr-col">
             <div>
-              <Raw tag="h1" className="[&>strong]:font-extrabold">
-                {title}
-              </Raw>
-              <Raw tag="p" className="fr-text--lead">
-                {subtitle}
-              </Raw>
+              <h1 className="[&>strong]:font-extrabold">{title}</h1>
+              <p className="fr-text--lead">{subtitle}</p>
             </div>
             {!!actions.length && (
               <ul className="fr-btns-group fr-btns-group--inline-md fr-btns-group--lg">
@@ -54,15 +51,8 @@ export const Hero = ({
             )}
           </div>
           <div className="fr-col">
-            {(!!embed && (
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: embed,
-                }}
-              />
-            )) ||
-              null}
-            {(!showVideo && !!image && <img src={image} alt="" />) || null}
+            {!!embed && <Raw>{embed}</Raw>}
+            {!showVideo && !!image && <img src={image} alt="" />}
           </div>
         </div>
       </div>

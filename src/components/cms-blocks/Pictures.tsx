@@ -1,4 +1,4 @@
-import { Raw } from './Raw'
+import type { ReactElement } from 'react'
 
 export const Pictures = ({
   title,
@@ -6,7 +6,7 @@ export const Pictures = ({
   items,
 }: {
   title?: string
-  body?: string
+  body?: ReactElement | string
   items: Array<{ image: string; alt: string; href?: string }>
 }) => {
   if (!items.length) return null
@@ -14,7 +14,7 @@ export const Pictures = ({
     <div className="cms-block">
       <div className="fr-container">
         {!!title && <h2>{title}</h2>}
-        {!!body && <Raw className="cms-content cms-text-width">{body}</Raw>}
+        {!!body && <div className="cms-content cms-text-width">{body}</div>}
         <div className="flex flex-wrap justify-center mt-8 gap-16">
           {items.map((item, i) => {
             const img = (

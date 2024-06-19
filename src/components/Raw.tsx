@@ -1,3 +1,6 @@
+/**
+ * component to abstract "dangerouslySetInnerHTML" everytime we want to render raw html
+ */
 export const Raw = ({
   tag: Tag = 'div',
   className,
