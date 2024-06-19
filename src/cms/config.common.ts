@@ -14,7 +14,7 @@ const config: Omit<CmsConfig, 'backend'> = {
   },
   collections: [
     {
-      label: 'Pages fixes',
+      label: 'Pages spécifiques',
       name: 'custom-pages',
       i18n: {
         structure: 'single_file',

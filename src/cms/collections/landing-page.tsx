@@ -26,9 +26,10 @@ const bgField: CmsFieldBase & CmsFieldSelect = {
 }
 
 const config: CmsCollection = {
-  label: 'Landing pages',
+  label: 'Landing pages de services',
+  label_singular: 'Landing page',
   name: 'landing-page',
-  identifier_field: 'id',
+  identifier_field: 'title',
   slug: '{{fields.id}}',
   format: 'yml',
   folder: 'content/landing-pages',
