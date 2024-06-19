@@ -30,6 +30,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 To learn more about Next.js, take a look at the [Next.js Documentation](https://nextjs.org/docs).
 
+## Authoring content
+
+Most of the website content comes from yaml files authored through [DecapCMS](https://decapcms.org/). Go on `/admin`, login with your GitHub account, and edit existing pages or create new ones. On save, the CMS commits the content files in this repository, and the production website is deployed with the latest changes (deployment might take a few minutes).
+
+You can also decide to directly edit yaml files in the `/content` directory, following the current structure.
+
+### Locally
+
+If you want to test the CMS locally, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
+
+For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files.
+
 ## Contributing
 
 This project is intended to be community-driven, so please, do not hesitate to get in touch if you have any question related to our implementation or design decisions.
