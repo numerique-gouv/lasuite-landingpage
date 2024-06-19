@@ -5,25 +5,47 @@ import { Testimonies } from '@/sections/Testimonies'
 import { Initiatives } from '@/sections/Initiatives'
 import { Newsletter } from '@/sections/Newsletter'
 import { EntrySchema } from '@/cms/collections/homepage'
+import { Raw } from './Raw'
 
+/**
+ * output the homepage content with data taken from the CMS file
+ *
+ * several data fields contain already-made HTML, so we use the <Raw> component
+ * here to abstract this notion from lower-level components
+ */
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
   return (
     <>
-      <Hero intro={data.intro} callout={data.callout} />
+      <Hero
+        intro={<Raw>{data.intro}</Raw>}
+        callout={<Raw tag="span">{data.callout}</Raw>}
+      />
       {/*<ProConnect />*/}
-      <DigitalCommons description={data.apps_description} />
+      <DigitalCommons description={<Raw>{data.apps_description}</Raw>} />
       <Initiatives
-        description={data.initiatives_description}
+        description={<Raw>{data.initiatives_description}</Raw>}
         cta={data.initiatives_cta}
-        items={data.faq || []}
+        items={
+          (data.faq || []).map((item) => ({
+            ...item,
+            question: <Raw tag="span">{item.question}</Raw>,
+            answer: <Raw>{item.answer}</Raw>,
+          })) || []
+        }
       />
       <Testimonies
         title={data.testimonies_title}
-        description={data.testimonies_description}
-        items={data.testimonies_items || []}
+        description={<Raw>{data.testimonies_description}</Raw>}
+        items={
+          (data.testimonies_items || []).map((item) => ({
+            ...item,
+            author: <Raw tag="span">{item.author}</Raw>,
+            quote: <Raw>{item.quote}</Raw>,
+          })) || []
+        }
       />
       <Anct
-        description={data.anct_description}
+        description={<Raw>{data.anct_description}</Raw>}
         logos={data.anct_partenaires || []}
       />
       <Newsletter url={data.newsletter_link} />

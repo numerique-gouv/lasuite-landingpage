@@ -1,13 +1,17 @@
 import classNames from 'classnames'
-import { Raw } from './Raw'
+import type { ReactElement } from 'react'
 
 export const FollowUs = ({
-  newsletter,
-  socials,
+  newsletter = { enable: false },
+  socials = { enable: false },
 }: {
-  newsletter: { enable: boolean; body?: string; cta_href?: string }
-  socials: {
-    enable: boolean
+  newsletter?: {
+    enable?: boolean
+    body?: ReactElement | string
+    cta_href?: string
+  }
+  socials?: {
+    enable?: boolean
     facebook?: string
     twitter?: string
     instagram?: string
@@ -18,21 +22,21 @@ export const FollowUs = ({
   if (!newsletter.enable && !socials.enable) return null
   const socialLinks = socials.enable
     ? [
-        socials.facebook ? ['facebook', socials.facebook] : null,
-        socials.twitter ? ['twitter', socials.twitter] : null,
-        socials.instagram ? ['instagram', socials.instagram] : null,
-        socials.linkedin ? ['linkedin', socials.linkedin] : null,
-        socials.youtube ? ['youtube', socials.youtube] : null,
+        socials.facebook ? { id: 'facebook', url: socials.facebook } : null,
+        socials.twitter ? { id: 'twitter', url: socials.twitter } : null,
+        socials.instagram ? { id: 'instagram', url: socials.instagram } : null,
+        socials.linkedin ? { id: 'linkedin', url: socials.linkedin } : null,
+        socials.youtube ? { id: 'youtube', url: socials.youtube } : null,
       ].filter((item) => !!item)
     : []
   return (
     <div className="fr-follow">
       <div className="fr-container">
         <div className="fr-grid-row">
-          {newsletter && newsletter.enable ? (
+          {newsletter?.enable && (
             <div
               className={classNames('fr-col-12', {
-                'fr-col-md-8': socials && socials.enable,
+                'fr-col-md-8': socials?.enable,
               })}
             >
               <div className="fr-follow__newsletter">
@@ -40,9 +44,7 @@ export const FollowUs = ({
                   <p className="fr-h5">
                     Abonnez-vous à notre lettre d’information
                   </p>
-                  <Raw tag="p" className="fr-text--sm">
-                    {newsletter.body}
-                  </Raw>
+                  <p className="fr-text--sm">{newsletter.body}</p>
                 </div>
                 <div className="fr-btns-group fr-btns-group--inline-md">
                   <a
@@ -55,11 +57,11 @@ export const FollowUs = ({
                 </div>
               </div>
             </div>
-          ) : null}
-          {socials && socials.enable ? (
+          )}
+          {socials?.enable && (
             <div
               className={classNames('fr-col-12', {
-                'fr-col-md-4': newsletter && newsletter.enable,
+                'fr-col-md-4': newsletter?.enable,
               })}
             >
               <div className="fr-follow__social">
@@ -67,23 +69,25 @@ export const FollowUs = ({
                   Suivez-nous <br /> sur les réseaux sociaux
                 </p>
                 <ul className="fr-btns-group">
-                  {(socialLinks as Array<[string, string]>).map((link) => (
-                    <li key={link[0]}>
-                      <a
-                        className={`fr-btn--${link[0]} fr-btn`}
-                        title={`Suivez-nous sur ${link[0]} (nouvelle fenêtre)`}
-                        rel="noopener external"
-                        href={link[1]}
-                        target="_blank"
-                      >
-                        {link[0]}
-                      </a>
-                    </li>
-                  ))}
+                  {(socialLinks as Array<{ id: string; url: string }>).map(
+                    (link) => (
+                      <li key={link.id}>
+                        <a
+                          className={`fr-btn--${link.id} fr-btn`}
+                          title={`Suivez-nous sur ${link.id} (nouvelle fenêtre)`}
+                          rel="noopener external"
+                          href={link.url}
+                          target="_blank"
+                        >
+                          {link.id}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
-          ) : null}
+          )}
         </div>
       </div>
     </div>

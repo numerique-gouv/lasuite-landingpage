@@ -15,9 +15,9 @@ export const Callout = ({ children }: CalloutProps) => (
       height={30}
       alt=""
     />
-    <div className="w-full flex justify-center text-left sm:text-center">
-      <p className="text-xl sm:text-2xl text-blue-1 font-bold">{children}</p>
-    </div>
+    <p className="w-full flex justify-center text-left sm:text-center text-xl sm:text-2xl text-blue-1 font-bold">
+      {children}
+    </p>
     <Image
       className="rotate-180 flex absolute bottom-[-1.3rem] right-[-1.3rem] h-[1.3rem] w-[1.3rem]"
       src={StripeBlueSvg}

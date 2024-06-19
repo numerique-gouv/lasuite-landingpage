@@ -1,10 +1,10 @@
-import { title } from 'process'
-import { Raw } from './Raw'
+import Image from 'next/image'
+import type { ReactElement } from 'react'
 
 export const Cards = ({
   items = [],
 }: {
-  items: Array<{ image?: string; title: string; body: string }>
+  items: Array<{ image?: string; title: string; body: ReactElement | string }>
 }) => {
   if (!items.length) return null
   const columnClasses =
@@ -29,7 +29,7 @@ export const Cards = ({
                   <div className="fr-card__body">
                     <div className="fr-card__content">
                       {!!item.image && (
-                        <img
+                        <Image
                           src={item.image}
                           alt=""
                           width="48"
@@ -46,7 +46,7 @@ export const Cards = ({
                       >
                         {item.title}
                       </h3>
-                      <Raw className="fr-card__desc">{item.body}</Raw>
+                      <div className="fr-card__desc">{item.body}</div>
                     </div>
                   </div>
                 </div>
