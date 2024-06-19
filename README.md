@@ -36,6 +36,10 @@ Most of the website content comes from yaml files authored through [DecapCMS](ht
 
 You can also decide to directly edit yaml files in the `/content` directory, following the current structure.
 
+### Special fields
+
+- on build, for every field named `image`, we'll try to get the image dimensions before rendering the content in nextjs pages (adding an `image_object` object next to the `image` data, with src, width and height info)
+
 ### Locally
 
 If you want to test the CMS locally, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.

@@ -1,17 +1,19 @@
-import classNames from 'classnames'
-import { Raw } from '../Raw'
 import type { ReactElement } from 'react'
+import classNames from 'classnames'
+import type { EntryImage } from '@/cms/types'
+import { Raw } from '../Raw'
+import { CmsImage } from '../CmsImage'
 
 export const Hero = ({
   title,
   subtitle,
   image,
+  image_object,
   embed,
   actions = [],
 }: {
   title: ReactElement | string
   subtitle?: ReactElement | string
-  image?: string
   embed?: string
   actions: Array<{
     label: string
@@ -19,7 +21,7 @@ export const Hero = ({
     target_blank?: boolean
     primary?: boolean
   }>
-}) => {
+} & Partial<EntryImage>) => {
   const showVideo = !!embed
   return (
     <div className="cms-block">
@@ -52,7 +54,9 @@ export const Hero = ({
           </div>
           <div className="fr-col">
             {!!embed && <Raw>{embed}</Raw>}
-            {!showVideo && !!image && <img src={image} alt="" />}
+            {!showVideo && !!image && (
+              <CmsImage src={image} {...image_object} alt="" />
+            )}
           </div>
         </div>
       </div>

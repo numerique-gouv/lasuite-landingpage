@@ -78,7 +78,7 @@ flexible_content:
     body: |-
       Comment le Notepad se positionne-t-il face à des outils similaires ?
 
-      ![Tableau comparatif](/content/uploads/pad-compare.png)
+      ![Tableau comparatif](/content/uploads/not-existing.png)
   - type: screenshot
     bg: orange
     title: Focus sur les interfaces

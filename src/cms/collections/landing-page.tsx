@@ -6,6 +6,7 @@ import type {
 import { LandingPageContent } from '@/components/LandingPageContent'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
+import { EntryImage } from '../types'
 
 const bgField: CmsFieldBase & CmsFieldSelect = {
   label: 'Couleur de fond',
@@ -565,8 +566,7 @@ export type EntrySchema = {
     }[]
     title: string
     subtitle: string
-    image: string
-  }
+  } & EntryImage
   id: string
   title: string
   flexible_content: (
@@ -576,24 +576,24 @@ export type EntrySchema = {
         title: string
         body: string
       }
-    | {
+    | ({
         type: 'screenshot'
         bg: background
         title?: string
         body: string
-        image: string
         image_position?: string
-      }
+      } & EntryImage)
     | {
         type: 'pictures'
         title?: string
         body?: string
         bg: background
-        items: {
-          image: string
-          alt: string
-          href?: string
-        }[]
+        items: Array<
+          {
+            alt: string
+            href?: string
+          } & EntryImage
+        >
       }
     | {
         type: 'cards'
@@ -602,6 +602,10 @@ export type EntrySchema = {
           title: string
           body: string
           image?: string
+          image_dimensions?: {
+            width: number
+            height: number
+          }
         }[]
       }
     | {

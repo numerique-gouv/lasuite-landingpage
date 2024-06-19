@@ -2,6 +2,7 @@ import type { CmsCollectionFile } from 'decap-cms-core'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
 import { HomepageContent } from '@/components/HomepageContent'
+import { EntryImage } from '../types'
 
 const config: CmsCollectionFile = {
   name: 'homepage',
@@ -207,16 +208,18 @@ export type EntrySchema = {
   }[]
   testimonies_title: string
   testimonies_description: string
-  testimonies_items?: {
-    quote: string
-    author: string
-    image: string
-  }[]
+  testimonies_items?: Array<
+    {
+      quote: string
+      author: string
+    } & EntryImage
+  >
   anct_description: string
-  anct_partenaires?: {
-    image: string
-    alt: string
-  }[]
+  anct_partenaires?: Array<
+    {
+      alt: string
+    } & EntryImage
+  >
   newsletter_link: string
 }
 

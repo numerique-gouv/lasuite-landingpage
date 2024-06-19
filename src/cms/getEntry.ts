@@ -2,6 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 import type { FileCollection, FolderCollection } from './types'
+import { withImageDimensions } from './withImageDimensions'
 
 /**
  * retrieve content from a cms yaml file
@@ -18,7 +19,7 @@ export const getCollectionEntry = async <EntrySchema>(
   const data = await getFileContent(
     `${collection.config.folder}/${locale}/${slug}.yml`
   )
-  return collection.entryParser(data as EntrySchema)
+  return collection.entryParser(data as EntrySchema).then(withImageDimensions)
 }
 
 export const getFileEntry = async <EntrySchema>(
@@ -26,9 +27,9 @@ export const getFileEntry = async <EntrySchema>(
   locale: string = 'fr'
 ) => {
   const content = await getFileContent(collection.config.file)
-  return collection.entryParser(
-    (content as Record<string, EntrySchema>)[locale]
-  )
+  return collection
+    .entryParser((content as Record<string, EntrySchema>)[locale])
+    .then(withImageDimensions)
 }
 
 const getFileContent = async (filepath: string) => {

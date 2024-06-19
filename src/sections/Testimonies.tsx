@@ -1,22 +1,28 @@
+import Image from 'next/image'
+import { EntryImage } from '@/cms/types'
 import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { ContentSection } from '@/components/ContentSection'
-import Image from 'next/image'
+import { CmsImage } from '@/components/CmsImage'
 import AccountSvg from '@/assets/account.svg'
 import type { ReactElement } from 'react'
 
-interface CardProps {
-  image: string
+interface CardProps extends EntryImage {
   author: ReactElement | string
   quote: ReactElement | string
 }
 
-const Card = ({ author, quote, image }: CardProps) => (
+const Card = ({ author, quote, image, image_object }: CardProps) => (
   <div
     tabIndex={0}
     className="flex flex-col bg-white p-7 text-left flex-1 max-w-[36rem] lg:min-w-[18rem]"
   >
     <h3 className="h-[114px] w-[140px] relative">
-      <Image src={image} className="object-contain" fill alt={''} />
+      <CmsImage
+        src={image}
+        {...image_object}
+        className="object-contain"
+        alt=""
+      />
     </h3>
     <div className="flex flex-row items-center mt-7 gap-4 pb-5">
       <Image src={AccountSvg} height={60} width={60} alt="" />
