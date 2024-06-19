@@ -6,6 +6,7 @@ import { Raw } from '@/components/Raw'
 
 const config: CmsCollection = {
   label: 'Pages de contenu',
+  label_singular: 'Page de contenu',
   name: 'content-page',
   identifier_field: 'title',
   slug: '{{fields.slug}}',
