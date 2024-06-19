@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { ContentSection } from '@/components/ContentSection'
-import { Br } from '@/components/Br'
 import { Button } from '@/components/Button'
 
 import IllustrationIdea from '@/assets/idea.webp'
 import StripeWhiteSvg from '@/assets/stripe-white.svg'
+import type { ReactElement } from 'react'
 
 const WhiteSquare: React.FC<{ className: string }> = ({ className }) => (
   <span
@@ -45,36 +45,34 @@ const DecorationEven = () => (
 )
 
 interface CardProps {
-  title: string
-  body: any
+  question: string
+  answer: any
   index: number
 }
 
-const Card = ({ title, body, index }: CardProps) => (
+const Card = ({ question, answer, index }: CardProps) => (
   <div
     tabIndex={0}
     className="bg-blue-1 text-white text-left px-6 py-14 sm:p-14 relative focus-visible:m-2 md:basis-1/2"
   >
-    <h3 className="text-3xl text-white font-extrabold mb-7">
-      Qu’est ce qu’un <Br /> {title}&nbsp;?
-    </h3>
-    <p className="text-lg" dangerouslySetInnerHTML={{ __html: body }} />
+    <h3 className="text-3xl text-white font-extrabold mb-7">{question}</h3>
+    <div className="text-lg">{answer}</div>
     {index % 2 === 0 ? <DecorationEven /> : <DecorationOdd />}
   </div>
 )
 
-const data: Omit<CardProps, 'index'>[] = [
-  {
-    title: 'commun numérique',
-    body: 'Les communs numériques sont des ressources partagées sous forme de biens immatériels utilisables librement. Ils sont produits et gérés par une communauté ouverte d’acteurs partageant des valeurs et des règles de collaboration ou de gouvernance. Il peut s’agir : de logiciels et librairies libres exploitables dans de nouvelles solutions, de standards ouverts, de données et contenus ouverts.',
-  },
-  {
-    title: 'logiciel libre',
-    body: "Un logiciel libre est un programme informatique dont l’utilisation, la modification et la distribution sont permises, généralement sans coût financier. L’aspect clé des logiciels libres réside dans la liberté qu'ils offrent à leurs utilisateurs. Cela signifie que les utilisateurs ont le droit d’exécuter, copier, distribuer, étudier, modifier et améliorer le logiciel. Ces libertés sont garanties par des licences spécifiques. Les logiciels libres encouragent la collaboration et la transparence, favorisant ainsi la création et le partage ouvert de connaissances informatiques.",
-  },
-]
-
-export const Initiatives = () => (
+export const Initiatives = ({
+  description,
+  cta,
+  items = [],
+}: {
+  description: ReactElement | string
+  cta: {
+    label: string
+    href: string
+  }
+  items: Array<Omit<CardProps, 'index'>>
+}) => (
   <>
     <ContentSection background="gray">
       <h2 className="text-3xl md:text-4xl font-bold max-w-[34rem] text-center">
@@ -87,35 +85,25 @@ export const Initiatives = () => (
         alt=""
         placeholder="blur"
       />
-      <p className="text-lg max-w-[38rem] text-pretty text-left sm:text-center">
-        Vous êtes une entité publique ou privée et vous portez une solution
-        collaborative structurée sous forme de commun numérique ou de logiciel
-        libre ? Vous pouvez intégrer La Suite numérique{' '}
-        <strong>
-          pour être utile à des milliers d&apos;agents publics en France&nbsp;!
-        </strong>
-      </p>
-      <p className="text-lg max-w-[38rem] text-pretty text-left sm:text-center">
-        Obtenez un <strong>financement</strong> et un{' '}
-        <strong>accompagnement</strong> pour travailler avec nous, dans le cadre
-        du fonds communs numériques pour La Suite collaborative.
-      </p>
+      <div className="text-lg max-w-[38rem] text-pretty text-left sm:text-center [&>p+p]:mt-[50px]">
+        {description}
+      </div>
       <p>
-        <Button href="/communs" variant="outline">
-          Comment proposer mon projet ?
+        <Button href={cta.href} variant="outline">
+          {cta.label}
         </Button>
       </p>
     </ContentSection>
     <ContentSection padding={false}>
       <div className="hidden md:flex flex-row gap-10 md:py-20 md:px-4">
-        {data.map((value, index) => (
-          <Card {...value} key={value?.title} index={index} />
+        {items.map((value, index) => (
+          <Card {...value} key={value?.question} index={index} />
         ))}
       </div>
       <div className="w-full md:hidden pb-[50px]">
         <SwiperWrapper
-          slides={data.map((value, index) => (
-            <Card {...value} key={value?.title} index={index} />
+          slides={items.map((value, index) => (
+            <Card {...value} key={value?.question} index={index} />
           ))}
         />
       </div>

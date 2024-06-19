@@ -1,23 +1,24 @@
-import { DigitalCommons } from '@/sections/DigitalCommons'
-import { Hero } from '@/sections/Hero'
+import { GetStaticProps } from 'next'
+import { type EntrySchema, collection } from '@/cms/collections/homepage'
+import { getFileEntry } from '@/cms/getEntry'
 import { Layout } from '@/components/Layout'
-import { Anct } from '@/sections/Anct'
-import { Testimonies } from '@/sections/Testimonies'
-import { Initiatives } from '@/sections/Initiatives'
-import { ProConnect } from '@/sections/ProConnect'
-import { Newsletter } from '@/sections/Newsletter'
 import { TITLE_SITE } from '@/constant'
+import { HomepageContent } from '@/components/HomepageContent'
 
-export default function Landing() {
+export default function Index({ data }: { data: EntrySchema }) {
   return (
     <Layout title={TITLE_SITE}>
-      <Hero />
-      {/*<ProConnect />*/}
-      <DigitalCommons />
-      <Initiatives />
-      <Testimonies />
-      <Anct />
-      <Newsletter />
+      <HomepageContent data={data} />
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const content = await getFileEntry(collection)
+
+  return {
+    props: {
+      data: content,
+    },
+  }
 }
