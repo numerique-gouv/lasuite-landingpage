@@ -19,6 +19,11 @@ export const toHtml = async (markdown: string, { inline = false } = {}) => {
 
   let result = String(data)
 
+  // replace constants
+  Object.entries(allConstants).forEach(([key, value]) => {
+    result = result.replace(new RegExp(`{${key}}`, 'g'), value)
+  })
+
   // dirty way of checking for loney <p> tags: I don't have the time to better check the remark API
   const isOneP =
     inline &&
@@ -29,9 +34,5 @@ export const toHtml = async (markdown: string, { inline = false } = {}) => {
     return result.slice(3, -4)
   }
 
-  // replace constants
-  Object.entries(allConstants).forEach(([key, value]) => {
-    result = result.replace(new RegExp(`{${key}}`, 'g'), value)
-  })
   return result
 }
