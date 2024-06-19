@@ -27,7 +27,7 @@ const CMS = dynamic(
         raw: true,
       })
       CMS.registerPreviewStyle('/assets/cms/globals.css')
-      CMS.registerPreviewStyle('/assets/cms/dsfr/dsfr.min.css')
+      CMS.registerPreviewStyle('/assets/cms/dsfr/dist/dsfr.min.css')
     })
   },
   {
