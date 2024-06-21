@@ -13,8 +13,21 @@ export default function Index({ data }: { data: EntrySchema }) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const content = await getFileEntry(collection)
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+  defaultLocale,
+}) => {
+  const content = await getFileEntry(collection, locale)
+
+  if (
+    !!locale &&
+    locale !== defaultLocale &&
+    content.enabled_i18n[locale] === false
+  ) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {

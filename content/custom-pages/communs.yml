@@ -58,9 +58,20 @@ fr:
   cta:
     label: Je propose mon projet !
     href: https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique
+  selection_title: Un calendrier en 2 temps sur 2024
+  dates_title: Processus de sélection
+  enabled_i18n:
+    de: false
+    en: false
 de:
   cta:
     href: https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique
+  enabled_i18n:
+    de: false
+    en: false
 en:
   cta:
     href: https://www.demarches-simplifiees.fr/commencer/fonds-communs-numeriques-pour-la-suite-numerique
+  enabled_i18n:
+    de: false
+    en: false

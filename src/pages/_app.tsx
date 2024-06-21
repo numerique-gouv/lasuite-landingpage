@@ -5,6 +5,8 @@ import type { AppProps } from 'next/app'
 import { MetaHeader as Head } from '@/components/MetaHeader'
 import { MATOMO_ID } from '@/constant'
 import { useEffect } from 'react'
+import { TranslationsProvider } from '@/locales/useTranslations'
+import { useRouter } from 'next/router'
 
 declare global {
   interface Window {
@@ -78,12 +80,16 @@ export default function App({ Component, pageProps }: AppProps) {
     setUpMatomoAnalytics()
   }, [])
 
+  const { locale, defaultLocale } = useRouter()
+
   return (
     <>
-      <Head />
       {/* this wrapper is required for the next/font loaded fonts to work with tailwind */}
       <div className={`${marianne.variable} font-sans`}>
-        <Component {...pageProps} />
+        <TranslationsProvider locale={locale || defaultLocale}>
+          <Head />
+          <Component {...pageProps} />
+        </TranslationsProvider>
       </div>
     </>
   )

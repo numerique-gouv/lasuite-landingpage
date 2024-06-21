@@ -6,7 +6,8 @@ import type {
 import { LandingPageContent } from '@/components/LandingPageContent'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
-import { EntryImage } from '../types'
+import { EntryImage, I18nField } from '../types'
+import { i18n } from '../commonFields'
 
 const bgField: CmsFieldBase & CmsFieldSelect = {
   label: 'Couleur de fond',
@@ -46,6 +47,7 @@ const config: CmsCollection = {
       required: false,
       default: true,
     },
+    i18n(),
     {
       label: 'Service',
       hint: "Si votre service n'est pas listé, contactez-nous !",
@@ -571,7 +573,7 @@ type background =
   | 'orange'
   | 'purple'
 
-export type EntrySchema = {
+export type EntrySchema = I18nField & {
   enabled: boolean
   hero: {
     actions: {

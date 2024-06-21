@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import type { ReactElement } from 'react'
 import { EntryImage } from '@/cms/types'
 import { CmsImage } from '../CmsImage'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const Screenshot = ({
   title,
@@ -14,6 +15,7 @@ export const Screenshot = ({
   body: ReactElement | string
   image_position?: string
 } & EntryImage) => {
+  const t = useTranslations()
   return (
     <div className="cms-block">
       <div className="fr-container">
@@ -31,7 +33,7 @@ export const Screenshot = ({
               <CmsImage
                 src={image}
                 {...image_object}
-                alt="Voir l'image en grand format"
+                alt={t('service_landing_page.screenshot_block.image_alt')}
               />
             </a>
           </div>

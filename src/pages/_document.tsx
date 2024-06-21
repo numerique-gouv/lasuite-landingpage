@@ -1,8 +1,7 @@
 import { Head, Html, Main, NextScript } from 'next/document'
-
 export default function RootLayout() {
   return (
-    <Html lang="fr">
+    <Html>
       <Head />
       <body>
         <Main />
