@@ -3,6 +3,8 @@ import { toHtml } from '@/utils/markdown'
 import { PageContent } from '@/components/PageContent'
 import { createCollection } from '../createCollection'
 import { Raw } from '@/components/Raw'
+import { i18n } from '../commonFields'
+import { I18nField } from '../types'
 
 const config: CmsCollection = {
   label: 'Pages de contenu',
@@ -24,6 +26,7 @@ const config: CmsCollection = {
       required: false,
       default: true,
     },
+    i18n(),
     {
       label: 'slug',
       hint: 'Écrivez un texte tout en minuscules, sans accent, espace ou caractère spécial. Il est utilisé comme URL de la page',
@@ -58,7 +61,7 @@ const entryPreview = (data: EntrySchema) => (
   </PageContent>
 )
 
-export type EntrySchema = {
+export type EntrySchema = I18nField & {
   enabled: boolean
   slug: string
   title: string

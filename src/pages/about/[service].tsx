@@ -49,7 +49,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
     throw Error('No service provided')
   }
 
-  const content = await getCollectionEntry(collection, context.params.service)
+  const content = await getCollectionEntry(
+    collection,
+    context.params.service,
+    context.locale
+  )
 
   if (content.enabled === false) {
     return {

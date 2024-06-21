@@ -1,3 +1,4 @@
+import { useTranslations } from '@/locales/useTranslations'
 import Link from 'next/link'
 
 const enabledServices = [
@@ -23,6 +24,7 @@ export const SuiteNumerique = ({
   title: string
 }) => {
   const bgId = enabledServices.includes(id) ? id : 'default'
+  const t = useTranslations()
   return (
     <div className="cms-block !py-0 relative">
       <picture>
@@ -44,8 +46,12 @@ export const SuiteNumerique = ({
             href="/"
             className="!bg-none hover:!bg-grey-0 active:!bg-white py-2 px-4 bg-white inline-block"
           >
-            {title}, un service de{' '}
-            <span className="font-bold">La Suite numérique</span>
+            {t('service_landing_page.suite_numerique.body', {
+              title,
+              la_suite: (
+                <span className="font-bold">{t('common.la_suite')}</span>
+              ),
+            })}
           </Link>
         </p>
       </div>

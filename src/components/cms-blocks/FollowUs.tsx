@@ -1,3 +1,4 @@
+import { useTranslations } from '@/locales/useTranslations'
 import classNames from 'classnames'
 import type { ReactElement } from 'react'
 
@@ -19,6 +20,7 @@ export const FollowUs = ({
     youtube?: string
   }
 }) => {
+  const t = useTranslations()
   if (!newsletter.enable && !socials.enable) return null
   const socialLinks = socials.enable
     ? [
@@ -42,7 +44,7 @@ export const FollowUs = ({
               <div className="fr-follow__newsletter">
                 <div>
                   <p className="fr-h5">
-                    Abonnez-vous à notre lettre d’information
+                    {t('service_landing_page.newsletter.title')}
                   </p>
                   <p className="fr-text--sm">{newsletter.body}</p>
                 </div>
@@ -50,9 +52,9 @@ export const FollowUs = ({
                   <a
                     href={newsletter.cta_href}
                     className="fr-btn"
-                    title="S‘abonner à notre lettre d’information"
+                    title={t('service_landing_page.newsletter.button_alt')}
                   >
-                    S&apos;abonner
+                    {t('service_landing_page.newsletter.button')}
                   </a>
                 </div>
               </div>
@@ -66,7 +68,9 @@ export const FollowUs = ({
             >
               <div className="fr-follow__social">
                 <p className="fr-h5">
-                  Suivez-nous <br /> sur les réseaux sociaux
+                  {t('service_landing_page.social_networks.body', {
+                    linebreak: <br />,
+                  })}
                 </p>
                 <ul className="fr-btns-group">
                   {(socialLinks as Array<{ id: string; url: string }>).map(
@@ -74,7 +78,12 @@ export const FollowUs = ({
                       <li key={link.id}>
                         <a
                           className={`fr-btn--${link.id} fr-btn`}
-                          title={`Suivez-nous sur ${link.id} (nouvelle fenêtre)`}
+                          title={`${t(
+                            'service_landing_page.social_networks.link',
+                            {
+                              network: link.id,
+                            }
+                          )} - ${t('common.new_window')}`}
                           rel="noopener external"
                           href={link.url}
                           target="_blank"

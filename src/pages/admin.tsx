@@ -2,11 +2,16 @@ import dynamic from 'next/dynamic'
 import collections from '@/cms/collections'
 import type { CMS, CmsConfig } from 'decap-cms-core'
 
+declare global {
+  interface Window {
+    CMS_MANUAL_INIT?: boolean
+  }
+}
+
 const CMS = dynamic(
   // @ts-ignore
   async () => {
     let config: CmsConfig
-    // @ts-ignore
     window.CMS_MANUAL_INIT = true
     if (process.env.NODE_ENV === 'production') {
       config = (await import('@/cms/config.prod')).default

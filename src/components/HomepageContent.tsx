@@ -21,7 +21,10 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
         callout={<Raw tag="span">{data.callout}</Raw>}
       />
       {/*<ProConnect />*/}
-      <DigitalCommons description={<Raw>{data.apps_description}</Raw>} />
+      <DigitalCommons
+        title={[data.apps_title_1, data.apps_title_2]}
+        description={<Raw>{data.apps_description}</Raw>}
+      />
       <Initiatives
         description={<Raw>{data.initiatives_description}</Raw>}
         cta={data.initiatives_cta}
@@ -48,7 +51,11 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
         description={<Raw>{data.anct_description}</Raw>}
         logos={data.anct_partenaires || []}
       />
-      <Newsletter url={data.newsletter_link} />
+      <Newsletter
+        title={data.newsletter_title}
+        body={<Raw tag="span">{data.newsletter_description}</Raw>}
+        url={data.newsletter_link}
+      />
     </>
   )
 }

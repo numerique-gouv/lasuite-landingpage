@@ -1,4 +1,7 @@
 enabled: true
+enabled_i18n:
+  de: false
+  en: false
 slug: suivi
 title: Suivi d'audience
 body: >

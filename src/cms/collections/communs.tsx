@@ -2,6 +2,8 @@ import type { CmsCollectionFile } from 'decap-cms-core'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
 import { CommunsContent } from '@/components/CommunsContent'
+import { i18n } from '../commonFields'
+import { I18nField } from '../types'
 
 const config: CmsCollectionFile = {
   name: 'communs',
@@ -10,6 +12,7 @@ const config: CmsCollectionFile = {
   preview_path: '/communs',
   i18n: true,
   fields: [
+    i18n(),
     {
       label: 'Titre',
       name: 'title',
@@ -24,10 +27,22 @@ const config: CmsCollectionFile = {
       i18n: true,
     },
     {
-      label: 'Calendrier',
+      label: 'Calendrier : titre',
+      name: 'dates_title',
+      widget: 'string',
+      i18n: true,
+    },
+    {
+      label: 'Calendrier : contenu',
       name: 'dates',
       widget: 'markdown',
       hint: 'Texte affiché en dessous du schéma du calendrier',
+      i18n: true,
+    },
+    {
+      label: 'Processus de sélection : titre',
+      name: 'selection_title',
+      widget: 'string',
       i18n: true,
     },
     {
@@ -52,7 +67,7 @@ const config: CmsCollectionFile = {
         {
           label: 'URL',
           name: 'href',
-          i18n: 'duplicate',
+          i18n: true,
           widget: 'string',
         },
       ],
@@ -74,11 +89,13 @@ const entryPreview = (data: EntrySchema) => (
   </div>
 )
 
-export type EntrySchema = {
+export type EntrySchema = I18nField & {
   title: string
   intro: string
+  dates_title: string
   dates: string
   selection: string
+  selection_title: string
   cta: {
     label: string
     href: string

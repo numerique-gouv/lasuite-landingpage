@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetStaticProps, GetStaticPaths } from 'next'
 import { collection, type EntrySchema } from '@/cms/collections/content-page'
 import { getCollectionEntry } from '@/cms/getEntry'
 import { getSlugs } from '@/cms/getSlugs'
@@ -16,11 +16,18 @@ export default function ContentPage({ data }: { data: EntrySchema }) {
   )
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async ({
+  locales,
+  defaultLocale,
+}) => {
   const slugs = await getSlugs(collection)
 
+  const paths = (locales || [defaultLocale])
+    .map((locale) => slugs.map((slug) => ({ params: { slug }, locale })))
+    .flat()
+
   return {
-    paths: slugs.map((slug) => ({ params: { slug } })),
+    paths,
     fallback: false,
   }
 }
@@ -32,10 +39,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const content = await getCollectionEntry(
     collection,
-    context.params.slug as string
+    context.params.slug as string,
+    context.locale
   )
 
-  if (content.enabled === false) {
+  if (
+    content.enabled === false ||
+    (!!context.locale &&
+      context.locale !== context.defaultLocale &&
+      content.enabled_i18n[context.locale] === false)
+  ) {
     return {
       notFound: true,
     }

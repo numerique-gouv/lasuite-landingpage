@@ -1,0 +1,36 @@
+common:
+  la_suite: La Suite numérique
+  la_suite_territoriale: La Suite Territoriale
+  new_window: to_translate
+  know_more: to_translate
+  back_to_home: to_translate
+head:
+  homepage_og_title: to_translate
+  meta_desc: to_translate
+header:
+  tagline: to_translate
+  locale_switcher_alt: to_translate
+footer:
+  license: to_translate {license}.
+  etalab: to_translate
+  accessiblity: to_translate
+  legal: to_translate
+  privacy_policy: to_translate
+not_found_page:
+  title: Ooops !
+  body: to_translate
+service_landing_page:
+  screenshot_block:
+    image_alt: to_translate
+  newsletter:
+    title: to_translate
+    button: to_translate
+    button_alt: to_translate
+  social_networks:
+    body: to_translate {linebreak} to_translate
+    link: to_translate {network} - to_translate
+  suite_numerique:
+    body: '{title}, to_translate {la_suite} to_translate'
+homepage:
+  anct_partners_alt: to_translate
+  hero_img_alt: to_translate

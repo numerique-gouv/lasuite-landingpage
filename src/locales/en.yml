@@ -1,0 +1,44 @@
+common:
+  la_suite: La Suite numérique
+  la_suite_territoriale: La Suite Territoriale
+  new_window: new window
+  know_more: Know more
+  back_to_home: Back to homepage
+head:
+  homepage_og_title: Work with La Suite numérique
+  meta_desc:
+    La Suite numérique brings all agents and professionals together in the
+    public sphere
+header:
+  tagline: An efficient, simple and sovereign State thanks to digital technology
+  locale_switcher_alt: Change language
+footer:
+  license:
+    Unless stated otherwise, the contents of this site are available under
+    {license}.
+  etalab: etalab-2.0 license
+  accessiblity: Accessiblity
+  legal: Legal
+  privacy_policy: Privacy policy
+not_found_page:
+  title: Ooops !
+  body: The page you're looking for does not exist.
+  try_default_locale: You can try {link}.
+  default_locale_link: viewing this page in french
+service_landing_page:
+  screenshot_block:
+    image_alt: View the picture in details
+  newsletter:
+    title: Subscribe to our newsletter
+    button: Subscribe
+    button_alt: Subscribe to the newsletter
+  social_networks:
+    body: Follow us {linebreak} on social networks
+    link: Follow us on {network}
+  suite_numerique:
+    body: '{title}, a {la_suite} service'
+homepage:
+  anct_partners_alt: Contributors of La Suite Territoriale
+  hero_img_alt:
+    La Suite numérique est une suite d'outils disponible sur téléphones,
+    tablettes et ordinateurs

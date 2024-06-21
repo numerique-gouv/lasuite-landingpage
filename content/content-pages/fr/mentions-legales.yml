@@ -1,5 +1,9 @@
 enabled: true
 id: mentions-legales
+enabled_i18n:
+  de: false
+  en: false
+slug: mentions-legales
 title: Mentions légales
 body: >-
   ## Éditeur

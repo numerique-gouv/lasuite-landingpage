@@ -40,6 +40,15 @@ You can also decide to directly edit yaml files in the `/content` directory, fol
 
 On build, for every field named `image`, we'll try to get the image dimensions before rendering the content in nextjs pages (adding an `image_object` object next to the `image` data, with src, width and height info)
 
+## Translating the website
+
+There are both translation strings in the code, and translated content to manage.
+
+- to update code translation strings, edit yaml locale files in `/src/locales/`. They can be easily updated through the GitHub UI if you don't want to install the project locally. Check the `fr.yml` file for a given translation: some of them have template tags (with curly braces) needed to render properly you should not be forgotten,
+- to update translated content, use the CMS as usual and edit the content of the language you want. Yaml content files in `/content` will be updated accordingly.
+
+For each content page, you can decide if the page is available in english and german or not. This is useful if you can't translate some content directly. Don't forget to toggle the switches _on_ when your translated page is ready.
+
 ### Locally
 
 If you want to test the CMS locally, after starting the dev server with `yarn dev`, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
