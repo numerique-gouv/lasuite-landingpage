@@ -85,7 +85,7 @@ export const Initiatives = ({
         alt=""
         placeholder="blur"
       />
-      <div className="text-lg max-w-[38rem] text-pretty text-left sm:text-center [&>p+p]:mt-[50px]">
+      <div className="text-lg max-w-[38rem] text-pretty text-left sm:text-center [&_p+p]:mt-[50px]">
         {description}
       </div>
       <p>

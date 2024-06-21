@@ -3,6 +3,7 @@ import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { TITLE_SITE } from '@/constant'
 import React from 'react'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const Layout: React.FC<{
   children: React.ReactNode
@@ -15,7 +16,7 @@ export const Layout: React.FC<{
 }> = ({ title, background, ...props }) => {
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
-
+  const t = useTranslations()
   return (
     <div
       className={`min-h-screen flex flex-col text-body ${background === 'gray' ? 'bg-white-1' : 'bg-white'}`}
@@ -25,9 +26,7 @@ export const Layout: React.FC<{
         <meta
           key="ogtitle"
           property="og:title"
-          content={
-            isHomepage ? 'Travailler avec La Suite numérique' : pageTitle
-          }
+          content={isHomepage ? t('head.homepage_og_title') : pageTitle}
         />
       </Head>
       <NavBar />

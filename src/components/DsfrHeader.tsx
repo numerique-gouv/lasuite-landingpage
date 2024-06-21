@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import { LaGaufre } from './LaGaufre'
+import { LocaleSwitcher } from './LocaleSwitcher'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const DsfrHeader = () => {
+  const t = useTranslations()
   return (
     <>
       <header role="banner" className="fr-header">
@@ -15,12 +18,16 @@ export const DsfrHeader = () => {
                   </div>
                   <div className="fr-header__navbar">
                     <div className="me-4">
+                      <LocaleSwitcher />
                       <LaGaufre />
                     </div>
                   </div>
                 </div>
                 <div className="fr-header__service">
-                  <Link href="/" title="Accueil - La Suite numérique">
+                  <Link
+                    href="/"
+                    title={`${t('common.back_to_home')} - ${t('common.la_suite')}`}
+                  >
                     <p className="fr-header__service-title">
                       <strong className="font-bold">
                         lasuite.numerique.gouv.
@@ -29,12 +36,13 @@ export const DsfrHeader = () => {
                     </p>
                   </Link>
                   <p className="fr-header__service-tagline">
-                    Un État efficace, simple, souverain grâce au numérique
+                    {t('header.tagline')}
                   </p>
                 </div>
               </div>
               <div className="fr-header__tools">
                 <div className="fr-header__tools-links">
+                  <LocaleSwitcher />
                   <LaGaufre />
                 </div>
               </div>

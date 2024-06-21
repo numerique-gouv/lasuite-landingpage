@@ -40,7 +40,7 @@ export const CommunsContent = ({ data }: { data: EntrySchema }) => {
       </div>
       <div className="w-full justify-center flex">
         <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 py-[4rem] max-w-[31em] text-balance text-center">
-          Un calendrier en 2 temps sur 2024
+          {data.dates_title}
         </h2>
       </div>
       <div className="w-full hidden md:flex justify-center">
@@ -79,7 +79,7 @@ export const CommunsContent = ({ data }: { data: EntrySchema }) => {
       </div>
       <div className="w-full items-center flex flex-col">
         <h2 className="text-2xl text-[1.75rem] sm:text-4xl font-bold px-4 pb-[2rem] max-w-[31em] text-center text-balance">
-          Processus de sélection
+          {data.selection_title}
         </h2>
 
         <div className="hidden md:block">
@@ -99,28 +99,28 @@ export const CommunsContent = ({ data }: { data: EntrySchema }) => {
                 tabIndex={0}
                 src={InitiativesFinanceMobile1}
                 width={400}
-                alt="1ère étape détaillée ci-dessous"
+                alt=""
               />,
               <Image
                 key="2"
                 tabIndex={0}
                 src={InitiativesFinanceMobile2}
                 width={400}
-                alt="2e étape détaillée ci-dessous"
+                alt=""
               />,
               <Image
                 key="3"
                 tabIndex={0}
                 src={InitiativesFinanceMobile3}
                 width={400}
-                alt="3e étape détaillée ci-dessous"
+                alt=""
               />,
               <Image
                 key="4"
                 tabIndex={0}
                 src={InitiativesFinanceMobile4}
                 width={400}
-                alt="4e étape détaillée ci-dessous"
+                alt=""
               />,
             ]}
           />
@@ -129,7 +129,6 @@ export const CommunsContent = ({ data }: { data: EntrySchema }) => {
           <Raw>{data.selection}</Raw>
         </div>
       </div>
-      <h2 className="sr-only">Proposer un projet</h2>
       <p className="w-full justify-center flex pt-10 pb-40">
         <Button variant="outline" href={data.cta.href}>
           {data.cta.label}

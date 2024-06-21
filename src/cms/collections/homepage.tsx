@@ -2,7 +2,8 @@ import type { CmsCollectionFile } from 'decap-cms-core'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
 import { HomepageContent } from '@/components/HomepageContent'
-import { EntryImage } from '../types'
+import { EntryImage, I18nField } from '../types'
+import { i18n } from '../commonFields'
 
 const config: CmsCollectionFile = {
   name: 'homepage',
@@ -11,6 +12,7 @@ const config: CmsCollectionFile = {
   preview_path: '/',
   i18n: true,
   fields: [
+    i18n(),
     {
       label: 'Introduction',
       name: 'intro',
@@ -22,6 +24,18 @@ const config: CmsCollectionFile = {
       name: 'callout',
       widget: 'text',
       hint: 'Finissez une ligne avec deux espaces vides pour sauter une ligne',
+      i18n: true,
+    },
+    {
+      label: 'Communs numériques : 1er titre',
+      name: 'apps_title_1',
+      widget: 'string',
+      i18n: true,
+    },
+    {
+      label: 'Communs numériques : 2e titre',
+      name: 'apps_title_2',
+      widget: 'string',
       i18n: true,
     },
     {
@@ -53,7 +67,7 @@ const config: CmsCollectionFile = {
         {
           label: 'URL',
           name: 'href',
-          i18n: 'duplicate',
+          i18n: true,
           widget: 'string',
         },
       ],
@@ -139,7 +153,19 @@ const config: CmsCollectionFile = {
       ],
     },
     {
-      label: 'Lien newsletter',
+      label: 'Newsletter : titre',
+      name: 'newsletter_title',
+      widget: 'string',
+      i18n: true,
+    },
+    {
+      label: 'Newsletter : description',
+      name: 'newsletter_description',
+      widget: 'text',
+      i18n: true,
+    },
+    {
+      label: 'Newsletter : lien',
       name: 'newsletter_link',
       widget: 'string',
       i18n: 'duplicate',
@@ -164,7 +190,7 @@ const entryParser = async (json: EntrySchema) => {
   const inlineMdFields = [
     'callout',
     'testimonies_title',
-    'newsletter_link',
+    'newsletter_description',
   ] as const
 
   const transforms = [
@@ -206,9 +232,11 @@ const entryPreview = (data: EntrySchema) => (
   </div>
 )
 
-export type EntrySchema = {
+export type EntrySchema = I18nField & {
   intro: string
   callout: string
+  apps_title_1: string
+  apps_title_2: string
   apps_description: string
   initiatives_description: string
   initiatives_cta: {
@@ -233,6 +261,8 @@ export type EntrySchema = {
       alt: string
     } & EntryImage
   >
+  newsletter_title: string
+  newsletter_description: string
   newsletter_link: string
 }
 

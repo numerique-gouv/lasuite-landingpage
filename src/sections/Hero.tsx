@@ -6,6 +6,7 @@ import heroImage from '@/assets/hero-desktop.webp'
 import heroImageMobile from '@/assets/hero-mobile.webp'
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
 import type { ReactElement } from 'react'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = ({
   intro,
@@ -14,6 +15,7 @@ export const Hero = ({
   intro: ReactElement | string
   callout: ReactElement | string
 }) => {
+  const t = useTranslations()
   return (
     <div className="hero relative overflow-hidden bg-white ">
       <div className="flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center">
@@ -33,7 +35,7 @@ export const Hero = ({
         <Image
           src={heroImage}
           width={1000}
-          alt="La Suite numérique est une suite d'outils disponible sur téléphones, tablettes et ordinateurs"
+          alt={t('homepage.hero_img_alt')}
           className="mr-[-12%] hidden md:flex z-10"
           priority
           placeholder="blur"
@@ -41,7 +43,7 @@ export const Hero = ({
         <Image
           src={heroImageMobile}
           width={800}
-          alt="La Suite numérique est une suite d'outils disponible sur téléphones, tablettes et ordinateurs"
+          alt={t('homepage.hero_img_alt')}
           className="md:hidden z-10 pb-8"
           priority
           placeholder="blur"

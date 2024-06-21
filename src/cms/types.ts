@@ -46,3 +46,9 @@ export type EntryImage = {
     fill?: true
   }
 }
+
+export type I18nField = {
+  enabled_i18n: {
+    [locale: string]: boolean
+  }
+}

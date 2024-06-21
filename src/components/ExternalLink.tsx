@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { buttonStyles } from '@/components/Button'
 
 import LinkWhiteSvg from '@/assets/link-white.svg'
+import { useTranslations } from '@/locales/useTranslations'
 
 export type LinkProps = {
   href: string
@@ -36,15 +37,18 @@ export const ExternalLink: React.FC<LinkProps | ComplexChildrenLinkProps> = ({
   children,
   'aria-label': ariaLabel,
   ...subProps
-}) => (
-  <a
-    target="_blank"
-    aria-label={`${ariaLabel || children} - nouvelle fenêtre`}
-    {...subProps}
-  >
-    {children}
-  </a>
-)
+}) => {
+  const t = useTranslations()
+  return (
+    <a
+      target="_blank"
+      aria-label={`${ariaLabel || children} - ${t('common.new_window')}`}
+      {...subProps}
+    >
+      {children}
+    </a>
+  )
+}
 
 export const ButtonExternalLink: React.FC<LinkProps> = ({
   className,

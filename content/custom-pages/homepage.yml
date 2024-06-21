@@ -54,6 +54,9 @@ fr:
   callout: |-
     Travailler avec La Suite numérique,  
     c’est contribuer à notre souveraineté numérique.
+  newsletter_title: Recevoir la newsletter de La Suite
+  newsletter_description: Restez informé des prochaines avancées de La Suite en
+    recevant la newsletter !
   faq:
     - question: |-
         Qu’est ce qu’un  
@@ -102,6 +105,11 @@ fr:
       alt: ANSSI Agence nationale de la sécurité des systèmes d'information
     - image: /content/uploads/france-2030.svg
       alt: France 2030
+  enabled_i18n:
+    de: false
+    en: false
+  apps_title_1: Des applications à la carte et interconnectées…
+  apps_title_2: … basées sur des communs numériques libres
   testimonies_description: >-
     La Suite est un projet en construction, certaines de ses applications sont
     encore en phase de test, **mais d'autres sont déjà utilisées par des
@@ -109,18 +117,12 @@ fr:
 
     Découvrez les applications stars de La Suite :
 de:
-  contribute_cta:
-    href: azd
-    target_blank: null
   newsletter_link: https://4f0df3d6.sibforms.com/serve/MUIFAKrbltNDRgRE9y7Ijv8nF1SN65VwHtbGH33ZGje0x0-VS9Rr8bbD3LefzRQE0Eu3KtRtSBbaDueFVEARVVYp2Bb3JLj9LBk9SNK1XX2rSgs9adgkR67Xhi1RUqGU7wcVv2U42hHq7IIyH3N3Eu82Ci39-aYzr2HUoNERYKoTbYfeINulmU8Y-BX6jaK5QNlZg6wyBhMl52sq
-  initiatives_cta:
-    href: /communs
-    target_blank: null
+  enabled_i18n:
+    de: false
+    en: false
 en:
-  contribute_cta:
-    href: azd
-    target_blank: null
   newsletter_link: https://4f0df3d6.sibforms.com/serve/MUIFAKrbltNDRgRE9y7Ijv8nF1SN65VwHtbGH33ZGje0x0-VS9Rr8bbD3LefzRQE0Eu3KtRtSBbaDueFVEARVVYp2Bb3JLj9LBk9SNK1XX2rSgs9adgkR67Xhi1RUqGU7wcVv2U42hHq7IIyH3N3Eu82Ci39-aYzr2HUoNERYKoTbYfeINulmU8Y-BX6jaK5QNlZg6wyBhMl52sq
-  initiatives_cta:
-    href: /communs
-    target_blank: null
+  enabled_i18n:
+    de: false
+    en: false

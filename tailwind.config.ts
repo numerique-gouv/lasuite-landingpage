@@ -63,6 +63,7 @@ const config: Config = {
         'blue-1': '#f5f5fe',
         'blue-2': '#1212ff',
         'blue-3': '#f3f6fe',
+        'grey-0': '#f6f6f6',
       },
     },
     extend: {
