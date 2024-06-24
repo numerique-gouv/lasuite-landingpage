@@ -12,9 +12,9 @@ export const toHtml = async (markdown: string, { inline = false } = {}) => {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkUnwrapImages)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeImageLinks)
-    .use(rehypeStringify)
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown)
 
   let result = String(data)
