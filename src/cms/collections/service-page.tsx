@@ -3,7 +3,7 @@ import type {
   CmsFieldSelect,
   CmsCollection,
 } from 'decap-cms-core'
-import { LandingPageContent } from '@/components/LandingPageContent'
+import { ServicePageContent } from '@/components/ServicePageContent'
 import { toHtml } from '@/utils/markdown'
 import { createCollection } from '../createCollection'
 import { EntryImage, I18nField } from '../types'
@@ -28,13 +28,13 @@ const bgField: CmsFieldBase & CmsFieldSelect = {
 }
 
 const config: CmsCollection = {
-  label: 'Landing pages de services',
-  label_singular: 'Landing page',
-  name: 'landing-page',
+  label: 'Pages de services',
+  label_singular: 'Page de service',
+  name: 'service-page',
   identifier_field: 'title',
   slug: '{{fields.id}}',
   format: 'yml',
-  folder: 'content/landing-pages',
+  folder: 'content/service-pages',
   preview_path: '/about/{{id}}',
   i18n: true,
   create: true,
@@ -490,7 +490,7 @@ const addAutoBackgrounds = (service: EntrySchema) => {
 }
 
 /**
- * take a landing page file content as JSON and prepare it for rendering
+ * take a service page file content as JSON and prepare it for rendering
  *
  * we usually convert markdown to HTML here
  */
@@ -561,7 +561,7 @@ const entryParser = async (json: EntrySchema) => {
 }
 
 const entryPreview = (data: EntrySchema) => (
-  <LandingPageContent data={data} isPreview />
+  <ServicePageContent data={data} isPreview />
 )
 
 type background =

@@ -11,7 +11,7 @@ module.exports = {
      * that do not use the DSFR.
      *
      * This is done because I couldn't manage to load the DSFR global styles only for a specific page.
-     * If you go on a LandingPage (that has the DSFR), then on the homepage (that doesn't have the DSFR),
+     * If you go on a ServicePage (that has the DSFR), then on the homepage (that doesn't have the DSFR),
      * the DSFR global styles are still loaded and conflict with homepage styles without a prefix.
      */
     'postcss-prefix-selector': {

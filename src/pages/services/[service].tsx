@@ -1,12 +1,12 @@
 import { GetStaticProps } from 'next'
-import { collection, type EntrySchema } from '@/cms/collections/landing-page'
+import { collection, type EntrySchema } from '@/cms/collections/service-page'
 import { getCollectionEntry } from '@/cms/getEntry'
 import { getSlugs } from '@/cms/getSlugs'
 import Head from 'next/head'
 import Script from 'next/script'
 import { DsfrHeader } from '@/components/DsfrHeader'
 import { DsfrFooter } from '@/components/DsfrFooter'
-import { LandingPageContent } from '@/components/LandingPageContent'
+import { ServicePageContent } from '@/components/ServicePageContent'
 import { TITLE_SITE } from '@/constant'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
 
@@ -28,7 +28,7 @@ export default function ServiceLandingPage({ data }: { data: EntrySchema }) {
       </Head>
       <div className="enable-dsfr">
         <DsfrHeader />
-        <LandingPageContent data={data} />
+        <ServicePageContent data={data} />
         <DsfrFooter />
       </div>
     </>
