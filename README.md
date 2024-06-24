@@ -53,7 +53,7 @@ For each content page, you can decide if the page is available in english and ge
 
 If you want to test the CMS locally, after starting the dev server with `yarn dev`, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
 
-For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files. An example landing page yml file can be copied to help (`/content/.examples/landing-page.yml`).
+For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files. An example service landing page yml file can be copied to help (`/content/.examples/service-page.yml`).
 
 ## Contributing
 

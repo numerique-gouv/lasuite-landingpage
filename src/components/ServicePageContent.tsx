@@ -10,7 +10,7 @@ import { CtaBlock } from '@/components/cms-blocks/CtaBlock'
 import { FAQ } from '@/components/cms-blocks/FAQ'
 import { SuiteNumerique } from '@/components/cms-blocks/SuiteNumerique'
 import { Screenshot } from '@/components/cms-blocks/Screenshot'
-import { type EntrySchema } from '@/cms/collections/landing-page'
+import { type EntrySchema } from '@/cms/collections/service-page'
 import { Raw } from './Raw'
 
 /**
@@ -19,7 +19,7 @@ import { Raw } from './Raw'
  * several data fields contain already-made HTML, so we use the <Raw> component
  * here to abstract this notion from lower-level components
  */
-export const LandingPageContent = ({
+export const ServicePageContent = ({
   data,
   isPreview = false,
 }: {
