@@ -32,17 +32,17 @@ To learn more about Next.js, take a look at the [Next.js Documentation](https://
 
 ## Authoring content
 
-Most of the website content comes from yaml files authored through [DecapCMS](https://decapcms.org/). Go on `/admin`, login with your GitHub account, and edit existing pages or create new ones. On save, the CMS commits the content files in this repository, and the production website is deployed with the latest changes (deployment might take a few minutes).
+Most of the website content comes from yaml files authored through [DecapCMS](https://decapcms.org/). Go on `/admin`, login with your GitHub account, and edit existing pages or create new ones. On save, the CMS commits the content files in this repository, and the production website is deployed with the latest changes. Deployment might take a few minutes, so you can enable the preview panel in the CMS to be sure the page will be rendered as you like instead of waiting. _ℹ Note: preview components have trouble loading JS-related features. That is why some interactive UI components are not rendered exactly the same as on the website (for example, the slider components or the accordions)._
 
 You can also decide to directly edit yaml files in the `/content` directory, following the current structure.
 
 ### Special fields
 
-- on build, for every field named `image`, we'll try to get the image dimensions before rendering the content in nextjs pages (adding an `image_object` object next to the `image` data, with src, width and height info)
+On build, for every field named `image`, we'll try to get the image dimensions before rendering the content in nextjs pages (adding an `image_object` object next to the `image` data, with src, width and height info)
 
 ### Locally
 
-If you want to test the CMS locally, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
+If you want to test the CMS locally, after starting the dev server with `yarn dev`, you can start a local CMS proxy server with `yarn cms`. This will make you edit your local files, without creating commits on changes.
 
 For each content type, you can create a `__test__.yml` file that is ignored from Git. This can help you easily test the development of content types without risking commiting dev-related content files. An example landing page yml file can be copied to help (`/content/.examples/landing-page.yml`).
 
