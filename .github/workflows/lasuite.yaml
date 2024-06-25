@@ -14,7 +14,7 @@ jobs:
   lint-git:
     runs-on: ubuntu-latest
     # Makes sense only for: 1) pull requests 2) that are not triggered by DecapCMS
-    if: github.event_name == 'pull_request' && !contains(github.pull_request.title, 'cms-bot')
+    if: github.event_name == 'pull_request' && !contains(github.event.pull_request.title, 'cms-bot')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
