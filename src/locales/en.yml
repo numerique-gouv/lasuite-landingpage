@@ -39,6 +39,4 @@ service_landing_page:
     body: '{title}, a {la_suite} service'
 homepage:
   anct_partners_alt: Contributors of La Suite Territoriale
-  hero_img_alt:
-    La Suite numérique est une suite d'outils disponible sur téléphones,
-    tablettes et ordinateurs
+  hero_img_alt: La Suite numérique is a collaboration platform available on smartphones, tablets and computers
