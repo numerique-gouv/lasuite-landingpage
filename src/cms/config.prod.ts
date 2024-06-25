@@ -9,12 +9,12 @@ const prodConfig: CmsConfig = {
     branch: process.env.NEXT_PUBLIC_CMS_BRANCH,
     base_url: process.env.NEXT_PUBLIC_CMS_AUTH_URL,
     commit_messages: {
-      create: '💬(cms) create {{collection}} “{{slug}}”',
-      update: '💬(cms) update {{collection}} “{{slug}}”',
-      delete: '💬(cms) delete {{collection}} “{{slug}}”',
-      uploadMedia: '💬(cms) upload “{{path}}”',
-      deleteMedia: '💬(cms) delete “{{path}}”',
-      openAuthoring: '💬(cms) {{message}}',
+      create: '💬(cms-bot) create {{collection}} “{{slug}}”',
+      update: '💬(cms-bot) update {{collection}} “{{slug}}”',
+      delete: '💬(cms-bot) delete {{collection}} “{{slug}}”',
+      uploadMedia: '💬(cms-bot) upload “{{path}}”',
+      deleteMedia: '💬(cms-bot) delete “{{path}}”',
+      openAuthoring: '💬(cms-bot) {{message}}',
     },
   },
 }

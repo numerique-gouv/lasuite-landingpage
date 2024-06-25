@@ -70,7 +70,7 @@ ignore=B6,UC1
 
 [ignore-by-title:cms]
 # Allow empty body for DecapCMS commits
-regex=^💬\(cms\) .*$
+regex=^💬\(cms-bot\) .*$
 ignore=B6
 
 # [ignore-by-body]
