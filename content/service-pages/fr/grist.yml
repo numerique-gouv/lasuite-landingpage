@@ -1,0 +1,13 @@
+enabled: true
+id: grist
+title: Grist
+hero:
+  actions:
+    - primary: true
+      target_blank: false
+      label: Accédez à l'instance inter-ministerielle de Grist
+      href: https://grist.incubateur.net
+  title: Collaborez sur des jeux de données avec Grist
+  image: /content/uploads/logo_grist_marianne.svg
+newsletter:
+  enable: false
