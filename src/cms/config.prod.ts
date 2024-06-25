@@ -3,6 +3,7 @@ import config from './config.common'
 
 const prodConfig: CmsConfig = {
   ...config,
+  publish_mode: 'editorial_workflow',
   backend: {
     name: 'github',
     repo: 'numerique-gouv/lasuite-landingpage',
