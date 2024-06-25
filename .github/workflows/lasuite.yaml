@@ -13,7 +13,8 @@ on:
 jobs:
   lint-git:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' # Makes sense only for pull requests
+    # Makes sense only for: 1) pull requests 2) that are not triggered by DecapCMS
+    if: github.event_name == 'pull_request' && !contains(github.pull_request.title, 'cms-bot')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -31,7 +32,8 @@ jobs:
 
   lint-and-build:
     runs-on: ubuntu-latest
-
+    # always do this, except if a PR is triggered by DecapCMS
+    if: github.event_name != 'pull_request' || !contains(github.event.pull_request.title, 'cms-bot')
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
