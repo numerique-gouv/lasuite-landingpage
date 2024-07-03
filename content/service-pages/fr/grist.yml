@@ -22,4 +22,7 @@ flexible_content:
     bg: auto
     title: Une question ? Une remarque ? Contactez-nous par email !
 newsletter:
-  enable: false
+  enable: true
+  cta_href: https://grist.incubateur.net/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
+  body: Inscrivez-vous via ce lien pour être tenu informé des actualités liées au
+    produit (newsletters, évènements, trucs et astuces...)
