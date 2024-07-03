@@ -21,8 +21,19 @@ flexible_content:
       href: mailto:contact@grist.numerique.gouv.fr
     bg: auto
     title: Une question ? Une remarque ? Contactez-nous par email !
+  - type: cta
+    cta:
+      target_blank: true
+      label: Rejoindre le canal Tchap "Grist - Utilisateurs"
+      href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
+    bg: auto
+    title: Rejoignez la communauté grandissante des utilisateurs de Grist
+    body: Plusieurs centaines d'agents publics utilisent déjà Grist au quotidien
+      pour travailler sur des jeux de données de manière collaborative.
 newsletter:
   enable: true
   cta_href: https://grist.incubateur.net/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
   body: Inscrivez-vous via ce lien pour être tenu informé des actualités liées au
     produit (newsletters, évènements, trucs et astuces...)
+socials:
+  youtube: https://tube.numerique.gouv.fr/c/grist/videos?s=1
