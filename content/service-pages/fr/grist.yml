@@ -30,6 +30,18 @@ flexible_content:
     title: Rejoignez la communauté grandissante des utilisateurs de Grist
     body: Plusieurs centaines d'agents publics utilisent déjà Grist au quotidien
       pour travailler sur des jeux de données de manière collaborative.
+  - type: cta
+    cta:
+      target_blank: true
+      label: Inscrivez-vous à un webinaire
+      href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
+    bg: auto
+    title: Inscrivez-vous à un webinaire
+    body: Nous organisons régulièrement des webinaires de découverte de Grist ainsi
+      que des formations sur des sujets plus avancés (références, widget custom,
+      droits d'accès avancés...). Ces webinaires sont disponibles en replay sur
+      [notre chaine
+      peertube](https://tube.numerique.gouv.fr/c/grist/videos?s=1).
 newsletter:
   enable: true
   cta_href: https://grist.incubateur.net/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
