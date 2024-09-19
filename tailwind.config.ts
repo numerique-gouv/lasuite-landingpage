@@ -10,6 +10,7 @@ const figmaColors = {
   'grey-3': '#4D4D4D',
   'grey-4': '#DDDDDD',
   'grey-5': '#3A3A3A',
+  'grey-6': '#FAF9F9',
   'blue-1': '#000091',
   'black-1': '#161616',
 }

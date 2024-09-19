@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Callout } from '@/components/Callout'
 import { URL_SITE } from '@/constant'
 
-import heroImage from '@/assets/hero-desktop.webp'
+import heroImage from '@/assets/hero-desktop.png'
 import heroImageMobile from '@/assets/hero-mobile.webp'
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
 import type { ReactElement } from 'react'
@@ -36,19 +36,13 @@ export const Hero = ({
           src={heroImage}
           width={1000}
           alt={t('homepage.hero_img_alt')}
-          className="mr-[-12%] hidden md:flex z-10"
+          className="mr-[-12%] md:flex z-10"
           priority
           placeholder="blur"
         />
-        <Image
-          src={heroImageMobile}
-          width={800}
-          alt={t('homepage.hero_img_alt')}
-          className="md:hidden z-10 pb-8"
-          priority
-          placeholder="blur"
-        />
-        <Callout>{callout}</Callout>
+        <Callout>
+          La Suite numérique fédère agents et professionnels autour d'applications open-source interconnectées pour simplifier leur quotidien
+        </Callout>
       </div>
     </div>
   )
