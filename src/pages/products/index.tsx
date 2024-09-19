@@ -58,6 +58,7 @@ const PRODUCTS = [
     logo: TchapLogo,
     screenshot: TchapScreenshot,
     name: 'Tchap',
+    url: 'https://tchap.beta.gouv.fr/',
     caption: 'la messagerie instantanée de la sphère publique',
     description: 'Envoyer des messages, faire des appels, et rechercher ses interlocuteurs sur l’annuaire',
     items: [
@@ -69,6 +70,7 @@ const PRODUCTS = [
     logo: ResanaLogo,
     screenshot: ResanaScreenshot,
     name: 'Resana',
+    url: 'https://resana.numerique.gouv.fr/public/',
     caption: 'l’espace de stockage partagé par plus de 400000 agents publics',
     description: 'Stockez tous vos fichiers (documents, images, feuilles de calcul)  à un seul endroit. Organisez vos espaces et partagez-les à qui  vous voulez, en toute sécurité',
     items: [
@@ -80,7 +82,8 @@ const PRODUCTS = [
     logo: WebinaireLogo,
     screenshot: WebinaireScreenshot,
     name: 'Webinaire',
-    caption: 'la plateforme de  webinaires dédiée à la sphère publique',
+    url: 'https://webinaire.numerique.gouv.fr/',
+    caption: 'la plateforme de webinaires dédiée à la sphère publique',
     description: 'Organisez et participez à des webinaires en toute simplicité. Planifiez, diffusez et collaborez en direct avec vos collègues, le tout dans un environnement sécurisé',
     items: [
       <><strong>Partagez votre écran</strong>, une présentation ou un tableau blanc collaboratif</>,
@@ -91,6 +94,7 @@ const PRODUCTS = [
     logo: VisioLogo,
     screenshot: VisioScreenshot,
     name: 'Webconf',
+    url: 'https://webconf.numerique.gouv.fr/',
     caption: 'la solution de visioconférence pour les agents de la sphère publique',
     description: 'Tenez vos réunions à distance en toute simplicité. Connectez-vous avec vos collègues en toute sécurité, sans installation, pour des échanges fluides et efficaces',
     items: [
@@ -101,6 +105,7 @@ const PRODUCTS = [
     logo: PadLogo,
     screenshot: PadScreenshot,
     name: 'Note Pad',
+    url: 'https://pad.numerique.gouv.fr/',
     caption: 'le meilleur moyen d’écrire et de partager vos notes au format Markdown',
     description: 'Créez, éditez et collaborez en ligne. Tout est sauvegardé automatiquement pour un travail fluide et sécurisé',
     items: [
@@ -111,6 +116,7 @@ const PRODUCTS = [
     logo: GristLogo,
     screenshot: GristScreenshot,
     name: 'Grist',
+    url: 'https://grist.numerique.gouv.fr/',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
     description: 'Créez, gérez et analysez vos données dans un environnement simple et intuitif. Collaborez en temps réel avec vos collègues tout en assurant la sécurité de vos informations',
     items: [
@@ -122,6 +128,7 @@ const PRODUCTS = [
     logo: FranceTransfertLogo,
     screenshot: FranceTransfertScreenshot,
     name: 'France Transfert',
+    url: 'https://francetransfert.numerique.gouv.fr/',
     caption: 'partagez vos fichiers en toute sécurité',
     description: 'Transférez vos documents en toute confiance, même les plus volumineux. Partagez facilement avec vos collègues, tout en garantissant la confidentialité et la sécurité des données',
     items: [
@@ -130,43 +137,47 @@ const PRODUCTS = [
   }, {
     logo: MessagerieLogo,
     screenshot: MessagerieScreenshot,
-    name: "Mail / OpenXchange",
-    caption: "la première messagerie et agenda open-source  sécurisés de l’État",
-    description: "Gérez vos emails et vos rendez-vous dans un environnement sécurisé conçu pour les besoins des agents du service public",
+    name: 'Mail / OpenXchange',
+    url: 'https://webmail.numerique.gouv.fr/',
+    caption: 'la première messagerie et agenda open-source  sécurisés de l’État',
+    description: 'Gérez vos emails et vos rendez-vous dans un environnement sécurisé conçu pour les besoins des agents du service public',
     items: [
       <><strong>Gérez votre boîte aux lettres</strong> avec une interface dernière génération</>,
       <><strong>Partagez vos agendas</strong> facilement</>,
-    ]
+    ],
   },
 ]
 
 const ProductsDetails = () => {
   return <ContentSection>
     <div className='flex flex-col items-center gap-20'>
-      {PRODUCTS.map(({ logo, screenshot, name, caption, description, items }, index) => (
-        <div className='flex gap-6 flex-col md:flex-row' key={name}>
-          <div className={'md:w-1/2 ' + (index % 2 === 0 ? 'md:order-1' : 'md:order-2')}>
-            <div className='flex items-center gap-4'>
-              <Image src={logo} alt={name + ' logo'}></Image>
-              <h3 className='text-xl sm:text-2xl text-blue-1 font-bold'><span
-                className='font-extrabold'>{name}</span>, {caption}</h3>
-            </div>
+      {PRODUCTS.map(({ logo, screenshot, name, url, caption, description, items }, index) => (
 
-            <div className='mt-4 font-base md:text-lg'>
-              <p className='text-grey-3  font-bold'>
-                {description}
-              </p>
-              <ul className='list-disc ml-4 mt-4'>
-                {items.map((item, index) => (
-                  <li key={index} className='text-grey-3'>{item}</li>
-                ))}
-              </ul>
+          <div className='flex gap-6 flex-col md:flex-row' key={name}>
+            <div className={'md:w-1/2 ' + (index % 2 === 0 ? 'md:order-1' : 'md:order-2')}>
+              <div className='flex items-center gap-4'>
+                <Image src={logo} alt={name + ' logo'}></Image>
+                <a href={url} target="_blank">
+                  <h3 className='text-xl sm:text-2xl text-blue-1 font-bold hover:underline'><span
+                    className='font-extrabold'>{name}</span>, {caption}</h3>
+                </a>
+              </div>
+
+              <div className='mt-4 font-base md:text-lg'>
+                <p className='text-grey-3  font-bold'>
+                  {description}
+                </p>
+                <ul className='list-disc ml-4 mt-4'>
+                  {items.map((item, index) => (
+                    <li key={index} className='text-grey-3'>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className={'md:w-1/2 ' + (index % 2 === 0 ? 'md:order-2' : 'md:order-1')}>
+              <Image src={screenshot} alt='Tchap screenshot'></Image>
             </div>
           </div>
-          <div className={'md:w-1/2 ' + (index % 2 === 0 ? 'md:order-2' : 'md:order-1')}>
-            <Image src={screenshot} alt='Tchap screenshot'></Image>
-          </div>
-        </div>
       ))}
     </div>
   </ContentSection>

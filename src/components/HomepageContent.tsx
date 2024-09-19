@@ -12,6 +12,7 @@ import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { FAQ } from '@/components/cms-blocks/FAQ'
 import { useEffect } from 'react'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
+import heroImage from '@/assets/hero-desktop.png'
 
 /**
  * output the homepage content with data taken from the CMS file
@@ -25,8 +26,9 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
   return (
     <>
       <Hero
-        intro={<Raw>{data.intro}</Raw>}
-        callout={<Raw tag='span'>{data.callout}</Raw>}
+        intro="Créer, partager, collaborer au sein la sphère publique"
+        callout="La Suite numérique fédère agents et professionnels autour d'applications open-source interconnectées pour simplifier leur quotidien"
+        image={heroImage}
       />
       <Products />
       <Testimonies
