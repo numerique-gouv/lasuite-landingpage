@@ -74,7 +74,7 @@ export const Initiatives = ({
   items: Array<Omit<CardProps, 'index'>>
 }) => (
   <>
-    <ContentSection background="gray">
+    <ContentSection>
       <h2 className="text-3xl md:text-4xl font-bold max-w-[34rem] text-center">
         Contribuer à La&nbsp;Suite numérique, c’est possible&nbsp;!
       </h2>

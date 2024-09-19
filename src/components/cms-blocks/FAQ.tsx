@@ -15,7 +15,7 @@ export const FAQ = ({
   const id = useId()
   if (!items.length) return null
   return (
-    <div className="cms-block">
+    <div>
       <div className="fr-container">
         {!!title && <h2>{title}</h2>}
         <div className="fr-accordions-group">
