@@ -1,14 +1,10 @@
-import { DigitalCommons } from '@/sections/DigitalCommons'
 import { Hero } from '@/sections/Hero'
-import { Anct } from '@/sections/Anct'
 import { Testimonies } from '@/sections/Testimonies'
-import { Initiatives } from '@/sections/Initiatives'
 import { Newsletter } from '@/sections/Newsletter'
 import { EntrySchema } from '@/cms/collections/homepage'
 import { Raw } from './Raw'
 import { Products } from '@/sections/Products'
 import { ContentSection } from '@/components/ContentSection'
-import { SwiperWrapper } from '@/components/SwiperWrapper'
 import { FAQ } from '@/components/cms-blocks/FAQ'
 import { useEffect } from 'react'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
@@ -93,7 +89,7 @@ const Faq = () => {
         answer: 'Les communs numériques de La Suite numérique sont utilisables librement',
       }, {
         question: 'Comment signaler un problème sur un commun numérique de La Suite numérique ?',
-        answer: 'Vous pouvez signaler un problème sur un commun numérique de La Suite numérique en envoyant un mail à,
+        answer: 'Vous pouvez signaler un problème sur un commun numérique de La Suite numérique en envoyant un mail à',
       }]} />
     </div>
   </ContentSection>
