@@ -10,7 +10,7 @@ export const Hero = ({
   callout,
   image,
   imageClassName,
-  backgroundImage = true
+  backgroundImage = true,
 }: {
   intro: ReactElement | string
   callout: ReactElement | string
@@ -19,17 +19,24 @@ export const Hero = ({
   backgroundImage?: boolean
 }) => {
   const t = useTranslations()
-  const background = backgroundImage ? 'md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center' : ''
+  const background = backgroundImage
+    ? 'md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center'
+    : ''
   return (
     <div className="hero relative overflow-hidden bg-white ">
-      <div className={"flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-no-repeat md:bg-center " + background}>
+      <div
+        className={
+          'flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-no-repeat md:bg-center ' +
+          background
+        }
+      >
         <h1 className="w-full flex justify-center pb-11">
           <Image
             src={LogoSvg}
             height={168}
             width={480}
             alt={URL_SITE}
-            className={"max-w-[80%]"}
+            className={'max-w-[80%]'}
             priority
           />
         </h1>
@@ -40,13 +47,11 @@ export const Hero = ({
           src={image}
           width={1000}
           alt={t('homepage.hero_img_alt')}
-          className={"flex z-10 " + imageClassName}
+          className={'flex z-10 ' + imageClassName}
           priority
           placeholder="blur"
         />
-        <Callout>
-          {callout}
-        </Callout>
+        <Callout>{callout}</Callout>
       </div>
     </div>
   )

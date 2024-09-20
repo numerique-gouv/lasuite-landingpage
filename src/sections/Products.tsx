@@ -31,24 +31,29 @@ const PRODUCTS = [
 ]
 
 export const Products = () => {
-  return <ContentSection>
-    <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-8">
-      {PRODUCTS.map(([name, Icon]) => (
-        <div key={name} className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] flex flex-col items-center justify-between bg-grey-6 rounded p-2 md:p-4">
-          <div className="flex-grow flex flex-col items-center justify-center overflow-hidden">
-            <Image
-              className="w-9/12 md:w-auto"
-              src={Icon}
-              alt={`Logo ${name}`}
-            />
-          </div>
+  return (
+    <ContentSection>
+      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-8">
+        {PRODUCTS.map(([name, Icon]) => (
+          <div
+            key={name}
+            className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] flex flex-col items-center justify-between bg-grey-6 rounded p-2 md:p-4"
+          >
+            <div className="flex-grow flex flex-col items-center justify-center overflow-hidden">
+              <Image
+                className="w-9/12 md:w-auto"
+                src={Icon}
+                alt={`Logo ${name}`}
+              />
+            </div>
 
-          <h4 className="text-sm md:text-lg md:whitespace-nowrap">{name}</h4>
-        </div>
-      ))}
-    </div>
-    <Button href="/products" variant="outline">
-      Je découvre les produits de La Suite
-    </Button>
-  </ContentSection>
+            <h4 className="text-sm md:text-lg md:whitespace-nowrap">{name}</h4>
+          </div>
+        ))}
+      </div>
+      <Button href="/products" variant="outline">
+        Je découvre les produits de La Suite
+      </Button>
+    </ContentSection>
+  )
 }
