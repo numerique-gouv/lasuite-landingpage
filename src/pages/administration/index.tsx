@@ -9,6 +9,7 @@ import AdministrationImage2 from '@/assets/administration_block_2.png'
 import AdministrationImage3 from '@/assets/administration_block_3.png'
 
 import { Button } from '@/components/Button'
+import { QuickNav } from '@/components/QuickNav'
 
 export default function Agent() {
   const button = (
@@ -20,6 +21,7 @@ export default function Agent() {
 
   return (
     <Layout title={TITLE_SITE}>
+      <QuickNav />
       <Hero
         intro="... au service de votre administration"
         callout="Modernisez vos processus avec des outils conçus pour les besoins spécifiques des administrations publiques"
@@ -70,10 +72,7 @@ export default function Agent() {
               administration.
             </li>
             <li>
-              ProConnect centralise l'accès à vos outils en s'intégrant avec
-              plusieurs ministères et agences de l'État, éliminant ainsi le
-              besoin de multiples mots de passe et simplifiant la gestion des
-              identités.
+              ProConnect centralise l'accès à vos outils en fédérant les identités de plusieurs ministères et agences de l'État, éliminant ainsi le besoin de multiples mots de passe et simplifiant la gestion des comptes.
             </li>
           </ul>
         </DoubleBlock>

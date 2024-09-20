@@ -1,25 +1,37 @@
 import { Layout } from '@/components/Layout'
 import { TITLE_SITE } from '@/constant'
 import { Hero } from '@/sections/Hero'
-import heroImage from '@/assets/editeur_hero.png'
+import heroImage from '@/assets/hero_editeur.png'
 import { ContentSection } from '@/components/ContentSection'
 import { DoubleBlock } from '@/sections/DoubleBlock'
-import AgentImage1 from '@/assets/agent_block_1.png'
+import EditeurImage1 from '@/assets/editeur_block_1.png'
 import AgentImage2 from '@/assets/agent_block_2.png'
 import { Button } from '@/components/Button'
+import { QuickNav } from '@/components/QuickNav'
 
 export default function Editeur() {
+
+
+  const button = (
+    <Button href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/doc_fs.md" variant="outline">
+      J'intègre ProConnect sur mon service
+    </Button>
+  )
+  
   return (
     <Layout title={TITLE_SITE}>
+      <QuickNav />
       <Hero
         intro="... avec vous pour renforcer l’interopérabilité"
         callout="Intégrez ProConnect, la solution d’authentification centralisée de l’État, et offrez à vos utilisateurs un accès simple, sécurisé et fluide à vos produits et services."
         image={heroImage}
         imageClassName="py-10"
-        backgroundImage={false}
       />
+      <ContentSection verticalPadding={false}>
+        <div className="pb-16">{button}</div>
+      </ContentSection>
       <ContentSection padding={false} gap="">
-        <DoubleBlock image={AgentImage1}>
+        <DoubleBlock image={EditeurImage1}>
           <h3 className="text-2xl font-bold mb-4">
             ProConnect : Simplifiez et sécurisez l’accès à vos services
             numériques
@@ -57,6 +69,7 @@ export default function Editeur() {
         </DoubleBlock>
         <div className="pt-10"></div>
       </ContentSection>
+      <ContentSection>{button}</ContentSection>
     </Layout>
   )
 }

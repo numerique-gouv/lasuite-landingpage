@@ -13,6 +13,7 @@ const figmaColors = {
   'grey-6': '#FAF9F9',
   'blue-1': '#000091',
   'black-1': '#161616',
+  transparent: 'transparent'
 }
 
 const config: Config = {
