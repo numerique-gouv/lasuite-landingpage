@@ -7,8 +7,8 @@ import { Products } from '@/sections/Products'
 import { ContentSection } from '@/components/ContentSection'
 import { FAQ } from '@/components/cms-blocks/FAQ'
 import { useEffect } from 'react'
-import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
 import heroImage from '@/assets/hero-desktop.png'
+import { QuickNav } from './QuickNav'
 
 /**
  * output the homepage content with data taken from the CMS file
@@ -19,6 +19,7 @@ import heroImage from '@/assets/hero-desktop.png'
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
   return (
     <>
+      <QuickNav />
       <Hero
         intro="Créer, partager, collaborer au sein la sphère publique"
         callout="La Suite numérique fédère agents et professionnels autour d'applications open-source interconnectées pour simplifier leur quotidien"
@@ -47,7 +48,7 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
           })) || []
         }
       />
-      <Faq />
+      {/*<Faq />*/}
       <Newsletter
         title={data.newsletter_title}
         body={<Raw tag="span">{data.newsletter_description}</Raw>}

@@ -7,6 +7,8 @@ import { MATOMO_ID } from '@/constant'
 import { useEffect } from 'react'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import { useRouter } from 'next/router'
+import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
+import '@gouvfr/dsfr/dist/utility/icons/icons-system/icons-system.css'
 
 declare global {
   interface Window {

@@ -7,6 +7,7 @@ import { DoubleBlock } from '@/sections/DoubleBlock'
 import AgentImage1 from '@/assets/agent_block_1.png'
 import AgentImage2 from '@/assets/agent_block_2.png'
 import { Button } from '@/components/Button'
+import { QuickNav } from '@/components/QuickNav'
 
 export default function Agent() {
   const button = (
@@ -17,6 +18,7 @@ export default function Agent() {
 
   return (
     <Layout title={TITLE_SITE}>
+      <QuickNav />
       <Hero
         intro="... un écosystème numérique pour faciliter votre quotidien"
         callout="Simplifiez vos missions grâce à des outils numériques interconnectés, conçus pour répondre aux besoins spécifiques des agents publics"
