@@ -21,7 +21,7 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
     <>
       <QuickNav />
       <Hero
-        intro="Créer, partager, collaborer au sein la sphère publique"
+        intro="Créer, partager, collaborer au sein de la sphère publique"
         callout="La Suite numérique fédère agents et professionnels autour d'applications open-source interconnectées pour simplifier leur quotidien"
         image={heroImage}
       />
