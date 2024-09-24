@@ -10,14 +10,15 @@ import { Button } from '@/components/Button'
 import { QuickNav } from '@/components/QuickNav'
 
 export default function Editeur() {
-
-
   const button = (
-    <Button href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/doc_fs.md" variant="outline">
+    <Button
+      href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/doc_fs.md"
+      variant="outline"
+    >
       J'intègre ProConnect sur mon service
     </Button>
   )
-  
+
   return (
     <Layout title={TITLE_SITE}>
       <QuickNav />

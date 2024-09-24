@@ -72,7 +72,10 @@ export default function Agent() {
               administration.
             </li>
             <li>
-              ProConnect centralise l'accès à vos outils en fédérant les identités de plusieurs ministères et agences de l'État, éliminant ainsi le besoin de multiples mots de passe et simplifiant la gestion des comptes.
+              ProConnect centralise l'accès à vos outils en fédérant les
+              identités de plusieurs ministères et agences de l'État, éliminant
+              ainsi le besoin de multiples mots de passe et simplifiant la
+              gestion des comptes.
             </li>
           </ul>
         </DoubleBlock>
