@@ -46,7 +46,19 @@ const ProductsDetails = () => {
           .filter(([, v]) => v.displayDetails)
           .map(
             (
-              [, { logo, screenshot, keepRawScreenshot, name, url, caption, description, items }],
+              [
+                ,
+                {
+                  logo,
+                  screenshot,
+                  keepRawScreenshot,
+                  name,
+                  url,
+                  caption,
+                  description,
+                  items,
+                },
+              ],
               index
             ) => (
               <div className="flex gap-6 flex-col md:flex-row" key={name}>
@@ -84,13 +96,17 @@ const ProductsDetails = () => {
                   }
                 >
                   {keepRawScreenshot ? (
-                    <Image src={screenshot!} alt={name + " screenshot"}></Image>
+                    <Image src={screenshot!} alt={name + ' screenshot'}></Image>
                   ) : (
                     <div className="flex justify-center items-center">
-                      <Image src={screenshot!} width={500} alt={name + " screenshot"} className="w-4/6 border-8 border-white rounded-lg shadow-2xl"></Image>
+                      <Image
+                        src={screenshot!}
+                        width={500}
+                        alt={name + ' screenshot'}
+                        className="w-4/6 border-8 border-white rounded-lg shadow-2xl"
+                      ></Image>
                     </div>
                   )}
-
                 </div>
               </div>
             )
