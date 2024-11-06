@@ -18,7 +18,7 @@ export const DoubleBlock = ({
       alt=""
       className={'flex z-10 h-full ' + fit}
       priority
-      placeholder="blur"
+      placeholder={image.src.endsWith('svg') ? undefined : 'blur'}
     />
   )
 
