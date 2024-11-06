@@ -57,13 +57,13 @@ export default function Editeur() {
             Éditeurs : Intégrez ProConnect et optimisez vos solutions
           </h3>
           <p>
-            <strong>ProConnect</strong>, au cœur de La Suite Numérique de
+            <strong>ProConnect</strong>, au cœur de La Suite numérique de
             l'État, offre une{' '}
             <strong>authentification unifiée et sécurisée</strong>. <br />
             <br />
             Éditeurs, intégrez ProConnect à vos produits pour participer à la{' '}
             <strong>transformation numérique</strong>. Bénéficiez de{' '}
-            <strong>l'interopérabilité</strong> avec les services de la Suite
+            <strong>l'interopérabilité</strong> avec les services de La Suite
             Numérique et offrez une <strong>authentification simplifiée</strong>{' '}
             conforme aux standards de l'État.
           </p>
