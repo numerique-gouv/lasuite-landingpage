@@ -7,6 +7,7 @@ interface ContentSectionProps
   padding?: boolean
   horizontalPadding?: boolean
   verticalPadding?: boolean
+  center?: boolean
   gap?: string
 }
 
@@ -16,6 +17,7 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
   padding = true,
   horizontalPadding = true,
   verticalPadding = true,
+  center = true,
   gap = 'gap-[50px]',
   ...props
 }) => {
@@ -24,7 +26,7 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
       className={`justify-center overflow-hidden flex ${background === 'gray' && 'bg-white-1'} ${padding && verticalPadding && 'py-[50px] md:py-20'}`}
     >
       <div
-        className={`flex flex-col items-center w-full lg:w-[70em] ${gap} ${padding && horizontalPadding && 'px-4'}`}
+        className={`flex flex-col ${center ? 'items-center' : 'items-start'} w-full lg:w-[70em] ${gap} ${padding && horizontalPadding && 'px-4'}`}
         {...props}
       >
         {children}
