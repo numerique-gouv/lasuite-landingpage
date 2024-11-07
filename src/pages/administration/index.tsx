@@ -20,7 +20,7 @@ export default function Agent() {
   )
 
   return (
-    <Layout title={TITLE_SITE}>
+    <Layout title="La Suite pour les administrations publiques">
       <QuickNav />
       <Hero
         intro="... au service de votre administration"

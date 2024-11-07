@@ -17,7 +17,7 @@ export default function Agent() {
   )
 
   return (
-    <Layout title={TITLE_SITE}>
+    <Layout title="La Suite pour les agents publics">
       <QuickNav />
       <Hero
         intro="... un écosystème numérique pour faciliter votre quotidien"

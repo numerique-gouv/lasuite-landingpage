@@ -20,7 +20,7 @@ export default function Editeur() {
   )
 
   return (
-    <Layout title={TITLE_SITE}>
+    <Layout title="La Suite pour les éditeurs avec ProConnect">
       <QuickNav />
       <Hero
         intro="... avec vous pour renforcer l’interopérabilité"
