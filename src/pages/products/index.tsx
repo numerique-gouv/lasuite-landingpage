@@ -9,7 +9,7 @@ import { PRODUCTS } from '@/utils/products'
 
 export default function Products() {
   return (
-    <Layout title={TITLE_SITE}>
+    <Layout title="Les produits de La Suite">
       <QuickNav />
       <Hero />
       <ProductsDetails />
