@@ -4,16 +4,16 @@ import { Button } from '@/components/Button'
 import { PRODUCTS } from '@/utils/products'
 
 const PRODUCTS_GRID = [
-  'Messagerie',
   'Tchap',
-  'Resana',
-  'Grist',
   'France Transfert',
-  'Webconf',
   'Webinaire',
+  'Webconf',
+  'Resana',
   'AudioConf',
+  'Grist',
   'Note Pad',
   'Docs',
+  'Messagerie',
 ]
 
 export const Products = () => {
@@ -29,14 +29,18 @@ export const Products = () => {
               key={name}
               className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] flex flex-col items-center justify-between bg-grey-6 rounded p-2 md:p-4"
             >
-              <div className="flex-grow flex flex-col items-center justify-center overflow-hidden">
+              <div className="flex-grow flex flex-col items-center justify-center relative">
                 <Image
                   className="w-9/12 md:w-auto"
                   src={logo}
                   alt={`Logo ${name}`}
                 />
+                {PRODUCTS[name]?.status && (
+                  <div className="absolute bottom-0 md:right-[-15px] right-[-5px] text-sm bg-blue-1 border-2 border-white rounded text-white px-1 py-0.5 font-bold text-xs">
+                    {PRODUCTS[name]?.status}
+                  </div>
+                )}
               </div>
-
               <h4 className="text-sm md:text-lg md:whitespace-nowrap">
                 {name}
               </h4>
