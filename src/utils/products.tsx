@@ -122,27 +122,6 @@ export const PRODUCTS: Record<
       </>,
     ],
   },
-  'Note Pad': {
-    displayDetails: true,
-    logo: PadLogo,
-    screenshot: PadScreenshot,
-    name: 'Note Pad',
-    url: 'https://pad.numerique.gouv.fr/',
-    caption:
-      'le meilleur moyen d’écrire et de partager vos notes au format Markdown',
-    description:
-      'Créez, éditez et collaborez en ligne. Tout est sauvegardé automatiquement pour un travail fluide et sécurisé',
-    status: 'BETA',
-    items: [
-      <>
-        <strong>Choisissez la vue</strong> que vous préférez : tout en markdown
-        ou avec l’aperçu final.
-      </>,
-      <>
-        Bénéficiez d’une <strong>correction orthographique</strong>
-      </>,
-    ],
-  },
   Grist: {
     displayDetails: true,
     logo: GristLogo,

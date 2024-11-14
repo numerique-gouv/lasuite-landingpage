@@ -11,7 +11,6 @@ const PRODUCTS_GRID = [
   'Resana',
   'AudioConf',
   'Grist',
-  'Note Pad',
   'Docs',
   'Messagerie',
 ]
@@ -19,7 +18,7 @@ const PRODUCTS_GRID = [
 export const Products = () => {
   return (
     <ContentSection>
-      <div className="flex flex-wrap items-center justify-center xl:grid grid-cols-2 xl:grid-cols-5 gap-8">
+      <div className="grid flex-wrap items-center justify-center  grid-cols-3 gap-8">
         {PRODUCTS_GRID.map((name) => {
           // @ts-ignore
           const hasLink = PRODUCTS[name]?.url
