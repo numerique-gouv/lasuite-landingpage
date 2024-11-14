@@ -57,6 +57,7 @@ const ProductsDetails = () => {
                   caption,
                   description,
                   items,
+                  status,
                 },
               ],
               index
@@ -68,8 +69,15 @@ const ProductsDetails = () => {
                     (index % 2 === 0 ? 'md:order-1' : 'md:order-2')
                   }
                 >
-                  <div className="flex items-center gap-4">
-                    <Image src={logo} alt={name + ' logo'}></Image>
+                  <div className="flex items-center gap-4 ">
+                    <div className="min-w-[74px] relative">
+                      <Image src={logo} alt={name + ' logo'}></Image>
+                      {status && (
+                        <div className="absolute bottom-[-15px] right-0 text-sm bg-blue-1 border-2 border-white rounded text-white px-1 py-0.5 font-bold text-xs">
+                          {status}
+                        </div>
+                      )}
+                    </div>
                     <a href={url} target="_blank">
                       <h3 className="text-xl sm:text-2xl text-blue-1 font-bold hover:underline">
                         <span className="font-extrabold">{name}</span>,{' '}

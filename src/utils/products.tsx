@@ -32,6 +32,7 @@ export const PRODUCTS: Record<
     description?: string
     items?: React.ReactNode[]
     displayDetails?: boolean
+    status?: string
   }
 > = {
   Tchap: {
@@ -131,6 +132,7 @@ export const PRODUCTS: Record<
       'le meilleur moyen d’écrire et de partager vos notes au format Markdown',
     description:
       'Créez, éditez et collaborez en ligne. Tout est sauvegardé automatiquement pour un travail fluide et sécurisé',
+    status: 'BETA',
     items: [
       <>
         <strong>Choisissez la vue</strong> que vous préférez : tout en markdown
@@ -162,6 +164,7 @@ export const PRODUCTS: Record<
         données
       </>,
     ],
+    status: 'BETA',
   },
   'France Transfert': {
     displayDetails: true,
@@ -188,6 +191,7 @@ export const PRODUCTS: Record<
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
     description:
       'Gérez vos emails et vos rendez-vous dans un environnement sécurisé conçu pour les besoins des agents du service public',
+    status: 'BETA',
     items: [
       <>
         <strong>Gérez votre boîte aux lettres</strong> avec une interface
@@ -207,6 +211,7 @@ export const PRODUCTS: Record<
     displayDetails: false,
     logo: DocsSvg,
     url: 'https://docs.numerique.gouv.fr',
+    status: 'BETA',
   },
   Contact: {
     displayDetails: false,
