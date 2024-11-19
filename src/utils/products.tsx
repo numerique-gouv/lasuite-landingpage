@@ -15,6 +15,7 @@ import MessagerieScreenshot from '@/assets/products/messagerie_screenshot.webp'
 import { StaticImageData } from 'next/image'
 import AudioConfSvg from '@/assets/products/audioconf.svg'
 import DocsSvg from '@/assets/products/docs.svg'
+import DocsScreenshot from '@/assets/products/docs_screenshot.webp'
 import ContactSvg from '@/assets/products/contact.svg'
 import EquipesSvg from '@/assets/products/equipes.svg'
 
@@ -159,10 +160,31 @@ export const PRODUCTS: Record<
     status: 'BETA',
   },
   Docs: {
-    displayDetails: false,
+    displayDetails: true,
     logo: DocsSvg,
     url: 'https://docs.numerique.gouv.fr',
+    screenshot: DocsScreenshot,
+    name: 'Docs',
+    caption:
+      'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
+    description:
+      "Créez et partagez vos documents simplement. Collaborez en temps réel entre collègues, ainsi qu'avec des partenaires externes",
     status: 'BETA',
+    items: [
+      <>
+        <strong>Invitez vos collègues</strong> ou partagez un lien d'édition
+      </>,
+      <>
+        <strong>Collaborez en temps réel</strong> sur vos documents
+      </>,
+      <>
+        <strong>Exportez</strong> vos documents et faites les circuler
+      </>,
+      <>
+        <strong>Hors-ligne ?</strong> Vous pouvez{' '}
+        <strong>continuer d'éditer</strong> vos documents
+      </>,
+    ],
   },
   Messagerie: {
     displayDetails: true,
