@@ -56,26 +56,18 @@ export const PRODUCTS: Record<
       </>,
     ],
   },
-  Resana: {
+  'France Transfert': {
     displayDetails: true,
-    logo: ResanaLogo,
-    screenshot: ResanaScreenshot,
-    name: 'Resana',
-    url: 'https://resana.numerique.gouv.fr/public/',
-    caption: 'l’espace de stockage partagé par plus de 400000 agents publics',
+    logo: FranceTransfertLogo,
+    screenshot: FranceTransfertScreenshot,
+    name: 'France Transfert',
+    url: 'https://francetransfert.numerique.gouv.fr/',
+    caption: 'partagez vos fichiers en toute sécurité',
     description:
-      'Stockez tous vos fichiers (documents, images, feuilles de calcul)  à un seul endroit. Organisez vos espaces et partagez-les à qui  vous voulez, en toute sécurité',
+      'Transférez vos documents en toute confiance, même les plus volumineux. Partagez facilement avec vos collègues, tout en garantissant la confidentialité et la sécurité des données',
     items: [
       <>
-        <strong>Stockez et partagez</strong> des fichiers
-      </>,
-      <>
-        <strong>Coéditez des documents</strong> en ligne (textes, tableurs et
-        présentations)
-      </>,
-      <>
-        Créez des <strong>questionnaires</strong> et des <strong>votes</strong>{' '}
-        en ligne
+        Transférez des <strong>fichiers lourds</strong>
       </>,
     ],
   },
@@ -120,6 +112,29 @@ export const PRODUCTS: Record<
       </>,
     ],
   },
+  Resana: {
+    displayDetails: true,
+    logo: ResanaLogo,
+    screenshot: ResanaScreenshot,
+    name: 'Resana',
+    url: 'https://resana.numerique.gouv.fr/public/',
+    caption: 'l’espace de stockage partagé par plus de 400000 agents publics',
+    description:
+      'Stockez tous vos fichiers (documents, images, feuilles de calcul)  à un seul endroit. Organisez vos espaces et partagez-les à qui  vous voulez, en toute sécurité',
+    items: [
+      <>
+        <strong>Stockez et partagez</strong> des fichiers
+      </>,
+      <>
+        <strong>Coéditez des documents</strong> en ligne (textes, tableurs et
+        présentations)
+      </>,
+      <>
+        Créez des <strong>questionnaires</strong> et des <strong>votes</strong>{' '}
+        en ligne
+      </>,
+    ],
+  },
   Grist: {
     displayDetails: true,
     logo: GristLogo,
@@ -143,20 +158,11 @@ export const PRODUCTS: Record<
     ],
     status: 'BETA',
   },
-  'France Transfert': {
-    displayDetails: true,
-    logo: FranceTransfertLogo,
-    screenshot: FranceTransfertScreenshot,
-    name: 'France Transfert',
-    url: 'https://francetransfert.numerique.gouv.fr/',
-    caption: 'partagez vos fichiers en toute sécurité',
-    description:
-      'Transférez vos documents en toute confiance, même les plus volumineux. Partagez facilement avec vos collègues, tout en garantissant la confidentialité et la sécurité des données',
-    items: [
-      <>
-        Transférez des <strong>fichiers lourds</strong>
-      </>,
-    ],
+  Docs: {
+    displayDetails: false,
+    logo: DocsSvg,
+    url: 'https://docs.numerique.gouv.fr',
+    status: 'BETA',
   },
   Messagerie: {
     displayDetails: true,
@@ -183,12 +189,6 @@ export const PRODUCTS: Record<
     displayDetails: false,
     logo: AudioConfSvg,
     url: 'https://www.numerique.gouv.fr/outils-agents/audioconference-etat/',
-  },
-  Docs: {
-    displayDetails: false,
-    logo: DocsSvg,
-    url: 'https://docs.numerique.gouv.fr',
-    status: 'BETA',
   },
   Contact: {
     displayDetails: false,
