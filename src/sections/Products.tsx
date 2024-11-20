@@ -2,6 +2,7 @@ import { ContentSection } from '@/components/ContentSection'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { PRODUCTS } from '@/utils/products'
+import classNames from 'classnames'
 
 const PRODUCTS_GRID = [
   'Tchap',
@@ -26,7 +27,10 @@ export const Products = () => {
           const content = (
             <div
               key={name}
-              className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] flex flex-col items-center justify-between bg-grey-6 rounded p-2 md:p-4"
+              className={classNames('w-[120px] h-[120px] md:w-[150px] md:h-[150px] flex flex-col items-center justify-between rounded p-2 md:p-4', {
+                  'border-dashed border-2 border-grey-4': PRODUCTS[name].wip,
+                  'bg-grey-6': !PRODUCTS[name].wip,
+                })}
             >
               <div className="flex-grow flex flex-col items-center justify-center relative">
                 <Image
@@ -35,7 +39,9 @@ export const Products = () => {
                   alt={`Logo ${name}`}
                 />
                 {PRODUCTS[name]?.status && (
-                  <div className="absolute bottom-0 md:right-[-15px] right-[-5px] text-sm bg-blue-1 border-2 border-white rounded text-white px-1 py-0.5 font-bold text-xs">
+                  <div className={classNames("absolute bottom-0 md:right-[-15px] right-[-5px] text-sm bg-blue-1 border-2 border-white rounded text-white px-1 py-0.5 font-bold text-xs", {
+                    'bg-grey-1': PRODUCTS[name].wip,
+                  })}>
                     {PRODUCTS[name]?.status}
                   </div>
                 )}

@@ -32,6 +32,7 @@ export const PRODUCTS: Record<
     items?: React.ReactNode[]
     displayDetails?: boolean
     status?: string
+    wip?: boolean
   }
 > = {
   Tchap: {
@@ -196,7 +197,8 @@ export const PRODUCTS: Record<
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
     description:
       'Gérez vos emails et vos rendez-vous dans un environnement sécurisé conçu pour les besoins des agents du service public',
-    status: 'BETA',
+    status: 'Bientôt',
+    wip: true,
     items: [
       <>
         <strong>Gérez votre boîte aux lettres</strong> avec une interface
