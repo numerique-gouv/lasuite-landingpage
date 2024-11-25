@@ -150,6 +150,23 @@
     0 0 0 4px #000091;
 }
 
+/* grist summit: all the 'min-content' rows are for 'doors opening', 'coffee break', etc rows, and for rows explaining the rooms */
+.grist-summit-agenda-grid {
+  grid-template-rows:
+    min-content
+    repeat(2, minmax(0, 1fr))
+    min-content min-content
+    repeat(8, minmax(0, 1fr))
+    min-content
+    repeat(2, minmax(0, 1fr))
+    min-content
+    repeat(4, minmax(0, 1fr))
+    min-content
+    min-content
+    repeat(5, minmax(0, 1fr))
+    min-content;
+}
+
 /** decapcms preview fixes:
 seems decapcms doesn't like some javascript that is used in the app,
 dirty "fix" some styles so that it's at least readable */
