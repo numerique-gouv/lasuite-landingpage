@@ -15,7 +15,7 @@ Doing this is OK while we control 100% of the content we render. For now the sub
 > Glyphhanger is not integrated locally as it requires a few python dependencies… if needed, install glyphhanger locally on your machine to update the files.
 > Glyphhanger v5.0.0 was used.
 
-Command used to generate files in this folder:
+Command used to generate files in this folder (please update it as you add characters):
 
 ```bash
 # pwd = src/fonts
@@ -23,7 +23,7 @@ glyphhanger \
 	--subset="./sources/*.woff2" \
 	--formats=woff2 \
 	--output=./subsetted \
-	--whitelist="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀàâÇçèÉÊËéêëÏîïÔôùûŒœÆ  &•#…€$~˚°%\_=+-×÷\*/[]{}()<>,.:;?@«»©™←↑→↓↖↗↘↙√≤≥'\!\’\“\”\\\`\""
+	--whitelist="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀàâäÇçèÉÊËéêëÏîïÔôùûŒœÆłń  &•#…€$~˚°%\_=+-×÷\*/[]{}()<>,.:;?@«»©™←↑→↓↖↗↘↙√≤≥'\!\’\“\”\\\`\""
 ```
 
 You guessed it: the important part of the command is the `whitelist` param that lists all characters we want to keep in the subsetted file.
