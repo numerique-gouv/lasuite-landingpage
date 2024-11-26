@@ -116,16 +116,19 @@ const AgendaRooms = ({ row }: { row: number }) => {
   return (
     <>
       <span
+        aria-hidden="true"
         className={`text-center h-min text-dsfr-info-1 text-sm p-2 h-m lg:p-4 col-start-2 row-start-${row}`}
       >
         Main Stage
       </span>
       <span
+        aria-hidden="true"
         className={`text-center h-min text-dsfr-info-1 text-sm p-2 h-m lg:p-4 col-start-3 row-start-${row}`}
       >
         Big Table
       </span>
       <span
+        aria-hidden="true"
         className={`text-center h-min text-dsfr-info-1 text-sm p-2 h-m lg:p-4 col-start-4 row-start-${row}`}
       >
         Classrooms
@@ -224,7 +227,16 @@ const AgendaItem = ({
         <h3
           className={`${stage === 'break' ? 'italic text-[inherit]' : 'text-blue-1'} text-sm lg:text-base mb-1`}
         >
-          <span className="sr-only">{time}</span>
+          <span className="sr-only">
+            {time}
+            {stage === 'main'
+              ? ' - Main Stage'
+              : stage === 'table'
+                ? '- Big Table'
+                : stage === 'classrooms'
+                  ? '- Classrooms'
+                  : ''}
+          </span>
           {title}
         </h3>
         <div className="absolute bottom-[2px] right-[2px] hover:cursor-help">
