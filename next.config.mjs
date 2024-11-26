@@ -17,7 +17,7 @@ const nextConfig = {
     return [
       {
         source: '/grist-2024-qr',
-        destination: '/grist-paris-summit-2024#agenda',
+        destination: '/grist-paris-summit-2024#schedule',
         permanent: true,
       },
     ]

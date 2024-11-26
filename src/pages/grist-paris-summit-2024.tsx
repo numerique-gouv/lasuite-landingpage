@@ -429,7 +429,7 @@ export default function GristParisSummit2024() {
 
       <ContentSection center={false}>
         <div className="w-full">
-          <h2 className="font-bold mb-8 text-3xl" id="programme">
+          <h2 className="font-bold mb-8 text-3xl" id="agenda">
             Programme
           </h2>
           <div className="md:text-lg">
@@ -482,7 +482,7 @@ export default function GristParisSummit2024() {
             ></span>
 
             <div
-              id="agenda"
+              id="schedule"
               className="js-horizontal-scroll-content mt-16 w-full overflow-x-auto"
             >
               <div
