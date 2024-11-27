@@ -572,11 +572,11 @@ export default function GristParisSummit2024() {
                 ></AgendaItem>
                 <AgendaItem
                   time="10h30"
-                  duration="30m"
                   theme="real-world"
                   stage="main"
-                  title="Collaborative Reporting"
-                  author="Vincent Viers, Grist.gouv"
+                  duration="30m"
+                  title="Surprising use cases from local governments"
+                  author="Raywan Serdoun and Nicolas Imbert, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
                   time="10h30"
@@ -589,18 +589,18 @@ export default function GristParisSummit2024() {
                 <AgendaItem
                   time="11h"
                   duration="30m"
+                  theme="real-world"
+                  stage="main"
+                  title="Open Data and Data Collection Possibilities"
+                  author="French open data team"
+                ></AgendaItem>
+                <AgendaItem
+                  time="11h"
+                  duration="30m"
                   theme="commons"
                   title="ProConnect: La Suite Single Sign-On"
                   stage="classrooms"
                   author="La Suite team"
-                ></AgendaItem>
-                <AgendaItem
-                  time="11h"
-                  theme="real-world"
-                  stage="main"
-                  duration="30m"
-                  title="Surprising use cases from local governments"
-                  author="Raywan Serdoun and Nicolas Imbert, Grist.gouv"
                 ></AgendaItem>
                 {/* 11h30 */}
                 <AgendaItem
@@ -696,8 +696,8 @@ export default function GristParisSummit2024() {
                   duration="30m"
                   theme="real-world"
                   stage="main"
-                  title="Open Data and Data Collection Possibilities"
-                  author="French open data team"
+                  title="Collaborative Reporting"
+                  author="Vincent Viers, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
                   time="16h"
