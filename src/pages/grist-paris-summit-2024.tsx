@@ -594,7 +594,7 @@ export default function GristParisSummit2024() {
                   theme="real-world"
                   stage="main"
                   duration="30m"
-                  title="Surprising use cases from local governments"
+                  title="10 Grist use cases from French local goverment & cities in 30 minutes"
                   author="Aude Zuliani, Raywan Serdoun and Nicolas Imbert, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
