@@ -552,7 +552,7 @@ export default function GristParisSummit2024() {
                   time="9h45"
                   duration="15m"
                   title="The French Strategy Around Digital Commons"
-                  author="DINUM"
+                  author="Pierre Pezziardi"
                   stage="plenary"
                 ></AgendaItem>
                 {/* 10h */}
@@ -577,7 +577,7 @@ export default function GristParisSummit2024() {
                   stage="main"
                   duration="30m"
                   title="Surprising use cases from local governments"
-                  author="Raywan Serdoun and Nicolas Imbert, Grist.gouv"
+                  author="Aude Zuliani, Raywan Serdoun and Nicolas Imbert, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
                   time="10h30"
@@ -732,6 +732,7 @@ export default function GristParisSummit2024() {
                   stage="plenary"
                   duration="15m"
                   title="Closing keynote"
+                  author="Vincent Viers, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
                   time="17h15"
