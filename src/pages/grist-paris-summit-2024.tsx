@@ -744,7 +744,15 @@ export default function GristParisSummit2024() {
                     <p>
                       Dramä Cocktail Bar, 48 rue de l’Échiquier, 75010 Paris{' '}
                       <br />
-                      Sponsorisé par la Fédération Française de Grist
+                      Sponsorisé par la{' '}
+                      <a
+                        href="https://codefor.fr/assemblies/grist-france"
+                        target="_blank"
+                        title="Fédération Française de Grist (nouvelle fenêtre)"
+                        className="text-blue-1 hover:underline"
+                      >
+                        Fédération Française de Grist
+                      </a>
                     </p>
                     <div className="ml-auto mt-2 sm:-mt-6">
                       <Image src={FFG} alt="" width={160} height={64} />
