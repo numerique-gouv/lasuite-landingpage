@@ -479,10 +479,28 @@ export default function GristParisSummit2024() {
               </li>
             </ul>
             <p className="mb-4">
-              Des transcriptions en anglais et français, ainsi qu'une traduction
-              en français en direct ont lieu pour les conférences du{' '}
-              <i lang="en">Main Stage</i>.
+              Des transcriptions en anglais et français ont lieu pour les
+              conférences du <i lang="en">Main Stage</i> :
             </p>
+            <ul className="md:text-lg pl-10 mb-8 list-disc">
+              <li>
+                <a
+                  className="text-blue-1 hover:underline"
+                  href="https://www.tadeo.fr/event/DINUM_03_12_24_FR/?path=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJib29raW5nX2lkIjoiMTQ2ODA3IiwidGl0bGUiOiJESU5VTSIsImJhc2VQYXRoIjoiaHR0cHM6XC9cL3d3dy50YWRlby5mclwvZXZlbnRcL0RJTlVNXzAzXzEyXzI0X0ZSXC8iLCJwcm90b2NvbCI6InYxLmNsaWVudC13ZWItYXBwIn0.xmM05oDjPz_idgYNlfsHOvFbC-5izgDpiuw5mADrWbc"
+                >
+                  Transcription en français
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-blue-1 hover:underline"
+                  href="https://www.tadeo.fr/event/DINUM_03_12_24_EN/?path=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJib29raW5nX2lkIjoiMTQ2ODA0IiwidGl0bGUiOiJESU5VTSIsImJhc2VQYXRoIjoiaHR0cHM6XC9cL3d3dy50YWRlby5mclwvZXZlbnRcL0RJTlVNXzAzXzEyXzI0X0VOXC8iLCJwcm90b2NvbCI6InYxLmNsaWVudC13ZWItYXBwIn0.C2VGbZaK4kVBOAHoK03Nu34C45eGIDDiJyXr4WiK46A"
+                >
+                  Transcription en anglais /{' '}
+                  <i lang="en">English transcription</i>
+                </a>
+              </li>
+            </ul>
             <p className="mb-8 text-base italic">
               Le programme est détaillé en anglais.
             </p>
