@@ -14,6 +14,7 @@ import Image from 'next/image'
 import SuiteLogo from '@/assets/logo/suite-numerique.svg'
 import GristGouvLogo from '@/assets/grist-summit/gristgouv-hex.svg'
 import GristDinum from '@/assets/grist-summit/grist-and-dinum.png'
+import FFG from '@/assets/grist-summit/ffg.png'
 
 const ThemeIcon = ({
   theme,
@@ -738,7 +739,16 @@ export default function GristParisSummit2024() {
                   title="Cocktail 🎉"
                   stage="break"
                 >
-                  Dramä Cocktail Bar, 48 rue de l’Échiquier, 75010 Paris
+                  <div className="sm:flex gap-x-2">
+                    <p>
+                      Dramä Cocktail Bar, 48 rue de l’Échiquier, 75010 Paris{' '}
+                      <br />
+                      Sponsorisé par la Fédération Française de Grist
+                    </p>
+                    <div className="ml-auto mt-2 sm:-mt-6">
+                      <Image src={FFG} alt="" width={160} height={64} />
+                    </div>
+                  </div>
                 </AgendaItem>
               </div>
             </div>
@@ -779,6 +789,31 @@ export default function GristParisSummit2024() {
                 les équipes qui font vivre le projet Grist au quotidien
               </li>
             </ul>
+          </div>
+        </div>
+      </ContentSection>
+      <ContentSection center={false}>
+        <div>
+          <h2 className="font-bold mb-4 text-3xl">Le lieu</h2>
+          <div className="text-base md:text-lg">
+            <p className="mb-4">
+              L'événement se déroule à la Faïencerie, 18 rue du Paradis, 75010.
+            </p>
+            <p className="mb-4">
+              L'entièreté des espaces où ont lieu les conférences est accessible
+              aux personnes à mobilité réduite.
+            </p>
+            <h3 className="font-bold text-xl mb-4">Accès en métro</h3>
+            <ul className="list-disc pl-10 mb-4">
+              <li className="mb-2">Gare de l'Est : Ligne 4, 5 & 7</li>
+              <li className="mb-2">Château d'eau : Ligne 5</li>
+              <li className="mb-2">Poissonnière : Ligne 7</li>
+            </ul>
+            <h3 className="font-bold text-xl mb-4">Parking à proximité</h3>
+            <p>
+              Parking Magenta Gare de l'Est, 2 square Alban Satragne, 75010
+              Paris
+            </p>
           </div>
         </div>
       </ContentSection>
