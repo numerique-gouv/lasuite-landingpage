@@ -155,6 +155,7 @@ const AgendaItem = ({
     | '10h'
     | '10h30'
     | '11h'
+    | '11h15'
     | '11h30'
     | '12h'
     | '12h30'
@@ -615,11 +616,19 @@ export default function GristParisSummit2024() {
                 ></AgendaItem>
                 <AgendaItem
                   time="11h"
-                  duration="30m"
+                  duration="15m"
                   theme="commons"
                   title="ProConnect: La Suite Single Sign-On"
                   stage="classrooms"
                   author="La Suite team"
+                ></AgendaItem>
+                <AgendaItem
+                  time="11h15"
+                  theme="commons"
+                  stage="classrooms"
+                  duration="15m"
+                  title="Extending La Suite: the uMap example"
+                  author="Virgille Deville, La Suite"
                 ></AgendaItem>
                 {/* 11h30 */}
                 <AgendaItem
@@ -687,20 +696,20 @@ export default function GristParisSummit2024() {
                   author="Dmitry Sagalovskiy, Grist Labs Founder and Co-CEO"
                 ></AgendaItem>
                 <AgendaItem
+                  time="14h30"
+                  theme="commons"
+                  stage="classrooms"
+                  duration="30m"
+                  title="Self-Hosting Grist"
+                  author="Florent Fayolle, Grist.gouv"
+                ></AgendaItem>
+                <AgendaItem
                   time="15h"
                   theme="real-world"
                   stage="main"
                   duration="30m"
                   title="Grist for association management: climbing club example"
                   author="Raphaël Pierquin, Grist.gouv"
-                ></AgendaItem>
-                <AgendaItem
-                  time="14h30"
-                  theme="commons"
-                  stage="classrooms"
-                  duration="30m"
-                  title="Extending La Suite: the uMap example"
-                  author="Yohan Boniface"
                 ></AgendaItem>
                 {/* 15h30 */}
                 <AgendaItem
@@ -724,7 +733,7 @@ export default function GristParisSummit2024() {
                   theme="commons"
                   stage="table"
                   title="How to contribute to Grist as a non-developer?"
-                  author="Dmitry Sagalovskiy, Grist Labs Founder and Co-CEO"
+                  author="Florent Fayolle and Grégoire Cutzach, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
                   time="16h"
