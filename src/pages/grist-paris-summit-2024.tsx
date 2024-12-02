@@ -595,7 +595,7 @@ export default function GristParisSummit2024() {
                   theme="real-world"
                   stage="main"
                   duration="30m"
-                  title="10 Grist use cases from French local goverment & cities in 30 minutes"
+                  title="10 Grist use cases from French local governments & cities in 30 minutes"
                   author="Aude Zuliani, Raywan Serdoun and Nicolas Imbert, Grist.gouv"
                 ></AgendaItem>
                 <AgendaItem
@@ -676,7 +676,7 @@ export default function GristParisSummit2024() {
                   duration="30m"
                   title="Open Source Politics participatory budget example"
                   stage="plenary"
-                  author="Valentin Chaput"
+                  author="Bertille Mazari"
                 ></AgendaItem>
                 {/* 14h30 */}
                 <AgendaItem
@@ -715,7 +715,7 @@ export default function GristParisSummit2024() {
                 <AgendaItem
                   time="15h30"
                   duration="30m"
-                  title="Coffee Break and Networking"
+                  title="Networking break"
                   stage="break"
                 ></AgendaItem>
                 {/* 16h */}
