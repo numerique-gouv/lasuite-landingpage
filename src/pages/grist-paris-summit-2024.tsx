@@ -715,7 +715,7 @@ export default function GristParisSummit2024() {
                 <AgendaItem
                   time="15h30"
                   duration="30m"
-                  title="Networking break"
+                  title="Networking Break"
                   stage="break"
                 ></AgendaItem>
                 {/* 16h */}
@@ -731,7 +731,7 @@ export default function GristParisSummit2024() {
                   time="16h"
                   duration="30m"
                   theme="commons"
-                  stage="table"
+                  stage="classrooms"
                   title="How to contribute to Grist as a non-developer?"
                   author="Florent Fayolle and Grégoire Cutzach, Grist.gouv"
                 ></AgendaItem>
@@ -739,15 +739,15 @@ export default function GristParisSummit2024() {
                   time="16h"
                   duration="1h"
                   theme="power-user"
-                  stage="classrooms"
-                  title="Custom Widgets"
+                  stage="table"
+                  title="How to code a custom widget"
                   author="Paul Fitzpatrick, CTO, and Jarosław Sadziński, software engineer, from Grist Labs"
                 ></AgendaItem>
                 <AgendaItem
                   time="16h30"
                   duration="30m"
                   theme="commons"
-                  stage="table"
+                  stage="classrooms"
                   title="Integrating Grist with other La Suite tools"
                   type="informal"
                 >
@@ -771,14 +771,15 @@ export default function GristParisSummit2024() {
                     <p>
                       Dramä Cocktail Bar, 48 rue de l’Échiquier, 75010 Paris{' '}
                       <br />
-                      Sponsorisé par la{' '}
+                      Sponsored by the{' '}
                       <a
                         href="https://codefor.fr/assemblies/grist-france"
                         target="_blank"
                         title="Fédération Française de Grist (nouvelle fenêtre)"
                         className="text-blue-1 hover:underline"
                       >
-                        Fédération Française de Grist
+                        French Grist Federation (
+                        <i lang="fr">Fédération Française de Grist</i>)
                       </a>
                     </p>
                     <div className="ml-auto mt-2 sm:-mt-6">
