@@ -19,6 +19,7 @@ export default function GristParisSummit2024() {
             Schedule
           </Button>
         </p>
+
         <h2 className="font-bold text-lg p-2 pb-0">
           Main Stage transcriptions
         </h2>
@@ -45,13 +46,24 @@ export default function GristParisSummit2024() {
             English transcription
           </Button>
         </p>
-        <h2 className="font-bold text-lg p-2">Wi-Fi info</h2>
-        <p className="mb-0 px-2 text-base">Network: GUEST-Albert</p>
-        <p className="mb-0 p-2 text-base">
-          Password:{' '}
-          <code className="p-[4px] bg-grey-6 border border-grey-0 rounded-md">
-            Grist Paris Summit
-          </code>
+
+        <h2 className="font-bold text-lg p-2 pb-0">Discover Grist</h2>
+        <p className="mb-0 p-2">
+          <Button fullWidth variant="outline" href="https://www.getgrist.com/">
+            Create a free Grist account
+          </Button>
+        </p>
+        <p lang="fr" className="italic text-base mb-0 p-2 pb-0">
+          Vous êtes agent public français ?
+        </p>
+        <p lang="fr" className="mb-0 p-2">
+          <Button
+            fullWidth
+            variant="outline"
+            href="https://grist.numerique.gouv.fr"
+          >
+            <span className="italic">Utiliser Grist dans La Suite</span>
+          </Button>
         </p>
       </div>
     </div>
