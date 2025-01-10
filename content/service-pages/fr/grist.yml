@@ -6,7 +6,7 @@ hero:
     - primary: true
       target_blank: false
       label: Accédez à l'instance inter-ministerielle de Grist
-      href: https://grist.incubateur.net
+      href: https://grist.numerique.gouv.fr
   title: Collaborez sur des jeux de données avec Grist
   image: /content/uploads/logo_grist_marianne.svg
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
@@ -28,7 +28,7 @@ flexible_content:
       href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
     bg: auto
     title: Rejoignez la communauté grandissante des utilisateurs de Grist
-    body: Plusieurs centaines d'agents publics utilisent déjà Grist au quotidien
+    body: Plusieurs milliers d'agents publics utilisent déjà Grist au quotidien
       pour travailler sur des jeux de données de manière collaborative.
   - type: cta
     cta:
@@ -42,9 +42,17 @@ flexible_content:
       droits d'accès avancés...). Ces webinaires sont disponibles en replay sur
       [notre chaine
       peertube](https://tube.numerique.gouv.fr/c/grist/videos?s=1).
+  - type: cta
+    cta:
+      target_blank: true
+      label: Posez vos questions sur le forum de la communauté francophone
+      href: https://forum.grist.libre.sh/
+    bg: auto
+    title: Rejoindre le forum francophone
+    body: Ce forum permets aux membres de la communauté de s'entraider, de partager des trucs et astuces, et de documenter leurs trouvailles.
 newsletter:
   enable: true
-  cta_href: https://grist.incubateur.net/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
+  cta_href: https://grist.numerique.gouv.fr/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
   body: Inscrivez-vous via ce lien pour être tenu informé des actualités liées au
     produit (newsletters, évènements, trucs et astuces...)
 socials:
