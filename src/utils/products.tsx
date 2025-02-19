@@ -1,25 +1,40 @@
 import TchapLogo from '@/assets/products/tchap.svg'
-import TchapScreenshot from '@/assets/products/tchap_screenshot.png'
+import TchapScreenshot from '@/assets/products/app-tchap.png'
+import TchapScreenshotMobile from '@/assets/products/app-tchap-mobile.png'
+
+import GristLogo from '@/assets/products/grist.svg'
+import GristScreenshot from '@/assets/products/app-grist.png'
+import GristScreenshotMobile from '@/assets/products/app-grist-mobile.png'
+
+import DocsSvg from '@/assets/products/docs.svg'
+import DocsScreenshot from '@/assets/products/app-docs.png'
+import DocsScreenshotMobile from '@/assets/products/app-docs-mobile.png'
+
+import VisioLogo from '@/assets/products/visio.svg'
+import VisioScreenshot from '@/assets/products/app-visio.png'
+import VisioScreenshotMobile from '@/assets/products/app-visio-mobile.png'
+
+import MessagerieLogo from '@/assets/products/messagerie.svg'
+import MessagerieScreenshot from '@/assets/products/app-messagerie.png'
+import MessagerieScreenshotMobile from '@/assets/products/app-messagerie-mobile.png'
+
+import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
+import FranceTransfertScreenshot from '@/assets/products/app-france-transfert.png'
+import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
+
+
 import ResanaLogo from '@/assets/products/resana.svg'
 import ResanaScreenshot from '@/assets/products/resana_screenshot.webp'
+
 import WebinaireLogo from '@/assets/products/webinaire.svg'
 import WebinaireScreenshot from '@/assets/products/webinaire_screenshot.webp'
-import VisioLogo from '@/assets/products/visio.svg'
-import VisioScreenshot from '@/assets/products/visio_screenshot.webp'
-import GristLogo from '@/assets/products/grist.svg'
-import GristScreenshot from '@/assets/products/grist_screenshot.png'
-import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
-import FranceTransfertScreenshot from '@/assets/products/france_transfert_screenshot.png'
-import MessagerieLogo from '@/assets/products/messagerie.svg'
-import MessagerieScreenshot from '@/assets/products/messagerie_screenshot.webp'
+
 import { StaticImageData } from 'next/image'
 import AudioConfSvg from '@/assets/products/audioconf.svg'
-import DocsSvg from '@/assets/products/docs.svg'
-import DocsScreenshot from '@/assets/products/docs_screenshot.webp'
 import ContactSvg from '@/assets/products/contact.svg'
 import EquipesSvg from '@/assets/products/equipes.svg'
 
-export const PRODUCTS: Record<
+export const DINUM_PRODUCTS: Record<
   string,
   {
     logo: StaticImageData
@@ -38,12 +53,13 @@ export const PRODUCTS: Record<
     displayDetails: true,
     logo: TchapLogo,
     screenshot: TchapScreenshot,
+    screenshotMobile: TchapScreenshotMobile,
     keepRawScreenshot: true,
     name: 'Tchap',
     url: 'https://tchap.beta.gouv.fr/',
     caption: 'la messagerie instantanée de la sphère publique',
     description:
-      'Envoyer des messages, faire des appels, et rechercher ses interlocuteurs sur l’annuaire',
+      'La messagerie instantanée sécurisée pour communiquer où que vous soyez.',
     items: [
       <>
         <strong>Retrouvez tous vos interlocuteurs</strong> de la sphère publique
@@ -61,11 +77,12 @@ export const PRODUCTS: Record<
     displayDetails: true,
     logo: FranceTransfertLogo,
     screenshot: FranceTransfertScreenshot,
+    screenshotMobile: FranceTransfertScreenshotMobile,
     name: 'France Transfert',
     url: 'https://francetransfert.numerique.gouv.fr/',
     caption: 'partagez vos fichiers en toute sécurité',
     description:
-      'Transférez vos documents en toute confiance, même les plus volumineux. Partagez facilement avec vos collègues, tout en garantissant la confidentialité et la sécurité des données',
+      'Le service sécurisé pour envoyer et recevoir des fichiers volumineux.',
     items: [
       <>
         Transférez des <strong>fichiers lourds</strong>
@@ -94,16 +111,17 @@ export const PRODUCTS: Record<
       </>,
     ],
   },
-  Webconf: {
+  Visio: {
     displayDetails: true,
     logo: VisioLogo,
     screenshot: VisioScreenshot,
-    name: 'Webconf',
-    url: 'https://webconf.numerique.gouv.fr/',
+    screenshotMobile: VisioScreenshotMobile,
+    name: 'Visio',
+    url: 'https://visio.numerique.gouv.fr/',
     caption:
-      'la solution de visioconférence pour les agents de la sphère publique',
+      'La solution de visioconférence pour les agents de la sphère publique',
     description:
-      'Tenez vos réunions à distance en toute simplicité. Connectez-vous avec vos collègues en toute sécurité, sans installation, pour des échanges fluides et efficaces',
+      'La visioconférence simple et efficace pour communiquer et collaborer.',
     items: [
       <>
         <strong>Lien personnalisés</strong>
@@ -112,6 +130,7 @@ export const PRODUCTS: Record<
         Organisation de <strong>sondages</strong>
       </>,
     ],
+    status: 'BETA',
   },
   Resana: {
     displayDetails: true,
@@ -140,11 +159,12 @@ export const PRODUCTS: Record<
     displayDetails: true,
     logo: GristLogo,
     screenshot: GristScreenshot,
+    screenshotMobile: GristScreenshotMobile,
     name: 'Grist',
     url: 'https://grist.numerique.gouv.fr/',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
     description:
-      'Créez, gérez et analysez vos données dans un environnement simple et intuitif. Collaborez en temps réel avec vos collègues tout en assurant la sécurité de vos informations',
+      'Le tableur collaboratif pour structurer vos bases de données.',
     items: [
       <>
         <strong>Construisez des outils métiers</strong> sans avoir à coder
@@ -157,18 +177,18 @@ export const PRODUCTS: Record<
         données
       </>,
     ],
-    status: 'BETA',
   },
   Docs: {
     displayDetails: true,
     logo: DocsSvg,
     url: 'https://docs.numerique.gouv.fr',
     screenshot: DocsScreenshot,
+    screenshotMobile: DocsScreenshotMobile,
     name: 'Docs',
     caption:
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
     description:
-      "Créez et partagez vos documents simplement. Collaborez en temps réel entre collègues, ainsi qu'avec des partenaires externes",
+      "L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.",
     status: 'BETA',
     items: [
       <>
@@ -190,12 +210,13 @@ export const PRODUCTS: Record<
     displayDetails: true,
     logo: MessagerieLogo,
     screenshot: MessagerieScreenshot,
+    screenshotMobile: MessagerieScreenshotMobile,
     name: 'Messagerie',
     url: 'https://webmail.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
     description:
-      'Gérez vos emails et vos rendez-vous dans un environnement sécurisé conçu pour les besoins des agents du service public',
+      'La messagerie professionnelle des agents de l’État.',
     status: 'BETA',
     items: [
       <>

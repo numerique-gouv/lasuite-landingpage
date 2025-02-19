@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL = 'lasuite@modernisation.gouv.fr'
+export const CONTACT_EMAIL = 'lasuite@numerique.gouv.fr'
 export const ADDRESS_DINUM = 'DINUM, 20 avenue de Ségur 75007 Paris'
 
 export const URL_SITE = 'lasuite.numerique.gouv.fr'

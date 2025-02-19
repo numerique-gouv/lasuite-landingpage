@@ -1,13 +1,20 @@
 import { Hero } from '@/sections/Hero'
-import { Testimonies } from '@/sections/Testimonies'
 import { Newsletter } from '@/sections/Newsletter'
 import { EntrySchema } from '@/cms/collections/homepage'
 import { Raw } from './Raw'
 import { Products } from '@/sections/Products'
+import { UsersTeams } from '@/sections/Homepage/UsersTeams'
+import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
+import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
+import { Editors } from '@/sections/Homepage/Editors'
+import { SecureTools } from '@/sections/Homepage/SecureTools'
+import { Migration } from '@/sections/Homepage/Migration'
+import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
+import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
+
 import { ContentSection } from '@/components/ContentSection'
 import { FAQ } from '@/components/cms-blocks/FAQ'
 import { useEffect } from 'react'
-import heroImage from '@/assets/hero-desktop.png'
 import { QuickNav } from './QuickNav'
 
 /**
@@ -19,41 +26,23 @@ import { QuickNav } from './QuickNav'
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
   return (
     <>
-      <QuickNav />
-      <Hero
-        intro="Créer, partager, collaborer au sein de la sphère publique"
-        callout="La Suite numérique fédère agents et professionnels autour d'applications open-source interconnectées pour simplifier leur quotidien"
-        image={heroImage}
-      />
+      {/*<QuickNav />*/}
+      <Hero />
       <Products />
-      <Testimonies
-        title={data.testimonies_title}
-        description={
-          <div>
-            La Suite est un projet en construction, certaines de ses
-            applications sont encore en phase de test, mais{' '}
-            <strong>
-              d'autres sont déjà utilisées par des centaines de milliers
-              d'agents et toujours plus chaque jour !
-            </strong>
-            <br />
-            Découvrez les applications stars de La Suite
-          </div>
-        }
-        items={
-          (data.testimonies_items || []).map((item) => ({
-            ...item,
-            author: <Raw tag="span">{item.author}</Raw>,
-            quote: <Raw>{item.quote}</Raw>,
-          })) || []
-        }
-      />
+      <UsersTeams />
+      <PortalProconnect />
+      <EcosystemProconnect />
+      <Editors />
+      <SecureTools />
+      <Migration />
+      <SuiteTerritoriale />
+      <FooterLaSuite />
       {/*<Faq />*/}
-      <Newsletter
+{/*      <Newsletter
         title={data.newsletter_title}
         body={<Raw tag="span">{data.newsletter_description}</Raw>}
         url={data.newsletter_link}
-      />
+      />*/}
     </>
   )
 }

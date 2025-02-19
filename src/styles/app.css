@@ -167,6 +167,20 @@
     min-content;
 }
 
+.lasuite-gaufre-btn--vanilla.lasuite-gaufre-btn--small {
+    min-height: 2.5rem !important;
+    max-width: 2.5rem !important;
+    max-height: 2.5rem !important;
+}
+
+.lasuite-gaufre-btn {
+    box-shadow: 0px 0px 0px 0px inset !important;
+}
+
+.lasuite-hero-boxshadow {
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.10);
+}
+
 /** decapcms preview fixes:
 seems decapcms doesn't like some javascript that is used in the app,
 dirty "fix" some styles so that it's at least readable */

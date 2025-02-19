@@ -5,7 +5,7 @@ import heroImage from '@/assets/nuancier.webp'
 import { Callout } from '@/components/Callout'
 import { ContentSection } from '@/components/ContentSection'
 import { QuickNav } from '@/components/QuickNav'
-import { PRODUCTS } from '@/utils/products'
+import { DINUM_PRODUCTS } from '@/utils/products'
 
 export default function Products() {
   return (
@@ -20,15 +20,15 @@ export default function Products() {
 const Hero = () => {
   return (
     <div className="hero relative overflow-hidden bg-white ">
-      <div className="flex flex-col justify-between items-start sm:items-center px-8 md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center">
-        <Image
+      <div className="flex flex-col mt-5 justify-between items-start sm:items-center px-8 md:bg-[#fcfcfc] md:bg-no-repeat md:bg-center">
+{/*        <Image
           src={heroImage}
           width={1000}
           alt={''}
           className="flex z-10"
           priority
           placeholder="blur"
-        />
+        />*/}
         <Callout>
           Un quotidien simplifié grâce aux outils numériques interconnectés,
           collaboratifs, innovants et souverains
@@ -42,7 +42,7 @@ const ProductsDetails = () => {
   return (
     <ContentSection>
       <div className="flex flex-col items-center gap-20">
-        {Object.entries(PRODUCTS)
+        {Object.entries(DINUM_PRODUCTS)
           .filter(([, v]) => v.displayDetails)
           .map(
             (

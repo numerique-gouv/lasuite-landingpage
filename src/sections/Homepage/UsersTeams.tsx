@@ -1,0 +1,70 @@
+import { useEffect, useRef } from 'react'
+import Image, { StaticImageData } from 'next/image'
+
+import { ContentSection } from '@/components/ContentSection';
+import EducationNationaleLogo from '@/assets/logo/education-nationale.svg'
+import MinistereInterieurLogo from '@/assets/logo/ministere-interieur.svg'
+import AnctLogo from '@/assets/logo/anct.svg'
+
+const TEAMS: Array<{ name: string; logo: StaticImageData; widthLogo: number }> = [
+  { 
+    name: 'Anct',
+    logo: AnctLogo,
+    widthLogo: 180, // ✅ Utilisation d'un nombre au lieu d'une string
+  },
+  { 
+    name: 'Education Nationale',
+    logo: EducationNationaleLogo,
+    widthLogo: 130,
+  },
+  { 
+    name: "Ministère de l'intérieur",
+    logo: MinistereInterieurLogo,
+    widthLogo: 110,
+  },
+];
+
+export const UsersTeams = () => {
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+   const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    // Vérifier que le contenu est assez large pour scroller
+    if (scrollContainer.scrollWidth > scrollContainer.clientWidth) {
+      setTimeout(() => {
+        scrollContainer.scrollTo({
+          left: 0,
+          behavior: 'smooth',
+        });
+      }, 300); // Petit délai pour s'assurer que le DOM est bien rendu
+    }
+  }, []);
+  return (
+    <ContentSection>
+      <div className="w-full">
+        <div className="border border-greyscale-300 py-4 rounded text-center">
+          <p className="text-xs">La Suite est utilisée par les équipes de</p>
+          <div
+            ref={scrollRef}
+            className="relative flex snap-x snap-mandatory justify-start md:justify-center gap-8 overflow-x-auto px-6"
+          >
+            {TEAMS.map((item, index) => (
+              <div key={index} className="self-start shrink-0 snap-center my-5">
+                <Image 
+                  width={item.widthLogo}
+                  height="auto" // ✅ Ajout d’une hauteur pour éviter les bugs Next.js
+                  loading="lazy"
+                  className="flex px-3"
+                  src={item.logo} 
+                  alt={item.name}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </ContentSection>
+  )
+}

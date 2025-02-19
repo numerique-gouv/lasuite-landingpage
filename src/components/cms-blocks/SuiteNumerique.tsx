@@ -10,10 +10,8 @@ const enabledServices = [
   'messagerie',
   'pad',
   'rdv',
-  'resana',
   'tchap',
   'webconf',
-  'webinaire',
 ]
 
 export const SuiteNumerique = ({
