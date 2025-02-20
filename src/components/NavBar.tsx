@@ -16,26 +16,26 @@ export const NavBar = () => {
   const t = useTranslations()
   return (
     <header className="fade-in bg-white px-4 fixed top-0 right-0 left-0 z-50">
-        <div className="flex items-center">
-          <div className="flex py-3.5 items-center fr-enlarge-link">
-             <Image
-                  className="mr-3 w-28"
-                  src={LogoGouvSvg}
-                  alt="Logo gouvernement"
-                />
-            <div className="ml-5">
-              <Image
-                  className="w-28"
-                  src={LogoSvg}
-                  alt="Logo de la suite numérique"
-                />
-            </div>
-          </div>
-          <div className="flex items-center gap-4 top-0 right-0 sm:relative z-10 ml-auto">
-            <LocaleSwitcher />
-            <LaGaufre />
+      <div className="flex items-center">
+        <div className="flex py-3.5 items-center fr-enlarge-link">
+          <Image
+            className="mr-3 w-28"
+            src={LogoGouvSvg}
+            alt="Logo gouvernement"
+          />
+          <div className="ml-5">
+            <Image
+              className="w-28"
+              src={LogoSvg}
+              alt="Logo de la suite numérique"
+            />
           </div>
         </div>
+        <div className="flex items-center gap-4 top-0 right-0 sm:relative z-10 ml-auto">
+          <LocaleSwitcher />
+          <LaGaufre />
+        </div>
+      </div>
     </header>
   )
 }

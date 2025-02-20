@@ -13,6 +13,8 @@ import '@gouvfr/dsfr/dist/utility/icons/icons-system/icons-system.css'
 declare global {
   interface Window {
     _mtm?: any[]
+    $crisp?: any
+    CRISP_WEBSITE_ID?: string
   }
 }
 

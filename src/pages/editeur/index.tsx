@@ -1,7 +1,5 @@
 import { Layout } from '@/components/Layout'
 import { TITLE_SITE } from '@/constant'
-import { Hero } from '@/sections/Hero'
-import heroImage from '@/assets/hero_editeur.png'
 import { ContentSection } from '@/components/ContentSection'
 import { DoubleBlock } from '@/sections/DoubleBlock'
 import EditeurImage1 from '@/assets/editeur_block_1.png'
@@ -21,13 +19,6 @@ export default function Editeur() {
 
   return (
     <Layout title="La Suite pour les éditeurs avec ProConnect">
-      <QuickNav />
-      <Hero
-        intro="... avec vous pour renforcer l’interopérabilité"
-        callout="Intégrez ProConnect, la solution d’authentification centralisée de l’État, et offrez à vos utilisateurs un accès simple, sécurisé et fluide à vos produits et services."
-        image={heroImage}
-        imageClassName="py-10"
-      />
       <ContentSection verticalPadding={false}>
         <div className="pb-16">{button}</div>
       </ContentSection>

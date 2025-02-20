@@ -1,45 +1,45 @@
 import { useEffect, useRef } from 'react'
 import Image, { StaticImageData } from 'next/image'
-import { Button } from '@/components/Button';
+import { Button } from '@/components/Button'
 import WelcomeToLaSuite from '@/assets/welcometolasuite.png'
 import SuiteNumeriqueLogo from '@/assets/logo/suite-numerique.svg'
 import { NEWSLETTER_FORM } from '@/constant'
 
-import { ContentSection } from '@/components/ContentSection';
-import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import { ContentSection } from '@/components/ContentSection'
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined'
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined'
 
 export const FooterLaSuite = () => {
-  
-  const urlForm = NEWSLETTER_FORM;
+  const urlForm = NEWSLETTER_FORM
 
   const openCrisp = () => {
-    console.log('coucou');
+    console.log('coucou')
     if (window.$crisp) {
-      window.$crisp.push(['do', 'chat:open']);
+      window.$crisp.push(['do', 'chat:open'])
     }
-  };
+  }
 
   return (
     <ContentSection>
       <div className="text-center mx-auto mb-20">
         <div className="mx-auto w-72 md:w-96">
-          <Image 
-            width="300px"
+          <Image
             className=""
-            src={WelcomeToLaSuite} 
+            src={WelcomeToLaSuite}
             alt="Welcome to la suite"
-            />
-          </div>
-          <div className="mx-auto px-10 max-w-[300px] md:w-80">
-            <Image 
-              className="mx-auto"
-              src={SuiteNumeriqueLogo} 
-              alt="Logo la suite numérique"
-              />
-          </div>
+          />
+        </div>
+        <div className="mx-auto px-10 max-w-[300px] md:w-80">
+          <Image
+            className="mx-auto"
+            src={SuiteNumeriqueLogo}
+            alt="Logo la suite numérique"
+          />
+        </div>
 
-        <p className="my-7 font-medium">Utilisez La Suite Numérique dès aujourd’hui !</p>
+        <p className="my-7 font-medium">
+          Utilisez La Suite Numérique dès aujourd’hui !
+        </p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
           <Button
@@ -47,22 +47,18 @@ export const FooterLaSuite = () => {
             variant="tertiary"
             icon={<ChatOutlinedIcon />}
             iconPosition="left"
-            title="Discuter avec nous"
           >
             Discuter avec nous
           </Button>
 
           <Button
-            rel="noopener noreferrer"
             href={urlForm}
             icon={<ArticleOutlinedIcon />}
             iconPosition="left"
-            title="S’abonner à la newsletter"
           >
             S’abonner à la newsletter
           </Button>
         </div>
-        
       </div>
     </ContentSection>
   )

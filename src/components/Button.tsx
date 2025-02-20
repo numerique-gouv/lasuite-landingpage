@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import classNames from 'classnames'
+import { MouseEventHandler } from "react";
 
 interface ButtonProps {
   children: React.ReactNode
   href?: string
-  onClick?: void
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   'aria-label'?: string
-  variant?: 'outline'
+  variant?: 'outline' | 'tertiary'
   size?: 'large'
   fullWidth?: boolean
   icon?: React.ReactNode
@@ -22,7 +23,7 @@ export const buttonStyles = {
   default: `${core} ${transition} font-medium text-white bg-blue-1 hover:bg-dsfr-blue-2`,
   tertiary: `${core} ${transition} font-medium text-blue-1 bg-primary-100 hover:bg-primary-300`,
   outline: `${core} ${transition} bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
- 
+
   largeSize: '!text-xl md:!py-4 md:!px-8',
   fullWidth: '!w-full',
 }
@@ -58,10 +59,17 @@ export const Button: React.FC<ButtonProps> = ({
   )
 
   return href ? (
-    <LinkComponent href={href} target="_blank" className={classes} aria-label={ariaLabel}>
+    <LinkComponent
+      href={href}
+      target="_blank"
+      className={classes}
+      aria-label={ariaLabel}
+    >
       {content}
     </LinkComponent>
   ) : (
-    <button onClick={onClick} className={classes}>{content}</button>
+    <button onClick={onClick} className={classes}>
+      {content}
+    </button>
   )
 }

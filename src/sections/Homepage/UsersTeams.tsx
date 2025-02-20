@@ -1,35 +1,36 @@
 import { useEffect, useRef } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
-import { ContentSection } from '@/components/ContentSection';
+import { ContentSection } from '@/components/ContentSection'
 import EducationNationaleLogo from '@/assets/logo/education-nationale.svg'
 import MinistereInterieurLogo from '@/assets/logo/ministere-interieur.svg'
 import AnctLogo from '@/assets/logo/anct.svg'
 
-const TEAMS: Array<{ name: string; logo: StaticImageData; widthLogo: number }> = [
-  { 
-    name: 'Anct',
-    logo: AnctLogo,
-    widthLogo: 180, 
-  },
-  { 
-    name: 'Education Nationale',
-    logo: EducationNationaleLogo,
-    widthLogo: 130,
-  },
-  { 
-    name: "Ministère de l'intérieur",
-    logo: MinistereInterieurLogo,
-    widthLogo: 110,
-  },
-];
+const TEAMS: Array<{ name: string; logo: StaticImageData; widthLogo: number }> =
+  [
+    {
+      name: 'Anct',
+      logo: AnctLogo,
+      widthLogo: 180,
+    },
+    {
+      name: 'Education Nationale',
+      logo: EducationNationaleLogo,
+      widthLogo: 130,
+    },
+    {
+      name: "Ministère de l'intérieur",
+      logo: MinistereInterieurLogo,
+      widthLogo: 110,
+    },
+  ]
 
 export const UsersTeams = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-   const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
+    const scrollContainer = scrollRef.current
+    if (!scrollContainer) return
 
     // Vérifier que le contenu est assez large pour scroller
     if (scrollContainer.scrollWidth > scrollContainer.clientWidth) {
@@ -37,10 +38,10 @@ export const UsersTeams = () => {
         scrollContainer.scrollTo({
           left: 0,
           behavior: 'smooth',
-        });
-      }, 300); 
+        })
+      }, 300)
     }
-  }, []);
+  }, [])
   return (
     <ContentSection>
       <div className="w-full">
@@ -52,12 +53,11 @@ export const UsersTeams = () => {
           >
             {TEAMS.map((item, index) => (
               <div key={index} className="self-start shrink-0 snap-center my-5">
-                <Image 
+                <Image
                   width={item.widthLogo}
-                  height="auto"
                   loading="lazy"
                   className="flex px-3"
-                  src={item.logo} 
+                  src={item.logo}
                   alt={item.name}
                 />
               </div>

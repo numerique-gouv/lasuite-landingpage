@@ -11,7 +11,7 @@ import { SecureTools } from '@/sections/Homepage/SecureTools'
 import { Migration } from '@/sections/Homepage/Migration'
 import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
-import FadeInSection from "@/components/FadeInSection";
+import FadeInSection from '@/components/FadeInSection'
 
 import { ContentSection } from '@/components/ContentSection'
 import { useEffect, useRef, useState } from 'react'
@@ -23,22 +23,21 @@ import { useEffect, useRef, useState } from 'react'
  * here to abstract this notion from lower-level components
  */
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
-  
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     if (!window.$crisp) {
-      window.$crisp = [];
-      window.CRISP_WEBSITE_ID = "58ea6697-8eba-4492-bc59-ad6562585041";
+      window.$crisp = []
+      window.CRISP_WEBSITE_ID = '58ea6697-8eba-4492-bc59-ad6562585041'
 
-      const script = document.createElement("script");
-      script.type = "text/javascript";
-      script.async = true;
-      script.src = "https://client.crisp.chat/l.js";
-      document.head.appendChild(script);
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.async = true
+      script.src = 'https://client.crisp.chat/l.js'
+      document.head.appendChild(script)
     }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -62,7 +61,7 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
         <SecureTools />
       </FadeInSection>
       <FadeInSection>
-       <Migration />
+        <Migration />
       </FadeInSection>
       <FadeInSection>
         <SuiteTerritoriale />

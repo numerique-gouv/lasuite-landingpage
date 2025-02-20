@@ -22,7 +22,6 @@ import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
 import FranceTransfertScreenshot from '@/assets/products/app-france-transfert.png'
 import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
 
-
 import ResanaLogo from '@/assets/products/resana.svg'
 import ResanaScreenshot from '@/assets/products/resana_screenshot.webp'
 
@@ -39,6 +38,7 @@ export const DINUM_PRODUCTS: Record<
   {
     logo: StaticImageData
     screenshot?: StaticImageData
+    screenshotMobile?: StaticImageData
     keepRawScreenshot?: boolean
     name?: string
     url?: string
@@ -215,8 +215,7 @@ export const DINUM_PRODUCTS: Record<
     url: 'https://webmail.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
-    description:
-      'La messagerie professionnelle des agents de l’État.',
+    description: 'La messagerie professionnelle des agents de l’État.',
     status: 'BETA',
     items: [
       <>

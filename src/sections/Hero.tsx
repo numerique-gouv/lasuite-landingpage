@@ -27,10 +27,12 @@ export const Hero = () => {
         </h1>
         <div className="mx-auto max-w-[70vw] md:max-w-[45vw]">
           <h2 className="text-greyscale-900 md:text-6xl text-5xl sm:leading-[52px] md:leading-[72px] font-bold text-center pb-4">
-            L’espace de
-            travail souverain
+            L’espace de travail souverain
           </h2>
-          <p class="text-center w-[80%] mx-auto text-greyscale-700 text-base">Créez. Organisez. Collaborez. Dans un environnement français et open-source.</p>
+          <p className="text-center w-[80%] mx-auto text-greyscale-700 text-base">
+            Créez. Organisez. Collaborez. Dans un environnement français et
+            open-source.
+          </p>
         </div>
       </div>
     </div>

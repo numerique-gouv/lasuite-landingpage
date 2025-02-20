@@ -11,7 +11,7 @@ const GaufreStyle = createGlobalStyle`
   .lasuite-gaufre-btn--vanilla.lasuite-gaufre-btn--small::before {
     --icon-size: 32px !important;
   }
-`;
+`
 
 export const LaGaufre = () => {
   return (

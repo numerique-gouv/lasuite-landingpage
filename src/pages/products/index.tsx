@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <div className="hero relative overflow-hidden bg-white ">
       <div className="flex flex-col mt-5 justify-between items-start sm:items-center px-8 md:bg-[#fcfcfc] md:bg-no-repeat md:bg-center">
-{/*        <Image
+        {/*        <Image
           src={heroImage}
           width={1000}
           alt={''}
