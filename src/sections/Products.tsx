@@ -38,7 +38,7 @@ export const Products = () => {
       setActiveItem({ index, name })
       setIsPaused(true)
       setIsFading(false)
-    }, 200) 
+    }, 200)
   }
 
   return (

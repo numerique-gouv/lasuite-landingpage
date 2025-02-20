@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import classNames from 'classnames'
-import { MouseEventHandler } from "react";
+import { MouseEventHandler } from 'react'
 
 interface ButtonProps {
   children: React.ReactNode
   href?: string
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>
   'aria-label'?: string
   variant?: 'outline' | 'tertiary'
   size?: 'large'

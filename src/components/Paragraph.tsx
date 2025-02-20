@@ -6,7 +6,7 @@ export const Paragraph = ({
 }: {
   tag?: string
   title?: string
-  description?: string,
+  description?: string
   children?: React.ReactNode
 }) => {
   return (
