@@ -61,7 +61,7 @@ const config: Config = {
       '3xl': ['1.953rem', '2.25rem'],
       '4xl': ['2rem', '2.5rem'],
       '5xl': ['3rem', '3rem'],
-      '6xl': ['5rem', '5rem'],
+      '6xl': ['4rem', '4rem'],
     },
     /*
      * we don't want to use thin font-weights as they are not very readable depending on the device

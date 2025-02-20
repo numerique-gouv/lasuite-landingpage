@@ -4,14 +4,14 @@ export const Paragraph = ({ tag, title, description, children}: {
   description?: string,
 }) => {
   return (
-    <div className="text-left">
+    <div className="text-left mt-7 md:mt-0">
      {tag && (
-        <span className="rounded bg-primary-100 font-bold text-blue-1 px-2.5 py-1.5">
+        <div className="inline-block rounded bg-primary-100 font-bold text-blue-1 px-2.5 py-1.5">
           {tag}
-        </span>
+        </div>
       )}
       {title && (
-        <h3 className="text-5xl font-bold my-4">
+        <h3 className="text-5xl font-bold my-5">
           {title}
         </h3>
       )}

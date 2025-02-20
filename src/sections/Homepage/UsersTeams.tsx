@@ -10,7 +10,7 @@ const TEAMS: Array<{ name: string; logo: StaticImageData; widthLogo: number }> =
   { 
     name: 'Anct',
     logo: AnctLogo,
-    widthLogo: 180, // ✅ Utilisation d'un nombre au lieu d'une string
+    widthLogo: 180, 
   },
   { 
     name: 'Education Nationale',
@@ -38,13 +38,13 @@ export const UsersTeams = () => {
           left: 0,
           behavior: 'smooth',
         });
-      }, 300); // Petit délai pour s'assurer que le DOM est bien rendu
+      }, 300); 
     }
   }, []);
   return (
     <ContentSection>
       <div className="w-full">
-        <div className="border border-greyscale-300 py-4 rounded text-center">
+        <div className="border border-greyscale-300 md:border-white py-4 md:py-6 rounded text-center">
           <p className="text-xs">La Suite est utilisée par les équipes de</p>
           <div
             ref={scrollRef}
@@ -54,7 +54,7 @@ export const UsersTeams = () => {
               <div key={index} className="self-start shrink-0 snap-center my-5">
                 <Image 
                   width={item.widthLogo}
-                  height="auto" // ✅ Ajout d’une hauteur pour éviter les bugs Next.js
+                  height="auto"
                   loading="lazy"
                   className="flex px-3"
                   src={item.logo} 

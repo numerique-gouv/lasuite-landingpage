@@ -9,7 +9,7 @@ import BentoSuiteTerritoriale from '@/assets/bento/suite-territoriale.png'
 export const SuiteTerritoriale = () => {
   return (
     <ContentSection>
-      <div className="grid md:grid-cols-7 gap-4">
+      <div className="grid md:grid-cols-7 md:gap-8">
          <Image 
           width="100%"
           height="auto"
@@ -22,15 +22,14 @@ export const SuiteTerritoriale = () => {
 
           <Paragraph 
             tag="Territoires"
-            title="Aussi pour les collectivités"
+            title="Des services essentiels pour les collectivités"
           >
             <p> L’ANCT et ses partenaires proposent La Suite aux collectivités 
               de moins de <strong>3500</strong> personnes et EPCI de moins de <strong>15 000</strong> personnes, en mettant 
               à disposition des solutions et un accompagnement personnalisé pour leur transformation numérique.</p>
           </Paragraph>
           <Button
-            href='#'
-            target="_blank"
+            href='https://suiteterritoriale.anct.gouv.fr/'
             iconPosition="left"
             title="Découvrir La Suite Territoriale"
           >

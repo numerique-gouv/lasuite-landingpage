@@ -7,7 +7,7 @@ import BentoWimiWhaler from '@/assets/bento/wimi-whaler.png'
 export const Editors = () => {
   return (
     <ContentSection>
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
         <div>
           <Paragraph 
             tag="Editeurs"
@@ -18,7 +18,7 @@ export const Editors = () => {
         </div>
         <Image 
           width="100%"
-          height="auto" // ✅ Ajout d’une hauteur pour éviter les bugs Next.js
+          height="auto"
           loading="lazy"
           className="w-full"
           src={BentoWimiWhaler} 

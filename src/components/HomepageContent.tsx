@@ -11,11 +11,10 @@ import { SecureTools } from '@/sections/Homepage/SecureTools'
 import { Migration } from '@/sections/Homepage/Migration'
 import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
+import FadeInSection from "@/components/FadeInSection";
 
 import { ContentSection } from '@/components/ContentSection'
-import { FAQ } from '@/components/cms-blocks/FAQ'
-import { useEffect } from 'react'
-import { QuickNav } from './QuickNav'
+import { useEffect, useRef, useState } from 'react'
 
 /**
  * output the homepage content with data taken from the CMS file
@@ -24,77 +23,53 @@ import { QuickNav } from './QuickNav'
  * here to abstract this notion from lower-level components
  */
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
+  
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!window.$crisp) {
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "58ea6697-8eba-4492-bc59-ad6562585041";
+
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.async = true;
+      script.src = "https://client.crisp.chat/l.js";
+      document.head.appendChild(script);
+    }
+  }, []);
+
   return (
     <>
-      {/*<QuickNav />*/}
       <Hero />
-      <Products />
-      <UsersTeams />
-      <PortalProconnect />
-      <EcosystemProconnect />
-      <Editors />
-      <SecureTools />
-      <Migration />
-      <SuiteTerritoriale />
-      <FooterLaSuite />
-      {/*<Faq />*/}
-{/*      <Newsletter
-        title={data.newsletter_title}
-        body={<Raw tag="span">{data.newsletter_description}</Raw>}
-        url={data.newsletter_link}
-      />*/}
+      <FadeInSection>
+        <Products />
+      </FadeInSection>
+      <FadeInSection>
+        <UsersTeams />
+      </FadeInSection>
+      <FadeInSection>
+        <PortalProconnect />
+      </FadeInSection>
+      <FadeInSection>
+        <EcosystemProconnect />
+      </FadeInSection>
+      <FadeInSection>
+        <Editors />
+      </FadeInSection>
+      <FadeInSection>
+        <SecureTools />
+      </FadeInSection>
+      <FadeInSection>
+       <Migration />
+      </FadeInSection>
+      <FadeInSection>
+        <SuiteTerritoriale />
+      </FadeInSection>
+      <FadeInSection>
+        <FooterLaSuite />
+      </FadeInSection>
     </>
-  )
-}
-
-const Faq = () => {
-  useEffect(() => {
-    async function loadDsfr() {
-      // @ts-ignore
-      if (window.dsfr) {
-        return
-      }
-      // @ts-ignore
-      await import('@gouvfr/dsfr/dist/core/core.module')
-      // @ts-ignore
-      await import('@gouvfr/dsfr/dist/component/accordion/accordion.module')
-    }
-
-    loadDsfr()
-  }, [])
-
-  return (
-    <ContentSection gap="gap-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center px-4 ">
-        Trouver les réponses à vos questions
-      </h2>
-      <div className="enable-dsfr">
-        <FAQ
-          items={[
-            {
-              question: 'Qu’est-ce que La Suite numérique ?',
-              answer:
-                'La Suite numérique est un ensemble de communs numériques libres reliés grâce au bouton Pro Connect',
-            },
-            {
-              question: 'Comment contribuer à La Suite numérique ?',
-              answer: 'Contribuer à La Suite numérique, c’est possible !',
-            },
-            {
-              question:
-                'Comment utiliser les communs numériques de La Suite numérique ?',
-              answer:
-                'Les communs numériques de La Suite numérique sont utilisables librement',
-            },
-            {
-              question:
-                'Comment signaler un problème sur un commun numérique de La Suite numérique ?',
-              answer:
-                'Vous pouvez signaler un problème sur un commun numérique de La Suite numérique en envoyant un mail à',
-            },
-          ]}
-        />
-      </div>
-    </ContentSection>
   )
 }

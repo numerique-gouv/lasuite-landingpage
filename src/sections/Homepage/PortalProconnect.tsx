@@ -9,7 +9,7 @@ import ProConnectIllustration from '@/assets/pro-connect-illustration.svg'
 export const PortalProconnect = () => {
   return (
     <ContentSection>
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
         <Image 
           width="100%"
           height="auto"

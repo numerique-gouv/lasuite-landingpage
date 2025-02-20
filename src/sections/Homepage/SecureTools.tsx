@@ -9,7 +9,7 @@ import BentoShield from '@/assets/bento/shield.png'
 export const SecureTools = () => {
   return (
     <ContentSection>
-      <div className="grid md:grid-cols-5 gap-4">
+      <div className="grid md:grid-cols-5 md:gap-8 md:mb-14">
         <Image 
           width="100%"
           height="auto"

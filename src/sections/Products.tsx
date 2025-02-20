@@ -17,6 +17,7 @@ const DINUM_PRODUCTS_GRID = [
 export const Products = () => {
   const [activeItem, setActiveItem] = useState({ index: 0, name: 'Tchap' });
   const [isPaused, setIsPaused] = useState(false);
+  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
     if (isPaused) return;
@@ -26,19 +27,23 @@ export const Products = () => {
         const newIndex = (prev.index + 1) % DINUM_PRODUCTS_GRID.length;
         return { index: newIndex, name: DINUM_PRODUCTS_GRID[newIndex] };
       });
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [isPaused]);
 
   const handleClick = (index, name) => {
-    setActiveItem({ index, name });
-    setIsPaused(true);
+    setIsFading(true); // Déclenche le fade-out
+    setTimeout(() => {
+      setActiveItem({ index, name });
+      setIsPaused(true);
+      setIsFading(false); // Active le fade-in après un court délai
+    }, 200); // Durée du fade-out
   };
 
   return (
     <ContentSection>
-      <div className="flex gap-4 flex-wrap text-left w-full justify-start sm:justify-center">
+      <div className="flex fade-in gap-4 flex-wrap text-left w-full justify-start sm:justify-center">
         {DINUM_PRODUCTS_GRID.map((name, index) => {
           const hasLink = DINUM_PRODUCTS[name]?.url;
           const logo = DINUM_PRODUCTS[name]?.logo;
@@ -52,7 +57,7 @@ export const Products = () => {
               onClick={() => handleClick(index, name)}
             >
               <Image className="w-auto" src={logo} alt={`Logo ${name}`} />
-              <span className="text-base text-blue-1 ml-2 font-medium md:text-lg md:whitespace-nowrap">
+              <span className="text-base text-blue-1 ml-2 font-medium md:whitespace-nowrap">
                 {DINUM_PRODUCTS[name]?.name}
               </span>
             </div>
@@ -60,11 +65,14 @@ export const Products = () => {
         })}
       </div>
 
-      <div>
+      <div className="md:w-max-[80vw] md:w-[85%]">
         <div className="flex mt-0">
           {activeItem.name && DINUM_PRODUCTS[activeItem.name] && (
             <Image 
-              className="lasuite-hero-boxshadow sm:block rounded-xl hidden"
+              key={activeItem.index}
+              className={`lasuite-hero-boxshadow sm:block rounded-xl hidden 
+                ${isFading ? "fade-out" : "fade-in-right"}`
+              }
               src={DINUM_PRODUCTS[activeItem.name].screenshot} 
               alt={`Screenshot ${activeItem.name}`}
             />
@@ -74,16 +82,17 @@ export const Products = () => {
         <div className="flex sm:hidden mt-0">
           {activeItem.name && DINUM_PRODUCTS[activeItem.name] && (
             <Image 
-              className=""
+              key={activeItem.index}
+              className="fade-in-right"
               src={DINUM_PRODUCTS[activeItem.name].screenshotMobile} 
               alt={`Screenshot ${activeItem.name}`}
             />
           )}
         </div>
-        <div className="md:flex justify-between">
+        <div className={`md:flex justify-between fade-in-left`} key={activeItem.index}>
         <div className="block mt-5">
-          <div className="flex items-center">
-            <Image 
+          <div className="flex items-center mb-1">
+            <Image
               src={DINUM_PRODUCTS[activeItem.name].logo} 
               alt={`Logo ${activeItem.name}`}
             />
@@ -102,7 +111,7 @@ export const Products = () => {
           </p>
         </div>
 
-        <div className="mt-4 md:mt-4">
+        <div className="mt-5 md:mt-4 md:ml-3">
           <Button
             href={DINUM_PRODUCTS[activeItem.name].url}
             target="_blank"

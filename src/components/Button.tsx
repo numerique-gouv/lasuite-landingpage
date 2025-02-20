@@ -5,6 +5,7 @@ import classNames from 'classnames'
 interface ButtonProps {
   children: React.ReactNode
   href?: string
+  onClick?: void
   'aria-label'?: string
   variant?: 'outline'
   size?: 'large'
@@ -19,7 +20,7 @@ const core =
 
 export const buttonStyles = {
   default: `${core} ${transition} font-medium text-white bg-blue-1 hover:bg-dsfr-blue-2`,
-  tertiary: `${core} ${transition} font-medium text-blue-1 bg-primary-100 hover:bg-dsfr-blue-2`,
+  tertiary: `${core} ${transition} font-medium text-blue-1 bg-primary-100 hover:bg-primary-300`,
   outline: `${core} ${transition} bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
  
   largeSize: '!text-xl md:!py-4 md:!px-8',
@@ -29,6 +30,7 @@ export const buttonStyles = {
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
+  onClick,
   icon,
   iconPosition = 'left',
   variant,
@@ -56,10 +58,10 @@ export const Button: React.FC<ButtonProps> = ({
   )
 
   return href ? (
-    <LinkComponent href={href} className={classes} aria-label={ariaLabel}>
+    <LinkComponent href={href} target="_blank" className={classes} aria-label={ariaLabel}>
       {content}
     </LinkComponent>
   ) : (
-    <button className={classes}>{content}</button>
+    <button onClick={onClick} className={classes}>{content}</button>
   )
 }
