@@ -30,7 +30,7 @@ export const EcosystemProconnect = () => {
       <div className="grid md:grid-cols-2 gap-8 md:mb-14">
        {PRODUCTS_GRID.map(item => {
         return (
-          <a href={item.url} target="_blank">
+          <a href={item.url} key={item.url} target="_blank">
             <Image src={item.bento} alt={item.name}/>
           </a>
         );
