@@ -57,7 +57,7 @@ export const Products = () => {
               ${isActive ? 'bg-greyscale-100' : ''}`}
                 onClick={() => handleClick(index, name)}
               >
-                <Image className="w-auto" src={logo} alt={`Logo ${name}`} />
+                <Image className="w-auto" src={logo} alt="" />
                 <span className="text-base text-blue-1 ml-2 font-medium md:whitespace-nowrap">
                   {DINUM_PRODUCTS[name]?.name}
                 </span>
@@ -71,6 +71,7 @@ export const Products = () => {
             {activeItem.name && DINUM_PRODUCTS[activeItem.name] && (
               <Image
                 key={activeItem.index}
+                alt=""
                 className={`lasuite-hero-boxshadow sm:block rounded-xl hidden 
                 ${isFading ? 'fade-out' : 'fade-in'}`}
                 src={DINUM_PRODUCTS[activeItem.name].screenshot ?? ''}
@@ -83,6 +84,7 @@ export const Products = () => {
               <Image
                 key={activeItem.index}
                 className="fade-in"
+                alt=""
                 src={DINUM_PRODUCTS[activeItem.name].screenshotMobile ?? ''}
               />
             )}
@@ -93,7 +95,7 @@ export const Products = () => {
           >
             <div className="block">
               <div className="flex items-center mb-1">
-                <Image src={DINUM_PRODUCTS[activeItem.name].logo} />
+                <Image src={DINUM_PRODUCTS[activeItem.name].logo} alt="" />
                 <span className="text-xl text-blue-1 font-bold ml-1">
                   {DINUM_PRODUCTS[activeItem.name].name}
                 </span>

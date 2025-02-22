@@ -22,7 +22,7 @@ export const LaGaufre = () => {
         id="lasuite-gaufre-script"
       />
       <GaufreStyle />
-      <Gaufre variant="" />
+      <Gaufre />
     </>
   )
 }
