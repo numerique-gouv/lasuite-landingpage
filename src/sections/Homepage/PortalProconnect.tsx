@@ -10,7 +10,12 @@ export const PortalProconnect = () => {
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
-        <Image loading="lazy" alt="" className="w-full" src={ProConnectIllustration} />
+        <Image
+          loading="lazy"
+          alt=""
+          className="w-full"
+          src={ProConnectIllustration}
+        />
         <div>
           <Paragraph tag="Portail Unique" title="ProConnect">
             Simplifiez votre quotidien avec ProConnect ! Accédez à La Suite et à

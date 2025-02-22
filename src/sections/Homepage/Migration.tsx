@@ -25,7 +25,12 @@ export const Migration = () => {
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
-        <Image loading="lazy" alt="La Suite Numérique" className="w-full" src={BentoLasuite} />
+        <Image
+          loading="lazy"
+          alt="La Suite Numérique"
+          className="w-full"
+          src={BentoLasuite}
+        />
 
         <div className="md:order-first">
           <Paragraph tag="Migration" title="Passez à La Suite !">
