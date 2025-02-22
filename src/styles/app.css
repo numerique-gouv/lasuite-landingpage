@@ -181,67 +181,75 @@
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes fadeIn {
-  from {
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease;
+  }
+
+  .fade-out {
     opacity: 0;
+    transition: opacity 0.4s ease-in-out;
   }
-  to {
-    opacity: 1;
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
 
-.fade-in {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.fade-out {
-  opacity: 0.4;
-  transition: opacity 0.4s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10px);
+  .fade-in-right {
+    animation: fadeInRight 0.2s ease-in;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.fade-in-right {
-  animation: fadeInRight 0.2s ease-in;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10px);
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.fade-in-left {
-  animation: fadeInLeft 0.2s ease-in;
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-60px);
+  .fade-in-left {
+    animation: fadeInLeft 0.2s ease-in;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-down {
+    animation: fadeInDown 0.3s ease-out;
   }
 }
 
-.fade-in-down {
-  animation: fadeInDown 0.3s ease-out;
+@media (prefers-reduced-motion: reduce) {
+  .transition-all {
+    transition: none;
+  }
 }
 
 /** decapcms preview fixes:

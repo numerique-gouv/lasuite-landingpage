@@ -35,12 +35,14 @@ const PRODUCTS_GRID = [
 
 export const EcosystemProconnect = () => {
   return (
-    <ContentSection>
-      <Paragraph
-        tag="Services de l'État"
-        title="L'écosystème ProConnect"
-        description={`Continuez à utiliser les services de l’État avec ProConnect. Résana, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent La Suite à merveille.`}
-      />
+    <ContentSection center={false}>
+      <div className="relative align-left md:max-w-[80%]">
+        <Paragraph
+          tag="Services de l'État"
+          title="L'écosystème ProConnect"
+          description={`Continuez à utiliser les services de l’État avec ProConnect. Résana, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent La Suite à merveille.`}
+        />
+      </div>
       <div className="grid md:grid-cols-2 gap-8 md:mb-14">
         {PRODUCTS_GRID.map((item) => {
           return (

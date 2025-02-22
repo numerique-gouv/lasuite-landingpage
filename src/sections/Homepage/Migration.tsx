@@ -4,18 +4,17 @@ import { Button } from '@/components/Button'
 import VisioIconWhite from '@/assets/products/visio-white.svg'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
-import BentoWires from '@/assets/bento/wires.png'
+import BentoLasuite from '@/assets/bento/suite-numerique.png'
 
 const VisioLogoIcon = () => {
   return (
     <>
       <Image
-        width="30"
-        height="30"
+        width="24"
+        height="24"
         loading="lazy"
         className="fill-white"
         src={VisioIconWhite}
-        alt="logo visio"
       />
     </>
   )
@@ -25,7 +24,9 @@ export const Migration = () => {
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
-        <div className="">
+        <Image loading="lazy" className="w-full" src={BentoLasuite} />
+
+        <div className="md:order-first">
           <Paragraph tag="Migration" title="Passez à La Suite !">
             Vous souhaitez équiper vos agents des outils de La Suite ? Nos
             experts vous accompagnent dans l'intégration de nos applications au
@@ -45,12 +46,6 @@ export const Migration = () => {
             Réserver une démo
           </Button>
         </div>
-        <Image
-          loading="lazy"
-          className="w-full hidden md:block"
-          src={BentoWires}
-          alt="Illustation migration"
-        />
       </div>
     </ContentSection>
   )

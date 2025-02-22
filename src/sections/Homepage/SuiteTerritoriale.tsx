@@ -14,7 +14,7 @@ export const SuiteTerritoriale = () => {
           loading="lazy"
           className="md:col-span-4 w-full"
           src={BentoSuiteTerritoriale}
-          alt="Illustation migration"
+          alt="La Suite Territoriale"
         />
         <div className="md:col-span-3">
           <Paragraph

@@ -15,23 +15,23 @@ import Image from 'next/image'
 export const NavBar = () => {
   const t = useTranslations()
   return (
-    <header className="fade-in bg-white px-4 fixed top-0 right-0 left-0 z-50">
+    <header className="fade-in bg-white px-4 sticky top-0 right-0 left-0 z-50">
       <div className="flex items-center">
-        <div className="flex py-3.5 items-center fr-enlarge-link">
+        <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 items-center fr-enlarge-link">
           <Image
-            className="mr-3 w-28"
+            className="mr-3 w-28 hidden md:block"
             src={LogoGouvSvg}
-            alt="Logo gouvernement"
+            alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
           />
-          <div className="ml-5">
+          <div className="sm:ml-5">
             <Image
               className="w-28"
               src={LogoSvg}
-              alt="Logo de la suite numérique"
+              alt="lasuite.numerique.gouv.fr"
             />
           </div>
         </div>
-        <div className="flex items-center gap-4 top-0 right-0 sm:relative z-10 ml-auto">
+        <div className="absolute items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
           <LocaleSwitcher />
           <LaGaufre />
         </div>

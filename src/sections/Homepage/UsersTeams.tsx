@@ -32,7 +32,6 @@ export const UsersTeams = () => {
     const scrollContainer = scrollRef.current
     if (!scrollContainer) return
 
-    // Vérifier que le contenu est assez large pour scroller
     if (scrollContainer.scrollWidth > scrollContainer.clientWidth) {
       setTimeout(() => {
         scrollContainer.scrollTo({

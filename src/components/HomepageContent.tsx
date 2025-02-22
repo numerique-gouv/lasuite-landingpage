@@ -46,9 +46,6 @@ export const HomepageContent = ({ data }: { data: EntrySchema }) => {
         <Products />
       </FadeInSection>
       <FadeInSection>
-        <UsersTeams />
-      </FadeInSection>
-      <FadeInSection>
         <PortalProconnect />
       </FadeInSection>
       <FadeInSection>

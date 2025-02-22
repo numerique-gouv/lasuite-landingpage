@@ -33,12 +33,12 @@ export const Footer = () => {
             <p className="logo-footer text-base xs:text-xl font-bold leading-[1.0317460317em] tracking-[-.01em] pl-2 uppercase align-middle inline-block">
               Gouvernement
             </p>
-            <span className="logo-footer-separator" />
-            <p className="font-bold leading-5 text-sm xs:text-base">
+            <span className="logo-footer-separator w-100% md:block hidden" />
+            <p className="font-bold leading-5 text-sm xs:text-base md:block hidden">
               Direction
-              <Br showOnMobile />
+              <br />
               interministérielle
-              <Br showOnMobile />
+              <br />
               du numérique
             </p>
           </Link>
