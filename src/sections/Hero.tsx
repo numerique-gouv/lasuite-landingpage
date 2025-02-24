@@ -30,8 +30,7 @@ export const Hero = () => {
             L’espace de travail souverain
           </h2>
           <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
-            Créez. Organisez. Collaborez. Dans un environnement sécurisé et
-            open-source conçu pour le secteur public et ouvert aux communs.
+            Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs
           </p>
         </div>
       </div>
