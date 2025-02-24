@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { DINUM_PRODUCTS } from '@/utils/products'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
@@ -17,7 +18,6 @@ const DINUM_PRODUCTS_GRID = [
 export const Products = () => {
   const [activeItem, setActiveItem] = useState({ index: 0, name: 'Tchap' })
   //  const [isPaused, setIsPaused] = useState(false)
-  const [isFading, setIsFading] = useState(false)
 
   //  useEffect(() => {
   //    if (isPaused) return
@@ -33,22 +33,17 @@ export const Products = () => {
   //  }, [isPaused])
 
   const handleClick = (index: number, name: string): void => {
-    setIsFading(true)
-    setTimeout(() => {
-      setActiveItem({ index, name })
-      //      setIsPaused(true)
-      setIsFading(false)
-    }, 200)
+    setActiveItem({ index, name })
   }
 
   return (
     <ContentSection>
-      <div className="">
+      <div className="w-full">
         <div className="mb-7 md:mb-8 px-2 md:px-0 flex fade-in gap-[14px] flex-wrap w-full justify-center">
           {DINUM_PRODUCTS_GRID.map((name, index) => {
             const hasLink = DINUM_PRODUCTS[name]?.url
             const logo = DINUM_PRODUCTS[name]?.logo
-            const isActive = index === activeItem.index
+            let isActive = index === activeItem.index
 
             return (
               <button
@@ -66,31 +61,49 @@ export const Products = () => {
           })}
         </div>
 
-        <div className="px-2 md:px-0 md:w-[85%] mx-auto">
-          <div className="flex mt-0 relative">
-            {activeItem.name && DINUM_PRODUCTS[activeItem.name] && (
-              <Image
-                key={activeItem.index}
-                alt=""
-                className={`lasuite-hero-boxshadow sm:block rounded-xl hidden 
-                ${isFading ? 'fade-out' : 'fade-in'}`}
-                src={DINUM_PRODUCTS[activeItem.name].screenshot ?? ''}
-              />
-            )}
+        <div className="px-2 md:px-0 md:max-w-[90%] mx-auto">
+          <div className="sm:block mt-0 hidden aspect-[219/137] lasuite-hero-boxshadow rounded-xl relative w-full">
+            {DINUM_PRODUCTS_GRID.map((name, index) => {
+              let isActive = index === activeItem.index
+              return (
+                <div
+                  key={name}
+                  className="top-0 left-0 absolute w-full h-full flex items-center justify-center"
+                >
+                  <Image
+                    alt=""
+                    className={`w-full h-full object-cover
+                     ${isActive ? 'fade-in' : 'fade-out'}
+                     `}
+                    src={DINUM_PRODUCTS[name]?.screenshot ?? ''}
+                  />
+                </div>
+              )
+            })}
           </div>
 
-          <div className="flex sm:hidden mt-0">
-            {activeItem.name && DINUM_PRODUCTS[activeItem.name] && (
-              <Image
-                key={activeItem.index}
-                className="fade-in"
-                alt=""
-                src={DINUM_PRODUCTS[activeItem.name].screenshotMobile ?? ''}
-              />
-            )}
+          <div className="flex sm:hidden mt-0 aspect-[2/2] lasuite-hero-boxshadow rounded-xl relative w-full">
+            {DINUM_PRODUCTS_GRID.map((name, index) => {
+              let isActive = index === activeItem.index
+              return (
+                <div
+                  key={name}
+                  className="top-0 left-0 absolute w-full h-full flex items-center justify-center"
+                >
+                  <Image
+                    alt=""
+                    className={`w-full h-full object-cover
+                     ${isActive ? 'fade-in' : 'fade-out'}
+                     `}
+                    src={DINUM_PRODUCTS[name]?.screenshotMobile ?? ''}
+                  />
+                </div>
+              )
+            })}
           </div>
+
           <div
-            className={`md:flex justify-between items-center fade-in mt-5`}
+            className={`md:flex relative justify-between items-center fade-in mt-5`}
             key={activeItem.index}
           >
             <div className="block">

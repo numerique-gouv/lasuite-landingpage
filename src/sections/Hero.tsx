@@ -9,13 +9,13 @@ export const Hero = () => {
   const t = useTranslations()
 
   return (
-    <div className="fade-in relative overflow-hidden bg-white">
+    <div className="fade-in relative overflow-hidden bg-white md:pt-4">
       <div
         className={
-          'flex flex-col justify-between items-start sm:items-center pt-3 px-3'
+          'flex flex-col justify-between items-start sm:items-center pt-3 sm:pt-9 px-3'
         }
       >
-        <h1 className="w-full flex justify-center pt-6 sm:mt-11">
+        <h1 className="w-full flex justify-center pt-6 sm:mt-12">
           <Image
             src={HeroHome}
             height={168}
@@ -30,8 +30,8 @@ export const Hero = () => {
             L’espace de travail souverain
           </h2>
           <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
-            Créez. Organisez. Collaborez. Dans un environnement français et
-            open-source.
+            Créez. Organisez. Collaborez. Dans un environnement sécurisé et
+            open-source conçu pour le secteur public
           </p>
         </div>
       </div>

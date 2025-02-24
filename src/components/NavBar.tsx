@@ -15,7 +15,7 @@ import Image from 'next/image'
 export const NavBar = () => {
   const t = useTranslations()
   return (
-    <header className="fade-in bg-white px-4 sticky top-0 right-0 left-0 z-50">
+    <header className="fade-in bg-white px-4 sm:fixed relative top-0 right-0 left-0 z-50">
       <div className="flex items-center">
         <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 items-center fr-enlarge-link">
           <Image

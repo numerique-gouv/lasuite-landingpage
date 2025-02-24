@@ -38,7 +38,7 @@ export const FooterLaSuite = () => {
         </div>
 
         <p className="my-7 font-medium">
-          Utilisez La Suite Numérique dès aujourd’hui !
+          Utilisez La Suite Numérique dès aujourd’hui&nbsp;!
         </p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
