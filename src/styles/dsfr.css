@@ -31,6 +31,10 @@
   padding-right: 1rem;
 }
 
+.fr-logo {
+  color: #161616;
+}
+
 /* note this breakpoint is slightly different than the one of the dsfr (2em diff) */
 @media screen(lg) {
   .fr-container {

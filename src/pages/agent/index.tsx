@@ -18,13 +18,6 @@ export default function Agent() {
 
   return (
     <Layout title="La Suite pour les agents publics">
-      <QuickNav />
-      <Hero
-        intro="... un écosystème numérique pour faciliter votre quotidien"
-        callout="Simplifiez vos missions grâce à des outils numériques interconnectés, conçus pour répondre aux besoins spécifiques des agents publics"
-        image={heroImage}
-        backgroundImage={false}
-      />
       <ContentSection verticalPadding={false}>
         <div className="pb-16">{button}</div>
       </ContentSection>

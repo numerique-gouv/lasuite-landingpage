@@ -1,57 +1,39 @@
 import Image, { StaticImageData } from 'next/image'
 import { Callout } from '@/components/Callout'
-import { URL_SITE } from '@/constant'
-import LogoSvg from '@/assets/logo/suite-numerique.svg'
+import { TITLE_SITE } from '@/constant'
+import HeroHome from '@/assets/hero-home.png'
 import type { ReactElement } from 'react'
 import { useTranslations } from '@/locales/useTranslations'
 
-export const Hero = ({
-  intro,
-  callout,
-  image,
-  imageClassName,
-  backgroundImage = true,
-}: {
-  intro: ReactElement | string
-  callout: ReactElement | string
-  image: StaticImageData
-  imageClassName?: string
-  backgroundImage?: boolean
-}) => {
+export const Hero = () => {
   const t = useTranslations()
-  const background = backgroundImage
-    ? 'md:bg-[url(/assets/bg-nid-abeille.webp)] md:bg-no-repeat md:bg-center'
-    : ''
+
   return (
-    <div className="hero relative overflow-hidden bg-white ">
+    <div className="fade-in relative overflow-hidden bg-white md:pt-4">
       <div
         className={
-          'flex flex-col justify-between items-start sm:items-center px-8 py-10 sm:py-20 md:bg-no-repeat md:bg-center ' +
-          background
+          'flex flex-col justify-between items-start sm:items-center pt-3 sm:pt-9 px-3'
         }
       >
-        <h1 className="w-full flex justify-center pb-11">
+        <h1 className="w-full flex justify-center pt-6 sm:mt-12">
           <Image
-            src={LogoSvg}
+            src={HeroHome}
             height={168}
             width={480}
-            alt={URL_SITE}
+            alt={TITLE_SITE}
             className={'max-w-[80%]'}
             priority
           />
         </h1>
-        <div className="text-blue-1 text-4xl font-bold max-w-[44rem] text-left sm:text-center pb-8 md:pb-0 text-center">
-          {intro}
+        <div className="mx-auto max-w-[80vw] md:max-w-[45vw]">
+          <h2 className="text-greyscale-900 md:text-6xl text-5xl sm:leading-[52px] md:leading-[72px] font-bold text-center pb-4">
+            L’espace de travail souverain
+          </h2>
+          <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
+            Créez. Organisez. Collaborez. Un environnement open source, conçu
+            pour le secteur public et ouvert aux communs.
+          </p>
         </div>
-        <Image
-          src={image}
-          width={1000}
-          alt={t('homepage.hero_img_alt')}
-          className={'flex z-10 ' + imageClassName}
-          priority
-          placeholder="blur"
-        />
-        <Callout>{callout}</Callout>
       </div>
     </div>
   )

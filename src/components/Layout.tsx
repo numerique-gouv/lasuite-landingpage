@@ -28,6 +28,16 @@ export const Layout: React.FC<{
           property="og:title"
           content={isHomepage ? t('head.homepage_og_title') : pageTitle}
         />
+        <link
+          href="favicon.ico"
+          rel="icon"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          href="favicon-dark.ico"
+          rel="icon"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
       <NavBar />
       <main {...props}>{props.children}</main>

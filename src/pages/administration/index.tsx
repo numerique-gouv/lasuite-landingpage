@@ -1,9 +1,7 @@
 import { Layout } from '@/components/Layout'
 import { TITLE_SITE } from '@/constant'
-import { Hero } from '@/sections/Hero'
 import { ContentSection } from '@/components/ContentSection'
 import { DoubleBlock } from '@/sections/DoubleBlock'
-import heroImage from '@/assets/hero_administration.png'
 import AdministrationImage1 from '@/assets/administration_block_1.png'
 import AdministrationImage2 from '@/assets/administration_block_2.png'
 import AdministrationImage3 from '@/assets/administration_block_3.png'
@@ -21,12 +19,6 @@ export default function Agent() {
 
   return (
     <Layout title="La Suite pour les administrations publiques">
-      <QuickNav />
-      <Hero
-        intro="... au service de votre administration"
-        callout="Modernisez vos processus avec des outils conçus pour les besoins spécifiques des administrations publiques"
-        image={heroImage}
-      />
       <ContentSection verticalPadding={false}>
         <div className="pb-16">{button}</div>
       </ContentSection>

@@ -13,33 +13,35 @@ import '@gouvfr/dsfr/dist/utility/icons/icons-system/icons-system.css'
 declare global {
   interface Window {
     _mtm?: any[]
+    $crisp?: any
+    CRISP_WEBSITE_ID?: string
   }
 }
 
 const marianne = localFont({
   src: [
     {
-      path: '../fonts/subsetted/Marianne-Regular-subset.woff2',
+      path: '../fonts/sources/Marianne-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/subsetted/Marianne-Regular_Italic-subset.woff2',
+      path: '../fonts/sources/Marianne-Regular_Italic.woff2',
       weight: '400',
       style: 'italic',
     },
     {
-      path: '../fonts/subsetted/Marianne-Medium-subset.woff2',
+      path: '../fonts/sources/Marianne-Medium.woff2',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../fonts/subsetted/Marianne-Bold-subset.woff2',
+      path: '../fonts/sources/Marianne-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../fonts/subsetted/Marianne-ExtraBold-subset.woff2',
+      path: '../fonts/sources/Marianne-ExtraBold.woff2',
       weight: '800',
       style: 'normal',
     },
