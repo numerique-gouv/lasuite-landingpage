@@ -87,17 +87,17 @@ export const Products = () => {
             })}
           </div>
 
-          <div className="flex sm:hidden mt-0 aspect-[2/2] lasuite-hero-boxshadow rounded-xl relative w-full">
+          <div className="flex sm:hidden mt-0 aspect-[2/2] rounded-xl relative w-full">
             {DINUM_PRODUCTS_GRID.map((name, index) => {
               let isActive = index === activeItem.index
               return (
                 <div
                   key={name}
-                  className="top-0 left-0 absolute w-full h-full flex items-center justify-center"
+                  className="top-0 left-0 rounded-xl absolute w-full h-full flex items-center justify-center"
                 >
                   <Image
                     alt=""
-                    className={`w-full h-full object-cover
+                    className={`w-full rounded-xl h-full object-cover
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
                     src={DINUM_PRODUCTS[name]?.screenshotMobile ?? ''}
