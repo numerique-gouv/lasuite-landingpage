@@ -31,7 +31,7 @@ export const Hero = () => {
           </h2>
           <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
             Créez. Organisez. Collaborez. Un environnement open source, conçu
-            pour le secteur public et ouvert aux communs
+            pour le secteur public et ouvert aux communs.
           </p>
         </div>
       </div>
