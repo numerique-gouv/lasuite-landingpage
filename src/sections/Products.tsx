@@ -56,6 +56,11 @@ export const Products = () => {
                 <span className="text-base text-blue-1 ml-2 font-medium md:whitespace-nowrap">
                   {DINUM_PRODUCTS[name]?.name}
                 </span>
+                {DINUM_PRODUCTS[name].status && (
+                  <div className="leading-[1.5] bg-primary-200 text-xs rounded-full font-bold px-2 ml-1 text-primary-500">
+                    BETA
+                  </div>
+                )}
               </button>
             )
           })}
