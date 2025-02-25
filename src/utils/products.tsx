@@ -177,6 +177,7 @@ export const DINUM_PRODUCTS: Record<
         données
       </>,
     ],
+    status: 'BETA',
   },
   Docs: {
     displayDetails: true,
