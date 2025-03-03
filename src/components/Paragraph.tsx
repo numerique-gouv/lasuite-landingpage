@@ -12,7 +12,7 @@ export const Paragraph = ({
   return (
     <div className="text-left mt-7 md:mt-0">
       {tag && (
-        <div className="inline-block rounded bg-primary-100 font-bold text-blue-1 px-2.5 py-1.5">
+        <div className="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5">
           {tag}
         </div>
       )}
