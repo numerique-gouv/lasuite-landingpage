@@ -5,10 +5,9 @@ common:
   know_more: En savoir plus
   back_to_home: Retour à la page d’accueil
 head:
-  homepage_og_title: Travailler avec La Suite numérique
+  homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
   meta_desc:
-    La Suite numérique fédère tous les agents et professionnels de la sphère
-    publique
+    Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs.
 header:
   tagline: Un État efficace, simple, souverain grâce au numérique
   locale_switcher_alt: Changer de langue
