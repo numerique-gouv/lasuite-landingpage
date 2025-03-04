@@ -11,7 +11,7 @@ export const Editors = () => {
         <div>
           <Paragraph
             tag="Editeurs"
-            title="Ça ne s'arrête pas là !"
+            title="Ça ne s'arrête pas là&nbsp;!"
             description={`Des acteurs majeurs du numérique français comme Whaller
             utilisent aussi ProConnect. Ces plateformes collaboratives sécurisées ont intégré notre solution
             d'authentification pour offrir à leurs utilisateurs une expérience de connexion simplifiée et sécurisée, tout en maintenant leurs hauts standards de protection des données.`}

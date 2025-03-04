@@ -12,6 +12,7 @@ import '@gouvfr/dsfr/dist/utility/icons/icons-system/icons-system.css'
 declare global {
   interface Window {
     _mtm?: any[]
+    _paq?: any[]
     $crisp?: any
     CRISP_WEBSITE_ID?: string
   }
@@ -79,7 +80,11 @@ function setUpMatomoAnalytics() {
       s = d.getElementsByTagName('script')[0]
     g.async = true
     g.src = u + 'matomo.js'
-    s.parentNode.insertBefore(g, s)
+    if (s?.parentNode) {
+      s.parentNode.insertBefore(g, s)
+    } else {
+      d.head.appendChild(g)
+    }
   })()
 }
 
