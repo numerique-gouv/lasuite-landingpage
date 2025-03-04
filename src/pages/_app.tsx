@@ -3,7 +3,6 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
 import { MetaHeader as Head } from '@/components/MetaHeader'
-import { MATOMO_ID } from '@/constant'
 import { useEffect } from 'react'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import { useRouter } from 'next/router'
@@ -66,17 +65,22 @@ const marianne = localFont({
  * Ensure that MATOMO_ID is correctly defined before using this function.
  */
 function setUpMatomoAnalytics() {
-  // Push start event to the data layer
-  const _mtm = (window._mtm = window._mtm || [])
-  _mtm.push({ 'mtm.startTime': new Date().getTime(), event: 'mtm.Start' })
-
-  // Add tracking script
-  const d = document
-  const g = d.createElement('script')
-  const s = d.getElementsByTagName('script')[0]
-  g.async = true
-  g.src = MATOMO_ID
-  s?.parentNode?.insertBefore(g, s)
+  var _paq = (window._paq = window._paq || [])
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['setExcludedQueryParams', ['simulationId', '_csrf']])
+  _paq.push(['trackPageView'])
+  _paq.push(['enableLinkTracking'])
+  ;(function () {
+    var u = 'https://stats.data.gouv.fr/'
+    _paq.push(['setTrackerUrl', u + 'matomo.php'])
+    _paq.push(['setSiteId', '298'])
+    var d = document,
+      g = d.createElement('script'),
+      s = d.getElementsByTagName('script')[0]
+    g.async = true
+    g.src = u + 'matomo.js'
+    s.parentNode.insertBefore(g, s)
+  })()
 }
 
 export default function App({ Component, pageProps }: AppProps) {
