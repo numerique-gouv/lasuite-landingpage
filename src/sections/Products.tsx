@@ -57,7 +57,10 @@ export const Products = () => {
                   {DINUM_PRODUCTS[name]?.name}
                 </span>
                 {DINUM_PRODUCTS[name].status && (
-                  <div className="leading-[1.5] bg-primary-200 text-xs rounded-full font-bold px-2 ml-1 text-primary-500">
+                  <div
+                    className={`leading-[1.5] transition duration-100 bg-primary-100 text-xs rounded-full font-bold px-2 ml-1 text-[#5858D3]
+                    ${isActive ? 'bg-primary-800 text-greyscale-100' : ''}`}
+                  >
                     BETA
                   </div>
                 )}
@@ -119,7 +122,7 @@ export const Products = () => {
                 </span>
 
                 {DINUM_PRODUCTS[activeItem.name].status && (
-                  <div className="leading-[1.5] bg-primary-200 text-xs rounded-full font-bold px-2 ml-2 text-primary-500">
+                  <div className="leading-[1.5] bg-primary-100 text-xs rounded-full font-bold px-2 ml-2 text-[#5858D3]">
                     BETA
                   </div>
                 )}

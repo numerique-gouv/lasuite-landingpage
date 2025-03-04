@@ -23,13 +23,13 @@ export const NavBar = () => {
             src={LogoGouvSvg}
             alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
           />
-          <div className="sm:ml-5">
+          <Link href="/" className="sm:ml-5">
             <Image
               className="w-28"
               src={LogoSvg}
               alt="lasuite.numerique.gouv.fr"
             />
-          </div>
+          </Link>
         </div>
         <div className="absolute items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
           <LocaleSwitcher />

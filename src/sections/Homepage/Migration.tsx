@@ -33,7 +33,7 @@ export const Migration = () => {
         />
 
         <div className="md:order-first">
-          <Paragraph tag="Migration" title="Passez à La Suite !">
+          <Paragraph tag="Migration" title="Passez à La Suite&nbsp;!">
             Vous souhaitez équiper vos agents des outils de La Suite ? Nos
             experts vous accompagnent dans l'intégration de nos applications au
             sein de votre système d'information, de la mise en place des
