@@ -23,9 +23,6 @@ import { useEffect, useRef, useState } from 'react'
  * here to abstract this notion from lower-level components
  */
 export const HomepageContent = ({ data }: { data: EntrySchema }) => {
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
-
   useEffect(() => {
     if (!window.$crisp) {
       window.$crisp = []
