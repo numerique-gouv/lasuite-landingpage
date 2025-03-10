@@ -17,20 +17,6 @@ const DINUM_PRODUCTS_GRID = [
 
 export const Products = () => {
   const [activeItem, setActiveItem] = useState({ index: 0, name: 'Tchap' })
-  //  const [isPaused, setIsPaused] = useState(false)
-
-  //  useEffect(() => {
-  //    if (isPaused) return
-  //
-  //    const interval = setInterval(() => {
-  //      setActiveItem((prev) => {
-  //        const newIndex = (prev.index + 1) % DINUM_PRODUCTS_GRID.length
-  //        return { index: newIndex, name: DINUM_PRODUCTS_GRID[newIndex] }
-  //      })
-  //    }, 6000)
-  //
-  //    return () => clearInterval(interval)
-  //  }, [isPaused])
 
   const handleClick = (index: number, name: string): void => {
     setActiveItem({ index, name })
