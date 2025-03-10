@@ -1,5 +1,4 @@
-import { useEffect, useRef } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { Button } from '@/components/Button'
 import VisioIconWhite from '@/assets/products/visio-white.svg'
 import { ContentSection } from '@/components/ContentSection'

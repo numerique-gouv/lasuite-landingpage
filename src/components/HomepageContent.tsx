@@ -1,9 +1,6 @@
 import { Hero } from '@/sections/Hero'
-import { Newsletter } from '@/sections/Newsletter'
 import { EntrySchema } from '@/cms/collections/homepage'
-import { Raw } from './Raw'
 import { Products } from '@/sections/Products'
-import { UsersTeams } from '@/sections/Homepage/UsersTeams'
 import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
 import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
 import { Editors } from '@/sections/Homepage/Editors'
@@ -12,9 +9,7 @@ import { Migration } from '@/sections/Homepage/Migration'
 import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
-
-import { ContentSection } from '@/components/ContentSection'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect } from 'react'
 
 /**
  * output the homepage content with data taken from the CMS file

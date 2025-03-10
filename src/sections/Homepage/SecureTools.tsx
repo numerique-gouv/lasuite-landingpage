@@ -1,7 +1,4 @@
-import { useEffect, useRef } from 'react'
-import Image, { StaticImageData } from 'next/image'
-import { Button } from '@/components/Button'
-import AddLinkIcon from '@mui/icons-material/AddLink'
+import Image from 'next/image'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoShield from '@/assets/bento/shield.png'

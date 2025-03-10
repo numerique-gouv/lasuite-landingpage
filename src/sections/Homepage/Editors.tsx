@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'

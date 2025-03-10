@@ -1,4 +1,4 @@
-import { PropsWithChildren, ReactElement } from 'react'
+import { PropsWithChildren } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 export const DoubleBlock = ({
