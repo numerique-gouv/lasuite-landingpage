@@ -21,7 +21,7 @@ const config: Omit<CmsConfig, 'backend'> = {
         locales: ['fr', 'de', 'en'],
         default_locale: 'fr',
       },
-      files: collections.fileCollections.map((c) => c.config),
+      files: collections?.fileCollections.map((c) => c.config),
     },
     ...collections.folderCollections.map((c) => c.config),
   ],

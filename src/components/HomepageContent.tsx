@@ -1,5 +1,4 @@
 import { Hero } from '@/sections/Hero'
-import { EntrySchema } from '@/cms/collections/homepage'
 import { Products } from '@/sections/Products'
 import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
 import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
@@ -17,7 +16,7 @@ import { useEffect } from 'react'
  * several data fields contain already-made HTML, so we use the <Raw> component
  * here to abstract this notion from lower-level components
  */
-export const HomepageContent = ({ data }: { data: EntrySchema }) => {
+export const HomepageContent = () => {
   useEffect(() => {
     if (!window.$crisp) {
       window.$crisp = []
