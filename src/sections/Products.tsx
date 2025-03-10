@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { ContentSection } from '@/components/ContentSection'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { DINUM_PRODUCTS } from '@/utils/products'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 const DINUM_PRODUCTS_GRID = [
   'Tchap',

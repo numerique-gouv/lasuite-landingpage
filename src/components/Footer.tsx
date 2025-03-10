@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Br } from '@/components/Br'
 import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 import { useTranslations } from '@/locales/useTranslations'
 

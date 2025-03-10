@@ -1,7 +1,5 @@
-import { useEffect, useRef } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { Button } from '@/components/Button'
-import VisioIcon from '@/assets/icons/visio.svg'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoSuiteTerritoriale from '@/assets/bento/suite-territoriale.png'

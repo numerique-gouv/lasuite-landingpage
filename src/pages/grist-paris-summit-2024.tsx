@@ -1,10 +1,4 @@
-import {
-  Children,
-  cloneElement,
-  HTMLAttributes,
-  ReactNode,
-  useEffect,
-} from 'react'
+import { ReactNode, useEffect } from 'react'
 import { Layout } from '@/components/Layout'
 import { ContentSection } from '@/components/ContentSection'
 import { DoubleBlock } from '@/sections/DoubleBlock'

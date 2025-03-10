@@ -1,5 +1,4 @@
-import { useEffect, useRef } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { Button } from '@/components/Button'
 import WelcomeToLaSuite from '@/assets/welcometolasuite.png'
 import SuiteNumeriqueLogo from '@/assets/logo/suite-numerique.svg'

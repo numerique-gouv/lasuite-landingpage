@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import GristGouvLogo from '@/assets/grist-summit/gristgouv-hex.svg'
 import Image from 'next/image'
 import { Button } from '@/components/Button'

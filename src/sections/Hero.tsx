@@ -1,8 +1,6 @@
-import Image, { StaticImageData } from 'next/image'
-import { Callout } from '@/components/Callout'
+import Image from 'next/image'
 import { TITLE_SITE } from '@/constant'
 import HeroHome from '@/assets/hero-home.png'
-import type { ReactElement } from 'react'
 import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = () => {
