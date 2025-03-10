@@ -10,6 +10,16 @@
         <priority>1.00</priority>
     </url>
     <url>
+        <loc>https://lasuite.numerique.gouv.fr/grist-paris-summit-2024</loc>
+        <lastmod>2025-03-05T18:34:54+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://lasuite.numerique.gouv.fr/services/grist</loc>
+        <lastmod>2025-03-05T18:34:54+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
         <loc>https://lasuite.numerique.gouv.fr/mentions-legales</loc>
         <lastmod>2024-03-05T18:34:54+00:00</lastmod>
         <priority>0.10</priority>
