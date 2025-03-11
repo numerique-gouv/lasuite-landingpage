@@ -57,7 +57,8 @@ For each content type, you can create a `__test__.yml` file that is ignored from
 
 ## Contributing
 
-This project is intended to be community-driven, so please, do not hesitate to get in touch if you have any question related to our implementation or design decisions.
+You're willing to contribute to this project? Great ✨! Take a look at our [contribution guide](/CONTRIBUTING.md)
+and don't hesitate to get in touch to ask questions or share feedback.
 
 ## License
 
