@@ -1,0 +1,81 @@
+enabled: false
+slug: services-en-beta
+title: C'est quoi ce logo "beta" sur vos services ?
+body: >
+  ## C'est quoi ce logo "beta" sur vos services ?
+
+
+  Certains services de la Suite Numérique sont affichés en "beta". Ce statut peut être une manière de prévenir les utilisateurs de plusieurs choses :
+
+
+  *   le service n'a pas encore effectué d'homologation de sécurité
+
+  *   le service n'offre aucune garantie de disponibilité et il n'est pas recommandé de l'utiliser pour des cas d'usages pour lesquels une indisponibilité de quelques heures, voire jours aurait un impact opérationnel élevé
+
+  *   le service n'est pas encore pérennisé budgétairement ou politiquement pour les années à venir, et la DINUM se réserve le droit de l'arrêter dans un délai relativement court sans solution de repli. [plutot "sans alternative opérée par la DINUM"]
+
+
+  En pratique, ce tag peut cacher des réalités différentes en termes de garanties de sécurité, de disponibilité, et de pérennité du service (voir tableau récapitulatif ci-dessous).
+
+
+  ## Comment un service peut-il sortir de "beta" ?
+
+
+  Un service sort de "beta" quand ces 4 conditions sont réunies :
+
+
+  *   🔏 il a fait l'objet d'une **homologation de sécurité** à jour
+
+  *   🟢 il offre des **garanties de disponibilité **(variables selon le contexte des cas d'usages couverts par l'outil)** **et les **affiche clairement**
+
+  *   🌳 la DINUM **pense le développement de ce service sur le long-terme** et s'engage à ne pas le débrancher sans prévenir les utilisateurs dans un délai clairement affiché [et suffisamment long ? X mois ?]
+
+  *   🔁 la DINUM s'engage à **permettre un export des données dans un format ouvert** en cas de fermeture du service
+
+  *   🫴 la DINUM s'engage à **fournir du support** aux utilisateurs, soit directement, soit indirectement en animant des canaux de support (via Tchap ou autre)
+
+
+  ## Ou en est chaque produit ?
+
+
+  |                  |                                     |                                |                                                            |                       |                      |
+
+  | ---------------- | ----------------------------------- | ------------------------------ | ---------------------------------------------------------- | --------------------- | -------------------- |
+
+  | **Produit**      | **Homologation de sécurité à jour** | **Garanties de disponibilité** | **Date de mise en production**                             | **Exports possibles** | **Sortie de beta ?** |
+
+  | Tchap            | Oui                                 | 4h les jours ouvrés            | 2018                                                       | txt, json, html       | ✅                    |
+
+  | France Transfert | Oui                                 | Best effort                    | 2020                                                       | N/A                   | ✅                    |
+
+  | Grist            | Oui                                 | Best effort                    | Aout 2022 (instance ANCT) et février 2023 (instance DINUM) | csv, sqlite           | septembre 2025 ?     |
+
+  | Docs             | Non                                 | Best effort                    | 2024                                                       | json, pdf             | ?                    |
+
+  | Visio            | En cours                            | Best effort                    | 2024                                                       | N/A                   | ?                    |
+
+  | Messagerie       | Oui ?                               | Best effort                    | 2024                                                       | imap                  | ?                    |
+
+
+  ## Remarques Bastien
+
+
+  *   Un point de vocabulaire mais pas que : *produit* ou *service* ? De mon point de vue, le "produit" c'est ce que d'autres peuvent déployer ; le service, c'est l'instance DINUM *.numerique.gouv.fr. ✅
+
+
+  *   Une fois cela dit : la question du statut "beta" se pose différemment pour le produit et le service.
+
+      *   Pour le produit, passer hors beta (> v1.0.0) signifie que les mainteneurs s'engagent à ce qu'il n'y ait pas de changements incompatibles sur les fonctionnalités core ; je ne crois pas que ça ait une autre signification (d'engagement dans le temps, par exemple).
+
+      *   Pour le service (je suppose que c'est de ça qu'il s'agit ici), voici mes remarques :
+
+          *   "homologation de sécurité" : plutôt dire "son homologation de sécurité est à jour"
+          *   "garanties de disponibilités" : je proposerais plutôt de dire que ces garanties sont connues ("satisfaisantes" ouvre la porte à des appréciations divergentes)
+          *   engagement : pareil, le critère ici consiste à dire que la DINUM est capable j'indiquer une durée d'engagement minimale (que ce soit un an, deux ans ou autre)
+          *   "alternative pour leurs données" : j'en ferais un 4ème critère de réversibilité du genre "la DINUM s'engage à aider à la migration des données vers un autre service en cas de fermeture" (cf. le travail sur OSMOSE) --> Arnaud pense que c'est pas top comme critère car en vrai on le fera pas --> j'ai essayé de mieux formuler
+          *   "support" : peut-être un 5ème critère : la DINUM s'engage à fournir du support aux utilisateurs, soit directement, soit indirectement en animant des canaux de support (via Tchap ou autre)
+
+  **Retours Arnaud**
+
+
+  *   attention a ce que les règles qu'on se donne ne refassent pas tomber des produits en beta (FranceTransfert, Tchap)
