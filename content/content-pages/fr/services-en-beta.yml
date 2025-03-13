@@ -55,27 +55,3 @@ body: >
   | Visio            | En cours                            | Best effort                    | 2024                                                       | N/A                   | ?                    |
 
   | Messagerie       | Oui ?                               | Best effort                    | 2024                                                       | imap                  | ?                    |
-
-
-  ## Remarques Bastien
-
-
-  *   Un point de vocabulaire mais pas que : *produit* ou *service* ? De mon point de vue, le "produit" c'est ce que d'autres peuvent déployer ; le service, c'est l'instance DINUM *.numerique.gouv.fr. ✅
-
-
-  *   Une fois cela dit : la question du statut "beta" se pose différemment pour le produit et le service.
-
-      *   Pour le produit, passer hors beta (> v1.0.0) signifie que les mainteneurs s'engagent à ce qu'il n'y ait pas de changements incompatibles sur les fonctionnalités core ; je ne crois pas que ça ait une autre signification (d'engagement dans le temps, par exemple).
-
-      *   Pour le service (je suppose que c'est de ça qu'il s'agit ici), voici mes remarques :
-
-          *   "homologation de sécurité" : plutôt dire "son homologation de sécurité est à jour"
-          *   "garanties de disponibilités" : je proposerais plutôt de dire que ces garanties sont connues ("satisfaisantes" ouvre la porte à des appréciations divergentes)
-          *   engagement : pareil, le critère ici consiste à dire que la DINUM est capable j'indiquer une durée d'engagement minimale (que ce soit un an, deux ans ou autre)
-          *   "alternative pour leurs données" : j'en ferais un 4ème critère de réversibilité du genre "la DINUM s'engage à aider à la migration des données vers un autre service en cas de fermeture" (cf. le travail sur OSMOSE) --> Arnaud pense que c'est pas top comme critère car en vrai on le fera pas --> j'ai essayé de mieux formuler
-          *   "support" : peut-être un 5ème critère : la DINUM s'engage à fournir du support aux utilisateurs, soit directement, soit indirectement en animant des canaux de support (via Tchap ou autre)
-
-  **Retours Arnaud**
-
-
-  *   attention a ce que les règles qu'on se donne ne refassent pas tomber des produits en beta (FranceTransfert, Tchap)
