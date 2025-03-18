@@ -49,6 +49,8 @@ export const DINUM_PRODUCTS: Record<
     logo: StaticImageData
     screenshot?: StaticImageData
     screenshotMobile?: StaticImageData
+    screenshotEn?: StaticImageData
+    screenshotMobileEn?: StaticImageData
     keepRawScreenshot?: boolean
     name?: string
     url?: string
