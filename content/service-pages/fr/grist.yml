@@ -18,7 +18,7 @@ flexible_content:
     cta:
       target_blank: true
       label: Nous contacter
-      href: mailto:contact@grist.numerique.gouv.fr
+      href: mailto:grist@numerique.gouv.fr
     bg: auto
     title: Une question ? Une remarque ? Contactez-nous par email !
   - type: cta
