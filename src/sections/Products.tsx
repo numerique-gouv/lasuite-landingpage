@@ -76,7 +76,7 @@ export const Products = () => {
                      `}
                     src={
                       locale === 'en'
-                        ? DINUM_PRODUCTS[name]?.screenshotEn
+                        ? DINUM_PRODUCTS[name]?.screenshotEn ?? ''
                         : DINUM_PRODUCTS[name]?.screenshot ?? ''
                     }
                   />
@@ -100,7 +100,7 @@ export const Products = () => {
                      `}
                     src={
                       locale === 'en'
-                        ? DINUM_PRODUCTS[name]?.screenshotMobileEn
+                        ? DINUM_PRODUCTS[name]?.screenshotMobileEn ?? ''
                         : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''
                     }
                   />
