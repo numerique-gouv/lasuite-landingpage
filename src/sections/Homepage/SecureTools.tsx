@@ -2,8 +2,11 @@ import Image from 'next/image'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoShield from '@/assets/bento/shield.png'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const SecureTools = () => {
+  const t = useTranslations()
+
   return (
     <ContentSection>
       <div className="grid md:grid-cols-5 md:gap-8 md:mb-14">
@@ -15,14 +18,9 @@ export const SecureTools = () => {
         />
         <div className="md:col-span-3">
           <Paragraph
-            tag="Sécurité"
-            title="Outils sécurisés"
-            description={`Les agents bénéficient d'un environnement de travail 
-              sécurisé, avec l'assurance que leurs données sont stockées en France.
-              Les outils de La Suite sont conçus avec la sécurité comme priorité, assurant 
-              une protection maximale de vos données sensibles. Hébergés uniquement sur des 
-              infrastructures SecNumCloud certifiées par l'ANSSI, les applications garantissent 
-              un niveau de sécurité optimal dans le respect de la souveraineté numérique française.`}
+            tag={t('homepage.secure_tools.tag')}
+            title={t('homepage.secure_tools.title')}
+            description={t('homepage.secure_tools.description')}
           />
         </div>
       </div>

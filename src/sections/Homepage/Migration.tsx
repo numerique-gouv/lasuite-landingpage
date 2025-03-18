@@ -4,6 +4,7 @@ import VisioIconWhite from '@/assets/products/visio-white.svg'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoLasuite from '@/assets/bento/suite-numerique.png'
+import { useTranslations } from '@/locales/useTranslations'
 
 const VisioLogoIcon = () => {
   return (
@@ -21,6 +22,8 @@ const VisioLogoIcon = () => {
 }
 
 export const Migration = () => {
+  const t = useTranslations()
+
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">
@@ -32,23 +35,17 @@ export const Migration = () => {
         />
 
         <div className="md:order-first">
-          <Paragraph tag="Migration" title="Passez à La Suite&nbsp;!">
-            Vous souhaitez équiper vos agents des outils de La Suite ? Nos
-            experts vous accompagnent dans l'intégration de nos applications au
-            sein de votre système d'information, de la mise en place des
-            prérequis jusqu'à l'harmonisation avec vos outils actuels.
-            <br />
-            <br />
-            Réservez une démonstration personnalisée pour découvrir nos
-            solutions. Nos experts répondront à vos questions techniques et vous
-            présenteront notre feuille de route.
+          <Paragraph 
+            tag={t('homepage.migration.tag')}
+            title={t('homepage.migration.title')}>
+            <p dangerouslySetInnerHTML={{ __html: t('homepage.migration.description') }} />
           </Paragraph>
           <Button
             href="https://grist.numerique.gouv.fr/o/docs/forms/9pCcc1QTyMmDq93YGQP2xF/49"
             icon={<VisioLogoIcon />}
             iconPosition="left"
           >
-            Réserver une démo
+            {t('homepage.migration.button')}
           </Button>
         </div>
       </div>

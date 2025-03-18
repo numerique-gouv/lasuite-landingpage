@@ -1,9 +1,12 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
+
 import { ContentSection } from '@/components/ContentSection'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { DINUM_PRODUCTS } from '@/utils/products'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import { useTranslations } from '@/locales/useTranslations'
 
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
@@ -15,6 +18,9 @@ const DINUM_PRODUCTS_GRID = [
 ]
 
 export const Products = () => {
+  const t = useTranslations()
+  const { locale } = useRouter()
+
   const [activeItem, setActiveItem] = useState({ index: 0, name: 'Tchap' })
 
   const handleClick = (index: number, name: string): void => {
@@ -68,7 +74,7 @@ export const Products = () => {
                     className={`w-full h-full object-cover
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
-                    src={DINUM_PRODUCTS[name]?.screenshot ?? ''}
+                    src={locale === 'en' ? DINUM_PRODUCTS[name]?.screenshotEn : DINUM_PRODUCTS[name]?.screenshot ?? ''}
                   />
                 </div>
               )
@@ -88,7 +94,7 @@ export const Products = () => {
                     className={`w-full rounded-xl h-full object-cover
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
-                    src={DINUM_PRODUCTS[name]?.screenshotMobile ?? ''}
+                    src={locale === 'en' ? DINUM_PRODUCTS[name]?.screenshotMobileEn : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''}
                   />
                 </div>
               )
@@ -113,7 +119,7 @@ export const Products = () => {
                 )}
               </div>
               <p className="font-medium">
-                {DINUM_PRODUCTS[activeItem.name].description}
+                {t(`homepage.slider_products.${activeItem.name}.description`)}
               </p>
             </div>
 
@@ -123,7 +129,7 @@ export const Products = () => {
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
               >
-                Découvrir {DINUM_PRODUCTS[activeItem.name].name}
+                {t('homepage.slider_products.button')} {DINUM_PRODUCTS[activeItem.name].name}
               </Button>
             </div>
           </div>

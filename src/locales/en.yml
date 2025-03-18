@@ -38,5 +38,54 @@ service_landing_page:
   suite_numerique:
     body: '{title}, a {la_suite} service'
 homepage:
-  anct_partners_alt: Contributors of La Suite Territoriale
-  hero_img_alt: La Suite numérique is a collaboration platform available on smartphones, tablets and computers
+  hero:
+    title: 'The sovereign workspace'
+    description: 'Create. Organize. Collaborate. An open-source environment designed for the public sector and open to the commons.'
+  slider_products:
+    'Tchap':
+      description: 'Secure instant messaging to communicate wherever you are.'
+    'France Transfert':
+      description: 'The secure service for sending and receiving large files.'
+    'Grist':
+      description: 'The modern and collaborative spreadsheet that goes beyond the grid.'
+    'Docs':
+      description: 'The collaborative text editor that prioritizes content over formatting.'
+    'Visio':
+      description: 'Simple and effective videoconferencing to communicate and collaborate.'
+    'Messagerie':
+      description: 'The professional messaging for civil servants.'
+    button: 'Discover'
+  portal_proconnect:
+    tag: 'Unique portal'
+    description: "Simplify your daily life with ProConnect! Access La Suite and all your digital services with a unique and secure identity. ProConnect manages your connections so you can focus on what matters.\n\nEditors: ProConnect helps you accelerate your growth. Easy to integrate, our solution connects you to a dynamic digital ecosystem and allows you to participate in the digital transformation of the state."
+    button: 'I integrate ProConnect into my service'
+  ecosystem:
+    tag: State services
+    title: The ProConnect ecosystem
+    description: Continue using state services with ProConnect. Résana, Webinar, Webconf, Audioconf... So many powerful tools at your fingertips that wonderfully complement La Suite.
+    resana_bento: BentoResana
+  editors:
+    tag: Editors
+    title: 'It doesn’t stop there !'
+    description: Major players in the French digital landscape, such as Whaller, also use ProConnect. This secure collaborative platform has integrated our authentication solution to provide its users with a simplified and secure connection experience while maintaining high data protection standards.
+  secure_tools:
+    tag: Security
+    title: Secure tools
+    description: Civil servants benefit from a secure work environment, with the assurance that their data is stored in France.  
+      The tools of La Suite are designed with security as a priority, ensuring maximum protection of your sensitive data. Hosted only on SecNumCloud certified infrastructures by ANSSI, the applications guarantee an optimal level of security in compliance with French digital sovereignty.
+  migration:
+    tag: Migration
+    title: Passez à La Suite !
+    description: Do you want to equip your civil servant with the tools of La Suite? Our experts will assist you in integrating our applications into your information system, from establishing prerequisites to harmonizing with your current tools.  
+      <br /><br />
+      Reserve a personalized demonstration to discover our solutions. Our experts will answer your technical questions and present our roadmap. 
+    button: Book a demo
+  suite_territoriale:
+    tag: Territories
+    title: Also for local authorities
+    description: "The ANCT offers a selection of digital services to municipalities with fewer than <strong>3,500 inhabitants </strong> and EPCI with fewer than <strong>15,000 inhabitants.</strong> It is deployed with ProConnect among professionals in the local public sector. Any local authority <strong>affiliated with a partner OPSN</strong> can also benefit from the services of La Suite Terriroriale."
+    button: Discover La Suite Terriroriale
+  footer:
+    description: Use La Suite today!
+    contact_button: Chat with us
+    newsletter_button: Subscribe to the newsletter

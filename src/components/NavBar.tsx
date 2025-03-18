@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { LaGaufre } from '@/components/LaGaufre'
-import { LocaleSwitcher } from './LocaleSwitcher'
+import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import LogoSvg from '@/assets/logo/suite-numerique.svg'
 import LogoGouvSvg from '@/assets/logo/gouv.svg'
 import Image from 'next/image'
@@ -29,8 +29,10 @@ export const NavBar = () => {
             />
           </Link>
         </div>
-        <div className="absolute items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
-          <LocaleSwitcher />
+        <div className="absolute flex items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
+          <div className="hidden md:block">
+            <LocaleSwitcher />
+          </div>
           <LaGaufre />
         </div>
       </div>

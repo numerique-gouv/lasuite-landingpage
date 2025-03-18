@@ -3,6 +3,7 @@ import { Button } from '@/components/Button'
 import WelcomeToLaSuite from '@/assets/welcometolasuite.png'
 import SuiteNumeriqueLogo from '@/assets/logo/suite-numerique.svg'
 import { NEWSLETTER_FORM } from '@/constant'
+import { useTranslations } from '@/locales/useTranslations'
 
 import { ContentSection } from '@/components/ContentSection'
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined'
@@ -10,9 +11,9 @@ import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined'
 
 export const FooterLaSuite = () => {
   const urlForm = NEWSLETTER_FORM
+  const t = useTranslations()
 
   const openCrisp = () => {
-    console.log('coucou')
     if (window.$crisp) {
       window.$crisp.push(['do', 'chat:open'])
     }
@@ -37,7 +38,7 @@ export const FooterLaSuite = () => {
         </div>
 
         <p className="my-7 font-medium">
-          Utilisez La Suite Numérique dès aujourd’hui&nbsp;!
+           {t('homepage.footer.description')}
         </p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
@@ -47,7 +48,7 @@ export const FooterLaSuite = () => {
             icon={<ChatOutlinedIcon />}
             iconPosition="left"
           >
-            Discuter avec nous
+            {t('homepage.footer.contact_button')}
           </Button>
 
           <Button
@@ -55,7 +56,7 @@ export const FooterLaSuite = () => {
             icon={<ArticleOutlinedIcon />}
             iconPosition="left"
           >
-            S’abonner à la newsletter
+            {t('homepage.footer.newsletter_button')}
           </Button>
         </div>
       </div>

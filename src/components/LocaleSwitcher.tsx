@@ -23,7 +23,7 @@ export const LocaleSwitcher = () => {
             locale: event.currentTarget.value,
           })
         }}
-        className="bg-white p-3 pl-9 font-bold outline-grey-4 text-blue-1 hover:backdrop-brightness-95 hover:bg-dsfr-grey-0 shadow-[0_0_1px_1px_#ddd] bg-no-repeat"
+        className="bg-white p-2 pl-9 font-bold outline-grey-4 text-blue-1 hover:bg-dsfr-grey-0 bg-no-repeat"
         style={{
           backgroundImage: `url(${LogoI18n.src})`,
           backgroundPosition: '0.75rem center',
