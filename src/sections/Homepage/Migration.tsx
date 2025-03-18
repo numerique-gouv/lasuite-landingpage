@@ -35,10 +35,15 @@ export const Migration = () => {
         />
 
         <div className="md:order-first">
-          <Paragraph 
+          <Paragraph
             tag={t('homepage.migration.tag')}
-            title={t('homepage.migration.title')}>
-            <p dangerouslySetInnerHTML={{ __html: t('homepage.migration.description') }} />
+            title={t('homepage.migration.title')}
+          >
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('homepage.migration.description'),
+              }}
+            />
           </Paragraph>
           <Button
             href="https://grist.numerique.gouv.fr/o/docs/forms/9pCcc1QTyMmDq93YGQP2xF/49"

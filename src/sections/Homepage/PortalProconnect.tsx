@@ -20,7 +20,10 @@ export const PortalProconnect = () => {
           src={ProConnectIllustration}
         />
         <div>
-          <Paragraph tag={t('homepage.portal_proconnect.tag')} title="ProConnect">
+          <Paragraph
+            tag={t('homepage.portal_proconnect.tag')}
+            title="ProConnect"
+          >
             {t('homepage.portal_proconnect.description')}
           </Paragraph>
           <Button

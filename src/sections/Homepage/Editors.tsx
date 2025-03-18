@@ -10,7 +10,7 @@ import { useTranslations } from '@/locales/useTranslations'
 export const Editors = () => {
   const t = useTranslations()
   const { locale } = useRouter()
-  
+
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8 md:mb-14">

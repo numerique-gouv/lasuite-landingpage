@@ -74,7 +74,11 @@ export const Products = () => {
                     className={`w-full h-full object-cover
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
-                    src={locale === 'en' ? DINUM_PRODUCTS[name]?.screenshotEn : DINUM_PRODUCTS[name]?.screenshot ?? ''}
+                    src={
+                      locale === 'en'
+                        ? DINUM_PRODUCTS[name]?.screenshotEn
+                        : DINUM_PRODUCTS[name]?.screenshot ?? ''
+                    }
                   />
                 </div>
               )
@@ -94,7 +98,11 @@ export const Products = () => {
                     className={`w-full rounded-xl h-full object-cover
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
-                    src={locale === 'en' ? DINUM_PRODUCTS[name]?.screenshotMobileEn : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''}
+                    src={
+                      locale === 'en'
+                        ? DINUM_PRODUCTS[name]?.screenshotMobileEn
+                        : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''
+                    }
                   />
                 </div>
               )
@@ -129,7 +137,8 @@ export const Products = () => {
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
               >
-                {t('homepage.slider_products.button')} {DINUM_PRODUCTS[activeItem.name].name}
+                {t('homepage.slider_products.button')}{' '}
+                {DINUM_PRODUCTS[activeItem.name].name}
               </Button>
             </div>
           </div>

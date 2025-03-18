@@ -37,9 +37,7 @@ export const FooterLaSuite = () => {
           />
         </div>
 
-        <p className="my-7 font-medium">
-           {t('homepage.footer.description')}
-        </p>
+        <p className="my-7 font-medium">{t('homepage.footer.description')}</p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
           <Button

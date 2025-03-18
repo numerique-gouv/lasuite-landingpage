@@ -20,8 +20,13 @@ export const SuiteTerritoriale = () => {
         <div className="md:col-span-1">
           <Paragraph
             tag={t('homepage.suite_territoriale.tag')}
-            title={t('homepage.suite_territoriale.title')}>
-            <p dangerouslySetInnerHTML={{ __html: t('homepage.suite_territoriale.description') }} />
+            title={t('homepage.suite_territoriale.title')}
+          >
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('homepage.suite_territoriale.description'),
+              }}
+            />
           </Paragraph>
           <Button
             href="https://suiteterritoriale.anct.gouv.fr/"
