@@ -54,7 +54,7 @@ export const NavBar = () => {
         className={`fixed md:hidden top-[67px] left-0 h-full w-full bg-white will-change-transform z-50 shadow-md transform transition-all ease-in-out duration-300
             ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div class="text-center mt-8">
+        <div className="text-center mt-8">
           <LocaleSwitcher />
         </div>
       </div>
