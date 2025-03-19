@@ -22,11 +22,15 @@ export const NavBar = () => {
       <div className="flex items-center">
         <div className="flex items-center gap-4 md:hidden">
           <button
-            className="absolute text-blue-1 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none focus:bg-greyscale-050"
+            className="w-[48px] h-[48px] absolute text-blue-1 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none focus:bg-greyscale-050"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           >
-            {isOpen ? <CloseIcon /> : <MenuIcon />}
+            {isOpen ? (
+              <CloseIcon className="text-3xl" />
+            ) : (
+              <MenuIcon className="text-3xl" />
+            )}
           </button>
         </div>
         <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 items-center fr-enlarge-link">
