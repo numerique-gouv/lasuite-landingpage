@@ -17,7 +17,7 @@ interface ButtonProps {
 
 const transition = 'transition ease-in-out delay-50 duration-300'
 const core =
-  'flex rounded justify-center align-middle items-center py-2.5 px-5 min-h-10 text-base w-fit text-center gap-2'
+  'flex rounded justify-center align-middle items-center py-2.5 px-5 min-h-10 text-base w-fit text-left gap-2'
 
 export const buttonStyles = {
   default: `${core} ${transition} font-medium text-white bg-blue-1 hover:bg-dsfr-blue-2`,

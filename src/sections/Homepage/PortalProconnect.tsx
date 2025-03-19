@@ -1,14 +1,18 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+
 import { Button } from '@/components/Button'
 import AddLinkIcon from '@mui/icons-material/AddLink'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import ProConnectIllustration from '@/assets/bento-proconnect.png'
+import ProConnectIllustrationEn from '@/assets/bento-proconnect-en.png'
 
 import { useTranslations } from '@/locales/useTranslations'
 
 export const PortalProconnect = () => {
   const t = useTranslations()
+  const { locale } = useRouter()
 
   return (
     <ContentSection>
@@ -17,7 +21,9 @@ export const PortalProconnect = () => {
           loading="lazy"
           alt=""
           className="w-full"
-          src={ProConnectIllustration}
+          src={
+            locale === 'en' ? ProConnectIllustrationEn : ProConnectIllustration
+          }
         />
         <div>
           <Paragraph
