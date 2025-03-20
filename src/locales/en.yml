@@ -73,7 +73,7 @@ homepage:
     title: Secure tools
     description:
       Civil servants benefit from a secure work environment, with the assurance that their data is stored in France.
-      The tools of La Suite are designed with security as a priority, ensuring maximum protection of your sensitive data. Hosted only on SecNumCloud certified infrastructures by ANSSI, the applications guarantee an optimal level of security in compliance with French digital sovereignty.
+      The tools of La Suite are designed with security as a priority, ensuring maximum protection of your sensitive data. Hosted only on SecNumCloud certified infrastructures by ANSSI (French National Agency for the Security of Information Systems), the applications guarantee an optimal level of security in compliance with French digital sovereignty.
   migration:
     tag: Migration
     title: Passez à La Suite!
@@ -85,7 +85,7 @@ homepage:
   suite_territoriale:
     tag: Territories
     title: Also for local authorities
-    description: 'The ANCT offers a selection of digital services to municipalities with fewer than <strong>3,500 inhabitants </strong> and EPCI with fewer than <strong>15,000 inhabitants.</strong> It is deployed with ProConnect among professionals in the local public sector. Any local authority <strong>affiliated with a partner OPSN</strong> can also benefit from the services of La Suite Terriroriale.'
+    description: 'The ANCT offers a selection of digital services to municipalities with fewer than <strong>3,500 inhabitants </strong> with fewer than <strong>15,000 inhabitants.</strong> It is deployed with ProConnect among professionals in the local public sector. Any local authority <strong>affiliated with a partner OPSN</strong> can also benefit from the services of La Suite Terriroriale.'
     button: Discover La Suite Terriroriale
   footer:
     description: Use La Suite today!
