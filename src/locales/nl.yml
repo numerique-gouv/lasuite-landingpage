@@ -1,0 +1,91 @@
+common:
+  la_suite: La Suite numérique
+  la_suite_territoriale: La Suite Territoriale
+  new_window: Nieuw venster
+  know_more: Meer weten
+  back_to_home: Terug naar de startpagina
+head:
+  homepage_og_title: Werk met de digitale Suite
+  meta_desc: De digitale Suite brengt alle agenten en professionals in de publieke sector samen.
+header:
+  tagline: Een efficiënte, eenvoudige en soevereine staat dankzij digitale technologie
+  locale_switcher_alt: Taal wijzigen
+footer:
+  license:
+    Tenzij anders vermeld, zijn de inhoud van deze site beschikbaar onder de
+    {license}.
+  etalab: etalab-2.0 licentie
+  accessiblity: Toegankelijkheid
+  legal: Juridische informatie
+  privacy_policy: Privacybeleid
+not_found_page:
+  title: Ooops!
+  body: De pagina die u zoekt bestaat niet.
+  try_default_locale: U kunt het proberen met {link}.
+  default_locale_link: deze pagina in het Frans bekijken
+service_landing_page:
+  screenshot_block:
+    image_alt: Bekijk de afbeelding in detail
+  newsletter:
+    title: Abonneer u op onze nieuwsbrief
+    button: Abonneren
+    button_alt: Abonneer op de nieuwsbrief
+  social_networks:
+    body: Volg ons {linebreak} op sociale netwerken
+    link: Volg ons op {network}
+  suite_numerique:
+    body: '{title}, een dienst van {la_suite}'
+homepage:
+  hero:
+    title: 'De soevereine werkruimte'
+    description: 'Creëren. Organiseren. Samenwerken. Een open-source omgeving ontworpen voor de publieke sector en open voor het algemeen belang.'
+  slider_products:
+    'Tchap':
+      description: 'Veilige instant messaging om overal te communiceren.'
+    'France Transfert':
+      description: 'De veilige dienst voor het verzenden en ontvangen van grote bestanden.'
+    'Grist':
+      description: 'De moderne en collaboratieve spreadsheet die verder gaat dan een raster.'
+    'Docs':
+      description: 'De collaboratieve teksteditor die inhoud boven opmaak plaatst.'
+    'Visio':
+      description: 'Eenvoudige en effectieve videoconferenties voor communicatie en samenwerking.'
+    'Messagerie':
+      description: 'De professionele e-mailoplossing voor ambtenaren.'
+    button: 'Ontdek'
+  portal_proconnect:
+    tag: 'Uniek portaal'
+    description: "Vereenvoudig uw dagelijks leven met ProConnect! Toegang tot de digitale Suite en al uw digitale diensten met een unieke en veilige identiteit. ProConnect beheert uw verbindingen zodat u zich kunt richten op wat belangrijk is.\n\nUitgevers: ProConnect helpt u uw groei te versnellen. Onze eenvoudig te integreren oplossing verbindt u met een dynamisch digitaal ecosysteem en stelt u in staat deel te nemen aan de digitale transformatie van de staat."
+    button: 'Ik integreer ProConnect in mijn dienst'
+  ecosystem:
+    tag: Overheidsdiensten
+    title: Het ProConnect-ecosysteem
+    description: Blijf overheidsdiensten gebruiken met ProConnect. Résana, Webinaire, Webconf, Audioconf... Zo veel krachtige tools binnen handbereik die de digitale Suite perfect aanvullen.
+    resana_bento: BentoResana
+  editors:
+    tag: Uitgevers
+    title: 'Daar stopt het niet!'
+    description: Grote spelers in het Franse digitale landschap, zoals Whaller, gebruiken ook ProConnect. Dit veilige samenwerkingsplatform heeft onze authenticatie-oplossing geïntegreerd om gebruikers een vereenvoudigde en veilige inlogervaring te bieden, terwijl hoge normen voor gegevensbescherming worden gehandhaafd.
+  secure_tools:
+    tag: Beveiliging
+    title: Veilige tools
+    description:
+      Ambtenaren profiteren van een veilige werkomgeving met de garantie dat hun gegevens in Frankrijk worden opgeslagen.
+      De tools van de digitale Suite zijn ontworpen met beveiliging als prioriteit, waardoor maximale bescherming van uw gevoelige gegevens wordt gegarandeerd. Ze worden uitsluitend gehost op SecNumCloud-gecertificeerde infrastructuren door ANSSI (Franse Nationale Agentschap voor de Beveiliging van Informatiesystemen) en bieden een optimaal beveiligingsniveau in overeenstemming met de Franse digitale soevereiniteit.
+  migration:
+    tag: Migratie
+    title: Stap over op de digitale Suite!
+    description:
+      Wilt u uw ambtenaren uitrusten met de tools van de digitale Suite? Onze experts helpen u bij de integratie van onze applicaties in uw informatiesysteem, van de eerste vereisten tot de harmonisatie met uw huidige tools.
+      <br /><br />
+      Reserveer een gepersonaliseerde demonstratie om onze oplossingen te ontdekken. Onze experts beantwoorden uw technische vragen en presenteren onze roadmap.
+    button: Demo boeken
+  suite_territoriale:
+    tag: Regio's
+    title: Ook voor lokale overheden
+    description: 'De ANCT biedt een selectie van digitale diensten aan gemeenten met minder dan <strong>3.500 inwoners</strong> of met minder dan <strong>15.000 inwoners</strong>. Deze diensten worden met ProConnect ingezet bij professionals in de lokale publieke sector. Elke lokale overheid die <strong>is aangesloten bij een partner OPSN</strong> kan ook profiteren van de diensten van de Territoriale Suite.'
+    button: Ontdek de Territoriale Suite
+  footer:
+    description: Gebruik de digitale Suite vandaag nog!
+    contact_button: Chat met ons
+    newsletter_button: Abonneer op de nieuwsbrief
