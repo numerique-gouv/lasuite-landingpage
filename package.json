@@ -23,6 +23,7 @@
     "@emotion/styled": "^11.14.0",
     "@gouvfr-lasuite/integration": "1.0.1",
     "@gouvfr/dsfr": "^1.13.0",
+    "@headlessui/react": "^2.2.0",
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
     "classnames": "2.5.1",

@@ -3,8 +3,11 @@ import { Button } from '@/components/Button'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoSuiteTerritoriale from '@/assets/bento/suite-territoriale.png'
+import { useTranslations } from '@/locales/useTranslations'
 
 export const SuiteTerritoriale = () => {
+  const t = useTranslations()
+
   return (
     <ContentSection>
       <div className="grid md:grid-cols-2 md:gap-8">
@@ -16,23 +19,20 @@ export const SuiteTerritoriale = () => {
         />
         <div className="md:col-span-1">
           <Paragraph
-            tag="Territoires"
-            title="Des services essentiels pour les collectivités"
+            tag={t('homepage.suite_territoriale.tag')}
+            title={t('homepage.suite_territoriale.title')}
           >
-            <p>
-              L’ANCT propose une sélection de services numériques aux communes
-              de moins <strong>3 500 habitants</strong> et EPCI de moins de{' '}
-              <strong>15 000 habitants</strong>. Elle se déploie avec ProConnect
-              auprès des professionnels de la sphère publique territoriale.
-              Toute collectivité <strong>adhérente à un OPSN partenaire</strong>{' '}
-              pourra également bénéficier des services de la Suite territoriale.
-            </p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('homepage.suite_territoriale.description'),
+              }}
+            />
           </Paragraph>
           <Button
             href="https://suiteterritoriale.anct.gouv.fr/"
             iconPosition="left"
           >
-            Découvrir La Suite Territoriale
+            {t('homepage.suite_territoriale.button')}
           </Button>
         </div>
       </div>

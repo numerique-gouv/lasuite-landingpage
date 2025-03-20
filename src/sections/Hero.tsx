@@ -25,11 +25,10 @@ export const Hero = () => {
         </h1>
         <div className="mx-auto max-w-[80vw] md:max-w-[45vw]">
           <h2 className="text-greyscale-900 md:text-6xl text-5xl sm:leading-[52px] md:leading-[72px] font-bold text-center pb-4">
-            L’espace de travail souverain
+            {t('homepage.hero.title')}
           </h2>
           <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
-            Créez. Organisez. Collaborez. Un environnement open source, conçu
-            pour le secteur public et ouvert aux communs.
+            {t('homepage.hero.description')}
           </p>
         </div>
       </div>

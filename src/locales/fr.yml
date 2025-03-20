@@ -6,8 +6,7 @@ common:
   back_to_home: Retour à la page d’accueil
 head:
   homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
-  meta_desc:
-    Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs.
+  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs.
 header:
   tagline: Un État efficace, simple, souverain grâce au numérique
   locale_switcher_alt: Changer de langue
@@ -37,7 +36,70 @@ service_landing_page:
   suite_numerique:
     body: '{title}, un service de {la_suite}'
 homepage:
-  anct_partners_alt: Acteurs de La Suite Territoriale
-  hero_img_alt:
-    La Suite numérique est une suite d'outils disponible sur téléphones,
-    tablettes et ordinateurs
+  hero:
+    title: 'L’espace de travail souverain'
+    description:
+      'Créez. Organisez. Collaborez. Un environnement open source, conçu
+      pour le secteur public et ouvert aux communs.'
+  slider_products:
+    'Tchap':
+      description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
+    'France Transfert':
+      description: 'Le service sécurisé pour envoyer et recevoir des fichiers volumineux.'
+    'Grist':
+      description: 'Le tableur collaboratif pour structurer vos bases de données.'
+    'Docs':
+      description: L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.
+    'Visio':
+      description: 'La visioconférence simple et efficace pour communiquer et collaborer.'
+    'Messagerie':
+      description: 'La messagerie professionnelle des agents de l’État.'
+    button: 'Découvrir'
+  portal_proconnect:
+    tag: 'Unique portal'
+    description: "Simplifiez votre quotidien avec ProConnect ! Accédez à La Suite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."
+    button: J’intègre ProConnect à mon service
+  ecosystem:
+    tag: Services de l'État
+    title: L'écosystème ProConnect
+    description: Continuez à utiliser les services de l’État avec ProConnect. Résana, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent La Suite à merveille.
+  editors:
+    tag: Editeurs
+    title: Ça ne s'arrête pas là !
+    description: Des acteurs majeurs du numérique français comme Whaller utilisent aussi ProConnect. Ces plateformes collaboratives sécurisées ont intégré notre solution d'authentification pour offrir à leurs utilisateurs une expérience de connexion simplifiée et sécurisée, tout en maintenant leurs hauts standards de protection des données.
+  secure_tools:
+    tag: Sécurité
+    title: Outils sécurisés
+    description: Les agents bénéficient d'un environnement de travail
+      sécurisé, avec l'assurance que leurs données sont stockées en France.
+      Les outils de La Suite sont conçus avec la sécurité comme priorité, assurant
+      une protection maximale de vos données sensibles. Hébergés uniquement sur des
+      infrastructures SecNumCloud certifiées par l'ANSSI, les applications garantissent
+      un niveau de sécurité optimal dans le respect de la souveraineté numérique française.
+  migration:
+    tag: Migration
+    title: Passez à La Suite !
+    description: Vous souhaitez équiper vos agents des outils de La Suite ? Nos
+      experts vous accompagnent dans l'intégration de nos applications au
+      sein de votre système d'information, de la mise en place des
+      prérequis jusqu'à l'harmonisation avec vos outils actuels.
+      <br /><br />
+      Réservez une démonstration personnalisée pour découvrir nos
+      solutions. Nos experts répondront à vos questions techniques et vous
+      présenteront notre feuille de route.
+    button: Réserver une démo
+  suite_territoriale:
+    tag: Territoires
+    title: Des services essentiels pour les collectivités
+    description:
+      'L’ANCT propose une sélection de services numériques aux communes
+      de moins <strong>3 500 habitants</strong> et EPCI de moins de
+      <strong>15 000 habitants</strong>. Elle se déploie avec ProConnect
+      auprès des professionnels de la sphère publique territoriale.
+      Toute collectivité <strong>adhérente à un OPSN partenaire</strong>
+      pourra également bénéficier des services de la Suite territoriale.'
+    button: Découvrir La Suite Territoriale
+  footer:
+    description: Utilisez La Suite Numérique dès aujourd’hui !
+    contact_button: Discuter avec nous
+    newsletter_button: S’abonner à la newsletter
