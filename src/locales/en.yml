@@ -85,7 +85,7 @@ homepage:
   suite_territoriale:
     tag: Territories
     title: Also for local authorities
-    description: 'The ANCT offers a selection of digital services to municipalities with fewer than <strong>3,500 inhabitants </strong> with fewer than <strong>15,000 inhabitants.</strong> It is deployed with ProConnect among professionals in the local public sector. Any local authority <strong>affiliated with a partner OPSN</strong> can also benefit from the services of La Suite Terriroriale.'
+    description: 'The ANCT offers a selection of digital services to municipalities with fewer than <strong>15,000 inhabitants.</strong> It is deployed with ProConnect among professionals in the local public sector. Any local authority <strong>affiliated with a partner OPSN</strong> can also benefit from the services of La Suite Terriroriale.'
     button: Discover La Suite Terriroriale
   footer:
     description: Use La Suite today!
