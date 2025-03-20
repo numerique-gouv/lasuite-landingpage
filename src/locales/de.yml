@@ -6,8 +6,7 @@ common:
   back_to_home: Zurück zur Startseite
 head:
   homepage_og_title: Arbeiten mit der digitalen Suite
-  meta_desc:
-    Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
+  meta_desc: Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
 header:
   tagline: Ein effizienter, einfacher und souveräner Staat dank digitaler Technologie
   locale_switcher_alt: Sprache ändern

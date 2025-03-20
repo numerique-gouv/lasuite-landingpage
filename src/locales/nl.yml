@@ -6,8 +6,7 @@ common:
   back_to_home: Terug naar de startpagina
 head:
   homepage_og_title: Werk met de digitale Suite
-  meta_desc:
-    De digitale Suite brengt alle agenten en professionals in de publieke sector samen.
+  meta_desc: De digitale Suite brengt alle agenten en professionals in de publieke sector samen.
 header:
   tagline: Een efficiënte, eenvoudige en soevereine staat dankzij digitale technologie
   locale_switcher_alt: Taal wijzigen
