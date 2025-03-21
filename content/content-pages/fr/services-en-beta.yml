@@ -33,25 +33,3 @@ body: >
   *   🔁 la DINUM s'engage à **permettre un export des données dans un format ouvert** en cas de fermeture du service
 
   *   🫴 la DINUM s'engage à **fournir du support** aux utilisateurs, soit directement, soit indirectement en animant des canaux de support (via Tchap ou autre)
-
-
-  ## Ou en est chaque produit ?
-
-
-  |                  |                                     |                                |                                                            |                       |                      |
-
-  | ---------------- | ----------------------------------- | ------------------------------ | ---------------------------------------------------------- | --------------------- | -------------------- |
-
-  | **Produit**      | **Homologation de sécurité à jour** | **Garanties de disponibilité** | **Date de mise en production**                             | **Exports possibles** | **Sortie de beta ?** |
-
-  | Tchap            | Oui                                 | 4h les jours ouvrés            | 2018                                                       | txt, json, html       | ✅                    |
-
-  | France Transfert | Oui                                 | Best effort                    | 2020                                                       | N/A                   | ✅                    |
-
-  | Grist            | Oui                                 | Best effort                    | Aout 2022 (instance ANCT) et février 2023 (instance DINUM) | csv, sqlite           | septembre 2025 ?     |
-
-  | Docs             | Non                                 | Best effort                    | 2024                                                       | json, pdf             | ?                    |
-
-  | Visio            | En cours                            | Best effort                    | 2024                                                       | N/A                   | ?                    |
-
-  | Messagerie       | Oui ?                               | Best effort                    | 2024                                                       | imap                  | ?                    |
