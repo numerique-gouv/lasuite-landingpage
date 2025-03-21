@@ -1,6 +1,8 @@
 import TchapLogo from '@/assets/products/tchap.svg'
 import TchapScreenshot from '@/assets/products/app-tchap.png'
 import TchapScreenshotMobile from '@/assets/products/app-tchap-mobile.png'
+import TchapScreenshotEn from '@/assets/products/app-tchap-en.png'
+import TchapScreenshotMobileEn from '@/assets/products/app-tchap-mobile-en.png'
 
 import GristLogo from '@/assets/products/grist.svg'
 import GristScreenshot from '@/assets/products/app-grist.png'
@@ -9,18 +11,26 @@ import GristScreenshotMobile from '@/assets/products/app-grist-mobile.png'
 import DocsSvg from '@/assets/products/docs.svg'
 import DocsScreenshot from '@/assets/products/app-docs.png'
 import DocsScreenshotMobile from '@/assets/products/app-docs-mobile.png'
+import DocsScreenshotEn from '@/assets/products/app-docs-en.png'
+import DocsScreenshotMobileEn from '@/assets/products/app-docs-mobile-en.png'
 
 import VisioLogo from '@/assets/products/visio.svg'
 import VisioScreenshot from '@/assets/products/app-visio.png'
 import VisioScreenshotMobile from '@/assets/products/app-visio-mobile.png'
+import VisioScreenshotEn from '@/assets/products/app-visio-en.png'
+import VisioScreenshotMobileEn from '@/assets/products/app-visio-mobile.png'
 
 import MessagerieLogo from '@/assets/products/messagerie.svg'
 import MessagerieScreenshot from '@/assets/products/app-messagerie.png'
 import MessagerieScreenshotMobile from '@/assets/products/app-messagerie-mobile.png'
+import MessagerieScreenshotEn from '@/assets/products/app-messagerie-en.png'
+import MessagerieScreenshotMobileEn from '@/assets/products/app-messagerie-mobile-en.png'
 
 import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
 import FranceTransfertScreenshot from '@/assets/products/app-france-transfert.png'
 import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
+import FranceTransfertScreenshotEn from '@/assets/products/app-france-transfert-en.png'
+import FranceTransfertScreenshotMobileEn from '@/assets/products/app-france-transfert-mobile-en.png'
 
 import ResanaLogo from '@/assets/products/resana.svg'
 import ResanaScreenshot from '@/assets/products/resana_screenshot.webp'
@@ -39,6 +49,8 @@ export const DINUM_PRODUCTS: Record<
     logo: StaticImageData
     screenshot?: StaticImageData
     screenshotMobile?: StaticImageData
+    screenshotEn?: StaticImageData
+    screenshotMobileEn?: StaticImageData
     keepRawScreenshot?: boolean
     name?: string
     url?: string
@@ -54,12 +66,12 @@ export const DINUM_PRODUCTS: Record<
     logo: TchapLogo,
     screenshot: TchapScreenshot,
     screenshotMobile: TchapScreenshotMobile,
+    screenshotEn: TchapScreenshotEn,
+    screenshotMobileEn: TchapScreenshotMobileEn,
     keepRawScreenshot: true,
     name: 'Tchap',
     url: 'https://tchap.beta.gouv.fr/',
     caption: 'la messagerie instantanée de la sphère publique',
-    description:
-      'La messagerie instantanée sécurisée pour communiquer où que vous soyez.',
     items: [
       <>
         <strong>Retrouvez tous vos interlocuteurs</strong> de la sphère publique
@@ -78,6 +90,8 @@ export const DINUM_PRODUCTS: Record<
     logo: FranceTransfertLogo,
     screenshot: FranceTransfertScreenshot,
     screenshotMobile: FranceTransfertScreenshotMobile,
+    screenshotEn: FranceTransfertScreenshotEn,
+    screenshotMobileEn: FranceTransfertScreenshotMobileEn,
     name: 'France Transfert',
     url: 'https://francetransfert.numerique.gouv.fr/',
     caption: 'partagez vos fichiers en toute sécurité',
@@ -116,6 +130,8 @@ export const DINUM_PRODUCTS: Record<
     logo: VisioLogo,
     screenshot: VisioScreenshot,
     screenshotMobile: VisioScreenshotMobile,
+    screenshotEn: VisioScreenshotEn,
+    screenshotMobileEn: VisioScreenshotMobileEn,
     name: 'Visio',
     url: 'https://visio.numerique.gouv.fr/',
     caption:
@@ -160,6 +176,8 @@ export const DINUM_PRODUCTS: Record<
     logo: GristLogo,
     screenshot: GristScreenshot,
     screenshotMobile: GristScreenshotMobile,
+    screenshotEn: GristScreenshot,
+    screenshotMobileEn: GristScreenshotMobile,
     name: 'Grist',
     url: 'https://grist.numerique.gouv.fr/',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
@@ -185,6 +203,8 @@ export const DINUM_PRODUCTS: Record<
     url: 'https://docs.numerique.gouv.fr',
     screenshot: DocsScreenshot,
     screenshotMobile: DocsScreenshotMobile,
+    screenshotEn: DocsScreenshotEn,
+    screenshotMobileEn: DocsScreenshotMobileEn,
     name: 'Docs',
     caption:
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
@@ -212,6 +232,8 @@ export const DINUM_PRODUCTS: Record<
     logo: MessagerieLogo,
     screenshot: MessagerieScreenshot,
     screenshotMobile: MessagerieScreenshotMobile,
+    screenshotEn: MessagerieScreenshotEn,
+    screenshotMobileEn: MessagerieScreenshotMobileEn,
     name: 'Messagerie',
     url: 'https://webmail.numerique.gouv.fr/',
     caption:
