@@ -40,7 +40,7 @@ service_landing_page:
 homepage:
   hero:
     title: 'The sovereign workspace'
-    description: 'Create. Organize. Collaborate. An open-source environment designed for the public sector and open to the commons.'
+    description: 'Create. Organize. Collaborate. An open-source environment designed for the public sector and open to digital commons.'
   slider_products:
     'Tchap':
       description: 'Secure instant messaging to communicate wherever you are.'
