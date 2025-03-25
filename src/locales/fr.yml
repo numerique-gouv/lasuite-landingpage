@@ -6,7 +6,7 @@ common:
   back_to_home: Retour à la page d’accueil
 head:
   homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
-  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs.
+  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
 header:
   tagline: Un État efficace, simple, souverain grâce au numérique
   locale_switcher_alt: Changer de langue
@@ -73,7 +73,7 @@ homepage:
     description: Les agents bénéficient d'un environnement de travail
       sécurisé, avec l'assurance que leurs données sont stockées en France.
       Les outils de La Suite sont conçus avec la sécurité comme priorité, assurant
-      une protection maximale de vos données sensibles. Hébergés uniquement sur des
+      une protection maximale de vos données sensibles. Hébergées uniquement sur des
       infrastructures SecNumCloud certifiées par l'ANSSI, les applications garantissent
       un niveau de sécurité optimal dans le respect de la souveraineté numérique française.
   migration:
