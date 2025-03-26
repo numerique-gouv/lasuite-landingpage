@@ -6,6 +6,8 @@ import fr from './fr.yml'
 import en from './en.yml'
 // @ts-ignore
 import de from './de.yml'
+// @ts-ignore
+import nl from './nl.yml'
 
 type Translations = Record<string, any>
 const TranslationsContext = createContext<Translations>(fr)
@@ -15,6 +17,7 @@ const locales: Record<string, Translations> = {
   fr,
   en,
   de,
+  nl,
 }
 
 function TranslationsProvider({
