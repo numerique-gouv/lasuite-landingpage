@@ -1,0 +1,35 @@
+enabled: false
+slug: services-en-beta
+title: C'est quoi ce logo "beta" sur vos services ?
+body: >
+  ## C'est quoi ce logo "beta" sur vos services ?
+
+
+  Certains services de la Suite Numérique sont affichés en "beta". Ce statut peut être une manière de prévenir les utilisateurs de plusieurs choses :
+
+
+  *   le service n'a pas encore effectué d'homologation de sécurité
+
+  *   le service n'offre aucune garantie de disponibilité et il n'est pas recommandé de l'utiliser pour des cas d'usages pour lesquels une indisponibilité de quelques heures, voire jours aurait un impact opérationnel élevé
+
+  *   le service n'est pas encore pérennisé budgétairement ou politiquement pour les années à venir, et la DINUM se réserve le droit de l'arrêter dans un délai relativement court sans solution de repli. [plutot "sans alternative opérée par la DINUM"]
+
+
+  En pratique, ce tag peut cacher des réalités différentes en termes de garanties de sécurité, de disponibilité, et de pérennité du service (voir tableau récapitulatif ci-dessous).
+
+
+  ## Comment un service peut-il sortir de "beta" ?
+
+
+  Un service sort de "beta" quand ces 4 conditions sont réunies :
+
+
+  *   🔏 il a fait l'objet d'une **homologation de sécurité** à jour
+
+  *   🟢 il offre des **garanties de disponibilité **(variables selon le contexte des cas d'usages couverts par l'outil)** **et les **affiche clairement**
+
+  *   🌳 la DINUM **pense le développement de ce service sur le long-terme** et s'engage à ne pas le débrancher sans prévenir les utilisateurs dans un délai clairement affiché [et suffisamment long ? X mois ?]
+
+  *   🔁 la DINUM s'engage à **permettre un export des données dans un format ouvert** en cas de fermeture du service
+
+  *   🫴 la DINUM s'engage à **fournir du support** aux utilisateurs, soit directement, soit indirectement en animant des canaux de support (via Tchap ou autre)
