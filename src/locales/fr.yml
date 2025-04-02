@@ -56,7 +56,7 @@ homepage:
       description: 'La messagerie professionnelle des agents de l’État.'
     button: 'Découvrir'
   portal_proconnect:
-    tag: 'Unique portal'
+    tag: 'Portail unique'
     description: "Simplifiez votre quotidien avec ProConnect ! Accédez à La Suite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."
     button: J’intègre ProConnect à mon service
   ecosystem:
