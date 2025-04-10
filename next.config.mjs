@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     /* uncomment other locales when at least the homepage is translated */
-    locales: ['fr', 'en', 'de', 'nl'],
+    locales: ['fr', 'en'],
     defaultLocale: 'fr',
   },
   webpack: (config) => {

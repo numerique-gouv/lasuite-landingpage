@@ -3,7 +3,7 @@ import { Button } from '@/components/Button'
 import VisioIconWhite from '@/assets/products/visio-white.svg'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
-import BentoLasuite from '@/assets/bento/suite-numerique.png'
+import BentoLasuite from '@/assets/bento/bento-webinaire-suite-numerique.png'
 import { useTranslations } from '@/locales/useTranslations'
 
 const VisioLogoIcon = () => {

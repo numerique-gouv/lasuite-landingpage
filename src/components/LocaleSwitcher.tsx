@@ -9,8 +9,8 @@ import CheckIcon from '@mui/icons-material/Check'
 const labels: Record<string, string> = {
   en: 'English',
   fr: 'Français',
-  de: 'Deutsch',
-  nl: 'Nederlands',
+//  de: 'Deutsch',
+//  nl: 'Nederlands',
 }
 
 export const LocaleSwitcher = () => {

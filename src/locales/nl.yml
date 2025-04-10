@@ -38,7 +38,7 @@ service_landing_page:
 homepage:
   hero:
     title: 'De soevereine werkruimte'
-    description: 'Creëer. Organiseer. Samenwerken. Een open-source omgeving ontworpen voor de publieke sector en open voor het algemeen belang.'
+    description: 'Creëren. Organiseren. Samenwerken. Een open-source omgeving ontworpen voor de publieke sector en open voor het algemeen belang.'
   slider_products:
     'Tchap':
       description: 'Veilige instant messaging om overal te communiceren.'
