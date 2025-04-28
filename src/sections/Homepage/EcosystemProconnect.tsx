@@ -18,7 +18,7 @@ export const EcosystemProconnect = () => {
   const PRODUCTS_GRID = [
     {
       name: 'Resana',
-      bento: locale === 'en' ? BentoResanaEn : BentoResana,
+      bento: locale !== 'fr' ? BentoResanaEn : BentoResana,
       url: 'https://resana.numerique.gouv.fr/',
     },
     {

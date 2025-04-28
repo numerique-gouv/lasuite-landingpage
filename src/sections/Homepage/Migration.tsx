@@ -1,25 +1,9 @@
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import VisioIconWhite from '@/assets/products/visio-white.svg'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
-import BentoLasuite from '@/assets/bento/suite-numerique.png'
+import BentoLasuite from '@/assets/bento/bento-webinaire-suite-numerique.png'
 import { useTranslations } from '@/locales/useTranslations'
-
-const VisioLogoIcon = () => {
-  return (
-    <>
-      <Image
-        width="24"
-        height="24"
-        alt=""
-        loading="lazy"
-        className="fill-white"
-        src={VisioIconWhite}
-      />
-    </>
-  )
-}
 
 export const Migration = () => {
   const t = useTranslations()
@@ -46,8 +30,7 @@ export const Migration = () => {
             />
           </Paragraph>
           <Button
-            href="https://grist.numerique.gouv.fr/o/docs/forms/9pCcc1QTyMmDq93YGQP2xF/49"
-            icon={<VisioLogoIcon />}
+            href="https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53"
             iconPosition="left"
           >
             {t('homepage.migration.button')}

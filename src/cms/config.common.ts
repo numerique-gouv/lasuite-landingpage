@@ -9,7 +9,7 @@ const config: Omit<CmsConfig, 'backend'> = {
   locale: 'fr',
   i18n: {
     structure: 'multiple_folders',
-    locales: ['fr', 'de', 'en'],
+    locales: ['fr', 'de', 'en', 'nl'],
     default_locale: 'fr',
   },
   collections: [
@@ -18,7 +18,7 @@ const config: Omit<CmsConfig, 'backend'> = {
       name: 'custom-pages',
       i18n: {
         structure: 'single_file',
-        locales: ['fr', 'de', 'en'],
+        locales: ['fr', 'de', 'en', 'nl'],
         default_locale: 'fr',
       },
       files: collections?.fileCollections.map((c) => c.config),

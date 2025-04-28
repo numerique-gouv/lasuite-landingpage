@@ -75,13 +75,15 @@ homepage:
       Civil servants benefit from a secure work environment, with the assurance that their data is stored in France.
       The tools of La Suite are designed with security as a priority, ensuring maximum protection of your sensitive data. Hosted only on SecNumCloud certified infrastructures by ANSSI (French National Agency for the Security of Information Systems), the applications guarantee an optimal level of security in compliance with French digital sovereignty.
   migration:
-    tag: Migration
-    title: Passez à La Suite!
+    tag: Thematic Webinars
+    title: Discover La Suite
     description:
-      Do you want to equip your civil servant with the tools of La Suite? Our experts will assist you in integrating our applications into your information system, from establishing prerequisites to harmonizing with your current tools.
-      <br /><br />
-      Reserve a personalized demonstration to discover our solutions. Our experts will answer your technical questions and present our roadmap.
-    button: Book a demo
+      Whether you are an agent looking to explore the tools of La Suite or a manager tasked with equipping your teams, our webinars are designed for you!
+      <br />
+      Explore the tools, features, and benefits of La Suite, as well as its integration into your administration. Ask your questions and attend live demonstrations.
+      <br />
+      Sign up now for the sessions that interest you!
+    button: Sign up for a webinar
   suite_territoriale:
     tag: Territories
     title: Also for local authorities
