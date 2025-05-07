@@ -12,7 +12,7 @@ hero:
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
     src="https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA"
     frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts
-    allow-popups allow-forms">
+    allow-popups allow-forms"></iframe>
   - type: cta
     cta:
       target_blank: true
