@@ -10,10 +10,9 @@ hero:
   title: Collaborez sur des jeux de données avec Grist
   image: /content/uploads/logo_grist_marianne.svg
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
-    src="https://tube.numerique.gouv.fr/w/jJCWmiCvJLtqXyfSe5o5MA"
+    src="https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA"
     frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts
-    allow-popups allow-forms"></iframe>
-flexible_content:
+    allow-popups allow-forms">
   - type: cta
     cta:
       target_blank: true
