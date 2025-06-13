@@ -10,7 +10,7 @@ head:
     La Suite numérique brings all agents and professionals together in the
     public sphere
 header:
-  tagline: An efficient, simple and sovereign State thanks to digital technology
+  tagline: Digital commons for a simpler, more effective, and sovereign State
   locale_switcher_alt: Change language
 footer:
   license:
@@ -39,8 +39,8 @@ service_landing_page:
     body: '{title}, a {la_suite} service'
 homepage:
   hero:
-    title: 'The sovereign workspace'
-    description: 'Create. Organize. Collaborate. An open-source environment designed for the public sector and open to digital commons.'
+    title: 'Digital commons for a simpler, more effective, and sovereign State'
+    description: 'Create. Organize. Collaborate. A collection of digital commons designed for the public sector and reusable by all.'
   slider_products:
     'Tchap':
       description: 'Secure instant messaging to communicate wherever you are.'
