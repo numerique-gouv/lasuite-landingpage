@@ -42,16 +42,22 @@ homepage:
   slider_products:
     'Tchap':
       description: 'Veilige instant messaging om overal te communiceren.'
+      basedOn: ' '
     'France Transfert':
       description: 'De veilige dienst voor het verzenden en ontvangen van grote bestanden.'
+      basedOn: ' '
     'Grist':
       description: 'De moderne en collaboratieve spreadsheet die verder gaat dan een raster.'
+      basedOn: ' '
     'Docs':
       description: 'De collaboratieve teksteditor die inhoud boven opmaak plaatst.'
+      basedOn: ' '
     'Visio':
       description: 'Eenvoudige en effectieve videoconferenties voor communicatie en samenwerking.'
+      basedOn: ' '
     'Messagerie':
       description: 'De professionele e-mailoplossing voor ambtenaren.'
+      basedOn: ' '
     button: 'Ontdek'
   portal_proconnect:
     tag: 'Uniek portaal'
