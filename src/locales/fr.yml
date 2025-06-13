@@ -8,7 +8,7 @@ head:
   homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
 header:
-  tagline: Un État efficace, simple, souverain grâce au numérique
+  tagline: Des communs numériques pour un État simple, efficace et souverain
   locale_switcher_alt: Changer de langue
 footer:
   license:
@@ -37,10 +37,9 @@ service_landing_page:
     body: '{title}, un service de {la_suite}'
 homepage:
   hero:
-    title: 'L’espace de travail souverain'
+    title: 'Des communs numériques pour un État simple, efficace et souverain'
     description:
-      'Créez. Organisez. Collaborez. Un environnement open source, conçu
-      pour le secteur public et ouvert aux communs.'
+      'Créez. Organisez. Collaborez. Une collection de communs numériques, conçue pour le secteur public et réutilisable par tous.'
   slider_products:
     'Tchap':
       description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
