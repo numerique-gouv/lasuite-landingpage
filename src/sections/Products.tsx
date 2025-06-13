@@ -129,6 +129,14 @@ export const Products = () => {
               <p className="font-medium">
                 {t(`homepage.slider_products.${activeItem.name}.description`)}
               </p>
+              <p
+                className="font-medium"
+                dangerouslySetInnerHTML={{
+                  __html: t(
+                    `homepage.slider_products.${activeItem.name}.basedOn`
+                  ),
+                }}
+              ></p>
             </div>
 
             <div className="mt-5 md:mt-0 md:ml-3">
