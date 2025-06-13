@@ -1,36 +1,91 @@
 common:
   la_suite: La Suite numérique
   la_suite_territoriale: La Suite Territoriale
-  new_window: to_translate
-  know_more: to_translate
-  back_to_home: to_translate
+  new_window: Neues Fenster
+  know_more: Mehr erfahren
+  back_to_home: Zurück zur Startseite
 head:
-  homepage_og_title: to_translate
-  meta_desc: to_translate
+  homepage_og_title: Arbeiten mit der digitalen Suite
+  meta_desc: Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
 header:
-  tagline: to_translate
-  locale_switcher_alt: to_translate
+  tagline: Ein effizienter, einfacher und souveräner Staat dank digitaler Technologie
+  locale_switcher_alt: Sprache ändern
 footer:
-  license: to_translate {license}.
-  etalab: to_translate
-  accessiblity: to_translate
-  legal: to_translate
-  privacy_policy: to_translate
+  license:
+    Sofern nicht anders angegeben, stehen die Inhalte dieser Website unter der
+    {license}.
+  etalab: Lizenz etalab-2.0
+  accessiblity: Barrierefreiheit
+  legal: Rechtliche Hinweise
+  privacy_policy: Datenschutzrichtlinie
 not_found_page:
-  title: Ooops !
-  body: to_translate
+  title: Ooops!
+  body: Die gesuchte Seite existiert nicht.
+  try_default_locale: Sie können es mit {link} versuchen.
+  default_locale_link: diese Seite auf Französisch ansehen
 service_landing_page:
   screenshot_block:
-    image_alt: to_translate
+    image_alt: Bild im Detail ansehen
   newsletter:
-    title: to_translate
-    button: to_translate
-    button_alt: to_translate
+    title: Abonnieren Sie unseren Newsletter
+    button: Abonnieren
+    button_alt: Newsletter abonnieren
   social_networks:
-    body: to_translate {linebreak} to_translate
-    link: to_translate {network} - to_translate
+    body: Folgen Sie uns {linebreak} in den sozialen Netzwerken
+    link: Folgen Sie uns auf {network}
   suite_numerique:
-    body: '{title}, to_translate {la_suite} to_translate'
+    body: '{title}, ein Dienst der {la_suite}'
 homepage:
-  anct_partners_alt: to_translate
-  hero_img_alt: to_translate
+  hero:
+    title: 'Der souveräne Arbeitsbereich'
+    description: 'Erstellen. Organisieren. Zusammenarbeiten. Eine Open-Source-Umgebung für den öffentlichen Sektor und die Gemeinschaften.'
+  slider_products:
+    'Tchap':
+      description: 'Sichere Sofortnachrichten, um überall zu kommunizieren.'
+    'France Transfert':
+      description: 'Der sichere Dienst zum Senden und Empfangen großer Dateien.'
+    'Grist':
+      description: 'Die moderne und kollaborative Tabellenkalkulation, die über das Raster hinausgeht.'
+    'Docs':
+      description: 'Der kollaborative Texteditor, der den Inhalt über die Formatierung stellt.'
+    'Visio':
+      description: 'Einfache und effektive Videokonferenzen für Kommunikation und Zusammenarbeit.'
+    'Messagerie':
+      description: 'Die professionelle E-Mail-Lösung für Beamte.'
+    button: 'Entdecken'
+  portal_proconnect:
+    tag: 'Einheitliches Portal'
+    description: "Vereinfachen Sie Ihren Alltag mit ProConnect! Greifen Sie mit einer einzigen und sicheren Identität auf die digitale Suite und alle Ihre digitalen Dienste zu. ProConnect verwaltet Ihre Verbindungen, damit Sie sich auf das Wesentliche konzentrieren können.\n\nHerausgeber: ProConnect hilft Ihnen, Ihr Wachstum zu beschleunigen. Unsere einfach zu integrierende Lösung verbindet Sie mit einem dynamischen digitalen Ökosystem und ermöglicht Ihnen, an der digitalen Transformation des Staates teilzunehmen."
+    button: 'Ich integriere ProConnect in meinen Dienst'
+  ecosystem:
+    tag: Staatliche Dienste
+    title: Das ProConnect-Ökosystem
+    description: Nutzen Sie weiterhin staatliche Dienste mit ProConnect. Résana, Webinaire, Webconf, Audioconf... Viele leistungsstarke Werkzeuge stehen Ihnen zur Verfügung, die die digitale Suite perfekt ergänzen.
+    resana_bento: BentoResana
+  editors:
+    tag: Herausgeber
+    title: 'Das ist noch nicht alles!'
+    description: Wichtige Akteure der französischen Digitalbranche, wie Whaller, nutzen ebenfalls ProConnect. Diese sichere kollaborative Plattform hat unsere Authentifizierungslösung integriert, um ihren Nutzern eine vereinfachte und sichere Anmeldung zu bieten und gleichzeitig hohe Datenschutzstandards zu gewährleisten.
+  secure_tools:
+    tag: Sicherheit
+    title: Sichere Werkzeuge
+    description:
+      Beamte profitieren von einer sicheren Arbeitsumgebung mit der Gewissheit, dass ihre Daten in Frankreich gespeichert werden.
+      Die Werkzeuge der digitalen Suite wurden mit höchster Priorität auf Sicherheit entwickelt, um maximalen Schutz Ihrer sensiblen Daten zu gewährleisten. Sie werden ausschließlich auf SecNumCloud-zertifizierten Infrastrukturen der ANSSI (Französische Nationale Agentur für die Sicherheit von Informationssystemen) gehostet und garantieren ein optimales Sicherheitsniveau gemäß der französischen digitalen Souveränität.
+  migration:
+    tag: Migration
+    title: Wechseln Sie zur digitalen Suite!
+    description:
+      Möchten Sie Ihre Beamten mit den Werkzeugen der digitalen Suite ausstatten? Unsere Experten unterstützen Sie bei der Integration unserer Anwendungen in Ihr Informationssystem – von den technischen Voraussetzungen bis zur Harmonisierung mit Ihren aktuellen Tools.
+      <br /><br />
+      Buchen Sie eine personalisierte Demonstration, um unsere Lösungen kennenzulernen. Unsere Experten beantworten Ihre technischen Fragen und stellen Ihnen unsere Roadmap vor.
+    button: Demo buchen
+  suite_territoriale:
+    tag: Regionen
+    title: Auch für lokale Behörden
+    description: 'Die ANCT bietet eine Auswahl digitaler Dienste für Gemeinden mit weniger als <strong>3.500 Einwohnern</strong> oder mit weniger als <strong>15.000 Einwohnern</strong>. Diese Dienste werden mit ProConnect bei Fachkräften im lokalen öffentlichen Sektor eingeführt. Jede lokale Behörde, die <strong>einem Partner-OPSN angeschlossen ist</strong>, kann ebenfalls von den Diensten der territorialen Suite profitieren.'
+    button: Entdecken Sie die territoriale Suite
+  footer:
+    description: Nutzen Sie die digitale Suite noch heute!
+    contact_button: Chatten Sie mit uns
+    newsletter_button: Newsletter abonnieren

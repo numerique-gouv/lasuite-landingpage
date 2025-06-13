@@ -22,7 +22,7 @@ export const PortalProconnect = () => {
           alt=""
           className="w-full"
           src={
-            locale === 'en' ? ProConnectIllustrationEn : ProConnectIllustration
+            locale !== 'fr' ? ProConnectIllustrationEn : ProConnectIllustration
           }
         />
         <div>

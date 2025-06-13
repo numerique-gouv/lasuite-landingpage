@@ -6,9 +6,9 @@ common:
   back_to_home: Retour à la page d’accueil
 head:
   homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
-  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public et ouvert aux communs.
+  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
 header:
-  tagline: Un État efficace, simple, souverain grâce au numérique
+  tagline: Des communs numériques pour un État simple, efficace et souverain
   locale_switcher_alt: Changer de langue
 footer:
   license:
@@ -37,10 +37,9 @@ service_landing_page:
     body: '{title}, un service de {la_suite}'
 homepage:
   hero:
-    title: 'L’espace de travail souverain'
+    title: 'Des communs numériques pour un État simple, efficace et souverain'
     description:
-      'Créez. Organisez. Collaborez. Un environnement open source, conçu
-      pour le secteur public et ouvert aux communs.'
+      'Créez. Organisez. Collaborez. Une collection de communs numériques, conçue pour le secteur public et réutilisable par tous.'
   slider_products:
     'Tchap':
       description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
@@ -56,7 +55,7 @@ homepage:
       description: 'La messagerie professionnelle des agents de l’État.'
     button: 'Découvrir'
   portal_proconnect:
-    tag: 'Unique portal'
+    tag: 'Portail unique'
     description: "Simplifiez votre quotidien avec ProConnect ! Accédez à La Suite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."
     button: J’intègre ProConnect à mon service
   ecosystem:
@@ -73,21 +72,18 @@ homepage:
     description: Les agents bénéficient d'un environnement de travail
       sécurisé, avec l'assurance que leurs données sont stockées en France.
       Les outils de La Suite sont conçus avec la sécurité comme priorité, assurant
-      une protection maximale de vos données sensibles. Hébergés uniquement sur des
+      une protection maximale de vos données sensibles. Hébergées uniquement sur des
       infrastructures SecNumCloud certifiées par l'ANSSI, les applications garantissent
       un niveau de sécurité optimal dans le respect de la souveraineté numérique française.
   migration:
-    tag: Migration
-    title: Passez à La Suite !
-    description: Vous souhaitez équiper vos agents des outils de La Suite ? Nos
-      experts vous accompagnent dans l'intégration de nos applications au
-      sein de votre système d'information, de la mise en place des
-      prérequis jusqu'à l'harmonisation avec vos outils actuels.
-      <br /><br />
-      Réservez une démonstration personnalisée pour découvrir nos
-      solutions. Nos experts répondront à vos questions techniques et vous
-      présenteront notre feuille de route.
-    button: Réserver une démo
+    tag: Webinaires thématiques
+    title: Découvrez La Suite numérique
+    description: Que vous soyez un agent souhaitant explorer les outils de La Suite ou un responsable chargé d'équiper vos équipes, nos webinaires sont faits pour vous !
+      <br />
+      Explorez les outils, fonctionnalités et avantages de La Suite, ainsi que son intégration dans votre administration. Posez vos questions et assistez à des démonstrations en direct.
+      <br />
+      Inscrivez-vous dès maintenant aux sessions qui vous intéressent !
+    button: S’inscrire à un webinaire
   suite_territoriale:
     tag: Territoires
     title: Des services essentiels pour les collectivités

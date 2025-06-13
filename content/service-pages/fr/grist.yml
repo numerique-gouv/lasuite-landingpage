@@ -10,7 +10,7 @@ hero:
   title: Collaborez sur des jeux de données avec Grist
   image: /content/uploads/logo_grist_marianne.svg
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
-    src="https://tube.numerique.gouv.fr/videos/embed/6ddf5239-6531-4a71-a7b8-405df4d12fcf"
+    src="https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA"
     frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts
     allow-popups allow-forms"></iframe>
 flexible_content:
@@ -37,7 +37,8 @@ flexible_content:
       href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
     bg: auto
     title: Inscrivez-vous à un webinaire
-    body: Nous organisons régulièrement des webinaires de découverte de Grist ainsi
+    body:
+      Nous organisons régulièrement des webinaires de découverte de Grist ainsi
       que des formations sur des sujets plus avancés (références, widget custom,
       droits d'accès avancés...). Ces webinaires sont disponibles en replay sur
       [notre chaine
@@ -53,7 +54,8 @@ flexible_content:
 newsletter:
   enable: true
   cta_href: https://grist.numerique.gouv.fr/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
-  body: Inscrivez-vous via ce lien pour être tenu informé des actualités liées au
+  body:
+    Inscrivez-vous via ce lien pour être tenu informé des actualités liées au
     produit (newsletters, évènements, trucs et astuces...)
 socials:
   youtube: https://tube.numerique.gouv.fr/c/grist/videos?s=1
