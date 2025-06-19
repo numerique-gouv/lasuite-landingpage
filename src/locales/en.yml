@@ -65,9 +65,9 @@ homepage:
     description: Continue using state services with ProConnect. Résana, Webinaire, Webconf, Audioconf... So many powerful tools at your fingertips that wonderfully complement La Suite.
     resana_bento: BentoResana
   communs:
-    tag: Communs numériques
+    tag: Digital Commons
     title: 'It doesn’t stop there!'
-    description: En s’inscrivant dans une logique de communs numériques, La Suite favorise l’émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.
+    description: By adopting a digital commons approach, La Suite encourages the emergence of strategic partnerships to offer innovative, sovereign and scalable solutions, aligned with the highest security standards via ProConnect.
     articles:
       gristclevercloud:
         description: Clever Cloud becomes Grist’s preferred European host, offering a sovereign, secure and European-compliant data solution through a strategic partnership.
