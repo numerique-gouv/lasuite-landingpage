@@ -9,7 +9,7 @@ import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
 import { useEffect } from 'react'
-
+import { ProConnectButton } from '@/components/ProConnectButton'
 /**
  * output the homepage content with data taken from the CMS file
  *

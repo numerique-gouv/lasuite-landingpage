@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { TITLE_SITE } from '@/constant'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
+import LogoutHandler from './LogoutHandler'
 
 export const Layout: React.FC<{
   children: React.ReactNode
@@ -39,6 +40,7 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
+      <LogoutHandler />
       <NavBar />
       <main {...props}>{props.children}</main>
       <Footer />

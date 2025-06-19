@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 import { Gaufre } from '@gouvfr-lasuite/integration'
 import '@gouvfr-lasuite/integration/dist/css/gaufre.css'
 import Script from 'next/script'
@@ -7,10 +9,11 @@ const GaufreStyle = createGlobalStyle`
   .lasuite-gaufre-btn {
     box-shadow: inset 0 0 0 0 !important;
   }
-  
+
   .lasuite-gaufre-btn--vanilla.lasuite-gaufre-btn--small::before {
     --icon-size: 32px !important;
   }
+
   @media screen and (min-width: 40em) {
     #lasuite-gaufre-popup .lagaufre {
       position: fixed !important;
@@ -23,6 +26,14 @@ const GaufreStyle = createGlobalStyle`
 `
 
 export const LaGaufre = () => {
+  const [user, setUser] = useState<any>(null)
+
+  useEffect(() => {
+    fetch("/api/me")
+      .then((res) => res.ok ? res.json() : null)
+      .then(setUser)
+  }, [])
+
   return (
     <>
       <Script
@@ -32,6 +43,18 @@ export const LaGaufre = () => {
       />
       <GaufreStyle />
       <Gaufre />
+
+      {user ? (
+        <>
+          <p>Connecté en tant que : <strong>{user.given_name} {user.usual_name}</strong></p>
+          <a href="/api/logout">Se déconnecter</a>
+        </>
+      ) : (
+        <a href="/api/login">Se connecter avec ProConnect</a>
+      )}
+
+
+
     </>
   )
 }
