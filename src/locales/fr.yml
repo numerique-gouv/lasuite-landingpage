@@ -62,10 +62,14 @@ homepage:
     tag: Services de l'État
     title: L'écosystème ProConnect
     description: Continuez à utiliser les services de l’État avec ProConnect. Résana, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent La Suite à merveille.
-  editors:
-    tag: Editeurs
+  communs:
+    tag: Communs numériques
     title: Ça ne s'arrête pas là !
-    description: Des acteurs majeurs du numérique français comme Whaller utilisent aussi ProConnect. Ces plateformes collaboratives sécurisées ont intégré notre solution d'authentification pour offrir à leurs utilisateurs une expérience de connexion simplifiée et sécurisée, tout en maintenant leurs hauts standards de protection des données.
+    description: En s’inscrivant dans une logique de communs numériques, La Suite favorise l’émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.
+    articles:
+      gristclevercloud:
+        description: Clever Cloud devient l’hébergeur européen privilégié de Grist, offrant une solution de données souveraine, sécurisée et conforme aux normes européennes grâce à un partenariat stratégique.
+    button_read: "Lire l'article"
   secure_tools:
     tag: Sécurité
     title: Outils sécurisés
