@@ -1,0 +1,63 @@
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { ContentSection } from '@/components/ContentSection'
+import { Paragraph } from '@/components/Paragraph'
+import GristCleverCloud from '@/assets/grist-clever-cloud.png'
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
+
+import { useTranslations } from '@/locales/useTranslations'
+
+export const Communs = () => {
+  const t = useTranslations()
+  const { locale } = useRouter()
+
+  const articles = [
+    {
+      title: 'Grist + Clever Cloud',
+      illustration: GristCleverCloud,
+      description: t('homepage.communs.articles.gristclevercloud.description'),
+      url: 'https://www.clever-cloud.com/fr/blog/entreprise/2025/06/09/clever-cloud-devient-hebergeur-grist-privilegie/',
+    },
+  ]
+
+  return (
+    <ContentSection>
+      <div className="grid md:mb-14">
+        <div className="mb-10">
+          <Paragraph
+            tag={t('homepage.communs.tag')}
+            title={t('homepage.communs.title')}
+            description={t('homepage.communs.description')}
+          />
+        </div>
+        {articles.map((article, index) => {
+          return (
+            <a key={article.title} href={article.url} target="_blank">
+              <div
+                className="border border-greyscale-200 rounded-lg p-6 md:flex flex-row-reverse"
+                style={{
+                  boxShadow: '0px 10px 21.3px 0px rgba(0, 0, 0, 0.05)',
+                }}
+              >
+                <div className="md:w-[256px] md:inline-flex md:items-center text-right">
+                  <ArrowOutwardIcon />
+                  {t('homepage.communs.button_read')}
+                </div>
+                <div className="">
+                  <img
+                    className="h-[50px] mb-2"
+                    src={article.illustration.src}
+                  />
+                  <h3 className="font-bold text-xl">{article.title}</h3>
+                  <p className="md:w-[90%] text-normal">
+                    {article.description}
+                  </p>
+                </div>
+              </div>
+            </a>
+          )
+        })}
+      </div>
+    </ContentSection>
+  )
+}

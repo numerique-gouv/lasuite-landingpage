@@ -23,8 +23,8 @@ export const Hero = () => {
             priority
           />
         </h1>
-        <div className="mx-auto max-w-[80vw] md:max-w-[45vw]">
-          <h2 className="text-greyscale-900 md:text-6xl text-5xl sm:leading-[52px] md:leading-[72px] font-bold text-center pb-4">
+        <div className="mx-auto max-w-[80vw] md:max-w-[52vw]">
+          <h2 className="text-greyscale-900 md:text-5xl text-4xl sm:leading-[42px] md:leading-[52px] font-bold text-center pb-4">
             {t('homepage.hero.title')}
           </h2>
           <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">

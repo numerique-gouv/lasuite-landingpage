@@ -64,10 +64,14 @@ homepage:
     title: The ProConnect ecosystem
     description: Continue using state services with ProConnect. Résana, Webinaire, Webconf, Audioconf... So many powerful tools at your fingertips that wonderfully complement La Suite.
     resana_bento: BentoResana
-  editors:
-    tag: Editors
+  communs:
+    tag: Communs numériques
     title: 'It doesn’t stop there!'
-    description: Major players in the French digital landscape, such as Whaller, also use ProConnect. This secure collaborative platform has integrated our authentication solution to provide its users with a simplified and secure connection experience while maintaining high data protection standards.
+    description: En s’inscrivant dans une logique de communs numériques, La Suite favorise l’émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.
+    articles:
+      gristclevercloud:
+        description: Clever Cloud becomes Grist’s preferred European host, offering a sovereign, secure and European-compliant data solution through a strategic partnership.
+    button_read: Read the article
   secure_tools:
     tag: Security
     title: Secure tools
