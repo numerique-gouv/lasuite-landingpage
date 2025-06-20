@@ -40,9 +40,9 @@ export const Communs = () => {
                 }}
               >
                 <div className="">
-                  <img
-                    className="h-[50px] mb-2"
-                    src={article.illustration.src}
+                  <Image
+                    className="w-auto h-[50px] mb-2"
+                    src={article.illustration}
                   />
                   <h3 className="font-bold text-xl">{article.title}</h3>
                   <p className="md:w-[90%] text-normal">
