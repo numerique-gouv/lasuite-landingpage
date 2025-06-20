@@ -45,7 +45,7 @@ export const Communs = () => {
                     src={article.illustration}
                     alt=""
                   />
-                  <h3 className="font-bold text-xl">{article.title}</h3>
+                  <h4 className="font-bold text-xl">{article.title}</h4>
                   <p className="md:w-[90%] text-normal">
                     {article.description}
                   </p>
