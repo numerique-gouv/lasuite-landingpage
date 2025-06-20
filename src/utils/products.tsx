@@ -70,7 +70,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotMobileEn: TchapScreenshotMobileEn,
     keepRawScreenshot: true,
     name: 'Tchap',
-    url: 'https://tchap.beta.gouv.fr/',
+    url: 'https://tchap.numerique.gouv.fr',
     caption: 'la messagerie instantanée de la sphère publique',
     items: [
       <>

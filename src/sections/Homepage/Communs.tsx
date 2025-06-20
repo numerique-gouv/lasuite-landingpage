@@ -34,15 +34,11 @@ export const Communs = () => {
           return (
             <a key={article.title} href={article.url} target="_blank">
               <div
-                className="border border-greyscale-200 rounded-lg p-6 md:flex flex-row-reverse"
+                className="border border-greyscale-200 rounded-lg p-6 md:flex"
                 style={{
                   boxShadow: '0px 10px 21.3px 0px rgba(0, 0, 0, 0.05)',
                 }}
               >
-                <div className="md:w-[256px] md:inline-flex md:items-center text-right">
-                  <ArrowOutwardIcon />
-                  {t('homepage.communs.button_read')}
-                </div>
                 <div className="">
                   <img
                     className="h-[50px] mb-2"
@@ -52,6 +48,10 @@ export const Communs = () => {
                   <p className="md:w-[90%] text-normal">
                     {article.description}
                   </p>
+                </div>
+                <div className="md:w-[256px] md:inline-flex md:items-center mt-3 md:mt-0">
+                  <ArrowOutwardIcon />
+                  {t('homepage.communs.button_read')}
                 </div>
               </div>
             </a>
