@@ -32,7 +32,7 @@ export const Communs = () => {
         </div>
         {articles.map((article, index) => {
           return (
-            <a key={article.title} href={article.url} target="_blank">
+            <div key={article.title} className="stretched-link-container">
               <div
                 className="border border-greyscale-200 rounded-lg p-6 md:flex"
                 style={{
@@ -50,12 +50,16 @@ export const Communs = () => {
                     {article.description}
                   </p>
                 </div>
-                <div className="md:w-[256px] md:inline-flex md:items-center mt-3 md:mt-0">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  className="stretched-link md:w-[256px] md:inline-flex md:items-center mt-3 md:mt-0"
+                >
                   <ArrowOutwardIcon />
                   {t('homepage.communs.button_read')}
-                </div>
+                </a>
               </div>
-            </a>
+            </div>
           )
         })}
       </div>

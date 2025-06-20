@@ -3,6 +3,14 @@
   isolation: isolate;
 }
 
+.stretched-link-container {
+  @apply relative;
+}
+
+.stretched-link::after {
+  @apply absolute inset-0 z-[1] content-[''];
+}
+
 .logo:before {
   content: '';
   display: block;
