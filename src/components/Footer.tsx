@@ -67,7 +67,11 @@ export const Footer = () => {
                   key={link.href}
                   className="inline internal-link-footer text-xs text-grey-3"
                 >
-                  <Link {...link} className={`border-grey-1 ${hover}`}>
+                  <Link
+                    {...link}
+                    locale={false}
+                    className={`border-grey-1 ${hover}`}
+                  >
                     {t(link.children)}
                   </Link>
                 </li>

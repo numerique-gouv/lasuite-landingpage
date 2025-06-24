@@ -20,7 +20,7 @@ export const NavBar = () => {
   return (
     <header className="fade-in bg-white px-4 sm:fixed relative top-0 right-0 left-0 z-50">
       <div className="flex items-center">
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-4 sm:hidden">
           <button
             className="w-[48px] h-[48px] absolute text-blue-1 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none focus:bg-greyscale-050"
             onClick={() => setIsOpen(!isOpen)}
@@ -33,9 +33,9 @@ export const NavBar = () => {
             )}
           </button>
         </div>
-        <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 items-center fr-enlarge-link">
+        <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 sm:items-center items-center fr-enlarge-link">
           <Image
-            className="mr-3 w-28 hidden md:block"
+            className="mr-3 w-28 hidden sm:block md:block"
             src={LogoGouvSvg}
             alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
           />

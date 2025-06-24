@@ -75,7 +75,7 @@ export const Products = () => {
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
                     src={
-                      locale === 'en'
+                      locale !== 'fr'
                         ? DINUM_PRODUCTS[name]?.screenshotEn ?? ''
                         : DINUM_PRODUCTS[name]?.screenshot ?? ''
                     }
@@ -99,7 +99,7 @@ export const Products = () => {
                      ${isActive ? 'fade-in' : 'fade-out'}
                      `}
                     src={
-                      locale === 'en'
+                      locale !== 'fr'
                         ? DINUM_PRODUCTS[name]?.screenshotMobileEn ?? ''
                         : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''
                     }
