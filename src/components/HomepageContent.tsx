@@ -2,7 +2,7 @@ import { Hero } from '@/sections/Hero'
 import { Products } from '@/sections/Products'
 import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
 import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
-import { Editors } from '@/sections/Homepage/Editors'
+import { Communs } from '@/sections/Homepage/Communs'
 import { SecureTools } from '@/sections/Homepage/SecureTools'
 import { Migration } from '@/sections/Homepage/Migration'
 import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
@@ -43,7 +43,7 @@ export const HomepageContent = () => {
         <EcosystemProconnect />
       </FadeInSection>
       <FadeInSection>
-        <Editors />
+        <Communs />
       </FadeInSection>
       <FadeInSection>
         <SecureTools />
