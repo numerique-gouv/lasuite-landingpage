@@ -44,16 +44,22 @@ homepage:
   slider_products:
     'Tchap':
       description: 'Secure instant messaging to communicate wherever you are.'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://element.io">Element</a> and relying on the <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://matrix.org">Matrix</a> protocol.'
     'France Transfert':
       description: 'The secure service for sending and receiving large files.'
+      basedOn: ' '
     'Grist':
       description: 'The modern and collaborative spreadsheet that goes beyond the grid.'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.getgrist.com">Grist</a>'
     'Docs':
       description: 'The collaborative text editor that prioritizes content over formatting.'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> and other JavaScript libraries.'
     'Visio':
       description: 'Simple and effective videoconferencing to communicate and collaborate.'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'The professional messaging for civil servants.'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a>'
     button: 'Discover'
   portal_proconnect:
     tag: 'Unique portal'
