@@ -12,10 +12,10 @@ body: >
 
   *   le service n'offre aucune garantie de disponibilité et il n'est pas recommandé de l'utiliser pour des cas d'usages pour lesquels une indisponibilité de quelques heures, voire jours aurait un impact opérationnel élevé
 
-  *   le service n'est pas encore pérennisé budgétairement ou politiquement pour les années à venir, et la DINUM se réserve le droit de l'arrêter dans un délai relativement court sans solution de repli. [plutot "sans alternative opérée par la DINUM"]
+  *   le service n'est pas encore pérennisé budgétairement ou politiquement pour les années à venir, et la DINUM se réserve le droit de l'arrêter dans un délai relativement court sans alternative opérée par la DINUM.
 
 
-  En pratique, ce tag peut cacher des réalités différentes en termes de garanties de sécurité, de disponibilité, et de pérennité du service (voir tableau récapitulatif ci-dessous).
+  En pratique, ce tag peut cacher des réalités différentes en termes de garanties de sécurité, de disponibilité, et de pérennité du service.
 
 
   ## Comment un service peut-il sortir de "beta" ?
