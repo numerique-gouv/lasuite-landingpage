@@ -44,22 +44,22 @@ homepage:
   slider_products:
     'Tchap':
       description: 'Secure instant messaging to communicate wherever you are.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://element.io">Element</a> and relying on the <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://matrix.org">Matrix</a> protocol.'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://element.io">Element</a> and relying on the <a class="inline-block font-bold text-primary-text" target="new" href="https://matrix.org">Matrix</a> protocol.'
     'France Transfert':
       description: 'The secure service for sending and receiving large files.'
       basedOn: ' '
     'Grist':
       description: 'The modern and collaborative spreadsheet that goes beyond the grid.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.getgrist.com">Grist</a>'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://www.getgrist.com">Grist</a>'
     'Docs':
       description: 'The collaborative text editor that prioritizes content over formatting.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> and other JavaScript libraries.'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> and other JavaScript libraries.'
     'Visio':
       description: 'Simple and effective videoconferencing to communicate and collaborate.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://https://livekit.io">LiveKit</a>'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'The professional messaging for civil servants.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a> and other Free Software programs.'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://www.open-xchange.com">Open-XChange</a> and other Free Software programs.'
     button: 'Discover'
   portal_proconnect:
     tag: 'Unique portal'
@@ -77,6 +77,9 @@ homepage:
     articles:
       gristclevercloud:
         description: Clever Cloud becomes Grist’s preferred European host, offering a sovereign, secure and European-compliant data solution through a strategic partnership.
+      bundlesmatrix:
+        title: Germany Adopts the Matrix Protocol
+        description: "BundesMessenger is the German equivalent of Tchap: a sovereign and encrypted messaging service based on Matrix. Like France, Germany has chosen Matrix for its public communications, reinforcing the legitimacy of this open-source standard."
     button_read: Read the article
   secure_tools:
     tag: Security

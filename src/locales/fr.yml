@@ -15,7 +15,7 @@ footer:
     Sauf mention contraire, les contenus de ce site sont disponibles sous licence
     {license}.
   etalab: licence etalab-2.0
-  accessiblity: 'Accessibilité : audit en cours'
+  accessiblity: 'Accessibilité : non conforme'
   legal: Mentions légales
   privacy_policy: Données personnelles et cookies
 not_found_page:
@@ -43,22 +43,22 @@ homepage:
   slider_products:
     'Tchap':
       description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://element.io">Element</a> et s‘appuyant sur le protocole <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://matrix.org">Matrix</a>'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://element.io">Element</a> et s‘appuyant sur le protocole <a class="inline-block font-bold text-primary-text" target="new" href="https://matrix.org">Matrix</a>'
     'France Transfert':
       description: 'Le service sécurisé pour envoyer et recevoir des fichiers volumineux.'
       basedOn: ' '
     'Grist':
       description: 'Le tableur collaboratif pour structurer vos bases de données.'
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.getgrist.com">Grist</a>'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.getgrist.com">Grist</a>'
     'Docs':
       description: L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> et d‘autres bibliothèques JavaScript.'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> et d‘autres bibliothèques JavaScript.'
     'Visio':
       description: 'La visioconférence simple et efficace pour communiquer et collaborer.'
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://https://livekit.io">LiveKit</a>'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'La messagerie professionnelle des agents de l’État.'
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a> et d‘autres logiciels libres.'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.open-xchange.com">Open-XChange</a> et d‘autres logiciels libres.'
     button: 'Découvrir'
   portal_proconnect:
     tag: 'Portail unique'
@@ -75,6 +75,9 @@ homepage:
     articles:
       gristclevercloud:
         description: Clever Cloud devient l’hébergeur européen privilégié de Grist, offrant une solution de données souveraine, sécurisée et conforme aux normes européennes grâce à un partenariat stratégique.
+      bundlesmatrix:
+        title: L’allemagne adopte le protocole Matrix
+        description: 'BundesMessenger est l’équivalent allemand de Tchap : une messagerie souveraine et chiffrée, basée sur Matrix. Comme la France, l’Allemagne a fait le choix de Matrix pour ses communications publiques, ce qui renforce la légitimité de ce standard opensource.'
     button_read: "Lire l'article"
   secure_tools:
     tag: Sécurité
