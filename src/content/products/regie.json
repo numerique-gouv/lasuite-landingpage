@@ -1,0 +1,13 @@
+{
+  "global": {
+    "slug": "regie"
+  },
+  "fr": {
+    "title": "La Régie",
+    "description": "Description en français"
+  },
+  "en": {
+    "title": "La Régie",
+    "description": "Description in English"
+  }
+}

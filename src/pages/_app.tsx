@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { CunninghamProvider } from "@gouvfr-lasuite/ui-kit"
 
 import { MetaHeader as Head } from '@/components/MetaHeader'
 import { useEffect } from 'react'
@@ -8,6 +9,7 @@ import { TranslationsProvider } from '@/locales/useTranslations'
 import { useRouter } from 'next/router'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
 import '@gouvfr/dsfr/dist/utility/icons/icons-system/icons-system.css'
+import '@gouvfr-lasuite/ui-kit/style';
 
 declare global {
   interface Window {
@@ -96,14 +98,14 @@ export default function App({ Component, pageProps }: AppProps) {
   const { locale, defaultLocale } = useRouter()
 
   return (
-    <>
-      {/* this wrapper is required for the next/font loaded fonts to work with tailwind */}
-      <div className={`${marianne.variable} font-sans`}>
-        <TranslationsProvider locale={locale || defaultLocale}>
+    <div className={`${marianne.variable} font-sans`}>
+      <TranslationsProvider locale={locale || defaultLocale}>
+        <CunninghamProvider>
           <Head />
           <Component {...pageProps} />
-        </TranslationsProvider>
-      </div>
-    </>
+        </CunninghamProvider>
+      </TranslationsProvider>
+    </div>
   )
 }
+

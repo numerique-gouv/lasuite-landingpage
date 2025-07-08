@@ -1,0 +1,15 @@
+{
+  "global": {
+    "slug": "visio"
+  },
+  "fr": {
+    "title": "Simple and secure video conferences",
+    "subtitle": "Communicate and collaborate effortlessly, without compromising your sovereignty.",
+    "description": "Description en français"
+  },
+  "en": {
+    "title": "Simple and secure video conferences",
+    "subtitle": "SCommunicate and collaborate effortlessly, without compromising your sovereignty.",
+    "description": "Description in English"
+  }
+}
