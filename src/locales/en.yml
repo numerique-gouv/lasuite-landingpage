@@ -59,7 +59,7 @@ homepage:
       basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'The professional messaging for civil servants.'
-      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a>'
+      basedOn: 'Based on <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a> and other Free Software programs.'
     button: 'Discover'
   portal_proconnect:
     tag: 'Unique portal'

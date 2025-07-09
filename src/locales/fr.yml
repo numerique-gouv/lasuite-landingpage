@@ -58,7 +58,7 @@ homepage:
       basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'La messagerie professionnelle des agents de l’État.'
-      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a>'
+      basedOn: 'Développé à partir de <a class="inline-block rounded bg-primary-100 font-bold text-primary-text px-2.5 py-1.5" target="new" href="https://www.open-xchange.com">Open-XChange</a> et d‘autres logiciels libres.'
     button: 'Découvrir'
   portal_proconnect:
     tag: 'Portail unique'
