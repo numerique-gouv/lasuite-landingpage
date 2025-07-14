@@ -142,6 +142,7 @@ export const Products = () => {
             <div className="mt-5 md:mt-0 md:ml-3">
               <Button
                 href={DINUM_PRODUCTS[activeItem.name].url}
+                target="_blank"
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
               >

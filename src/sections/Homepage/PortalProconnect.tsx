@@ -33,6 +33,7 @@ export const PortalProconnect = () => {
             {t('homepage.portal_proconnect.description')}
           </Paragraph>
           <Button
+            target="_blank"
             href="https://github.com/numerique-gouv/proconnect-documentation?tab=readme-ov-file#-proconnect---documentation"
             icon={<AddLinkIcon />}
             iconPosition="left"

@@ -51,6 +51,7 @@ export const FooterLaSuite = () => {
 
           <Button
             href={urlForm}
+            target="_blank"
             icon={<ArticleOutlinedIcon />}
             iconPosition="left"
           >
