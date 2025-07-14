@@ -33,3 +33,7 @@ h6 {
 strong {
   @apply text-grey-2;
 }
+
+[id] {
+  scroll-margin-top: 6.5rem;
+}

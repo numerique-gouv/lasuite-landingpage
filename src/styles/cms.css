@@ -64,6 +64,10 @@
   @apply underlined-link;
 }
 
+.with-content-links a:not([class]) {
+  @apply underlined-link;
+}
+
 .cms-block-bg--blue {
   background-color: #f4f4fe;
 }

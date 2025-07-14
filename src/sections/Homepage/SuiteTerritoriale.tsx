@@ -29,6 +29,7 @@ export const SuiteTerritoriale = () => {
             />
           </Paragraph>
           <Button
+            target="_blank"
             href="https://suiteterritoriale.anct.gouv.fr/"
             iconPosition="left"
           >

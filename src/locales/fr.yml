@@ -4,6 +4,9 @@ common:
   new_window: nouvelle fenêtre
   know_more: En savoir plus
   back_to_home: Retour à la page d’accueil
+  proconnect_button_label: S'identifier avec ProConnect
+  send: Envoyer
+  footer: Pied de page
 head:
   homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
@@ -38,8 +41,7 @@ service_landing_page:
 homepage:
   hero:
     title: 'Des communs numériques pour un État simple, efficace et souverain'
-    description:
-      'Créez. Organisez. Collaborez. Une collection de communs numériques, conçue pour le secteur public et réutilisable par tous.'
+    description: 'Créez. Organisez. Collaborez. Une collection de communs numériques, conçue pour le secteur public et réutilisable par tous.'
   slider_products:
     'Tchap':
       description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
@@ -91,7 +93,8 @@ homepage:
   migration:
     tag: Webinaires thématiques
     title: Découvrez La Suite numérique
-    description: Que vous soyez un agent souhaitant explorer les outils de La Suite ou un responsable chargé d'équiper vos équipes, nos webinaires sont faits pour vous !
+    description:
+      Que vous soyez un agent souhaitant explorer les outils de La Suite ou un responsable chargé d'équiper vos équipes, nos webinaires sont faits pour vous !
       <br />
       Explorez les outils, fonctionnalités et avantages de La Suite, ainsi que son intégration dans votre administration. Posez vos questions et assistez à des démonstrations en direct.
       <br />
@@ -112,3 +115,124 @@ homepage:
     description: Utilisez La Suite Numérique dès aujourd’hui !
     contact_button: Discuter avec nous
     newsletter_button: S’abonner à la newsletter
+grist-landing:
+  hero:
+    title: 'Le tableur collaboratif et souverain, qui transforme vos données en décisions fiables'
+    description: 'Grist est la plateforme d’équipe validée par l’État pour centraliser, analyser et partager vos données.'
+    tag: Déjà utilisé par 8 ministères
+    description2: 'Grist est membre de [La Suite numérique](https://numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
+    video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA'
+  why-grist:
+    title: Pourquoi Grist ?
+    description: "Grist est l'outil de gestion de données de l'administration publique."
+    tab-1:
+      title: Gestion d'équipe
+      description: 'Centralisez toutes les informations importantes concernant votre équipe au même endroit, et gérez le quotidien de ses membres (ex : gestion de congés ou calendrier de présence).'
+    tab-2:
+      title: Gestion de tâches
+      description: 'Organisez, assignez et suivez l’avancement de chaque action dans un seul tableau.'
+    tab-3:
+      title: Collecte d’informations
+      description: 'Grist peut vous aider à faire remonter des données terrain depuis partout en France, dans un document unique avec une gestion d’accès et de droits avancée. Vous pouvez également créer des formulaires publics.'
+    tab-4:
+      title: Évènementiel
+      description: 'Collectez des inscriptions à vos événements, et gérez les invités ou la logistique facilement.'
+    tab-5:
+      title: Gestion budgétaire
+      description: 'Créez vos propres tableaux de bord, pour calculer et suivre votre budget.'
+  cta-1:
+    button-1:
+      href: '#'
+      label: Commencer à utiliser Grist
+    button-2:
+      href: '#contact'
+      label: Nous contacter
+  mosaic:
+    block-1:
+      title: Collaborez avec votre équipe, en toute fluidité
+      description: 'Avec ses fonctionnalités avancées de collecte et de gestion de données, Grist simplifie la collaboration au sein de votre équipe, ou avec d’autres administrations.'
+      tag: Collaborer
+    block-2:
+      title: Prenez des décisions basées sur vos données
+      description: 'Grâce à ses tableaux de bord modulables et interactifs, et ses cas d’usage variés, Grist vous offre une vision claire de vos données, pour vous aider à orienter vos choix.'
+      tag: Orienter
+    block-3:
+      title: Gagnez en productivité
+      description: 'En centralisant toutes vos données, en éliminant la double saisie et en utilisant notre assistant IA, Grist vous fera gagner un temps précieux.'
+      tag: Productivité
+    block-4:
+      title: Garantissez votre souveraineté et votre sécurité
+      description: 'Hébergé en France, open-source et certifié SecNumCloud, Grist protège vos données et vous assure souveraineté et conformité.'
+      tag: Souveraineté
+  cards:
+    card-1:
+      title: Intégrez vos propres outils, sans difficultés
+      description: 'Avec ses widgets sur mesure, ses possibilités d’intégration et ses fonctionnalités de personnalisation, Grist s’adapte à votre écosystème et à vos besoins spécifiques.'
+    card-2:
+      title: Assurez l’intégrité de vos données
+      description: 'Avec ses contrôles intégrés et le suivi des versions, Grist prévient les erreurs et garantit des données fiables.'
+    card-3:
+      title: Embarquez rapidement
+      description: 'Fini les longs processus IT ! Accédez gratuitement à notre logiciel homologué par la DINUM, et profitez de modèles prêts à l’emploi et d’une communauté active pour démarrer et monter en compétences rapidement.'
+  cta-2:
+    button-1:
+      href: '#'
+      label: Commencer à utiliser Grist
+    button-2:
+      href: '#'
+      label: Participer à un webinaire
+  users:
+    title: Plus de 15 000 agents utilisent déjà Grist
+    description: 'Grist aide collectivités, ministères, institutions publiques ou encore administrations centrales.'
+  key-features:
+    title: Les fonctionnalités clés
+    description: "Grist développe des fonctionnalités qui vous aideront à centraliser et afficher des informations,
+et à collaborer avec vos partenaires sans effort."
+    body: |
+      Voici quelques exemples de fonctionnalités dont vous pourrez tirer parti dans Grist :
+
+      - **Tableur collaboratif** : éditez à plusieurs, en temps réel, sans conflit de versions.
+      - **Formulaires publics** : collectez et centralisez des données externes aisément.
+      - **Données relationnelles** : synchronisez automatiquement les données entre plusieurs tableaux.
+      - **Droits avancés** : contrôlez l’accès jusqu’à la cellule, pour une confidentialité optimale.
+      - **Graphiques intégrés** : créez des visualisations interactives en quelques clics.
+      - **Formules avancées** : réalisez des calculs sur mesure avec la puissance de Python.
+      - **Assistant IA** : générez et optimisez vos formules grâce à l’intelligence artificielle.
+      - **Extensions sur mesure** : développez des widgets et des scripts pour vos besoins spécifiques
+
+      …et bien plus encore !
+  before-contact-block:
+    title: 'Dites adieu aux feuilles de calcul envoyées par e-mail !'
+    description: 'Comme des milliers d’agents publics, utilisez Grist et gagnez un temps précieux dans la gestion de votre administration.'
+    cta:
+      href: '#'
+      label: S'identifier avec ProConnect
+  resources:
+    title: 'Toutes les ressources'
+    description: "Envie d’en apprendre plus sur Grist, d’en discuter ou de contribuer au projet ? Abonnez-vous à notre [chaîne peertube](https://tube.numerique.gouv.fr/c/grist/videos) et rejoignez la communauté Grist
+[sur Tchap](#), sur le [Forum francophone](#) ou sur [Github](#)."
+  contact:
+    title: 'Contactez-nous'
+    description: 'Les équipes de Grist répondent à vos questions.'
+    success-feedback: 'Votre message a bien été envoyé, nous reviendrons vers vous très bientôt.'
+  footer:
+    about:
+      description: 'Grist est la solution collaborative qui simplifie la coopération, garantit la souveraineté de vos données et accélère la prise de décision.'
+      cta:
+        href: '#'
+        label: 'Commencer à utiliser Grist'
+    menu: |
+      - [Connexion](#)
+      - [Contact](#)
+      - [Inscription webinaire](#)
+      - [Forum Grist](#)
+      - [Grist sur Tchap](#)
+      - [Github](#)
+    lasuite:
+      title: Découvrir les autres produits de La Suite numérique
+      links: |
+        - [Tchap](#)
+        - [Docs](#)
+        - [France Transfert](#)
+        - [Visio](#)
+        - [Messagerie](#)

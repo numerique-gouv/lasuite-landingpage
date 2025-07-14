@@ -30,6 +30,7 @@ export const Migration = () => {
             />
           </Paragraph>
           <Button
+            target="_blank"
             href="https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53"
             iconPosition="left"
           >
