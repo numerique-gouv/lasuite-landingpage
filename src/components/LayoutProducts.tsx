@@ -1,16 +1,18 @@
 import Head from 'next/head'
 import { ProductsHeader } from '@/components/content-blocks/ProductsHeader'
-import { ProductsHero } from '@/components/content-blocks/ProductsHero'
 import { Footer } from '@/components/Footer'
 import { TITLE_SITE } from '@/constant'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
+import { BlockHero } from '@/components/content-blocks'
+import { ProductsFooter } from '@/components/content-blocks'
+import * as blocksComponents from '@/components/content-blocks'
+import FadeInSection from '@/components/FadeInSection'
 
 export type ProductContent = Record<string, any>
 
 export const LayoutProducts: React.FC<{
   children: React.ReactNode
-  background?: 'gray'
   /**
    * Text to use as page <title>. It should represent what the current page is about.
    * The website name is appended to the title automatically.
@@ -18,19 +20,20 @@ export const LayoutProducts: React.FC<{
   title: string
   productContent: ProductContent
   locale: string
-}> = ({ title, background, productContent, locale, ...props }) => {
+}> = ({ title, productContent, locale, ...props }) => {
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   const t = useTranslations()
   const product = productContent.global;
+  const currentContent = productContent[locale];
   const content = productContent[locale] || productContent['fr']
 
   return (
     <div
-      className={`min-h-screen flex flex-col text-body ${background === 'gray' ? 'bg-white-1' : 'bg-white'}`}
+      className={`min-h-screen flex flex-col text-body bg-white-1'`}
     >
       <Head>
-        <title>{content.title || pageTitle}</title>
+        <title>{product.title || pageTitle}</title>
         <meta
           key="ogtitle"
           property="og:title"
@@ -50,18 +53,27 @@ export const LayoutProducts: React.FC<{
       </Head>
       <ProductsHeader productContent={content} slug={product.slug} />
       <main {...props}>
-        <ProductsHero productContent={content} slug={product.slug} />
-        <h1>{content.title}</h1>
-        <p>{content.description}</p>
-        {content.features && (
-          <ul>
-            {content.features.map((feature: string, idx: number) => (
-              <li key={idx}>{feature}</li>
-            ))}
-          </ul>
+        <FadeInSection>
+          <BlockHero productContent={content} slug={product.slug} />
+        </FadeInSection>
+        {currentContent.contents && (
+          <div id="content">
+            {currentContent.contents.map((block: any, idx: number) => {
+              const Comp = (blocksComponents as Record<string, React.ComponentType<any>>)[block.blockType]
+              if (!Comp) return null
+              return (
+                <FadeInSection key={idx}>
+                  <Comp blocks={[block]} />
+                </FadeInSection>
+              )
+            })}
+          </div>
         )}
         {props.children}
       </main>
+      <FadeInSection>
+        <ProductsFooter productContent={content} slug={product.slug} />
+      </FadeInSection>
       <Footer />
     </div>
   )

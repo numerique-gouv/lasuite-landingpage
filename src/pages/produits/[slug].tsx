@@ -15,7 +15,7 @@ export default function ProduitPage() {
     ? productContents[slug]
     : null
 
-  if (!productContent) return <div>Produit introuvable</div>
+  if (!productContent) return null
 
   return (
     <LayoutProducts
@@ -23,6 +23,7 @@ export default function ProduitPage() {
       productContent={productContent}
       locale={locale}
     >
+      <></>
     </LayoutProducts>
   )
 }

@@ -1,8 +1,2 @@
 @tailwind components;
 @tailwind utilities;
-
-.c__header {
-	height: 91px !important;
-	max-height: none !important;
-	border-bottom: 0px solid transparent;
-}
