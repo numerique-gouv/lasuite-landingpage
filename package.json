@@ -20,11 +20,7 @@
   },
   "dependencies": {
     "@bradgarropy/rehype-image-links": "1.1.1",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
     "@gouvfr-lasuite/integration": "1.0.1",
-    "@gouvfr-lasuite/ui-kit": "^0.8.1",
-    "@openfun/cunningham-react": "3.0.0",
     "@gouvfr/dsfr": "^1.13.0",
     "@headlessui/react": "^2.2.0",
     "@mui/icons-material": "^6.4.5",
