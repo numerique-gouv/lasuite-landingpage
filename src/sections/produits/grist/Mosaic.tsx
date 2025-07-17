@@ -21,7 +21,7 @@ export const Mosaic = () => {
   return (
     <div className="flex flex-col gap-24">
       {Array.from({ length: featuresNumber }).map((_, index) => (
-        <div key={index} className="max-w-[32rem] md:max-w-none">
+        <div key={index} className="max-w-[32rem] md:max-w-none mx-auto">
           <FeatureExcerpt
             image={FEATURES_IMGS[index]}
             tag={t(`grist-landing.mosaic.block-${index + 1}.tag`)}
@@ -33,7 +33,7 @@ export const Mosaic = () => {
           />
         </div>
       ))}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mx-auto">
         {Array.from({ length: cardsNumber }).map((_, index) => (
           <div key={index} className="max-w-[32rem]">
             <Card
