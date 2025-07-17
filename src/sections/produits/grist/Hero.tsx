@@ -41,7 +41,16 @@ export const Hero = () => {
           ></iframe>
         </div>
         <div className="with-content-links">
-          <Markdown>{t('grist-landing.hero.description2')}</Markdown>
+          <Markdown 
+            className="flex-shrink-0" 
+            components={{
+              a: (props) => (
+                <a {...props} target="_blank" rel="noopener noreferrer" className="underline flex-shrink-0" />
+              ),
+            }}
+          >
+                {t('grist-landing.hero.description2')}
+          </Markdown>
         </div>
       </div>
     </div>
