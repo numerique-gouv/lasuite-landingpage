@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Markdown from 'react-markdown'
 
 export const Resources = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div className="md:text-center flex flex-col gap-4 md:gap-8">

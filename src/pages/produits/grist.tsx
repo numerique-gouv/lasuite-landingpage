@@ -13,7 +13,7 @@ import { Footer } from '@/sections/produits/grist/Footer'
 import BeforeContactBlockImg from '@/assets/grist/before-contact-block.png'
 
 export default function GristLandingPage() {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
   return (
     <Layout title={'Grist'}>
       <div className="pt-16 px-3 sm:mt-12 max-w-[65.5rem] mx-auto flex flex-col gap-32 mb-32">

@@ -6,7 +6,7 @@ import { Button } from '@/components/Button'
 import Markdown from 'react-markdown'
 
 export const Footer = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
   return (
     <div className="bg-greyscale-050 py-10 border-t-2 border-blue-1">
       <span role="heading" aria-level={2} className="sr-only">

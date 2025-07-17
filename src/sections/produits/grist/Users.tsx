@@ -7,7 +7,7 @@ import AcademieVersailles from '@/assets/grist/users/academie-versailles.png'
 import Image from 'next/image'
 
 export const Users = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div className="md:text-center flex flex-col gap-8">

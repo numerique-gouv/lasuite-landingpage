@@ -4,7 +4,7 @@ import { useTranslations } from '@/locales/useTranslations'
 import Markdown from 'react-markdown'
 
 export const Hero = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div className="fade-in relative overflow-hidden bg-white">

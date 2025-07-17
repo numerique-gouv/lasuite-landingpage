@@ -56,7 +56,7 @@ export const Contact = () => {
     }
   }
 
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
   return (
     <div id="contact" className="md:text-center flex flex-col gap-4 md:gap-8">
       <h2 className="text-4xl md:text-5xl font-bold">
