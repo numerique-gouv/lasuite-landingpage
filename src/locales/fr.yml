@@ -122,6 +122,7 @@ grist-landing:
     tag: Déjà utilisé par 8 ministères
     description2: 'Grist est membre de [La Suite numérique](https://numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
     video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA'
+    proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F'
   why-grist:
     title: Pourquoi Grist ?
     description: "Grist est l'outil de gestion de données de l'administration publique."
@@ -142,7 +143,7 @@ grist-landing:
       description: 'Créez vos propres tableaux de bord, pour calculer et suivre votre budget.'
   cta-1:
     button-1:
-      href: '#'
+      href: 'https://grist.numerique.gouv.fr/'
       label: Commencer à utiliser Grist
     button-2:
       href: '#contact'
@@ -176,10 +177,10 @@ grist-landing:
       description: 'Fini les longs processus IT ! Accédez gratuitement à notre logiciel homologué par la DINUM, et profitez de modèles prêts à l’emploi et d’une communauté active pour démarrer et monter en compétences rapidement.'
   cta-2:
     button-1:
-      href: '#'
+      href: 'https://grist.numerique.gouv.fr/'
       label: Commencer à utiliser Grist
     button-2:
-      href: '#'
+      href: 'https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7'
       label: Participer à un webinaire
   users:
     title: Plus de 15 000 agents utilisent déjà Grist
@@ -205,12 +206,12 @@ et à collaborer avec vos partenaires sans effort."
     title: 'Dites adieu aux feuilles de calcul envoyées par e-mail !'
     description: 'Comme des milliers d’agents publics, utilisez Grist et gagnez un temps précieux dans la gestion de votre administration.'
     cta:
-      href: '#'
+      href: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F'
       label: S'identifier avec ProConnect
   resources:
     title: 'Toutes les ressources'
     description: "Envie d’en apprendre plus sur Grist, d’en discuter ou de contribuer au projet ? Abonnez-vous à notre [chaîne peertube](https://tube.numerique.gouv.fr/c/grist/videos) et rejoignez la communauté Grist
-[sur Tchap](#), sur le [Forum francophone](#) ou sur [Github](#)."
+[sur Tchap](https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr), sur le [Forum francophone](https://forum.grist.libre.sh/) ou sur [Github](https://github.com/gristlabs/grist-core)."
   contact:
     title: 'Contactez-nous'
     description: 'Les équipes de Grist répondent à vos questions.'
@@ -219,20 +220,19 @@ et à collaborer avec vos partenaires sans effort."
     about:
       description: 'Grist est la solution collaborative qui simplifie la coopération, garantit la souveraineté de vos données et accélère la prise de décision.'
       cta:
-        href: '#'
+        href: 'https://grist.numerique.gouv.fr'
         label: 'Commencer à utiliser Grist'
     menu: |
-      - [Connexion](#)
-      - [Contact](#)
-      - [Inscription webinaire](#)
-      - [Forum Grist](#)
-      - [Grist sur Tchap](#)
-      - [Github](#)
+      - [Connexion](https://grist.numerique.gouv.fr/o/docs/login?next=%2F)
+      - [Contact](mailto:grist@numerique.gouv.fr)
+      - [Inscription webinaire](https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7)
+      - [Forum Grist](https://forum.grist.libre.sh/)
+      - [Grist sur Tchap](https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr)
+      - [Github](https://github.com/gristlabs/grist-core)
     lasuite:
       title: Découvrir les autres produits de La Suite numérique
       links: |
-        - [Tchap](#)
-        - [Docs](#)
-        - [France Transfert](#)
-        - [Visio](#)
-        - [Messagerie](#)
+        - [Tchap](https://tchap.numerique.gouv.fr/)
+        - [Docs](https://docs.numerique.gouv.fr/home/)
+        - [France Transfert](https://francetransfert.numerique.gouv.fr)
+        - [Visio](https://visio.numerique.gouv.fr/)

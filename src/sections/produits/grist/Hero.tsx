@@ -25,7 +25,7 @@ export const Hero = () => {
         <p className="md:text-center text-greyscale-700 text-lg">
           {t('grist-landing.hero.description')}
         </p>
-        <a className="my-4" href="">
+        <a className="my-4" href={t('grist-landing.hero.proconnect-url')}>
           <ProConnectSvg />
         </a>
 

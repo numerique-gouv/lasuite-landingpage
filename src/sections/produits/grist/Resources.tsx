@@ -18,20 +18,20 @@ export const Resources = () => {
         {t('grist-landing.resources.description')}
       </Markdown>
       <div className="w-fit mx-auto flex flex-wrap gap-12 md:gap-24 justify-between items-center">
-        <a href="#">
+        <a href="https://tube.numerique.gouv.fr/c/grist/videos">
           <Image
             className="h-auto w-[62px]"
             src={Peertube}
             alt="Peertube Grist"
           />
         </a>
-        <a href="#">
+        <a href="https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr">
           <Image className="h-auto w-[85px]" src={Tchap} alt="Tchap" />
         </a>
-        <a href="#">
+        <a href="https://forum.grist.libre.sh/">
           <Image className="h-auto w-[149px]" src={Forum} alt="Forum Grist" />
         </a>
-        <a href="#">
+        <a href="https://github.com/gristlabs/grist-core">
           <Image className="h-auto w-[92px]" src={Github} alt="Github Grist" />
         </a>
       </div>
