@@ -37,3 +37,10 @@ strong {
 [id] {
   scroll-margin-top: 6.5rem;
 }
+
+/* workaround to prevent focus-visible styles being applied when clicking on a tab
+ * @see https://github.com/tailwindlabs/headlessui/issues/3053#issuecomment-2017665353
+ */
+[data-headlessui-state]:not([data-headlessui-state*='focus']) {
+  outline-style: none;
+}
