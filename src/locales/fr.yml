@@ -118,14 +118,14 @@ homepage:
 grist-landing:
   hero:
     title: 'Le tableur collaboratif et souverain, qui transforme vos données en décisions fiables'
-    description: 'Grist est la plateforme d’équipe validée par l’État pour centraliser, analyser et partager vos données.'
-    tag: Déjà utilisé par 8 ministères
-    description2: 'Grist est membre de [La Suite numérique](https://numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
+    description: 'Grist est la plateforme d’équipe gratuite et validée par l’État pour centraliser, analyser et partager vos données.'
+    tag: Déjà utilisé dans 15 ministères
+    description2: 'Grist est membre de [La Suite Numérique](https://lasuite.numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
     video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA?subtitle=fr&title=0'
-    proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F'
+    proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
   why-grist:
-    title: Pourquoi Grist ?
-    description: "Grist est l'outil de gestion de données de l'administration publique."
+    title: Pourquoi utiliser Grist ?
+    description: "Grist est l'outil no-code de gestion de données de l'administration publique."
     tab-1:
       title: Gestion d'équipe
       description: 'Centralisez toutes les informations importantes concernant votre équipe au même endroit, et gérez le quotidien de ses membres (ex : gestion de congés ou calendrier de présence).'
@@ -136,14 +136,14 @@ grist-landing:
       title: Collecte d’informations
       description: 'Grist peut vous aider à faire remonter des données terrain depuis partout en France, dans un document unique avec une gestion d’accès et de droits avancée. Vous pouvez également créer des formulaires publics.'
     tab-4:
-      title: Évènementiel
+      title: Événementiel
       description: 'Collectez des inscriptions à vos événements, et gérez les invités ou la logistique facilement.'
     tab-5:
       title: Gestion budgétaire
       description: 'Créez vos propres tableaux de bord, pour calculer et suivre votre budget.'
   cta-1:
     button-1:
-      href: 'https://grist.numerique.gouv.fr/'
+      href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
       label: Commencer à utiliser Grist
     button-2:
       href: '#contact'
@@ -177,7 +177,7 @@ grist-landing:
       description: 'Fini les longs processus IT ! Accédez gratuitement à notre logiciel homologué par la DINUM, et profitez de modèles prêts à l’emploi et d’une communauté active pour démarrer et monter en compétences rapidement.'
   cta-2:
     button-1:
-      href: 'https://grist.numerique.gouv.fr/'
+      href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
       label: Commencer à utiliser Grist
     button-2:
       href: 'https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7'
@@ -206,11 +206,11 @@ et à collaborer avec vos partenaires sans effort."
     title: 'Dites adieu aux feuilles de calcul envoyées par e-mail !'
     description: 'Comme des milliers d’agents publics, utilisez Grist et gagnez un temps précieux dans la gestion de votre administration.'
     cta:
-      href: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F'
+      href: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website'
       label: S'identifier avec ProConnect
   resources:
     title: 'Toutes les ressources'
-    description: "Envie d’en apprendre plus sur Grist, d’en discuter ou de contribuer au projet ? Abonnez-vous à notre [chaîne peertube](https://tube.numerique.gouv.fr/c/grist/videos) et rejoignez la communauté Grist
+    description: "Envie d’en apprendre plus sur Grist, d’en discuter ou de contribuer au projet ? Abonnez-vous à notre [chaîne PeerTube](https://tube.numerique.gouv.fr/c/grist/videos) et rejoignez la communauté Grist
 [sur Tchap](https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr), sur le [Forum francophone](https://forum.grist.libre.sh/) ou sur [Github](https://github.com/gristlabs/grist-core)."
   contact:
     title: 'Contactez-nous'
@@ -220,11 +220,11 @@ et à collaborer avec vos partenaires sans effort."
     about:
       description: 'Grist est la solution collaborative qui simplifie la coopération, garantit la souveraineté de vos données et accélère la prise de décision.'
       cta:
-        href: 'https://grist.numerique.gouv.fr'
+        href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
         label: 'Commencer à utiliser Grist'
     menu: |
-      - [Connexion](https://grist.numerique.gouv.fr/o/docs/login?next=%2F)
-      - [Contact](mailto:grist@numerique.gouv.fr)
+      - [Connexion](https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website)
+      - [Contact](#contact)
       - [Inscription webinaire](https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7)
       - [Forum Grist](https://forum.grist.libre.sh/)
       - [Grist sur Tchap](https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr)
