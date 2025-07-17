@@ -35,7 +35,7 @@ export const Hero = () => {
             width="700"
             height="394"
             src={t('grist-landing.hero.video-url')}
-            className="md:mx-auto max-w-[700px] w-full h-auto"
+            className="md:mx-auto max-w-[700px] w-full h-auto border border-blue-1 rounded-2xl"
             style={{ aspectRatio: '700 / 394' }}
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
           ></iframe>
