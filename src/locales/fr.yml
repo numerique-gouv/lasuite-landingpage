@@ -121,7 +121,7 @@ grist-landing:
     description: 'Grist est la plateforme d’équipe validée par l’État pour centraliser, analyser et partager vos données.'
     tag: Déjà utilisé par 8 ministères
     description2: 'Grist est membre de [La Suite numérique](https://numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
-    video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA'
+    video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA?subtitle=fr&title=0'
     proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F'
   why-grist:
     title: Pourquoi Grist ?
