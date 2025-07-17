@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import { ZoomableImage } from '@/components/ZoomableImage'
 
 export const KeyFeatures = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div>

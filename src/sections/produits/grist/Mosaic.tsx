@@ -16,7 +16,7 @@ const cardsNumber = 3
 const CARDS_IMGS = [Img5, Img6, Img7]
 
 export const Mosaic = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div className="flex flex-col gap-24">

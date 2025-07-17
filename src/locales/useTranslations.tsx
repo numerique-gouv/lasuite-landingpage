@@ -35,14 +35,21 @@ function TranslationsProvider({
   )
 }
 
-function useTranslations() {
+function useTranslations({
+  useFallback = false,
+}: {
+  useFallback?: boolean
+} = {}) {
   const context = useContext(TranslationsContext)
   const translations = context || fr
   return function t<T = string>(
     id: string,
     params: Record<string, string | ReactNode> = {}
   ): T {
-    const translation = get(translations, id) as string
+    let translation = get(translations, id) as string
+    if (!translation && useFallback) {
+      translation = get(fr, id) as string
+    }
     if (!translation) {
       console.warn(`Translation for key "${id}" not found`)
       return id as T

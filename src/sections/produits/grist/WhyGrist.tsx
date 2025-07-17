@@ -12,7 +12,7 @@ const tabsNumber = 5
 const IMGS = [Img1, Img2, Img3, Img4, Img5]
 
 export const WhyGrist = () => {
-  const t = useTranslations()
+  const t = useTranslations({ useFallback: true })
 
   return (
     <div className="flex flex-col gap-6">
