@@ -16,7 +16,7 @@ export const WhyGrist = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-4xl md:text-5xl font-bold">
+      <h2 className="text-4xl lg:text-5xl font-bold">
         {t('grist-landing.why-grist.title')}
       </h2>
       <p className="text-lg">{t('grist-landing.why-grist.description')}</p>

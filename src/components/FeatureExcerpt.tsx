@@ -37,7 +37,7 @@ export const FeatureExcerpt = ({
       >
         <ZoomableImage
           loading="lazy"
-          className="w-[523px] h-auto"
+          className="w-full md:w-[400px] lg:w-[523px] h-auto"
           src={image}
           alt=""
         />
@@ -46,7 +46,7 @@ export const FeatureExcerpt = ({
         {/* show the tag first in the UI, but make sure screen readers don't miss the tag if navigating by heading by having it first in the DOM*/}
         <div className="flex flex-col-reverse items-start">
           {title && (
-            <h3 className="text-2xl md:text-[2.5rem] md:leading-[3rem] font-bold my-3 md:my-5">
+            <h3 className="text-2xl lg:text-[2.5rem] lg:leading-[3rem] font-bold my-3 lg:my-5">
               {title}
             </h3>
           )}

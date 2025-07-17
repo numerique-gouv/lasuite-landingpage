@@ -11,13 +11,13 @@ export const Resources = () => {
 
   return (
     <div className="md:text-center flex flex-col gap-4 md:gap-8">
-      <h2 className="text-4xl md:text-5xl font-bold">
+      <h2 className="text-4xl lg:text-5xl font-bold">
         {t('grist-landing.resources.title')}
       </h2>
       <Markdown className="text-lg with-content-links">
         {t('grist-landing.resources.description')}
       </Markdown>
-      <div className="w-fit mx-auto flex flex-wrap gap-12 md:gap-24 justify-between items-center">
+      <div className="w-fit mx-auto flex flex-wrap gap-12 md:gap-24 mt-4 md:mt-0 justify-center md:justify-between items-center">
         <a href="https://tube.numerique.gouv.fr/c/grist/videos">
           <Image
             className="h-auto w-[62px]"
