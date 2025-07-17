@@ -59,7 +59,7 @@ export const Contact = () => {
   const t = useTranslations({ useFallback: true })
   return (
     <div id="contact" className="md:text-center flex flex-col gap-4 md:gap-8">
-      <h2 className="text-4xl md:text-5xl font-bold">
+      <h2 className="text-4xl lg:text-5xl font-bold">
         {t('grist-landing.contact.title')}
       </h2>
       <p className="text-greyscale-600">

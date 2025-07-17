@@ -11,11 +11,11 @@ export const Users = () => {
 
   return (
     <div className="md:text-center flex flex-col gap-8">
-      <h2 className="text-4xl md:text-5xl font-bold text-pretty">
+      <h2 className="text-4xl lg:text-5xl font-bold text-pretty">
         {t('grist-landing.users.title')}
       </h2>
       <p className="text-lg">{t('grist-landing.users.description')}</p>
-      <div className="flex flex-wrap gap-4 justify-around md:justify-between items-center">
+      <div className="flex flex-row flex-wrap gap-8 md:gap-4 justify-center md:justify-between items-center">
         <Image className="h-auto w-[72px]" src={Anct} alt="A.N.C.T." />
         <Image className="h-auto w-[122px]" src={Cnil} alt="C.N.I.L." />
         <Image className="h-auto w-[96px]" src={Cnrs} alt="C.N.R.S." />
