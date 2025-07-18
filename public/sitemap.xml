@@ -20,6 +20,11 @@
         <priority>0.50</priority>
     </url>
     <url>
+        <loc>https://lasuite.numerique.gouv.fr/produits/grist</loc>
+        <lastmod>2025-07-18T16:00:00+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
         <loc>https://lasuite.numerique.gouv.fr/mentions-legales</loc>
         <lastmod>2024-03-05T18:34:54+00:00</lastmod>
         <priority>0.10</priority>
