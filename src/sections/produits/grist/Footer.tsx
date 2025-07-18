@@ -3,7 +3,7 @@ import GristLogo from '@/assets/grist/grist-logo.png'
 import LaSuiteLogo from '@/assets/grist/lasuite-logo.png'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import Markdown from 'react-markdown'
+import { Markdown } from './Markdown'
 
 export const Footer = () => {
   const t = useTranslations({ useFallback: true })
@@ -31,7 +31,7 @@ export const Footer = () => {
 
           <div className="text-[0.875rem]">
             <h3 className="font-bold mb-4">Menu</h3>
-            <Markdown className="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-4">
+            <Markdown className="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-4 [&_a:hover]:underline [&_a]:underline-offset-4">
               {t('grist-landing.footer.menu')}
             </Markdown>
           </div>
@@ -47,7 +47,7 @@ export const Footer = () => {
             <p className="font-bold mb-4">
               {t('grist-landing.footer.lasuite.title')}
             </p>
-            <Markdown className="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-4">
+            <Markdown className="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-4 [&_a:hover]:underline [&_a]:underline-offset-4">
               {t('grist-landing.footer.lasuite.links')}
             </Markdown>
           </div>

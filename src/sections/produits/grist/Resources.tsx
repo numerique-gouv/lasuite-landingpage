@@ -4,7 +4,7 @@ import Tchap from '@/assets/grist/resources/tchap.png'
 import Forum from '@/assets/grist/resources/forum.png'
 import Github from '@/assets/grist/resources/github.png'
 import Image from 'next/image'
-import Markdown from 'react-markdown'
+import { Markdown } from './Markdown'
 
 export const Resources = () => {
   const t = useTranslations({ useFallback: true })

@@ -1,7 +1,7 @@
 import ProConnectSvg from '@/components/ProConnectSvg'
 import { Tag } from '@/components/Tag'
 import { useTranslations } from '@/locales/useTranslations'
-import Markdown from 'react-markdown'
+import { Markdown } from './Markdown'
 
 export const Hero = () => {
   const t = useTranslations({ useFallback: true })
@@ -40,23 +40,9 @@ export const Hero = () => {
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
           ></iframe>
         </div>
-        <div className="with-content-links">
-          <Markdown
-            className="flex-shrink-0"
-            components={{
-              a: (props) => (
-                <a
-                  {...props}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline flex-shrink-0"
-                />
-              ),
-            }}
-          >
-            {t('grist-landing.hero.description2')}
-          </Markdown>
-        </div>
+        <Markdown className="with-content-links">
+          {t('grist-landing.hero.description2')}
+        </Markdown>
       </div>
     </div>
   )
