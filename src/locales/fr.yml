@@ -8,7 +8,7 @@ common:
   send: Envoyer
   footer: Pied de page
 head:
-  homepage_og_title: Utilisez La Suite Numérique dès aujourd’hui !
+  homepage_og_title: Utilisez La Suite numérique dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
 header:
   tagline: Des communs numériques pour un État simple, efficace et souverain
@@ -112,20 +112,20 @@ homepage:
       pourra également bénéficier des services de la Suite territoriale.'
     button: Découvrir La Suite Territoriale
   footer:
-    description: Utilisez La Suite Numérique dès aujourd’hui !
+    description: Utilisez La Suite numérique dès aujourd’hui !
     contact_button: Discuter avec nous
     newsletter_button: S’abonner à la newsletter
 grist-landing:
   hero:
     title: 'Le tableur collaboratif et souverain, qui transforme vos données en décisions fiables'
-    description: 'Grist est la plateforme d’équipe gratuite et validée par l’État pour centraliser, analyser et partager vos données.'
+    description: 'Grist est la plateforme d’équipe gratuite de l’État pour centraliser, analyser et partager vos données.'
     tag: Déjà utilisé dans 15 ministères
-    description2: 'Grist est membre de [La Suite Numérique](https://lasuite.numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
+    description2: 'Grist fait partie de [La Suite numérique](https://lasuite.numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
     video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA?subtitle=fr&title=0'
     proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
   why-grist:
     title: Pourquoi utiliser Grist ?
-    description: "Grist est l'outil no-code de gestion de données de l'administration publique."
+    description: "Grist est l'outil no-code de gestion de données de l'administration."
     tab-1:
       title: Gestion d'équipe
       description: 'Centralisez toutes les informations importantes concernant votre équipe au même endroit, et gérez le quotidien de ses membres (ex : gestion de congés ou calendrier de présence).'
@@ -140,7 +140,7 @@ grist-landing:
       description: 'Collectez des inscriptions à vos événements, et gérez les invités ou la logistique facilement.'
     tab-5:
       title: Gestion budgétaire
-      description: 'Créez vos propres tableaux de bord, pour calculer et suivre votre budget.'
+      description: 'Créez vos propres tableaux de bord pour calculer et suivre votre budget.'
   cta-1:
     button-1:
       href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
@@ -150,31 +150,31 @@ grist-landing:
       label: Nous contacter
   mosaic:
     block-1:
-      title: Collaborez avec votre équipe, en toute fluidité
-      description: 'Avec ses fonctionnalités avancées de collecte et de gestion de données, Grist simplifie la collaboration au sein de votre équipe, ou avec d’autres administrations.'
+      title: Collaborez avec votre équipe en toute fluidité
+      description: 'Avec ses fonctionnalités avancées de collecte et de gestion de données, Grist simplifie la collaboration au sein de votre équipe ou avec d’autres administrations.'
       tag: Collaborer
     block-2:
       title: Prenez des décisions basées sur vos données
-      description: 'Grâce à ses tableaux de bord modulables et interactifs, et ses cas d’usage variés, Grist vous offre une vision claire de vos données, pour vous aider à orienter vos choix.'
+      description: 'Grâce à ses tableaux de bord modulables et interactifs et ses cas d’usage variés, Grist vous offre une vision claire de vos données pour vous aider à orienter vos choix.'
       tag: Orienter
     block-3:
       title: Gagnez en productivité
-      description: 'En centralisant toutes vos données, en éliminant la double saisie et en utilisant notre assistant IA, Grist vous fera gagner un temps précieux.'
+      description: 'En centralisant toutes vos données, en éliminant la double saisie et avec son assistant IA, Grist vous fera gagner un temps précieux.'
       tag: Productivité
     block-4:
       title: Garantissez votre souveraineté et votre sécurité
-      description: 'Hébergé en France, open-source et certifié SecNumCloud, Grist protège vos données et vous assure souveraineté et conformité.'
+      description: 'Hébergé en SecNumCloud en France, open-source, et homologué, Grist protège vos données et vous assure souveraineté et conformité.'
       tag: Souveraineté
   cards:
     card-1:
-      title: Intégrez vos propres outils, sans difficultés
+      title: Intégrez vos propres outils sans difficultés
       description: 'Avec ses widgets sur mesure, ses possibilités d’intégration et ses fonctionnalités de personnalisation, Grist s’adapte à votre écosystème et à vos besoins spécifiques.'
     card-2:
       title: Assurez l’intégrité de vos données
       description: 'Avec ses contrôles intégrés et le suivi des versions, Grist prévient les erreurs et garantit des données fiables.'
     card-3:
       title: Embarquez rapidement
-      description: 'Fini les longs processus IT ! Accédez gratuitement à notre logiciel homologué par la DINUM, et profitez de modèles prêts à l’emploi et d’une communauté active pour démarrer et monter en compétences rapidement.'
+      description: 'Accédez gratuitement à notre logiciel homologué par la DINUM, et profitez de modèles prêts à l’emploi et d’une communauté active pour démarrer et monter en compétences rapidement.'
   cta-2:
     button-1:
       href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
