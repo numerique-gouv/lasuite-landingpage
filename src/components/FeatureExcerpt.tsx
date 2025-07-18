@@ -29,17 +29,12 @@ export const FeatureExcerpt = ({
 }) => {
   return (
     <div
-      className={classNames(
-        'flex flex-col gap-4 md:gap-8',
-        {
-          'md:flex-row':         imagePosition === 'left',
-          'md:flex-row-reverse': imagePosition === 'right',
-        }
-      )}
+      className={classNames('flex flex-col gap-4 md:gap-8', {
+        'md:flex-row': imagePosition === 'left',
+        'md:flex-row-reverse': imagePosition === 'right',
+      })}
     >
-    <div
-        className="flex-shrink-0"
-      >
+      <div className="flex-shrink-0">
         <ZoomableImage
           loading="lazy"
           className="w-full md:w-[400px] lg:w-[523px] h-auto"
