@@ -1,7 +1,7 @@
 import { useTranslations } from '@/locales/useTranslations'
 import KeyFeaturesImg from '@/assets/grist/key-features.png'
-import Markdown from 'react-markdown'
 import { ZoomableImage } from '@/components/ZoomableImage'
+import { Markdown } from './Markdown'
 
 export const KeyFeatures = () => {
   const t = useTranslations({ useFallback: true })
