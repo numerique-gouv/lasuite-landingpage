@@ -184,7 +184,7 @@ grist-landing:
       label: Participer à un webinaire
   users:
     title: Plus de 15 000 agents utilisent déjà Grist
-    description: 'Grist aide collectivités, ministères, institutions publiques ou encore administrations centrales.'
+    description: 'Grist est utilisé par l’administration centrale et les agences et opérateurs de l’Etat.'
   key-features:
     title: Les fonctionnalités clés
     description: "Grist développe des fonctionnalités qui vous aideront à centraliser et afficher des informations,
