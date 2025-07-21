@@ -16,6 +16,10 @@
   @apply absolute inset-0 z-[1] content-[''];
 }
 
+.h2 {
+  @apply text-[1.75rem] lg:text-[2.5rem] lg:leading-[3rem] font-bold text-pretty;
+}
+
 .logo:before {
   content: '';
   display: block;

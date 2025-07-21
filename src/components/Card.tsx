@@ -17,7 +17,7 @@ export const Card = ({
   return (
     <div className="flex flex-col gap-4">
       <ZoomableImage src={image} alt="" className="w-full h-auto" />
-      <h3 className="text-[1.375em] leading-[1.75rem] text-greyscale-700 font-bold">
+      <h3 className="text-2xl md:text-[1.375em] md:leading-[1.75rem] text-greyscale-700 font-bold">
         {title}
       </h3>
       <p className="text-greyscale-600 text-base">{description}</p>

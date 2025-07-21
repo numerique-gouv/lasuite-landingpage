@@ -9,15 +9,13 @@ export const KeyFeatures = () => {
   return (
     <div>
       <div className="md:text-center flex flex-col gap-8 mb-8">
-        <h2 className="text-4xl lg:text-5xl font-bold">
-          {t('grist-landing.key-features.title')}
-        </h2>
+        <h2 className="h2">{t('grist-landing.key-features.title')}</h2>
         <p className="text-lg text-pretty">
           {t('grist-landing.key-features.description')}
         </p>
         <ZoomableImage className="w-full h-auto" src={KeyFeaturesImg} alt="" />
       </div>
-      <Markdown className="content-page">
+      <Markdown className="content-page leading-[30px]">
         {t('grist-landing.key-features.body')}
       </Markdown>
     </div>
