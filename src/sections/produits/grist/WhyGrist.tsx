@@ -16,9 +16,7 @@ export const WhyGrist = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="h2">
-        {t('grist-landing.why-grist.title')}
-      </h2>
+      <h2 className="h2">{t('grist-landing.why-grist.title')}</h2>
       <p className="text-lg">{t('grist-landing.why-grist.description')}</p>
       <TabGroup>
         <TabList className="flex fade-in flex-wrap w-full justify-center mb-6">
