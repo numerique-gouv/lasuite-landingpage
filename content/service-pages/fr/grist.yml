@@ -17,6 +17,16 @@ flexible_content:
   - type: cta
     cta:
       target_blank: true
+      label: Lire la documentation
+      href: https://support.getgrist.com/fr/
+    bg: auto
+    title: Consultez la documentation communautaire de Grist
+    body: La documentation de Grist est rédigée par la communauté et n'est pas spécifique à l'instance
+      inter-ministérielle. Vous y trouverez des guides, des astuces et des réponses
+      aux questions fréquentes.
+  - type: cta
+    cta:
+      target_blank: true
       label: Nous contacter
       href: mailto:grist@numerique.gouv.fr
     bg: auto
