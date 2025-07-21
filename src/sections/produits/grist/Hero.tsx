@@ -16,7 +16,7 @@ export const Hero = () => {
         <div className="flex flex-col-reverse items-start md:items-center gap-4">
           <h1
             className="text-pretty text-greyscale-900 lg:text-5xl text-4xl sm:leading-[42px] lg:leading-[52px] font-bold md:text-center"
-            style={{ letterSpacing: '-2%' }}
+            style={{ letterSpacing: '-0.02em' }}
           >
             {t('grist-landing.hero.title')}
           </h1>
