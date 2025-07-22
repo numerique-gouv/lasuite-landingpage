@@ -6,7 +6,7 @@ hero:
     - primary: true
       target_blank: false
       label: Accédez à l'instance inter-ministerielle de Grist
-      href: https://grist.numerique.gouv.fr
+      href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
   title: Collaborez sur des jeux de données avec Grist
   image: /content/uploads/logo_grist_marianne.svg
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
