@@ -206,7 +206,7 @@ et à collaborer avec vos partenaires sans effort."
     title: 'Dites adieu aux feuilles de calcul envoyées par e-mail !'
     description: 'Comme des milliers d’agents publics, utilisez Grist et gagnez un temps précieux dans la gestion de votre administration.'
     cta:
-      href: 'https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website'
+      href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
       label: S'identifier avec ProConnect
   resources:
     title: 'Toutes les ressources'
@@ -223,7 +223,7 @@ et à collaborer avec vos partenaires sans effort."
         href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
         label: 'Commencer à utiliser Grist'
     menu: |
-      - [Connexion](https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website)
+      - [Connexion](https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website)
       - [Contact](#contact)
       - [Inscription webinaire](https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7)
       - [Forum Grist](https://forum.grist.libre.sh/)
