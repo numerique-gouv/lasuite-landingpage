@@ -179,7 +179,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotEn: GristScreenshot,
     screenshotMobileEn: GristScreenshotMobile,
     name: 'Grist',
-    url: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website',
+    url: 'https://grist.numerique.gouv.fr/',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
     description:
       'Le tableur collaboratif pour structurer vos bases de données.',
