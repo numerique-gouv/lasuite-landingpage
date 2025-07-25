@@ -15,7 +15,7 @@ const ProductsHeader: React.FC<{ productContent: ProductContent; slug: string }>
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fade-in bg-white px-4 sm:fixed absolute top-0 right-0 left-0 z-50">
+    <header className="fade-in bg-white px-4 absolute top-0 right-0 left-0 z-50">
       <div className="flex items-center">
         <div className="flex items-center gap-4 sm:hidden">
           <button

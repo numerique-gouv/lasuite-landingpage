@@ -55,7 +55,7 @@ const FAQAccordionSection: FC<{ block: BlockFAQBlock }> = ({ block }) => {
             />
           </Paragraph>
         </div>
-        <div className="flex flex-col border border-b-0 border-greyscale-200">
+        <div className="flex flex-col rounded rounded-2 border border-greyscale-200">
           {block.questions?.map((q, qIdx) => (
             <AccordionItem
               key={qIdx}
@@ -64,6 +64,7 @@ const FAQAccordionSection: FC<{ block: BlockFAQBlock }> = ({ block }) => {
               open={openIdx === qIdx}
               onClick={() => setOpenIdx(openIdx === qIdx ? null : qIdx)}
               idx={qIdx}
+              lastItem={qIdx === block.questions.length - 1}
             />
           ))}
         </div>
@@ -72,7 +73,7 @@ const FAQAccordionSection: FC<{ block: BlockFAQBlock }> = ({ block }) => {
             <p className="mb-4">{block.footerContent}</p>
             {block.button && (
                 <Button
-                  variant="tertiary"
+                  variant="secondary"
                   onClick={openCrisp}
                   icon={<ChatOutlinedIcon />}
                   iconPosition="left"
@@ -93,10 +94,12 @@ const AccordionItem: FC<{
   open: boolean
   onClick: () => void
   idx: number
-}> = ({ question, answer, open, onClick, idx }) => {
+  lastItem: boolean
+}> = ({ question, answer, open, onClick, idx, lastItem }) => {
   return (
-    <div className={`border-b border-greyscale-200
-      ${open ? 'bg-greyscale-050 open-container' : ''}`}>
+    <div className={`border-greyscale-200 
+      ${open ? 'bg-greyscale-050 open-container' : ''}
+      ${!lastItem ? 'border-b' : ''}`}>
       <button
         className={`px-4 pt-3 text-primary-text w-full text-left flex justify-between items-center py-3 font-medium text-base`}
         aria-expanded={open}
