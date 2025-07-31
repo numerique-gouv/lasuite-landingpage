@@ -56,7 +56,7 @@ homepage:
       basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> and other JavaScript libraries.'
     'Visio':
       description: 'Simple and effective videoconferencing to communicate and collaborate.'
-      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://https://livekit.io">LiveKit</a>'
+      basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'The professional messaging for civil servants.'
       basedOn: 'Based on <a class="inline-block font-bold text-primary-text" target="new" href="https://www.open-xchange.com">Open-XChange</a> and other Free Software programs.'
