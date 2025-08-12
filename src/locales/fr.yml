@@ -57,7 +57,7 @@ homepage:
       basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.blocknotejs.org">BlockNoteJS</a> et d‘autres bibliothèques JavaScript.'
     'Visio':
       description: 'La visioconférence simple et efficace pour communiquer et collaborer.'
-      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://https://livekit.io">LiveKit</a>'
+      basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://livekit.io">LiveKit</a>'
     'Messagerie':
       description: 'La messagerie professionnelle des agents de l’État.'
       basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.open-xchange.com">Open-XChange</a> et d‘autres logiciels libres.'
