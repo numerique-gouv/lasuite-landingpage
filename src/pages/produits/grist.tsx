@@ -11,11 +11,23 @@ import { Resources } from '@/sections/produits/grist/Resources'
 import { Contact } from '@/sections/produits/grist/Contact'
 import { Footer } from '@/sections/produits/grist/Footer'
 import BeforeContactBlockImg from '@/assets/grist/before-contact-block.png'
+import GristLogo from '@/assets/grist/grist-logo-lasuite.svg'
+import Image from 'next/image'
 
 export default function GristLandingPage() {
   const t = useTranslations({ useFallback: true })
   return (
-    <Layout title={'Grist'}>
+    <Layout
+      title={'Grist'}
+      loginUrl="https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website&mtm_medium=nav"
+      logo={
+        <Image
+          className="h-10"
+          src={GristLogo}
+          alt={t('common.back_to_home')}
+        />
+      }
+    >
       <div className="pt-16 px-3 sm:mt-12 max-w-[65.5rem] mx-auto flex flex-col gap-32 mb-32">
         <Hero />
         <WhyGrist />

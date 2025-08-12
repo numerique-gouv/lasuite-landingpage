@@ -7,6 +7,7 @@ import LogoGouvSvg from '@/assets/logo/gouv.svg'
 import Image from 'next/image'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
+import { useTranslations } from '@/locales/useTranslations'
 
 /**
  * NavBar Component
@@ -14,8 +15,15 @@ import CloseIcon from '@mui/icons-material/Close'
  *
  * We kinda match DSFR styling here but with custom dom/classes for our specific use case.
  */
-export const NavBar = () => {
+export const NavBar = ({
+  logo,
+  loginUrl,
+}: {
+  logo?: React.ReactNode
+  loginUrl?: string
+}) => {
   const [isOpen, setIsOpen] = useState(false)
+  const t = useTranslations()
 
   return (
     <header className="fade-in bg-white px-4 sm:fixed relative top-0 right-0 left-0 z-50">
@@ -40,14 +48,26 @@ export const NavBar = () => {
             alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
           />
           <Link href="/" className="sm:ml-5">
-            <Image
-              className="w-28"
-              src={LogoSvg}
-              alt="lasuite.numerique.gouv.fr"
-            />
+            {logo || (
+              <Image
+                className="w-28"
+                src={LogoSvg}
+                alt="lasuite.numerique.gouv.fr"
+              />
+            )}
           </Link>
         </div>
         <div className="absolute flex items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
+          {!!loginUrl && (
+            <div className="hidden md:block">
+              <a
+                href={loginUrl}
+                className="flex border-none items-center bg-white border rounded-md px-4 py-2 text-blue-1 font-bold hover:bg-primary-100"
+              >
+                {t('common.login')}
+              </a>
+            </div>
+          )}
           <div className="hidden md:block">
             <LocaleSwitcher />
           </div>

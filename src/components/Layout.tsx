@@ -8,6 +8,8 @@ import { useTranslations } from '@/locales/useTranslations'
 export const Layout: React.FC<{
   children: React.ReactNode
   background?: 'gray'
+  logo?: React.ReactNode
+  loginUrl?: string
   /**
    * Text to use as page <title>. It should represent what the current page is about.
    * The website name is appended to the title automatically.
@@ -39,7 +41,7 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <NavBar />
+      <NavBar logo={props.logo} loginUrl={props.loginUrl} />
       <main {...props}>{props.children}</main>
       <Footer />
     </div>

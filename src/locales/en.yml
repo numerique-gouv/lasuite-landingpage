@@ -4,6 +4,7 @@ common:
   new_window: new window
   know_more: Know more
   back_to_home: Back to homepage
+  login: Login
 head:
   homepage_og_title: Work with La Suite numérique
   meta_desc:
