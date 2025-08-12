@@ -7,6 +7,7 @@ common:
   proconnect_button_label: S'identifier avec ProConnect
   send: Envoyer
   footer: Pied de page
+  login: Se connecter
 head:
   homepage_og_title: Utilisez La Suite numérique dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
