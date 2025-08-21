@@ -15,7 +15,7 @@ export const Layout: React.FC<{
    * The website name is appended to the title automatically.
    */
   title: string
-}> = ({ title, background, ...props }) => {
+}> = ({ title, background, logo, loginUrl, ...props }) => {
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   const t = useTranslations()
@@ -41,7 +41,7 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <NavBar logo={props.logo} loginUrl={props.loginUrl} />
+      <NavBar logo={logo} loginUrl={loginUrl} />
       <main {...props}>{props.children}</main>
       <Footer />
     </div>
