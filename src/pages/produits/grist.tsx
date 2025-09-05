@@ -13,9 +13,15 @@ import { Footer } from '@/sections/produits/grist/Footer'
 import BeforeContactBlockImg from '@/assets/grist/before-contact-block.png'
 import GristLogo from '@/assets/grist/grist-logo-lasuite.svg'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import { injectCrisp } from '@/utils/inject-crisp'
 
 export default function GristLandingPage() {
   const t = useTranslations({ useFallback: true })
+  useEffect(() => {
+    injectCrisp()
+  }, [])
+
   return (
     <Layout
       title={'Grist'}
