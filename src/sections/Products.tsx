@@ -11,8 +11,8 @@ import { useTranslations } from '@/locales/useTranslations'
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
   'France Transfert',
-  'Grist',
   'Docs',
+  'Grist',
   'Visio',
   'Messagerie',
 ]
