@@ -50,3 +50,20 @@ newsletter:
     produit (newsletters, évènements, trucs et astuces...)
 socials:
   youtube: https://tube.numerique.gouv.fr/c/grist/videos?s=1
+main_menu:
+  - title: Ressources
+    items:
+      - title: 'Widgets, modèles et exemples'
+        href: https://docs.numerique.gouv.fr/docs/1a24cc6f-b0a7-4ef3-a9e4-6488ffb4ce8b/
+        description: Une librairie d'extensions pour adapter Grist
+      - title: Tutoriels
+        href: https://forum.grist.libre.sh/tag/tutoriel
+        description: Des tutos pour mettre en place différents projets
+      - title: Experts
+        href: https://comptoir-du-libre.org/fr/softwares/servicesProviders/659
+        description: Trouvez des experts pour votre projet
+      - title: Peertube
+        href: https://tube.numerique.gouv.fr/c/grist/videos
+        description: Accédez au replays des webinaires de la DINUM et de l’ANCT
+  - title: Contact
+    href: /produits/grist#contact
