@@ -36,6 +36,12 @@ export const ServicePageContent = ({
       await import('@gouvfr/dsfr/dist/core/core.module')
       // @ts-ignore
       await import('@gouvfr/dsfr/dist/component/accordion/accordion.module')
+      // @ts-ignore
+      await import('@gouvfr/dsfr/dist/component/navigation/navigation.module')
+      // @ts-ignore
+      await import('@gouvfr/dsfr/dist/component/modal/modal.module')
+      // @ts-ignore
+      await import('@gouvfr/dsfr/dist/component/header/header.module')
     }
     loadDsfr()
   }, [])
