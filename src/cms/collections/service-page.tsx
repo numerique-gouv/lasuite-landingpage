@@ -212,6 +212,12 @@ const config: CmsCollection = {
           widget: 'object',
           fields: [
             {
+              label: 'Titre',
+              name: 'title',
+              widget: 'string',
+              required: false,
+            },
+            {
               label: 'Cartes',
               name: 'items',
               widget: 'list',
@@ -230,6 +236,12 @@ const config: CmsCollection = {
                   label: 'Image',
                   name: 'image',
                   widget: 'image',
+                  required: false,
+                },
+                {
+                  label: 'URL',
+                  name: 'href',
+                  widget: 'string',
                   required: false,
                 },
               ],

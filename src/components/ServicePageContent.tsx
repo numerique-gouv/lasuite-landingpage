@@ -50,25 +50,35 @@ export const ServicePageContent = ({
         let component
         switch (block.type) {
           case 'cards':
-            component = (
+            component = block.items?.length ? (
               <Cards
+                key="cards"
                 {...block}
                 items={block.items.map((item) => ({
                   ...item,
                   body: <Raw>{item.body}</Raw>,
                 }))}
               />
-            )
+            ) : null
             break
           case 'content':
-            component = <Content {...block} body={<Raw>{block.body}</Raw>} />
+            component = (
+              <Content
+                key="content"
+                {...block}
+                body={<Raw>{block.body}</Raw>}
+              />
+            )
             break
           case 'cta':
-            component = <CtaBlock {...block} body={<Raw>{block.body}</Raw>} />
+            component = (
+              <CtaBlock key="cta" {...block} body={<Raw>{block.body}</Raw>} />
+            )
             break
           case 'faq':
             component = (
               <FAQ
+                key="faq"
                 opened={isPreview}
                 {...block}
                 items={block.items.map((item) => ({
@@ -79,14 +89,27 @@ export const ServicePageContent = ({
             )
             break
           case 'pictures':
-            component = <Pictures {...block} body={<Raw>{block.body}</Raw>} />
+            component = (
+              <Pictures
+                key="pictures"
+                {...block}
+                body={<Raw>{block.body}</Raw>}
+              />
+            )
             break
           case 'screenshot':
-            component = <Screenshot {...block} body={<Raw>{block.body}</Raw>} />
+            component = (
+              <Screenshot
+                key="screenshot"
+                {...block}
+                body={<Raw>{block.body}</Raw>}
+              />
+            )
             break
           case 'testimonies':
             component = (
               <Testimonies
+                key="testimonies"
                 {...block}
                 items={block.items.map((item) => ({
                   ...item,
