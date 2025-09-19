@@ -47,7 +47,9 @@ export const SuiteNumerique = ({
             {t('service_landing_page.suite_numerique.body', {
               title,
               la_suite: (
-                <span className="font-bold">{t('common.la_suite')}</span>
+                <span key="la-suite" className="font-bold">
+                  {t('common.la_suite')}
+                </span>
               ),
             })}
           </Link>

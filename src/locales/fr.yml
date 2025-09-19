@@ -8,6 +8,8 @@ common:
   send: Envoyer
   footer: Pied de page
   login: Se connecter
+  menu: Menu
+  close: Fermer
 head:
   homepage_og_title: Utilisez La Suite numérique dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.

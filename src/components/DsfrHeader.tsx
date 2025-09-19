@@ -1,9 +1,22 @@
+import { Fragment } from 'react'
 import Link from 'next/link'
 import { LaGaufre } from './LaGaufre'
 import { LocaleSwitcher } from './LocaleSwitcher'
 import { useTranslations } from '@/locales/useTranslations'
 
-export const DsfrHeader = () => {
+export const DsfrHeader = ({
+  navItems = [],
+}: {
+  navItems?: Array<{
+    title: string
+    href?: string
+    items?: Array<{
+      title: string
+      href: string
+      description?: string
+    }>
+  }>
+}) => {
   const t = useTranslations()
   return (
     <>
@@ -20,6 +33,18 @@ export const DsfrHeader = () => {
                     <div className="me-4">
                       <LocaleSwitcher />
                       <LaGaufre />
+                      {navItems?.length ? (
+                        <button
+                          data-fr-opened="false"
+                          aria-controls="modal-header"
+                          title="Menu"
+                          type="button"
+                          id="button-header"
+                          className="fr-btn--menu fr-btn"
+                        >
+                          {t('common.menu')}
+                        </button>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -49,6 +74,83 @@ export const DsfrHeader = () => {
             </div>
           </div>
         </div>
+        {navItems?.length ? (
+          <div
+            className="fr-header__menu fr-modal"
+            id="modal-header"
+            aria-labelledby="button-header"
+          >
+            <div className="fr-container">
+              <button
+                aria-controls="modal-header"
+                title={t('common.close')}
+                type="button"
+                id="button-2168"
+                className="fr-btn--close fr-btn"
+              >
+                {t('common.close')}
+              </button>
+              <div className="fr-header__menu-links"></div>
+              <nav className="fr-nav" role="navigation">
+                <ul className="fr-nav__list">
+                  {navItems.map((item, i) => (
+                    <li key={item.title} className="fr-nav__item">
+                      {item.href ? (
+                        <a
+                          className="fr-nav__link"
+                          href={item.href}
+                          target={
+                            item.href.startsWith('http') ? '_blank' : '_self'
+                          }
+                        >
+                          {item.title}
+                        </a>
+                      ) : (
+                        <Fragment>
+                          <button
+                            className="fr-nav__btn"
+                            aria-expanded="false"
+                            aria-controls={`collapse-menu-${i}`}
+                          >
+                            {item.title}
+                          </button>
+                          <div
+                            className="fr-collapse fr-menu"
+                            id={`collapse-menu-${i}`}
+                          >
+                            <ul className="fr-menu__list">
+                              {item.items?.map((child) => (
+                                <li
+                                  key={child.title}
+                                  className="fr-enlarge-link"
+                                >
+                                  <a
+                                    className="fr-nav__link fr-pb-0-5v"
+                                    href={child.href}
+                                    target={
+                                      child.href.startsWith('http')
+                                        ? '_blank'
+                                        : '_self'
+                                    }
+                                  >
+                                    {child.title}
+                                  </a>
+                                  <span className="flex fr-text--xs fr-px-2w fr-pb-1w">
+                                    {child.description}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </Fragment>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </div>
+        ) : null}
       </header>
     </>
   )

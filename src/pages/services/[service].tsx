@@ -27,7 +27,7 @@ export default function ServiceLandingPage({ data }: { data: EntrySchema }) {
         />
       </Head>
       <div className="enable-dsfr">
-        <DsfrHeader />
+        <DsfrHeader navItems={data.main_menu || []} />
         <ServicePageContent data={data} />
         <DsfrFooter />
       </div>

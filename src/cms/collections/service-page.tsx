@@ -212,6 +212,12 @@ const config: CmsCollection = {
           widget: 'object',
           fields: [
             {
+              label: 'Titre',
+              name: 'title',
+              widget: 'string',
+              required: false,
+            },
+            {
               label: 'Cartes',
               name: 'items',
               widget: 'list',
@@ -230,6 +236,12 @@ const config: CmsCollection = {
                   label: 'Image',
                   name: 'image',
                   widget: 'image',
+                  required: false,
+                },
+                {
+                  label: 'URL',
+                  name: 'href',
+                  widget: 'string',
                   required: false,
                 },
               ],
@@ -668,6 +680,16 @@ export type EntrySchema = I18nField & {
     youtube?: string
     instagram?: string
   }
+  /* Note: this can't be edited through the CMS, but it's data stored in the yaml file that we can edit by hand */
+  main_menu?: {
+    title: string
+    href?: string
+    items?: {
+      title: string
+      description?: string
+      href: string
+    }[]
+  }[]
 }
 
 export const collection = createCollection<EntrySchema>({
