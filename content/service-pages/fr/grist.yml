@@ -6,7 +6,7 @@ hero:
     - primary: true
       target_blank: false
       label: Accédez à l'instance inter-ministerielle de Grist
-      href: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
+      href: https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website
   title: Collaborez sur des jeux de données avec Grist
   image: /content/uploads/logo_grist_marianne.svg
   embed: <iframe title="Présentation de Grist (3mn)" width="560" height="315"
@@ -14,53 +14,34 @@ hero:
     frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts
     allow-popups allow-forms"></iframe>
 flexible_content:
-  - type: cta
-    cta:
-      target_blank: true
-      label: Lire la documentation
-      href: https://support.getgrist.com/fr/
-    bg: auto
-    title: Consultez la documentation communautaire de Grist
-    body: La documentation de Grist est rédigée par la communauté et n'est pas spécifique à l'instance
-      inter-ministérielle. Vous y trouverez des guides, des astuces et des réponses
-      aux questions fréquentes.
-  - type: cta
-    cta:
-      target_blank: true
-      label: Nous contacter
-      href: mailto:grist@numerique.gouv.fr
-    bg: auto
-    title: Une question ? Une remarque ? Contactez-nous par email !
-  - type: cta
-    cta:
-      target_blank: true
-      label: Rejoindre le canal Tchap "Grist - Utilisateurs"
-      href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
-    bg: auto
-    title: Rejoignez la communauté grandissante des utilisateurs de Grist
-    body: Plusieurs milliers d'agents publics utilisent déjà Grist au quotidien
-      pour travailler sur des jeux de données de manière collaborative.
-  - type: cta
-    cta:
-      target_blank: true
-      label: Inscrivez-vous à un webinaire
-      href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
-    bg: auto
-    title: Inscrivez-vous à un webinaire
-    body:
-      Nous organisons régulièrement des webinaires de découverte de Grist ainsi
-      que des formations sur des sujets plus avancés (références, widget custom,
-      droits d'accès avancés...). Ces webinaires sont disponibles en replay sur
-      [notre chaine
-      peertube](https://tube.numerique.gouv.fr/c/grist/videos?s=1).
-  - type: cta
-    cta:
-      target_blank: true
-      label: Posez vos questions sur le forum de la communauté francophone
-      href: https://forum.grist.libre.sh/
-    bg: auto
-    title: Rejoindre le forum francophone
-    body: Ce forum permets aux membres de la communauté de s'entraider, de partager des trucs et astuces, et de documenter leurs trouvailles.
+  - type: cards
+    bg: blue
+    title: Ressources
+    items:
+      - title: Documentation
+        body: La documentation de Grist est rédigée par la communauté et n'est pas spécifique à l'instance inter-ministérielle. Vous y trouverez des guides, des astuces et des réponses aux questions fréquentes.
+        image: /content/uploads/article-line.svg
+        href: https://support.getgrist.com/fr/
+      - title: Contact
+        body: Une question ? Une remarque ? Contactez-nous via notre formulaire !
+        image: /content/uploads/article-line.svg
+        href: /produits/grist#contact
+      - title: Tchap
+        body: Rejoignez la communauté grandissante des utilisateurs de Grist sur Tchap. Plusieurs milliers d'agents publics utilisent déjà Grist au quotidien pour travailler sur des jeux de données de manière collaborative.
+        image: /content/uploads/chat-1-line.svg
+        href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
+      - title: Inscription aux webinaires
+        body: Nous organisons régulièrement des webinaires de découverte de Grist ainsi que des formations sur des sujets plus avancés (références, widget custom, droits d'accès avancés...).
+        image: /content/uploads/slideshow-3-line.svg
+        href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
+      - title: Peertube
+        body: Nos webinaires sont disponibles en replay sur notre chaine peertube.
+        image: /content/uploads/folder-video-line.svg
+        href: https://tube.numerique.gouv.fr/c/grist/videos?s=1
+      - title: Forum
+        body: Le forum francophone permet aux membres de la communauté de s'entraider, de partager des trucs et astuces, et de documenter leurs trouvailles.
+        image: /content/uploads/questionnaire-line.svg
+        href: https://forum.grist.libre.sh/
 newsletter:
   enable: true
   cta_href: https://grist.numerique.gouv.fr/o/dinum/forms/jBEikZgGipz4bjB3sbKAou/4
