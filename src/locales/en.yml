@@ -5,6 +5,8 @@ common:
   know_more: Know more
   back_to_home: Back to homepage
   login: Login
+  menu: Menu
+  close: Close
 head:
   homepage_og_title: Work with La Suite numérique
   meta_desc:
