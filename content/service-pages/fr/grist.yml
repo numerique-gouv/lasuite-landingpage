@@ -54,7 +54,7 @@ main_menu:
   - title: Ressources
     items:
       - title: 'Widgets, modèles et exemples'
-        href: https://docs.numerique.gouv.fr/docs/1a24cc6f-b0a7-4ef3-a9e4-6488ffb4ce8b/
+        href: https://docs.getgrist.com/9DZa7JFegUxz/GristHub/p/1
         description: Une librairie d'extensions pour adapter Grist
       - title: Tutoriels
         href: https://forum.grist.libre.sh/tag/tutoriel
