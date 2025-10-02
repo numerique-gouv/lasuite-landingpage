@@ -2,28 +2,36 @@ import Image from 'next/image'
 import type { ReactElement } from 'react'
 
 export const Cards = ({
+  title,
   items = [],
 }: {
-  items: Array<{ image?: string; title: string; body: ReactElement | string }>
+  title?: string
+  items: Array<{
+    image?: string
+    title: string
+    href?: string
+    body: ReactElement | string
+  }>
 }) => {
   if (!items.length) return null
   const columnClasses =
     items.length === 4
       ? 'fr-col-12 fr-col-sm-6 fr-col-xl-3'
-      : items.length === 3
-        ? 'fr-col-12 fr-col-md-4'
+      : items.length % 3 === 0
+        ? 'fr-col-12 fr-col-sm-6 fr-col-lg-4'
         : 'fr-col-12 fr-col-md-6'
   return (
     <div className="cms-block">
       <div className="fr-container">
+        {!!title && <h2>{title}</h2>}
         <div className="fr-grid-row fr-grid-row--gutters fr-my-0">
           {items.map((item, i) => {
             return (
               <div className={columnClasses} key={i}>
                 <div
-                  className="fr-card"
+                  className="fr-card fr-enlarge-link"
                   style={{
-                    border: '1px solid var(--border-default-blue-france)',
+                    borderBottom: '4px solid var(--border-plain-blue-france)',
                   }}
                 >
                   <div className="fr-card__body">
@@ -32,8 +40,8 @@ export const Cards = ({
                         <Image
                           src={item.image}
                           alt=""
-                          width="48"
-                          height="48"
+                          width="64"
+                          height="64"
                           className="my-8 mx-auto"
                         />
                       )}
@@ -44,7 +52,17 @@ export const Cards = ({
                           color: 'var(--text-title-blue-france)',
                         }}
                       >
-                        {item.title}
+                        {item.href ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.title}
+                          </a>
+                        ) : (
+                          item.title
+                        )}
                       </h3>
                       <div className="fr-card__desc">{item.body}</div>
                     </div>

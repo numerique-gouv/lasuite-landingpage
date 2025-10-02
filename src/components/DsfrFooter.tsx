@@ -88,6 +88,7 @@ export const DsfrFooter = () => {
               {t('footer.license', {
                 license: (
                   <a
+                    key="license"
                     href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
                     target="_blank"
                     rel="noopener external"
