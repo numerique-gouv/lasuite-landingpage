@@ -47,14 +47,14 @@ export default async function handler(
       id: 3,
       name: 'Visio',
       url: 'https://visio.numerique.gouv.fr/',
-      maturity: 'beta',
+      maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/visio.svg',
     },
     {
       id: 4,
       name: 'Fichiers',
       url: 'https://fichiers.numerique.gouv.fr/',
-      maturity: 'alpha',
+      maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/fichiers.svg',
     },
     {
