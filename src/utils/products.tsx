@@ -210,7 +210,6 @@ export const DINUM_PRODUCTS: Record<
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
     description:
       "L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.",
-    status: 'BETA',
     items: [
       <>
         <strong>Invitez vos collègues</strong> ou partagez un lien d'édition

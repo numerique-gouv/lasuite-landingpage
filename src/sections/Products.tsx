@@ -11,8 +11,8 @@ import { useTranslations } from '@/locales/useTranslations'
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
   'France Transfert',
-  'Grist',
   'Docs',
+  'Grist',
   'Visio',
   'Messagerie',
 ]
@@ -67,7 +67,9 @@ export const Products = () => {
               return (
                 <div
                   key={name}
-                  className="top-0 left-0 absolute w-full h-full flex items-center justify-center"
+                  className={`top-0 left-0 absolute w-full h-full flex items-center justify-center
+                    ${!isActive ? 'pointer-events-none' : ''}
+                    `}
                 >
                   <Image
                     alt=""

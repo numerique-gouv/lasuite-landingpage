@@ -4,6 +4,8 @@ common:
   new_window: Neues Fenster
   know_more: Mehr erfahren
   back_to_home: Zurück zur Startseite
+  menu: Menü
+  close: Schließen
 head:
   homepage_og_title: Arbeiten mit der digitalen Suite
   meta_desc: Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
