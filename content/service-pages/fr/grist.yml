@@ -65,6 +65,9 @@ main_menu:
       - title: Peertube
         href: https://tube.numerique.gouv.fr/c/grist/videos
         description: Accédez au replays des webinaires de la DINUM et de l’ANCT
+      - title : FAQ
+        href: https://docs.numerique.gouv.fr/docs/16d9b834-e1bb-4e0c-b657-2084fc96de59/
+        description: Vos questions, nos réponses
   - title: Communauté
     items:
       - title: 'Forum'
