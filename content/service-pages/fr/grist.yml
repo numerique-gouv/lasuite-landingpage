@@ -77,10 +77,13 @@ main_menu:
         href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
         description: Aide rapide, échanges spontanés
       - title: Événements
-        href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
-        description: Participez aux prochains webinaires et rencontres
+        href: https://grist.numerique.gouv.fr/o/docs/cYXWdmoFt62T/Evenements-Communaute-Grist/p/4?embed=true
+        description: Toutes les rencontres de la communauté
       - title: Développeurs
         href: https://github.com/gristlabs/grist-core
         description: Documentation, Github, Contribuer
+      - title: Webinaires
+        href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
+        description: Participez aux prochains webinaires
   - title: Contact
     href: /produits/grist#contact
