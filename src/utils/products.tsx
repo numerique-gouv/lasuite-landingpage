@@ -234,7 +234,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotEn: MessagerieScreenshotEn,
     screenshotMobileEn: MessagerieScreenshotMobileEn,
     name: 'Messagerie',
-    url: 'https://webmail.numerique.gouv.fr/',
+    url: 'https://messagerie.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
     description: 'La messagerie professionnelle des agents de l’État.',
