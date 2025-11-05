@@ -10,10 +10,8 @@ or to ask question.
 
 ## Scripts to help you
 
-To comply with the code and the commit message rules, you may run the following commands:
+To comply with the code rules, you may run the following command:
 
-- to lint the code: `npm run lint`
-- to install gitlint (to be run once): `npm run gitlint:install` to install gitlint
-- to lint the commit messages using gitlint: `npm run gitlint`
+- `npm run lint`
 
-If you have any trouble to run them, feel free to open an issue.
+If you have any trouble to run it, feel free to open an issue.

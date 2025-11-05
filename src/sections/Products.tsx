@@ -11,8 +11,8 @@ import { useTranslations } from '@/locales/useTranslations'
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
   'France Transfert',
-  'Grist',
   'Docs',
+  'Grist',
   'Visio',
   'Messagerie',
 ]
@@ -67,7 +67,9 @@ export const Products = () => {
               return (
                 <div
                   key={name}
-                  className="top-0 left-0 absolute w-full h-full flex items-center justify-center"
+                  className={`top-0 left-0 absolute w-full h-full flex items-center justify-center
+                    ${!isActive ? 'pointer-events-none' : ''}
+                    `}
                 >
                   <Image
                     alt=""
@@ -129,11 +131,20 @@ export const Products = () => {
               <p className="font-medium">
                 {t(`homepage.slider_products.${activeItem.name}.description`)}
               </p>
+              <p
+                className="font-medium"
+                dangerouslySetInnerHTML={{
+                  __html: t(
+                    `homepage.slider_products.${activeItem.name}.basedOn`
+                  ),
+                }}
+              ></p>
             </div>
 
             <div className="mt-5 md:mt-0 md:ml-3">
               <Button
                 href={DINUM_PRODUCTS[activeItem.name].url}
+                target="_blank"
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
               >

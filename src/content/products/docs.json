@@ -1,0 +1,295 @@
+{
+  "global": {
+    "title": "LaSuite - Docs",
+    "slug": "docs"
+  },
+  "fr": {
+    "hero": {
+      "title": "Là où les textes importants sont rédigés.",
+      "subtitle": "Docs est l outil d écriture collaboratif de l État pour rédiger, partager et publier vos documents en toute simplicité.",
+      "buttons": {
+        "primary": {
+          "label": "Se connecter",
+          "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F"
+        },
+        "secondary": {
+          "label": "Essayer maintenant",
+          "url": "#"
+        },
+        "seemore": "Inscrivez-vous au prochain webinaire."
+        }
+    },
+    "contents": [
+      {
+        "blockType": "BlockFull",
+        "tag": "Simplicity",
+        "title": "1 meeting, 1 click.",
+        "content": "Discover the power of simplicity with Visio. Create your virtual meeting with a single click and invite your collaborators. Designed for borderless collaboration across all browsers, Visio brings together public agents, external partners, and international teams in a sleek professional environment. Gone are the complexities of traditional tools — Visio redefines the simplicity of professional exchanges.",
+        "image": {
+          "src": "visio/app-visio.png",
+          "alt": "1 meeting, 1 click. illustration"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Performance",
+        "title": "Quality without compromise",
+        "content": "Based on the latest technologies, Visio offers a smooth and immersive experience that rivals the best solutions on the market. Nuances of voice and expressions are captured faithfully, allowing for clear exchanges between collaborators. Our architecture ensures optimal performance regardless of the number of participants, even on the most congested networks.",
+        "image": {
+          "position": "right",
+          "src": "visio/performance.png",
+          "alt": "1 meeting, 1 click. illustration"
+        }
+      },
+      {
+        "blockType": "BlockFull3Col",
+        "tag": "Innovation",
+        "title": "Visio-lutionary",
+        "content": "Visio pushes the boundaries of traditional video conferencing. More than just an intuitive and reliable application, Visio serves as our innovation lab to simplify your meeting experience. That’s why we integrate generative AI at the heart of the product.",
+        "blocks": [
+          {
+            "title": "Recording",
+            "content": "Record your meeting in video format with a single click, then easily share it with a link.",
+            "image": {
+              "src": "visio/recording.png",
+              "alt": "recording illustration"
+            }
+          },
+          {
+            "title": "Transcription",
+            "content": "Your conversations are converted into text, and a complete summary is automatically shared with all participants at the end of the meeting.",
+            "image": {
+              "src": "visio/transcription.png",
+              "alt": "transcription illustration"
+            }
+          },
+          {
+            "title": "Giga-meetings",
+            "content": "Visio supports up to X people simultaneously, without compromising performance.",
+            "image": {
+              "src": "visio/meeting.png",
+              "alt": "meeting illustration"
+            }
+          }
+        ]
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Security",
+        "title": "Unfailing protection",
+        "content": "Security is not an option. Every call is protected by end-to-end encryption (E2EE) and a waiting room gives you control over access, ensuring the confidentiality of your conversations. Our SecNum cloud infrastructure and SSO authentication provide an environment that meets the highest standards without compromising ease of use",
+        "image": {
+          "position": "right",
+          "src": "visio/security.png",
+          "alt": "security illustration"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Integrations",
+        "title": "The winning team",
+        "content": "Visio integrates with your work environment. Sync your meetings with your calendar, collaborate on shared whiteboards, and seamlessly connect your favourite tools. Our scalable platform continuously adds new integrations to support your business needs and enhance your productivity.",
+        "image": {
+          "position": "left",
+          "src": "visio/team.png",
+          "alt": "integration illustration"
+        }
+      },
+      {
+        "blockType": "BlockFAQ",
+        "tag": "",
+        "title": "Frequently asked questions",
+        "content": "At this stage, you may have some questions. Below is a list of the most frequently asked questions about Visio.",
+        "questions": [
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          },
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          },
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          }
+        ],
+        "footerContent": "Do you still have a question about Visio? Feel free to ask us directly — our team will be happy to answer you and guide you in discovering the platform.",
+        "button": {
+          "url": "#",
+          "text": "Chat with us"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Open Source",
+        "title": "Governments ❤️ Open Source.",
+        "content": "Visio is built on LiveKit, a robust open source video conferencing solution. Our code is fully available on GitHub and we actively contribute to the open source ecosystem. <br /> <br />Visio is the result of a collaboration between DINUM 🇫🇷 and other European public partners. We warmly welcome contributions and partnerships that will enrich this public platform.",
+        "image": {
+          "position": "right",
+          "src": "visio/ship.png",
+          "alt": "ship illustration"
+        },
+        "buttons": [
+          {
+            "type": "chat",
+            "icon": "ChatIcon",
+            "url": "#",
+            "text": "Matrix"
+          },
+          {
+            "type": "git",
+            "icon": "GitHubIcon",
+            "variant": "secondary",
+            "url": "#",
+            "text": "Github"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "text": "Visio is already available, log in or join a meeting now!"
+    }
+  },
+  "en": {
+    "title": "Simple and secure video conferences",
+    "subtitle": "Communicate and collaborate effortlessly, without compromising your sovereignty.",
+    "hero": {
+      "proconnect": {
+        "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F"
+      },
+      "seemore": "En savoir plus"
+    },
+    "contents": [
+      {
+        "blockType": "BlockFull",
+        "tag": "Simplicity",
+        "title": "1 meeting, 1 click.",
+        "content": "Discover the power of simplicity with Visio. Create your virtual meeting with a single click and invite your collaborators. Designed for borderless collaboration across all browsers, Visio brings together public agents, external partners, and international teams in a sleek professional environment. Gone are the complexities of traditional tools — Visio redefines the simplicity of professional exchanges.",
+        "image": {
+          "src": "visio/app-visio.png",
+          "alt": "1 meeting, 1 click. illustration"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Performance",
+        "title": "Quality without compromise",
+        "content": "Based on the latest technologies, Visio offers a smooth and immersive experience that rivals the best solutions on the market. Nuances of voice and expressions are captured faithfully, allowing for clear exchanges between collaborators. Our architecture ensures optimal performance regardless of the number of participants, even on the most congested networks.",
+        "image": {
+          "position": "right",
+          "src": "visio/performance.png",
+          "alt": "1 meeting, 1 click. illustration"
+        }
+      },
+      {
+        "blockType": "BlockFull3Col",
+        "tag": "Innovation",
+        "title": "Visio-lutionary",
+        "content": "Visio pushes the boundaries of traditional video conferencing. More than just an intuitive and reliable application, Visio serves as our innovation lab to simplify your meeting experience. That’s why we integrate generative AI at the heart of the product.",
+        "blocks": [
+          {
+            "title": "Recording",
+            "content": "Record your meeting in video format with a single click, then easily share it with a link.",
+            "image": {
+              "src": "visio/recording.png",
+              "alt": "recording illustration"
+            }
+          },
+          {
+            "title": "Transcription",
+            "content": "Your conversations are converted into text, and a complete summary is automatically shared with all participants at the end of the meeting.",
+            "image": {
+              "src": "visio/transcription.png",
+              "alt": "transcription illustration"
+            }
+          },
+          {
+            "title": "Giga-meetings",
+            "content": "Visio supports up to X people simultaneously, without compromising performance.",
+            "image": {
+              "src": "visio/meeting.png",
+              "alt": "meeting illustration"
+            }
+          }
+        ]
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Security",
+        "title": "Unfailing protection",
+        "content": "Security is not an option. Every call is protected by end-to-end encryption (E2EE) and a waiting room gives you control over access, ensuring the confidentiality of your conversations. Our SecNum cloud infrastructure and SSO authentication provide an environment that meets the highest standards without compromising ease of use",
+        "image": {
+          "position": "right",
+          "src": "visio/security.png",
+          "alt": "security illustration"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Integrations",
+        "title": "The winning team",
+        "content": "Visio integrates with your work environment. Sync your meetings with your calendar, collaborate on shared whiteboards, and seamlessly connect your favourite tools. Our scalable platform continuously adds new integrations to support your business needs and enhance your productivity.",
+        "image": {
+          "position": "left",
+          "src": "visio/team.png",
+          "alt": "integration illustration"
+        }
+      },
+      {
+        "blockType": "BlockFAQ",
+        "tag": "",
+        "title": "Frequently asked questions",
+        "content": "At this stage, you may have some questions. Below is a list of the most frequently asked questions about Visio.",
+        "questions": [
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          },
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          },
+          {
+            "q": "Can I ask an open question?",
+            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
+          }
+        ],
+        "footerContent": "Do you still have a question about Visio? Feel free to ask us directly — our team will be happy to answer you and guide you in discovering the platform.",
+        "button": {
+          "url": "#",
+          "text": "Chat with us"
+        }
+      },
+      {
+        "blockType": "Block2Col",
+        "tag": "Open Source",
+        "title": "Governments ❤️ Open Source.",
+        "content": "Visio is built on LiveKit, a robust open source video conferencing solution. Our code is fully available on GitHub and we actively contribute to the open source ecosystem. <br /> <br />Visio is the result of a collaboration between DINUM 🇫🇷 and other European public partners. We warmly welcome contributions and partnerships that will enrich this public platform.",
+        "image": {
+          "position": "right",
+          "src": "visio/ship.png",
+          "alt": "ship illustration"
+        },
+        "buttons": [
+          {
+            "type": "chat",
+            "icon": "ChatIcon",
+            "url": "#",
+            "text": "Matrix"
+          },
+          {
+            "type": "git",
+            "icon": "GitHubIcon",
+            "variant": "secondary",
+            "url": "#",
+            "text": "Github"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "text": "Visio is already available, log in or join a meeting now!"
+    }
+  }
+}

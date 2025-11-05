@@ -4,6 +4,8 @@ common:
   new_window: Nieuw venster
   know_more: Meer weten
   back_to_home: Terug naar de startpagina
+  menu: Menu
+  close: Sluiten
 head:
   homepage_og_title: Werk met de digitale Suite
   meta_desc: De digitale Suite brengt alle agenten en professionals in de publieke sector samen.
@@ -42,16 +44,22 @@ homepage:
   slider_products:
     'Tchap':
       description: 'Veilige instant messaging om overal te communiceren.'
+      basedOn: ' '
     'France Transfert':
       description: 'De veilige dienst voor het verzenden en ontvangen van grote bestanden.'
+      basedOn: ' '
     'Grist':
       description: 'De moderne en collaboratieve spreadsheet die verder gaat dan een raster.'
+      basedOn: ' '
     'Docs':
       description: 'De collaboratieve teksteditor die inhoud boven opmaak plaatst.'
+      basedOn: ' '
     'Visio':
       description: 'Eenvoudige en effectieve videoconferenties voor communicatie en samenwerking.'
+      basedOn: ' '
     'Messagerie':
       description: 'De professionele e-mailoplossing voor ambtenaren.'
+      basedOn: ' '
     button: 'Ontdek'
   portal_proconnect:
     tag: 'Uniek portaal'
@@ -60,7 +68,7 @@ homepage:
   ecosystem:
     tag: Overheidsdiensten
     title: Het ProConnect-ecosysteem
-    description: Blijf overheidsdiensten gebruiken met ProConnect. Résana, Webinaire, Webconf, Audioconf... Zo veel krachtige tools binnen handbereik die de digitale Suite perfect aanvullen.
+    description: Blijf overheidsdiensten gebruiken met ProConnect. Résana, Sites Faciles, Webinaire, Webconf, Audioconf... Zo veel krachtige tools binnen handbereik die de digitale Suite perfect aanvullen.
     resana_bento: BentoResana
   editors:
     tag: Uitgevers

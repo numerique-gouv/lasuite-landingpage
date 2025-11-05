@@ -6,10 +6,11 @@ import { MouseEventHandler } from 'react'
 interface ButtonProps {
   children: React.ReactNode
   href?: string
+  target?: '_blank'
   onClick?: MouseEventHandler<HTMLButtonElement>
   'aria-label'?: string
-  variant?: 'secondary' | 'outline' | 'tertiary'
-  size?: 'large'
+  variant?: 'outline' | 'tertiary' | 'outlineSecondary'
+  size?: 'large' | 'small'
   fullWidth?: boolean
   icon?: React.ReactNode
   iconPosition?: 'left' | 'right'
@@ -24,14 +25,17 @@ export const buttonStyles = {
   secondary: `${core} ${transition} font-medium border border-1 border-greyscale-300 text-blue-1`,
   tertiary: `${core} ${transition} font-medium text-blue-1 bg-primary-100 hover:bg-primary-300`,
   outline: `${core} ${transition} bg-transparent border border-2 font-bold border-blue-1 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
+  outlineSecondary: `${core} ${transition} bg-transparent border border-2 font-medium border-grey-4 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
 
   largeSize: '!text-xl md:!py-4 md:!px-8',
+  smallSize: '!text-sm md:!py-2 md:!px-4',
   fullWidth: '!w-full',
 }
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
+  target,
   onClick,
   icon,
   iconPosition = 'left',
@@ -45,9 +49,11 @@ export const Button: React.FC<ButtonProps> = ({
     [buttonStyles.outline]: variant === 'outline',
     [buttonStyles.secondary]: variant === 'secondary',
     [buttonStyles.tertiary]: variant === 'tertiary',
+    [buttonStyles.outlineSecondary]: variant === 'outlineSecondary',
 
     [buttonStyles.largeSize]: size === 'large',
     [buttonStyles.fullWidth]: fullWidth,
+    [buttonStyles.smallSize]: size === 'small',
   })
 
   const LinkComponent = href?.startsWith('#') ? 'a' : Link
@@ -63,7 +69,7 @@ export const Button: React.FC<ButtonProps> = ({
   return href ? (
     <LinkComponent
       href={href}
-      target="_blank"
+      target={target}
       className={classes}
       aria-label={ariaLabel}
     >

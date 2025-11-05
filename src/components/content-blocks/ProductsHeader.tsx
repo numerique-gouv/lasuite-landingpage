@@ -14,6 +14,8 @@ const ProductsHeader: React.FC<{ productContent: ProductContent; slug: string }>
   const logoProduct = productLogos[slug]
   const [isOpen, setIsOpen] = useState(false);
 
+  const logoFull = logoProduct.src
+
   return (
     <header className="fade-in bg-white px-4 absolute top-0 right-0 left-0 z-50">
       <div className="flex items-center">
@@ -40,11 +42,11 @@ const ProductsHeader: React.FC<{ productContent: ProductContent; slug: string }>
           />
           <Link href="/">
             <Image
-              width={120}
+              width={180}
               height={40}
               className="h-8 md:block"
               src={logoProduct.src}
-              alt={`logo ${slug}`}
+              alt={`LaSuite ${slug}`}
             />
           </Link>
         </div>

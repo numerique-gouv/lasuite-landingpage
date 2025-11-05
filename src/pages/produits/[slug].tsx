@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 // Importe dynamiquement le contenu selon le slug
 const productContents: Record<string, any> = {
   'visio': require('@/content/products/visio.json'),
+  'docs': require('@/content/products/docs.json'),
   'regie': require('@/content/products/regie.json'),
 }
 

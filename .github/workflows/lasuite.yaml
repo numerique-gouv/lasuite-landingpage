@@ -11,25 +11,6 @@ on:
       - '*'
 
 jobs:
-  lint-git:
-    runs-on: ubuntu-latest
-    # Makes sense only for: 1) pull requests 2) that are not triggered by DecapCMS
-    if: github.event_name == 'pull_request' && !contains(github.event.pull_request.title, 'cms-bot')
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: show
-        run: git log
-      - name: Check absence of fixup commits
-        run: |
-          ! git log | grep 'fixup!'
-      - name: Install gitlint
-        run: pip install --user requests gitlint
-      - name: Lint commit messages added to main
-        run: ~/.local/bin/gitlint --commits origin/${{ github.event.pull_request.base.ref }}..HEAD
-
   lint-and-build:
     runs-on: ubuntu-latest
     # always do this, except if a PR is triggered by DecapCMS

@@ -83,6 +83,7 @@ export const Footer = () => {
               {t('footer.license', {
                 license: (
                   <ExternalLink
+                    key="license"
                     href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
                     className={`relative underline underline-offset-4 external-link-grey ${hover}`}
                   >

@@ -4,6 +4,8 @@ common:
   new_window: Neues Fenster
   know_more: Mehr erfahren
   back_to_home: Zurück zur Startseite
+  menu: Menü
+  close: Schließen
 head:
   homepage_og_title: Arbeiten mit der digitalen Suite
   meta_desc: Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
@@ -60,7 +62,7 @@ homepage:
   ecosystem:
     tag: Staatliche Dienste
     title: Das ProConnect-Ökosystem
-    description: Nutzen Sie weiterhin staatliche Dienste mit ProConnect. Résana, Webinaire, Webconf, Audioconf... Viele leistungsstarke Werkzeuge stehen Ihnen zur Verfügung, die die digitale Suite perfekt ergänzen.
+    description: Nutzen Sie weiterhin staatliche Dienste mit ProConnect. Résana, Sites Faciles, Webinaire, Webconf, Audioconf... Viele leistungsstarke Werkzeuge stehen Ihnen zur Verfügung, die die digitale Suite perfekt ergänzen.
     resana_bento: BentoResana
   editors:
     tag: Herausgeber

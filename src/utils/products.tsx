@@ -210,7 +210,6 @@ export const DINUM_PRODUCTS: Record<
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
     description:
       "L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.",
-    status: 'BETA',
     items: [
       <>
         <strong>Invitez vos collègues</strong> ou partagez un lien d'édition
@@ -235,7 +234,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotEn: MessagerieScreenshotEn,
     screenshotMobileEn: MessagerieScreenshotMobileEn,
     name: 'Messagerie',
-    url: 'https://webmail.numerique.gouv.fr/',
+    url: 'https://messagerie.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
     description: 'La messagerie professionnelle des agents de l’État.',

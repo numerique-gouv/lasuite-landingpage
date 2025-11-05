@@ -9,6 +9,7 @@ import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
 import { useEffect } from 'react'
+import { injectCrisp } from '@/utils/inject-crisp'
 
 /**
  * output the homepage content with data taken from the CMS file
@@ -18,16 +19,7 @@ import { useEffect } from 'react'
  */
 export const HomepageContent = () => {
   useEffect(() => {
-    if (!window.$crisp) {
-      window.$crisp = []
-      window.CRISP_WEBSITE_ID = '58ea6697-8eba-4492-bc59-ad6562585041'
-
-      const script = document.createElement('script')
-      script.type = 'text/javascript'
-      script.async = true
-      script.src = 'https://client.crisp.chat/l.js'
-      document.head.appendChild(script)
-    }
+    injectCrisp()
   }, [])
 
   return (
