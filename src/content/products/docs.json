@@ -12,7 +12,7 @@
       ]
     },
     "hero": {
-    "title": "Rédigez les textes qui comptent, à plusieurs.",
+      "title": "Rédigez les textes qui comptent, à plusieurs.",
       "subtitle": "Docs est l'outil d'écriture collaboratif de l'État pour rédiger, partager et publier vos documents en toute simplicité.",
       "image": {
           "src": "docs/docs_hero.png",
