@@ -16,75 +16,52 @@ interface BlockFAQBlock {
   title: string
   content: string
   questions: FAQQuestion[]
-  footerContent?: string
-  button?: {
-    url: string
-    text: string
+}
+
+export const BlockFAQ: FC<BlockFAQBlock> = (props) => {
+  const block = props
+  const [openItems, setOpenItems] = useState<Set<number>>(new Set())
+  
+  if (!block) return null
+  
+  const toggleItem = (idx: number) => {
+    setOpenItems(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(idx)) {
+        newSet.delete(idx)
+      } else {
+        newSet.add(idx)
+      }
+      return newSet
+    })
   }
-}
-
-interface BlockFAQProps {
-  blocks: BlockFAQBlock[]
-}
-
-export const BlockFAQ: FC<BlockFAQProps> = ({ blocks }) => (
-  <>
-    {blocks.map((block, idx) => (
-      <FAQAccordionSection key={idx} block={block} />
-    ))}
-  </>
-)
-
-const openCrisp = () => {
-  if (window.$crisp) {
-    window.$crisp.push(['do', 'chat:open'])
-  }
-}
-
-const FAQAccordionSection: FC<{ block: BlockFAQBlock }> = ({ block }) => {
-  const [openIdx, setOpenIdx] = useState<number | null>(null)
+  
   return (
-    <ContentSection>
-      <div className="md:gap-8 md:mb-14">
-        <div className="mb-10 md:order-first">
-          <Paragraph tag={block.tag} title={block.title}>
-            <p
+    <div className="max-w-container mx-auto px-3 xl:px-0">
+      <div className="md:gap-8">
+        <div className="mb-8 md:mb-12 md:order-first px-3 md:px-0 pt-12 md:pt-0">
+          <h3 className="text-gray-850 md:text-[2.75rem] text-3xl sm:leading-[42px] md:leading-[48px] font-bold pb-2 md:pb-8">{block.title}</h3>
+            <p className="text-gray-550 text-sm md:text-lg"
               dangerouslySetInnerHTML={{
                 __html: block.content,
               }}
             />
-          </Paragraph>
         </div>
-        <div className="flex flex-col rounded rounded-2 border border-greyscale-200">
-          {block.questions?.map((q, qIdx) => (
+        <div className="flex flex-col rounded-lg overflow-hidden border border-greyscale-200">
+          {block.questions?.map((q: FAQQuestion, qIdx: number) => (
             <AccordionItem
               key={qIdx}
               question={q.q}
               answer={q.a}
-              open={openIdx === qIdx}
-              onClick={() => setOpenIdx(openIdx === qIdx ? null : qIdx)}
+              open={openItems.has(qIdx)}
+              onClick={() => toggleItem(qIdx)}
               idx={qIdx}
               lastItem={qIdx === block.questions.length - 1}
             />
           ))}
         </div>
-        {block.footerContent && (
-          <div className="mt-10 text-greyscale-700">
-            <p className="mb-4">{block.footerContent}</p>
-            {block.button && (
-                <Button
-                  variant="secondary"
-                  onClick={openCrisp}
-                  icon={<ChatOutlinedIcon />}
-                  iconPosition="left"
-                >
-                  {block.button.text}
-                </Button>
-            )}
-          </div>
-        )}
       </div>
-    </ContentSection>
+    </div>
   )
 }
 
@@ -97,22 +74,22 @@ const AccordionItem: FC<{
   lastItem: boolean
 }> = ({ question, answer, open, onClick, idx, lastItem }) => {
   return (
-    <div className={`border-greyscale-200 
-      ${open ? 'bg-greyscale-050 open-container' : ''}
+    <div className={`border-greyscale-200 hover:bg-gray-050 transition-colors overflow-hidden
+      ${open ? 'bg-gray-050 open-container' : ''}
       ${!lastItem ? 'border-b' : ''}`}>
       <button
-        className={`px-4 pt-3 text-primary-text w-full text-left flex justify-between items-center py-3 font-medium text-base`}
+        className={`px-3.5  ${open ? 'text-gray-850' : 'text-gray-600' } w-full text-left flex justify-between items-center py-2 font-medium text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-550 focus-visible:ring-inset`}
         aria-expanded={open}
         aria-controls={`faq-panel-${idx}`}
         onClick={onClick}
         type="button"
       >
-        <span>{question}</span>
-        <span className={`transition-transform ml-2 ${open ? 'rotate-180' : ''}`}><KeyboardArrowDownIcon /></span>
+        <span className= "text-base md:text-lg">{question}</span>
+        <span className={`transition-transform ml-2 text-gray-550 ${open ? 'rotate-180' : ''}`}><KeyboardArrowDownIcon fontSize="small" /></span>
       </button>
       <div
         id={`faq-panel-${idx}`}
-        className={`faq-answer ${open ? 'open pt-3 pb-3' : ''} text-small px-4 text-greyscale-700`}
+        className={`faq-answer ${open ? 'open pb-3' : ''} text-sm px-3.5 text-gray-600`}
       >
         {answer}
       </div>
