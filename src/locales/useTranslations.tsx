@@ -86,4 +86,12 @@ function useTranslations({
   }
 }
 
-export { TranslationsProvider, useTranslations }
+
+function getLocales() {
+  return {
+    fr,
+    en,
+  }
+} 
+
+export { TranslationsProvider, useTranslations, getLocales }

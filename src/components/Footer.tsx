@@ -45,7 +45,7 @@ export const Footer = () => {
             <ul className="flex flex-wrap align-middle mt-2">
               {externalLinks.map((link) => (
                 <li
-                  key={link.href}
+                  key={link.children}
                   className={`mr-6 my-2 decoration-grey-5 ${hover}`}
                 >
                   <ExternalLink
@@ -64,7 +64,7 @@ export const Footer = () => {
             <ul className="block justify-start flex-wrap">
               {pages.map((link) => (
                 <li
-                  key={link.href}
+                  key={link.children}
                   className="inline internal-link-footer text-xs text-grey-3"
                 >
                   <Link

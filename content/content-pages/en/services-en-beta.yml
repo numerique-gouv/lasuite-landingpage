@@ -1,3 +1,32 @@
+enabled: false
 enabled_i18n:
   de: false
   en: false
+slug: services-in-beta
+title: What does the "beta" logo on your services mean?
+body: >
+  ## What does the "beta" logo on your services mean?
+
+  Some services in the Digital Suite are labeled as "beta". This status can be a way to inform users of several things:
+
+  *   the service has not yet undergone a security assessment
+
+  *   the service does not offer any availability guarantees and is not recommended for use cases where unavailability for a few hours—or even days—would have a significant operational impact
+
+  *   the service is not yet financially or politically secured for the coming years, and DINUM reserves the right to discontinue it on short notice without a fallback solution. [rather: "without an alternative provided by DINUM"]
+
+  In practice, this label can reflect different realities in terms of security, availability, and service sustainability (see the summary table below).
+
+  ## How can a service exit the "beta" phase?
+
+  A service exits "beta" when the following four conditions are met:
+
+  *   🔏 it has undergone an **up-to-date security assessment**
+
+  *   🟢 it offers **availability guarantees** (depending on the tool's context and use cases) and **clearly displays them**
+
+  *   🌳 DINUM **plans to support the service long-term** and commits not to shut it down without notifying users within a clearly stated timeframe
+
+  *   🔁 DINUM commits to **providing data export in an open format** in the event the service is shut down
+
+  *   🫴 DINUM commits to **providing user support**, either directly or indirectly by facilitating support channels (via Tchap or others)

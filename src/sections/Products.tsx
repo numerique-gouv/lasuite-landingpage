@@ -40,7 +40,7 @@ export const Products = () => {
               <button
                 key={name}
                 className={`flex hover:bg-greyscale-050 transition duration-300 ease-in items-center border border-greyscale-300 cursor-pointer rounded p-2 
-              ${isActive ? 'bg-greyscale-100' : ''}`}
+                  ${isActive ? 'bg-greyscale-100' : ''}`}
                 onClick={() => handleClick(index, name)}
               >
                 <Image className="w-auto" src={logo} alt="" />
