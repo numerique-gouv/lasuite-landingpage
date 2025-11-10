@@ -31,6 +31,7 @@ export const BlockFull: FC<BlockFullProps> = ({ blocks }) => (
               />
             </Paragraph>
           </div>
+          <div className="">
           {block.image && (
             <Image
               loading="lazy"
@@ -41,6 +42,7 @@ export const BlockFull: FC<BlockFullProps> = ({ blocks }) => (
               height={400}
             />
           )}
+          </div>
         </div>
       </ContentSection>
     ))}

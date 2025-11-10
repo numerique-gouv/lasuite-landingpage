@@ -9,7 +9,7 @@ interface ButtonProps {
   target?: '_blank'
   onClick?: MouseEventHandler<HTMLButtonElement>
   'aria-label'?: string
-  variant?: 'outline' | 'tertiary' | 'outlineSecondary'
+  variant?: 'outline' | 'secondary' | 'tertiary' | 'outlineSecondary'
   size?: 'large' | 'small'
   fullWidth?: boolean
   icon?: React.ReactNode
@@ -28,7 +28,7 @@ export const buttonStyles = {
   outlineSecondary: `${core} ${transition} bg-transparent border border-2 font-medium border-grey-4 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
 
   largeSize: '!text-xl md:!py-4 md:!px-8',
-  smallSize: '!text-sm md:!py-2 md:!px-4',
+  smallSize: 'min-h-8 !h-6 !py-2 !px-4',
   fullWidth: '!w-full',
 }
 

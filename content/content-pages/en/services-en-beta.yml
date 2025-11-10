@@ -1,5 +1,7 @@
-<<<<<<< HEAD
 enabled: false
+enabled_i18n:
+  de: false
+  en: false
 slug: services-in-beta
 title: What does the "beta" logo on your services mean?
 body: >
@@ -28,8 +30,3 @@ body: >
   *   🔁 DINUM commits to **providing data export in an open format** in the event the service is shut down
 
   *   🫴 DINUM commits to **providing user support**, either directly or indirectly by facilitating support channels (via Tchap or others)
-=======
-enabled_i18n:
-  de: false
-  en: false
->>>>>>> main
