@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { LaGaufre } from '@/components/LaGaufre'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
-import LogoSvg from '@/assets/logo/suite-numerique.svg'
+import LogoSvg from '@/assets/logo/lasuite.svg'
 import LogoGouvSvg from '@/assets/logo/gouv.svg'
 import Image from 'next/image'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -18,9 +19,11 @@ import { useTranslations } from '@/locales/useTranslations'
 export const NavBar = ({
   logo,
   loginUrl,
+  translation,
 }: {
   logo?: React.ReactNode
   loginUrl?: string
+  translation?: boolean
 }) => {
   const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations()
@@ -30,7 +33,7 @@ export const NavBar = ({
       <div className="flex items-center">
         <div className="flex items-center gap-4 sm:hidden">
           <button
-            className="w-[48px] h-[48px] absolute text-blue-1 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none focus:bg-greyscale-050"
+            className="w-[48px] h-[48px] absolute text-brand-550 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           >
@@ -50,26 +53,28 @@ export const NavBar = ({
           <Link href="/" className="sm:ml-5">
             {logo || (
               <Image
-                className="w-28"
+                className="w-30"
                 src={LogoSvg}
                 alt="lasuite.numerique.gouv.fr"
               />
             )}
           </Link>
         </div>
-        <div className="absolute flex items-center gap-4 top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
+        <div className="absolute flex items-center gap-4 sm:top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
           {!!loginUrl && (
             <div className="hidden md:block">
-              <a
+              <Button
                 href={loginUrl}
-                className="flex border-none items-center bg-white border rounded-md px-4 py-2 text-blue-1 font-bold hover:bg-primary-100"
+                variant="tertiary_brand"
               >
                 {t('common.login')}
-              </a>
+              </Button>
             </div>
           )}
           <div className="hidden md:block">
+          {translation && (
             <LocaleSwitcher />
+          )}
           </div>
           <LaGaufre />
         </div>

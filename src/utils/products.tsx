@@ -23,14 +23,20 @@ import VisioScreenshotMobileEn from '@/assets/products/app-visio-mobile.png'
 import MessagerieLogo from '@/assets/products/messagerie.svg'
 import MessagerieScreenshot from '@/assets/products/app-messagerie.png'
 import MessagerieScreenshotMobile from '@/assets/products/app-messagerie-mobile.png'
-import MessagerieScreenshotEn from '@/assets/products/app-messagerie-en.png'
-import MessagerieScreenshotMobileEn from '@/assets/products/app-messagerie-mobile-en.png'
+import MessagerieScreenshotEn from '@/assets/products/app-messagerie.png'
+import MessagerieScreenshotMobileEn from '@/assets/products/app-messagerie-mobile.png'
 
 import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
 import FranceTransfertScreenshot from '@/assets/products/app-france-transfert.png'
 import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
 import FranceTransfertScreenshotEn from '@/assets/products/app-france-transfert-en.png'
 import FranceTransfertScreenshotMobileEn from '@/assets/products/app-france-transfert-mobile-en.png'
+
+import FichiersLogo from '@/assets/products/fichiers.svg'
+import FichiersScreenshot from '@/assets/products/app-drive.png'
+import FichiersScreenshotMobile from '@/assets/products/app-drive-mobile.png'
+import FichiersScreenshotEn from '@/assets/products/app-drive-en.png'
+import FichiersScreenshotMobileEn from '@/assets/products/app-drive-mobile-en.png'
 
 import ResanaLogo from '@/assets/products/resana.svg'
 import ResanaScreenshot from '@/assets/products/resana_screenshot.webp'
@@ -102,6 +108,17 @@ export const DINUM_PRODUCTS: Record<
         Transférez des <strong>fichiers lourds</strong>
       </>,
     ],
+  },
+    'Fichiers': {
+    displayDetails: true,
+    logo: FichiersLogo,
+    screenshot: FichiersScreenshot,
+    screenshotMobile: FichiersScreenshotMobile,
+    screenshotEn: FichiersScreenshotEn,
+    screenshotMobileEn: FichiersScreenshotMobileEn,
+    name: 'Fichiers',
+    url: 'https://fichiers.numerique.gouv.fr/',
+    caption: 'Partagez vos fichiers en toute sécurité',
   },
   Webinaire: {
     displayDetails: true,

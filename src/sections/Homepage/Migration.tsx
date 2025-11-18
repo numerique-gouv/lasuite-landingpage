@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from '@/components/Button'
+import { Button } from "@/components/ui-kit-v2/Button";
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoLasuite from '@/assets/bento/bento-webinaire-suite-numerique.png'
@@ -32,7 +32,7 @@ export const Migration = () => {
           <Button
             target="_blank"
             href="https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53"
-            iconPosition="left"
+            variant="primary_brand"
           >
             {t('homepage.migration.button')}
           </Button>

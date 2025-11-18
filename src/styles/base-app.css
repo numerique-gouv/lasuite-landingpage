@@ -31,7 +31,7 @@ h6 {
 }
 
 strong {
-  @apply text-grey-2;
+  @apply text-gray-600;
 }
 
 [id] {

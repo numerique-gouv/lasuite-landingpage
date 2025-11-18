@@ -1,4 +1,4 @@
-import { Button } from '@/components/Button'
+import { Button } from "@/components/ui-kit-v2/Button";
 import { useTranslations } from '@/locales/useTranslations'
 import CubesPatternImg from '@/assets/grist/pattern-cubes.png'
 
@@ -37,7 +37,7 @@ export const Cta = ({
         <Button
           fullWidth
           href={secondary.href}
-          variant="outlineSecondary"
+          variant="tertiary_bordered"
           target={secondary.target}
         >
           {secondary.label}

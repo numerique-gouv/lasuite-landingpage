@@ -4,6 +4,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 const figmaColors = {
   // new colors
+
   "brand-050": "#EDF0FF",
   "brand-100": "#DAE2FF",
   "brand-150": "#C8D3FF",
@@ -45,6 +46,9 @@ const figmaColors = {
   "gray-900": "#181B24",
   "gray-950": "#0F1117",
   "gray-1000": "#000000",
+  "black-050": "#f2f5f4",
+
+  "primary-text": "#2845C1",
   // end new colors
 
   'white-1': '#F8F8F8',
@@ -58,7 +62,6 @@ const figmaColors = {
   'blue-1': '#000091',
   'error-1': '#d70600',
   'black-1': '#242424',
-  'primary-text': '#000091',
   'warning-text': 'hsla(21, 100%, 25%, 1)',
   'warning-1': 'hsla(18, 63%, 95%, 1)',
   'primary-100': '#ECECFE',

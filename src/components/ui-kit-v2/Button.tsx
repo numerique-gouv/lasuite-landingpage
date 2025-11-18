@@ -12,8 +12,7 @@ type ButtonVariant =
   | 'primary_info'
   | 'secondary_info'
   | 'tertiary_info'
-  | 'tertiary bordered'
-  | 'outlineSecondary'
+  | 'tertiary_bordered'
   | 'none'
 type ButtonSize = 'large' | 'small'
 
@@ -50,10 +49,10 @@ const styles = {
   tertiary_neutral: `${core} ${transition} font-medium text-gray-550 bg-transparent hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
 
   primary_info: `${core} ${transition} font-medium text-white bg-blue-1 hover:bg-dsfr-blue-2`,
-  secondary_info: `${core} ${transition} font-medium bg-transparent border border-2 border-grey-4 text-blue-1 hover:backdrop-brightness-95`,
+  secondary_info: `${core} ${transition} font-medium bg-transparent border border-2 border-grey-4 text-brand-550 hover:backdrop-brightness-95`,
   tertiary_info: `${core} ${transition} font-medium text-blue-1 bg-transparent hover:bg-primary-300`,
 
-  outlineSecondary: `${core} ${transition} bg-transparent border border-2 font-medium border-grey-4 text-blue-1 hover:backdrop-brightness-95 hover:bg-transparent`,
+  tertiary_bordered: `${core} ${transition} bg-transparent font-medium border border-gray-150 text-brand-550 hover:backdrop-brightness-95 hover:bg-transparent`,
   none: 'text-blue-1 underline underline-offset-2 hover:no-underline',
 
   large: '!text-xl md:!py-4 md:!px-8',

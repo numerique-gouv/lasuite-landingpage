@@ -1,4 +1,4 @@
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { Input } from '@/components/Input'
 import { useTranslations } from '@/locales/useTranslations'
 import { useState, useRef } from 'react'

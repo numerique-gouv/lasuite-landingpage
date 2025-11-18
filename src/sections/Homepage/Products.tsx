@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { ContentSection } from '@/components/ContentSection'
 import Image from 'next/image'
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { DINUM_PRODUCTS } from '@/utils/products'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useTranslations } from '@/locales/useTranslations'
@@ -15,6 +15,7 @@ const DINUM_PRODUCTS_GRID = [
   'Grist',
   'Visio',
   'Messagerie',
+  'Fichiers',
 ]
 
 export const Products = () => {
@@ -39,22 +40,11 @@ export const Products = () => {
             return (
               <button
                 key={name}
-                className={`flex hover:bg-greyscale-050 transition duration-300 ease-in items-center border border-greyscale-300 cursor-pointer rounded p-2 
-                  ${isActive ? 'bg-greyscale-100' : ''}`}
+                className={`flex hover:bg-gray-025 transition duration-300 ease-in items-center border border-gray-100 cursor-pointer rounded px-2 py-1 
+                  ${isActive ? 'bg-gray-050' : ''}`}
                 onClick={() => handleClick(index, name)}
               >
-                <Image className="w-auto" src={logo} alt="" />
-                <span className="text-base text-blue-1 ml-2 font-medium md:whitespace-nowrap">
-                  {DINUM_PRODUCTS[name]?.name}
-                </span>
-                {DINUM_PRODUCTS[name].status && (
-                  <div
-                    className={`leading-[1.5] transition duration-100 bg-primary-100 text-xs rounded-full font-bold px-2 ml-1 text-[#5858D3]
-                    ${isActive ? 'bg-primary-800 text-greyscale-100' : ''}`}
-                  >
-                    BETA
-                  </div>
-                )}
+                <Image height="30" src={logo} alt={DINUM_PRODUCTS[name]?.name || name} />
               </button>
             )
           })}
@@ -117,22 +107,13 @@ export const Products = () => {
           >
             <div className="block">
               <div className="flex items-center mb-1">
-                <Image src={DINUM_PRODUCTS[activeItem.name].logo} alt="" />
-                <span className="text-xl text-blue-1 font-bold ml-1">
-                  {DINUM_PRODUCTS[activeItem.name].name}
-                </span>
-
-                {DINUM_PRODUCTS[activeItem.name].status && (
-                  <div className="leading-[1.5] bg-primary-100 text-xs rounded-full font-bold px-2 ml-2 text-[#5858D3]">
-                    BETA
-                  </div>
-                )}
+                <Image src={DINUM_PRODUCTS[activeItem.name].logo} height="35" alt={DINUM_PRODUCTS[activeItem.name].name || activeItem.name} />
               </div>
-              <p className="font-medium">
+              <p className="text-gray-550 text-base">
                 {t(`homepage.slider_products.${activeItem.name}.description`)}
               </p>
               <p
-                className="font-medium"
+                className="text-gray-550 text-base"
                 dangerouslySetInnerHTML={{
                   __html: t(
                     `homepage.slider_products.${activeItem.name}.basedOn`
@@ -145,6 +126,7 @@ export const Products = () => {
               <Button
                 href={DINUM_PRODUCTS[activeItem.name].url}
                 target="_blank"
+                variant="primary_brand"
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
               >

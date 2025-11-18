@@ -11,7 +11,6 @@ import Advantages from '@/sections/produits/docs/Advantages'
 import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
-
 export default function DocsPage() {
   const { locale = 'fr' } = useRouter()
   const content: any = docsContent as any

@@ -8,7 +8,6 @@ import BentoResanaEn from '@/assets/bento/resana-en.png'
 import BentoWebconf from '@/assets/bento/webconf.png'
 import BentoWebinaire from '@/assets/bento/webinaire.png'
 import BentoAudioconf from '@/assets/bento/audioconf.png'
-import BentoSitesFaciles from '@/assets/bento/sitesfaciles.png'
 
 import { useTranslations } from '@/locales/useTranslations'
 
@@ -26,11 +25,6 @@ export const EcosystemProconnect = () => {
       name: 'WebConf',
       bento: BentoWebconf,
       url: 'https://webconf.numerique.gouv.fr/',
-    },
-    {
-      name: 'Sites Faciles',
-      bento: BentoSitesFaciles,
-      url: 'https://sites.beta.gouv.fr/',
     },
     {
       name: 'Webinaire',
@@ -64,7 +58,7 @@ export const EcosystemProconnect = () => {
             </a>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {SECOND_ROW.map((item) => (
             <a href={item.url} key={item.url} target="_blank">
               <Image src={item.bento} alt={item.name} />
