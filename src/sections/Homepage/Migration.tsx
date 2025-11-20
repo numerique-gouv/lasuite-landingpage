@@ -4,6 +4,7 @@ import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoLasuite from '@/assets/bento/bento-webinaire-suite-numerique.png'
 import { useTranslations } from '@/locales/useTranslations'
+import { WEBINAIRE_URL } from '@/constant'
 
 export const Migration = () => {
   const t = useTranslations()
@@ -29,11 +30,7 @@ export const Migration = () => {
               }}
             />
           </Paragraph>
-          <Button
-            target="_blank"
-            href="https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53"
-            variant="primary_brand"
-          >
+          <Button target="_blank" href={WEBINAIRE_URL} iconPosition="left">
             {t('homepage.migration.button')}
           </Button>
         </div>
