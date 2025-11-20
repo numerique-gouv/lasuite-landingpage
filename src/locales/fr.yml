@@ -1,6 +1,6 @@
 common:
-  la_suite: La Suite numérique
-  la_suite_territoriale: La Suite Territoriale
+  la_suite: LaSuite
+  la_suite_territoriale: LaSuite Territoriale
   new_window: nouvelle fenêtre
   know_more: En savoir plus
   back_to_home: Retour à la page d’accueil
@@ -11,7 +11,7 @@ common:
   menu: Menu
   close: Fermer
 head:
-  homepage_og_title: Utilisez La Suite numérique dès aujourd’hui !
+  homepage_og_title: Utilisez LaSuite dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
 header:
   tagline: Des communs numériques pour un État simple, efficace et souverain
@@ -64,19 +64,22 @@ homepage:
     'Messagerie':
       description: 'La messagerie professionnelle des agents de l’État.'
       basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://www.open-xchange.com">Open-XChange</a> et d‘autres logiciels libres.'
+    'Fichiers':
+      description: 'Le service de stockage et de partage de l’État.'
+      basedOn: ' '
     button: 'Découvrir'
   portal_proconnect:
     tag: 'Portail unique'
-    description: "Simplifiez votre quotidien avec ProConnect ! Accédez à La Suite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."
+    description: "Simplifiez votre quotidien avec ProConnect ! Accédez à LaSuite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."
     button: J’intègre ProConnect à mon service
   ecosystem:
     tag: Services de l'État
     title: L'écosystème ProConnect
-    description: Continuez à utiliser les services de l’État avec ProConnect. Résana, Sites Faciles, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent La Suite à merveille.
+    description: Continuez à utiliser les services de l’État avec ProConnect. Résana, Sites Faciles, Webinaire, Webconf, Audioconf... Autant d'outils puissants à portée de main qui complémentent LaSuite à merveille.
   communs:
     tag: Communs numériques
     title: Ça ne s'arrête pas là !
-    description: En s’inscrivant dans une logique de communs numériques, La Suite favorise l’émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.
+    description: En s’inscrivant dans une logique de communs numériques, LaSuite favorise l’émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.
     articles:
       gristclevercloud:
         description: Clever Cloud devient l’hébergeur européen privilégié de Grist, offrant une solution de données souveraine, sécurisée et conforme aux normes européennes grâce à un partenariat stratégique.
@@ -89,17 +92,17 @@ homepage:
     title: Outils sécurisés
     description: Les agents bénéficient d'un environnement de travail
       sécurisé, avec l'assurance que leurs données sont stockées en France.
-      Les outils de La Suite sont conçus avec la sécurité comme priorité, assurant
+      Les outils de LaSuite sont conçus avec la sécurité comme priorité, assurant
       une protection maximale de vos données sensibles. Hébergées uniquement sur des
       infrastructures SecNumCloud certifiées par l'ANSSI, les applications garantissent
       un niveau de sécurité optimal dans le respect de la souveraineté numérique française.
   migration:
     tag: Webinaires thématiques
-    title: Découvrez La Suite numérique
+    title: Découvrez LaSuite
     description:
-      Que vous soyez un agent souhaitant explorer les outils de La Suite ou un responsable chargé d'équiper vos équipes, nos webinaires sont faits pour vous !
+      Que vous soyez un agent souhaitant explorer les outils de LaSuite ou un responsable chargé d'équiper vos équipes, nos webinaires sont faits pour vous !
       <br />
-      Explorez les outils, fonctionnalités et avantages de La Suite, ainsi que son intégration dans votre administration. Posez vos questions et assistez à des démonstrations en direct.
+      Explorez les outils, fonctionnalités et avantages de LaSuite, ainsi que son intégration dans votre administration. Posez vos questions et assistez à des démonstrations en direct.
       <br />
       Inscrivez-vous dès maintenant aux sessions qui vous intéressent !
     button: S’inscrire à un webinaire
@@ -112,10 +115,10 @@ homepage:
       <strong>15 000 habitants</strong>. Elle se déploie avec ProConnect
       auprès des professionnels de la sphère publique territoriale.
       Toute collectivité <strong>adhérente à un OPSN partenaire</strong>
-      pourra également bénéficier des services de la Suite territoriale.'
-    button: Découvrir La Suite Territoriale
+      pourra également bénéficier des services de laSuite territoriale.'
+    button: Découvrir LaSuite Territoriale
   footer:
-    description: Utilisez La Suite numérique dès aujourd’hui !
+    description: Utilisez LaSuite dès aujourd’hui !
     contact_button: Discuter avec nous
     newsletter_button: S’abonner à la newsletter
 grist-landing:
@@ -123,7 +126,7 @@ grist-landing:
     title: 'Le tableur collaboratif et souverain, qui transforme vos données en décisions fiables'
     description: 'Grist est la plateforme d’équipe gratuite de l’État pour centraliser, analyser et partager vos données.'
     tag: Déjà utilisé dans 15 ministères
-    description2: 'Grist fait partie de [La Suite numérique](https://lasuite.numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
+    description2: 'Grist fait partie de [LaSuite](https://lasuite.numerique.gouv.fr) : des logiciels open source, conçus pour le secteur public.'
     video-url: 'https://tube.numerique.gouv.fr/videos/embed/jJCWmiCvJLtqXyfSe5o5MA?title=0'
     proconnect-url: 'https://grist.numerique.gouv.fr/o/docs/signup?next=%2F&mtm_campaign=landing&mtm_source=website'
   why-grist:
@@ -233,7 +236,7 @@ et à collaborer avec vos partenaires sans effort."
       - [Grist sur Tchap](https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr)
       - [Github](https://github.com/gristlabs/grist-core)
     lasuite:
-      title: Découvrir les autres produits de La Suite numérique
+      title: Découvrir les autres produits de LaSuite
       links: |
         - [Tchap](https://tchap.numerique.gouv.fr/)
         - [Docs](https://docs.numerique.gouv.fr/home/)

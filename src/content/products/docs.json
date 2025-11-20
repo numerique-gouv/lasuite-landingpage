@@ -148,7 +148,7 @@
       ],
       "links": [
         {"title": "Guide de l'utilisateur", "icone": "book", "url": "https://www.figma.com/design/3kivgyfVJbc4cVQKL6KCED/Landings?node-id=207-15714&m=dev", "type": "primary_brand"},
-        {"title": "Assister à un webinaire", "icone": "visio", "url": "#", "type": "tertiary_brand_bordered"},
+        {"title": "Assister à un webinaire", "icone": "visio", "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS", "type": "tertiary_brand_bordered"},
         {"title": "Rejoindre la communauté", "url": "/", "icone": "tchap", "type": "tertiary_brand_bordered"}
       ]
     },
@@ -207,7 +207,7 @@
       "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
       "links": [
         {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "primary_brand"},
-        {"title": "S'inscire à un webinaire", "url": "https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53", "type": "tertiary_brand_bordered"}
+        {"title": "S'inscire à un webinaire", "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS", "type": "tertiary_brand_bordered"}
       ]
     }
   }

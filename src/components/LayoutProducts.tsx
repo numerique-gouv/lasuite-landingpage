@@ -26,19 +26,27 @@ export const LayoutProducts: React.FC<{
         <meta
           key="ogtitle"
           property="og:title"
-          content={isHomepage ? t('head.homepage_og_title') : (content.title || pageTitle)}
+          content={
+            isHomepage
+              ? t('head.homepage_og_title')
+              : content.title || pageTitle
+          }
         />
         <meta name="description" content={content.description} />
-        <link href="/favicon.ico" rel="icon" media="(prefers-color-scheme: light)" />
-        <link href="/favicon-dark.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+        <link
+          href="/favicon.ico"
+          rel="icon"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          href="/favicon-dark.ico"
+          rel="icon"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
       <ProductsHeader productContent={content} slug={product.slug} />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
 }
-
-

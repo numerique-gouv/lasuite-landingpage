@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { Button } from '@/components/Button'
-import WelcomeToLaSuite from '@/assets/welcometolasuite.png'
-import SuiteNumeriqueLogo from '@/assets/logo/suite-numerique.svg'
+import { Button } from '@/components/ui-kit-v2/Button'
+import WelcomeToLaSuite from '@/assets/welcometolasuite.svg'
+import SuiteLogo from '@/assets/logo/lasuite.svg'
 import { NEWSLETTER_FORM } from '@/constant'
 import { useTranslations } from '@/locales/useTranslations'
 
@@ -23,35 +23,37 @@ export const FooterLaSuite = () => {
     <ContentSection>
       <div className="text-center mx-auto mb-20">
         <div className="mx-auto w-72 md:w-96">
-          <Image
-            className=""
-            src={WelcomeToLaSuite}
-            alt="Welcome to la suite"
-          />
+          <Image className="" src={WelcomeToLaSuite} alt="Welcome to LaSuite" />
         </div>
         <div className="mx-auto px-10 max-w-[300px] md:w-80">
           <Image
             className="mx-auto"
-            src={SuiteNumeriqueLogo}
-            alt="Logo la suite numérique"
+            src={SuiteLogo}
+            alt="LaSuite"
+            width="300"
+            height="100"
           />
         </div>
 
-        <p className="my-7 font-medium">{t('homepage.footer.description')}</p>
+        <p className="pb-10 pt-2 text-gray-550 text-sm md:text-xl font-normal">
+          {t('homepage.footer.description')}
+        </p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
-          <Button
-            onClick={openCrisp}
-            variant="tertiary"
-            icon={<ChatOutlinedIcon />}
-            iconPosition="left"
-          >
-            {t('homepage.footer.contact_button')}
-          </Button>
+          <div onClick={openCrisp}>
+            <Button
+              variant="secondary_brand"
+              icon={<ChatOutlinedIcon />}
+              iconPosition="left"
+            >
+              {t('homepage.footer.contact_button')}
+            </Button>
+          </div>
 
           <Button
             href={urlForm}
             target="_blank"
+            variant="primary_brand"
             icon={<ArticleOutlinedIcon />}
             iconPosition="left"
           >

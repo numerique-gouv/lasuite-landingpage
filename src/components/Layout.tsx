@@ -41,7 +41,11 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <NavBar logo={logo} loginUrl={loginUrl} />
+      <NavBar
+        logo={logo}
+        loginUrl={loginUrl}
+        translation={title == TITLE_SITE}
+      />
       <main {...props}>{props.children}</main>
       <Footer />
     </div>

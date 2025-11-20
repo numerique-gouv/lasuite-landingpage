@@ -5,6 +5,7 @@ import { Paragraph } from '@/components/Paragraph'
 import GristCleverCloud from '@/assets/grist-clever-cloud.png'
 import BundlesMatrix from '@/assets/bundles+matrix.png'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
+import { Button } from '@/components/ui-kit-v2/Button'
 
 import { useTranslations } from '@/locales/useTranslations'
 
@@ -30,7 +31,7 @@ export const Communs = () => {
   return (
     <ContentSection>
       <div className="grid md:mb-14">
-        <div className="mb-10">
+        <div className="">
           <Paragraph
             tag={t('homepage.communs.tag')}
             title={t('homepage.communs.title')}
@@ -57,14 +58,15 @@ export const Communs = () => {
                     {article.description}
                   </p>
                 </div>
-                <a
+                <Button
                   href={article.url}
                   target="_blank"
+                  icon={<ArrowOutwardIcon />}
+                  variant="tertiary_neutral"
                   className="stretched-link text-nowrap w-full flex-1 mx-auto block md:flex md:items-center mt-3 md:mt-0 text-center"
                 >
-                  <ArrowOutwardIcon />
                   {t('homepage.communs.button_read')}
-                </a>
+                </Button>
               </div>
             </div>
           )

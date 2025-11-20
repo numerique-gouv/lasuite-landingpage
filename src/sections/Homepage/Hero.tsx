@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { TITLE_SITE } from '@/constant'
-import HeroHome from '@/assets/hero-home.png'
+import HeroHome from '@/assets/hero-home.svg'
 import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = () => {
   const t = useTranslations()
 
   return (
-    <div className="fade-in relative overflow-hidden bg-white md:pt-4">
+    <div className="mx-auto md:mt-4 fade-in relative overflow-hidden bg-white ">
       <div
         className={
           'flex flex-col justify-between items-start sm:items-center pt-3 sm:pt-9 px-3'
@@ -23,11 +23,11 @@ export const Hero = () => {
             priority
           />
         </h1>
-        <div className="mx-auto max-w-[80vw] md:max-w-[52vw]">
-          <h2 className="text-greyscale-900 md:text-5xl text-4xl sm:leading-[42px] md:leading-[52px] font-bold text-center pb-4">
+        <div className="text-center mx-auto max-w-[80vw] md:max-w-[52vw]">
+          <h2 className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4">
             {t('homepage.hero.title')}
           </h2>
-          <p className="text-center md:w-[80%] mx-auto text-greyscale-700 text-base">
+          <p className="mb-4 mx-auto text-gray-550 text-base md:text-[1.25rem]">
             {t('homepage.hero.description')}
           </p>
         </div>

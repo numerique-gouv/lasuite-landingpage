@@ -32,16 +32,16 @@ export const BlockFull: FC<BlockFullProps> = ({ blocks }) => (
             </Paragraph>
           </div>
           <div className="">
-          {block.image && (
-            <Image
-              loading="lazy"
-              alt={block.image.alt}
-              className="w-full"
-              src={`/assets/products/${block.image.src}`}
-              width={800}
-              height={400}
-            />
-          )}
+            {block.image && (
+              <Image
+                loading="lazy"
+                alt={block.image.alt}
+                className="w-full"
+                src={`/assets/products/${block.image.src}`}
+                width={800}
+                height={400}
+              />
+            )}
           </div>
         </div>
       </ContentSection>

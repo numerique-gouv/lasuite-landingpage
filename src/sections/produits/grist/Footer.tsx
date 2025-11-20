@@ -1,14 +1,14 @@
 import { useTranslations } from '@/locales/useTranslations'
 import GristLogo from '@/assets/grist/grist-logo.png'
-import LaSuiteLogo from '@/assets/grist/lasuite-logo.png'
+import LaSuiteLogo from '@/assets/logo/lasuite.svg'
 import Image from 'next/image'
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { Markdown } from './Markdown'
 
 export const Footer = () => {
   const t = useTranslations({ useFallback: true })
   return (
-    <div className="bg-greyscale-050 py-10 border-t-2 border-blue-1">
+    <div className="bg-greyscale-050 py-10 border-t-2 border-brand-550">
       <span role="heading" aria-level={2} className="sr-only">
         {t('common.footer')}
       </span>

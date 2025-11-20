@@ -11,7 +11,6 @@ import Advantages from '@/sections/produits/docs/Advantages'
 import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
-
 export default function DocsPage() {
   const { locale = 'fr' } = useRouter()
   const content: any = docsContent as any
@@ -20,7 +19,12 @@ export default function DocsPage() {
 
   return (
     <LayoutProducts
-      title={localized?.title || content['fr']?.title || content.global?.title || 'Docs'}
+      title={
+        localized?.title ||
+        content['fr']?.title ||
+        content.global?.title ||
+        'Docs'
+      }
       productContent={content}
       locale={locale}
     >
@@ -57,5 +61,3 @@ export default function DocsPage() {
     </LayoutProducts>
   )
 }
-
-

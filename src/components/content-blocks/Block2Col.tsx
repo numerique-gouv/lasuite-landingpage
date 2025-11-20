@@ -37,7 +37,13 @@ export const Block2Col: FC<Block2colProps> = ({ blocks }) => (
     {blocks.map((block, idx) => (
       <ContentSection key={idx}>
         <div className="grid md:grid-cols-2 md:gap-8">
-          <div className={block.image?.position === 'left' ? 'mb-10 md:order-last' : 'mb-10 md:order-first'}>
+          <div
+            className={
+              block.image?.position === 'left'
+                ? 'mb-10 md:order-last'
+                : 'mb-10 md:order-first'
+            }
+          >
             <Paragraph tag={block.tag} title={block.title}>
               <p
                 dangerouslySetInnerHTML={{
@@ -48,7 +54,7 @@ export const Block2Col: FC<Block2colProps> = ({ blocks }) => (
             {block.buttons && (
               <div className="flex gap-4 mt-6">
                 {block.buttons.map((button, idButton) => (
-                  <Button 
+                  <Button
                     key={idButton}
                     variant={button.variant}
                     icon={button.icon ? iconMap[button.icon] : undefined}
@@ -63,7 +69,11 @@ export const Block2Col: FC<Block2colProps> = ({ blocks }) => (
             <Image
               loading="lazy"
               alt={block.image.alt}
-              className={block.image.position === 'left' ? 'w-full md:order-first' : 'w-full'}
+              className={
+                block.image.position === 'left'
+                  ? 'w-full md:order-first'
+                  : 'w-full'
+              }
               src={`/assets/products/${block.image.src}`}
               width={800}
               height={400}

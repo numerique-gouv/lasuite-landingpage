@@ -4,285 +4,210 @@
     "slug": "visio"
   },
   "fr": {
-    "title": "Simple and secure video conferences",
-    "subtitle": "Communicate and collaborate effortlessly, without compromising your sovereignty.",
-    "hero": {
-      "proconnect": {
-        "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F"
-      },
-      "seemore": "En savoir plus"
+    "header": {
+      "links": [
+        {"title": "Découvrir la suite", "url": "/", "type": "tertiary_neutral"},
+        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "tertiary_brand"},
+        {"title": "Se connecter", "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F", "type": "primary_brand"}
+      ]
     },
-    "contents": [
-      {
-        "blockType": "BlockFull",
-        "tag": "Simplicity",
-        "title": "1 meeting, 1 click.",
-        "content": "Discover the power of simplicity with Visio. Create your virtual meeting with a single click and invite your collaborators. Designed for borderless collaboration across all browsers, Visio brings together public agents, external partners, and international teams in a sleek professional environment. Gone are the complexities of traditional tools — Visio redefines the simplicity of professional exchanges.",
-        "image": {
-          "src": "visio/app-visio.png",
-          "alt": "1 meeting, 1 click. illustration"
-        }
+    "hero": {
+    "title": "Rédigez les textes qui comptent, à plusieurs.",
+      "subtitle": "Docs est l'outil d'écriture collaboratif de l'État pour rédiger, partager et publier vos documents en toute simplicité.",
+      "image": {
+          "src": "docs/docs_hero.png",
+          "alt": "Docs illustation apps"
       },
-      {
-        "blockType": "Block2Col",
-        "tag": "Performance",
-        "title": "Quality without compromise",
-        "content": "Based on the latest technologies, Visio offers a smooth and immersive experience that rivals the best solutions on the market. Nuances of voice and expressions are captured faithfully, allowing for clear exchanges between collaborators. Our architecture ensures optimal performance regardless of the number of participants, even on the most congested networks.",
-        "image": {
-          "position": "right",
-          "src": "visio/performance.png",
-          "alt": "1 meeting, 1 click. illustration"
-        }
-      },
-      {
-        "blockType": "BlockFull3Col",
-        "tag": "Innovation",
-        "title": "Visio-lutionary",
-        "content": "Visio pushes the boundaries of traditional video conferencing. More than just an intuitive and reliable application, Visio serves as our innovation lab to simplify your meeting experience. That’s why we integrate generative AI at the heart of the product.",
-        "blocks": [
-          {
-            "title": "Recording",
-            "content": "Record your meeting in video format with a single click, then easily share it with a link.",
-            "image": {
-              "src": "visio/recording.png",
-              "alt": "recording illustration"
-            }
-          },
-          {
-            "title": "Transcription",
-            "content": "Your conversations are converted into text, and a complete summary is automatically shared with all participants at the end of the meeting.",
-            "image": {
-              "src": "visio/transcription.png",
-              "alt": "transcription illustration"
-            }
-          },
-          {
-            "title": "Giga-meetings",
-            "content": "Visio supports up to X people simultaneously, without compromising performance.",
-            "image": {
-              "src": "visio/meeting.png",
-              "alt": "meeting illustration"
-            }
-          }
-        ]
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Security",
-        "title": "Unfailing protection",
-        "content": "Security is not an option. Every call is protected by end-to-end encryption (E2EE) and a waiting room gives you control over access, ensuring the confidentiality of your conversations. Our SecNum cloud infrastructure and SSO authentication provide an environment that meets the highest standards without compromising ease of use",
-        "image": {
-          "position": "right",
-          "src": "visio/security.png",
-          "alt": "security illustration"
-        }
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Integrations",
-        "title": "The winning team",
-        "content": "Visio integrates with your work environment. Sync your meetings with your calendar, collaborate on shared whiteboards, and seamlessly connect your favourite tools. Our scalable platform continuously adds new integrations to support your business needs and enhance your productivity.",
-        "image": {
-          "position": "left",
-          "src": "visio/team.png",
-          "alt": "integration illustration"
-        }
-      },
-      {
-        "blockType": "BlockFAQ",
-        "tag": "",
-        "title": "Frequently asked questions",
-        "content": "At this stage, you may have some questions. Below is a list of the most frequently asked questions about Visio.",
-        "questions": [
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          },
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          },
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          }
-        ],
-        "footerContent": "Do you still have a question about Visio? Feel free to ask us directly — our team will be happy to answer you and guide you in discovering the platform.",
-        "button": {
-          "url": "#",
-          "text": "Chat with us"
-        }
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Open Source",
-        "title": "Governments ❤️ Open Source.",
-        "content": "Visio is built on LiveKit, a robust open source video conferencing solution. Our code is fully available on GitHub and we actively contribute to the open source ecosystem. <br /> <br />Visio is the result of a collaboration between DINUM 🇫🇷 and other European public partners. We warmly welcome contributions and partnerships that will enrich this public platform.",
-        "image": {
-          "position": "right",
-          "src": "visio/ship.png",
-          "alt": "ship illustration"
-        },
-        "buttons": [
-          {
-            "type": "chat",
-            "icon": "ChatIcon",
-            "url": "#",
-            "text": "Matrix"
-          },
-          {
-            "type": "git",
-            "icon": "GitHubIcon",
-            "variant": "secondary",
-            "url": "#",
-            "text": "Github"
-          }
+      "links": [
+        {"title": "Se connecter", "url": "https://docs.numerique.gouv.fr/", "type": "primary_brand"},
+        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "tertiary_brand_bordered"}
+      ],
+      "social_proof": {
+        "title":  "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Docs",
+        "items": [
+          {"title": "Direction générale des finances publiques", "src": "logo/dgfp.svg"},
+          {"title": "Ministère de l'agriculture et de la souveraineté alimentaire", "src": "logo/ministere-agriculture.svg"},
+          {"title": "Ministère de l'intérieur", "src": "logo/ministere-interieur.svg"},
+          {"title": "Gendarmerie nationale", "src": "logo/gendarmerienationale.svg"},
+          {"title": "Inrae", "src": "logo/inrae.svg"}
         ]
       }
-    ],
-    "footer": {
-      "text": "Visio is already available, log in or join a meeting now!"
-    }
-  },
-  "en": {
-    "title": "Simple and secure video conferences",
-    "subtitle": "Communicate and collaborate effortlessly, without compromising your sovereignty.",
-    "hero": {
-      "proconnect": {
-        "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F"
-      },
-      "seemore": "En savoir plus"
     },
-    "contents": [
-      {
-        "blockType": "BlockFull",
-        "tag": "Simplicity",
-        "title": "1 meeting, 1 click.",
-        "content": "Discover the power of simplicity with Visio. Create your virtual meeting with a single click and invite your collaborators. Designed for borderless collaboration across all browsers, Visio brings together public agents, external partners, and international teams in a sleek professional environment. Gone are the complexities of traditional tools — Visio redefines the simplicity of professional exchanges.",
+    "features": {
+      "title": "Fonctionnalités principales",
+      "_cta": { "title": "Regarder le film", "url": "#"},
+      "items": [
+        {
+          "type": "full",
+          "title": "Prenez des notes, sans distraction.",
+          "description": "Ouvrez un document et commencez à écrire. Docs va à l'essentiel : une mise en page claire, et une interface pensée pour vous concentrer sur le fond, pas la forme.",
         "image": {
-          "src": "visio/app-visio.png",
-          "alt": "1 meeting, 1 click. illustration"
-        }
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Performance",
-        "title": "Quality without compromise",
-        "content": "Based on the latest technologies, Visio offers a smooth and immersive experience that rivals the best solutions on the market. Nuances of voice and expressions are captured faithfully, allowing for clear exchanges between collaborators. Our architecture ensures optimal performance regardless of the number of participants, even on the most congested networks.",
-        "image": {
-          "position": "right",
-          "src": "visio/performance.png",
-          "alt": "1 meeting, 1 click. illustration"
-        }
-      },
-      {
-        "blockType": "BlockFull3Col",
-        "tag": "Innovation",
-        "title": "Visio-lutionary",
-        "content": "Visio pushes the boundaries of traditional video conferencing. More than just an intuitive and reliable application, Visio serves as our innovation lab to simplify your meeting experience. That’s why we integrate generative AI at the heart of the product.",
-        "blocks": [
-          {
-            "title": "Recording",
-            "content": "Record your meeting in video format with a single click, then easily share it with a link.",
-            "image": {
-              "src": "visio/recording.png",
-              "alt": "recording illustration"
-            }
-          },
-          {
-            "title": "Transcription",
-            "content": "Your conversations are converted into text, and a complete summary is automatically shared with all participants at the end of the meeting.",
-            "image": {
-              "src": "visio/transcription.png",
-              "alt": "transcription illustration"
-            }
-          },
-          {
-            "title": "Giga-meetings",
-            "content": "Visio supports up to X people simultaneously, without compromising performance.",
-            "image": {
-              "src": "visio/meeting.png",
-              "alt": "meeting illustration"
-            }
+            "src": "docs/context.png",
+            "alt": ""
           }
-        ]
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Security",
-        "title": "Unfailing protection",
-        "content": "Security is not an option. Every call is protected by end-to-end encryption (E2EE) and a waiting room gives you control over access, ensuring the confidentiality of your conversations. Our SecNum cloud infrastructure and SSO authentication provide an environment that meets the highest standards without compromising ease of use",
-        "image": {
-          "position": "right",
-          "src": "visio/security.png",
-          "alt": "security illustration"
-        }
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Integrations",
-        "title": "The winning team",
-        "content": "Visio integrates with your work environment. Sync your meetings with your calendar, collaborate on shared whiteboards, and seamlessly connect your favourite tools. Our scalable platform continuously adds new integrations to support your business needs and enhance your productivity.",
-        "image": {
-          "position": "left",
-          "src": "visio/team.png",
-          "alt": "integration illustration"
-        }
-      },
-      {
-        "blockType": "BlockFAQ",
-        "tag": "",
-        "title": "Frequently asked questions",
-        "content": "At this stage, you may have some questions. Below is a list of the most frequently asked questions about Visio.",
-        "questions": [
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          },
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          },
-          {
-            "q": "Can I ask an open question?",
-            "a": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae." 
-          }
-        ],
-        "footerContent": "Do you still have a question about Visio? Feel free to ask us directly — our team will be happy to answer you and guide you in discovering the platform.",
-        "button": {
-          "url": "#",
-          "text": "Chat with us"
-        }
-      },
-      {
-        "blockType": "Block2Col",
-        "tag": "Open Source",
-        "title": "Governments ❤️ Open Source.",
-        "content": "Visio is built on LiveKit, a robust open source video conferencing solution. Our code is fully available on GitHub and we actively contribute to the open source ecosystem. <br /> <br />Visio is the result of a collaboration between DINUM 🇫🇷 and other European public partners. We warmly welcome contributions and partnerships that will enrich this public platform.",
-        "image": {
-          "position": "right",
-          "src": "visio/ship.png",
-          "alt": "ship illustration"
         },
-        "buttons": [
-          {
-            "type": "chat",
-            "icon": "ChatIcon",
-            "url": "#",
-            "text": "Matrix"
+        {
+          "type": "",
+          "title": "Organisez vos connaissances.",
+          "description": "Créez des collections grâce aux sous-documents.",
+        "image": {
+            "src": "docs/sousdocs.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Collaborez en temps réel.",
+          "description": "Travaillez à plusieurs simultanément. Choisissez qui voit, commente, édite — ou partagez un lien.",
+            "image": {
+            "src": "docs/share.png",
+            "alt": ""
+            }
           },
           {
-            "type": "git",
-            "icon": "GitHubIcon",
-            "variant": "secondary",
-            "url": "#",
-            "text": "Github"
+          "type": "",
+          "title": "Exportez en un clic.",
+          "description": "Téléchargez des PDF ou des fichiers Word quand vous en avez besoin.",
+            "image": {
+            "src": "docs/export.png",
+            "alt": ""
+            }
+          },
+          {
+          "type": "",
+          "title": "Rédigez plus vite avec l'IA.",
+          "description": "L'assistant intégré à Docs vous aide à générer, corriger ou traduire vos textes en quelques secondes.",
+            "image": {
+            "src": "docs/ai.png",
+            "alt": ""
           }
-        ]
+        }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Je cherchais un outil alternatif aux éditeurs collaboratifs grand public et cela est chose faite avec Docs !",
+        "author": "Honoré Mendy",
+        "role": "Chef de la division de la radiodiffusion à l’ANFR",
+        "avatar": {"src": "docs/testimonials/honore-mendy.jpg", "alt": "Honoré Mendy"}
+      },
+      {
+        "quote": "Simple à prendre en main, interface claire et collaboration fluide.",
+        "author": "James Chaigneaud",
+        "role": "Chargé des politiques artistiques et culturelles",
+        "avatar": {"src": "docs/testimonials/james-chaineau.png", "alt": "James Chaigneaud"}
+      },
+      {
+        "quote": "Dans mon service, nous avons plusieurs groupes de travail, Docs nous sert à établir et structurer des actions de formations et permets de mettre tout le monde à la page.",
+        "author": "Guillaume Payan",
+        "role": "Infirmier",
+        "avatar": {"src": "docs/testimonials/guillaume-payan.jpg", "alt": "Guillaume Payan"}
+      },
+      {
+        "quote": "J'avais besoin d'un outil collaboratif de prise de notes à utiliser avec mes collègues, accessible partout, modifiable à plusieurs en même temps et avec une mise en page des notes simple, claire et efficace.",
+        "author": "Antoine Bouffard",
+        "role": "Ingénieur au LCPP",
+        "avatar": {"src": "docs/testimonials/antoine-bouffard.jpg", "alt": "Antoine Bouffard"}
+      },
+      {
+        "quote": "Prise en main rapide et des fonctionnalités qui n'ont rien à envier à la concurrence.",
+        "author": "Maxime Velon",
+        "role": "CNRS",
+        "avatar": {"src": "docs/testimonials/maxime-velon.jpg", "alt": "Maxime Velon"}
       }
     ],
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant Docs.",
+        "questions": [
+          {
+          "q": "Ce nouvel outil va-t-il durer dans le temps ?",
+          "a": "Docs est opéré par la DINUM à partir de briques open source et constitue une part centrale de la feuille de route numérique de l'Etat en terme de souveraineté. Au-delà de cette dimension stratégique, sa résilience et pérennité est dû à une indépendance de contrats externes, sa contribution de la part de plusieurs administrations et son usage interministérielles, que ce soit sur l'instance de la DINUM ou des instances en propre." 
+        },
+        {
+          "q": "Que propose Docs par rapport à d'autres applications de traitement de texte ?",
+          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word, s'intègre à votre drive et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page." 
+        },
+        {
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Docs a subi une homogation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Docs n'est pas adapté pour le contenu \"Diffusion Restreinte\"."
+        },
+        {
+          "q": "Puis-je verrouiller un document ?",
+          "a": "Non. Si un utilisateur a des droits d'édition, il peut modifier le document." 
+        },
+        {
+          "q": "Puis-je partager un document avec des personnes externes ?",
+          "a": "Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés." 
+        },
+        {
+          "q": "Puis-je générer un PDF à partir d'un fichier Docs ?",
+          "a": "Oui, vous pouvez exporter votre fichier en PDF ou Word." 
+        }
+      ],
+      "links": [
+        {"title": "Guide de l'utilisateur", "icone": "book", "url": "https://www.figma.com/design/3kivgyfVJbc4cVQKL6KCED/Landings?node-id=207-15714&m=dev", "type": "primary_brand"},
+        {"title": "Assister à un webinaire", "icone": "visio", "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS", "type": "tertiary_brand_bordered"},
+        {"title": "Rejoindre la communauté", "url": "/", "icone": "tchap", "type": "tertiary_brand_bordered"}
+      ]
+    },
+    "advantages": {
+      "title": "Principaux avantages",
+      "content": "Conçu pour un impact durable et une véritable indépendance numérique.",
+      "items": [
+        {"icone": "public", "title": "Gratuit pour les agents", "description": "Aucune licence, aucun coût caché. Une solution publique, ouverte à tous les agents."},
+        {"icone": "workspace", "title": "Commun numérique", "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."},
+        {"icone": "espace_lock", "title": "Hébergé en France", "description": "Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."},
+        {"icone": "shield_person", "title": "Sécurité par conception", "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."},
+        {"icone": "published", "title": "Durable et réversible", "description": "Formats ouverts. Export en un clic (PDF, Word). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."},
+        {"icone": "person", "title": "Conçu en tenant compte de l'accessibilité", "description": "100 % web, accessible dès la conception. Aucune installation requise."}
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
+      "items": [
+        {"src": "docs/roadmap/collab.png", "alt": "Collaboration avec les commentaires"},
+        {"src": "docs/roadmap/suivi.png", "alt": "Suivi des changements"},
+        {"src": "docs/roadmap/import.png", "alt": "Importation des nouveaux formats"},
+        {"src": "docs/roadmap/export.png", "alt": "Exportation avancé avec des modèles personnalisés"},
+        {"src": "docs/roadmap/more.png", "alt": "Plus de fonctionnalités secrètes"}
+      ],
+      "link": {
+        "title": "Voir la feuille de route publique",
+        "url": "https://docs.numerique.gouv.fr/docs/406b1ea6-17fb-489b-b06c-b8e95c755306/"
+      }
+    },
+    "cta": {
+      "description": "Rédigez, collaborez et décidez ensemble, au même endroit.",
+        "button": {
+        "title_desktop": "Commencer à créer sur Docs maintenant",
+        "title_mobile": "Commencer à créer sur Docs",
+        "path": "#"
+      },
+        "image": {
+        "src": "docs/cta/image_cta.png",
+        "alt": "docs illustration"
+      }
+    },
+    "decisions": {
+      "title": "Vous prenez les décisions ?",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Docs.<br /> <br />LaSuite réunit des outils cohérents, hébergés en France, avec un haut niveau de sécurité (SecNumCloud) et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Docs s’intègre de manière fluide avec Visio, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "url": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45"
+      },
+      "image": {
+        "src": "docs/lasuite.png",
+        "alt": "Illustration des applications de LaSuite"
+      }
+    },
     "footer": {
-      "text": "Visio is already available, log in or join a meeting now!"
+      "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
+      "links": [
+        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "primary_brand"},
+        {"title": "S'inscire à un webinaire", "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS", "type": "tertiary_brand_bordered"}
+      ]
     }
   }
 }

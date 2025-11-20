@@ -11,12 +11,12 @@ export const MetaHeader = () => {
       <meta property="og:description" content={t('head.meta_desc')} />
       <meta
         name="og:image"
-        content={`https://${URL_SITE}/suite-numerique.png`}
+        content={`https://${URL_SITE}/assets/lasuite.svg`}
       />
       <meta
         name="image"
         property="og:image"
-        content={`https://${URL_SITE}/suite-numerique.png`}
+        content={`https://${URL_SITE}/assets/lasuite.svg`}
       />
       <meta
         name="google-site-verification"

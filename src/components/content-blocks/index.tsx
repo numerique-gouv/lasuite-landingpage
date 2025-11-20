@@ -5,4 +5,11 @@ import { BlockFull3Col } from './BlockFull3Col'
 import { BlockFAQ } from './BlockFAQ'
 import { ProductsFooter } from './ProductsFooter'
 
-export { BlockHero, Block2Col, BlockFull, BlockFull3Col, BlockFAQ, ProductsFooter }
+export {
+  BlockHero,
+  Block2Col,
+  BlockFull,
+  BlockFull3Col,
+  BlockFAQ,
+  ProductsFooter,
+}

@@ -21,7 +21,7 @@ const pages = [
 export const Footer = () => {
   const t = useTranslations()
   return (
-    <footer className="py-8 mt-auto border-t-2 bg-white border-blue-1">
+    <footer className="py-8 mt-auto bg-white border-t border-gray-100">
       <div className="fr-container">
         <div className="flex flex-wrap justify-between mb-6">
           <Link
@@ -59,7 +59,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-4 border-t border-grey-0 flex flex-row flex-wrap">
+        <div className="mt-4 border-t border-gray-100 flex flex-row flex-wrap">
           <div className="mt-2 mb-4 sm:mb-0 w-[75%] m-w-[75%]">
             <ul className="block justify-start flex-wrap">
               {pages.map((link) => (

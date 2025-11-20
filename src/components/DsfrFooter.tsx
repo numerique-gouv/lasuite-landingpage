@@ -7,7 +7,7 @@ export const DsfrFooter = () => {
   return (
     <footer className="fr-footer" role="contentinfo" id="footer">
       <div className="fr-container">
-        <div className="fr-footer__body">
+        <div className="fr-footer__body border-t-2 border-gray-025">
           <div className="fr-footer__brand fr-enlarge-link">
             <Link
               href="/"
