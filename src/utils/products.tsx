@@ -109,7 +109,7 @@ export const DINUM_PRODUCTS: Record<
       </>,
     ],
   },
-    'Fichiers': {
+  Fichiers: {
     displayDetails: true,
     logo: FichiersLogo,
     screenshot: FichiersScreenshot,

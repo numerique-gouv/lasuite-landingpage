@@ -19,7 +19,12 @@ export default function DocsPage() {
 
   return (
     <LayoutProducts
-      title={localized?.title || content['fr']?.title || content.global?.title || 'Docs'}
+      title={
+        localized?.title ||
+        content['fr']?.title ||
+        content.global?.title ||
+        'Docs'
+      }
       productContent={content}
       locale={locale}
     >
@@ -56,5 +61,3 @@ export default function DocsPage() {
     </LayoutProducts>
   )
 }
-
-

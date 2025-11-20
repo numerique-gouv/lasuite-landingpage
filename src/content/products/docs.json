@@ -6,43 +6,78 @@
   "fr": {
     "header": {
       "links": [
-        {"title": "Découvrir la suite", "url": "/", "type": "tertiary_neutral"},
-        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "tertiary_brand"},
-        {"title": "Se connecter", "url": "https://docs.numerique.gouv.fr/", "type": "primary_brand"}
+        {
+          "title": "Découvrir la suite",
+          "url": "/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "type": "tertiary_brand"
+        },
+        {
+          "title": "Se connecter",
+          "url": "https://docs.numerique.gouv.fr/",
+          "type": "primary_brand"
+        }
       ]
     },
     "hero": {
       "title": "Rédigez les textes qui comptent, à plusieurs.",
       "subtitle": "Docs est l'outil d'écriture collaboratif de l'État pour rédiger, partager et publier vos documents en toute simplicité.",
       "image": {
-          "src": "docs/docs_hero.png",
-          "alt": "Docs illustation apps"
+        "src": "docs/docs_hero.png",
+        "alt": "Docs illustation apps"
       },
       "links": [
-        {"title": "Se connecter", "url": "https://docs.numerique.gouv.fr/", "type": "primary_brand"},
-        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "tertiary_brand_bordered"}
+        {
+          "title": "Se connecter",
+          "url": "https://docs.numerique.gouv.fr/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "type": "tertiary_brand_bordered"
+        }
       ],
       "social_proof": {
-        "title":  "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Docs",
+        "title": "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Docs",
         "items": [
-          {"title": "Ministère de l'éducation nationale", "src": "logo/education-nationale.svg"},
-          {"title": "Direction générale des finances publiques", "src": "logo/dgfp.svg"},
-          {"title": "Ministère de l'agriculture et de la souveraineté alimentaire", "src": "logo/ministere-agriculture.svg"},
-          {"title": "Ministère de l'intérieur", "src": "logo/ministere-interieur.svg"},
-          {"title": "Gendarmerie nationale", "src": "logo/gendarmerienationale.svg"},
-          {"title": "Inrae", "src": "logo/inrae.svg"}
+          {
+            "title": "Ministère de l'éducation nationale",
+            "src": "logo/education-nationale.svg"
+          },
+          {
+            "title": "Direction générale des finances publiques",
+            "src": "logo/dgfp.svg"
+          },
+          {
+            "title": "Ministère de l'agriculture et de la souveraineté alimentaire",
+            "src": "logo/ministere-agriculture.svg"
+          },
+          {
+            "title": "Ministère de l'intérieur",
+            "src": "logo/ministere-interieur.svg"
+          },
+          {
+            "title": "Gendarmerie nationale",
+            "src": "logo/gendarmerienationale.svg"
+          },
+          { "title": "Inrae", "src": "logo/inrae.svg" }
         ]
       }
     },
     "features": {
       "title": "Fonctionnalités principales",
-      "_cta": { "title": "Regarder le film", "url": "#"},
+      "_cta": { "title": "Regarder le film", "url": "#" },
       "items": [
         {
           "type": "full",
           "title": "Prenez des notes, sans distraction.",
           "description": "Ouvrez un document et commencez à écrire. Docs va à l'essentiel : une mise en page claire, et une interface pensée pour vous concentrer sur le fond, pas la forme.",
-        "image": {
+          "image": {
             "src": "docs/context.png",
             "alt": ""
           }
@@ -51,7 +86,7 @@
           "type": "",
           "title": "Organisez vos connaissances.",
           "description": "Créez des collections grâce aux sous-documents.",
-        "image": {
+          "image": {
             "src": "docs/sousdocs.png",
             "alt": ""
           }
@@ -60,25 +95,25 @@
           "type": "",
           "title": "Collaborez en temps réel.",
           "description": "Travaillez à plusieurs simultanément. Choisissez qui voit, commente, édite — ou partagez un lien.",
-            "image": {
+          "image": {
             "src": "docs/share.png",
             "alt": ""
-            }
-          },
-          {
+          }
+        },
+        {
           "type": "",
           "title": "Exportez en un clic.",
           "description": "Téléchargez des PDF ou des fichiers Word quand vous en avez besoin.",
-            "image": {
+          "image": {
             "src": "docs/export.png",
             "alt": ""
-            }
-          },
-          {
+          }
+        },
+        {
           "type": "",
           "title": "Rédigez plus vite avec l'IA.",
           "description": "L'assistant intégré à Docs vous aide à générer, corriger ou traduire vos textes en quelques secondes.",
-            "image": {
+          "image": {
             "src": "docs/ai.png",
             "alt": ""
           }
@@ -90,44 +125,59 @@
         "quote": "Je cherchais un outil alternatif aux éditeurs collaboratifs grand public et cela est chose faite avec Docs !",
         "author": "Honoré Mendy",
         "role": "Chef de la division de la radiodiffusion à l’ANFR",
-        "avatar": {"src": "docs/testimonials/honore-mendy.jpg", "alt": "Honoré Mendy"}
+        "avatar": {
+          "src": "docs/testimonials/honore-mendy.jpg",
+          "alt": "Honoré Mendy"
+        }
       },
       {
         "quote": "Simple à prendre en main, interface claire et collaboration fluide.",
         "author": "James Chaigneaud",
         "role": "Chargé des politiques artistiques et culturelles",
-        "avatar": {"src": "docs/testimonials/james-chaineau.png", "alt": "James Chaigneaud"}
+        "avatar": {
+          "src": "docs/testimonials/james-chaineau.png",
+          "alt": "James Chaigneaud"
+        }
       },
       {
         "quote": "Dans mon service, nous avons plusieurs groupes de travail, Docs nous sert à établir et structurer des actions de formations et permets de mettre tout le monde à la page.",
         "author": "Guillaume Payan",
         "role": "Infirmier",
-        "avatar": {"src": "docs/testimonials/guillaume-payan.jpg", "alt": "Guillaume Payan"}
+        "avatar": {
+          "src": "docs/testimonials/guillaume-payan.jpg",
+          "alt": "Guillaume Payan"
+        }
       },
       {
         "quote": "J'avais besoin d'un outil collaboratif de prise de notes à utiliser avec mes collègues, accessible partout, modifiable à plusieurs en même temps et avec une mise en page des notes simple, claire et efficace.",
         "author": "Antoine Bouffard",
         "role": "Ingénieur au LCPP",
-        "avatar": {"src": "docs/testimonials/antoine-bouffard.jpg", "alt": "Antoine Bouffard"}
+        "avatar": {
+          "src": "docs/testimonials/antoine-bouffard.jpg",
+          "alt": "Antoine Bouffard"
+        }
       },
       {
         "quote": "Prise en main rapide et des fonctionnalités qui n'ont rien à envier à la concurrence.",
         "author": "Maxime Velon",
         "role": "CNRS",
-        "avatar": {"src": "docs/testimonials/maxime-velon.jpg", "alt": "Maxime Velon"}
+        "avatar": {
+          "src": "docs/testimonials/maxime-velon.jpg",
+          "alt": "Maxime Velon"
+        }
       }
     ],
     "faq": {
       "title": "Questions fréquentes",
       "content": "Voici une liste des questions les plus fréquemment posées concernant Docs.",
-        "questions": [
-          {
+      "questions": [
+        {
           "q": "Ce nouvel outil va-t-il durer dans le temps ?",
-          "a": "Docs est opéré par la DINUM à partir de briques open source et constitue une part centrale de la feuille de route numérique de l'Etat en terme de souveraineté. Au-delà de cette dimension stratégique, sa résilience et pérennité est dû à une indépendance de contrats externes, sa contribution de la part de plusieurs administrations et son usage interministérielles, que ce soit sur l'instance de la DINUM ou des instances en propre." 
+          "a": "Docs est opéré par la DINUM à partir de briques open source et constitue une part centrale de la feuille de route numérique de l'Etat en terme de souveraineté. Au-delà de cette dimension stratégique, sa résilience et pérennité est dû à une indépendance de contrats externes, sa contribution de la part de plusieurs administrations et son usage interministérielles, que ce soit sur l'instance de la DINUM ou des instances en propre."
         },
         {
           "q": "Que propose Docs par rapport à d'autres applications de traitement de texte ?",
-          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word, s'intègre à votre drive et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page." 
+          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word, s'intègre à votre drive et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page."
         },
         {
           "q": "Quel niveau de sécurité puis-je attendre ?",
@@ -135,44 +185,95 @@
         },
         {
           "q": "Puis-je verrouiller un document ?",
-          "a": "Non. Si un utilisateur a des droits d'édition, il peut modifier le document." 
+          "a": "Non. Si un utilisateur a des droits d'édition, il peut modifier le document."
         },
         {
           "q": "Puis-je partager un document avec des personnes externes ?",
-          "a": "Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés." 
+          "a": "Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés."
         },
         {
           "q": "Puis-je générer un PDF à partir d'un fichier Docs ?",
-          "a": "Oui, vous pouvez exporter votre fichier en PDF ou Word." 
+          "a": "Oui, vous pouvez exporter votre fichier en PDF ou Word."
         }
       ],
       "links": [
-        {"title": "Guide de l'utilisateur", "icone": "book", "url": "https://www.figma.com/design/3kivgyfVJbc4cVQKL6KCED/Landings?node-id=207-15714&m=dev", "type": "primary_brand"},
-        {"title": "Assister à un webinaire", "icone": "visio", "url": "#", "type": "tertiary_brand_bordered"},
-        {"title": "Rejoindre la communauté", "url": "/", "icone": "tchap", "type": "tertiary_brand_bordered"}
+        {
+          "title": "Guide de l'utilisateur",
+          "icone": "book",
+          "url": "https://www.figma.com/design/3kivgyfVJbc4cVQKL6KCED/Landings?node-id=207-15714&m=dev",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio",
+          "url": "#",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "/",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
       ]
     },
     "advantages": {
       "title": "Principaux avantages",
       "content": "Conçu pour un impact durable et une véritable indépendance numérique.",
       "items": [
-        {"icone": "public", "title": "Gratuit pour les agents", "description": "Aucune licence, aucun coût caché. Une solution publique, ouverte à tous les agents."},
-        {"icone": "workspace", "title": "Commun numérique", "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."},
-        {"icone": "espace_lock", "title": "Hébergé en France", "description": "Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."},
-        {"icone": "shield_person", "title": "Sécurité par conception", "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."},
-        {"icone": "published", "title": "Durable et réversible", "description": "Formats ouverts. Export en un clic (PDF, Word). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."},
-        {"icone": "person", "title": "Conçu en tenant compte de l'accessibilité", "description": "100 % web, accessible dès la conception. Aucune installation requise."}
+        {
+          "icone": "public",
+          "title": "Gratuit pour les agents",
+          "description": "Aucune licence, aucun coût caché. Une solution publique, ouverte à tous les agents."
+        },
+        {
+          "icone": "workspace",
+          "title": "Commun numérique",
+          "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."
+        },
+        {
+          "icone": "espace_lock",
+          "title": "Hébergé en France",
+          "description": "Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+        },
+        {
+          "icone": "shield_person",
+          "title": "Sécurité par conception",
+          "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
+        },
+        {
+          "icone": "published",
+          "title": "Durable et réversible",
+          "description": "Formats ouverts. Export en un clic (PDF, Word). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."
+        },
+        {
+          "icone": "person",
+          "title": "Conçu en tenant compte de l'accessibilité",
+          "description": "100 % web, accessible dès la conception. Aucune installation requise."
+        }
       ]
     },
     "roadmap": {
       "title": "Feuille de route",
       "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
       "items": [
-        {"src": "docs/roadmap/collab.png", "alt": "Collaboration avec les commentaires"},
-        {"src": "docs/roadmap/suivi.png", "alt": "Suivi des changements"},
-        {"src": "docs/roadmap/import.png", "alt": "Importation des nouveaux formats"},
-        {"src": "docs/roadmap/export.png", "alt": "Exportation avancé avec des modèles personnalisés"},
-        {"src": "docs/roadmap/more.png", "alt": "Plus de fonctionnalités secrètes"}
+        {
+          "src": "docs/roadmap/collab.png",
+          "alt": "Collaboration avec les commentaires"
+        },
+        { "src": "docs/roadmap/suivi.png", "alt": "Suivi des changements" },
+        {
+          "src": "docs/roadmap/import.png",
+          "alt": "Importation des nouveaux formats"
+        },
+        {
+          "src": "docs/roadmap/export.png",
+          "alt": "Exportation avancé avec des modèles personnalisés"
+        },
+        {
+          "src": "docs/roadmap/more.png",
+          "alt": "Plus de fonctionnalités secrètes"
+        }
       ],
       "link": {
         "title": "Voir la feuille de route publique",
@@ -181,12 +282,12 @@
     },
     "cta": {
       "description": "Rédigez, collaborez et décidez ensemble, au même endroit.",
-        "button": {
+      "button": {
         "title_desktop": "Commencer à créer sur Docs maintenant",
         "title_mobile": "Commencer à créer sur Docs",
         "path": "#"
       },
-        "image": {
+      "image": {
         "src": "docs/cta/image_cta.png",
         "alt": "docs illustration"
       }
@@ -206,8 +307,16 @@
     "footer": {
       "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
       "links": [
-        {"title": "Essayer maintenant", "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/", "type": "primary_brand"},
-        {"title": "S'inscire à un webinaire", "url": "https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53", "type": "tertiary_brand_bordered"}
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "S'inscire à un webinaire",
+          "url": "https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53",
+          "type": "tertiary_brand_bordered"
+        }
       ]
     }
   }

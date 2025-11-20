@@ -23,11 +23,7 @@ export const FooterLaSuite = () => {
     <ContentSection>
       <div className="text-center mx-auto mb-20">
         <div className="mx-auto w-72 md:w-96">
-          <Image
-            className=""
-            src={WelcomeToLaSuite}
-            alt="Welcome to LaSuite"
-          />
+          <Image className="" src={WelcomeToLaSuite} alt="Welcome to LaSuite" />
         </div>
         <div className="mx-auto px-10 max-w-[300px] md:w-80">
           <Image
@@ -39,7 +35,9 @@ export const FooterLaSuite = () => {
           />
         </div>
 
-        <p className="pb-10 pt-2 text-gray-550 text-sm md:text-xl font-normal">{t('homepage.footer.description')}</p>
+        <p className="pb-10 pt-2 text-gray-550 text-sm md:text-xl font-normal">
+          {t('homepage.footer.description')}
+        </p>
 
         <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
           <div onClick={openCrisp}>

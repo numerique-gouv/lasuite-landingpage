@@ -21,8 +21,10 @@ export const CardFeature: React.FC<{ item: FeatureItem }> = ({ item }) => {
   return (
     <div className={containerClasses}>
       <div className="flex-1 p-8 max-w-[390px]">
-        {item.title && (<h4 className={titleClasses}>{item.title}</h4>)}
-        {item.description && (<p className="text-gray-550 mt-1 text-base">{item.description}</p>)}
+        {item.title && <h4 className={titleClasses}>{item.title}</h4>}
+        {item.description && (
+          <p className="text-gray-550 mt-1 text-base">{item.description}</p>
+        )}
       </div>
       {hasImage && (
         <div className={isFull ? 'w-full md:w-1/2' : 'w-full'}>
@@ -40,5 +42,3 @@ export const CardFeature: React.FC<{ item: FeatureItem }> = ({ item }) => {
 }
 
 export default CardFeature
-
-

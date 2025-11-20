@@ -31,7 +31,11 @@ export const CTA: React.FC<CTAData> = ({ description, button, image }) => {
                 </Button>
               </div>
               <div className="md:hidden">
-                <Button href={button.url || '#'} variant="secondary_brand" className="bg-brand-050">
+                <Button
+                  href={button.url || '#'}
+                  variant="secondary_brand"
+                  className="bg-brand-050"
+                >
                   {button.title_mobile || button.title_desktop || 'Commencer'}
                 </Button>
               </div>
@@ -55,4 +59,3 @@ export const CTA: React.FC<CTAData> = ({ description, button, image }) => {
 }
 
 export default CTA
-

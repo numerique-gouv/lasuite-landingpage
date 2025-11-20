@@ -86,12 +86,11 @@ function useTranslations({
   }
 }
 
-
 function getLocales() {
   return {
     fr,
     en,
   }
-} 
+}
 
 export { TranslationsProvider, useTranslations, getLocales }

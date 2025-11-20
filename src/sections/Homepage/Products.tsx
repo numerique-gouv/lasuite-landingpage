@@ -44,7 +44,11 @@ export const Products = () => {
                   ${isActive ? 'bg-gray-050' : ''}`}
                 onClick={() => handleClick(index, name)}
               >
-                <Image height="30" src={logo} alt={DINUM_PRODUCTS[name]?.name || name} />
+                <Image
+                  height="30"
+                  src={logo}
+                  alt={DINUM_PRODUCTS[name]?.name || name}
+                />
               </button>
             )
           })}
@@ -107,7 +111,11 @@ export const Products = () => {
           >
             <div className="block">
               <div className="flex items-center mb-1">
-                <Image src={DINUM_PRODUCTS[activeItem.name].logo} height="35" alt={DINUM_PRODUCTS[activeItem.name].name || activeItem.name} />
+                <Image
+                  src={DINUM_PRODUCTS[activeItem.name].logo}
+                  height="35"
+                  alt={DINUM_PRODUCTS[activeItem.name].name || activeItem.name}
+                />
               </div>
               <p className="text-gray-550 text-base">
                 {t(`homepage.slider_products.${activeItem.name}.description`)}

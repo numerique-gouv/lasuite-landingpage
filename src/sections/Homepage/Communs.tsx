@@ -5,7 +5,7 @@ import { Paragraph } from '@/components/Paragraph'
 import GristCleverCloud from '@/assets/grist-clever-cloud.png'
 import BundlesMatrix from '@/assets/bundles+matrix.png'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
-import { Button } from "@/components/ui-kit-v2/Button";
+import { Button } from '@/components/ui-kit-v2/Button'
 
 import { useTranslations } from '@/locales/useTranslations'
 

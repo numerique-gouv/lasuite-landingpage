@@ -50,7 +50,9 @@ export const BlockFull3Col: FC<BlockFull3ColProps> = ({ blocks }) => (
                     height={120}
                   />
                 )}
-                <h3 className="font-bold leading-[1.27] text-[1.35rem] text-greyscale-700 mb-1 mt-4">{sub.title}</h3>
+                <h3 className="font-bold leading-[1.27] text-[1.35rem] text-greyscale-700 mb-1 mt-4">
+                  {sub.title}
+                </h3>
                 <p>{sub.content}</p>
               </div>
             ))}

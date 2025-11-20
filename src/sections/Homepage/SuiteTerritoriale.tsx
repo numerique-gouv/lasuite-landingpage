@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from "@/components/ui-kit-v2/Button";
+import { Button } from '@/components/ui-kit-v2/Button'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
 import BentoSuiteTerritoriale from '@/assets/bento/suite-territoriale.png'

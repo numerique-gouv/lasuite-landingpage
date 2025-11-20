@@ -24,7 +24,7 @@ export const Hero = () => {
           />
         </h1>
         <div className="text-center mx-auto max-w-[80vw] md:max-w-[52vw]">
-          <h2 className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4">             
+          <h2 className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4">
             {t('homepage.hero.title')}
           </h2>
           <p className="mb-4 mx-auto text-gray-550 text-base md:text-[1.25rem]">

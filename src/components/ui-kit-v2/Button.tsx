@@ -78,7 +78,10 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantKey = normalizedVariant
 
-  const extraBorderForTertiary = normalizedVariant === 'tertiary bordered' ? ' border border-2 border-grey-4' : ''
+  const extraBorderForTertiary =
+    normalizedVariant === 'tertiary bordered'
+      ? ' border border-2 border-grey-4'
+      : ''
 
   const classes = classNames(
     styles[variantKey as keyof typeof styles] || styles.primary_brand,
@@ -89,7 +92,7 @@ export const Button: React.FC<ButtonProps> = ({
       [styles.fullWidth]: fullWidth && !isNone,
     },
     extraBorderForTertiary,
-    className,
+    className
   )
 
   const LinkComponent: any = href?.startsWith('#') ? 'a' : Link
@@ -108,7 +111,13 @@ export const Button: React.FC<ButtonProps> = ({
 
   if (href) {
     return (
-      <LinkComponent href={href} target={target} className={classes} aria-label={ariaLabel} style={inlineStyle}>
+      <LinkComponent
+        href={href}
+        target={target}
+        className={classes}
+        aria-label={ariaLabel}
+        style={inlineStyle}
+      >
         {content}
       </LinkComponent>
     )

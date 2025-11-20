@@ -63,18 +63,13 @@ export const NavBar = ({
         <div className="absolute flex items-center gap-4 sm:top-[9.5px] right-[19px] md:top-0 md:right-0 sm:relative z-10 ml-auto">
           {!!loginUrl && (
             <div className="hidden md:block">
-              <Button
-                href={loginUrl}
-                variant="tertiary_brand"
-              >
+              <Button href={loginUrl} variant="tertiary_brand">
                 {t('common.login')}
               </Button>
             </div>
           )}
           <div className="hidden md:block">
-          {translation && (
-            <LocaleSwitcher />
-          )}
+            {translation && <LocaleSwitcher />}
           </div>
           <LaGaufre />
         </div>
