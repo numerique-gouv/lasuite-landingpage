@@ -21,7 +21,7 @@ const pages = [
 export const Footer = () => {
   const t = useTranslations()
   return (
-    <footer className="py-8 mt-auto bg-white border-t border-gray-100">
+    <footer className="py-8 mt-auto bg-white border-t border-gray-025">
       <div className="fr-container">
         <div className="flex flex-wrap justify-between mb-6">
           <Link

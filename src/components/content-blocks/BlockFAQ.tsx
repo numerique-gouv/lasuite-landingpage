@@ -98,7 +98,7 @@ const AccordionItem: FC<{
       </button>
       <div
         id={`faq-panel-${idx}`}
-        className={`faq-answer ${open ? 'open pb-3' : ''} text-sm px-3.5 text-gray-600`}
+        className={`faq-answer ${open ? 'open pb-3' : ''} text-sm px-3.5 text-gray-600 max-w-[800px]`}
       >
         {answer}
       </div>

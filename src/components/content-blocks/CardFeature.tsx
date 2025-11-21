@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui-kit-v2/Button'
+import { Raw } from '@/components/Raw'
 
 export type FeatureItem = {
   title?: string
@@ -20,10 +21,12 @@ export const CardFeature: React.FC<{ item: FeatureItem }> = ({ item }) => {
 
   return (
     <div className={containerClasses}>
-      <div className="flex-1 p-8 max-w-[390px]">
+      <div className="flex-1 p-8 max-w-[500px]">
         {item.title && <h4 className={titleClasses}>{item.title}</h4>}
         {item.description && (
-          <p className="text-gray-550 mt-1 text-base">{item.description}</p>
+          <Raw className="text-gray-550 mt-1.5 text-base">
+            {item.description}
+          </Raw>
         )}
       </div>
       {hasImage && (

@@ -7,7 +7,7 @@ type CTAData = {
   button?: {
     title_desktop?: string
     title_mobile?: string
-    url?: string
+    path?: string
   }
   image?: {
     src: string
@@ -21,18 +21,23 @@ export const CTA: React.FC<CTAData> = ({ description, button, image }) => {
       <div className="max-w-container mt-16 md:mt-0 mx-auto w-[100%] md:flex flex-col md:flex-row items-center justify-between gap-8 py-12 md:py-0 px-6 xl:px-0">
         <div className="flex-1 text-white">
           {description && (
-            <p className="text-xl md:text-xl mb-4">{description}</p>
+            <p
+              className="text-xl md:text-xl mb-4"
+              dangerouslySetInnerHTML={{
+                __html: description,
+              }}
+            ></p>
           )}
           {button && (
             <>
               <div className="hidden md:block">
-                <Button href={button.url || '#'} variant="secondary_brand">
+                <Button href={button.path || '#'} variant="secondary_brand">
                   {button.title_desktop || button.title_mobile || 'Commencer'}
                 </Button>
               </div>
               <div className="md:hidden">
                 <Button
-                  href={button.url || '#'}
+                  href={button.path || '#'}
                   variant="secondary_brand"
                   className="bg-brand-050"
                 >

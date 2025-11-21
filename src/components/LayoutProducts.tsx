@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { ProductsHeader } from '@/components/content-blocks/ProductsHeader'
 import { Footer } from '@/components/Footer'
-import { TITLE_SITE } from '@/constant'
+import { TITLE_SITE, URL_SITE } from '@/constant'
+import { MetaHeader } from '@/components/MetaHeader'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
 
@@ -32,7 +33,6 @@ export const LayoutProducts: React.FC<{
               : content.title || pageTitle
           }
         />
-        <meta name="description" content={content.description} />
         <link
           href="/favicon.ico"
           rel="icon"
@@ -44,6 +44,7 @@ export const LayoutProducts: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
+      <MetaHeader description={content.hero?.subtitle} />
       <ProductsHeader productContent={content} slug={product.slug} />
       <main>{children}</main>
       <Footer />

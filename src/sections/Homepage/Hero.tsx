@@ -13,7 +13,7 @@ export const Hero = () => {
           'flex flex-col justify-between items-start sm:items-center pt-3 sm:pt-9 px-3'
         }
       >
-        <h1 className="w-full flex justify-center pt-6 sm:mt-12">
+        <div className="w-full flex justify-center pt-6 sm:mt-12">
           <Image
             src={HeroHome}
             height={168}
@@ -22,8 +22,9 @@ export const Hero = () => {
             className={'max-w-[80%]'}
             priority
           />
-        </h1>
+        </div>
         <div className="text-center mx-auto max-w-[80vw] md:max-w-[52vw]">
+          <h1 className="sr-only">{TITLE_SITE}</h1>
           <h2 className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4">
             {t('homepage.hero.title')}
           </h2>

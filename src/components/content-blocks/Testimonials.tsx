@@ -69,13 +69,22 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
               fill="#304DDF"
             />
           </svg>
-          {currentTestimonial.quote && (
-            <p
-              className={`text-gray-850 font-medium text-xl md:text-3xl max-w-[800px] ${isAnimating ? 'fade-out' : 'fade-in'}`}
-            >
-              {currentTestimonial.quote}
-            </p>
-          )}
+          <div className="grid">
+            {testimonials.map((testimonial, idx) => (
+              <p
+                key={idx}
+                className={`text-gray-850 font-medium text-xl md:text-3xl max-w-[800px] col-start-1 row-start-1 ${
+                  idx === currentIndex
+                    ? isAnimating
+                      ? 'fade-out opacity-100'
+                      : 'fade-in opacity-100'
+                    : 'opacity-0 pointer-events-none'
+                }`}
+              >
+                {testimonial.quote}
+              </p>
+            ))}
+          </div>
           {total > 1 && (
             <div className="mt-8 inline-flex">
               <div className="flex items-center gap-2 px-2 h-10 rounded-lg border border-gray-100 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.08)]">

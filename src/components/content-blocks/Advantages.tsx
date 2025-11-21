@@ -112,6 +112,22 @@ const PersonIcon = () => (
   </svg>
 )
 
+const CheckIcon = () => (
+  <svg
+    className="mt-1.5"
+    xmlns="http://www.w3.org/2000/svg"
+    width="17"
+    height="13"
+    viewBox="0 0 17 13"
+    fill="none"
+  >
+    <path
+      d="M5.7 12.025L0 6.325L1.425 4.9L5.7 9.175L14.875 0L16.3 1.425L5.7 12.025Z"
+      fill="#304DDF"
+    />
+  </svg>
+)
+
 const iconMap: Record<string, React.ReactNode> = {
   public: <PublicIcon />,
   workspace: <WorkspaceIcon />,
@@ -119,6 +135,7 @@ const iconMap: Record<string, React.ReactNode> = {
   shield_person: <ShieldPersonIcon />,
   published: <PublishedIcon />,
   person: <PersonIcon />,
+  check: <CheckIcon />,
 }
 
 export const Advantages: React.FC<AdvantagesData> = ({
@@ -127,14 +144,88 @@ export const Advantages: React.FC<AdvantagesData> = ({
   items,
 }) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([])
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [announcement, setAnnouncement] = useState('')
+
+  const getVisibleItemIndex = (): number => {
+    if (!scrollContainerRef.current) return 0
+    const container = scrollContainerRef.current
+    const containerRect = container.getBoundingClientRect()
+    const containerCenter = containerRect.left + containerRect.width / 2
+
+    let closestIndex = 0
+    let closestDistance = Infinity
+
+    for (let i = 0; i < itemRefs.current.length; i++) {
+      const item = itemRefs.current[i]
+      if (item) {
+        const itemRect = item.getBoundingClientRect()
+        const itemCenter = itemRect.left + itemRect.width / 2
+        const distance = Math.abs(itemCenter - containerCenter)
+
+        // Trouver l'élément le plus proche du centre
+        if (distance < closestDistance) {
+          closestDistance = distance
+          closestIndex = i
+        }
+      }
+    }
+    return closestIndex
+  }
+
+  const scrollToItem = (index: number) => {
+    if (!scrollContainerRef.current) return
+
+    const item = itemRefs.current[index]
+    if (!item) return
+
+    const container = scrollContainerRef.current
+
+    // Pour le premier élément, on peut simplement scroller au début
+    if (index === 0) {
+      container.scrollTo({
+        left: 0,
+        behavior: 'smooth',
+      })
+    } else {
+      // Utiliser offsetLeft pour avoir la position relative au parent
+      const itemOffsetLeft = item.offsetLeft
+      const itemWidth = item.offsetWidth
+      const containerWidth = container.clientWidth
+
+      // Calculer le scroll pour centrer l'élément
+      const targetScroll = itemOffsetLeft - containerWidth / 2 + itemWidth / 2
+
+      container.scrollTo({
+        left: Math.max(0, targetScroll),
+        behavior: 'smooth',
+      })
+    }
+
+    setCurrentIndex(index)
+    if (items) {
+      setAnnouncement(`${index + 1} sur ${items.length}: ${items[index].title}`)
+    }
+
+    // Attendre que le scroll soit terminé avant de focus
+    setTimeout(() => {
+      item.focus()
+    }, 300)
+  }
 
   const checkScrollButtons = () => {
     if (!scrollContainerRef.current) return
     const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
     setCanScrollLeft(scrollLeft > 0)
     setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
+
+    const newIndex = getVisibleItemIndex()
+    if (newIndex !== currentIndex) {
+      setCurrentIndex(newIndex)
+    }
   }
 
   useEffect(() => {
@@ -150,15 +241,45 @@ export const Advantages: React.FC<AdvantagesData> = ({
     }
   }, [items])
 
+  useEffect(() => {
+    // Initialiser les refs
+    itemRefs.current = itemRefs.current.slice(0, items?.length || 0)
+  }, [items])
+
   if (!items || items.length === 0) return null
 
   const scroll = (direction: 'left' | 'right') => {
-    if (!scrollContainerRef.current) return
-    const scrollAmount = 400
-    scrollContainerRef.current.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    })
+    if (!scrollContainerRef.current || !items) return
+
+    const newIndex =
+      direction === 'left'
+        ? Math.max(0, currentIndex - 1)
+        : Math.min(items.length - 1, currentIndex + 1)
+
+    scrollToItem(newIndex)
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent, index: number) => {
+    if (!items) return
+
+    switch (e.key) {
+      case 'ArrowLeft':
+        e.preventDefault()
+        scroll('left')
+        break
+      case 'ArrowRight':
+        e.preventDefault()
+        scroll('right')
+        break
+      case 'Home':
+        e.preventDefault()
+        scrollToItem(0)
+        break
+      case 'End':
+        e.preventDefault()
+        scrollToItem(items.length - 1)
+        break
+    }
   }
 
   return (
@@ -179,37 +300,65 @@ export const Advantages: React.FC<AdvantagesData> = ({
       <div className="w-full overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex gap-3 overflow-x-auto snap-x snap-mandatory md:snap-none scroll-smooth pb-4"
+          id="advantages-carousel"
+          role="region"
+          aria-label={title || 'Avantages'}
+          aria-live="polite"
+          className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 focus-within:outline-none"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
             paddingLeft: 'max(24px, calc(50vw - 600px))',
             paddingRight: 'max(24px, calc(50vw - 600px))',
           }}
+          tabIndex={0}
+          onKeyDown={(e) => handleKeyDown(e, currentIndex)}
         >
           {items.map((item, idx) => {
             const icon = item.icone ? iconMap[item.icone] : null
+            const isCurrent = idx === currentIndex
             return (
               <div
                 key={`advantage-${idx}`}
-                className="flex flex-row items-start gap-3 bg-white border border-gray-100 shadow-[0_4px_10px_rgba(0,0,0,0.05)] rounded-lg py-3 px-4 max-w-[80%] md:min-w-[320px] md:max-w-[380px] snap-center md:snap-start shrink-0"
+                ref={(el) => (itemRefs.current[idx] = el)}
+                role="group"
+                aria-roledescription="slide"
+                aria-label={`${idx + 1} sur ${items.length}`}
+                tabIndex={isCurrent ? 0 : -1}
+                className={`flex flex-row items-start gap-3 bg-white border border-gray-100 shadow-[0_4px_10px_rgba(0,0,0,0.05)] rounded-lg py-4 pr-7 px-4 pb-6 max-w-[80%] md:min-w-[320px] md:max-w-[380px] snap-center shrink-0 ${
+                  isCurrent ? '' : ''
+                }`}
+                onKeyDown={(e) => handleKeyDown(e, idx)}
               >
                 <div className="mt-1 flex items-center justify-start">
                   {icon && (
-                    <div className="flex items-center justify-start">
+                    <div
+                      className="flex items-center justify-start"
+                      aria-hidden="true"
+                    >
                       {icon}
                     </div>
                   )}
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-brand-600 leading-[32px]">
+                  <h4 className="text-lg font-medium text-brand-600 leading-[26px]">
                     {item.title}
                   </h4>
-                  <p className="text-gray-550 text-sm">{item.description}</p>
+                  <p className="text-gray-550 text-sm mt-2">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             )
           })}
+        </div>
+        <div
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className="sr-only"
+        >
+          {announcement}
         </div>
       </div>
 
@@ -219,20 +368,33 @@ export const Advantages: React.FC<AdvantagesData> = ({
             <button
               onClick={() => scroll('left')}
               disabled={!canScrollLeft}
-              className={`transition-colors -mt-1 ${canScrollLeft ? 'text-brand-550 cursor-pointer' : 'text-gray-300 cursor-not-allowed'}`}
-              aria-label="Précédent"
+              aria-label={`Précédent${canScrollLeft ? `, ${currentIndex} sur ${items.length}` : ''}`}
+              aria-controls="advantages-carousel"
+              className={`transition-colors -mt-1 focus:outline-2 focus:outline-offset-2 focus:outline-brand-550 rounded ${
+                canScrollLeft
+                  ? 'text-brand-550 cursor-pointer hover:bg-gray-50'
+                  : 'text-gray-300 cursor-not-allowed'
+              }`}
             >
-              <ArrowBackIcon fontSize="small" />
+              <ArrowBackIcon fontSize="small" aria-hidden="true" />
             </button>
             <button
               onClick={() => scroll('right')}
               disabled={!canScrollRight}
-              className={`transition-colors -mt-1 ${canScrollRight ? 'text-brand-550 cursor-pointer' : 'text-gray-300 cursor-not-allowed'}`}
-              aria-label="Suivant"
+              aria-label={`Suivant${canScrollRight ? `, ${currentIndex + 2} sur ${items.length}` : ''}`}
+              aria-controls="advantages-carousel"
+              className={`transition-colors -mt-1 focus:outline-2 focus:outline-offset-2 focus:outline-brand-550 rounded ${
+                canScrollRight
+                  ? 'text-brand-550 cursor-pointer hover:bg-gray-50'
+                  : 'text-gray-300 cursor-not-allowed'
+              }`}
             >
-              <ArrowForwardIcon fontSize="small" />
+              <ArrowForwardIcon fontSize="small" aria-hidden="true" />
             </button>
           </div>
+          <span className="sr-only" aria-live="polite" aria-atomic="true">
+            {announcement || `${currentIndex + 1} sur ${items.length}`}
+          </span>
         </div>
       </div>
     </div>

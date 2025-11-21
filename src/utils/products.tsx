@@ -150,7 +150,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotEn: VisioScreenshotEn,
     screenshotMobileEn: VisioScreenshotMobileEn,
     name: 'Visio',
-    url: 'https://visio.numerique.gouv.fr/',
+    url: '/produits/visio',
     caption:
       'La solution de visioconférence pour les agents de la sphère publique',
     description:
@@ -196,7 +196,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotEn: GristScreenshot,
     screenshotMobileEn: GristScreenshotMobile,
     name: 'Grist',
-    url: 'https://grist.numerique.gouv.fr/',
+    url: '/produits/grist',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
     description:
       'Le tableur collaboratif pour structurer vos bases de données.',
@@ -217,7 +217,7 @@ export const DINUM_PRODUCTS: Record<
   Docs: {
     displayDetails: true,
     logo: DocsSvg,
-    url: 'https://docs.numerique.gouv.fr',
+    url: '/produits/docs',
     screenshot: DocsScreenshot,
     screenshotMobile: DocsScreenshotMobile,
     screenshotEn: DocsScreenshotEn,

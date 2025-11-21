@@ -99,7 +99,7 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
                 >
                   {link.title}
                 </Button>
-                {idx === 0 && links.length > 1 && (
+                {idx === 0 && links.length > 2 && (
                   <span className="h-6 w-px rounded-[2px] bg-gray-100" />
                 )}
               </>

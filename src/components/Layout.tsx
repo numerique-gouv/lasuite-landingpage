@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { TITLE_SITE } from '@/constant'
+import { MetaHeader } from '@/components/MetaHeader'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
 
@@ -41,6 +42,7 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
+      <MetaHeader description={isHomepage ? t('head.meta_desc') : undefined} />
       <NavBar
         logo={logo}
         loginUrl={loginUrl}

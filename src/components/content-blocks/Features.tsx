@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui-kit-v2/Button'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-import { CardFeature } from '../../../components/content-blocks/CardFeature'
+import { CardFeature } from './CardFeature'
 
 export type ProductContent = Record<string, any>
 

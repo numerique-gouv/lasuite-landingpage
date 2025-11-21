@@ -18,9 +18,9 @@ export const BlockHero: React.FC<{
   return (
     <div className="w-[100%] max-w-container mx-auto mt-[100px] md:mt-[140px] overflow-hidden md:overflow-visible md:px-3 xl:px-0">
       <div className="md:flex gap-8 md:justify-between mb-8 md:mb-[74px]">
-        <div className="text-left md:max-w-[836px] relative px-6 md:px-0 z-10">
+        <div className="text-left md:max-w-[700px] relative px-6 md:px-0 z-10">
           <h2
-            className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4"
+            className="text-greyscale-800 text-[2rem] md:text-[2.75rem] text-balance leading-[2.5rem] md:leading-[3rem] font-bold pb-4"
             dangerouslySetInnerHTML={{
               __html: productContent.hero.title,
             }}
@@ -37,7 +37,7 @@ export const BlockHero: React.FC<{
                 const variant = (link.variant || link.type) as any
                 return (
                   <React.Fragment key={`hero-link-${idx}`}>
-                    <Button href={link.url} variant={variant}>
+                    <Button href={link.url} variant={variant} target="_blank">
                       {link.title}
                     </Button>
                   </React.Fragment>
@@ -48,7 +48,7 @@ export const BlockHero: React.FC<{
           <span className="text-gray-550">
             <a
               className="text-gray-550 underline underline-offset-2"
-              href="https://grist.numerique.gouv.fr/o/docs/forms/3kzLTwDzfAvJogt5SLXmwb/53"
+              href="https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
               target="_blank"
             >
               Inscrivez-vous
@@ -61,14 +61,14 @@ export const BlockHero: React.FC<{
             src={bannerProduct.src}
             height={300}
             width={300}
-            alt={productContent.title}
+            alt={productContent.hero.alt_banner}
             className="max-w-[90%]"
             priority
           />
         </div>
       </div>
       {productContent.hero.image && (
-        <div className="ml-6 md:ml-0 md:block rounded-lg overflow-hidden shadow-[0_11px_51.8px_rgba(0,0,0,0.10)] relative md:static max-w-none">
+        <div className="ml-6 md:ml-0 md:block md:rounded-lg overflow-hidden shadow-[0_11px_51.8px_rgba(0,0,0,0.10)] relative md:static max-w-none">
           <Image
             src={`/assets/products/${productContent.hero.image.src}`}
             height={700}
@@ -87,5 +87,3 @@ export const BlockHero: React.FC<{
     </div>
   )
 }
-
-// SocialProof scroller déplacé dans sections/produits/docs/SocialProof

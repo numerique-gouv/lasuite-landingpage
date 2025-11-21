@@ -60,9 +60,13 @@ export const Button: React.FC<ButtonProps> = ({
 
   const content = (
     <>
-      {icon && iconPosition === 'left' && <span>{icon}</span>}
+      {icon && iconPosition === 'left' && (
+        <span aria-hidden="true">{icon}</span>
+      )}
       <span>{children}</span>
-      {icon && iconPosition === 'right' && <span>{icon}</span>}
+      {icon && iconPosition === 'right' && (
+        <span aria-hidden="true">{icon}</span>
+      )}
     </>
   )
 

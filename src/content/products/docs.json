@@ -1,6 +1,6 @@
 {
   "global": {
-    "title": "LaSuite - Docs",
+    "title": "Docs",
     "slug": "docs"
   },
   "fr": {
@@ -13,12 +13,12 @@
         },
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
           "type": "tertiary_brand"
         },
         {
           "title": "Se connecter",
-          "url": "https://docs.numerique.gouv.fr/",
+          "url": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/",
           "type": "primary_brand"
         }
       ]
@@ -26,19 +26,20 @@
     "hero": {
       "title": "Rédigez les textes qui comptent, à plusieurs.",
       "subtitle": "Docs est l'outil d'écriture collaboratif de l'État pour rédiger, partager et publier vos documents en toute simplicité.",
+      "alt_banner": "",
       "image": {
         "src": "docs/docs_hero.png",
-        "alt": "Docs illustation apps"
+        "alt": "Docs illustation apps - Illustration de Delacroix"
       },
       "links": [
         {
           "title": "Se connecter",
-          "url": "https://docs.numerique.gouv.fr/",
+          "url": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/",
           "type": "primary_brand"
         },
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
           "type": "tertiary_brand_bordered"
         }
       ],
@@ -76,37 +77,37 @@
         {
           "type": "full",
           "title": "Prenez des notes, sans distraction.",
-          "description": "Ouvrez un document et commencez à écrire. Docs va à l'essentiel : une mise en page claire, et une interface pensée pour vous concentrer sur le fond, pas la forme.",
+          "description": "Ouvrez un document et commencez à écrire. Docs va à l'essentiel, son interface est pensée pour vous aider à vous concentrer sur ce qui compte : votre contenu.",
           "image": {
             "src": "docs/context.png",
-            "alt": ""
+            "alt": "Capture d’écran de la fonctionnalité notes"
           }
         },
         {
           "type": "",
           "title": "Organisez vos connaissances.",
-          "description": "Créez des collections grâce aux sous-documents.",
+          "description": "Créez des bases documentaires optimisées pour la recherche et la consultation grâce aux sous-documents.",
           "image": {
             "src": "docs/sousdocs.png",
-            "alt": ""
+            "alt": "Capture d’écran de la fonctionnalité Organisation"
           }
         },
         {
           "type": "",
-          "title": "Collaborez en temps réel.",
-          "description": "Travaillez à plusieurs simultanément. Choisissez qui voit, commente, édite — ou partagez un lien.",
+          "title": "Partagez et collaborez en toute simplicité.",
+          "description": "Choisissez précisemment qui voit, commente, édite — ou utilisez les liens de partage.",
           "image": {
             "src": "docs/share.png",
-            "alt": ""
+            "alt": "Capture d’écran de la fonctionnalité Collaboration"
           }
         },
         {
           "type": "",
           "title": "Exportez en un clic.",
-          "description": "Téléchargez des PDF ou des fichiers Word quand vous en avez besoin.",
+          "description": "Téléchargez vos documents à tout moment, dans le format de votre choix (PDF, Docx ou ODT).",
           "image": {
             "src": "docs/export.png",
-            "alt": ""
+            "alt": "Capture d’écran de la fonctionnalité Export"
           }
         },
         {
@@ -114,8 +115,8 @@
           "title": "Rédigez plus vite avec l'IA.",
           "description": "L'assistant intégré à Docs vous aide à générer, corriger ou traduire vos textes en quelques secondes.",
           "image": {
-            "src": "docs/ai.png",
-            "alt": ""
+            "alt": "Capture d’écran de la fonctionnalité intelligence artificielle",
+            "src": "docs/ai.png"
           }
         }
       ]
@@ -127,7 +128,7 @@
         "role": "Chef de la division de la radiodiffusion à l’ANFR",
         "avatar": {
           "src": "docs/testimonials/honore-mendy.jpg",
-          "alt": "Honoré Mendy"
+          "alt": "Visuel de chaque personne qui témoigne"
         }
       },
       {
@@ -136,7 +137,7 @@
         "role": "Chargé des politiques artistiques et culturelles",
         "avatar": {
           "src": "docs/testimonials/james-chaineau.png",
-          "alt": "James Chaigneaud"
+          "alt": "Visuel de chaque personne qui témoigne"
         }
       },
       {
@@ -145,25 +146,25 @@
         "role": "Infirmier",
         "avatar": {
           "src": "docs/testimonials/guillaume-payan.jpg",
-          "alt": "Guillaume Payan"
+          "alt": "Visuel de chaque personne qui témoigne"
         }
       },
       {
         "quote": "J'avais besoin d'un outil collaboratif de prise de notes à utiliser avec mes collègues, accessible partout, modifiable à plusieurs en même temps et avec une mise en page des notes simple, claire et efficace.",
         "author": "Antoine Bouffard",
-        "role": "Ingénieur au LCPP",
+        "role": "Ingénieur au LCPP (Préfecture de police)",
         "avatar": {
           "src": "docs/testimonials/antoine-bouffard.jpg",
-          "alt": "Antoine Bouffard"
+          "alt": "Visuel de chaque personne qui témoigne"
         }
       },
       {
         "quote": "Prise en main rapide et des fonctionnalités qui n'ont rien à envier à la concurrence.",
         "author": "Maxime Velon",
-        "role": "CNRS",
+        "role": "Assistant administratif au CNRS",
         "avatar": {
           "src": "docs/testimonials/maxime-velon.jpg",
-          "alt": "Maxime Velon"
+          "alt": "Visuel de chaque personne qui témoigne"
         }
       }
     ],
@@ -177,30 +178,30 @@
         },
         {
           "q": "Que propose Docs par rapport à d'autres applications de traitement de texte ?",
-          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word, s'intègre à votre drive et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page."
+          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word/ODT et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page."
         },
         {
           "q": "Quel niveau de sécurité puis-je attendre ?",
-          "a": "Docs a subi une homogation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Docs n'est pas adapté pour le contenu \"Diffusion Restreinte\"."
+          "a": "Docs a bénéficié d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Docs est hébergé chez OutScale SecNumCloud et est opéré par les équipes de la DINUM. Docs n'est pas adapté pour le contenu classé \"Diffusion Restreinte\"."
         },
         {
           "q": "Puis-je verrouiller un document ?",
-          "a": "Non. Si un utilisateur a des droits d'édition, il peut modifier le document."
+          "a": "Non. Sauf si vous retirez les droits d'édition aux utilisateurs en question. Si un utilisateur a des droits d'édition, il peut modifier le document."
         },
         {
           "q": "Puis-je partager un document avec des personnes externes ?",
-          "a": "Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés."
+          "a": "Oui. Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés."
         },
         {
-          "q": "Puis-je générer un PDF à partir d'un fichier Docs ?",
-          "a": "Oui, vous pouvez exporter votre fichier en PDF ou Word."
+          "q": "Puis-je exporter mes Docs en format Word, PDF ou ODT ?",
+          "a": "Oui, vous pouvez exporter votre fichier en Word, PDF ou ODT."
         }
       ],
       "links": [
         {
           "title": "Guide de l'utilisateur",
           "icone": "book",
-          "url": "https://www.figma.com/design/3kivgyfVJbc4cVQKL6KCED/Landings?node-id=207-15714&m=dev",
+          "url": "https://docs.numerique.gouv.fr/docs/335e43b5-9e16-4798-a0b4-912e44c7135e/",
           "type": "primary_brand"
         },
         {
@@ -211,7 +212,7 @@
         },
         {
           "title": "Rejoindre la communauté",
-          "url": "/",
+          "url": "https://tchap.gouv.fr/#/room/!GqUKRUEiTcPpIxaimQ:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.finances.tchap.gouv.fr&via=agent.education.tchap.gouv.fr",
           "icone": "tchap",
           "type": "tertiary_brand_bordered"
         }
@@ -223,8 +224,8 @@
       "items": [
         {
           "icone": "public",
-          "title": "Gratuit pour les agents",
-          "description": "Aucune licence, aucun coût caché. Une solution publique, ouverte à tous les agents."
+          "title": "Ouvert à tous les agents",
+          "description": "Accédez à toutes les applications de LaSuite à travers ProConnect"
         },
         {
           "icone": "workspace",
@@ -234,22 +235,22 @@
         {
           "icone": "espace_lock",
           "title": "Hébergé en France",
-          "description": "Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+          "description": "Hébergement SecNumCloud. Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
         },
         {
           "icone": "shield_person",
-          "title": "Sécurité par conception",
-          "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
+          "title": "Sécurisé",
+          "description": "Homologué conforme au RGS. Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
         },
         {
           "icone": "published",
           "title": "Durable et réversible",
-          "description": "Formats ouverts. Export en un clic (PDF, Word). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."
+          "description": "Formats ouverts. Export en un clic (PDF, Word, ODT). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."
         },
         {
           "icone": "person",
-          "title": "Conçu en tenant compte de l'accessibilité",
-          "description": "100 % web, accessible dès la conception. Aucune installation requise."
+          "title": "Accessible",
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)"
         }
       ]
     },
@@ -259,16 +260,19 @@
       "items": [
         {
           "src": "docs/roadmap/collab.png",
-          "alt": "Collaboration avec les commentaires"
+          "alt": "Visuel Collaboration avec les commentaires"
         },
-        { "src": "docs/roadmap/suivi.png", "alt": "Suivi des changements" },
+        {
+          "src": "docs/roadmap/suivi.png",
+          "alt": "Visuel Suivi des changements"
+        },
         {
           "src": "docs/roadmap/import.png",
-          "alt": "Importation des nouveaux formats"
+          "alt": "Visuel Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
         },
         {
           "src": "docs/roadmap/export.png",
-          "alt": "Exportation avancé avec des modèles personnalisés"
+          "alt": "Visuel Exportation avancé avec des modèles personnalisés"
         },
         {
           "src": "docs/roadmap/more.png",
@@ -285,7 +289,7 @@
       "button": {
         "title_desktop": "Commencer à créer sur Docs maintenant",
         "title_mobile": "Commencer à créer sur Docs",
-        "path": "#"
+        "path": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/"
       },
       "image": {
         "src": "docs/cta/image_cta.png",
@@ -293,8 +297,8 @@
       }
     },
     "decisions": {
-      "title": "Vous prenez les décisions ?",
-      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Docs.<br /> <br />LaSuite réunit des outils cohérents, hébergés en France, avec un haut niveau de sécurité (SecNumCloud) et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Docs s’intègre de manière fluide avec Visio, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "title": "Proposez Docs à vos équipes",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Docs.<br /> <br />LaSuite réunit des outils cohérents, hébergés en France (SecNumCloud), avec un haut niveau de sécurité et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Docs s’intègre de manière fluide avec Visio, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
       "button": {
         "title": "Prendre rendez-vous",
         "url": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45"
@@ -309,11 +313,11 @@
       "links": [
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/2e71cbaf-2251-4442-a540-7dca099a9b12/",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
           "type": "primary_brand"
         },
         {
-          "title": "S'inscire à un webinaire",
+          "title": "S'inscrire à un webinaire",
           "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
           "type": "tertiary_brand_bordered"
         }

@@ -2,7 +2,7 @@ import localFont from 'next/font/local'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
-import { MetaHeader as Head } from '@/components/MetaHeader'
+import { MetaHeader } from '@/components/MetaHeader'
 import { useEffect } from 'react'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import { useRouter } from 'next/router'
@@ -99,7 +99,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${marianne.variable} font-sans`}>
       <TranslationsProvider locale={locale || defaultLocale}>
-        <Head />
+        <MetaHeader />
         <Component {...pageProps} />
       </TranslationsProvider>
     </div>

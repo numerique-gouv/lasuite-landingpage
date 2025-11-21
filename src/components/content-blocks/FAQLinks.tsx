@@ -92,6 +92,7 @@ export const FAQLinks: React.FC<FAQLinksProps> = ({ links }) => {
               variant={(link.type as any) || 'primary_brand'}
               icon={icon}
               iconPosition="left"
+              target="_blank"
             >
               {link.title}
             </Button>

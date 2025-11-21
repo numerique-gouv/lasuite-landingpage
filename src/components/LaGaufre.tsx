@@ -16,6 +16,18 @@ export const LaGaufre = () => {
       button.id = 'gaufre_button'
       button.setAttribute('aria-expanded', 'false')
     }
+
+    const applyZIndex = () => {
+      const shadowHost = document.querySelector(
+        '#lasuite-widget-lagaufre-shadow'
+      )
+      const wrapper = shadowHost?.shadowRoot?.querySelector(
+        '#wrapper'
+      ) as HTMLElement
+      if (wrapper) wrapper.style.zIndex = '1000000000'
+    }
+
+    setTimeout(applyZIndex, 500)
   }, [])
 
   return (
@@ -24,7 +36,7 @@ export const LaGaufre = () => {
         <Button
           variant="tertiary_brand"
           className="!w-10 !h-10 !p-0 !min-w-0"
-          aria-label="Ouvrir la Gaufre"
+          aria-label="Les services de LaSuite"
           aria-expanded="false"
         >
           <svg
@@ -54,7 +66,7 @@ export const LaGaufre = () => {
         </Button>
       </div>
       <Script
-        src="https://integration.lasuite.numerique.gouv.fr/widgets/dist/lagaufre.js"
+        src="https://static.suite.anct.gouv.fr/widgets/lagaufre.js"
         strategy="lazyOnload"
         onLoad={() => {
           const button = document.getElementById('gaufre_button')
@@ -68,10 +80,9 @@ export const LaGaufre = () => {
                 label: 'Services de la Suite numérique',
                 closeLabel: 'Fermer le menu',
                 headerLabel: 'À propos',
-                // background: 'linear-gradient(180deg, #eceffd 0%, #FFFFFF 20%)',
-                // headerLogo: '/assets/lasuite.svg',
+                background: 'linear-gradient(180deg, #eceffd 0%, #FFFFFF 20%)',
+                headerLogo: '/assets/lasuite.svg',
                 headerUrl: 'https://lasuite.numerique.gouv.fr',
-                // showFooter: true,
                 loadingText: 'Chargement…',
                 newWindowLabelSuffix: ' (nouvelle fenêtre)',
                 fontFamily: 'Marianne',

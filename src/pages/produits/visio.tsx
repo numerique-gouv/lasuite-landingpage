@@ -1,6 +1,6 @@
 import { LayoutProducts } from '@/components/LayoutProducts'
 import { useRouter } from 'next/router'
-import docsContent from '@/content/products/docs.json'
+import visioContent from '@/content/products/visio.json'
 import { BlockHero, BlockFAQ } from '@/components/content-blocks'
 import { ProductsFooter } from '@/components/content-blocks'
 import FadeInSection from '@/components/FadeInSection'
@@ -11,9 +11,10 @@ import Advantages from '@/components/content-blocks/Advantages'
 import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
-export default function DocsPage() {
+
+export default function VisioPage() {
   const { locale = 'fr' } = useRouter()
-  const content: any = docsContent as any
+  const content: any = visioContent as any
   const product = content.global
   const localized = content[locale] || content['fr']
 
@@ -23,7 +24,7 @@ export default function DocsPage() {
         localized?.title ||
         content['fr']?.title ||
         content.global?.title ||
-        'Docs'
+        'Visio'
       }
       productContent={content}
       locale={locale}
