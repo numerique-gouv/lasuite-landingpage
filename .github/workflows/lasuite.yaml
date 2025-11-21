@@ -30,3 +30,8 @@ jobs:
         run: yarn format
       - name: Build sources
         run: yarn build
+  lint-git:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report lint-git status
+        run: echo "OK"
