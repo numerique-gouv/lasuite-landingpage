@@ -24,10 +24,10 @@ export const LocaleSwitcher = () => {
 
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <Menu.Button className="flex border-none items-center bg-white border rounded-md px-4 py-2 text-blue-1 font-bold hover:bg-primary-100">
+      <Menu.Button className="flex border-none items-center bg-white border rounded-md px-4 py-2 font-medium text-brand-550 bg-transparent hover:bg-[#f2f5f4] active:bg-[#f2f5f4]">
         <img src={LogoI18n.src} alt="Language" className="w-5 h-5 mr-2" />
         {labels[locale ?? 'en']}
-        <ArrowDropDownIcon className="w-5 h-5 ml-2 text-blue-600 transition-transform focus:rotate-180" />
+        <ArrowDropDownIcon className="w-5 h-5 ml-2 text-brand-550 transition-transform focus:rotate-180" />
       </Menu.Button>
 
       <Transition
@@ -39,7 +39,7 @@ export const LocaleSwitcher = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="border border-greyscale-100 absolute left-0 overflow-hidden mt-2 w-36 origin-top-right bg-white rounded-md shadow-md focus:outline-none">
+        <Menu.Items className="border text-base border-greyscale-100 absolute left-0 overflow-hidden mt-2 w-36 origin-top-right bg-white rounded-md shadow-md focus:outline-none">
           {locales.map((availableLocale) => (
             <Menu.Item key={availableLocale}>
               {({ active }) => (
@@ -49,11 +49,11 @@ export const LocaleSwitcher = () => {
                       locale: availableLocale,
                     })
                   }
-                  className="hover:bg-greyscale-050 flex w-full px-4 py-2 font-bold text-base text-gray-900 justify-between"
+                  className="items-center hover:bg-[#f2f5f4] flex w-full px-4 py-2 font-medium text-base text-gray-900 justify-between"
                 >
                   {labels[availableLocale]}
                   {locale === availableLocale && (
-                    <CheckIcon className="w-4 h-4 text-blue-600" />
+                    <CheckIcon className="w-4 h-4 text-brand-550" />
                   )}
                 </button>
               )}

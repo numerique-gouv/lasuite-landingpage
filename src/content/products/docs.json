@@ -1,0 +1,327 @@
+{
+  "global": {
+    "title": "Docs",
+    "slug": "docs"
+  },
+  "fr": {
+    "header": {
+      "links": [
+        {
+          "title": "Découvrir la suite",
+          "url": "/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "type": "tertiary_brand"
+        },
+        {
+          "title": "Se connecter",
+          "url": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/",
+          "type": "primary_brand"
+        }
+      ]
+    },
+    "hero": {
+      "title": "Rédigez les textes qui comptent, à plusieurs.",
+      "subtitle": "Docs est l'outil d'écriture collaboratif de l'État pour rédiger, partager et publier vos documents en toute simplicité.",
+      "alt_banner": "",
+      "image": {
+        "src": "docs/docs_hero.png",
+        "alt": "Docs illustation apps - Illustration de Delacroix"
+      },
+      "links": [
+        {
+          "title": "Se connecter",
+          "url": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "type": "tertiary_brand_bordered"
+        }
+      ],
+      "social_proof": {
+        "title": "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Docs",
+        "items": [
+          {
+            "title": "Ministère de l'éducation nationale",
+            "src": "logo/education-nationale.svg"
+          },
+          {
+            "title": "Direction générale des finances publiques",
+            "src": "logo/dgfp.svg"
+          },
+          {
+            "title": "Ministère de l'agriculture et de la souveraineté alimentaire",
+            "src": "logo/ministere-agriculture.svg"
+          },
+          {
+            "title": "Ministère de l'intérieur",
+            "src": "logo/ministere-interieur.svg"
+          },
+          {
+            "title": "Gendarmerie nationale",
+            "src": "logo/gendarmerienationale.svg"
+          },
+          { "title": "Inrae", "src": "logo/inrae.svg" }
+        ]
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités principales",
+      "_cta": { "title": "Regarder le film", "url": "#" },
+      "items": [
+        {
+          "type": "full",
+          "title": "Prenez des notes, sans distraction.",
+          "description": "Ouvrez un document et commencez à écrire. Docs va à l'essentiel, son interface est pensée pour vous aider à vous concentrer sur ce qui compte : votre contenu.",
+          "image": {
+            "src": "docs/context.png",
+            "alt": "Capture d’écran de la fonctionnalité notes"
+          }
+        },
+        {
+          "type": "",
+          "title": "Organisez vos connaissances.",
+          "description": "Créez des bases documentaires optimisées pour la recherche et la consultation grâce aux sous-documents.",
+          "image": {
+            "src": "docs/sousdocs.png",
+            "alt": "Capture d’écran de la fonctionnalité Organisation"
+          }
+        },
+        {
+          "type": "",
+          "title": "Partagez et collaborez en toute simplicité.",
+          "description": "Choisissez précisemment qui voit, commente, édite — ou utilisez les liens de partage.",
+          "image": {
+            "src": "docs/share.png",
+            "alt": "Capture d’écran de la fonctionnalité Collaboration"
+          }
+        },
+        {
+          "type": "",
+          "title": "Exportez en un clic.",
+          "description": "Téléchargez vos documents à tout moment, dans le format de votre choix (PDF, Docx ou ODT).",
+          "image": {
+            "src": "docs/export.png",
+            "alt": "Capture d’écran de la fonctionnalité Export"
+          }
+        },
+        {
+          "type": "",
+          "title": "Rédigez plus vite avec l'IA.",
+          "description": "L'assistant intégré à Docs vous aide à générer, corriger ou traduire vos textes en quelques secondes.",
+          "image": {
+            "alt": "Capture d’écran de la fonctionnalité intelligence artificielle",
+            "src": "docs/ai.png"
+          }
+        }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Je cherchais un outil alternatif aux éditeurs collaboratifs grand public et cela est chose faite avec Docs !",
+        "author": "Honoré Mendy",
+        "role": "Chef de la division de la radiodiffusion à l’ANFR",
+        "avatar": {
+          "src": "docs/testimonials/honore-mendy.jpg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "Simple à prendre en main, interface claire et collaboration fluide.",
+        "author": "James Chaigneaud",
+        "role": "Chargé des politiques artistiques et culturelles",
+        "avatar": {
+          "src": "docs/testimonials/james-chaineau.png",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "Dans mon service, nous avons plusieurs groupes de travail, Docs nous sert à établir et structurer des actions de formations et permets de mettre tout le monde à la page.",
+        "author": "Guillaume Payan",
+        "role": "Infirmier",
+        "avatar": {
+          "src": "docs/testimonials/guillaume-payan.jpg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "J'avais besoin d'un outil collaboratif de prise de notes à utiliser avec mes collègues, accessible partout, modifiable à plusieurs en même temps et avec une mise en page des notes simple, claire et efficace.",
+        "author": "Antoine Bouffard",
+        "role": "Ingénieur au LCPP (Préfecture de police)",
+        "avatar": {
+          "src": "docs/testimonials/antoine-bouffard.jpg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "Prise en main rapide et des fonctionnalités qui n'ont rien à envier à la concurrence.",
+        "author": "Maxime Velon",
+        "role": "Assistant administratif au CNRS",
+        "avatar": {
+          "src": "docs/testimonials/maxime-velon.jpg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      }
+    ],
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant Docs.",
+      "questions": [
+        {
+          "q": "Ce nouvel outil va-t-il durer dans le temps ?",
+          "a": "Docs est opéré par la DINUM à partir de briques open source et constitue une part centrale de la feuille de route numérique de l'Etat en terme de souveraineté. Au-delà de cette dimension stratégique, sa résilience et pérennité est dû à une indépendance de contrats externes, sa contribution de la part de plusieurs administrations et son usage interministérielles, que ce soit sur l'instance de la DINUM ou des instances en propre."
+        },
+        {
+          "q": "Que propose Docs par rapport à d'autres applications de traitement de texte ?",
+          "a": "Docs rend l'écriture simple et collaborative. Vous bénéficiez d'une co-édition en temps réel, de commentaires avec suivi des modifications (bientôt disponible) et d'un historique des versions intégré. Il utilise des formats ouverts, exporte en PDF/Word/ODT et inclut un assistant intégré pour réécrire ou condenser du texte sans quitter la page."
+        },
+        {
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Docs a bénéficié d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Docs est hébergé chez OutScale SecNumCloud et est opéré par les équipes de la DINUM. Docs n'est pas adapté pour le contenu classé \"Diffusion Restreinte\"."
+        },
+        {
+          "q": "Puis-je verrouiller un document ?",
+          "a": "Non. Sauf si vous retirez les droits d'édition aux utilisateurs en question. Si un utilisateur a des droits d'édition, il peut modifier le document."
+        },
+        {
+          "q": "Puis-je partager un document avec des personnes externes ?",
+          "a": "Oui. Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés."
+        },
+        {
+          "q": "Puis-je exporter mes Docs en format Word, PDF ou ODT ?",
+          "a": "Oui, vous pouvez exporter votre fichier en Word, PDF ou ODT."
+        }
+      ],
+      "links": [
+        {
+          "title": "Guide de l'utilisateur",
+          "icone": "book",
+          "url": "https://docs.numerique.gouv.fr/docs/335e43b5-9e16-4798-a0b4-912e44c7135e/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "https://tchap.gouv.fr/#/room/!GqUKRUEiTcPpIxaimQ:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.finances.tchap.gouv.fr&via=agent.education.tchap.gouv.fr",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Principaux avantages",
+      "content": "Conçu pour un impact durable et une véritable indépendance numérique.",
+      "items": [
+        {
+          "icone": "public",
+          "title": "Ouvert à tous les agents",
+          "description": "Accédez à toutes les applications de LaSuite à travers ProConnect"
+        },
+        {
+          "icone": "workspace",
+          "title": "Commun numérique",
+          "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."
+        },
+        {
+          "icone": "espace_lock",
+          "title": "Hébergé en France",
+          "description": "Hébergement SecNumCloud. Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+        },
+        {
+          "icone": "shield_person",
+          "title": "Sécurisé",
+          "description": "Homologué conforme au RGS. Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
+        },
+        {
+          "icone": "published",
+          "title": "Durable et réversible",
+          "description": "Formats ouverts. Export en un clic (PDF, Word, ODT). Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."
+        },
+        {
+          "icone": "person",
+          "title": "Accessible",
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)"
+        }
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
+      "items": [
+        {
+          "src": "docs/roadmap/collab.png",
+          "alt": "Visuel Collaboration avec les commentaires"
+        },
+        {
+          "src": "docs/roadmap/suivi.png",
+          "alt": "Visuel Suivi des changements"
+        },
+        {
+          "src": "docs/roadmap/import.png",
+          "alt": "Visuel Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
+        },
+        {
+          "src": "docs/roadmap/export.png",
+          "alt": "Visuel Exportation avancé avec des modèles personnalisés"
+        },
+        {
+          "src": "docs/roadmap/more.png",
+          "alt": "Plus de fonctionnalités secrètes"
+        }
+      ],
+      "link": {
+        "title": "Voir la feuille de route publique",
+        "url": "https://docs.numerique.gouv.fr/docs/406b1ea6-17fb-489b-b06c-b8e95c755306/"
+      }
+    },
+    "cta": {
+      "description": "Rédigez, collaborez et décidez ensemble, au même endroit.",
+      "button": {
+        "title_desktop": "Commencer à créer sur Docs maintenant",
+        "title_mobile": "Commencer à créer sur Docs",
+        "path": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/"
+      },
+      "image": {
+        "src": "docs/cta/image_cta.png",
+        "alt": "docs illustration"
+      }
+    },
+    "decisions": {
+      "title": "Proposez Docs à vos équipes",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Docs.<br /> <br />LaSuite réunit des outils cohérents, hébergés en France (SecNumCloud), avec un haut niveau de sécurité et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Docs s’intègre de manière fluide avec Visio, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "url": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45"
+      },
+      "image": {
+        "src": "docs/lasuite.png",
+        "alt": "Illustration des applications de LaSuite"
+      }
+    },
+    "footer": {
+      "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
+      "links": [
+        {
+          "title": "Essayer maintenant",
+          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "S'inscrire à un webinaire",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    }
+  }
+}

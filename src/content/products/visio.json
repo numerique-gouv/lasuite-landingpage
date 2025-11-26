@@ -1,0 +1,287 @@
+{
+  "global": {
+    "title": "Visio",
+    "slug": "visio"
+  },
+  "fr": {
+    "header": {
+      "links": [
+        {
+          "title": "Découvrir la suite",
+          "url": "/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Se connecter",
+          "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F",
+          "type": "primary_brand"
+        }
+      ]
+    },
+    "hero": {
+      "title": "L'outil de visioconférence des agents publics.",
+      "subtitle": "Visio est la solution de visioconférence souveraine de l’État, pour échanger en toute confiance : fiable, sécurisée, ouverte et hébergée en France.",
+      "alt_banner": "",
+      "image": {
+        "src": "visio/visio_hero.png",
+        "alt": "Visio illustation"
+      },
+      "links": [
+        {
+          "title": "Se connecter",
+          "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F",
+          "type": "primary_brand"
+        }
+      ],
+      "social_proof": {
+        "title": "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Visio",
+        "items": [
+          {
+            "title": "Direction générale des finances publiques",
+            "src": "logo/dgfp.svg"
+          },
+          {
+            "title": "Ministère de l'agriculture et de la souveraineté alimentaire",
+            "src": "logo/ministere-agriculture.svg"
+          },
+          {
+            "title": "Ministère de l'intérieur",
+            "src": "logo/ministere-interieur.svg"
+          },
+          {
+            "title": "CNRS",
+            "src": "logo/cnrs.svg",
+            "width": "60"
+          },
+          {
+            "title": "Gendarmerie nationale",
+            "src": "logo/gendarmerienationale.svg"
+          },
+          { "title": "Inrae", "src": "logo/inrae.svg" }
+        ]
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités principales",
+      "_cta": { "title": "Regarder le film", "url": "#" },
+      "items": [
+        {
+          "type": "full",
+          "title": "Laissez Visio transcrire vos échanges.",
+          "description": "À la fin de chaque réunion, Visio génère une transcription complète de vos échanges. <br />Les interventions sont identifiées clairement, ce qui vous permet de retrouver facilement les points importants et de relire le déroulé de la discussion.<br />Vous gardez la trace de ce qui compte, sans sortir le stylo.",
+          "image": {
+            "src": "visio/transcription.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Enregistrez vos réunions.",
+          "description": "Activez l’enregistrement et recevez la vidéo à la fin de l’appel, prête à être partagée ou archivée.",
+          "image": {
+            "src": "visio/record.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Réunissez jusqu’à 150 participants.",
+          "description": "Organisez des réunions élargies, comités ou webinaires internes sans changer d’outil.",
+          "image": {
+            "src": "visio/150.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Sécurisez vos échanges.",
+          "description": "Visio est opéré en France, dans un environnement SecNumCloud, sécurisé et conforme aux exigences de l’État, pour protéger vos données et vos discussions sensibles.",
+          "image": {
+            "src": "visio/security.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Rendez vos réunions accessibles à tous.",
+          "description": "Les sous-titres générés en direct par l’IA permettent le suivi des échanges pour toutes et tous, notamment les personnes sourdes ou malentendantes",
+          "image": {
+            "src": "visio/sous_titre.png",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Merci de proposer la transcription dans un outil souverain 🙏",
+        "author": "Dimitri Szabo",
+        "role": "Chef de projet à l'INRAE",
+        "avatar": {
+          "src": "visio/testimonials/dimitri.jpeg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "Outil performant et sans bug : Parfait !",
+        "author": "Moussa Souare",
+        "role": "Manager de centres commerciaux à l'ANCT",
+        "avatar": {
+          "src": "visio/testimonials/moussa_souare.jpeg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      },
+      {
+        "quote": "Outil vraiment super, merci beaucoup pour ce développement !",
+        "author": "Jean-Baptiste Perrin-Terrin",
+        "role": "Doctorant à CentraleSupélec",
+        "avatar": {
+          "src": "visio/testimonials/jeanbaptiste.jpeg",
+          "alt": "Visuel de chaque personne qui témoigne"
+        }
+      }
+    ],
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant Visio.",
+      "questions": [
+        {
+          "q": "Qui a accès à Visio ?",
+          "a": "Tous les agents publics peuvent utiliser Visio gratuitement avec leur compte professionnel et créer des réunions. Si une réunion est ouverte aux externes, toute personne disposant du lien peut la rejoindre (prestataire, partenaire, etc.)."
+        },
+        {
+          "q": "Peut-on créer des liens permanents ?",
+          "a": "Oui. Un lien de réunion reste valable dans le temps et peut être réutilisé autant de fois que nécessaire. Par défaut, chaque nouvelle réunion génère toutefois un nouveau lien, que vous pouvez choisir de réemployer pour des réunions récurrentes."
+        },
+        {
+          "q": "Y a-t-il une limite de durée pour les réunions ?",
+          "a": "Non. Il n’y a pas de limite de durée imposée : une réunion peut durer aussi longtemps que nécessaire, sous réserve des contraintes techniques habituelles."
+        },
+        {
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Visio a fait l’objet d’une homologation de sécurité approfondie par le RSSI de la DINUM : bug bounty, audits externes de l’infrastructure et du code, revues régulières. Il est exploité selon les exigences de sécurité de l’État."
+        }
+      ],
+      "links": [
+        {
+          "title": "Guide de l'utilisateur",
+          "icone": "book",
+          "url": "https://docs.numerique.gouv.fr/docs/1ef86abf-f7e0-46ce-b6c7-8be8b8af4c3d/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "https://tchap.gouv.fr/#/room/!JsJXceLbUukFDmsOXO:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.finances.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Principaux avantages",
+      "content": "Conçu pour être simple, performant et souverain",
+      "items": [
+        {
+          "icone": "check",
+          "title": "Fonctions essentielles",
+          "description": "Visio propose tout ce que vous attendez d’une visioconférence moderne : partage d'écran, chat, réactions, et bien plus encore."
+        },
+        {
+          "icone": "workspace",
+          "title": "Commun numérique",
+          "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."
+        },
+        {
+          "icone": "espace_lock",
+          "title": "Hébergé en France",
+          "description": "Données stockées sur hébergement SecNumCloud et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+        },
+        {
+          "icone": "shield_person",
+          "title": "Sécurité par conception",
+          "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
+        },
+        {
+          "icone": "person",
+          "title": "Accessible",
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)"
+        }
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
+      "items": [
+        {
+          "src": "visio/roadmap/permanentes.png",
+          "alt": "Créer des salles permanents"
+        },
+        {
+          "src": "visio/roadmap/moderation.png",
+          "alt": "Modérer les réunions"
+        },
+        {
+          "src": "visio/roadmap/planification.png",
+          "alt": "Planifier depuis Outlook"
+        },
+        {
+          "src": "visio/roadmap/physique.png",
+          "alt": "Relier une réunion à une salle physique"
+        },
+        {
+          "src": "docs/roadmap/more.png",
+          "alt": "Plus de fonctionnalités secrètes"
+        }
+      ],
+      "link": {
+        "title": "Voir la feuille de route publique",
+        "url": "https://github.com/orgs/numerique-gouv/projects/12"
+      }
+    },
+    "cta": {
+      "description": "Parce qu’ensemble on va plus loin.<br />Discutez, créez et avancez ensemble avec Visio.",
+      "button": {
+        "title_desktop": "Créer une réunion maintenant",
+        "title_mobile": "Créer une réunion maintenant",
+        "path": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F"
+      },
+      "image": {
+        "src": "visio/cta.png",
+        "alt": "docs illustration"
+      }
+    },
+    "decisions": {
+      "title": "Proposez Visio à vos équipes",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Visio.<br /><br />LaSuite réunit des outils cohérents, hébergés en France (SecNumCloud), avec un haut niveau de sécurité et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Visio s’intègre de manière fluide avec Docs, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "url": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45"
+      },
+      "image": {
+        "src": "docs/lasuite.png",
+        "alt": "Illustration des applications de LaSuite"
+      }
+    },
+    "footer": {
+      "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
+      "links": [
+        {
+          "title": "Essayer maintenant",
+          "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F",
+          "type": "primary_brand"
+        },
+        {
+          "title": "S'inscrire à un webinaire",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    }
+  }
+}

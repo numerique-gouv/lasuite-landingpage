@@ -13,3 +13,64 @@
 @import './dsfr.css';
 @import './app.css';
 @import './cms.css';
+
+.c__header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  max-height: none !important;
+  border-bottom: 0px solid transparent !important;
+}
+
+@media screen(lg) {
+  .c__header {
+    height: 91px !important;
+  }
+}
+
+.c__hero {
+  margin: auto;
+  max-height: 80vh;
+  max-width: 1100px !important;
+}
+
+.c__hero__display > img {
+  max-width: 570px !important;
+}
+
+.footer-products-buttons button,
+.hero-products-buttons button {
+  padding: 0;
+  margin: auto;
+}
+
+.proconnect-button {
+  background-image: url('/assets/proconnect.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: var(--c--theme--colors--primary-900) !important;
+  width: 214px;
+  height: 56px !important;
+  border: 'none';
+  cursor: pointer;
+}
+
+.proconnect-button:hover {
+  background-color: var(--c--theme--colors--primary-700) !important;
+}
+
+.open-container {
+  height: 100%;
+}
+
+.faq-answer {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.faq-answer.open {
+  opacity: 1;
+  height: auto !important;
+}

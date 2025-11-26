@@ -1,5 +1,5 @@
-import { Hero } from '@/sections/Hero'
-import { Products } from '@/sections/Products'
+import { Hero } from '@/sections/Homepage/Hero'
+import { Products } from '@/sections/Homepage/Products'
 import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
 import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
 import { Communs } from '@/sections/Homepage/Communs'

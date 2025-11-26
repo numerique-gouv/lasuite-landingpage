@@ -2,7 +2,7 @@ export const CONTACT_EMAIL = 'lasuite@numerique.gouv.fr'
 export const ADDRESS_DINUM = 'DINUM, 20 avenue de Ségur 75007 Paris'
 
 export const URL_SITE = 'lasuite.numerique.gouv.fr'
-export const TITLE_SITE = 'La Suite numérique'
+export const TITLE_SITE = 'LaSuite'
 export const MATOMO_ID = 'https://stats.data.gouv.fr/js/container_h2RIEY3C.js'
 
 export const NEWSLETTER_FORM =

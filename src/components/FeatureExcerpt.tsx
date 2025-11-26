@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image'
 import { Paragraph } from './Paragraph'
 import classNames from 'classnames'
 import { Tag } from './Tag'
-import { Button } from './Button'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { ZoomableImage } from './ZoomableImage'
 
 export const FeatureExcerpt = ({

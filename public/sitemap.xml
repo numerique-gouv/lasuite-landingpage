@@ -6,23 +6,28 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://lasuite.numerique.gouv.fr/</loc>
-        <lastmod>2025-03-05T18:34:54+00:00</lastmod>
+        <lastmod>2025-11-26T11:43:06+00:00</lastmod>
         <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://lasuite.numerique.gouv.fr/grist-paris-summit-2024</loc>
-        <lastmod>2025-03-05T18:34:54+00:00</lastmod>
-        <priority>0.50</priority>
-    </url>
-    <url>
-        <loc>https://lasuite.numerique.gouv.fr/services/grist</loc>
-        <lastmod>2025-03-05T18:34:54+00:00</lastmod>
-        <priority>0.50</priority>
     </url>
     <url>
         <loc>https://lasuite.numerique.gouv.fr/produits/grist</loc>
         <lastmod>2025-07-18T16:00:00+00:00</lastmod>
         <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://lasuite.numerique.gouv.fr/produits/docs</loc>
+        <lastmod>2025-11-26T11:43:06+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://lasuite.numerique.gouv.fr/produits/visio</loc>
+        <lastmod>2025-11-26T11:43:06+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://lasuite.numerique.gouv.fr/services-en-beta</loc>
+        <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+        <priority>0.30</priority>
     </url>
     <url>
         <loc>https://lasuite.numerique.gouv.fr/mentions-legales</loc>

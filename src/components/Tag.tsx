@@ -9,7 +9,7 @@ export const Tag = ({
     <div
       className={`inline-block rounded font-bold px-2.5 py-1.5 ${
         type === 'info'
-          ? 'bg-primary-100 text-primary-text'
+          ? 'bg-gray-025 text-brand-550'
           : 'bg-warning-1 text-warning-text'
       }`}
     >

@@ -21,7 +21,7 @@ const pages = [
 export const Footer = () => {
   const t = useTranslations()
   return (
-    <footer className="py-8 mt-auto border-t-2 bg-white border-blue-1">
+    <footer className="py-8 mt-auto bg-white border-t border-gray-025">
       <div className="fr-container">
         <div className="flex flex-wrap justify-between mb-6">
           <Link
@@ -45,7 +45,7 @@ export const Footer = () => {
             <ul className="flex flex-wrap align-middle mt-2">
               {externalLinks.map((link) => (
                 <li
-                  key={link.href}
+                  key={link.children}
                   className={`mr-6 my-2 decoration-grey-5 ${hover}`}
                 >
                   <ExternalLink
@@ -59,12 +59,12 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-4 border-t border-grey-0 flex flex-row flex-wrap">
+        <div className="mt-4 border-t border-gray-100 flex flex-row flex-wrap">
           <div className="mt-2 mb-4 sm:mb-0 w-[75%] m-w-[75%]">
             <ul className="block justify-start flex-wrap">
               {pages.map((link) => (
                 <li
-                  key={link.href}
+                  key={link.children}
                   className="inline internal-link-footer text-xs text-grey-3"
                 >
                   <Link

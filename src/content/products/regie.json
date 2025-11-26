@@ -1,0 +1,18 @@
+{
+  "global": {
+    "slug": "regie"
+  },
+  "fr": {
+    "title": "Votre centre de contrôle",
+    "subtitle": "Gérez vos organisations, utilisateurs, groupes et adresses e-mail en un seul endroit.",
+    "hero": {
+      "proconnect": {
+        "url": "https://regie.numerique.gouv.fr/"
+      }
+    }
+  },
+  "en": {
+    "title": "La Régie",
+    "description": "Description in English"
+  }
+}

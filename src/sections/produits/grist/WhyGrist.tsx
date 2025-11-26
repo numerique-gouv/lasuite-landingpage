@@ -24,10 +24,10 @@ export const WhyGrist = () => {
             <Tab key={index} as={Fragment}>
               {({ selected }) => (
                 <button
-                  className={`flex flex-grow justify-center hover:bg-greyscale-050 hover:border-b-blue-1 transition duration-150 ease-in items-center border-b border-greyscale-300 cursor-pointer p-2 rounded-t ${selected ? 'border-b-blue-1 border-b-2' : ''}`}
+                  className={`flex flex-grow justify-center hover:bg-greyscale-050 hover:border-b-brand-550 transition duration-150 ease-in items-center border-b border-greyscale-300 cursor-pointer p-2 rounded-t ${selected ? 'border-b-brand-550 border-b-2' : ''}`}
                   aria-expanded={selected}
                 >
-                  <span className="text-base text-blue-1 font-medium md:whitespace-nowrap">
+                  <span className="text-base text-brand-550 font-medium md:whitespace-nowrap">
                     {t(`grist-landing.why-grist.tab-${index + 1}.title`)}
                   </span>
                 </button>
