@@ -21,6 +21,7 @@ export const Hero = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            width="800"
           ></iframe>
           {/*          <Image
             src={HeroHome}
