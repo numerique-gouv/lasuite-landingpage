@@ -7,7 +7,7 @@
     "header": {
       "links": [
         {
-          "title": "Découvrir la suite",
+          "title": "Découvrir LaSuite",
           "url": "/",
           "type": "tertiary_neutral"
         },
@@ -95,7 +95,7 @@
         {
           "type": "",
           "title": "Partagez et collaborez en toute simplicité.",
-          "description": "Choisissez précisemment qui voit, commente, édite — ou utilisez les liens de partage.",
+          "description": "Choisissez précisément qui voit, commente, édite — ou utilisez les liens de partage.",
           "image": {
             "src": "docs/share.png",
             "alt": "Capture d’écran de la fonctionnalité Collaboration"
@@ -174,7 +174,7 @@
       "questions": [
         {
           "q": "Ce nouvel outil va-t-il durer dans le temps ?",
-          "a": "Docs est opéré par la DINUM à partir de briques open source et constitue une part centrale de la feuille de route numérique de l'Etat en terme de souveraineté. Au-delà de cette dimension stratégique, sa résilience et pérennité est dû à une indépendance de contrats externes, sa contribution de la part de plusieurs administrations et son usage interministérielles, que ce soit sur l'instance de la DINUM ou des instances en propre."
+          "a": "Docs est opéré par la DINUM à partir de briques open-source et constitue un élément central de la feuille de route numérique de l’État en matière de souveraineté. Au-delà de cette dimension stratégique, sa résilience et sa pérennité tiennent à son indépendance vis-à-vis de contrats externes, à la contribution de plusieurs administrations, ainsi qu’à son usage interministériel, que ce soit sur l’instance de la DINUM ou sur des instances dédiées."
         },
         {
           "q": "Que propose Docs par rapport à d'autres applications de traitement de texte ?",
@@ -225,7 +225,7 @@
         {
           "icone": "public",
           "title": "Ouvert à tous les agents",
-          "description": "Accédez à toutes les applications de LaSuite à travers ProConnect"
+          "description": "Accédez à toutes les applications de LaSuite à travers ProConnect."
         },
         {
           "icone": "workspace",
@@ -250,7 +250,7 @@
         {
           "icone": "person",
           "title": "Accessible",
-          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)"
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)."
         }
       ]
     },

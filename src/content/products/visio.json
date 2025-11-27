@@ -7,7 +7,7 @@
     "header": {
       "links": [
         {
-          "title": "Découvrir la suite",
+          "title": "Découvrir LaSuite",
           "url": "/",
           "type": "tertiary_neutral"
         },
@@ -104,7 +104,7 @@
         {
           "type": "",
           "title": "Rendez vos réunions accessibles à tous.",
-          "description": "Les sous-titres générés en direct par l’IA permettent le suivi des échanges pour toutes et tous, notamment les personnes sourdes ou malentendantes",
+          "description": "Les sous-titres générés en direct par l’IA permettent le suivi des échanges pour toutes et tous, notamment les personnes sourdes ou malentendantes.",
           "image": {
             "src": "visio/sous_titre.png",
             "alt": ""
@@ -204,13 +204,13 @@
         },
         {
           "icone": "shield_person",
-          "title": "Sécurité par conception",
+          "title": "Sécurisé",
           "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
         },
         {
           "icone": "person",
           "title": "Accessible",
-          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)"
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue (audit prévu fin 2025)."
         }
       ]
     },

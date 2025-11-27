@@ -10,6 +10,8 @@ common:
   login: Se connecter
   menu: Menu
   close: Fermer
+  view_more: Voir plus
+  view_less: Voir moins
 head:
   homepage_og_title: Utilisez LaSuite dès aujourd’hui !
   meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.

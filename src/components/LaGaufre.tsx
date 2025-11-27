@@ -1,6 +1,7 @@
 import Script from 'next/script'
 import { useEffect } from 'react'
 import { Button } from '@/components/ui-kit-v2/Button'
+import { useTranslations } from '@/locales/useTranslations'
 
 declare global {
   interface Window {
@@ -9,6 +10,8 @@ declare global {
 }
 
 export const LaGaufre = () => {
+  const t = useTranslations()
+
   useEffect(() => {
     const wrapper = document.querySelector('[data-gaufre-button-wrapper]')
     const button = wrapper?.querySelector('button') as HTMLButtonElement
@@ -80,15 +83,20 @@ export const LaGaufre = () => {
                 label: 'Services de la Suite numérique',
                 closeLabel: 'Fermer le menu',
                 headerLabel: 'À propos',
-                background: 'linear-gradient(180deg, #eceffd 0%, #FFFFFF 20%)',
+                backgroundColor: '#fff',
+                background:
+                  'linear-gradient(#f1f2fd, rgba(255, 255, 255, 1) 20.54%, #FFF 0%',
                 headerLogo: '/assets/lasuite.svg',
                 headerUrl: 'https://lasuite.numerique.gouv.fr',
                 loadingText: 'Chargement…',
                 newWindowLabelSuffix: ' (nouvelle fenêtre)',
                 fontFamily: 'Marianne',
                 buttonElement: button,
+                viewMoreLabel: t('common.view_more'),
+                viewLessLabel: t('common.view_less'),
                 position: () => {
                   return {
+                    backgroundColor: '#fff',
                     position: 'fixed',
                     top: 80,
                     right: 20,
