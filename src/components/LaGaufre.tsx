@@ -83,8 +83,9 @@ export const LaGaufre = () => {
                 label: 'Services de la Suite numérique',
                 closeLabel: 'Fermer le menu',
                 headerLabel: 'À propos',
+                backgroundColor: '#fff',
                 background:
-                  'linear-gradient(180deg, rgba(62, 93, 231, 0.05) 0%, rgba(255, 255, 255, 0.08) 20.54%, #FFF',
+                  'linear-gradient(#f1f2fd, rgba(255, 255, 255, 1) 20.54%, #FFF 0%',
                 headerLogo: '/assets/lasuite.svg',
                 headerUrl: 'https://lasuite.numerique.gouv.fr',
                 loadingText: 'Chargement…',
@@ -95,6 +96,7 @@ export const LaGaufre = () => {
                 viewLessLabel: t('common.view_less'),
                 position: () => {
                   return {
+                    backgroundColor: '#fff',
                     position: 'fixed',
                     top: 80,
                     right: 20,
