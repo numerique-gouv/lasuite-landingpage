@@ -6,6 +6,8 @@ common:
   back_to_home: Terug naar de startpagina
   menu: Menu
   close: Sluiten
+  view_more: Meer zien
+  view_less: Minder zien
 head:
   homepage_og_title: Werk met de digitale Suite
   meta_desc: De digitale Suite brengt alle agenten en professionals in de publieke sector samen.

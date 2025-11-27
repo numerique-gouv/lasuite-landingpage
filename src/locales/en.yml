@@ -7,6 +7,8 @@ common:
   login: Login
   menu: Menu
   close: Close
+  view_more: See more
+  view_less: See less
 head:
   homepage_og_title: Work with LaSuite
   meta_desc:
