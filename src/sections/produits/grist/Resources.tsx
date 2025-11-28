@@ -16,7 +16,11 @@ export const Resources = () => {
         {t('grist-landing.resources.description')}
       </Markdown>
       <div className="w-fit mx-auto flex flex-wrap gap-12 md:gap-24 mt-4 md:mt-0 justify-center md:justify-between items-center">
-        <a target="_blank" href="https://tube.numerique.gouv.fr/c/grist/videos">
+        <a
+          target="_blank"
+          href="https://tube.numerique.gouv.fr/c/grist/videos"
+          aria-label={`Peertube Grist - ${newWindow}`}
+        >
           <Image
             className="h-auto w-[62px]"
             src={Peertube}
@@ -26,6 +30,7 @@ export const Resources = () => {
         <a
           target="_blank"
           href="https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.education.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr"
+          aria-label={`Tchap - ${newWindow}`}
         >
           <Image
             className="h-auto w-[85px]"
@@ -33,14 +38,22 @@ export const Resources = () => {
             alt={`Tchap - ${newWindow}`}
           />
         </a>
-        <a target="_blank" href="https://forum.grist.libre.sh/">
+        <a
+          target="_blank"
+          href="https://forum.grist.libre.sh/"
+          aria-label={`Forum Grist - ${newWindow}`}
+        >
           <Image
             className="h-auto w-[149px]"
             src={Forum}
             alt={`Forum Grist - ${newWindow}`}
           />
         </a>
-        <a target="_blank" href="https://github.com/gristlabs/grist-core">
+        <a
+          target="_blank"
+          href="https://github.com/gristlabs/grist-core"
+          aria-label={`Github Grist - ${newWindow}`}
+        >
           <Image
             className="h-auto w-[92px]"
             src={Github}

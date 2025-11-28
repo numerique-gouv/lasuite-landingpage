@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import classNames from 'classnames'
+import { useTranslations } from '@/locales/useTranslations'
 
 type ButtonVariant =
   | 'primary_brand'
@@ -73,6 +74,7 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   style,
 }) => {
+  const t = useTranslations()
   const normalizedVariant = (variant as string) || 'primary_brand'
   const isNone = normalizedVariant === 'none'
 
@@ -97,6 +99,16 @@ export const Button: React.FC<ButtonProps> = ({
 
   const LinkComponent: any = href?.startsWith('#') ? 'a' : Link
 
+  // Construire l'aria-label avec indication "nouvelle fenêtre" si target="_blank"
+  const finalAriaLabel =
+    target === '_blank'
+      ? ariaLabel
+        ? `${ariaLabel} - ${t('common.new_window')}`
+        : typeof children === 'string'
+          ? `${children} - ${t('common.new_window')}`
+          : undefined
+      : ariaLabel
+
   const content = (
     <>
       {icon && iconPosition === 'left' && (
@@ -119,7 +131,7 @@ export const Button: React.FC<ButtonProps> = ({
         href={href}
         target={target}
         className={classes}
-        aria-label={ariaLabel}
+        aria-label={finalAriaLabel}
         style={inlineStyle}
       >
         {content}
@@ -128,7 +140,7 @@ export const Button: React.FC<ButtonProps> = ({
   }
 
   return (
-    <button className={classes} aria-label={ariaLabel} style={inlineStyle}>
+    <button className={classes} aria-label={finalAriaLabel} style={inlineStyle}>
       {content}
     </button>
   )

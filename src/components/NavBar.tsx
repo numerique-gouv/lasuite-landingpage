@@ -38,9 +38,9 @@ export const NavBar = ({
             aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           >
             {isOpen ? (
-              <CloseIcon className="text-3xl" />
+              <CloseIcon className="text-3xl" aria-hidden="true" />
             ) : (
-              <MenuIcon className="text-3xl" />
+              <MenuIcon className="text-3xl" aria-hidden="true" />
             )}
           </button>
         </div>

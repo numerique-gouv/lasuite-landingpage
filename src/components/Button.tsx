@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import classNames from 'classnames'
 import { MouseEventHandler } from 'react'
+import { useTranslations } from '@/locales/useTranslations'
 
 interface ButtonProps {
   children: React.ReactNode
@@ -44,6 +45,7 @@ export const Button: React.FC<ButtonProps> = ({
   fullWidth = false,
   'aria-label': ariaLabel,
 }) => {
+  const t = useTranslations()
   const classes = classNames({
     [buttonStyles.default]: !variant,
     [buttonStyles.outline]: variant === 'outline',
@@ -58,12 +60,25 @@ export const Button: React.FC<ButtonProps> = ({
 
   const LinkComponent = href?.startsWith('#') ? 'a' : Link
 
+  // Construire l'aria-label avec indication "nouvelle fenêtre" si target="_blank"
+  const finalAriaLabel =
+    target === '_blank'
+      ? ariaLabel
+        ? `${ariaLabel} - ${t('common.new_window')}`
+        : typeof children === 'string'
+          ? `${children} - ${t('common.new_window')}`
+          : undefined
+      : ariaLabel
+
   const content = (
     <>
       {icon && iconPosition === 'left' && (
         <span aria-hidden="true">{icon}</span>
       )}
       <span>{children}</span>
+      {target === '_blank' && (
+        <span className="sr-only"> ({t('common.new_window')})</span>
+      )}
       {icon && iconPosition === 'right' && (
         <span aria-hidden="true">{icon}</span>
       )}
@@ -75,12 +90,12 @@ export const Button: React.FC<ButtonProps> = ({
       href={href}
       target={target}
       className={classes}
-      aria-label={ariaLabel}
+      aria-label={finalAriaLabel}
     >
       {content}
     </LinkComponent>
   ) : (
-    <button onClick={onClick} className={classes}>
+    <button onClick={onClick} className={classes} aria-label={finalAriaLabel}>
       {content}
     </button>
   )
