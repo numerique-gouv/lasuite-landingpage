@@ -47,19 +47,19 @@
         "title": "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Docs",
         "items": [
           {
-            "title": "Ministère de l'éducation nationale",
+            "title": "Ministère de l'Éducation nationale et de la jeunesse",
             "src": "logo/education-nationale.svg"
           },
           {
-            "title": "Direction générale des finances publiques",
+            "title": "Direction Générale des Finances Publiques",
             "src": "logo/dgfp.svg"
           },
           {
-            "title": "Ministère de l'agriculture et de la souveraineté alimentaire",
+            "title": "Ministère de l'Agriculture et de la souveraineté alimentaire",
             "src": "logo/ministere-agriculture.svg"
           },
           {
-            "title": "Ministère de l'intérieur",
+            "title": "Ministère de l'Intérieur",
             "src": "logo/ministere-interieur.svg"
           },
           {
@@ -128,7 +128,7 @@
         "role": "Chef de la division de la radiodiffusion à l’ANFR",
         "avatar": {
           "src": "docs/testimonials/honore-mendy.jpg",
-          "alt": "Visuel de chaque personne qui témoigne"
+          "alt": ""
         }
       },
       {
@@ -137,7 +137,7 @@
         "role": "Chargé des politiques artistiques et culturelles",
         "avatar": {
           "src": "docs/testimonials/james-chaineau.png",
-          "alt": "Visuel de chaque personne qui témoigne"
+          "alt": ""
         }
       },
       {
@@ -146,7 +146,7 @@
         "role": "Infirmier",
         "avatar": {
           "src": "docs/testimonials/guillaume-payan.jpg",
-          "alt": "Visuel de chaque personne qui témoigne"
+          "alt": ""
         }
       },
       {
@@ -155,7 +155,7 @@
         "role": "Ingénieur au LCPP (Préfecture de police)",
         "avatar": {
           "src": "docs/testimonials/antoine-bouffard.jpg",
-          "alt": "Visuel de chaque personne qui témoigne"
+          "alt": ""
         }
       },
       {
@@ -164,7 +164,7 @@
         "role": "Assistant administratif au CNRS",
         "avatar": {
           "src": "docs/testimonials/maxime-velon.jpg",
-          "alt": "Visuel de chaque personne qui témoigne"
+          "alt": ""
         }
       }
     ],
@@ -260,19 +260,19 @@
       "items": [
         {
           "src": "docs/roadmap/collab.png",
-          "alt": "Visuel Collaboration avec les commentaires"
+          "alt": "Collaboration avec les commentaires"
         },
         {
           "src": "docs/roadmap/suivi.png",
-          "alt": "Visuel Suivi des changements"
+          "alt": "Suivi des changements"
         },
         {
           "src": "docs/roadmap/import.png",
-          "alt": "Visuel Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
+          "alt": "Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
         },
         {
           "src": "docs/roadmap/export.png",
-          "alt": "Visuel Exportation avancé avec des modèles personnalisés"
+          "alt": "Exportation avancé avec des modèles personnalisés"
         },
         {
           "src": "docs/roadmap/more.png",
@@ -305,7 +305,7 @@
       },
       "image": {
         "src": "docs/lasuite.png",
-        "alt": "Illustration des applications de LaSuite"
+        "alt": ""
       }
     },
     "footer": {

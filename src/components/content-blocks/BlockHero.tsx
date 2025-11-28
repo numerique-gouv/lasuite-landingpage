@@ -4,6 +4,7 @@ import { ProConnectButton } from '@/components/ProConnectButton'
 import { productBanners } from '@/assets/products/banners'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { SocialProof } from '@/components/content-blocks/SocialProof'
+import { useTranslations } from '@/locales/useTranslations'
 
 export type ProductContent = Record<string, any>
 
@@ -11,6 +12,7 @@ export const BlockHero: React.FC<{
   productContent: ProductContent
   slug: string
 }> = ({ productContent, slug }) => {
+  const t = useTranslations()
   const bannerProduct = productBanners[slug]
 
   if (!bannerProduct) return null
@@ -50,6 +52,7 @@ export const BlockHero: React.FC<{
               className="text-gray-550 underline underline-offset-2"
               href="https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
               target="_blank"
+              aria-label={`Inscrivez-vous au prochain webinaire - ${t('common.new_window')}`}
             >
               Inscrivez-vous
             </a>
@@ -61,7 +64,7 @@ export const BlockHero: React.FC<{
             src={bannerProduct.src}
             height={300}
             width={300}
-            alt={productContent.hero.alt_banner}
+            alt=""
             className="max-w-[90%]"
             priority
           />
@@ -73,7 +76,7 @@ export const BlockHero: React.FC<{
             src={`/assets/products/${productContent.hero.image.src}`}
             height={700}
             width={1200}
-            alt={productContent.hero.image.alt}
+            alt=""
             priority
             className="h-[300px] w-auto md:w-full md:h-auto object-cover object-left md:object-contain"
           />

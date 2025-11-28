@@ -33,7 +33,7 @@ export const CardFeature: React.FC<{ item: FeatureItem }> = ({ item }) => {
         <div className={isFull ? 'w-full md:w-1/2' : 'w-full'}>
           <Image
             src={`/assets/products/${item.image!.src}`}
-            alt={item.image!.alt || item.title || ''}
+            alt=""
             width={isFull ? 600 : 400}
             height={isFull ? 360 : 240}
             className="w-full h-auto"

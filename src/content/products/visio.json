@@ -253,7 +253,7 @@
       },
       "image": {
         "src": "visio/cta.png",
-        "alt": "docs illustration"
+        "alt": ""
       }
     },
     "decisions": {
@@ -265,7 +265,7 @@
       },
       "image": {
         "src": "docs/lasuite.png",
-        "alt": "Illustration des applications de LaSuite"
+        "alt": ""
       }
     },
     "footer": {
