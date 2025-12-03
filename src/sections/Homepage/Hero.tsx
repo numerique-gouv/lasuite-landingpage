@@ -16,13 +16,15 @@ export const Hero = () => {
         <div className="w-full md:w-[80%] flex justify-center pt-6 sm:mt-12">
           <iframe
             className="aspect-video mb-8"
-            src="https://www.youtube-nocookie.com/embed/X6c-mYOWrvA?si=f9gVEXkHZIHbm3nj"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
+            title="Présentation de LaSuite - Novembre 2025"
+            src="https://tube.numerique.gouv.fr/videos/embed/rxYRdfFdgTLCKeEemCeJsL"
+            allow="fullscreen"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
             allowFullScreen
-            width="800"
-          ></iframe>
+            width="1000"
+          >
+            {' '}
+          </iframe>
           {/*          <Image
             src={HeroHome}
             height={168}
