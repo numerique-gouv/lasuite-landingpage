@@ -87,8 +87,8 @@ export default async function handler(
     },
     {
       id: 9,
-      name: 'Démarches',
-      url: 'https://www.demarches-simplifiees.fr/',
+      name: 'Démarche',
+      url: 'https://demarche.numerique.gouv.fr/',
       maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/demarches.svg',
     },

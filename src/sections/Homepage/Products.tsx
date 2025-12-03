@@ -137,6 +137,7 @@ export const Products = () => {
                 variant="primary_brand"
                 icon={<ArrowForwardIcon />}
                 iconPosition="right"
+                aria-label={`${t('homepage.slider_products.button')} - ${t('common.new_window')}`}
               >
                 {t('homepage.slider_products.button')}{' '}
                 {DINUM_PRODUCTS[activeItem.name].name}

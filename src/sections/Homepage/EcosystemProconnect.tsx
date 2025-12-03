@@ -53,14 +53,24 @@ export const EcosystemProconnect = () => {
       <div className="flex flex-col gap-4 md:gap-8 md:mb-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {FIRST_ROW.map((item) => (
-            <a href={item.url} key={item.url} target="_blank">
+            <a
+              href={item.url}
+              key={item.url}
+              target="_blank"
+              aria-label={`${item.name} - ${t('common.new_window')}`}
+            >
               <Image src={item.bento} alt={item.name} />
             </a>
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {SECOND_ROW.map((item) => (
-            <a href={item.url} key={item.url} target="_blank">
+            <a
+              href={item.url}
+              key={item.url}
+              target="_blank"
+              aria-label={`${item.name} - ${t('common.new_window')}`}
+            >
               <Image src={item.bento} alt={item.name} />
             </a>
           ))}
