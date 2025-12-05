@@ -17,7 +17,7 @@ export const Hero = () => {
           <iframe
             className="aspect-video mb-8"
             title="Présentation de LaSuite - Novembre 2025"
-            src="https://tube.numerique.gouv.fr/videos/embed/rxYRdfFdgTLCKeEemCeJsL"
+            src="https://tube.numerique.gouv.fr/videos/embed/gzwjk8H5Pm4MqrcUo5eMPG"
             allow="fullscreen"
             sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
             allowFullScreen
