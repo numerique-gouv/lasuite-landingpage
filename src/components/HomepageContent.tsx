@@ -5,7 +5,6 @@ import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
 import { Communs } from '@/sections/Homepage/Communs'
 import { SecureTools } from '@/sections/Homepage/SecureTools'
 import { Migration } from '@/sections/Homepage/Migration'
-import { SuiteTerritoriale } from '@/sections/Homepage/SuiteTerritoriale'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
 import { useEffect } from 'react'
@@ -42,9 +41,6 @@ export const HomepageContent = () => {
       </FadeInSection>
       <FadeInSection>
         <Migration />
-      </FadeInSection>
-      <FadeInSection>
-        <SuiteTerritoriale />
       </FadeInSection>
       <FadeInSection>
         <FooterLaSuite />
