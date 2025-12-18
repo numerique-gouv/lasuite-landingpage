@@ -53,6 +53,9 @@ socials:
 main_menu:
   - title: Ressources
     items:
+      - title: Guide de Démarrage
+        href : https://docs.numerique.gouv.fr/docs/5da3aba2-9954-4ee0-9169-60083b59379b
+        description : Une librairie de guides et de conseils
       - title: 'Widgets, modèles et exemples'
         href: https://docs.getgrist.com/9DZa7JFegUxz/GristHub/p/1
         description: Une librairie d'extensions pour adapter Grist
