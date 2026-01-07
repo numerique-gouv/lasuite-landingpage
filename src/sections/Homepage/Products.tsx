@@ -10,12 +10,10 @@ import { useTranslations } from '@/locales/useTranslations'
 
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
-  'France Transfert',
-  'Docs',
-  'Grist',
   'Visio',
+  'France Transfert',
   'Messagerie',
-  'Fichiers',
+  'Fichiers'
 ]
 
 export const Products = () => {

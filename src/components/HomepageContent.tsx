@@ -3,6 +3,7 @@ import { Products } from '@/sections/Homepage/Products'
 import { PortalProconnect } from '@/sections/Homepage/PortalProconnect'
 import { EcosystemProconnect } from '@/sections/Homepage/EcosystemProconnect'
 import { Communs } from '@/sections/Homepage/Communs'
+import { NewProducts } from '@/sections/Homepage/NewProducts'
 import { SecureTools } from '@/sections/Homepage/SecureTools'
 import { Migration } from '@/sections/Homepage/Migration'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
@@ -26,6 +27,9 @@ export const HomepageContent = () => {
       <Hero />
       <FadeInSection>
         <Products />
+      </FadeInSection>
+      <FadeInSection>
+        <NewProducts />
       </FadeInSection>
       <FadeInSection>
         <PortalProconnect />

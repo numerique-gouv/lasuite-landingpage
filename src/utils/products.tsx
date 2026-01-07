@@ -7,12 +7,14 @@ import TchapScreenshotMobileEn from '@/assets/products/app-tchap-mobile-en.png'
 import GristLogo from '@/assets/products/grist.svg'
 import GristScreenshot from '@/assets/products/app-grist.png'
 import GristScreenshotMobile from '@/assets/products/app-grist-mobile.png'
+import GristScreenshotBox from '@/assets/products/app-grist.png'
 
 import DocsSvg from '@/assets/products/docs.svg'
 import DocsScreenshot from '@/assets/products/app-docs.png'
 import DocsScreenshotMobile from '@/assets/products/app-docs-mobile.png'
 import DocsScreenshotEn from '@/assets/products/app-docs-en.png'
 import DocsScreenshotMobileEn from '@/assets/products/app-docs-mobile-en.png'
+import DocsScreenshotBox from '@/assets/products/app-docs.png'
 
 import VisioLogo from '@/assets/products/visio.svg'
 import VisioScreenshot from '@/assets/products/app-visio.png'
@@ -57,6 +59,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotMobile?: StaticImageData
     screenshotEn?: StaticImageData
     screenshotMobileEn?: StaticImageData
+    screenshotBox?: StaticImageData
     keepRawScreenshot?: boolean
     name?: string
     url?: string
@@ -195,6 +198,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotMobile: GristScreenshotMobile,
     screenshotEn: GristScreenshot,
     screenshotMobileEn: GristScreenshotMobile,
+    screenshotBox: GristScreenshotBox,
     name: 'Grist',
     url: '/produits/grist',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
@@ -222,6 +226,7 @@ export const DINUM_PRODUCTS: Record<
     screenshotMobile: DocsScreenshotMobile,
     screenshotEn: DocsScreenshotEn,
     screenshotMobileEn: DocsScreenshotMobileEn,
+    screenshotBox: DocsScreenshotBox,
     name: 'Docs',
     caption:
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
