@@ -70,6 +70,11 @@ homepage:
       description: 'Le service de stockage et de partage de l’État.'
       basedOn: ' '
     button: 'Découvrir'
+  new_products:
+    tag: 'Nouveaux usages'
+    title: 'Le futur de la bureautique'
+    description: "LaSuite explore aussi de nouveaux usages avec Docs et Grist. Docs simplifie la collaboration à l’écrit : on se concentre sur le contenu, pas sur la mise en page. Grist combine tableur et base de données pour organiser des informations complexes et créer, en quelques clics, de petites applications de suivi."
+    button: 'Découvrir'
   portal_proconnect:
     tag: 'Portail unique'
     description: "Simplifiez votre quotidien avec ProConnect ! Accédez à LaSuite et à tous vos services numériques avec une identité unique et sécurisée. ProConnect gère vos connexions pour vous permettre de vous concentrer sur l'essentiel. Éditeurs : ProConnect vous aide à accélérer votre croissance. Simple à intégrer, notre solution vous connecte à un écosystème numérique dynamique et vous permet de participer à la transformation numérique de l'État."

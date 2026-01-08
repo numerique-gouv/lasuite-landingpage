@@ -69,6 +69,11 @@ homepage:
       description: The state's storage and sharing service.
       basedOn: ' '
     button: 'Discover'
+  new_products:
+    tag: 'New use cases'
+    title: 'The future of office work'
+    description: "LaSuite also explores new use cases with Docs and Grist. Docs simplifies written collaboration by letting teams focus on content rather than layout. Grist combines spreadsheets and databases to organize complex information and create small tracking applications in just a few clicks."
+    button: 'Discover'
   portal_proconnect:
     tag: 'Unique portal'
     description: "Simplify your daily life with ProConnect! Access LaSuite and all your digital services with a unique and secure identity. ProConnect manages your connections so you can focus on what matters.\n\nEditors: ProConnect helps you accelerate your growth. Easy to integrate, our solution connects you to a dynamic digital ecosystem and allows you to participate in the digital transformation of the state."
