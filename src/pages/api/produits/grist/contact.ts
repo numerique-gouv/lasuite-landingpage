@@ -17,6 +17,16 @@ const contactSchema = z.object({
   message: z.string().min(1, { message: 'Ce champ doit être rempli.' }),
 })
 
+const getClientIp = (req: NextApiRequest): string => {
+  const forwarded = req.headers['x-forwarded-for']
+  if (forwarded) {
+    return typeof forwarded === 'string'
+      ? forwarded.split(',')[0].trim()
+      : forwarded[0]
+  }
+  return req.socket.remoteAddress || 'unknown'
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -79,6 +89,9 @@ export default async function handler(
             Organisation: parsed.data.org || '',
             Poste: parsed.data.title || '',
             Message: parsed.data.message,
+            IP: getClientIp(req),
+            UA: req.headers['user-agent'] || 'unknown',
+            Timestamp: new Date().toISOString(),
           },
         ]
       )
