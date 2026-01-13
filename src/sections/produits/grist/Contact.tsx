@@ -23,10 +23,17 @@ const getFirstElementWithError = (
 export const Contact = () => {
   const [errors, setErrors] = useState<Record<string, { errors: string[] }>>({})
   const [formSent, setFormSent] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    if (isSubmitting) {
+      return
+    }
+
     setErrors({})
+    setIsSubmitting(true)
 
     const response = await fetch('/api/produits/grist/contact', {
       method: 'POST',
@@ -35,6 +42,9 @@ export const Contact = () => {
       ),
     })
     const data = await response.json()
+
+    setIsSubmitting(false)
+
     if (data.errors) {
       setErrors(data.errors)
       const firstFieldWithError = getFirstElementWithError(
