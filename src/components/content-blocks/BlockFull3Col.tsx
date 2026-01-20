@@ -29,7 +29,7 @@ export const BlockFull3Col: FC<BlockFull3ColProps> = ({ blocks }) => (
       <ContentSection key={idx}>
         <div className="md:gap-8 md:mb-14">
           <div className="mb-10 md:order-first">
-            <Paragraph tag={block.tag} title={block.title}>
+            <Paragraph title={block.title}>
               <p
                 dangerouslySetInnerHTML={{
                   __html: block.content,

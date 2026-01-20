@@ -60,7 +60,6 @@ export const Button: React.FC<ButtonProps> = ({
 
   const LinkComponent = href?.startsWith('#') ? 'a' : Link
 
-  // Construire l'aria-label avec indication "nouvelle fenêtre" si target="_blank"
   const finalAriaLabel =
     target === '_blank'
       ? ariaLabel

@@ -43,6 +43,7 @@ const styles = {
   secondary_brand: `${core} ${transition} font-medium bg-brand-050 text-brand-550 hover:bg-brand-150`,
   tertiary_brand: `${core} ${transition} font-medium text-brand-550 bg-transparent hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
   tertiary_brand_bordered: `${core} ${transition} font-medium text-brand-550 bg-transparent border border-gray-150 hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
+  neutral_bordered: `${core} ${transition} font-medium text-gray-550 bg-transparent border border-gray-150 hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
 
   // neutral/info variants fallback (use grey borders for secondary, keep same tertiary look)
   primary_neutral: `${core} ${transition} font-medium text-white bg-gray-550 hover:backdrop-brightness-95`,

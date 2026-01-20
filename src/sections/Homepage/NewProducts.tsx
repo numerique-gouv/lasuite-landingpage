@@ -1,67 +1,73 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-import { Button } from '@/components/ui-kit-v2/Button'
 import { ContentSection } from '@/components/ContentSection'
 import { Paragraph } from '@/components/Paragraph'
-import { DINUM_PRODUCTS } from '@/utils/products'
+import { ProductCard } from '@/components/ProductCard'
 
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useTranslations } from '@/locales/useTranslations'
+import AIImage from '@/assets/ai.png'
 
-export const NewProducts = () => {
+const DINUM_PRODUCTS_GRID = [
+  'Docs',
+  'Grist',
+]
+
+export const NewProducts = ({ content }: { content: any }) => {
   const t = useTranslations()
   const { locale } = useRouter()
 
-  const PRODUCTS_GRID = [
-    'Docs',
-    'Grist',
-  ]
-
   return (
     <ContentSection>
-    <div className="gap-0">
-      <div className="grid md:grid-cols-1 mb-4">
-          <Paragraph
-            tag={t('homepage.new_products.tag')}
-            title={t('homepage.new_products.title')}
-          >
-            {t('homepage.new_products.description')}
-          </Paragraph>
-      </div>
-      <div className="grid md:grid-cols-2 gap-8 md:mb-14">
-        {PRODUCTS_GRID.map((name, index) => {
-          const hasLink = DINUM_PRODUCTS[name]?.url
-          const logo = DINUM_PRODUCTS[name]?.logo
-
-          return (
+      <div className="gap-0">
+        <Paragraph
+          title={content.title}
+          description={content.description}
+        />
+        <div className="grid md:grid-cols-2 gap-8 md:mb-14">
+          {DINUM_PRODUCTS_GRID.map((name) => (
             <div key={name}>
-              <Image
-                alt=""
-                src={DINUM_PRODUCTS[name]?.screenshotBox || ''}
+              <ProductCard 
+                name={name}
+                background="gray"
+                content={content[name]}
+                locale={locale}
               />
-              <div className="flex flex-col md:flex-row md:justify-between mt-4 gap-4">
-                <Image
-                  height="40"
-                  src={logo}
-                  alt={DINUM_PRODUCTS[name]?.name || name}
-                />
-                <Button
-                    href={DINUM_PRODUCTS[name].url}
-                    target="_blank"
-                    variant="primary_brand"
-                    icon={<ArrowForwardIcon />}
-                    iconPosition="right"
-                    aria-label={`${t('homepage.slider_products.button')} - ${t('common.new_window')}`}
-                  >
-                    {t('homepage.slider_products.button')}{' '}
-                    {DINUM_PRODUCTS[name].name}
-                  </Button>
-                </div>
+            </div>
+          ))}
+        </div>
+
+        {content.AI && (
+          <div
+            className="rounded-lg border w-full mt-4 md:mt-0"
+            style={{
+              borderRadius: '8px',
+              border: '1px solid #DFE2EA',
+              background: 'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
+              boxShadow: '0 8px 20px 0 rgba(0, 0, 0, 0.03)',
+            }}
+          >
+            <div className="grid md:grid-cols-3 h-full">
+              <div className="col-span-2 p-6 md:p-8 md:pr-0">
+                <h4 className="text-greyscale-800 text-xl font-bold mb-4">
+                  {content.AI.title}
+                </h4>
+                <p className="text-gray-550 text-base">
+                  {content.AI.description}
+                </p>
               </div>
-            )
-        })}
-      </div>
+              <div className="hidden md:block flex-shrink-0">
+                {AIImage && (
+                  <Image
+                    alt=""
+                    className="w-full h-full object-cover rounded-lg"
+                    src={AIImage}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </ContentSection>
   )

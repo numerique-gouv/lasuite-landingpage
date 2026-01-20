@@ -1,12 +1,7 @@
-import { useState } from 'react'
 import { useRouter } from 'next/router'
-
 import { ContentSection } from '@/components/ContentSection'
-import Image from 'next/image'
-import { Button } from '@/components/ui-kit-v2/Button'
-import { DINUM_PRODUCTS } from '@/utils/products'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import { useTranslations } from '@/locales/useTranslations'
+import { Paragraph } from '@/components/Paragraph'
+import { ProductCard } from '@/components/ProductCard'
 
 const DINUM_PRODUCTS_GRID = [
   'Tchap',
@@ -16,132 +11,48 @@ const DINUM_PRODUCTS_GRID = [
   'Fichiers'
 ]
 
-export const Products = () => {
-  const t = useTranslations()
-  const { locale } = useRouter()
+export const Products = ({ content }: { content: any }) => {
+  const { locale = 'fr' } = useRouter()
 
-  const [activeItem, setActiveItem] = useState({ index: 0, name: 'Tchap' })
-
-  const handleClick = (index: number, name: string): void => {
-    setActiveItem({ index, name })
-  }
+  const tchapIndex = 0
+  const rightColumnProducts = DINUM_PRODUCTS_GRID.slice(1, 3)
+  const bottomRowProducts = DINUM_PRODUCTS_GRID.slice(3)
 
   return (
-    <ContentSection>
+    <ContentSection background="gray">
       <div className="w-full">
-        <div className="mb-7 md:mb-8 px-2 md:px-0 flex fade-in gap-[14px] flex-wrap w-full justify-center">
-          {DINUM_PRODUCTS_GRID.map((name, index) => {
-            const hasLink = DINUM_PRODUCTS[name]?.url
-            const logo = DINUM_PRODUCTS[name]?.logo
-            let isActive = index === activeItem.index
+        <Paragraph title={content.title} description={content.description} />
 
-            return (
-              <button
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="md:row-span-2">
+            <ProductCard 
+              name={DINUM_PRODUCTS_GRID[tchapIndex]} 
+              content={content[DINUM_PRODUCTS_GRID[tchapIndex]]} 
+              locale={locale}
+            />
+          </div>
+
+          <div className="flex flex-col gap-6">
+            {rightColumnProducts.map((name) => (
+              <ProductCard 
                 key={name}
-                className={`flex hover:bg-gray-025 transition duration-300 ease-in items-center border border-gray-100 cursor-pointer rounded px-2 py-1 
-                  ${isActive ? 'bg-gray-050' : ''}`}
-                onClick={() => handleClick(index, name)}
-              >
-                <Image
-                  height="30"
-                  src={logo}
-                  alt={DINUM_PRODUCTS[name]?.name || name}
-                />
-              </button>
-            )
-          })}
+                name={name} 
+                content={content[name]}
+                locale={locale}
+              />
+            ))}
+          </div>
         </div>
 
-        <div className="px-2 md:px-0 md:max-w-[90%] mx-auto">
-          <div className="sm:block mt-0 hidden aspect-[219/137] lasuite-hero-boxshadow rounded-xl relative w-full">
-            {DINUM_PRODUCTS_GRID.map((name, index) => {
-              let isActive = index === activeItem.index
-              return (
-                <div
-                  key={name}
-                  className={`top-0 left-0 absolute w-full h-full flex items-center justify-center
-                    ${!isActive ? 'pointer-events-none' : ''}
-                    `}
-                >
-                  <Image
-                    alt=""
-                    className={`w-full h-full object-cover
-                     ${isActive ? 'fade-in' : 'fade-out'}
-                     `}
-                    src={
-                      locale !== 'fr'
-                        ? DINUM_PRODUCTS[name]?.screenshotEn ?? ''
-                        : DINUM_PRODUCTS[name]?.screenshot ?? ''
-                    }
-                  />
-                </div>
-              )
-            })}
-          </div>
-
-          <div className="flex sm:hidden mt-0 aspect-[2/2] rounded-xl relative w-full">
-            {DINUM_PRODUCTS_GRID.map((name, index) => {
-              let isActive = index === activeItem.index
-              return (
-                <div
-                  key={name}
-                  className="top-0 left-0 rounded-xl absolute w-full h-full flex items-center justify-center"
-                >
-                  <Image
-                    alt=""
-                    className={`w-full rounded-xl h-full object-cover
-                     ${isActive ? 'fade-in' : 'fade-out'}
-                     `}
-                    src={
-                      locale !== 'fr'
-                        ? DINUM_PRODUCTS[name]?.screenshotMobileEn ?? ''
-                        : DINUM_PRODUCTS[name]?.screenshotMobile ?? ''
-                    }
-                  />
-                </div>
-              )
-            })}
-          </div>
-
-          <div
-            className={`md:flex relative justify-between items-center fade-in mt-5`}
-            key={activeItem.index}
-          >
-            <div className="block">
-              <div className="flex items-center mb-1">
-                <Image
-                  src={DINUM_PRODUCTS[activeItem.name].logo}
-                  height="35"
-                  alt={DINUM_PRODUCTS[activeItem.name].name || activeItem.name}
-                />
-              </div>
-              <p className="text-gray-550 text-base">
-                {t(`homepage.slider_products.${activeItem.name}.description`)}
-              </p>
-              <p
-                className="text-gray-550 text-base"
-                dangerouslySetInnerHTML={{
-                  __html: t(
-                    `homepage.slider_products.${activeItem.name}.basedOn`
-                  ),
-                }}
-              ></p>
-            </div>
-
-            <div className="mt-5 md:mt-0 md:ml-3">
-              <Button
-                href={DINUM_PRODUCTS[activeItem.name].url}
-                target="_blank"
-                variant="primary_brand"
-                icon={<ArrowForwardIcon />}
-                iconPosition="right"
-                aria-label={`${t('homepage.slider_products.button')} - ${t('common.new_window')}`}
-              >
-                {t('homepage.slider_products.button')}{' '}
-                {DINUM_PRODUCTS[activeItem.name].name}
-              </Button>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          {bottomRowProducts.map((name) => (
+            <ProductCard 
+              key={name}
+              name={name} 
+              content={content[name]}
+              locale={locale}
+            />
+          ))}
         </div>
       </div>
     </ContentSection>

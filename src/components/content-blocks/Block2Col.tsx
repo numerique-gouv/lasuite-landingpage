@@ -44,7 +44,7 @@ export const Block2Col: FC<Block2colProps> = ({ blocks }) => (
                 : 'mb-10 md:order-first'
             }
           >
-            <Paragraph tag={block.tag} title={block.title}>
+            <Paragraph title={block.title}>
               <p
                 dangerouslySetInnerHTML={{
                   __html: block.content,

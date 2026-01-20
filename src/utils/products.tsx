@@ -1,60 +1,58 @@
-import TchapLogo from '@/assets/products/tchap.svg'
+import TchapLogo from '@/assets/products/logo-tchap.svg'
+import TchapTextLogo from '@/assets/products/logo-text-tchap.svg'
 import TchapScreenshot from '@/assets/products/app-tchap.png'
-import TchapScreenshotMobile from '@/assets/products/app-tchap-mobile.png'
-import TchapScreenshotEn from '@/assets/products/app-tchap-en.png'
-import TchapScreenshotMobileEn from '@/assets/products/app-tchap-mobile-en.png'
+// import TchapScreenshotMobile from '@/assets/products/app-tchap-mobile.png'
+// import TchapScreenshotEn from '@/assets/products/app-tchap-en.png'
+// import TchapScreenshotMobileEn from '@/assets/products/app-tchap-mobile-en.png'
 
-import GristLogo from '@/assets/products/grist.svg'
+import GristLogo from '@/assets/products/logo-grist.svg'
+import GristTextLogo from '@/assets/products/logo-text-grist.svg'
 import GristScreenshot from '@/assets/products/app-grist.png'
-import GristScreenshotMobile from '@/assets/products/app-grist-mobile.png'
-import GristScreenshotBox from '@/assets/products/app-grist.png'
+// import GristScreenshotMobile from '@/assets/products/app-grist-mobile.png'
 
-import DocsSvg from '@/assets/products/docs.svg'
+import DocsSvg from '@/assets/products/logo-docs.svg'
+import DocsTextSvg from '@/assets/products/logo-text-docs.svg'
 import DocsScreenshot from '@/assets/products/app-docs.png'
-import DocsScreenshotMobile from '@/assets/products/app-docs-mobile.png'
-import DocsScreenshotEn from '@/assets/products/app-docs-en.png'
-import DocsScreenshotMobileEn from '@/assets/products/app-docs-mobile-en.png'
-import DocsScreenshotBox from '@/assets/products/app-docs.png'
+// import DocsScreenshotMobile from '@/assets/products/app-docs-mobile.png'
+// import DocsScreenshotEn from '@/assets/products/app-docs-en.png'
+// import DocsScreenshotMobileEn from '@/assets/products/app-docs-mobile-en.png'
+// import DocsScreenshotBox from '@/assets/products/app-docs.png'
 
-import VisioLogo from '@/assets/products/visio.svg'
+import VisioLogo from '@/assets/products/logo-visio.svg'
+import VisioTextLogo from '@/assets/products/logo-text-visio.svg'
 import VisioScreenshot from '@/assets/products/app-visio.png'
-import VisioScreenshotMobile from '@/assets/products/app-visio-mobile.png'
-import VisioScreenshotEn from '@/assets/products/app-visio-en.png'
-import VisioScreenshotMobileEn from '@/assets/products/app-visio-mobile.png'
+// import VisioScreenshotMobile from '@/assets/products/app-visio-mobile.png'
+// import VisioScreenshotEn from '@/assets/products/app-visio-en.png'
+// import VisioScreenshotMobileEn from '@/assets/products/app-visio-mobile.png'
 
-import MessagerieLogo from '@/assets/products/messagerie.svg'
+import MessagerieLogo from '@/assets/products/logo-messagerie.svg'
+import MessagerieTextLogo from '@/assets/products/logo-text-messagerie.svg'
 import MessagerieScreenshot from '@/assets/products/app-messagerie.png'
-import MessagerieScreenshotMobile from '@/assets/products/app-messagerie-mobile.png'
-import MessagerieScreenshotEn from '@/assets/products/app-messagerie.png'
-import MessagerieScreenshotMobileEn from '@/assets/products/app-messagerie-mobile.png'
+// import MessagerieScreenshotMobile from '@/assets/products/app-messagerie-mobile.png'
+// import MessagerieScreenshotEn from '@/assets/products/app-messagerie.png'
+// import MessagerieScreenshotMobileEn from '@/assets/products/app-messagerie-mobile.png'
 
-import FranceTransfertLogo from '@/assets/products/france_transfert.svg'
-import FranceTransfertScreenshot from '@/assets/products/app-france-transfert.png'
-import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
-import FranceTransfertScreenshotEn from '@/assets/products/app-france-transfert-en.png'
-import FranceTransfertScreenshotMobileEn from '@/assets/products/app-france-transfert-mobile-en.png'
+import FranceTransfertLogo from '@/assets/products/logo-ft.svg'
+import FranceTransfertTextLogo from '@/assets/products/logo-text-ft.svg'
+import FranceTransfertScreenshot from '@/assets/products/app-francetransfert.png'
+// import FranceTransfertScreenshotMobile from '@/assets/products/app-france-transfert-mobile.png'
+// import FranceTransfertScreenshotEn from '@/assets/products/app-france-transfert-en.png'
+// import FranceTransfertScreenshotMobileEn from '@/assets/products/app-france-transfert-mobile-en.png'
 
-import FichiersLogo from '@/assets/products/fichiers.svg'
-import FichiersScreenshot from '@/assets/products/app-drive.png'
-import FichiersScreenshotMobile from '@/assets/products/app-drive-mobile.png'
-import FichiersScreenshotEn from '@/assets/products/app-drive-en.png'
-import FichiersScreenshotMobileEn from '@/assets/products/app-drive-mobile-en.png'
-
-import ResanaLogo from '@/assets/products/resana.svg'
-import ResanaScreenshot from '@/assets/products/resana_screenshot.webp'
-
-import WebinaireLogo from '@/assets/products/webinaire.svg'
-import WebinaireScreenshot from '@/assets/products/webinaire_screenshot.webp'
+import FichiersLogo from '@/assets/products/logo-fichiers.svg'
+import FichiersTextLogo from '@/assets/products/logo-text-fichiers.svg'
+import FichiersScreenshot from '@/assets/products/app-fichiers.png'
+// import FichiersScreenshotMobile from '@/assets/products/app-drive-mobile.png'
+// import FichiersScreenshotEn from '@/assets/products/app-drive-en.png'
+// import FichiersScreenshotMobileEn from '@/assets/products/app-drive-mobile-en.png'
 
 import { StaticImageData } from 'next/image'
-import AudioConfSvg from '@/assets/products/audioconf.svg'
-import ContactSvg from '@/assets/products/contact.svg'
-import EquipesSvg from '@/assets/products/equipes.svg'
 
-export const DINUM_PRODUCTS: Record<
+export const LASUITE_PRODUCTS: Record<
   string,
   {
     logo: StaticImageData
+    logoText?: StaticImageData
     screenshot?: StaticImageData
     screenshotMobile?: StaticImageData
     screenshotEn?: StaticImageData
@@ -73,10 +71,11 @@ export const DINUM_PRODUCTS: Record<
   Tchap: {
     displayDetails: true,
     logo: TchapLogo,
+    logoText: TchapTextLogo,
     screenshot: TchapScreenshot,
-    screenshotMobile: TchapScreenshotMobile,
-    screenshotEn: TchapScreenshotEn,
-    screenshotMobileEn: TchapScreenshotMobileEn,
+    // screenshotMobile: TchapScreenshotMobile,
+    // screenshotEn: TchapScreenshotEn,
+    // screenshotMobileEn: TchapScreenshotMobileEn,
     keepRawScreenshot: true,
     name: 'Tchap',
     url: 'https://tchap.numerique.gouv.fr',
@@ -97,61 +96,36 @@ export const DINUM_PRODUCTS: Record<
   'France Transfert': {
     displayDetails: true,
     logo: FranceTransfertLogo,
+    logoText: FranceTransfertTextLogo,
     screenshot: FranceTransfertScreenshot,
-    screenshotMobile: FranceTransfertScreenshotMobile,
-    screenshotEn: FranceTransfertScreenshotEn,
-    screenshotMobileEn: FranceTransfertScreenshotMobileEn,
+    // screenshotMobile: FranceTransfertScreenshotMobile,
+    // screenshotEn: FranceTransfertScreenshotEn,
+    // screenshotMobileEn: FranceTransfertScreenshotMobileEn,
     name: 'France Transfert',
     url: 'https://francetransfert.numerique.gouv.fr/',
-    caption: 'partagez vos fichiers en toute sécurité',
     description:
-      'Le service sécurisé pour envoyer et recevoir des fichiers volumineux.',
-    items: [
-      <>
-        Transférez des <strong>fichiers lourds</strong>
-      </>,
-    ],
+      'Envoyez et recevez facilement des fichiers volumineux, avec un service pensé pour les besoins de l’administration.',
   },
   Fichiers: {
     displayDetails: true,
     logo: FichiersLogo,
+    logoText: FichiersTextLogo,
     screenshot: FichiersScreenshot,
-    screenshotMobile: FichiersScreenshotMobile,
-    screenshotEn: FichiersScreenshotEn,
-    screenshotMobileEn: FichiersScreenshotMobileEn,
+    // screenshotMobile: FichiersScreenshotMobile,
+    // screenshotEn: FichiersScreenshotEn,
+    // screenshotMobileEn: FichiersScreenshotMobileEn,
     name: 'Fichiers',
     url: 'https://fichiers.numerique.gouv.fr/',
-    caption: 'Partagez vos fichiers en toute sécurité',
-  },
-  Webinaire: {
-    displayDetails: true,
-    logo: WebinaireLogo,
-    screenshot: WebinaireScreenshot,
-    name: 'Webinaire',
-    url: 'https://webinaire.numerique.gouv.fr/',
-    caption: 'la plateforme de webinaires dédiée à la sphère publique',
-    description:
-      'Organisez et participez à des webinaires en toute simplicité. Planifiez, diffusez et collaborez en direct avec vos collègues, le tout dans un environnement sécurisé',
-    items: [
-      <>
-        <strong>Partagez votre écran</strong>, une présentation ou un tableau
-        blanc collaboratif
-      </>,
-      <>
-        <strong>Enregistrez la vidéo</strong> et partagez la aux participants
-      </>,
-      <>
-        <strong>Invitez des modérateurs</strong> et créez une salle d'attente
-      </>,
-    ],
+    description: 'Centralisez vos fichiers, partagez-les avec les bonnes personnes et gardez une organisation efficace.',
   },
   Visio: {
     displayDetails: true,
     logo: VisioLogo,
+    logoText: VisioTextLogo,
     screenshot: VisioScreenshot,
-    screenshotMobile: VisioScreenshotMobile,
-    screenshotEn: VisioScreenshotEn,
-    screenshotMobileEn: VisioScreenshotMobileEn,
+    // screenshotMobile: VisioScreenshotMobile,
+    // screenshotEn: VisioScreenshotEn,
+    // screenshotMobileEn: VisioScreenshotMobileEn,
     name: 'Visio',
     url: '/produits/visio',
     caption:
@@ -168,37 +142,15 @@ export const DINUM_PRODUCTS: Record<
     ],
     status: 'BETA',
   },
-  Resana: {
-    displayDetails: true,
-    logo: ResanaLogo,
-    screenshot: ResanaScreenshot,
-    name: 'Resana',
-    url: 'https://resana.numerique.gouv.fr/public/',
-    caption: 'l’espace de stockage partagé par plus de 400000 agents publics',
-    description:
-      'Stockez tous vos fichiers (documents, images, feuilles de calcul)  à un seul endroit. Organisez vos espaces et partagez-les à qui  vous voulez, en toute sécurité',
-    items: [
-      <>
-        <strong>Stockez et partagez</strong> des fichiers
-      </>,
-      <>
-        <strong>Coéditez des documents</strong> en ligne (textes, tableurs et
-        présentations)
-      </>,
-      <>
-        Créez des <strong>questionnaires</strong> et des <strong>votes</strong>{' '}
-        en ligne
-      </>,
-    ],
-  },
   Grist: {
     displayDetails: true,
     logo: GristLogo,
+    logoText: GristTextLogo,
     screenshot: GristScreenshot,
-    screenshotMobile: GristScreenshotMobile,
-    screenshotEn: GristScreenshot,
-    screenshotMobileEn: GristScreenshotMobile,
-    screenshotBox: GristScreenshotBox,
+    // screenshotMobile: GristScreenshotMobile,
+    // screenshotEn: GristScreenshot,
+    // screenshotMobileEn: GristScreenshotMobile,
+    // screenshotBox: GristScreenshotBox,
     name: 'Grist',
     url: '/produits/grist',
     caption: 'un tableur collaboratif simple,  flexible et puissant',
@@ -221,67 +173,32 @@ export const DINUM_PRODUCTS: Record<
   Docs: {
     displayDetails: true,
     logo: DocsSvg,
+    logoText: DocsTextSvg,
     url: '/produits/docs',
     screenshot: DocsScreenshot,
-    screenshotMobile: DocsScreenshotMobile,
-    screenshotEn: DocsScreenshotEn,
-    screenshotMobileEn: DocsScreenshotMobileEn,
-    screenshotBox: DocsScreenshotBox,
+    // screenshotMobile: DocsScreenshotMobile,
+    // screenshotEn: DocsScreenshotEn,
+    // screenshotMobileEn: DocsScreenshotMobileEn,
+    // screenshotBox: DocsScreenshotBox,
     name: 'Docs',
     caption:
       'la solution de prise de notes collaboratives qui vous permet de vous concentrer sur votre contenu',
     description:
       "L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.",
-    items: [
-      <>
-        <strong>Invitez vos collègues</strong> ou partagez un lien d'édition
-      </>,
-      <>
-        <strong>Collaborez en temps réel</strong> sur vos documents
-      </>,
-      <>
-        <strong>Exportez</strong> vos documents et faites les circuler
-      </>,
-      <>
-        <strong>Hors-ligne ?</strong> Vous pouvez{' '}
-        <strong>continuer d'éditer</strong> vos documents
-      </>,
-    ],
   },
   Messagerie: {
     displayDetails: true,
     logo: MessagerieLogo,
+    logoText: MessagerieTextLogo,
     screenshot: MessagerieScreenshot,
-    screenshotMobile: MessagerieScreenshotMobile,
-    screenshotEn: MessagerieScreenshotEn,
-    screenshotMobileEn: MessagerieScreenshotMobileEn,
+    // screenshotMobile: MessagerieScreenshotMobile,
+    // screenshotEn: MessagerieScreenshotEn,
+    // screenshotMobileEn: MessagerieScreenshotMobileEn,
     name: 'Messagerie',
     url: 'https://messagerie.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
-    description: 'La messagerie professionnelle des agents de l’État.',
+    description: 'Accédez à votre adresse mail pro et gérez vos échanges du quotidien.',
     status: 'BETA',
-    items: [
-      <>
-        <strong>Gérez votre boîte aux lettres</strong> avec une interface
-        dernière génération
-      </>,
-      <>
-        <strong>Partagez vos agendas</strong> facilement
-      </>,
-    ],
-  },
-  AudioConf: {
-    displayDetails: false,
-    logo: AudioConfSvg,
-    url: 'https://www.numerique.gouv.fr/outils-agents/audioconference-etat/',
-  },
-  Contact: {
-    displayDetails: false,
-    logo: ContactSvg,
-  },
-  Equipes: {
-    displayDetails: false,
-    logo: EquipesSvg,
-  },
+  }
 }

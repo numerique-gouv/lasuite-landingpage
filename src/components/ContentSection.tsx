@@ -23,7 +23,7 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
 }) => {
   return (
     <div
-      className={`justify-center overflow-hidden flex ${background === 'gray' && 'bg-white-1'} ${padding && verticalPadding && 'py-[50px] md:py-20'}`}
+      className={`justify-center overflow-hidden flex ${background === 'gray' && 'bg-gray-025'} ${padding && verticalPadding && 'py-12 md:py-20'}`}
     >
       <div
         className={`flex flex-col ${center ? 'items-center' : 'items-start'} w-full lg:w-[70em] ${gap} ${padding && horizontalPadding && 'px-4'}`}

@@ -1,49 +1,99 @@
 import Image from 'next/image'
 import { TITLE_SITE } from '@/constant'
-import HeroHome from '@/assets/hero-home.svg'
+import { ContentSection } from '@/components/ContentSection'
+import HeroHome from '@/assets/hero-home.png'
+import HeroHomeMobile from '@/assets/hero-home-mobile.png'
+import { Button } from '@/components/ui-kit-v2/Button'
+import { SocialProof } from '@/components/content-blocks/SocialProof'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import MiniatureVideo from '@/assets/miniature_video.png'
 import { useTranslations } from '@/locales/useTranslations'
 
-export const Hero = () => {
+export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
 
   return (
-    <div className="mx-auto md:mt-4 fade-in relative overflow-hidden bg-white ">
-      <div
-        className={
-          'flex flex-col justify-between items-start sm:items-center pt-3 sm:pt-9 px-3'
-        }
-      >
-        <div className="w-full md:w-[80%] flex justify-center pt-6 sm:mt-12">
-          <iframe
-            className="aspect-video mb-8"
-            title="Présentation de LaSuite - Novembre 2025"
-            src="https://tube.numerique.gouv.fr/videos/embed/gzwjk8H5Pm4MqrcUo5eMPG"
-            allow="fullscreen"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            allowFullScreen
-            width="1000"
-          >
-            {' '}
-          </iframe>
-          {/*          <Image
+    <ContentSection padding={false}>
+      <div className="md:grid md:grid-cols-5 md:justify-between pt-6">
+        <div className="text-left md:col-span-3 relative px-6 md:px-0 z-10">
+          {/* Desktop / Mobile illustration */}
+          <Image
             src={HeroHome}
-            height={168}
-            width={480}
+            height={100}
+            width={1000}
             alt={TITLE_SITE}
-            className={'max-w-[80%]'}
+            className="max-w-[100%] hidden sm:block"
             priority
-          />*/}
-        </div>
-        <div className="text-center mx-auto max-w-[80vw] md:max-w-[72vw]">
+          />
+          <Image
+            src={HeroHomeMobile}
+            height={100}
+            width={1000}
+            alt={TITLE_SITE}
+            className="max-w-[100%] sm:hidden"
+            priority
+          />
           <h1 className="sr-only">{TITLE_SITE}</h1>
-          <h2 className="text-greyscale-800 text-[2rem] md:text-[2.75rem] leading-[2.5rem] md:leading-[3rem] font-bold pb-4">
-            {t('homepage.hero.title')}
-          </h2>
+          <h2
+            className="mt-6 text-greyscale-800 text-[2rem] md:text-[2.75rem] text-balance leading-[2.5rem] md:leading-[3rem] font-bold pb-4"
+            dangerouslySetInnerHTML={{
+              __html: content.title
+            }}
+          ></h2>
           <p className="mb-4 mx-auto text-gray-550 text-base md:text-[1.25rem]">
-            {t('homepage.hero.description')}
+            {content.description}
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-2 my-6">
+            <Button href={content.button_products.href} variant="default" target="_blank">
+              {content.button_products.title}
+            </Button>
+            <Button href={content.button_start.href} variant="tertiary_bordered" target="_blank">
+              {content.button_start.title}
+            </Button>
+          </div>
+
+          <span className="text-gray-550">
+            <a
+              className="text-gray-550 underline underline-offset-2"
+              href="https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
+              target="_blank"
+              aria-label={`Inscrivez-vous au prochain webinaire - ${t('common.new_window')}`}
+            >
+              Inscrivez-vous
+            </a>
+            &nbsp;au prochain webinaire
+          </span>
+
         </div>
+
+
+        <div className="flex items-center col-span-2 justify-center pt-6">
+          <div className="">
+            <div className="relative w-full">
+              <Image
+                src={MiniatureVideo}
+                width="382"
+                height="215"
+                alt="Keynote La Suite Vidéo"
+                priority
+              />
+            </div>
+            <Button 
+              href={content.button_products.href}
+              icon={<PlayArrowIcon />}
+              iconPosition="left"
+              className="relative mx-auto"
+              variant="tertiary_neutral" target="_blank">
+                Regarder la vidéo
+            </Button>
+          </div>
+        </div>
+
       </div>
-    </div>
+      <div className="w-full">
+        <SocialProof socialProof={content.social_proof} />
+      </div>
+    </ContentSection>
   )
 }
