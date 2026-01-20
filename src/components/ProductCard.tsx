@@ -60,8 +60,10 @@ export const ProductCard = ({
             )}
           </div>
 
-          <p className="text-gray-550 text-base mb-6 flex-grow">
-            {content?.description}
+          <p className="text-gray-550 text-base mb-6 flex-grow"
+            dangerouslySetInnerHTML={{
+              __html: content.description
+            }}>
           </p>
 
           <div className="mt-auto">

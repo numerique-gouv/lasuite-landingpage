@@ -18,7 +18,7 @@ export const SocialProof: React.FC<{ socialProof: SocialProofProps }> = ({
   return (
     <div className="flex flex-col justify-between xl:flex-row gap-2 mt-6 py-8 pb-4 md:pb-8">
       {title && (
-        <div className="px-6 lg:px-0 md:max-w-[300px] text-gray-600">
+        <div className="px-6 lg:px-0 max-w-[600px] text-sm lg:max-w-[300px] text-gray-600">
           <Raw>{title}</Raw>
         </div>
       )}

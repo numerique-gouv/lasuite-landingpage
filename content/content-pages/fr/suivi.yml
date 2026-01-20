@@ -14,7 +14,7 @@ body: >
   Vous pouvez vous opposer au suivi de votre navigation sur ce site web. Cela protégera votre vie privée, mais empêchera également le propriétaire d'apprendre de vos actions et de créer une meilleure expérience pour vous et les autres utilisateurs.
 
 
-  <iframe class="w-full" src="https://stats.data.gouv.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=fr"></iframe>
+  <div class="bg-gray-050"><iframe class="w-full" src="https://stats.data.gouv.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=fr"></iframe></div>
 
 
   ## Ce site n’affiche pas de bannière de consentement aux cookies, pourquoi ?

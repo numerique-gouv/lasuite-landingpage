@@ -11,12 +11,12 @@ import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
+  const videoUrl = 'https://tube.numerique.gouv.fr/w/gzwjk8H5Pm4MqrcUo5eMPG?start=12s'
 
   return (
     <ContentSection padding={false}>
-      <div className="md:grid md:grid-cols-5 md:justify-between pt-6">
-        <div className="text-left md:col-span-3 relative px-6 md:px-0 z-10">
-          {/* Desktop / Mobile illustration */}
+      <div className="lg:grid lg:grid-cols-5 lg:justify-between pt-6">
+        <div className="text-left md:col-span-3 relative md:mt-6 px-6 lg:px-0 z-10">
           <Image
             src={HeroHome}
             height={100}
@@ -45,7 +45,7 @@ export const Hero = ({ content }: { content: any }) => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-2 my-6">
-            <Button href={content.button_products.href} variant="default" target="_blank">
+            <Button href="#products" variant="default">
               {content.button_products.title}
             </Button>
             <Button href={content.button_start.href} variant="tertiary_bordered" target="_blank">
@@ -70,21 +70,30 @@ export const Hero = ({ content }: { content: any }) => {
 
         <div className="flex items-center col-span-2 justify-center pt-6">
           <div className="">
-            <div className="relative w-full">
-              <Image
-                src={MiniatureVideo}
-                width="382"
-                height="215"
-                alt="Keynote La Suite Vidéo"
-                priority
-              />
-            </div>
+            <a
+              href={videoUrl}
+              target="_blank"
+              className="block cursor-pointer"
+              aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
+            >
+              <div className="relative w-full">
+                <Image
+                  src={MiniatureVideo}
+                  width="382"
+                  height="215"
+                  alt="Keynote La Suite Vidéo"
+                  priority
+                />
+              </div>
+            </a>
             <Button 
-              href={content.button_products.href}
+              href={videoUrl}
               icon={<PlayArrowIcon />}
               iconPosition="left"
               className="relative mx-auto"
-              variant="tertiary_neutral" target="_blank">
+              variant="tertiary_neutral" 
+              aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
+              target="_blank">
                 Regarder la vidéo
             </Button>
           </div>

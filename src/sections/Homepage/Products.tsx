@@ -19,11 +19,11 @@ export const Products = ({ content }: { content: any }) => {
   const bottomRowProducts = DINUM_PRODUCTS_GRID.slice(3)
 
   return (
-    <ContentSection background="gray">
+    <ContentSection background="gray" id="products">
       <div className="w-full">
         <Paragraph title={content.title} description={content.description} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="md:row-span-2">
             <ProductCard 
               name={DINUM_PRODUCTS_GRID[tchapIndex]} 
@@ -44,7 +44,7 @@ export const Products = ({ content }: { content: any }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {bottomRowProducts.map((name) => (
             <ProductCard 
               key={name}

@@ -24,7 +24,7 @@ export const NewProducts = ({ content }: { content: any }) => {
           title={content.title}
           description={content.description}
         />
-        <div className="grid md:grid-cols-2 gap-8 md:mb-14">
+        <div className="grid lg:grid-cols-2 gap-8 md:mb-14">
           {DINUM_PRODUCTS_GRID.map((name) => (
             <div key={name}>
               <ProductCard 
