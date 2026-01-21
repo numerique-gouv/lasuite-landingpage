@@ -3,7 +3,9 @@ import { useEffect, useRef, useState } from 'react'
 export const FadeInSection: React.FC<{
   children: React.ReactNode
   className?: string
-}> = ({ children, className = '' }) => {
+  onVisibleChange?: (isVisible: boolean) => void
+  delay?: number
+}> = ({ children, className = '', onVisibleChange, delay = 0 }) => {
   const sectionRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -11,7 +13,15 @@ export const FadeInSection: React.FC<{
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
+          if (delay > 0) {
+            setTimeout(() => {
+              setIsVisible(true)
+              onVisibleChange?.(true)
+            }, delay)
+          } else {
+            setIsVisible(true)
+            onVisibleChange?.(true)
+          }
           observer.disconnect()
         }
       },
@@ -23,7 +33,7 @@ export const FadeInSection: React.FC<{
     return () => {
       if (sectionRef.current) observer.unobserve(sectionRef.current)
     }
-  }, [])
+  }, [onVisibleChange, delay])
 
   return (
     <div

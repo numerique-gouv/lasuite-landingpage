@@ -37,7 +37,7 @@ export const BlockFAQ: FC<BlockFAQBlock> = (props) => {
   }
 
   return (
-    <div className="max-w-container mx-auto px-3 xl:px-0">
+    <div className="max-w-container w-full mx-auto px-3 xl:px-0">
       <div className="md:gap-8">
         <div className="mb-8 md:mb-12 md:order-first px-3 md:px-0 pt-12 md:pt-0">
           <h3 className="text-gray-850 md:text-[2.75rem] text-3xl sm:leading-[42px] md:leading-[48px] font-bold pb-2 md:pb-8">
@@ -99,9 +99,10 @@ const AccordionItem: FC<{
       <div
         id={`faq-panel-${idx}`}
         className={`faq-answer ${open ? 'open pb-3' : ''} text-sm px-3.5 text-gray-600 max-w-[800px]`}
-      >
-        {answer}
-      </div>
+        dangerouslySetInnerHTML={{
+          __html: answer,
+        }}
+      ></div>
     </div>
   )
 }

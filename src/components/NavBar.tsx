@@ -29,10 +29,10 @@ export const NavBar = ({
   const t = useTranslations()
 
   return (
-    <header className="fade-in bg-white px-4 sm:fixed relative top-0 right-0 left-0 z-50">
+    <header className="fade-in bg-white px-4 relative top-0 right-0 left-0 z-50">
       <div className="flex items-center">
         <div className="flex items-center gap-4 sm:hidden">
-          <button
+          {/*          <button
             className="w-[48px] h-[48px] absolute text-brand-550 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
@@ -42,9 +42,9 @@ export const NavBar = ({
             ) : (
               <MenuIcon className="text-3xl" aria-hidden="true" />
             )}
-          </button>
+          </button>*/}
         </div>
-        <div className="relative mx-auto sm:mx-0 sm:flex py-3.5 sm:items-center items-center fr-enlarge-link">
+        <div className="relative sm:mx-0 sm:flex py-3.5 md:items-center fr-enlarge-link">
           <Image
             className="mr-3 w-28 hidden sm:block md:block"
             src={LogoGouvSvg}
@@ -69,7 +69,7 @@ export const NavBar = ({
             </div>
           )}
           <div className="hidden md:block">
-            {translation && <LocaleSwitcher />}
+            {/*{translation && <LocaleSwitcher />}*/}
           </div>
           <LaGaufre />
         </div>
@@ -78,9 +78,9 @@ export const NavBar = ({
         className={`fixed md:hidden top-[67px] left-0 h-full w-full bg-white will-change-transform z-50 shadow-md transform transition-all ease-in-out duration-300
             ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div className="text-center mt-8">
+        {/*        <div className="text-center mt-8">
           <LocaleSwitcher />
-        </div>
+        </div>*/}
       </div>
     </header>
   )

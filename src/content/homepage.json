@@ -1,0 +1,348 @@
+{
+  "global": {
+    "title": "LaSuite",
+    "slug": "homepage"
+  },
+  "fr": {
+    "hero": {
+      "title": "L'espace de travail ouvert et souverain des agents de l'État",
+      "description": "Une suite cohérente d'outils open source, sécurisés et simples d'utilisation, conçus pour aider les agents publics à créer, organiser, décider et collaborer en toute confiance.",
+      "button_products": {
+        "title": "Découvrir les outils",
+        "href": "#products"
+      },
+      "button_start": {
+        "title": "Démarrer avec LaSuite",
+        "href": "https://docs.numerique.gouv.fr/docs/afc65f0a-15f3-42b6-9d64-b332c0fb2ed2/"
+      },
+      "social_proof": {
+        "title": "Utilisé chaque mois par plus de 500&nbsp;000 agents, dans 15 ministères et de nombreuses administrations.",
+        "items": [
+          {
+            "title": "Ministère de l'Éducation nationale et de la jeunesse",
+            "src": "logo/education-nationale.svg",
+            "height": "48",
+            "width": "60"
+          },
+          {
+            "title": "Direction Générale des Finances Publiques",
+            "src": "logo/dgfp.svg",
+            "height": "48",
+            "width": "90"
+          },
+          {
+            "title": "Ministère de l'Agriculture et de la souveraineté alimentaire",
+            "src": "logo/ministere-agriculture.svg",
+            "height": "48",
+            "width": "80"
+          },
+          {
+            "title": "Ministère de l'Intérieur",
+            "src": "logo/ministere-interieur.svg",
+            "height": "48",
+            "width": "67"
+          },
+          {
+            "title": "Commissariat au numérique de défense",
+            "src": "logo/cnd.png",
+            "height": "48",
+            "width": "85"
+          },
+          {
+            "title": "CNRS",
+            "src": "logo/cnrs.svg",
+            "height": "38",
+            "width": "38"
+          }
+        ]
+      }
+    },
+    "products": {
+      "title": "Les outils de LaSuite",
+      "description": "Un espace de travail contenant des outils avec la même ambition : travailler mieux, ensemble, de manière plus souveraine et sécurisée.",
+      "Tchap": {
+        "description": "Échangez rapidement avec vos collègues, où que vous soyez. Tchap est la messagerie instantanée sécurisée de l’État,  déjà utilisée par 600&nbsp;000 agents.",
+        "button": "Découvrir Tchap",
+        "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://element.io\">Element</a> et s'appuyant sur le protocole <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://matrix.org\">Matrix</a>"
+      },
+      "France Transfert": {
+        "description": "Envoyez et recevez facilement des fichiers volumineux, avec un service pensé pour les besoins de l’administration.",
+        "button": "Tester FranceTransfert",
+        "basedOn": " "
+      },
+      "Visio": {
+        "description": "Organisez des réunions en ligne en toute confiance : une solution fiable et sécurisée, hébergée en France.",
+        "button": "Découvrir Visio",
+        "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://livekit.io\">LiveKit</a>"
+      },
+      "Messagerie": {
+        "description": "Accédez à votre adresse mail pro et gérez vos échanges du quotidien.",
+        "button": "Découvrir Messagerie",
+        "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://www.open-xchange.com\">Open-XChange</a> et d'autres logiciels libres."
+      },
+      "Fichiers": {
+        "description": "Centralisez vos fichiers, partagez-les avec les bonnes personnes et gardez une organisation efficace.",
+        "button": "Découvrir Fichiers",
+        "basedOn": " "
+      }
+    },
+    "new_products": {
+      "title": "Nouveaux usages",
+      "description": "LaSuite, c’est aussi des applications et des fonctionnalités innovantes, qui s’appuient sur les technologies les plus récentes.",
+      "Grist": {
+        "description": "Le tableur collaboratif pour structurer vos bases de données.",
+        "button": "Découvrir Grist",
+        "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://www.getgrist.com\">Grist</a>"
+      },
+      "Docs": {
+        "description": "L'éditeur de texte collaboratif qui privilégie le contenu sur la mise en forme.",
+        "button": "Découvrir Docs",
+        "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://www.blocknotejs.org\">BlockNoteJS</a> et d'autres bibliothèques JavaScript."
+      },
+      "AI": {
+        "title": "L'Intelligence Artificielle, au coeur de nos outils",
+        "description": "LaSuite intègre l'IA dans ses différents produits, afin de vous faire gagner du temps au quotidien sur les tâches les plus rébarbatives : transcription d'appels en visioconférence dans Visio, résumé, reformulation et amélioration des textes dans Docs, et bien plus encore.."
+      }
+    },
+    "coupdoeil": {
+      "title": "LaSuite, en un coup d’oeil",
+      "subtitle": "LaSuite est née d'une conviction simple : le travail des agents publics mérite des outils numériques fiables, souverains et conçus pour leurs usages réels.",
+      "description": "Construite avec et pour le service public, LaSuite évolue chaque jour grâce à vos retours, pour simplifier le quotidien et renforcer une collaboration numérique durable, sécurisée et ouverte.",
+      "items": [
+        {
+          "title": "Simplicité",
+          "description": "Des outils pensés pour être utilisés par le plus grand nombre.",
+          "src": "assets/icons/simple.svg"
+        },
+        {
+          "title": "Sécurité",
+          "description": "Des standards élevés, pour assurer la confidentialité de vos données.",
+          "src": "assets/icons/securite.svg"
+        },
+        {
+          "title": "Souveraineté",
+          "description": "Des données hébergées en France.",
+          "src": "assets/icons/globe.svg"
+        },
+        {
+          "title": "Ouverture",
+          "description": "Des systèmes basés sur des outils open- source.",
+          "src": "assets/icons/curlybraces.svg"
+        },
+        {
+          "title": "Interopérabilité",
+          "description": "Des synergies entre les différents outils, pour toujours plus d'efficacité.",
+          "src": "assets/icons/puzzle.svg"
+        }
+      ],
+      "webinaire": {
+        "description": "LaSuite réunit les outils essentiels au travail des agents publics : rédaction, visioconférence, gestion de données, partage de fichiers, messagerie ou intelligence artificielle, dans un ensemble cohérent, sécurisé et interopérable.",
+        "button_title": "Inscription au webinaire",
+        "href": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
+      }
+    },
+    "testimonials": [
+      {
+        "quote": "Bravo à la DINUM pour son outil Visio… C’est simple, convivial, rapide, avec une excellente qualité audio. L’interface de partage est un bijou d’IHM.",
+        "author": "Marc Shapiro",
+        "role": "Directeur de recherche (émérite) à l'Inria et Sorbonne-Université",
+        "avatar": {
+          "src": "home/testimonials/marc_shapiro.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "Retour d'expérience après une réunion d’1h30 sur Visio : transcription immédiatement disponible sur Docs, synthèse de 2 pages générée avec l’Assistant IA, relecture rapide et compte rendu envoyé 20 minutes après la fin. 100 % satisfait !",
+        "author": "Eric Hazane",
+        "role": "Délégué Régional Normandie - ANSSI",
+        "avatar": {
+          "src": "home/testimonials/eric_hazane.png",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "Tout est au même endroit, clair, simple et accessible… C’est devenu un réflexe pour tous nos projets et un incontournable de nos formations.",
+        "author": "Cécile Roung",
+        "role": "Chargée de mission et de coordination pour le numérique à la DSDEN des Alpes-Maritimes",
+        "avatar": {
+          "src": "home/testimonials/cecile_roung.png",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "BRAVO ! Très content du travail de fond que fait l'administration française. Enfin des solutions souveraines.",
+        "author": "David Bell",
+        "role": "Directeur des Systèmes d'Informations & Organisation - Hôpital Joseph Ducuing",
+        "avatar": {
+          "src": "home/testimonials/david_bell.jpeg",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "Application efficace et simple à utiliser. La transcription des échanges est un énorme plus. Merci et bonne continuation dans le développement d'outils sécurisés, souverains et performants.",
+        "author": "David Pinaud",
+        "role": "Inspecteur d'Académie - Inspecteur Pédagogique Régional (Académie de Nancy-Metz)",
+        "avatar": {
+          "src": "home/testimonials/david_pinaud.png",
+          "alt": ""
+        }
+      }
+    ],
+    "platform": {
+      "title": "Une plateforme souveraine, sécurisée et durable",
+      "description": "Pensée pour les DSI, RSSI, directions métiers et opérateurs publics.",
+      "items": [
+        {
+          "icon": "assets/icons/server.svg",
+          "title": "Hébergement SecNumCloud",
+          "description": "Hébergement SecNumCloud. Données stockées et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+        },
+        {
+          "icon": "assets/icons/building.svg",
+          "title": "Gouvernance publique",
+          "description": "Le club LaSuite réunit les 10 cofinanceurs interministériels qui décident des orientations de la roadmap (MI, Bercy/DGFIP, CNAM, etc.)."
+        },
+        {
+          "icon": "assets/icons/gauge.svg",
+          "title": "Coûts maîtrisés",
+          "description": "En s'affranchissant des licences de solutions privées, LaSuite permet de reprendre le contrôle sur les coûts des produits."
+        },
+        {
+          "icon": "assets/icons/arrow-squarepath.svg",
+          "title": "Réversibilité totale",
+          "description": "Importez et exportez vos documents dans les formats standards du marché et du libre (.ppt, .xls, .odt...)"
+        },
+        {
+          "icon": "assets/icons/solo.svg",
+          "title": "Conçu en tenant compte de l'accessibilité",
+          "description": "Prise en compte de l'accessibilité numérique, amélioration continue."
+        },
+        {
+          "icon": "assets/icons/headset.svg",
+          "title": "Une équipe support à votre service",
+          "description": "Posez vos questions via le chat si vous ne trouvez pas les éléments dans la FAQ. Notre équipe support vous accompagne au quotidien."
+        }
+      ],
+      "link": {
+        "title": "Intégrer LaSuite",
+        "src": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45&date=2026-01-22&month=2026-01"
+      }
+    },
+    "proconnect": {
+      "title": "Plusieurs outils, un seul accès",
+      "description": "Avec ProConnect, les agents de l'État bénficient d'une authentification unique pour accéder à chacun des produits de LaSuite",
+      "items": [
+        {
+          "icon": "assets/icons/identity.svg",
+          "title": "Identité unique"
+        },
+        {
+          "icon": "assets/icons/securityfill.svg",
+          "title": "Sécurité renforcée"
+        },
+        {
+          "icon": "assets/icons/puzzlefill.svg",
+          "title": "Services partenaires"
+        }
+      ],
+      "button": {
+        "title": "En savoir plus",
+        "href": "https://www.proconnect.gouv.fr/"
+      }
+    },
+    "ecosystem": {
+      "title": "Un écosystème ouvert, souverain et collaboratif",
+      "description": "En s'inscrivant dans une logique de communs numériques, LaSuite favorise l'émergence de partenariats stratégiques pour proposer des solutions innovantes, souveraines et évolutives, alignées avec les plus hauts standards de sécurité via ProConnect.",
+      "items": [
+        {
+          "icon": "assets/icons/curlybraces-simple.svg",
+          "title": "Standards Open-Source",
+          "description": "Nos solutions sont basées sur des standards open source, comme Matrix, Livekit, Grist Core, etc.",
+          "logos": [
+            "assets/icons/matrix.svg",
+            "assets/icons/livekit.svg",
+            "assets/icons/grist-simple.svg"
+          ]
+        },
+        {
+          "icon": "assets/icons/hands-clap.svg",
+          "title": "Partenaires souverains",
+          "description": "Nos produits sont créés et améliorés avec des partenaires français et européens.",
+          "logos": ["assets/icons/edic.svg"]
+        },
+        {
+          "icon": "assets/icons/megaphone-fill.svg",
+          "title": "Communauté active",
+          "description": "Nous animons une communauté active, fondée sur les contributions des administrations, des feuilles de route co-construites et des instances locales.",
+          "logos": [
+            "assets/icons/git.svg",
+            "assets/icons/g5393.svg",
+            "assets/icons/anct.svg"
+          ]
+        }
+      ],
+      "button": {
+        "title": "Contribuer au code",
+        "href": "https://github.com/suitenumerique/"
+      }
+    },
+    "forTeams": {
+      "title": "Proposez LaSuite à vos équipes",
+      "description": "Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons ensemble en revue l'architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "href": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45&date=2026-01-22&month=2026-01"
+      }
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant LaSuite.",
+      "questions": [
+        {
+          "q": "Qui peut utiliser LaSuite ? Comment me connecter ?",
+          "a": "Pour l’instant, l’accès aux outils de La Suite Numérique est réservé : aux agents de la fonction publique d’État, ainsi qu’à leurs collaborateurs et partenaires invités, uniquement dans le cadre de missions menées avec le service public, via la plateforme ProConnect."
+        },
+        {
+          "q": "Je suis un acteur privé, puis-je l'utiliser ?",
+          "a": "Les personnes ou organisations privées (acteurs de droit privé éligibles à l'identification ProConnect grâce à son Siret : entreprises, associations, etc..) peuvent être invitées à utiliser les outils de La Suite uniquement lorsqu’elles travaillent avec le service public, sur une mission donnée. LaSuite  n’est pas destinée à un usage interne aux entreprises privées. Toute utilisation des outils de LaSuite par une entreprise pour ses besoins propres (par exemple l’hébergement de documents internes, hors mission avec le service public) se fait à ses risques et périls : aucune garantie n’est apportée, aucun engagement de service n’est prévu, aucun support n’est assuré pour ces usages non conformes au cadre prévu. </br></br> <strong>LaSuite étant une suite d'outils libre</strong>, toute organisation ou personne non éligible à l’offre mutualisée de l’État peut : déployer sa propre instance, et l’exploiter sous sa responsabilité."
+        },
+        {
+          "q": "LaSuite est-elle une solution pérenne ?",
+          "a": "LaSuite est opérée par la DINUM à partir de briques open-source et constitue un élément central de la feuille de route numérique de l’État en matière de souveraineté. Au-delà de cette dimension stratégique, sa résilience et sa pérennité tiennent à son indépendance vis-à-vis de contrats externes, à la contribution de plusieurs administrations, ainsi qu’à son usage interministériel, que ce soit sur l’instance de la DINUM ou sur des instances dédiées."
+        },
+        {
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Les produits Docs et Visio sont sur un hébergement SecNumCloud et peuvent donc être utilisés pour des données sensibles telles que défini dans l'article 31 de la loi SREN, ils ont bénéficiés d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Ils ne sont pas adapté pour le contenu classé \"Diffusion Restreinte\" et ces services n'étant pas certifiés HDS pour l'instant, nous ne pouvons pas traiter de données de santé."
+        }
+      ],
+      "links": [
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio_light",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "https://tchap.gouv.fr/#/room/!GoGHGSGXkRINEJlbON:agent.dinum.tchap.gouv.fr/$17689909742039GwhCi:agent.collectivites.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr&via=agent.intradef.tchap.gouv.fr",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    },
+    "footer": {
+      "description": [
+        "Simple.",
+        "Open-source.",
+        "Conçue pour le service public de demain."
+      ],
+      "newsletter_button": {
+        "title": "S'abonner à la newsletter"
+      },
+      "start_button": {
+        "title": "Démarrer avec LaSuite",
+        "href": "https://docs.numerique.gouv.fr/docs/afc65f0a-15f3-42b6-9d64-b332c0fb2ed2/"
+      }
+    }
+  }
+}

@@ -45,9 +45,37 @@ service_landing_page:
     body: '{title}, un service de {la_suite}'
 homepage:
   hero:
-    title: 'Des communs numériques pour un État simple, efficace et souverain'
-    description: 'Créez. Organisez. Collaborez. Une collection de communs numériques, conçue pour le secteur public et réutilisable par tous.'
-  slider_products:
+    title: "L'espace de travail ouvert et souverain des agents de l'État"
+    description: "Une suite cohérente d'outils open source, sécurisés et simples d'utilisation, conçus pour aider les agents publics à créer, organiser, décider et collaborer en toute confiance."
+    button_products: 
+      title: "Découvrir les outils"
+      href: "#products"
+    button_start: 
+      title: "Démarrer avec LaSuite"
+      href: "#products"
+    social_proof:
+      title: "Utilisé chaque mois par plus de 500 000 agents, dans 15 ministères et de nombreuses administrations."
+      items:
+        - title: "Ministère de l'Éducation nationale et de la jeunesse"
+          src: "logo/education-nationale.svg"
+
+        - title: "Direction Générale des Finances Publiques"
+          src: "logo/dgfp.svg"
+
+        - title: "Ministère de l'Agriculture et de la souveraineté alimentaire"
+          src: "logo/ministere-agriculture.svg"
+
+        - title: "Ministère de l'Intérieur"
+          src: "logo/ministere-interieur.svg"
+
+        - title: "Gendarmerie nationale"
+          src: "logo/gendarmerienationale.svg"
+
+        - title: "Inrae"
+          src: "logo/inrae.svg"
+  products:
+    title: Les outils de LaSuite
+    description: "Un espace de travail contenant des outils avec la même ambition : travailler mieux, ensemble, de manière plus souveraine et sécurisée."
     'Tchap':
       description: 'La messagerie instantanée sécurisée pour communiquer où que vous soyez.'
       basedOn: 'Développé à partir de <a class="inline-block font-bold text-primary-text" target="new" href="https://element.io">Element</a> et s‘appuyant sur le protocole <a class="inline-block font-bold text-primary-text" target="new" href="https://matrix.org">Matrix</a>'

@@ -5,28 +5,37 @@ enabled_i18n:
   en: false
 slug: mentions-legales
 title: Mentions légales
-body: >-
+body: |
   ## Éditeur
 
+  LaSuite est éditée par la Direction interministérielle du numérique de l'Etat (DINUM) située :
 
-  Équipe La Suite numérique de la Direction interministérielle du numérique
-
-  {ADDRESS_DINUM}.
-
+  20 avenue de Ségur
+  75007 Paris
+  Tel. Accueil : 01.71.21.01.70
+  SIRET : 12000101100010 (secrétariat général du gouvernement)
+  SIREN : 120 001 011
 
   ## Directeur de la publication
 
+  La directrice de la publication est Madame Stéphanie Schaer, Directrice interministérielle du numérique.
 
-  Directeur interministériel du numérique.
+  ## Accessibilité
 
+  Le présent site vitrine n'a pas encore fait l'objet d'un audit de conformité. Néanmoins, l'équipe veille, dès sa conception, à appliquer les bonnes pratiques et les recommandations du RGAA, afin de garantir un accès au plus grand nombre.
 
-  ## Copyright
+  Pour en savoir plus : lien vers la page d'accessibilité
 
+  Etat d'accessibilité : non conforme
 
-  Illustrations de la page accueil: Shutter Stock. Toute autre illustration : DINUM
+  ## Réutilisation des contenus et liens
 
+  Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous licence ouverte Etalab 2.0.
+
+  Vous êtes notamment libres de les reproduire, copier, modifier, extraire, transformer, communiquer diffuser, redistribuer, publier, transmettre et exploiter sous réserve de mentionner leur source, leur date de dernière mise à jour et ne pas induire en erreur des tiers quant aux informations qui y figurent.
+
+  Tout site public ou privé est autorisé à établir, sans autorisation préalable, un lien (y compris profond) vers les informations diffusées sur ce site.
 
   ## Plus d'infos ?
-
 
   L'équipe de La Suite numérique peut être contactée directement à [lasuite@numerique.gouv.fr](mailto:lasuite@numerique.gouv.fr).
