@@ -11,12 +11,13 @@ import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
-  const videoUrl = 'https://tube.numerique.gouv.fr/w/gzwjk8H5Pm4MqrcUo5eMPG?start=12s'
+  const videoUrl =
+    'https://tube.numerique.gouv.fr/w/gzwjk8H5Pm4MqrcUo5eMPG?start=12s'
 
   return (
     <ContentSection padding={false}>
       <div className="lg:grid lg:grid-cols-5 lg:justify-between pt-6">
-        <div className="text-left md:col-span-3 relative md:mt-6 px-6 lg:px-0 z-10">
+        <div className="text-left md:col-span-3 relative md:mt-6 px-6 z-10">
           <Image
             src={HeroHome}
             height={100}
@@ -37,7 +38,7 @@ export const Hero = ({ content }: { content: any }) => {
           <h2
             className="mt-6 text-greyscale-800 text-[2rem] md:text-[2.75rem] text-balance leading-[2.5rem] md:leading-[3rem] font-bold pb-4"
             dangerouslySetInnerHTML={{
-              __html: content.title
+              __html: content.title,
             }}
           ></h2>
           <p className="mb-4 mx-auto text-gray-550 text-base md:text-[1.25rem]">
@@ -48,7 +49,11 @@ export const Hero = ({ content }: { content: any }) => {
             <Button href="#products" variant="default">
               {content.button_products.title}
             </Button>
-            <Button href={content.button_start.href} variant="tertiary_bordered" target="_blank">
+            <Button
+              href={content.button_start.href}
+              variant="tertiary_bordered"
+              target="_blank"
+            >
               {content.button_start.title}
             </Button>
           </div>
@@ -64,9 +69,7 @@ export const Hero = ({ content }: { content: any }) => {
             </a>
             &nbsp;au prochain webinaire
           </span>
-
         </div>
-
 
         <div className="flex items-center col-span-2 justify-center pt-6">
           <div className="">
@@ -86,19 +89,19 @@ export const Hero = ({ content }: { content: any }) => {
                 />
               </div>
             </a>
-            <Button 
+            <Button
               href={videoUrl}
               icon={<PlayArrowIcon />}
               iconPosition="left"
               className="relative mx-auto"
-              variant="tertiary_neutral" 
+              variant="tertiary_neutral"
               aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
-              target="_blank">
-                Regarder la vidéo
+              target="_blank"
+            >
+              Regarder la vidéo
             </Button>
           </div>
         </div>
-
       </div>
       <div className="w-full">
         <SocialProof socialProof={content.social_proof} />

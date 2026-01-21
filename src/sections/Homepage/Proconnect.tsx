@@ -22,23 +22,33 @@ export const ProConnect = ({ content }: { content: any }) => {
             src={ProConnectLogo}
             alt="LaSuite"
             width="100"
-            height="100"/>
-          <Paragraph
-            title={content.title}
-          >
+            height="100"
+          />
+          <Paragraph title={content.title}>
             <p className="md:max-w-[700px] mx-auto pb-12 md:pb-10">
               {content.description}
             </p>
           </Paragraph>
 
           <div className="grid md:grid-cols-3 mt-10 md:justify-center items-center px-6 md:px-0">
-          {content.items && content.items.map((item: any, index: number) => (
-            <div key={item.title} className="mx-auto w-full">
-              <Image className="relative mx-auto mb-6" src={item.icon} alt={item.title} width={80} height={80} />
-              <p className="text-brand-600 text-xl font-medium mb-3 md:mb-6">{item.title}</p>
-              {index < content.items.length - 1 && <div className="md:hidden border-b border-gray-100 pt-6 mb-6" />}
-            </div>
-          ))}
+            {content.items &&
+              content.items.map((item: any, index: number) => (
+                <div key={item.title} className="mx-auto w-full">
+                  <Image
+                    className="relative mx-auto mb-6"
+                    src={item.icon}
+                    alt={item.title}
+                    width={80}
+                    height={80}
+                  />
+                  <p className="text-brand-600 text-xl font-medium mb-3 md:mb-6">
+                    {item.title}
+                  </p>
+                  {index < content.items.length - 1 && (
+                    <div className="md:hidden border-b border-gray-100 pt-6 mb-6" />
+                  )}
+                </div>
+              ))}
           </div>
 
           <div className="mx-2 md:mx-0">

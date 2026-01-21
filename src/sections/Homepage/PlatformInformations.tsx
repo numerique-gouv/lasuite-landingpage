@@ -20,8 +20,16 @@ export const PlatformInformations = ({ content }: { content: any }) => {
             {content.description && (
               <p className="text-gray-050 text-sm md:text-lg mb-12">
                 {content.description}
-                <a className="text-gray-050 underline ml-1" href={content.link.src} target="_blank">{content.link.title}
-                  <ArrowForwardIcon className="ml-1" style={{ fontSize: '1rem', verticalAlign: 'middle' }} />
+                <a
+                  className="text-gray-050 underline ml-1"
+                  href={content.link.src}
+                  target="_blank"
+                >
+                  {content.link.title}
+                  <ArrowForwardIcon
+                    className="ml-1"
+                    style={{ fontSize: '1rem', verticalAlign: 'middle' }}
+                  />
                 </a>
               </p>
             )}
@@ -29,7 +37,10 @@ export const PlatformInformations = ({ content }: { content: any }) => {
           {content.items && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               {content.items.map((item: any) => (
-                <div key={item.title} className="bg-gray-000 p-6 rounded-lg border-1 border-gray-100">
+                <div
+                  key={item.title}
+                  className="bg-gray-000 p-6 rounded-lg border-1 border-gray-100"
+                >
                   <div className="flex-shrink-0 pb-6">
                     <Image
                       src={`/${item.icon}`}
@@ -44,9 +55,7 @@ export const PlatformInformations = ({ content }: { content: any }) => {
                     <h4 className="text-gray-850 text-lg font-medium mb-1.5">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 text-sm">
-                      {item.description}
-                    </p>
+                    <p className="text-gray-600 text-sm">{item.description}</p>
                   </div>
                 </div>
               ))}

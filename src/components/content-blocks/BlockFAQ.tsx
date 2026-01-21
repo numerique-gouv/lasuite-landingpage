@@ -100,9 +100,9 @@ const AccordionItem: FC<{
         id={`faq-panel-${idx}`}
         className={`faq-answer ${open ? 'open pb-3' : ''} text-sm px-3.5 text-gray-600 max-w-[800px]`}
         dangerouslySetInnerHTML={{
-              __html: answer,
-            }}>
-      </div>
+          __html: answer,
+        }}
+      ></div>
     </div>
   )
 }

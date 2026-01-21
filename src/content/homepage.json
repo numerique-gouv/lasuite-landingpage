@@ -62,7 +62,7 @@
       "description": "Un espace de travail contenant des outils avec la même ambition : travailler mieux, ensemble, de manière plus souveraine et sécurisée.",
       "Tchap": {
         "description": "Échangez rapidement avec vos collègues, où que vous soyez. Tchap est la messagerie instantanée sécurisée de l’État,  déjà utilisée par 600&nbsp;000 agents.",
-         "button": "Découvrir Tchap",
+        "button": "Découvrir Tchap",
         "basedOn": "Développé à partir de <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://element.io\">Element</a> et s'appuyant sur le protocole <a class=\"inline-block font-bold text-primary-text\" target=\"new\" href=\"https://matrix.org\">Matrix</a>"
       },
       "France Transfert": {
@@ -258,7 +258,11 @@
           "icon": "assets/icons/curlybraces-simple.svg",
           "title": "Standards Open-Source",
           "description": "Nos solutions sont basées sur des standards open source, comme Matrix, Livekit, Grist Core, etc.",
-          "logos": ["assets/icons/matrix.svg","assets/icons/livekit.svg","assets/icons/grist-simple.svg"]
+          "logos": [
+            "assets/icons/matrix.svg",
+            "assets/icons/livekit.svg",
+            "assets/icons/grist-simple.svg"
+          ]
         },
         {
           "icon": "assets/icons/hands-clap.svg",
@@ -270,7 +274,11 @@
           "icon": "assets/icons/megaphone-fill.svg",
           "title": "Communauté active",
           "description": "Nous animons une communauté active, fondée sur les contributions des administrations, des feuilles de route co-construites et des instances locales.",
-          "logos": ["assets/icons/git.svg","assets/icons/g5393.svg","assets/icons/anct.svg"]
+          "logos": [
+            "assets/icons/git.svg",
+            "assets/icons/g5393.svg",
+            "assets/icons/anct.svg"
+          ]
         }
       ],
       "button": {
@@ -338,4 +346,3 @@
     }
   }
 }
-

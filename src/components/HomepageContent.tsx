@@ -9,9 +9,8 @@ import FAQLinks from '@/components/content-blocks/FAQLinks'
 import { ContentSection } from '@/components/ContentSection'
 
 import Testimonials from '@/components/content-blocks/Testimonials'
-import { PlatformInformations} from '@/sections/Homepage/PlatformInformations'
-import { Ecosystem} from '@/sections/Homepage/Ecosystem'
-
+import { PlatformInformations } from '@/sections/Homepage/PlatformInformations'
+import { Ecosystem } from '@/sections/Homepage/Ecosystem'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
 import { useEffect } from 'react'
@@ -58,10 +57,10 @@ export const HomepageContent = ({ content }: { content: any }) => {
         <ForTeams content={content.forTeams} />
       </FadeInSection>
       <div className="md:mt-[72px] md:pb-[72px]">
-      <ContentSection padding={false} gap="gap-0">
-        <BlockFAQ {...content.faq} />
-        <FAQLinks links={content.faq?.links} />
-      </ContentSection>
+        <ContentSection padding={false} gap="gap-0">
+          <BlockFAQ {...content.faq} />
+          <FAQLinks links={content.faq?.links} />
+        </ContentSection>
       </div>
       <div className="mt-12">
         <FadeInSection>

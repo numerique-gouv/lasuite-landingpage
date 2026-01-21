@@ -8,10 +8,7 @@ import { ProductCard } from '@/components/ProductCard'
 import { useTranslations } from '@/locales/useTranslations'
 import AIImage from '@/assets/ai.png'
 
-const DINUM_PRODUCTS_GRID = [
-  'Docs',
-  'Grist',
-]
+const DINUM_PRODUCTS_GRID = ['Docs', 'Grist']
 
 export const NewProducts = ({ content }: { content: any }) => {
   const t = useTranslations()
@@ -20,14 +17,11 @@ export const NewProducts = ({ content }: { content: any }) => {
   return (
     <ContentSection>
       <div className="gap-0">
-        <Paragraph
-          title={content.title}
-          description={content.description}
-        />
+        <Paragraph title={content.title} description={content.description} />
         <div className="grid lg:grid-cols-2 gap-8 md:mb-14">
           {DINUM_PRODUCTS_GRID.map((name) => (
             <div key={name}>
-              <ProductCard 
+              <ProductCard
                 name={name}
                 background="gray"
                 content={content[name]}
@@ -43,7 +37,8 @@ export const NewProducts = ({ content }: { content: any }) => {
             style={{
               borderRadius: '8px',
               border: '1px solid #DFE2EA',
-              background: 'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
+              background:
+                'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
               boxShadow: '0 8px 20px 0 rgba(0, 0, 0, 0.03)',
             }}
           >

@@ -10,24 +10,26 @@ type ProductCardProps = {
   background?: 'default' | 'gray'
 }
 
-export const ProductCard = ({ 
-  name, 
-  content, 
+export const ProductCard = ({
+  name,
+  content,
   locale = 'fr',
-  background = 'default'
+  background = 'default',
 }: ProductCardProps) => {
   const t = useTranslations()
   const product = LASUITE_PRODUCTS[name]
   const logoText = (product as any)?.logoText
 
-  const backgroundStyle = background === 'gray' 
-    ? {
-        background:
-          'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
-      }
-    : {
-        background: 'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.02) 0%, rgba(62, 93, 231, 0.00) 100%), #FFF',
-      }
+  const backgroundStyle =
+    background === 'gray'
+      ? {
+          background:
+            'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
+        }
+      : {
+          background:
+            'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.02) 0%, rgba(62, 93, 231, 0.00) 100%), #FFF',
+        }
 
   return (
     <div
@@ -60,17 +62,22 @@ export const ProductCard = ({
             )}
           </div>
 
-          <p className="text-gray-550 text-base mb-6 flex-grow"
+          <p
+            className="text-gray-550 text-base mb-6 flex-grow"
             dangerouslySetInnerHTML={{
-              __html: content.description
-            }}>
-          </p>
+              __html: content.description,
+            }}
+          ></p>
 
           <div className="mt-auto">
             <Button
               href={product?.url}
               target="_blank"
-              variant={product?.name === 'Visio' ? 'primary_brand' : 'tertiary_bordered'}
+              variant={
+                product?.name === 'Visio'
+                  ? 'primary_brand'
+                  : 'tertiary_bordered'
+              }
               aria-label={`${content?.button} - ${t('common.new_window')}`}
             >
               {content?.button}
@@ -92,4 +99,3 @@ export const ProductCard = ({
     </div>
   )
 }
-

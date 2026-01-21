@@ -116,7 +116,8 @@ export const LASUITE_PRODUCTS: Record<
     // screenshotMobileEn: FichiersScreenshotMobileEn,
     name: 'Fichiers',
     url: 'https://fichiers.numerique.gouv.fr/',
-    description: 'Centralisez vos fichiers, partagez-les avec les bonnes personnes et gardez une organisation efficace.',
+    description:
+      'Centralisez vos fichiers, partagez-les avec les bonnes personnes et gardez une organisation efficace.',
   },
   Visio: {
     displayDetails: true,
@@ -198,7 +199,8 @@ export const LASUITE_PRODUCTS: Record<
     url: 'https://messagerie.numerique.gouv.fr/',
     caption:
       'une boite mail et agenda open-source sécurisés pour les petites équipes',
-    description: 'Accédez à votre adresse mail pro et gérez vos échanges du quotidien.',
+    description:
+      'Accédez à votre adresse mail pro et gérez vos échanges du quotidien.',
     status: 'BETA',
-  }
+  },
 }

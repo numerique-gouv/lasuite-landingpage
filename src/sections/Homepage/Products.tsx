@@ -8,7 +8,7 @@ const DINUM_PRODUCTS_GRID = [
   'Visio',
   'France Transfert',
   'Messagerie',
-  'Fichiers'
+  'Fichiers',
 ]
 
 export const Products = ({ content }: { content: any }) => {
@@ -25,18 +25,18 @@ export const Products = ({ content }: { content: any }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="md:row-span-2">
-            <ProductCard 
-              name={DINUM_PRODUCTS_GRID[tchapIndex]} 
-              content={content[DINUM_PRODUCTS_GRID[tchapIndex]]} 
+            <ProductCard
+              name={DINUM_PRODUCTS_GRID[tchapIndex]}
+              content={content[DINUM_PRODUCTS_GRID[tchapIndex]]}
               locale={locale}
             />
           </div>
 
           <div className="flex flex-col gap-6">
             {rightColumnProducts.map((name) => (
-              <ProductCard 
+              <ProductCard
                 key={name}
-                name={name} 
+                name={name}
                 content={content[name]}
                 locale={locale}
               />
@@ -46,9 +46,9 @@ export const Products = ({ content }: { content: any }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {bottomRowProducts.map((name) => (
-            <ProductCard 
+            <ProductCard
               key={name}
-              name={name} 
+              name={name}
               content={content[name]}
               locale={locale}
             />

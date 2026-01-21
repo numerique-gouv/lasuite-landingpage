@@ -22,10 +22,9 @@ export const ForTeams = ({ content }: { content: any }) => {
             src={LaSuiteShadow}
             alt="LaSuite"
             width="100"
-            height="100"/>
-          <Paragraph
-            title={content.title}
-          >
+            height="100"
+          />
+          <Paragraph title={content.title}>
             <p className="max-w-[700px] mx-auto pb-8 md:pb-10">
               {content.description}
             </p>

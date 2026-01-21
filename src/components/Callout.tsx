@@ -7,6 +7,5 @@ export interface CalloutProps {
 }
 
 export const Callout = ({ children }: CalloutProps) => (
-  <div className="w-[80%] max-w-[42rem] relative my-[30px] mx-auto">
-  </div>
+  <div className="w-[80%] max-w-[42rem] relative my-[30px] mx-auto"></div>
 )

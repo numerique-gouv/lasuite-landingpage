@@ -17,6 +17,54 @@ const contactSchema = z.object({
   message: z.string().min(1, { message: 'Ce champ doit être rempli.' }),
 })
 
+const getClientIp = (req: NextApiRequest): string => {
+  const forwarded = req.headers['x-forwarded-for']
+  if (forwarded) {
+    return typeof forwarded === 'string'
+      ? forwarded.split(',')[0].trim()
+      : forwarded[0]
+  }
+  return req.socket.remoteAddress || 'unknown'
+}
+
+// Quick&dirty in-memory rate limiting by IP
+const allSubmitsByIp = new Map<string, number[]>()
+const rateLimitWindow = 60 * 60 * 1000 // 1 hour
+const maxSubmitsPerWindow = 4
+const trackIpSubmit = (ip: string): void => {
+  const ipSubmits = allSubmitsByIp.get(ip) || []
+  ipSubmits.push(Date.now())
+  allSubmitsByIp.set(ip, ipSubmits)
+}
+const isRateLimited = (ip: string): boolean => {
+  const ipSubmits = allSubmitsByIp.get(ip) || []
+
+  let recentIpSubmits = ipSubmits.filter(
+    (timestamp) => Date.now() - timestamp < rateLimitWindow
+  )
+  if (recentIpSubmits.length) {
+    allSubmitsByIp.set(ip, recentIpSubmits)
+  } else {
+    allSubmitsByIp.delete(ip)
+  }
+
+  cleanOldSubmits()
+
+  return recentIpSubmits.length > maxSubmitsPerWindow
+}
+const cleanOldSubmits = (): void => {
+  const now = Date.now()
+  allSubmitsByIp.forEach((submits, ip) => {
+    let recentSubmits = submits.filter(
+      (timestamp) => now - timestamp < rateLimitWindow
+    )
+    if (recentSubmits.length > maxSubmitsPerWindow) {
+      recentSubmits = recentSubmits.slice(-maxSubmitsPerWindow)
+    }
+    allSubmitsByIp.set(ip, recentSubmits)
+  })
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -55,8 +103,11 @@ export default async function handler(
     })
   }
 
+  const clientIp = getClientIp(req)
+  trackIpSubmit(clientIp)
+
   // a "name" field is sent as a honeypot field, it should be empty
-  const isCertainlySpam = !!data.name
+  const isCertainlySpam = !!data.name || isRateLimited(clientIp)
 
   const validCalls = {
     grist: validConfigs.grist,
@@ -79,6 +130,9 @@ export default async function handler(
             Organisation: parsed.data.org || '',
             Poste: parsed.data.title || '',
             Message: parsed.data.message,
+            IP: clientIp,
+            UA: req.headers['user-agent'] || 'unknown',
+            Timestamp: new Date().toISOString(),
           },
         ]
       )
