@@ -40,7 +40,7 @@ export const HomepageContent = ({ content }: { content: any }) => {
         <CoupDOeil content={content.coupdoeil} />
       </FadeInSection>
       <FadeInSection>
-        <ContentSection padding={false}>
+        <ContentSection verticalPadding={false}>
           <Testimonials testimonials={content.testimonials || []} />
         </ContentSection>
       </FadeInSection>

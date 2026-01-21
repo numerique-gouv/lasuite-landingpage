@@ -124,14 +124,19 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
               className="rounded-full"
             />
           )}
-          <div className="min-w-[200px]">
+          <div className="min-w-[200px] max-w-[300px]">
             {currentTestimonial.author && (
               <p className="text-gray-850 text-base font-medium">
                 {currentTestimonial.author}
               </p>
             )}
             {currentTestimonial.role && (
-              <p className="text-sm text-gray-550">{currentTestimonial.role}</p>
+              <p
+                className="text-sm text-gray-550"
+                dangerouslySetInnerHTML={{
+                  __html: currentTestimonial.role,
+                }}
+              ></p>
             )}
           </div>
         </div>
