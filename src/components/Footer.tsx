@@ -5,7 +5,6 @@ import { useTranslations } from '@/locales/useTranslations'
 import Image from 'next/image'
 import { Button } from '@/components/ui-kit-v2/Button'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import Image from 'next/image'
 
 const hover =
   'hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer'
@@ -101,7 +100,16 @@ export const Footer = () => {
                   className={`border-grey-1 ${hover} gap-1 external-link-grey`}
                   aria-label="GitHub LaSuite - Nouvelle fenêtre"
                 >
-                  <GitHubIcon className="text-[14px] mr-1" aria-hidden="true" style={{ marginTop: '-3px', fontSize: '14px', lineHeight: '1.2', verticalAlign: 'middle' }} />
+                  <GitHubIcon
+                    className="text-[14px] mr-1"
+                    aria-hidden="true"
+                    style={{
+                      marginTop: '-3px',
+                      fontSize: '14px',
+                      lineHeight: '1.2',
+                      verticalAlign: 'middle',
+                    }}
+                  />
                   <span>Code source</span>
                 </ExternalLink>
               </li>

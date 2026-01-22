@@ -52,7 +52,13 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <MetaHeader description={isHomepage ? t('head.meta_desc') : `${pageTitle} - ${t('head.tagline')}`} />
+      <MetaHeader
+        description={
+          isHomepage
+            ? t('head.meta_desc')
+            : `${pageTitle} - ${t('head.tagline')}`
+        }
+      />
       <NavBar
         logo={logo}
         loginUrl={loginUrl}
