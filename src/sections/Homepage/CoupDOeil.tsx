@@ -20,7 +20,7 @@ export const CoupDOeil = ({ content }: { content: any }) => {
           </Paragraph>
         </div>
 
-        <div className="mx-3 md:mx-0 grid md:grid-cols-3 lg:grid-cols-5 md:gap-4 mb-10 mt-12 md:mt-0">
+        <div className="mx-3 md:mx-0 grid md:grid-cols-3 lg:grid-cols-5 md:gap-4 mb-10 mt-12 md:mt-10">
           {content.items.map((item: any, index: number) => (
             <div key={item.title} className="px-4 md:px-0 py-3">
               <Image
@@ -40,7 +40,7 @@ export const CoupDOeil = ({ content }: { content: any }) => {
         </div>
         {content.webinaire && (
           <div className="mx-3 md:mx-0 lg:flex justify-between">
-            <p className="md:max-w-[750px] text-gray-550 md:pb-0 pb-6">
+            <p className="md:max-w-[750px] text-gray-550 lg:pb-0 pb-6">
               {content.webinaire.description}
             </p>
             <Button

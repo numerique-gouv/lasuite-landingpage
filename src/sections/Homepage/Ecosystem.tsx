@@ -25,7 +25,7 @@ export const Ecosystem = ({ content }: { content: any }) => {
               {content.items.map((item: any, index: number) => (
                 <div
                   key={item.title}
-                  className="text-left rounded-lg border p-6 mx-3 md:mx-0"
+                  className="text-left rounded-lg border p-6 mx-3 md:mx-0 h-full flex flex-col justify-between"
                   style={{
                     borderRadius: '8px',
                     border: '1px solid #DFE2EA',
@@ -34,19 +34,21 @@ export const Ecosystem = ({ content }: { content: any }) => {
                     boxShadow: '0 4px 10px 0 rgba(0, 0, 0, 0.05)',
                   }}
                 >
-                  <div className="mb-4">
-                    <Image
-                      src={`/${item.icon}`}
-                      alt=""
-                      width={24}
-                      height={24}
-                      aria-hidden="true"
-                    />
+                  <div>
+                    <div className="mb-4">
+                      <Image
+                        src={`/${item.icon}`}
+                        alt=""
+                        width={24}
+                        height={24}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <h4 className="text-lg font-bold mb-1.5">{item.title}</h4>
+                    <p className="text-gray-850 text-sm pb-12">
+                      {item.description}
+                    </p>
                   </div>
-                  <h4 className="text-lg font-bold mb-1.5">{item.title}</h4>
-                  <p className="text-gray-850 text-sm pb-12">
-                    {item.description}
-                  </p>
                   {item.logos && item.logos.length > 0 && (
                     <div className="flex flex-wrap align-center gap-4 mt-12">
                       {item.logos.map((logo: string, logoIndex: number) => (

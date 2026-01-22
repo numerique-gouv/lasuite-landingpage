@@ -43,8 +43,8 @@
   }
 }
 */
-/*@media screen and (min-width: 78em) {
+@media screen and (min-width: 78em) {
   .fr-container {
     max-width: 78rem;
   }
-}*/
+}
