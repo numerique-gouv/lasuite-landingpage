@@ -20,9 +20,19 @@ export const Layout: React.FC<{
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   const t = useTranslations()
+  const backgroundStyle = isHomepage
+    ? {
+        background:
+          'radial-gradient(53.29% 4.5% at 63.77% -0.29%, rgba(62, 93, 231, 0.08) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Primary, #FFF)',
+      }
+    : background === 'gray'
+      ? { backgroundColor: 'var(--white-1)' }
+      : { backgroundColor: 'white' }
+
   return (
     <div
-      className={`min-h-screen flex flex-col text-body ${background === 'gray' ? 'bg-white-1' : 'bg-white'}`}
+      className="min-h-screen flex flex-col text-body"
+      style={backgroundStyle}
     >
       <Head>
         <title>{pageTitle}</title>
@@ -42,7 +52,7 @@ export const Layout: React.FC<{
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <MetaHeader description={isHomepage ? t('head.meta_desc') : undefined} />
+      <MetaHeader description={isHomepage ? t('head.meta_desc') : `${pageTitle} - ${t('head.tagline')}`} />
       <NavBar
         logo={logo}
         loginUrl={loginUrl}
