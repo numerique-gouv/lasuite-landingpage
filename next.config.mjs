@@ -5,6 +5,7 @@ const nextConfig = {
     /* uncomment other locales when at least the homepage is translated */
     locales: ['fr', 'en'],
     defaultLocale: 'fr',
+    localeDetection: false,
   },
   webpack: (config) => {
     config.module.rules.push({

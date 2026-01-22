@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 import { useTranslations } from '@/locales/useTranslations'
+
 import Image from 'next/image'
+import { Button } from '@/components/ui-kit-v2/Button'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const hover =
   'hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer'
@@ -80,7 +83,7 @@ export const Footer = () => {
               {pages.map((link) => (
                 <li
                   key={link.children}
-                  className="inline internal-link-footer text-xs text-grey-3"
+                  className="inline internal-link-footer text-xs text-gray-700"
                 >
                   <Link
                     {...link}
@@ -91,10 +94,29 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
+              <li className="inline internal-link-footer text-xs text-gray-700">
+                <ExternalLink
+                  href="https://github.com/suitenumerique/"
+                  className={`border-grey-1 ${hover} gap-1 external-link-grey`}
+                  aria-label="GitHub LaSuite - Nouvelle fenêtre"
+                >
+                  <GitHubIcon
+                    className="text-[14px] mr-1"
+                    aria-hidden="true"
+                    style={{
+                      marginTop: '-3px',
+                      fontSize: '14px',
+                      lineHeight: '1.2',
+                      verticalAlign: 'middle',
+                    }}
+                  />
+                  <span>Code source</span>
+                </ExternalLink>
+              </li>
             </ul>
           </div>
           <div className="mt-2">
-            <p className="inline text-xs text-grey-3 leading-5">
+            <p className="inline text-xs text-gray-700 leading-5">
               {t('footer.license', {
                 license: (
                   <ExternalLink

@@ -54,7 +54,7 @@ export const FooterLaSuite = ({ content }: { content: any }) => {
 
   return (
     <ContentSection background="gray">
-      <div className="text-center mx-auto py-10">
+      <div className="text-center mx-auto py-10 relative">
         <FadeInSection delay={200}>
           <div className="mx-auto px-10 max-w-[300px] md:w-80">
             <Image

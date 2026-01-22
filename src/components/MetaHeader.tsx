@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { URL_SITE } from '@/constant'
 import { useTranslations } from '@/locales/useTranslations'
 
-const DEFAULT_META_IMAGE_URL = `https://${URL_SITE}/lasuite.webp`
+const DEFAULT_META_IMAGE_URL = `https://${URL_SITE}/lasuite.png`
 
 export type MetaHeaderProps = {
   imageUrl?: string

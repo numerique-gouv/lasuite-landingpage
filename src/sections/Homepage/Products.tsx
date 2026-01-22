@@ -24,7 +24,7 @@ export const Products = ({ content }: { content: any }) => {
         <Paragraph title={content.title} description={content.description} />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="md:row-span-2">
+          <div className="lg:row-span-1">
             <ProductCard
               name={DINUM_PRODUCTS_GRID[tchapIndex]}
               content={content[DINUM_PRODUCTS_GRID[tchapIndex]]}
@@ -32,19 +32,20 @@ export const Products = ({ content }: { content: any }) => {
             />
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="grid gap-6 lg:grid-rows-2">
             {rightColumnProducts.map((name) => (
-              <ProductCard
-                key={name}
-                name={name}
-                content={content[name]}
-                locale={locale}
-              />
+              <div className="lg:row-span-1" key={name}>
+                <ProductCard
+                  name={name}
+                  content={content[name]}
+                  locale={locale}
+                />
+              </div>
             ))}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 items-stretch">
           {bottomRowProducts.map((name) => (
             <ProductCard
               key={name}
