@@ -1,0 +1,291 @@
+{
+  "global": {
+    "title": "fichiers",
+    "slug": "fichiers"
+  },
+  "fr": {
+    "header": {
+      "links": [
+        {
+          "title": "Découvrir LaSuite",
+          "url": "/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Se connecter",
+          "url": "https://fichiers.numerique.gouv.fr/",
+          "type": "primary_brand"
+        }
+      ]
+    },
+    "hero": {
+      "title": "Stockez et partagez vos documents, en toute sécurité.",
+      "subtitle": "Fichiers est la solution de stockage et de partage de documents souveraine de l'Etat, pour travailler ensemble en toute confiance: fiable, sécurisée, ouverte et hébergée en France.",
+      "alt_banner": "",
+      "image": {
+        "src": "fichiers/fichiers_hero.png",
+        "alt": ""
+      },
+      "links": [
+        {
+          "title": "Se connecter",
+          "url": "https://fichiers.numerique.gouv.fr/",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Essayer maintenant",
+          "url": "https://fichiers.numerique.gouv.fr/explorer/items/8a3a266c-17f1-4535-b162-d98daa7e4259",
+          "type": "tertiary_brand_bordered"
+        }
+      ],
+      "social_proof": {
+        "title": "<strong>Quinze ministères</strong> et de nombreuses administrations utilisent déjà Fichiers",
+        "items": [
+          {
+            "title": "Ministère de l'Éducation nationale et de la jeunesse",
+            "src": "logo/education-nationale.svg"
+          },
+          {
+            "title": "Direction Générale des Finances Publiques",
+            "src": "logo/dgfp.svg"
+          },
+          {
+            "title": "Ministère de l'Agriculture et de la souveraineté alimentaire",
+            "src": "logo/ministere-agriculture.svg"
+          },
+          {
+            "title": "Ministère de l'Intérieur",
+            "src": "logo/ministere-interieur.svg"
+          },
+          {
+            "title": "Gendarmerie nationale",
+            "src": "logo/gendarmerienationale.svg"
+          },
+          { "title": "Inrae", "src": "logo/inrae.svg" }
+        ]
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités principales",
+      "_cta": { "title": "Regarder le film", "url": "#" },
+      "items": [
+        {
+          "type": "full",
+          "title": "Stockez vos fichiers et dossiers.",
+          "description": "Stockez et téléchargez des fichiers de tout type dans la limite de 2 Go par fichier.",
+          "image": {
+            "src": "fichiers/stockage.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Travaillez à plusieurs sur un document.",
+          "description": "Editez seul ou à plusieurs en temps réel vos documents de note, tableur, présentation via OnlyOffice",
+          "image": {
+            "src": "fichiers/collab.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Partagez vos fichiers en toute simplicité.",
+          "description": "Choisissez précisément qui voit, commente, édite — et utilisez les liens de partage.",
+          "image": {
+            "src": "fichiers/share.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Recherchez en un instant.",
+          "description": "Retrouvez vos documents en quelques secondes grâce à la recherche par titre, type, espace ou emplacement.",
+          "image": {
+            "src": "fichiers/search.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Prévisualisez en un coup d’œil.",
+          "description": "Consultez vos fichiers instantanément, sans les télécharger, avec toutes les informations clés à portée de main.",
+          "image": {
+            "src": "fichiers/preview.png",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    "_testimonials": [
+      {
+        "quote": "Merci de proposer la transcription dans un outil souverain 🙏",
+        "author": "Dimitri Szabo",
+        "role": "Chef de projet à l'INRAE",
+        "avatar": {
+          "src": "visio/testimonials/dimitri.jpeg",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "Outil performant et sans bug : Parfait !",
+        "author": "Moussa Souare",
+        "role": "Manager de centres commerciaux à l'ANCT",
+        "avatar": {
+          "src": "visio/testimonials/moussa_souare.jpeg",
+          "alt": ""
+        }
+      },
+      {
+        "quote": "Outil vraiment super, merci beaucoup pour ce développement !",
+        "author": "Jean-Baptiste Perrin-Terrin",
+        "role": "Doctorant à CentraleSupélec",
+        "avatar": {
+          "src": "visio/testimonials/jeanbaptiste.jpeg",
+          "alt": ""
+        }
+      }
+    ],
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant Fichiers.",
+      "questions": [
+        {
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Fichiers vous offre tous les avantages d’une solution de stockage et partage de documents, la souveraineté et la sécurité des données en plus ! Notre but est de vous proposer un outil simple, accessible et à un niveau de performance élevé. Pas de superflu, juste l’essentiel.</br></br>Fichiers a bénéficié d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM."
+        },
+        {
+          "q": "Puis-je verrouiller un fichier ?",
+          "a": "Non. Sauf si vous retirez les droits d'édition aux utilisateurs en question. Si un utilisateur a des droits d'édition, il peut modifier le document."
+        },
+        {
+          "q": "Qui a accès à Fichiers ?",
+          "a": "Tous les agents publics peuvent utiliser Fichiers gratuitement avec leur compte professionnel, stocker et partager des fichiers. Si un fichier est ouvert aux externes, toute personne disposant du lien peut le consulter."
+        },
+        {
+          "q": "Avec qui peut-on utiliser Fichiers ?",
+          "a": "Fichiers fonctionne entre agents de l’État, mais vous pouvez aussi collaborer avec des prestataires externes si vous leur avez explicitement donné accès. Pour un lien de partage, vous pouvez choisir entre un accès public, un accès réservé aux utilisateurs authentifiés (agents et personnes utilisant ProConnect), ou un accès privé limité aux personnes désignées."
+        },
+        {
+          "q": "Puis-je partager un fichier avec des personnes externes ?",
+          "a": "Oui. Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour partager des fichiers avec des utilisateurs non authentifiés."
+        }
+      ],
+      "links": [
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "https://tchap.gouv.fr/#/room/#fichiers:agent.dinum.tchap.gouv.fr",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Principaux avantages",
+      "content": "Conçu pour être simple, performant et souverain",
+      "items": [
+        {
+          "icone": "upload_file",
+          "title": "Fonctions essentielles",
+          "description": "Fichiers propose tout ce que vous attendez d’une solution de cloud moderne : stockage, partage, coédition de documents."
+        },
+        {
+          "icone": "public",
+          "title": "Ouvert à tous les agents",
+          "description": "Accédez à toutes les applications de LaSuite à travers ProConnect."
+        },
+        {
+          "icone": "workspace",
+          "title": "Commun numérique",
+          "description": "Code ouvert et auditable, sans verrou fournisseur. Réutilisable et co-construit selon les besoins du service public."
+        },
+        {
+          "icone": "espace_lock",
+          "title": "Hébergé en France",
+          "description": "Données stockées sur hébergement SecNumCloud et traitées en France : résidence et juridiction claires. Gouvernance vérifiable et sous votre contrôle."
+        },
+        {
+          "icone": "shield_person",
+          "title": "Sécurisé",
+          "description": "Homologué conforme au RGS. Chiffrement en transit, contrôles d'accès stricts, journaux d'audit détaillés. Conforme RGPD. Fonctions d'lA activables et configurables selon vos politiques."
+        },
+        {
+          "icone": "published",
+          "title": "Durable et réversible",
+          "description": "Formats ouverts. Export en un clic. Sauvegardes et scénarios de migration pour garantir la continuité dans le temps."
+        },
+        {
+          "icone": "person",
+          "title": "Accessible",
+          "description": "Conçu en tenant compte de l’accessibilité pour le plus grand nombre."
+        }
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
+      "items": [
+        {
+          "src": "fichiers/roadmap/find.png",
+          "alt": "Une recherche qui comprend vos contenus"
+        },
+        {
+          "src": "fichiers/roadmap/interopdocsvisio.png",
+          "alt": "Stockage centralisé des Docs et des enregistrements Visio"
+        },
+        {
+          "src": "docs/roadmap/more.png",
+          "alt": "Plus de fonctionnalités secrètes"
+        }
+      ],
+      "link": {
+        "title": "Voir la feuille de route publique",
+        "url": "https://docs.numerique.gouv.fr/docs/389a879e-5929-4e72-bbf9-9e9fe9e234a5/"
+      }
+    },
+    "cta": {
+      "description": "Stockez, partagez et organisez ensemble votre espace de travail.",
+      "button": {
+        "title_desktop": "Commencer à collaborer sur Fichiers maintenant",
+        "title_mobile": "Commencer à collaborer sur Fichiers",
+        "path": "https://fichiers.numerique.gouv.fr/"
+      },
+      "image": {
+        "src": "fichiers/cta.png",
+        "alt": ""
+      }
+    },
+    "decisions": {
+      "title": "Proposez Fichiers à vos équipes",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Fichiers.</br></br>LaSuite réunit des outils cohérents, hébergés en France, avec un haut niveau de sécurité (SecNumCloud) et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Fichiers vise à s’intégrer de manière fluide avec Visio, Docs, Tchap et vos systèmes d’information existants.</br></br>Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "url": "https://app.calendso.incubateur.net/team/dinum/lasuite?duration=45"
+      },
+      "image": {
+        "src": "docs/lasuite.png",
+        "alt": ""
+      }
+    },
+    "footer": {
+      "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
+      "links": [
+        {
+          "title": "Essayer maintenant",
+          "url": "https://fichiers.numerique.gouv.fr/explorer/items/8a3a266c-17f1-4535-b162-d98daa7e4259",
+          "type": "primary_brand"
+        },
+        {
+          "title": "S'inscrire à un webinaire",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    }
+  }
+}

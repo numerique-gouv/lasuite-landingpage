@@ -115,7 +115,7 @@ export const LASUITE_PRODUCTS: Record<
     // screenshotEn: FichiersScreenshotEn,
     // screenshotMobileEn: FichiersScreenshotMobileEn,
     name: 'Fichiers',
-    url: 'https://fichiers.numerique.gouv.fr/',
+    url: '/produits/fichiers',
     description:
       'Centralisez vos fichiers, partagez-les avec les bonnes personnes et gardez une organisation efficace.',
   },
