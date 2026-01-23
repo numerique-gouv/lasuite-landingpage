@@ -18,9 +18,9 @@ export const NewProducts = ({ content }: { content: any }) => {
     <ContentSection>
       <div className="gap-0">
         <Paragraph title={content.title} description={content.description} />
-        <div className="grid lg:grid-cols-2 gap-8 md:mb-14">
+        <div className="grid lg:grid-cols-2 gap-8 md:mb-14 flex items-stretch">
           {DINUM_PRODUCTS_GRID.map((name) => (
-            <div key={name}>
+            <div key={name} className="flex-1 self-stretch">
               <ProductCard
                 name={name}
                 background="gray"

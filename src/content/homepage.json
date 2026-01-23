@@ -145,7 +145,7 @@
       {
         "quote": "Bravo à la DINUM pour son outil Visio… C’est simple, convivial, rapide, avec une excellente qualité audio. L’interface de partage est un bijou d’IHM.",
         "author": "Marc Shapiro",
-        "role": "Directeur de recherche (émérite) à l'Inria et Sorbonne-Université",
+        "role": "Directeur de recherche (émérite)</br>à l'Inria et Sorbonne-Université",
         "avatar": {
           "src": "home/testimonials/marc_shapiro.jpg",
           "alt": ""
@@ -205,7 +205,7 @@
         {
           "icon": "assets/icons/gauge.svg",
           "title": "Coûts maîtrisés",
-          "description": "En s'affranchissant des licences de solutions privées, LaSuite permet de reprendre le contrôle sur les coûts des produits."
+          "description": "En favorisant la mutualisation et la transparence, LaSuite contribue à un pilotage plus fin et prévisible des coûts des produits numériques."
         },
         {
           "icon": "assets/icons/arrow-squarepath.svg",

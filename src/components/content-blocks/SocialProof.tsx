@@ -16,14 +16,14 @@ export const SocialProof: React.FC<{ socialProof: SocialProofProps }> = ({
   const { title, items = [] } = socialProof || {}
   if (!items || items.length === 0) return null
   return (
-    <div className="flex flex-col justify-between xl:flex-row gap-2 mt-6 py-8 pb-4 md:pb-8">
+    <div className="flex flex-col justify-between lg:flex-row gap-2 mt-6 py-8 pb-4 md:pb-8">
       {title && (
-        <div className="px-6 max-w-[600px] text-sm lg:max-w-[300px] text-gray-600">
+        <div className="px-6 max-w-[300px] text-sm text-gray-600">
           <Raw>{title}</Raw>
         </div>
       )}
       <div
-        className="flex items-center mt-8 lg:mt-0 gap-[25px] md:gap-16 overflow-x-auto scroll-smooth scrollbar-hide lg:snap-x lg:snap-mandatory lg:flex-wrap lg:overflow-visible lg:snap-none px-6 pb-4 md:pb-0"
+        className="flex flex-row items-center mt-8 lg:mt-0 gap-[25px] md:gap-16 overflow-x-auto scroll-smooth scrollbar-hide md:snap-x md:snap-mandatory lg:snap-none px-6 pb-4 md:pb-0"
         style={{ WebkitOverflowScrolling: 'touch' as any }}
       >
         {items.map((item, idx) => (

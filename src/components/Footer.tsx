@@ -2,6 +2,10 @@ import Link from 'next/link'
 import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 import { useTranslations } from '@/locales/useTranslations'
 
+import Image from 'next/image'
+import { Button } from '@/components/ui-kit-v2/Button'
+import GitHubIcon from '@mui/icons-material/GitHub'
+
 const hover =
   'hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer'
 
@@ -22,7 +26,7 @@ export const Footer = () => {
   const t = useTranslations()
   return (
     <footer className="py-8 mt-auto bg-white border-t border-gray-025">
-      <div className="fr-container">
+      <div className="fr-container max-w-container">
         <div className="flex flex-wrap justify-between mb-6">
           <Link
             className="w-fit flex no-wrap items-center gap-2 xs:gap-6 hover:bg-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] overflow-hidden"
@@ -42,14 +46,28 @@ export const Footer = () => {
             </p>
           </Link>
           <div className="basis-full md:basis-2/4 max-w-2xl">
-            <ul className="flex flex-wrap align-middle mt-2">
+            <div className="mt-2 md:mt-0 flex justify-end">
+              <ExternalLink
+                href="https://numerique.gouv.fr"
+                aria-label="numerique.gouv.fr - Nouvelle fenêtre"
+              >
+                <Image
+                  src="/numeriquegouv.png"
+                  alt="numerique.gouv.fr - L'alliance du numérique de l'État"
+                  width={130}
+                  height={130}
+                  className="w-auto h-auto"
+                />
+              </ExternalLink>
+            </div>
+            <ul className="flex flex-wrap justify-end mt-2">
               {externalLinks.map((link) => (
                 <li
                   key={link.children}
-                  className={`mr-6 my-2 decoration-grey-5 ${hover}`}
+                  className={`mr-6 my-2 decoration-gray-800 ${hover}`}
                 >
                   <ExternalLink
-                    className="font-bold text-sm text-grey-5 external-link-grey"
+                    className="font-bold text-sm text-gray-800 external-link-grey"
                     {...link}
                   >
                     {link.children}
@@ -65,7 +83,7 @@ export const Footer = () => {
               {pages.map((link) => (
                 <li
                   key={link.children}
-                  className="inline internal-link-footer text-xs text-grey-3"
+                  className="inline internal-link-footer text-xs text-gray-700"
                 >
                   <Link
                     {...link}
@@ -76,10 +94,29 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
+              <li className="inline internal-link-footer text-xs text-gray-700">
+                <ExternalLink
+                  href="https://github.com/suitenumerique/"
+                  className={`border-grey-1 ${hover} gap-1 external-link-grey`}
+                  aria-label="GitHub LaSuite - Nouvelle fenêtre"
+                >
+                  <GitHubIcon
+                    className="text-[14px] mr-1"
+                    aria-hidden="true"
+                    style={{
+                      marginTop: '-3px',
+                      fontSize: '14px',
+                      lineHeight: '1.2',
+                      verticalAlign: 'middle',
+                    }}
+                  />
+                  <span>Code source</span>
+                </ExternalLink>
+              </li>
             </ul>
           </div>
           <div className="mt-2">
-            <p className="inline text-xs text-grey-3 leading-5">
+            <p className="inline text-xs text-gray-700 leading-5">
               {t('footer.license', {
                 license: (
                   <ExternalLink

@@ -35,7 +35,7 @@ export const PlatformInformations = ({ content }: { content: any }) => {
             )}
           </div>
           {content.items && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               {content.items.map((item: any) => (
                 <div
                   key={item.title}

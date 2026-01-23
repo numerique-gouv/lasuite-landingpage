@@ -33,7 +33,7 @@ export const ProductCard = ({
 
   return (
     <div
-      className="rounded-lg border"
+      className="h-full rounded-lg border"
       style={{
         borderRadius: '8px',
         border: '1px solid #DFE2EA',
@@ -41,7 +41,7 @@ export const ProductCard = ({
         boxShadow: '0 8px 20px 0 rgba(0, 0, 0, 0.03)',
       }}
     >
-      <div className="grid md:grid-cols-2 h-full">
+      <div className="grid md:grid-cols-2">
         <div className="p-6 md:p-8 md:pr-0">
           {/* Logo */}
           <div>

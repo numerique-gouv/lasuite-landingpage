@@ -13,8 +13,8 @@ common:
   view_more: Voir plus
   view_less: Voir moins
 head:
-  homepage_og_title: Utilisez LaSuite dès aujourd’hui !
-  meta_desc: Créez. Organisez. Collaborez. Un environnement open source, conçu pour le secteur public.
+  homepage_og_title: LaSuite - L'espace de travail ouvert et souverain des agents de l'État
+  meta_desc: Une suite cohérente d'outils open source, sécurisés et simples d'utilisation, conçus pour aider les agents publics à créer, organiser, décider et collaborer en toute confiance.
 header:
   tagline: Des communs numériques pour un État simple, efficace et souverain
   locale_switcher_alt: Changer de langue
