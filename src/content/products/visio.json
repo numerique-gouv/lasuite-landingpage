@@ -68,7 +68,7 @@
         {
           "type": "full",
           "title": "Laissez Visio transcrire vos échanges.",
-          "description": "À la fin de chaque réunion, Visio génère une transcription complète de vos échanges. <br />Les interventions sont identifiées clairement, ce qui vous permet de retrouver facilement les points importants et de relire le déroulé de la discussion.<br />Vous gardez la trace de ce qui compte, sans sortir le stylo.",
+          "description": "Si vous le souhaitez, Visio peut générer une transcription complète de vos échanges. <br />Les interventions sont identifiées clairement, ce qui vous permet de retrouver facilement les points importants et de relire le déroulé de la discussion.<br />Vous gardez la trace de ce qui compte, sans sortir le stylo.",
           "image": {
             "src": "visio/transcription.png",
             "alt": ""
@@ -236,7 +236,7 @@
         },
         {
           "src": "docs/roadmap/more.png",
-          "alt": "Plus de fonctionnalités secrètes"
+          "alt": "Et bien plus encore"
         }
       ],
       "link": {
