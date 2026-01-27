@@ -20,7 +20,7 @@
     },
     "hero": {
       "title": "Stockez et partagez vos documents, en toute sécurité.",
-      "subtitle": "Fichiers est la solution de stockage et de partage de documents souveraine de l'Etat, pour travailler ensemble en toute confiance: fiable, sécurisée, ouverte et hébergée en France.",
+      "subtitle": "Fichiers est la solution de stockage et de partage de documents souveraine de l'État, pour travailler ensemble en toute confiance: fiable, sécurisée, ouverte et hébergée en France.",
       "alt_banner": "",
       "image": {
         "src": "fichiers/fichiers_hero.png",
@@ -150,24 +150,24 @@
       "content": "Voici une liste des questions les plus fréquemment posées concernant Fichiers.",
       "questions": [
         {
-          "q": "Quel niveau de sécurité puis-je attendre ?",
-          "a": "Fichiers vous offre tous les avantages d’une solution de stockage et partage de documents, la souveraineté et la sécurité des données en plus ! Notre but est de vous proposer un outil simple, accessible et à un niveau de performance élevé. Pas de superflu, juste l’essentiel.</br></br>Fichiers a bénéficié d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM."
+          "q": "Ce nouvel outil va-t-il durer dans le temps ?",
+          "a": "Fichiers est opéré par la DINUM à partir de briques open-source et constitue un élément central de la feuille de route numérique de l’État en matière de souveraineté. Au-delà de cette dimension stratégique, sa résilience et sa pérennité tiennent à son indépendance vis-à-vis de contrats externes, à la contribution de plusieurs administrations, ainsi qu’à son usage interministériel, que ce soit sur l’instance de la DINUM ou sur des instances dédiées."
         },
         {
-          "q": "Puis-je verrouiller un fichier ?",
-          "a": "Non. Sauf si vous retirez les droits d'édition aux utilisateurs en question. Si un utilisateur a des droits d'édition, il peut modifier le document."
+          "q": "Quel niveau de sécurité puis-je attendre ?",
+          "a": "Fichiers a bénéficié d'une homologation de sécurité approfondie par le RSSI de la DINUM&nbsp;: bug bounty, audits externes de l'infrastructure et du code, revues régulières. Il est exploité selon les exigences de sécurité de l'État. Tous les fichiers sont hébergés en France (zone SecNumCloud). Fichiers n'est pas adapté pour le contenu classé ''Diffusion Restreinte''."
         },
         {
           "q": "Qui a accès à Fichiers ?",
           "a": "Tous les agents publics peuvent utiliser Fichiers gratuitement avec leur compte professionnel, stocker et partager des fichiers. Si un fichier est ouvert aux externes, toute personne disposant du lien peut le consulter."
         },
         {
-          "q": "Avec qui peut-on utiliser Fichiers ?",
-          "a": "Fichiers fonctionne entre agents de l’État, mais vous pouvez aussi collaborer avec des prestataires externes si vous leur avez explicitement donné accès. Pour un lien de partage, vous pouvez choisir entre un accès public, un accès réservé aux utilisateurs authentifiés (agents et personnes utilisant ProConnect), ou un accès privé limité aux personnes désignées."
+          "q": "Puis-je partager des dossiers avec des personnes externes?",
+          "a": "Oui. Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour collaborer avec des utilisateurs non authentifiés."
         },
         {
-          "q": "Puis-je partager un fichier avec des personnes externes ?",
-          "a": "Oui. Pour un accès restreint, seules les personnes pouvant utiliser ProConnect peuvent collaborer avec vous. Vous pouvez aussi utiliser la fonction de partage de lien pour partager des fichiers avec des utilisateurs non authentifiés."
+          "q": "Puis-je synchroniser Fichiers avec mon ordinateur ?",
+          "a": "Fichiers fonctionne exclusivement via le navigateur web, sans synchronisation locale. Ce choix nous permet de vous garantir une expérience uniforme quel que soit votre système d'exploitation (Windows, macOS, Linux), de renforcer la sécurité de vos données grâce à des contrôles d'accès centralisés, et d'assurer une intégration fluide avec les autres produits de LaSuite. Vos fichiers restent accessibles depuis n'importe quel navigateur, sur n'importe quel appareil, sans installation ni configuration."
         }
       ],
       "links": [
