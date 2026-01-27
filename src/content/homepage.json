@@ -230,7 +230,7 @@
     },
     "proconnect": {
       "title": "Plusieurs outils, un seul accès",
-      "description": "Avec ProConnect, les agents de l'État bénficient d'une authentification unique pour accéder à chacun des produits de LaSuite",
+      "description": "Avec ProConnect, les agents de l'État bénéficient d'une authentification unique pour accéder à chacun des produits de LaSuite",
       "items": [
         {
           "icon": "assets/icons/identity.svg",
@@ -312,7 +312,7 @@
         },
         {
           "q": "Quel niveau de sécurité puis-je attendre ?",
-          "a": "Les produits Docs et Visio sont sur un hébergement SecNumCloud et peuvent donc être utilisés pour des données sensibles telles que défini dans l'article 31 de la loi SREN, ils ont bénéficiés d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Ils ne sont pas adapté pour le contenu classé \"Diffusion Restreinte\" et ces services n'étant pas certifiés HDS pour l'instant, nous ne pouvons pas traiter de données de santé."
+          "a": "Les produits Docs et Visio sont sur un hébergement SecNumCloud et peuvent donc être utilisés pour des données sensibles telles que défini dans l'article 31 de la loi SREN, ils ont bénéficié d'une homologation de sécurité approfondie (bug bounty, audits externes de l'infrastructure et du code, etc.) par le RSSI de la DINUM. Ils ne sont pas adapté pour le contenu classé \"Diffusion Restreinte\" et ces services n'étant pas certifiés HDS pour l'instant, nous ne pouvons pas traiter de données de santé."
         }
       ],
       "links": [
