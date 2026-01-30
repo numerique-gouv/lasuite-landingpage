@@ -13,7 +13,7 @@
         },
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "url": "https://docs.numerique.gouv.fr/docs/new/?title=Mon+Premier+Doc",
           "type": "tertiary_brand"
         },
         {
@@ -39,7 +39,7 @@
         },
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "url": "https://docs.numerique.gouv.fr/docs/new/?title=Mon+Premier+Doc",
           "type": "tertiary_brand_bordered"
         }
       ],
@@ -313,7 +313,7 @@
       "links": [
         {
           "title": "Essayer maintenant",
-          "url": "https://docs.numerique.gouv.fr/docs/7e04b20c-667b-4db4-b906-85adc41bd422/",
+          "url": "https://docs.numerique.gouv.fr/docs/new/?title=Mon+Premier+Doc",
           "type": "primary_brand"
         },
         {
