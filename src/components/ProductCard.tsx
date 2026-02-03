@@ -24,7 +24,7 @@ export const ProductCard = ({
     background === 'gray'
       ? {
           background:
-            'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), var(--Background-Surface-Tertiary, #F6F8F9)',
+            'radial-gradient(1576.36% 132.88% at 63.77% -0.29%, rgba(62, 93, 231, 0.04) 0%, rgba(62, 93, 231, 0.00) 100%), #F6F8F9',
         }
       : {
           background:
@@ -73,11 +73,7 @@ export const ProductCard = ({
             <Button
               href={product?.url}
               target="_blank"
-              variant={
-                product?.name === 'Visio'
-                  ? 'primary_brand'
-                  : 'tertiary_bordered'
-              }
+              variant="tertiary_bordered"
               aria-label={`${content?.button} - ${t('common.new_window')}`}
             >
               {content?.button}
