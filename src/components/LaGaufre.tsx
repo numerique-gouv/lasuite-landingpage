@@ -97,9 +97,9 @@ export const LaGaufre = () => {
                 position: () => {
                   return {
                     backgroundColor: '#fff',
-                    position: 'fixed',
+                    position: 'absolute',
                     top: 80,
-                    right: 20,
+                    right: 40,
                   }
                 },
               },

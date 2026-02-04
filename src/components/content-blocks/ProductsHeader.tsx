@@ -17,7 +17,7 @@ const ProductsHeader: React.FC<{
   const logoProduct = productLogos[slug]
 
   return (
-    <header className="fade-in bg-white px-4 absolute top-0 right-0 left-0 z-50 pr-6">
+    <header className="max-w-container w-[100%] mx-auto fade-in bg-white md:px-3 xl:px-0 absolute top-0 right-0 left-0 z-50 pr-6">
       <div className="flex items-center">
         <div className="relative sm:mx-0 sm:flex py-4 items-center fr-enlarge-link">
           <Image
