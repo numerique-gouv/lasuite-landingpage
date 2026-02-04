@@ -29,7 +29,7 @@ export const NavBar = ({
   const t = useTranslations()
 
   return (
-    <header className="fade-in px-4 relative top-0 right-0 left-0 z-50">
+    <header className="lg:w-[70em] px-4 max-w-container w-[100%] mx-auto fade-in px-4 relative top-0 right-0 left-0 z-50">
       <div className="flex items-center">
         <div className="flex items-center gap-4 sm:hidden">
           {/*          <button

@@ -15,9 +15,9 @@ export const Hero = ({ content }: { content: any }) => {
     'https://tube.numerique.gouv.fr/w/gzwjk8H5Pm4MqrcUo5eMPG?start=12s'
 
   return (
-    <ContentSection padding={false}>
+    <div className="w-[100%] lg:max-w-[70em] px-4 max-w-container mx-auto overflow-hidden md:overflow-visible">
       <div className="lg:grid lg:grid-cols-5 lg:justify-between pt-6">
-        <div className="text-left md:col-span-3 relative md:mt-6 px-6 z-10">
+        <div className="text-left md:col-span-3 relative md:mt-6 z-10">
           <Image
             src={HeroHome}
             height={100}
@@ -106,6 +106,6 @@ export const Hero = ({ content }: { content: any }) => {
       <div className="w-full">
         <SocialProof socialProof={content.social_proof} />
       </div>
-    </ContentSection>
+    </div>
   )
 }
