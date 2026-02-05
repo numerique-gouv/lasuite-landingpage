@@ -95,11 +95,16 @@ export const LaGaufre = () => {
                 viewMoreLabel: t('common.view_more'),
                 viewLessLabel: t('common.view_less'),
                 position: () => {
+                  const button = document.getElementById('gaufre_button')
+                  if (!button) return { position: 'absolute', top: 0, left: 0 }
+
+                  const rect = button.getBoundingClientRect()
+
                   return {
-                    backgroundColor: '#fff',
                     position: 'absolute',
-                    top: 80,
-                    right: 40,
+                    top: rect.bottom + window.scrollY + 8, // 8px sous le bouton
+                    right: window.innerWidth - rect.right - window.scrollX,
+                    backgroundColor: '#fff',
                   }
                 },
               },
