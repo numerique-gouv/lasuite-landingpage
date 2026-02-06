@@ -13,7 +13,7 @@
         },
         {
           "title": "Se connecter",
-          "url": "https://fichiers.numerique.gouv.fr/",
+          "url": "https://fichiers.numerique.gouv.fr/api/v1.0/authenticate/",
           "type": "primary_brand"
         }
       ]
@@ -29,7 +29,7 @@
       "links": [
         {
           "title": "Se connecter",
-          "url": "https://fichiers.numerique.gouv.fr/",
+          "url": "https://fichiers.numerique.gouv.fr/api/v1.0/authenticate/",
           "type": "primary_brand"
         },
         {
@@ -253,7 +253,7 @@
       "button": {
         "title_desktop": "Commencer à collaborer sur Fichiers maintenant",
         "title_mobile": "Commencer à collaborer sur Fichiers",
-        "path": "https://fichiers.numerique.gouv.fr/"
+        "path": "https://fichiers.numerique.gouv.fr/api/v1.0/authenticate/"
       },
       "image": {
         "src": "fichiers/cta.png",
