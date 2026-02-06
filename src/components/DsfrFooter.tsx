@@ -45,10 +45,10 @@ export const DsfrFooter = () => {
                   className="fr-footer__content-link"
                   target="_blank"
                   rel="noopener external"
-                  title={`service-public.fr - ${newWindow}`}
-                  href="https://service-public.fr"
+                  title={`service-public.gouv.fr - ${newWindow}`}
+                  href="https://www.service-public.gouv.fr/"
                 >
-                  service-public.fr
+                  service-public.gouv.fr
                 </a>
               </li>
               <li className="fr-footer__content-item">
