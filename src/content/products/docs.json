@@ -259,20 +259,20 @@
       "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
       "items": [
         {
-          "src": "docs/roadmap/collab.png",
-          "alt": "Collaboration avec les commentaires"
+          "src": "docs/roadmap/formules.png",
+          "alt": "Formules et diagrammes"
         },
         {
           "src": "docs/roadmap/suivi.png",
           "alt": "Suivi des changements"
         },
         {
-          "src": "docs/roadmap/import.png",
-          "alt": "Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
+          "src": "docs/roadmap/collab.png",
+          "alt": "Collaboration avec les commentaires"
         },
         {
-          "src": "docs/roadmap/export.png",
-          "alt": "Exportation avancé avec des modèles personnalisés"
+          "src": "docs/roadmap/import.png",
+          "alt": "Importation des nouveaux formats : Word, OTF, markdown, et d’autres à venir…"
         },
         {
           "src": "docs/roadmap/more.png",
