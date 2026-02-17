@@ -39,7 +39,7 @@ export const BlockHero: React.FC<{
                 const variant = (link.variant || link.type) as any
                 return (
                   <React.Fragment key={`hero-link-${idx}`}>
-                    <Button href={link.url} variant={variant} target="_blank">
+                    <Button href={link.url} variant={variant}>
                       {link.title}
                     </Button>
                   </React.Fragment>
