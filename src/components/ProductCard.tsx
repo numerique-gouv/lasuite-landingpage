@@ -72,7 +72,11 @@ export const ProductCard = ({
           <div className="mt-auto">
             <Button
               href={product?.url}
-              target="_blank"
+              target={
+                product?.name && ['Visio', 'Fichiers'].includes(product?.name)
+                  ? '_blank'
+                  : undefined
+              }
               variant="tertiary_bordered"
               aria-label={`${content?.button} - ${t('common.new_window')}`}
             >
