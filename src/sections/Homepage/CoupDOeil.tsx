@@ -26,7 +26,7 @@ export const CoupDOeil = ({ content }: { content: any }) => {
               <Image
                 src={item.src}
                 className="md:mb-3 mb-6 max-h-[80px]"
-                alt={item.title}
+                alt=""
                 width={80}
                 height={80}
               />

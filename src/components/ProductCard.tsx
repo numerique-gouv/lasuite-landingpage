@@ -49,16 +49,10 @@ export const ProductCard = ({
               src={product?.logo}
               height="48"
               alt=""
-              aria-hidden="true"
               className="mb-[6px]"
             />
             {logoText && (
-              <Image
-                src={logoText}
-                height="35"
-                alt={product?.name || name}
-                className="mb-[6px]"
-              />
+              <Image src={logoText} height="35" alt="" className="mb-[6px]" />
             )}
           </div>
 

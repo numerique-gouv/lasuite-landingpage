@@ -22,7 +22,7 @@ export const Hero = ({ content }: { content: any }) => {
             src={HeroHome}
             height={100}
             width={1000}
-            alt={TITLE_SITE}
+            alt=""
             className="max-w-[100%] hidden sm:block"
             priority
           />
@@ -30,7 +30,7 @@ export const Hero = ({ content }: { content: any }) => {
             src={HeroHomeMobile}
             height={100}
             width={1000}
-            alt={TITLE_SITE}
+            alt=""
             className="max-w-[100%] sm:hidden"
             priority
           />
@@ -84,7 +84,7 @@ export const Hero = ({ content }: { content: any }) => {
                   src={MiniatureVideo}
                   width="382"
                   height="215"
-                  alt="Keynote La Suite Vidéo"
+                  alt=""
                   priority
                 />
               </div>

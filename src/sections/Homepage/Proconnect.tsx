@@ -20,7 +20,7 @@ export const ProConnect = ({ content }: { content: any }) => {
           <Image
             className="mx-auto pb-8 md:pb-10"
             src={ProConnectLogo}
-            alt="LaSuite"
+            alt=""
             width="100"
             height="100"
           />
@@ -37,7 +37,7 @@ export const ProConnect = ({ content }: { content: any }) => {
                   <Image
                     className="relative mx-auto mb-6"
                     src={item.icon}
-                    alt={item.title}
+                    alt=""
                     width={80}
                     height={80}
                   />

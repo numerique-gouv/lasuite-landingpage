@@ -25,7 +25,7 @@ export const LocaleSwitcher = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <Menu.Button className="flex border-none items-center bg-white border rounded-md px-4 py-2 font-medium text-brand-550 bg-transparent hover:bg-[#f2f5f4] active:bg-[#f2f5f4]">
-        <img src={LogoI18n.src} alt="Language" className="w-5 h-5 mr-2" />
+        <img src={LogoI18n.src} alt="" className="w-5 h-5 mr-2" />
         {labels[locale ?? 'en']}
         <ArrowDropDownIcon className="w-5 h-5 ml-2 text-brand-550 transition-transform focus:rotate-180" />
       </Menu.Button>

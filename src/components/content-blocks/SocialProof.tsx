@@ -30,7 +30,7 @@ export const SocialProof: React.FC<{ socialProof: SocialProofProps }> = ({
           <div key={`social-proof-${idx}`} className="snap-start shrink-0">
             <Image
               src={`/assets/${item.src}`}
-              alt={item.title}
+              alt=""
               height={item.height || 32}
               width={item.width || 80}
             />
