@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import { useTranslations } from '@/locales/useTranslations'
+import { useLiveAnnouncer } from '@/hooks/useLiveAnnouncer'
 
 export type TestimonialType = {
   quote?: string
@@ -13,8 +15,12 @@ export type TestimonialType = {
 export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
   testimonials,
 }) => {
+  const t = useTranslations({ useFallback: true })
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const carouselId = useId()
+  const { announcement, announce, liveRegionProps } = useLiveAnnouncer()
+  const total = testimonials?.length ?? 0
 
   // Random uniquement pour l'index initial
   useEffect(() => {
@@ -24,18 +30,39 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
     }
   }, [testimonials?.length])
 
-  if (!testimonials || testimonials.length === 0) return null
-
-  const currentTestimonial = testimonials[currentIndex]
-  const total = testimonials.length
   const isFirst = currentIndex === 0
   const isLast = currentIndex === total - 1
+  const positionLabel = t('common.slide_position', {
+    current: String(currentIndex + 1),
+    total: String(total),
+  })
+
+  if (!testimonials || testimonials.length === 0) return null
+  const currentTestimonial = testimonials[currentIndex]
+  const getSlidePositionLabel = (index: number) =>
+    t('common.slide_position', {
+      current: String(index + 1),
+      total: String(total),
+    })
+  const buildAnnouncement = (index: number) => {
+    const quote = testimonials[index]?.quote?.trim() || ''
+    const position = getSlidePositionLabel(index)
+    return quote ? `${position}. ${quote}` : position
+  }
+  const previousButtonLabel = isFirst
+    ? t('common.previous_slide')
+    : `${t('common.previous_slide')} (${getSlidePositionLabel(currentIndex - 1)})`
+  const nextButtonLabel = isLast
+    ? t('common.next_slide')
+    : `${t('common.next_slide')} (${getSlidePositionLabel(currentIndex + 1)})`
 
   const goToPrevious = () => {
     if (isFirst) return
     setIsAnimating(true)
     setTimeout(() => {
-      setCurrentIndex((prev) => prev - 1)
+      const nextIndex = currentIndex - 1
+      setCurrentIndex(nextIndex)
+      announce(buildAnnouncement(nextIndex))
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
   }
@@ -44,7 +71,9 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
     if (isLast) return
     setIsAnimating(true)
     setTimeout(() => {
-      setCurrentIndex((prev) => prev + 1)
+      const nextIndex = currentIndex + 1
+      setCurrentIndex(nextIndex)
+      announce(buildAnnouncement(nextIndex))
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
   }
@@ -53,7 +82,11 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
     'flex flex-col md:flex-row max-w-container py-12 md:py-[120px] mx-auto px-6 md:px-3 xl:px-0 md:gap-6 transition-all duration-300 ease-in-out'
 
   return (
-    <div>
+    <section
+      role="region"
+      aria-roledescription={t('common.carousel')}
+      aria-label={t('common.testimonials_carousel_label')}
+    >
       <div className={containerClasses}>
         <div className="transition-all duration-300 ease-in-out">
           <svg
@@ -70,10 +103,14 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
               fill="#304DDF"
             />
           </svg>
-          <div className="grid">
+          <div id={carouselId} className="grid" aria-live="polite">
             {testimonials.map((testimonial, idx) => (
               <p
                 key={idx}
+                role="group"
+                aria-roledescription={t('common.slide')}
+                aria-label={getSlidePositionLabel(idx)}
+                aria-hidden={idx !== currentIndex}
                 className={`text-gray-850 font-medium text-xl md:text-3xl max-w-[800px] col-start-1 row-start-1 ${
                   idx === currentIndex
                     ? isAnimating
@@ -93,18 +130,23 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
                   onClick={goToPrevious}
                   disabled={isFirst}
                   className={`transition-colors -mt-1 ${isFirst ? 'text-gray-300' : 'text-brand-550 cursor-pointer'}`}
-                  aria-label="Précédent"
+                  aria-label={previousButtonLabel}
+                  aria-controls={carouselId}
                 >
                   <ArrowBackIcon fontSize="small" aria-hidden="true" />
                 </button>
                 <span className="text-sm text-brand-550 min-w-[3rem] text-center font-medium">
-                  {currentIndex + 1} / {total}
+                  <span className="sr-only">{positionLabel}</span>
+                  <span aria-hidden="true">
+                    {currentIndex + 1} / {total}
+                  </span>
                 </span>
                 <button
                   onClick={goToNext}
                   disabled={isLast}
                   className={`transition-colors -mt-1 ${isLast ? 'text-gray-300' : 'text-brand-550 cursor-pointer'}`}
-                  aria-label="Suivant"
+                  aria-label={nextButtonLabel}
+                  aria-controls={carouselId}
                 >
                   <ArrowForwardIcon fontSize="small" aria-hidden="true" />
                 </button>
@@ -141,7 +183,10 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
           </div>
         </div>
       </div>
-    </div>
+      <div className="sr-only" {...liveRegionProps}>
+        {announcement}
+      </div>
+    </section>
   )
 }
 

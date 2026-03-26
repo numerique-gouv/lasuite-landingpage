@@ -9,6 +9,16 @@ common:
   close: Close
   view_more: See more
   view_less: See less
+  carousel: carousel
+  testimonials_carousel_label: User testimonials
+  slide: slide
+  slide_position: '{current} of {total}'
+  previous_slide: Previous slide
+  next_slide: Next slide
+  testimonial_previous: Previous testimonial
+  testimonial_next: Next testimonial
+  testimonial_position: Testimonial {current} of {total}
+  testimonial_announcement: Showing testimonial {current} of {total}.
 head:
   homepage_og_title: Work with LaSuite
   meta_desc:
