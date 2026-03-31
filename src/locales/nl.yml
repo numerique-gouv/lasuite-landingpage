@@ -8,6 +8,16 @@ common:
   close: Sluiten
   view_more: Meer zien
   view_less: Minder zien
+  carousel: carrousel
+  testimonials_carousel_label: Gebruikerstestimonials
+  slide: dia
+  slide_position: '{current} van {total}'
+  previous_slide: Vorige dia
+  next_slide: Volgende dia
+  testimonial_previous: Vorige testimonial
+  testimonial_next: Volgende testimonial
+  testimonial_position: Testimonial {current} van {total}
+  testimonial_announcement: Weergave van testimonial {current} van {total}.
 head:
   homepage_og_title: Werk met de digitale Suite
   meta_desc: De digitale Suite brengt alle agenten en professionals in de publieke sector samen.

@@ -8,6 +8,16 @@ common:
   close: Schließen
   view_more: Mehr anzeigen
   view_less: Weniger anzeigen
+  carousel: Karussell
+  testimonials_carousel_label: Nutzerstimmen
+  slide: Folie
+  slide_position: '{current} von {total}'
+  previous_slide: Vorherige Folie
+  next_slide: Nächste Folie
+  testimonial_previous: Vorheriges Testimonial
+  testimonial_next: Nächstes Testimonial
+  testimonial_position: Testimonial {current} von {total}
+  testimonial_announcement: Anzeige von Testimonial {current} von {total}.
 head:
   homepage_og_title: Arbeiten mit der digitalen Suite
   meta_desc: Die digitale Suite vereint alle Akteure und Fachkräfte im öffentlichen Bereich.
