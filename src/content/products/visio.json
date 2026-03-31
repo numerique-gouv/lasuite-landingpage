@@ -19,7 +19,7 @@
       ]
     },
     "hero": {
-      "title": "L'outil de visioconférence des agents publics.",
+      "title": "L'outil de visioconférence des agents de l’État.",
       "subtitle": "Visio est la solution de visioconférence souveraine de l’État, pour échanger en toute confiance : fiable, sécurisée, ouverte et hébergée en France.",
       "alt_banner": "",
       "image": {
@@ -147,7 +147,7 @@
       "questions": [
         {
           "q": "Qui a accès à Visio ?",
-          "a": "Tous les agents publics peuvent utiliser Visio gratuitement avec leur compte professionnel et créer des réunions. Si une réunion est ouverte aux externes, toute personne disposant du lien peut la rejoindre (prestataire, partenaire, etc.)."
+          "a": "Tous les agents de la fonction publique d’État peuvent utiliser Visio gratuitement avec leur compte professionnel et créer des réunions. Si une réunion est ouverte aux externes, toute personne disposant du lien peut la rejoindre (prestataire, partenaire, etc.)."
         },
         {
           "q": "Peut-on créer des liens permanents ?",

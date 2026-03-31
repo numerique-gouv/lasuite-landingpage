@@ -159,7 +159,7 @@
         },
         {
           "q": "Qui a accès à Fichiers ?",
-          "a": "Tous les agents publics peuvent utiliser Fichiers gratuitement avec leur compte professionnel, stocker et partager des fichiers. Si un fichier est ouvert aux externes, toute personne disposant du lien peut le consulter."
+          "a": "Tous les agents de la fonction publique d’État peuvent utiliser Fichiers gratuitement avec leur compte professionnel, stocker et partager des fichiers. Si un fichier est ouvert aux externes, toute personne disposant du lien peut le consulter."
         },
         {
           "q": "Puis-je partager des dossiers avec des personnes externes ?",
@@ -196,7 +196,7 @@
         },
         {
           "icone": "public",
-          "title": "Ouvert à tous les agents",
+          "title": "Ouvert à tous les agents de la fonction publique d’État",
           "description": "Accédez à toutes les applications de LaSuite à travers ProConnect."
         },
         {
