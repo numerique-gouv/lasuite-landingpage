@@ -60,7 +60,7 @@ export const FooterLaSuite = ({ content }: { content: any }) => {
             <Image
               className="mx-auto"
               src={SuiteLogo}
-              alt="LaSuite"
+              alt=""
               width="300"
               height="100"
             />

@@ -20,7 +20,7 @@ export const ForTeams = ({ content }: { content: any }) => {
           <Image
             className="mx-auto md:pb-12 pb-8"
             src={LaSuiteShadow}
-            alt="LaSuite"
+            alt=""
             width="100"
             height="100"
           />
