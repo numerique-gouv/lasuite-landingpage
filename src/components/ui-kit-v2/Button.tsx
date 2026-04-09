@@ -15,7 +15,7 @@ type ButtonVariant =
   | 'tertiary_info'
   | 'tertiary_bordered'
   | 'none'
-type ButtonSize = 'large' | 'small'
+type ButtonSize = 'large' | 'medium' | 'small'
 
 interface ButtonProps {
   children?: React.ReactNode
@@ -30,13 +30,13 @@ interface ButtonProps {
   iconPosition?: 'left' | 'right'
   className?: string
   style?: React.CSSProperties
+  onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
 }
 
 const transition = 'transition ease-in-out delay-50 duration-300'
 // core sans padding/hauteur: on applique via variables CSS avec des valeurs par défaut
 const core =
   'flex rounded rounded-1 justify-center items-center text-base w-full md:w-fit text-left gap-[7px] px-4 h-10'
-
 const styles = {
   // base variants (brand by default)
   primary_brand: `${core} ${transition} font-medium text-brand-050 bg-brand-550 hover:bg-brand-650`,
@@ -58,7 +58,8 @@ const styles = {
   none: 'text-blue-1 underline underline-offset-2 hover:no-underline',
 
   large: '!text-xl md:!py-4 md:!px-8',
-  small: 'md:!py-2 md:!px-4 h-8',
+  medium: 'md:!py-2 md:!px-4 h-8',
+  small: 'md:!py-1 h-8 text-xs',
   fullWidth: '!w-full',
 }
 
@@ -74,6 +75,7 @@ export const Button: React.FC<ButtonProps> = ({
   'aria-label': ariaLabel,
   className,
   style,
+  onClick,
 }) => {
   const t = useTranslations()
   const normalizedVariant = (variant as string) || 'primary_brand'
@@ -91,6 +93,7 @@ export const Button: React.FC<ButtonProps> = ({
     {
       [styles.none]: isNone,
       [styles.large]: size === 'large' && !isNone,
+      [styles.medium]: size === 'medium' && !isNone,
       [styles.small]: size === 'small' && !isNone,
       [styles.fullWidth]: fullWidth && !isNone,
     },
@@ -113,7 +116,9 @@ export const Button: React.FC<ButtonProps> = ({
   const content = (
     <>
       {icon && iconPosition === 'left' && (
-        <span aria-hidden="true">{icon}</span>
+        <span className="flex" aria-hidden="true">
+          {icon}
+        </span>
       )}
       <span>{children}</span>
       {icon && iconPosition === 'right' && (
@@ -134,6 +139,7 @@ export const Button: React.FC<ButtonProps> = ({
         className={classes}
         aria-label={finalAriaLabel}
         style={inlineStyle}
+        onClick={onClick}
       >
         {content}
       </LinkComponent>
@@ -141,7 +147,13 @@ export const Button: React.FC<ButtonProps> = ({
   }
 
   return (
-    <button className={classes} aria-label={finalAriaLabel} style={inlineStyle}>
+    <button
+      className={classes}
+      aria-label={finalAriaLabel}
+      style={inlineStyle}
+      onClick={onClick}
+      type="button"
+    >
       {content}
     </button>
   )

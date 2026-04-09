@@ -22,7 +22,7 @@ export const Footer = () => {
               {t('grist-landing.footer.about.description')}
             </p>
             <Button
-              size="small"
+              size="medium"
               href={t('grist-landing.footer.about.cta.href')}
             >
               {t('grist-landing.footer.about.cta.label')}

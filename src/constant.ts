@@ -11,6 +11,9 @@ export const NEWSLETTER_FORM =
 export const WEBINAIRE_URL =
   'https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS'
 
+export const CALCOM_URL =
+  'https://cal.com/team/rdv-lasuite/la-suite-pour-votre-organisation-publique'
+
 const allConstants = {
   CONTACT_EMAIL,
   ADDRESS_DINUM,
@@ -19,6 +22,7 @@ const allConstants = {
   MATOMO_ID,
   NEWSLETTER_FORM,
   WEBINAIRE_URL,
+  CALCOM_URL,
 }
 
 export default allConstants

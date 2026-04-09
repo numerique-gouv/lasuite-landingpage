@@ -17,10 +17,12 @@ import { useTranslations } from '@/locales/useTranslations'
  * We kinda match DSFR styling here but with custom dom/classes for our specific use case.
  */
 export const NavBar = ({
+  isLogoGouv = true,
   logo,
   loginUrl,
   translation,
 }: {
+  isLogoGouv?: boolean
   logo?: React.ReactNode
   loginUrl?: string
   translation?: boolean
@@ -31,25 +33,15 @@ export const NavBar = ({
   return (
     <header className="lg:w-[70em] px-4 max-w-container w-[100%] mx-auto fade-in px-4 relative top-0 right-0 left-0 z-50">
       <div className="flex items-center">
-        <div className="flex items-center gap-4 sm:hidden">
-          {/*          <button
-            className="w-[48px] h-[48px] absolute text-brand-550 top-[9.5px] left-[19px] p-2 rounded-md focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-          >
-            {isOpen ? (
-              <CloseIcon className="text-3xl" aria-hidden="true" />
-            ) : (
-              <MenuIcon className="text-3xl" aria-hidden="true" />
-            )}
-          </button>*/}
-        </div>
+        <div className="flex items-center gap-4 sm:hidden"></div>
         <div className="relative sm:mx-0 sm:flex py-3.5 md:items-center fr-enlarge-link">
-          <Image
-            className="mr-3 w-28 hidden sm:block md:block"
-            src={LogoGouvSvg}
-            alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
-          />
+          {isLogoGouv && (
+            <Image
+              className="mr-3 w-28 hidden sm:block md:block"
+              src={LogoGouvSvg}
+              alt="GOUVERNEMENT - Liberté, Égalité, Fraternité"
+            />
+          )}
           <Link href="/" className="sm:ml-5">
             {logo || (
               <Image
@@ -71,6 +63,16 @@ export const NavBar = ({
           <div className="hidden md:block">
             {/*{translation && <LocaleSwitcher />}*/}
           </div>
+          {isLogoGouv && !loginUrl && (
+            <Button
+              className="hidden md:flex"
+              href="/rendez-vous"
+              variant=""
+              size="medium"
+            >
+              Prendre rendez-vous
+            </Button>
+          )}
           <LaGaufre />
         </div>
       </div>
