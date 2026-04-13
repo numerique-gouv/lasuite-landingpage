@@ -77,7 +77,7 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
           <Button
             href={loginLink.url}
             variant="tertiary_brand"
-            size="small"
+            size="medium"
             icon={<LoginIcon />}
             className="!p-2 !min-w-0"
             target="_blank"
@@ -96,7 +96,7 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
                   target="_blank"
                   href={link.url}
                   variant={variant}
-                  size="small"
+                  size="medium"
                 >
                   {link.title}
                 </Button>

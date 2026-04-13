@@ -265,7 +265,7 @@
       "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Fichiers.</br></br>LaSuite réunit des outils cohérents, hébergés en France, avec un haut niveau de sécurité (SecNumCloud) et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Fichiers vise à s’intégrer de manière fluide avec Visio, Docs, Tchap et vos systèmes d’information existants.</br></br>Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
       "button": {
         "title": "Prendre rendez-vous",
-        "url": "https://cal.com/team/rdv-lasuite/la-suite-pour-votre-organisation-publique"
+        "url": "/rendez-vous"
       },
       "image": {
         "src": "docs/lasuite.png",

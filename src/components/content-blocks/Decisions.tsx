@@ -60,7 +60,6 @@ export const Decisions: React.FC<DecisionsData> = ({
               <Button
                 variant={'secondary_brand'}
                 href={button.url}
-                target="_blank"
                 icon={<CalendarIcon />}
                 iconPosition="left"
               >

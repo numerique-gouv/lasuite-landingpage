@@ -5,6 +5,7 @@ import { productBanners } from '@/assets/products/banners'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { SocialProof } from '@/components/content-blocks/SocialProof'
 import { useTranslations } from '@/locales/useTranslations'
+import { WEBINAIRE_URL } from '@/constant'
 
 export type ProductContent = Record<string, any>
 
@@ -50,7 +51,7 @@ export const BlockHero: React.FC<{
           <span className="text-gray-550">
             <a
               className="text-gray-550 underline underline-offset-2"
-              href="https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
+              href={WEBINAIRE_URL}
               target="_blank"
               aria-label={`Inscrivez-vous au prochain webinaire - ${t('common.new_window')}`}
             >

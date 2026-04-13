@@ -291,7 +291,7 @@
       "description": "Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons ensemble en revue l'architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
       "button": {
         "title": "Prendre rendez-vous",
-        "href": "https://cal.com/team/rdv-lasuite/la-suite-pour-votre-organisation-publique"
+        "href": "/rendez-vous"
       }
     },
     "faq": {
