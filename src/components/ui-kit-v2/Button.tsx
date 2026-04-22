@@ -31,6 +31,7 @@ interface ButtonProps {
   className?: string
   style?: React.CSSProperties
   onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
+  type?: 'button' | 'submit' | 'reset'
 }
 
 const transition = 'transition ease-in-out delay-50 duration-300'
@@ -76,6 +77,7 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   style,
   onClick,
+  type = 'button',
 }) => {
   const t = useTranslations()
   const normalizedVariant = (variant as string) || 'primary_brand'
@@ -152,7 +154,7 @@ export const Button: React.FC<ButtonProps> = ({
       aria-label={finalAriaLabel}
       style={inlineStyle}
       onClick={onClick}
-      type="button"
+      type={type}
     >
       {content}
     </button>
