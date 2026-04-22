@@ -128,7 +128,9 @@ export const Contact = () => {
             errors={errors.message}
           />
           <div className="w-full md:w-fit md:ml-auto md:mx-auto">
-            <Button fullWidth>{t('common.send')}</Button>
+            <Button fullWidth type="submit">
+              {t('common.send')}
+            </Button>
           </div>
         </form>
       ) : (
