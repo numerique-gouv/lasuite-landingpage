@@ -23,7 +23,7 @@ export const SocialProof: React.FC<{ socialProof: SocialProofProps }> = ({
         </div>
       )}
       <div
-        className="flex flex-row items-center mt-8 lg:mt-0 gap-[25px] md:gap-16 overflow-x-auto scroll-smooth scrollbar-hide md:snap-x md:snap-mandatory lg:snap-none px-6 pb-4 md:pb-0"
+        className="flex flex-row items-center mt-8 lg:mt-0 gap-[25px] md:gap-16 overflow-x-auto scroll-smooth scrollbar-hide md:snap-x md:snap-mandatory lg:snap-none px-1 pb-4 md:pb-0"
         style={{ WebkitOverflowScrolling: 'touch' as any }}
       >
         {items.map((item, idx) => (
