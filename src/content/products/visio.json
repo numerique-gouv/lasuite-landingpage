@@ -159,7 +159,7 @@
         },
         {
           "q": "Quel niveau de sécurité puis-je attendre ?",
-          "a": "Visio a fait l’objet d’une homologation de sécurité approfondie par le RSSI de la DINUM : bug bounty, audits externes de l’infrastructure et du code, revues régulières. Il est exploité selon les exigences de sécurité de l’État."
+          "a": "Visio a fait l’objet d’une homologation de sécurité approfondie par le RSSI de la DINUM : bug bounty, audits externes de l’infrastructure et du code, revues régulières. Il est exploité selon les exigences de sécurité de l’État. Visio n’est pas adapté au contenu classé « Diffusion Restreinte ». Il n’est pas non plus certifié HDS pour l’instant, nous ne pouvons donc pas traiter de données de santé."
         }
       ],
       "links": [

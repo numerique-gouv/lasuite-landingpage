@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Marianne';
+  src: url('https://lasuite.numerique.gouv.fr/assets/fonts/Marianne-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('https://lasuite.numerique.gouv.fr/assets/fonts/Marianne-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('https://lasuite.numerique.gouv.fr/assets/fonts/Marianne-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('https://lasuite.numerique.gouv.fr/assets/fonts/Marianne-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('https://lasuite.numerique.gouv.fr/assets/fonts/Marianne-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
