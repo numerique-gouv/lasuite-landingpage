@@ -1,0 +1,88 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: donnees-personnelles-cookies
+title: Personal Data and Cookies - Docs
+body: |
+  ## Docs Privacy Policy
+
+  ### Who is responsible for Docs?
+
+  The Docs site is developed within the DINUM. Docs is an online text editor that allows its users to co-edit text documents and export them.
+
+  The data controller is the Interministerial Directorate for Digital Affairs (DINUM), represented by Madame Stéphanie Schaer, Interministerial Director for Digital Affairs.
+
+  ### Why and how are your personal data processed?
+
+  | Data | Purpose pursued | Legal basis | Retention period | Recipients |
+  | --- | --- | --- | --- | --- |
+  | Email | Notify the user when they are invited to a document and to connect to ProConnect | Public interest mission within the competence of the DINUM (Article 6 - 11° of Decree No. 2019-1088 of October 25, 2019) | Until the user deletes their account | DINUM |
+  | First and last name | Allow to display who collaborates/creates documents on the platform | Public interest mission within the competence of the DINUM (Article 6 - 11° of Decree No. 2019-1088 of October 25, 2019) | Until the user deletes their account | DINUM |
+
+  ### Who helps us process your personal data?
+
+  In order to host your personal data or perform audience measurement, we use a subcontractor. Before transmitting your data to them, we ensured that they implemented adequate guarantees and respected strict conditions of confidentiality, use and data protection.
+
+  | Partners | Recipient country | Processing performed | Guarantees |
+  | --- | --- | --- | --- |
+  | IndieHosters | France | Kubernetes cluster administration | Subcontracting clauses |
+  | Outscale | France | Hosting | Subcontracting clauses |
+  | Posthog | Germany | Audience measurement | Subcontracting clauses |
+  | Crisp | France | User support/surveys, new version announcements | Subcontracting clauses |
+
+  ### What security measures do we implement?
+
+  We implement several measures to secure the data:
+
+  * Storage with the Outscale host in SecNumCloud on the Kubernetes cluster of La Suite Numérique, which respects the best practices in hosting and server administration;
+
+  * Implementation of a bug bounty program to ensure security;
+
+  * Anti-DDOS protection and Web Application Firewall;
+
+  * Security homologation by the DINUM's RSSI.
+
+  ### What are your rights?
+
+  You have:
+
+  * a right to information and a right to access your data;
+
+  * a right to limit the processing of your data;
+
+  * a right to rectification;
+
+  * a right to object.
+
+  To exercise these rights, contact us by email: [dpd@pm.gouv.fr](mailto:dpd@pm.gouv.fr)
+
+  Or by mail to the following address:
+
+  Services du Premier ministre
+  À l'attention du délégué à la protection des données (DPD)
+  56 rue de Varenne
+  75007 Paris
+
+  Since these are personal rights, we will only process your request if we are able to identify you. In case we are unable to identify you, we may ask you for proof of your identity.
+
+  To help you with your request, you can find a template developed by the CNIL here: <https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces>
+
+  We undertake to respond to you within a reasonable time frame that will not exceed 1 month from the receipt of your request.
+
+  ## Audience tracking and privacy
+
+  ### Cookies and opt-out
+
+  This site deposits a small text file (a "cookie") on your device when you visit it.
+
+  We deposit a session cookie that allows you to remain authenticated to Docs as long as your ProConnect session is active.
+
+  We also use Crisp for user support and to notify new versions.
+
+  Posthog, an open-source audience measurement tool, provides us with statistical data such as the number of visits and to understand which pages are the most consulted in order to continuously improve the product.
+
+  ### Why does this site not display a cookie consent banner?
+
+  We simply respect the law, which states that certain audience tracking tools, properly configured to respect privacy, are exempt from prior authorization.

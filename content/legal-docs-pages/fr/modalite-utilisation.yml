@@ -1,0 +1,87 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: modalite-utilisation
+title: Modalités d'utilisation - Docs
+body: |
+  ## Champ d'application
+
+  Le présent document définit les modalités d'utilisation de Docs, un éditeur de texte en ligne permettant à ses utilisateurs de co-éditer des documents textes et de les exporter.
+
+  ## Objet de la plateforme
+
+  Le service permet d'éditer des documents textes en ligne seul ou à plusieurs et de les exporter.
+
+  Docs est développé et opéré par la DINUM.
+
+  Toute utilisation de ce service doit respecter les présentes modalités d'utilisation.
+
+  ## Accès au service
+
+  Docs est accessible sur [docs.numerique.gouv.fr](https://docs.numerique.gouv.fr).
+
+  Docs est mis à disposition aux utilisateurs de ProConnect.
+
+  L'utilisation du service est libre et gratuite, pour créer un document il est nécessaire de créer un compte sur la plateforme.
+
+  ## Fonctionnalités
+
+  L'utilisateur ou l'utilisatrice peut se connecter par ProConnect, créer des documents texte, les exporter et inviter d'autres utilisateurs ou utilisatrices à les co-éditer.
+
+  ## Engagements et responsabilités des utilisateurs et utilisatrices
+
+  ### Usages conformes
+
+  L'utilisateur ou l'utilisatrice est responsable des données ou contenus qu'il ou elle saisit dans Docs. Il ou elle veille à ne saisir que des messages appropriés.
+
+  ### Usages interdits
+
+  L'utilisateur ou l'utilisatrice s'engage à ne pas saisir dans Docs des contenus ou informations contraires aux dispositions légales et réglementaires en vigueur.
+
+  Il est rappelé que toute personne qui procède à une fausse déclaration pour elle-même ou pour autrui s'expose, notamment, aux sanctions prévues à l'article 441-1 du Code pénal, prévoyant des peines pouvant aller jusqu'à trois ans d'emprisonnement et 45 000 euros d'amende.
+
+  ### Utilisation du service d'intelligence artificielle
+
+  Docs met à disposition un service d'intelligence artificielle reposant sur [Albert API](https://alliance.numerique.gouv.fr/albert/), un service déployé par la DINUM visant à fournir des modèles et services d'IA générative aux produits à impact développés dans l'administration française.
+
+  Ce service d'intelligence artificielle a vocation à faciliter la rédaction, la synthèse, la mise en page et la traduction.
+
+  Ce service n'a pas vocation à générer des décisions administratives individuelles destinées au public.
+
+  L'utilisateur ou l'utilisatrice doit se rapprocher de son administration pour s'assurer du cadre d'utilisation en son sein d'un dispositif de ce type pour la rédaction de texte.
+
+  ## Engagements et responsabilités de la DINUM
+
+  ### Sécurité et accès à la Plateforme
+
+  La DINUM s'engage à la sécurisation de Docs, notamment en prenant toutes les mesures nécessaires permettant de garantir la sécurité et la confidentialité des informations fournies.
+
+  La DINUM s'engage à fournir les moyens nécessaires et raisonnables pour assurer un accès continu à Docs.
+
+  La DINUM se réserve le droit de faire évoluer, de modifier ou de suspendre, sans préavis, le service pour des raisons de maintenance ou pour tout autre motif jugé nécessaire.
+
+  La DINUM se réserve le droit de suspendre ou supprimer un compte utilisateur ou utilisatrice du service qui aurait méconnu les présentes modalités d'utilisation, sans préjudice des éventuelles actions en responsabilité pénale et civile qui pourraient être engagées à l'encontre de l'utilisateur ou l'utilisatrice.
+
+  ### Open Source et Licences
+
+  Le code source de Docs est libre et disponible ici : <https://github.com/suitenumerique/docs>
+
+  Les contenus proposés par la DINUM sont sous Licence Ouverte, à l'exception des logos et des représentations iconographiques et photographiques pouvant être régis par leurs licences propres.
+
+  ## Évolution des modalités d'utilisation
+
+  Les termes des présentes modalités d'utilisation peuvent être modifiés ou complétés à tout moment, sans préavis, en fonction des modifications apportées au service, de l'évolution de la législation ou pour tout autre motif jugé nécessaire.
+
+  Ces modifications sont notifiées à l'utilisateur ou l'utilisatrice.
+
+  Ces modifications et mises à jour s'imposent à l'utilisateur ou l'utilisatrice qui doit, en conséquence, se référer régulièrement à cette rubrique pour vérifier les conditions générales en vigueur.
+
+  ## Accessibilité
+
+  La **DINUM - OPI - LaSuite** s'engage à rendre accessibles ses services numériques, conformément à l'article 47 de la loi n° 2005-102 du 11 février 2005.
+
+  ### État de conformité
+
+  **[docs.numerique.gouv.fr](https://docs.numerique.gouv.fr)** est partiellement conforme avec le RGAA 4.1. Le site a été audité pour la première fois en avril 2026 ; le rapport d'audit est accessible [ici](https://ara.numerique.gouv.fr/rapport/NQm_a0q0oJUVhg9_jVjUE/).
