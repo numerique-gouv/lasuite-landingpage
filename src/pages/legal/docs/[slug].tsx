@@ -1,8 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import {
-  collection,
-  type EntrySchema,
-} from '@/cms/collections/legal-docs-page'
+import { collection, type EntrySchema } from '@/cms/collections/legal-docs-page'
 import { getCollectionEntry } from '@/cms/getEntry'
 import { getSlugs } from '@/cms/getSlugs'
 import { Layout } from '@/components/Layout'
@@ -25,15 +22,17 @@ export const getStaticPaths: GetStaticPaths = async ({
   locales,
   defaultLocale,
 }) => {
-  const slugs = await getSlugs(collection)
-
-  const paths = (locales || [defaultLocale])
-    .map((locale) =>
-      slugs
-        .filter((slug) => slug !== INDEX_SLUG)
-        .map((slug) => ({ params: { slug }, locale }))
+  const localesToBuild = locales || [defaultLocale]
+  const paths = (
+    await Promise.all(
+      localesToBuild.map(async (locale) => {
+        const localeSlugs = await getSlugs(collection, locale)
+        return localeSlugs
+          .filter((slug) => slug !== INDEX_SLUG)
+          .map((slug) => ({ params: { slug }, locale }))
+      })
     )
-    .flat()
+  ).flat()
 
   return {
     paths,
