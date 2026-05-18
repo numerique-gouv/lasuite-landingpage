@@ -56,6 +56,9 @@ main_menu:
       - title: Guide de Démarrage
         href : https://docs.numerique.gouv.fr/docs/5da3aba2-9954-4ee0-9169-60083b59379b
         description : Une librairie de guides et de conseils
+      - title: Guide DSI/RSSI
+        href: https://docs.numerique.gouv.fr/docs/3c7b322e-1840-419a-ac05-6bc2843ae7dd/
+        description: Encadrer et sécuriser les usages de Grist
       - title: 'Widgets, modèles et exemples'
         href: https://docs.getgrist.com/9DZa7JFegUxz/GristHub/p/1
         description: Une librairie d'extensions pour adapter Grist
