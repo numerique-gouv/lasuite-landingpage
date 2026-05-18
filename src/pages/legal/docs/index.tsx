@@ -1,8 +1,5 @@
 import { GetStaticProps } from 'next'
-import {
-  collection,
-  type EntrySchema,
-} from '@/cms/collections/legal-docs-page'
+import { collection, type EntrySchema } from '@/cms/collections/legal-docs-page'
 import { getCollectionEntry } from '@/cms/getEntry'
 import { Layout } from '@/components/Layout'
 import { PageContent } from '@/components/PageContent'
