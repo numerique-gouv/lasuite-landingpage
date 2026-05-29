@@ -104,10 +104,14 @@ const WEBINAIRES_RESANA = [
     day: '24',
     month: 'juin',
     time: '14h00 - 15h00',
-    tag: { label: 'Pour administrateurs et décideurs', bg: '#DEF7E6', color: '#2B695A' },
-    title: 'Détail des options et grille d'aide à la décision',
+    tag: {
+      label: 'Pour administrateurs et décideurs',
+      bg: '#DEF7E6',
+      color: '#2B695A',
+    },
+    title: "Détail des options et grille d'aide à la décision",
     description:
-      'Revue des options à compter du 1er Janvier 2027, au regard de la doctrine de l'état sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.',
+      "Revue des options à compter du 1er janvier 2027, au regard de la doctrine de l'État sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.",
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
@@ -118,7 +122,11 @@ const WEBINAIRES_RESANA = [
     day: '2',
     month: 'juillet',
     time: '14h00 - 15h00',
-    tag: { label: 'Pour administrateurs et animateurs', bg: '#FFEFD9', color: '#984800' },
+    tag: {
+      label: 'Pour administrateurs et animateurs',
+      bg: '#FFEFD9',
+      color: '#984800',
+    },
     title: 'Module de migration : présentation technique et fonctionnelle',
     description:
       "Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers LaSuite ou obtenir une archive pour un migration vers d'autres systèmes.",
@@ -135,25 +143,42 @@ const RESSOURCES_RESANA = [
     title: 'Comprendre la décision',
     body: "Textes officiels et contexte : annonce, circulaire et cadre d'achat public numérique.",
     links: [
-      { title: 'Annonce officielle', href: 'https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/' },
-      { title: 'Circulaire SG n°6519 du 5 février 2026', href: 'https://www.legifrance.gouv.fr/download/pdf/circ?id=45649
-' },
+      {
+        title: 'Annonce officielle',
+        href: 'https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/',
+      },
+      {
+        title: 'Circulaire SG n°6519 du 5 février 2026',
+        href: 'https://www.legifrance.gouv.fr/download/pdf/circ?id=45649',
+      },
     ],
   },
   {
     title: 'Préparer la décision',
     body: "Guides et comparatifs pour structurer votre positionnement et vos arbitrages avant d'engager la suite.",
     links: [
-      { title: 'Guide d'aide à la décision', href: 'https://docs.numerique.gouv.fr/docs/9a5ca4d2-845f-476c-a7fc-d88c5cc373e4/' },
+      {
+        title: "Guide d'aide à la décision",
+        href: 'https://docs.numerique.gouv.fr/docs/9a5ca4d2-845f-476c-a7fc-d88c5cc373e4/',
+      },
     ],
   },
   {
     title: 'Mettre en œuvre votre choix',
     body: 'Accès directs aux dispositifs et partenaires selon la voie retenue.',
     links: [
-      { title: 'Continuer avec Interstis', href: 'mailto:leslise.rialet@interstis.fr' },
-      { title: "Solutions collaboratives via l'UGAP", href: 'https://www.ugap.fr/' },
-      { title: 'Outils de migration', href: 'https://docs.numerique.gouv.fr/docs/9e4cebe6-4138-4d02-a4ce-c10108995156/' },
+      {
+        title: 'Continuer avec Interstis',
+        href: 'mailto:leslise.rialet@interstis.fr',
+      },
+      {
+        title: "Solutions collaboratives via l'UGAP",
+        href: 'https://www.ugap.fr/',
+      },
+      {
+        title: 'Outils de migration',
+        href: 'https://docs.numerique.gouv.fr/docs/9e4cebe6-4138-4d02-a4ce-c10108995156/',
+      },
     ],
   },
 ]
@@ -580,8 +605,8 @@ function OptionsResana2027() {
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
                 Resana reste disponible en 2027, sous un autre nom et sans
-                Interruption. Interstis, qui opère la plateforme depuis son 
-                lancement, en assure la pérennité. 
+                Interruption. Interstis, qui opère la plateforme depuis son
+                lancement, en assure la pérennité.
                 <br />
                 Pour poursuivre, votre entité souscrit un abonnement direct
                 auprès d'Interstis.
@@ -604,13 +629,13 @@ function OptionsResana2027() {
                 Migrer vers LaSuite Fichiers
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                Fichiers est la brique interministérielle de partage et de stockage
-                de LaSuite, aux côtés de Tchap, Visio et FranceTransfert. Solution
-                interministérielle de référence pour les besoins essentiels, sans
-                exclusivité.
-                </br>
-                Un module de migration permettra de transférer vos contenus 
-                vers Fichiers. L'outil est open source.
+                Fichiers est la brique interministérielle de partage et de
+                stockage de LaSuite, aux côtés de Tchap, Visio et
+                FranceTransfert. Solution interministérielle de référence pour
+                les besoins essentiels, sans exclusivité.
+                <br />
+                Un module de migration permettra de transférer vos contenus vers
+                Fichiers. L'outil est open source.
               </p>
               {/* <Button
                   href="#"
@@ -660,11 +685,11 @@ function OptionsResana2027() {
                 Choisir une solution "sur étagère" ou interne
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                En cohérence avec la doctrine d'achats publics numériques 
-                (circulaire SG n°6519 du 5 février 2026), vous pouvez opter
-                pour une solution dite "sur étagère", notamment à travers le 
-                marché UGAP, ou vous reposer du des solutions pré-existantes
-                en interne.
+                En cohérence avec la doctrine d'achats publics numériques
+                (circulaire SG n°6519 du 5 février 2026), vous pouvez opter pour
+                une solution dite "sur étagère", notamment à travers le marché
+                UGAP, ou vous reposer du des solutions pré-existantes en
+                interne.
               </p>
             </article>
           </div>
