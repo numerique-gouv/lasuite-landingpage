@@ -1,0 +1,53 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: mentions-legales
+title: Legal Notice - Docs
+body: |
+  ## Publisher
+
+  The Docs site is published by the Interministerial Directorate of Digital Affairs (DINUM) located at:
+
+  20 Avenue de Ségur
+  75007 Paris
+  Phone: 01.71.21.01.70
+  SIRET: 12000101100010 (General Secretariat of the Government)
+  SIREN: 120 001 011
+
+  ## Publishing Director
+
+  The publishing director is Mrs. Stéphanie Schaer, Interministerial Director of Digital Affairs.
+
+  ## Hosting of the platform
+
+  The platform is hosted by Outscale, located:
+
+  1, rue Royale – 319 Bureaux de la Colline 92210 Saint-Cloud
+
+  ## Accessibility
+
+  The platform is partially accessible.
+
+  ## Learn more
+
+  To learn more about the State's digital accessibility policy: <https://accessibilite.numerique.gouv.fr/>
+
+  ## Security
+
+  The platform is protected by an electronic certificate, materialized for most browsers by a padlock. This protection contributes to the confidentiality of exchanges.
+
+  Under no circumstances will the services associated with the platform be the origin of sending emails to request the entry of personal information.
+
+  ## Reuse of content
+
+  Unless explicitly stated, the intellectual property held by third parties, the content of this site is offered under [Etalab Open License 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf).
+
+  You are free to reproduce, copy, modify, extract, transform, communicate, disseminate, redistribute, publish, transmit and exploit the content, provided that you mention its source, date of last update and do not mislead third parties as to the information it contains.
+
+  Any public or private site is authorized to establish, without prior authorization, a link (including deep) to the information disseminated on this site.
+
+  ## Contact
+
+  The email address for contact is: [lasuite@numerique.gouv.fr](mailto:lasuite@numerique.gouv.fr)

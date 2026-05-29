@@ -64,6 +64,25 @@
   @apply underlined-link;
 }
 
+.content-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.content-page th,
+.content-page td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.content-page th {
+  font-weight: 600;
+}
+
 .with-content-links a:not([class]) {
   @apply underlined-link;
 }

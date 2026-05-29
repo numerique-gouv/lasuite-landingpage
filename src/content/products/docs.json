@@ -195,6 +195,10 @@
         {
           "q": "Puis-je exporter mes Docs en format Word, PDF ou ODT ?",
           "a": "Oui, vous pouvez exporter votre fichier en Word, PDF ou ODT."
+        },
+        {
+          "q": "Où puis-je consulter les informations légales (accessibilité, données personnelles etc.) concernant LaSuite Docs ?",
+          "a": "Voici la liste des pages que vous pouvez consulter :<br>- <a href=\"/legal/docs/donnees-personnelles-cookies\">Données personnelles et cookies</a><br>- <a href=\"/legal/docs/modalite-utilisation\">Modalité d'utilisation</a><br>- <a href=\"/legal/docs/declaration-accessibilite\">Déclaration d'accessibilité</a><br>- <a href=\"/legal/docs\">Mentions légales</a>"
         }
       ],
       "links": [
