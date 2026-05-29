@@ -14,6 +14,23 @@ const nextConfig = {
     })
     return config
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'resana-en-2027.numerique.gouv.fr',
+          },
+        ],
+        destination: 'https://lasuite.numerique.gouv.fr/resana-en-2027',
+        permanent: true,
+        locale: false,
+        basePath: false,
+      },
+    ]
+  },
 }
 
 export default nextConfig
