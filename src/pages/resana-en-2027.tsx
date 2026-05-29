@@ -62,7 +62,7 @@ const RESANA_FAQ = {
       q: 'Si je décide de quitter Resana pour une autre solution, comment faire ?',
       a: `<p>Deux options s'offrent à vous :</p>
 <ol class="list-decimal pl-5 my-3 space-y-2">
-<li>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite », incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers et Projets pour la gestion de tâches et de projets.</li>
+<li>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite », incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers.</li>
 <li>Vous pouvez opter pour une autre solution existante et y souscrire au besoin via le marché UGAP.</li>
 </ol>
 <p>Dans les deux cas, l'équipe LaSuite propose une assistance à la migration afin de conserver vos données (et les droits d'accès liés dans le cas d'une migration vers Fichiers), et à la prise en main des outils de LaSuite.</p>
@@ -78,7 +78,7 @@ const RESANA_FAQ = {
     },
     {
       q: 'Combien cela va coûter ?',
-      a: `<p>Si vous choisissez les options « cœur de suite », Fichiers et Projets, il n'y a aucun coût associé à leur usage.</p>
+      a: `<p>Si vous choisissez de vous orienter vers LaSuite, il n'y a aucun coût associé à son usage.</p>
 <p>Interstis, éditeur de Resana, propose son alternative à compter de janvier 2027, pour 15&nbsp;€ H.T. / agent de l'État et par an. Un agent de l'État se décompte comme « un utilisateur ayant un domaine de mail rattaché au périmètre de votre administration ». Nous vous invitons à vous rapprocher d'Interstis pour obtenir un devis détaillé.</p>
 <p>Si vous choisissez une autre solution, nous vous encourageons à vous rapprocher du marché UGAP en prenant en compte la date butoir d'achat de fin d'année.</p>`,
     },
@@ -104,10 +104,14 @@ const WEBINAIRES_RESANA = [
     day: '24',
     month: 'juin',
     time: '14h00 - 15h00',
-    tag: { label: 'Pour administrateurs et décideurs', bg: '#DEF7E6', color: '#2B695A' },
-    title: 'Détail des options et grille d'aide à la décision',
+    tag: {
+      label: 'Pour administrateurs et décideurs',
+      bg: '#DEF7E6',
+      color: '#2B695A',
+    },
+    title: "Détail des options et grille d'aide à la décision",
     description:
-      'Revue des options à compter du 1er Janvier 2027, au regard de la doctrine de l'état sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.',
+      "Revue des options à compter du 1er janvier 2027, au regard de la doctrine de l'État sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.",
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
@@ -118,7 +122,11 @@ const WEBINAIRES_RESANA = [
     day: '2',
     month: 'juillet',
     time: '14h00 - 15h00',
-    tag: { label: 'Pour administrateurs et animateurs', bg: '#FFEFD9', color: '#984800' },
+    tag: {
+      label: 'Pour administrateurs et animateurs',
+      bg: '#FFEFD9',
+      color: '#984800',
+    },
     title: 'Module de migration : présentation technique et fonctionnelle',
     description:
       "Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers LaSuite ou obtenir une archive pour un migration vers d'autres systèmes.",
@@ -135,32 +143,49 @@ const RESSOURCES_RESANA = [
     title: 'Comprendre la décision',
     body: "Textes officiels et contexte : annonce, circulaire et cadre d'achat public numérique.",
     links: [
-      { title: 'Annonce officielle', href: 'https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/' },
-      { title: 'Circulaire SG n°6519 du 5 février 2026', href: 'https://www.legifrance.gouv.fr/download/pdf/circ?id=45649
-' },
+      {
+        title: 'Annonce officielle',
+        href: 'https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/',
+      },
+      {
+        title: 'Circulaire SG n°6519 du 5 février 2026',
+        href: 'https://www.legifrance.gouv.fr/download/pdf/circ?id=45649',
+      },
     ],
   },
   {
     title: 'Préparer la décision',
     body: "Guides et comparatifs pour structurer votre positionnement et vos arbitrages avant d'engager la suite.",
     links: [
-      { title: 'Guide d'aide à la décision', href: 'https://docs.numerique.gouv.fr/docs/9a5ca4d2-845f-476c-a7fc-d88c5cc373e4/' },
+      {
+        title: "Guide d'aide à la décision",
+        href: 'https://docs.numerique.gouv.fr/docs/9a5ca4d2-845f-476c-a7fc-d88c5cc373e4/',
+      },
     ],
   },
   {
     title: 'Mettre en œuvre votre choix',
     body: 'Accès directs aux dispositifs et partenaires selon la voie retenue.',
     links: [
-      { title: 'Continuer avec Interstis', href: 'mailto:leslise.rialet@interstis.fr' },
-      { title: "Solutions collaboratives via l'UGAP", href: 'https://www.ugap.fr/' },
-      { title: 'Outils de migration', href: 'https://docs.numerique.gouv.fr/docs/9e4cebe6-4138-4d02-a4ce-c10108995156/' },
+      {
+        title: 'Continuer avec Interstis',
+        href: 'mailto:leslise.rialet@interstis.fr',
+      },
+      {
+        title: "Solutions collaboratives via l'UGAP",
+        href: 'https://www.ugap.fr/',
+      },
+      {
+        title: 'Outils de migration',
+        href: 'https://docs.numerique.gouv.fr/docs/9e4cebe6-4138-4d02-a4ce-c10108995156/',
+      },
     ],
   },
 ]
 
 function SectionSeparator() {
   return (
-    <div className="w-full max-w-container mx-auto px-0 md:px-3" aria-hidden>
+    <div className="w-full max-w-container mx-auto px-0" aria-hidden>
       <div className="h-px w-full rounded bg-gray-100" />
     </div>
   )
@@ -322,7 +347,7 @@ function CalendrierResana2027() {
               <li key={milestone.date} className={`flex gap-4`}>
                 <div className="flex w-[18px] shrink-0 flex-col items-center self-stretch">
                   <div
-                    className={`w-px min-h-0 flex-1 ${
+                    className={`w-[2px] min-h-0 flex-1 ${
                       index === 0
                         ? 'bg-transparent'
                         : mobileRoadmapLineClass(index - 1, lastActiveIndex)
@@ -334,7 +359,7 @@ function CalendrierResana2027() {
                     className="shrink-0"
                   />
                   <div
-                    className={`w-px min-h-0 flex-1 ${
+                    className={`w-[2px] min-h-0 flex-1 ${
                       index === ROADMAP_MILESTONES.length - 1
                         ? 'bg-transparent'
                         : mobileRoadmapLineClass(index, lastActiveIndex)
@@ -580,8 +605,8 @@ function OptionsResana2027() {
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
                 Resana reste disponible en 2027, sous un autre nom et sans
-                Interruption. Interstis, qui opère la plateforme depuis son 
-                lancement, en assure la pérennité. 
+                Interruption. Interstis, qui opère la plateforme depuis son
+                lancement, en assure la pérennité.
                 <br />
                 Pour poursuivre, votre entité souscrit un abonnement direct
                 auprès d'Interstis.
@@ -604,13 +629,13 @@ function OptionsResana2027() {
                 Migrer vers LaSuite Fichiers
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                Fichiers est la brique interministérielle de partage et de stockage
-                de LaSuite, aux côtés de Tchap, Visio et FranceTransfert. Solution
-                interministérielle de référence pour les besoins essentiels, sans
-                exclusivité.
-                </br>
-                Un module de migration permettra de transférer vos contenus 
-                vers Fichiers. L'outil est open source.
+                Fichiers est la brique interministérielle de partage et de
+                stockage de LaSuite, aux côtés de Tchap, Visio et
+                FranceTransfert. Solution interministérielle de référence pour
+                les besoins essentiels, sans exclusivité.
+                <br />
+                Un module de migration permettra de transférer vos contenus vers
+                Fichiers. L'outil est open source.
               </p>
               {/* <Button
                   href="#"
@@ -660,11 +685,11 @@ function OptionsResana2027() {
                 Choisir une solution "sur étagère" ou interne
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                En cohérence avec la doctrine d'achats publics numériques 
-                (circulaire SG n°6519 du 5 février 2026), vous pouvez opter
-                pour une solution dite "sur étagère", notamment à travers le 
-                marché UGAP, ou vous reposer du des solutions pré-existantes
-                en interne.
+                En cohérence avec la doctrine d'achats publics numériques
+                (circulaire SG n°6519 du 5 février 2026), vous pouvez opter pour
+                une solution dite "sur étagère", notamment à travers le marché
+                UGAP, ou vous reposer du des solutions pré-existantes en
+                interne.
               </p>
             </article>
           </div>
