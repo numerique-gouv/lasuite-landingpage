@@ -101,13 +101,13 @@ const WEBINAIRES_RESANA = [
     },
   },
   {
-    day: '8',
-    month: 'juillet',
-    time: '16h30 - 17h30',
-    tag: { label: 'Accompagnement', bg: '#DEF7E6', color: '#2B695A' },
-    title: 'Préparer la migration de vos contenus vers Fichiers',
+    day: '24',
+    month: 'juin',
+    time: '14h00 - 15h00',
+    tag: { label: 'Pour administrateurs et décideurs', bg: '#DEF7E6', color: '#2B695A' },
+    title: 'Détail des options et grille d'aide à la décision',
     description:
-      'Atelier pratique pour les administrations ayant choisi Fichiers. Étapes clés, outils disponibles et points de vigilance pour organiser le transfert.',
+      'Revue des options à compter du 1er Janvier 2027, au regard de la doctrine de l'état sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.',
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
