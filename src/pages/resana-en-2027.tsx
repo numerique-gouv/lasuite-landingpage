@@ -169,7 +169,7 @@ const RESSOURCES_RESANA = [
     links: [
       {
         title: 'Continuer avec Interstis',
-        href: 'mailto:leslise.rialet@interstis.fr',
+        href: 'mailto:leslie.rialet@interstis.fr',
       },
       {
         title: "Solutions collaboratives via l'UGAP",
