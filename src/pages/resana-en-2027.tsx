@@ -87,13 +87,13 @@ const RESANA_FAQ = {
 
 const WEBINAIRES_RESANA = [
   {
-    day: '24',
+    day: '9',
     month: 'juin',
-    time: '15h00 - 16h00',
-    tag: { label: 'Information', bg: '#E7F2FF', color: '#265EAA' },
+    time: '14h00 - 15h00',
+    tag: { label: 'Ouvert à tous', bg: '#E7F2FF', color: '#265EAA' },
     title: "Comprendre l'évolution du modèle Resana",
     description:
-      "Présentation du projet, des trois options ouvertes aux administrations et du calendrier. Session d'1h suivie d'un temps de questions-réponses.",
+      "Présentation du projet, des trois options ouvertes aux administrations et du calendrier. Session d'1h, avec un temps de questions-réponses.",
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
@@ -115,13 +115,13 @@ const WEBINAIRES_RESANA = [
     },
   },
   {
-    day: '15',
+    day: '2',
     month: 'juillet',
-    time: '10h00 - 12h00',
-    tag: { label: 'Technique', bg: '#FFEFD9', color: '#984800' },
-    title: 'Module de migration : présentation technique',
+    time: '14h00 - 15h00',
+    tag: { label: 'Pour administrateurs et animateurs', bg: '#FFEFD9', color: '#984800' },
+    title: 'Module de migration : présentation technique et fonctionnelle',
     description:
-      "Webinaire à destination des équipes IT et éditeurs intéressés par l'outil open source. Architecture, cas d'usage et possibilités d'extension.",
+      "Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers LaSuite ou obtenir une archive pour un migration vers d'autres systèmes.",
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
@@ -135,25 +135,25 @@ const RESSOURCES_RESANA = [
     title: 'Comprendre la décision',
     body: "Textes officiels et contexte : annonce, circulaire et cadre d'achat public numérique.",
     links: [
-      { title: 'Annonce officielle', href: '#' },
-      { title: 'Circulaire SG n°6519 du 5 février 2026', href: '#' },
+      { title: 'Annonce officielle', href: 'https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/' },
+      { title: 'Circulaire SG n°6519 du 5 février 2026', href: 'https://www.legifrance.gouv.fr/download/pdf/circ?id=45649
+' },
     ],
   },
   {
     title: 'Préparer la décision',
     body: "Guides et comparatifs pour structurer votre positionnement et vos arbitrages avant d'engager la suite.",
     links: [
-      { title: 'Guide de positionnement', href: '#' },
-      { title: 'Comparatif des trois options', href: '#' },
+      { title: 'Guide d'aide à la décision', href: 'https://docs.numerique.gouv.fr/docs/9a5ca4d2-845f-476c-a7fc-d88c5cc373e4/' },
     ],
   },
   {
     title: 'Mettre en œuvre votre choix',
     body: 'Accès directs aux dispositifs et partenaires selon la voie retenue.',
     links: [
-      { title: 'Continuer avec Interstis', href: '#' },
-      { title: "Solutions collaboratives via l'UGAP", href: '#' },
-      { title: 'Module de migration (courant 2026)', href: '#' },
+      { title: 'Continuer avec Interstis', href: 'mailto:leslise.rialet@interstis.fr' },
+      { title: "Solutions collaboratives via l'UGAP", href: 'https://www.ugap.fr/' },
+      { title: 'Outils de migration', href: 'https://docs.numerique.gouv.fr/docs/9e4cebe6-4138-4d02-a4ce-c10108995156/' },
     ],
   },
 ]
@@ -224,7 +224,7 @@ function HeaderResana2027() {
           </div>
           <div className="flex items-center gap-2 shrink-0 px-6 sm:px-0 py-4">
             <Button
-              href="#"
+              href="https://docs.numerique.gouv.fr/docs/542784bf-c713-49ea-bdd4-ec6bcb3a191c/"
               variant="secondary_brand"
               size="medium"
               target="_blank"
@@ -266,7 +266,7 @@ function BlockHeroResana2027() {
 
           <a
             className="text-gray-600 underline underline-offset-2 "
-            href="#"
+            href="https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/"
             target="_blank"
             aria-label="Lire l’annonce officielle - Nouvelle fenêtre"
           >
@@ -579,15 +579,12 @@ function OptionsResana2027() {
                 Continuer sur Resana
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                Resana reste disponible en 2027. Interstis, qui opère la
-                plateforme depuis son lancement, en assure la pérennité. Le
-                service continue sans interruption et changera de nom à partir
-                du 1er janvier 2027.
+                Resana reste disponible en 2027, sous un autre nom et sans
+                Interruption. Interstis, qui opère la plateforme depuis son 
+                lancement, en assure la pérennité. 
                 <br />
                 Pour poursuivre, votre entité souscrit un abonnement direct
-                auprès d'Interstis. Le service devient payant pour les agents de
-                l'État. Les invités (collectivités, partenaires, entreprises,
-                citoyens) ne sont pas facturés.
+                auprès d'Interstis.
               </p>
             </article>
             <article
@@ -607,15 +604,13 @@ function OptionsResana2027() {
                 Migrer vers LaSuite Fichiers
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                Resana reste disponible en 2027. Interstis, qui opère la
-                plateforme depuis son lancement, en assure la pérennité. Le
-                service continue sans interruption et changera de nom à partir
-                du 1er janvier 2027.
-                <br />
-                Pour poursuivre, votre entité souscrit un abonnement direct
-                auprès d'Interstis. Le service devient payant pour les agents de
-                l'État. Les invités (collectivités, partenaires, entreprises,
-                citoyens) ne sont pas facturés.
+                Fichiers est la brique interministérielle de partage et de stockage
+                de LaSuite, aux côtés de Tchap, Visio et FranceTransfert. Solution
+                interministérielle de référence pour les besoins essentiels, sans
+                exclusivité.
+                </br>
+                Un module de migration permettra de transférer vos contenus 
+                vers Fichiers. L'outil est open source.
               </p>
               {/* <Button
                   href="#"
@@ -662,13 +657,14 @@ function OptionsResana2027() {
                 className="w-auto"
               />
               <h4 className="text-xl font-bold leading-snug text-gray-850 md:text-2xl">
-                Choisir une autre solution du marché
+                Choisir une solution "sur étagère" ou interne
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
-                Dans la logique d'ouverture du marché des solutions
-                collaboratives, vous pouvez retenir une ou plusieurs solutions
-                disponibles via l'UGAP, en cohérence avec la doctrine d'achats
-                publics numériques (circulaire SG n°6519 du 5 février 2026).
+                En cohérence avec la doctrine d'achats publics numériques 
+                (circulaire SG n°6519 du 5 février 2026), vous pouvez opter
+                pour une solution dite "sur étagère", notamment à travers le 
+                marché UGAP, ou vous reposer du des solutions pré-existantes
+                en interne.
               </p>
             </article>
           </div>
@@ -678,7 +674,7 @@ function OptionsResana2027() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
-              href="#"
+              href="https://docs.numerique.gouv.fr/docs/542784bf-c713-49ea-bdd4-ec6bcb3a191c/"
               variant="primary_brand"
               icon={
                 <svg
