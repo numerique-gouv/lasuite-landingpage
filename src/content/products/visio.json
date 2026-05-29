@@ -160,6 +160,10 @@
         {
           "q": "Quel niveau de sécurité puis-je attendre ?",
           "a": "Visio a fait l’objet d’une homologation de sécurité approfondie par le RSSI de la DINUM : bug bounty, audits externes de l’infrastructure et du code, revues régulières. Il est exploité selon les exigences de sécurité de l’État. Visio n’est pas adapté au contenu classé « Diffusion Restreinte ». Il n’est pas non plus certifié HDS pour l’instant, nous ne pouvons donc pas traiter de données de santé."
+        },
+        {
+          "q": "Que dit la circulaire du Premier ministre concernant Visio ?",
+          "a": "<p>Le Premier ministre a publié une circulaire dédiée à l'usage de Visio au sein des administrations de l'État, afin d'encourager l'utilisation d'une solution de visioconférence souveraine et maîtrisée par l'État.</p><p><a href=\"https://docs.numerique.gouv.fr/docs/103cfd59-de70-4b67-a02c-2455ee496a83/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Consulter la circulaire</a></p>"
         }
       ],
       "links": [
