@@ -19,7 +19,8 @@
         {
           "title": "Se connecter",
           "url": "https://docs.numerique.gouv.fr/api/v1.0/authenticate/",
-          "type": "primary_brand"
+          "type": "primary_brand",
+          "ariaLabel": "Se connecter à Docs - nouvelle fenêtre"
         }
       ]
     },

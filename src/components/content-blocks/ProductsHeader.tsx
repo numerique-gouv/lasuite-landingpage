@@ -48,6 +48,7 @@ type HeaderLink = {
   url: string
   type?: string
   variant?: string
+  ariaLabel?: string
 }
 
 const LoginIcon = () => (
@@ -81,6 +82,7 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
             icon={<LoginIcon />}
             className="!p-2 !min-w-0"
             target="_blank"
+            aria-label={loginLink.ariaLabel}
           ></Button>
         )}
       </div>

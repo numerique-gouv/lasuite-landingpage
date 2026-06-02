@@ -14,7 +14,8 @@
         {
           "title": "Se connecter",
           "url": "https://visio.numerique.gouv.fr/api/v1.0/authenticate?silent=false&returnTo=https%3A%2F%2Fvisio.numerique.gouv.fr%2F",
-          "type": "primary_brand"
+          "type": "primary_brand",
+          "ariaLabel": "Se connecter à Visio - nouvelle fenêtre"
         }
       ]
     },
