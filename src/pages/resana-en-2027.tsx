@@ -78,9 +78,10 @@ const RESANA_FAQ = {
     },
     {
       q: 'Combien cela va coûter ?',
-      a: `<p>Si vous optez pour <strong>LaSuite</strong>, l'utilisation des services n'engage pas de frais pour les agents de la fonction publique d’État.</p>
-<p><strong>Interstis,</strong> éditeur de Resana, propose son alternative à compter de janvier 2027, pour 15&nbsp;€ H.T. / agent de l'État et par an. Un agent de l'État se décompte comme « un utilisateur ayant un domaine de mail rattaché au périmètre de votre administration ». Nous vous invitons à vous rapprocher d'Interstis pour obtenir un devis détaillé.</p>
-<p>Si vous choisissez une autre solution, nous vous encourageons à vous rapprocher du <strong>marché UGAP</strong> en prenant en compte la date butoir d'achat de fin d'année.</p>`,
+      a: `<p>LaSuite est portée en interministériel par la DINUM. Si vous optez pour une sortie de Resana vers
+<strong>LaSuite</strong>, l'utilisation des services n'engage pas de frais pour les agents de la fonction publique d’État.</p>
+<p><strong>Interstis,</strong> éditeur de Resana, propose son alternative à compter de janvier 2027avec un coût de 15&nbsp;€ H.T. / agent de l'État et par anun agent étant défini comme tout utilisateur ayant un domaine de messagerie rattaché à une administration. Pour obtenir un devis précis, il est recommandé de contacter directement Interstis.</p>
+<p>Si vous envisagez une autre solution, nous vous encourageons à vous référer au <strong>marché UGAP</strong>, en veillant à respecter la date limite d’achat fixée à la fin de l’année.</p>`,
     },
   ],
 }
