@@ -72,7 +72,7 @@ const RESANA_FAQ = {
     {
       q: 'Si je décide de passer sur les solutions de LaSuite, quel est le calendrier ?',
       a: `<p>Les <strong>premières migrations pilote auront lieu dès Juin</strong>. Prenez contact avec l'équipe LaSuite pour en faire partie.</p>
-<p><strong>Fin Août 2026</strong>, nous encourageons tous les <strong>ministères</strong> à se positionner d'ici <strong>la fin du mois d'août</strong> fin de planifier et faciliter les sessions d'accompagnement à la migration.</p>
+<p><strong>Fin Août 2026</strong>, nous encourageons tous les <strong>ministères</strong> à se positionner d'ici <strong>la fin du mois d'Août</strong> fin de planifier et faciliter les sessions d'accompagnement à la migration.</p>
 <p><strong>Fin Novembre 2026</strong>, nous encourageons les <strong>administrateurs</strong> et <strong>animateurs</strong> d'espaces à passer leurs périmètres Resana en mode « lecture seule » afin de favoriser l'adoption de la solution cible.</p>
 <p><a href="#calendrier" class="underline">Retrouvez le calendrier complet ici</a>.</p>`,
     },
@@ -87,7 +87,7 @@ const RESANA_FAQ = {
 
 const WEBINAIRES_RESANA = [
   {
-    day: '9',
+    day: '11',
     month: 'juin',
     time: '14h00 - 15h00',
     tag: { label: 'Ouvert à tous', bg: '#E7F2FF', color: '#265EAA' },
