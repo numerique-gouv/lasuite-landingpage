@@ -54,13 +54,13 @@ const RESANA_FAQ = {
     "Les réponses aux principales questions sur l'évolution du modèle Resana.",
   questions: [
     {
-      q: "J'ai entendu parler du décommissionnement de Resana, qu'en est-il ?",
+      q: `J'ai entendu parler du "décommissionnement" de Resana, qu'en est-il ?`,
       a: `<p>Resana n'est pas décommissionné. La Dinum arrête cependant au 31/12/2026 son financement dans le cadre de l'ouverture du marché des solutions collaboratives et de la doctrine d'achats publics numérique (circulaire SG n°6519 du 5 février 2026).</p>
-<p>3 options sont ouvertes aux ministères afin d'assurer la continuité de service. Retrouvez plus d'information sur <a href="#" class="underline">l'annonce officielle</a> et les <a href="#" class="underline">guides d'aide à la décision</a>.</p>`,
+<p>Trois options sont ouvertes aux ministères afin d'assurer la continuité de service. Retrouvez plus d'information sur <a href="#" class="underline">l'annonce officielle</a> et les <a href="#" class="underline">guides d'aide à la décision</a>.</p>`,
     },
     {
       q: 'Si je décide de quitter Resana pour une autre solution, comment faire ?',
-      a: `<p>Deux options s'offrent à vous :</p>
+      a: `<p>Deux options sont possibles:</p>
 <ol class="list-decimal pl-5 my-3 space-y-2">
 <li>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite », incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers.</li>
 <li>Vous pouvez opter pour une autre solution existante et y souscrire au besoin via le marché UGAP.</li>
@@ -71,16 +71,16 @@ const RESANA_FAQ = {
     },
     {
       q: 'Si je décide de passer sur les solutions de LaSuite, quel est le calendrier ?',
-      a: `<p>Les <strong>premières migrations pilote auront lieu dès juin</strong>. Prenez contact avec l'équipe LaSuite pour en faire partie.</p>
-<p><strong>Fin août 2026</strong>, nous encourageons tous les ministères à s'être positionnés afin de planifier et faciliter les sessions d'accompagnement à la migration.</p>
-<p><strong>Fin novembre 2026</strong>, nous encourageons les administrateurs et animateurs d'espaces à passer leurs périmètres Resana en mode « lecture seule » afin de favoriser l'adoption de la solution cible.</p>
+      a: `<p>Les <strong>premières migrations pilote auront lieu dès Juin</strong>. Prenez contact avec l'équipe LaSuite pour en faire partie.</p>
+<p><strong>Fin Août 2026</strong>, nous encourageons tous les <strong>ministères</strong> à se positionner d'ici <strong>la fin du mois d'août</strong> fin de planifier et faciliter les sessions d'accompagnement à la migration.</p>
+<p><strong>Fin Novembre 2026</strong>, nous encourageons les <strong>administrateurs</strong> et <strong>animateurs</strong> d'espaces à passer leurs périmètres Resana en mode « lecture seule » afin de favoriser l'adoption de la solution cible.</p>
 <p><a href="#calendrier" class="underline">Retrouvez le calendrier complet ici</a>.</p>`,
     },
     {
       q: 'Combien cela va coûter ?',
-      a: `<p>Si vous choisissez de vous orienter vers LaSuite, il n'y a aucun coût associé à son usage.</p>
-<p>Interstis, éditeur de Resana, propose son alternative à compter de janvier 2027, pour 15&nbsp;€ H.T. / agent de l'État et par an. Un agent de l'État se décompte comme « un utilisateur ayant un domaine de mail rattaché au périmètre de votre administration ». Nous vous invitons à vous rapprocher d'Interstis pour obtenir un devis détaillé.</p>
-<p>Si vous choisissez une autre solution, nous vous encourageons à vous rapprocher du marché UGAP en prenant en compte la date butoir d'achat de fin d'année.</p>`,
+      a: `<p>Si vous optez pour <strong>LaSuite</strong>, l'utilisation des services n'engage pas de frais pour les agents de la fonction publique d’État.</p>
+<p><strong>Interstis,</strong> éditeur de Resana, propose son alternative à compter de janvier 2027, pour 15&nbsp;€ H.T. / agent de l'État et par an. Un agent de l'État se décompte comme « un utilisateur ayant un domaine de mail rattaché au périmètre de votre administration ». Nous vous invitons à vous rapprocher d'Interstis pour obtenir un devis détaillé.</p>
+<p>Si vous choisissez une autre solution, nous vous encourageons à vous rapprocher du <strong>marché UGAP</strong> en prenant en compte la date butoir d'achat de fin d'année.</p>`,
     },
   ],
 }
@@ -127,7 +127,7 @@ const WEBINAIRES_RESANA = [
       bg: '#FFEFD9',
       color: '#984800',
     },
-    title: 'Module de migration : présentation technique et fonctionnelle',
+    title: 'Outil de migration : présentation technique et fonctionnelle',
     description:
       "Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers LaSuite ou obtenir une archive pour un migration vers d'autres systèmes.",
     cta: {
@@ -169,7 +169,7 @@ const RESSOURCES_RESANA = [
     links: [
       {
         title: 'Continuer avec Interstis',
-        href: 'mailto:leslise.rialet@interstis.fr',
+        href: 'mailto:leslie.rialet@interstis.fr',
       },
       {
         title: "Solutions collaboratives via l'UGAP",
@@ -605,7 +605,7 @@ function OptionsResana2027() {
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
                 Resana reste disponible en 2027, sous un autre nom et sans
-                Interruption. Interstis, qui opère la plateforme depuis son
+                interruption. Interstis, qui opère la plateforme depuis son
                 lancement, en assure la pérennité.
                 <br />
                 Pour poursuivre, votre entité souscrit un abonnement direct
@@ -631,10 +631,9 @@ function OptionsResana2027() {
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
                 Fichiers est la brique interministérielle de partage et de
                 stockage de LaSuite, aux côtés de Tchap, Visio et
-                FranceTransfert. Solution interministérielle de référence pour
-                les besoins essentiels, sans exclusivité.
+                FranceTransfert.
                 <br />
-                Un module de migration permettra de transférer vos contenus vers
+                Un outil de migration permettra de transférer vos contenus vers
                 Fichiers. L'outil est open source.
               </p>
               {/* <Button
@@ -688,7 +687,7 @@ function OptionsResana2027() {
                 En cohérence avec la doctrine d'achats publics numériques
                 (circulaire SG n°6519 du 5 février 2026), vous pouvez opter pour
                 une solution dite "sur étagère", notamment à travers le marché
-                UGAP, ou vous reposer du des solutions pré-existantes en
+                UGAP, ou vous reposer sur des solutions pré-existantes en
                 interne.
               </p>
             </article>
