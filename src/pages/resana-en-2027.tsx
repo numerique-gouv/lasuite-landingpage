@@ -276,7 +276,8 @@ function BlockHeroResana2027() {
             À compter de 2027, le financement de Resana par la Dinum prend fin
             dans une logique d'ouverture du marché des solutions collaboratives.
             Resana reste disponible et continue sans interruption, opéré par
-            Interstis. Trois options non exclusives s'ouvrent aux administrations.
+            Interstis. Trois options non exclusives s'ouvrent aux
+            administrations.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 my-6">
             <Button href="#options" variant="primary_brand">
