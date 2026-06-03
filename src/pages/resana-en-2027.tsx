@@ -65,9 +65,8 @@ const RESANA_FAQ = {
 <li>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite », incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers.</li>
 <li>Vous pouvez opter pour une autre solution existante et y souscrire au besoin via le marché UGAP.</li>
 </ol>
-<p>Dans les deux cas, l'équipe LaSuite propose une assistance à la migration afin de conserver vos données (et les droits d'accès liés dans le cas d'une migration vers Fichiers), et à la prise en main des outils de LaSuite.</p>
-<p>Un outil de migration, développé par LaSuite et open source, facilitera les opérations.</p>
-<p>Pour toute question plus spécifique, prenez contact avec l'équipe de LaSuite.</p>`,
+<p>Dans les deux cas, l’équipe LaSuite vous accompagne pour assurer la conservation ou la migration de vos documents actuellement stockés dans Resana. Un outil de migration open source, développé par LaSuite, est mis à votre disposition et peut être adapté à toute solution de remplacement.</p>
+<p>Pour toute question ou besoin d’informations complémentaires, n’hésitez pas à contacter l’équipe LaSuite.</p>`,
     },
     {
       q: 'Si je décide de passer sur les solutions de LaSuite, quel est le calendrier ?',
@@ -78,8 +77,7 @@ const RESANA_FAQ = {
     },
     {
       q: 'Combien cela va coûter ?',
-      a: `<p>LaSuite est portée en interministériel par la DINUM. Si vous optez pour une sortie de Resana vers
-<strong>LaSuite</strong>, l'utilisation des services n'engage pas de frais pour les agents de la fonction publique d’État.</p>
+      a: `<p>LaSuite est portée en interministériel par la DINUM. Une gouvernance appelée "Club LaSuite" a été constituée en janvier 2026, impliquant les ministères volontaires dans les décisions stratégiques du projet, en échange d'une participation financière aux communs numériques de LaSuite. L'utilisation de Fichiers pour les agents de la fonction publique d'Etat n'entrainera pas de coûts supplémentaires.</p>
 <p><strong>Interstis,</strong> éditeur de Resana, propose son alternative à compter de janvier 2027 avec un coût de 15&nbsp;€ H.T. / agent de l'État et par an, un agent étant défini comme tout utilisateur ayant un domaine de messagerie rattaché à une administration. Pour obtenir un devis précis, il est recommandé de contacter directement Interstis.</p>
 <p>Si vous envisagez une autre solution, nous vous encourageons à vous référer au <strong>marché UGAP</strong>, en veillant à respecter la date limite d’achat fixée à la fin de l’année.</p>`,
     },
@@ -130,7 +128,7 @@ const WEBINAIRES_RESANA = [
     },
     title: 'Outil de migration : présentation technique et fonctionnelle',
     description:
-      "Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers LaSuite ou obtenir une archive pour un migration vers d'autres systèmes.",
+      'Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers une autre solution.',
     cta: {
       type: 'register',
       href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
@@ -682,7 +680,7 @@ function OptionsResana2027() {
                 className="w-auto"
               />
               <h4 className="text-xl font-bold leading-snug text-gray-850 md:text-2xl">
-                Choisir une solution "sur étagère" ou interne
+                Choisir une solution d'un éditeur privé ou interne
               </h4>
               <p className="text-sm leading-relaxed text-gray-550 md:text-base">
                 En cohérence avec la doctrine d'achats publics numériques
