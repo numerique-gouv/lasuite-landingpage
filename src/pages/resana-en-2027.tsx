@@ -55,18 +55,18 @@ const RESANA_FAQ = {
   questions: [
     {
       q: `J'ai entendu parler du "décommissionnement" de Resana, qu'en est-il ?`,
-      a: `<p>Resana n'est pas décommissionné. La Dinum arrête cependant au 31/12/2026 son financement dans le cadre de l'ouverture du marché des solutions collaboratives et de la doctrine d'achats publics numérique (circulaire SG n°6519 du 5 février 2026).</p>
-<p>Trois options sont ouvertes aux ministères afin d'assurer la continuité de service. Retrouvez plus d'information sur <a href="#" class="underline">l'annonce officielle</a> et les <a href="#" class="underline">guides d'aide à la décision</a>.</p>`,
+      a: `<p><strong>Resana n'est pas décommissionné</strong>. La Dinum arrête cependant au 31/12/2026 son financement dans le cadre de l'ouverture du marché des solutions collaboratives et de la doctrine d'achats publics numérique (circulaire SG n°6519 du 5 février 2026).</p>
+<p><strong>Trois options sont ouvertes aux ministères afin d'assurer la continuité de service</strong>. Retrouvez plus d'information sur <a href="https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/" class="underline">l'annonce officielle</a> et les <a href="https://docs.numerique.gouv.fr/docs/542784bf-c713-49ea-bdd4-ec6bcb3a191c/" class="underline">guides d'aide à la décision</a>.</p>`,
     },
     {
       q: 'Si je décide de quitter Resana pour une autre solution, comment faire ?',
       a: `<p>Deux options sont possibles:</p>
 <ol class="list-decimal pl-5 my-3 space-y-2">
-<li>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite », incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers.</li>
-<li>Vous pouvez opter pour une autre solution existante et y souscrire au besoin via le marché UGAP.</li>
+<li><strong>La Dinum et LaSuite vous proposent le socle interministériel « cœur de suite »</strong>, incluant Tchap, Visio, France Transfert, ainsi que Fichiers pour le partage et la coédition de fichiers.</li>
+<li>Vous pouvez opter pour <strong>une autre solution existante</strong> et y souscrire au besoin via le marché UGAP.</li>
 </ol>
-<p>Dans les deux cas, l’équipe LaSuite vous accompagne pour assurer la conservation ou la migration de vos documents actuellement stockés dans Resana. Un outil de migration open source, développé par LaSuite, est mis à votre disposition et peut être adapté à toute solution de remplacement.</p>
-<p>Pour toute question ou besoin d’informations complémentaires, n’hésitez pas à contacter l’équipe LaSuite.</p>`,
+<p>Dans les deux cas, l’équipe LaSuite vous accompagne pour assurer la conservation ou la migration de vos documents actuellement stockés dans Resana. <strong>Un outil de migration open source</strong>, développé par LaSuite, est mis à votre disposition et peut être adapté à toute solution de remplacement.</p>
+<p>Pour toute question ou besoin d’informations complémentaires, n’hésitez pas à <a href="mailto:paul.burgun@numerique.gouv.fr" class="underline">contacter l’équipe LaSuite</a>.</p>`,
     },
     {
       q: 'Si je décide de passer sur les solutions de LaSuite, quel est le calendrier ?',
@@ -77,9 +77,9 @@ const RESANA_FAQ = {
     },
     {
       q: 'Combien cela va coûter ?',
-      a: `<p>LaSuite est portée en interministériel par la DINUM. Une gouvernance appelée "Club LaSuite" a été constituée en janvier 2026, impliquant les ministères volontaires dans les décisions stratégiques du projet, en échange d'une participation financière aux communs numériques de LaSuite. L'utilisation de Fichiers pour les agents de la fonction publique d'Etat n'entrainera pas de coûts supplémentaires.</p>
-<p><strong>Interstis,</strong> éditeur de Resana, propose son alternative à compter de janvier 2027 avec un coût de 15&nbsp;€ H.T. / agent de l'État et par an, un agent étant défini comme tout utilisateur ayant un domaine de messagerie rattaché à une administration. Pour obtenir un devis précis, il est recommandé de contacter directement Interstis.</p>
-<p>Si vous envisagez une autre solution, nous vous encourageons à vous référer au <strong>marché UGAP</strong>, en veillant à respecter la date limite d’achat fixée à la fin de l’année.</p>`,
+      a: `<p><strong>LaSuite est portée en interministériel par la DINUM</strong>. Une gouvernance appelée "Club LaSuite" a été constituée en janvier 2026, impliquant les ministères volontaires dans les décisions stratégiques du projet, en échange d'une <strong>participation financière aux communs numériques de LaSuite</strong>. L'utilisation de Fichiers pour les agents de la fonction publique d'Etat n'entrainera pas de coûts supplémentaires.</p>
+<p><strong>Interstis, éditeur de Resana</strong>, propose son alternative à compter de janvier 2027 avec un <strong>coût de 15&nbsp;€ H.T. par agent de l'État et par an</strong>, un agent étant défini comme tout utilisateur ayant un domaine de messagerie rattaché à une administration. Pour obtenir un devis précis, il est recommandé de contacter directement Interstis.</p>
+<p>Si vous envisagez <strong>une autre solution</strong>, nous vous encourageons à vous référer au <strong>marché UGAP</strong> le cas échéant, en veillant à respecter la date limite d’achat fixée à la fin de l’année.</p>`,
     },
   ],
 }
@@ -276,8 +276,8 @@ function BlockHeroResana2027() {
             À compter de 2027, le financement de Resana par la Dinum prend fin
             dans une logique d'ouverture du marché des solutions collaboratives.
             Resana reste disponible et continue sans interruption, opéré par
-            Interstis. Trois options s'ouvrent aux administrations, libres et
-            combinables.
+            Interstis. Trois options non exclusives s'ouvrent aux
+            administrations.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 my-6">
             <Button href="#options" variant="primary_brand">
