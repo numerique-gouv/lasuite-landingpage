@@ -32,7 +32,7 @@ const ROADMAP_MILESTONES = [
   },
   {
     date: 'Septembre 2026',
-    description: 'Échéance indicative de positionnement',
+    description: 'Échéance de positionnement',
     active: false,
   },
   {
@@ -118,13 +118,30 @@ const WEBINAIRES_RESANA = [
     },
   },
   {
-    day: '2',
-    month: 'juillet',
+    day: '30',
+    month: 'juin',
     time: '14h00 - 15h00',
     tag: {
       label: 'Pour administrateurs et animateurs',
       bg: '#FFEFD9',
       color: '#984800',
+    },
+    title: "Continuer sur Resana en 2027",
+    description:
+      "Conditions de poursuite de l'usage de RESANA en 2027. Session d'1h, avec un temps de questions-réponses.",
+    cta: {
+      type: 'register',
+      href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
+      label: "S'inscrire",
+    },
+  },
+  {
+    day: '2',
+    month: 'juillet',
+    time: '14h00 - 15h00',
+    tag: {
+      label: 'Pour administrateurs et animateurs',
+      bg: '#E7F2FF', color: '#265EAA',
     },
     title: 'Outil de migration : présentation technique et fonctionnelle',
     description:
