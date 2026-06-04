@@ -126,7 +126,7 @@ const WEBINAIRES_RESANA = [
       bg: '#FFEFD9',
       color: '#984800',
     },
-    title: "Continuer sur Resana en 2027",
+    title: 'Continuer sur Resana en 2027',
     description:
       "Conditions de poursuite de l'usage de RESANA en 2027. Session d'1h, avec un temps de questions-réponses.",
     cta: {
@@ -141,7 +141,8 @@ const WEBINAIRES_RESANA = [
     time: '14h00 - 15h00',
     tag: {
       label: 'Pour administrateurs et animateurs',
-      bg: '#E7F2FF', color: '#265EAA',
+      bg: '#E7F2FF',
+      color: '#265EAA',
     },
     title: 'Outil de migration : présentation technique et fonctionnelle',
     description:
