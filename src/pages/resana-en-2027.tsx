@@ -86,9 +86,9 @@ const RESANA_FAQ = {
 
 const WEBINAIRES_RESANA = [
   {
-    day: '11',
+    day: '15',
     month: 'juin',
-    time: '14h00 - 15h00',
+    time: '16h00 - 17h00',
     tag: { label: 'Ouvert à tous', bg: '#E7F2FF', color: '#265EAA' },
     title: "Comprendre l'évolution du modèle Resana",
     description:
