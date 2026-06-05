@@ -59,6 +59,12 @@ const RESANA_FAQ = {
 <p><strong>Trois options sont ouvertes aux ministères afin d'assurer la continuité de service</strong>. Retrouvez plus d'information sur <a href="https://docs.numerique.gouv.fr/docs/57ad816c-d5f5-49f0-8808-78d3b0e32ee6/" class="underline">l'annonce officielle</a> et les <a href="https://docs.numerique.gouv.fr/docs/542784bf-c713-49ea-bdd4-ec6bcb3a191c/" class="underline">guides d'aide à la décision</a>.</p>`,
     },
     {
+      q: 'Si je décide de poursuivre sur Resana, quelles sont les conditions ?',
+      a: `<p><strong>Poursuivre sur Resana en 2027 est tout à fait possible</strong>, sans aucune interruption de service. Vos espaces, données, utilisateurs et communautés sont conservés tels quels. Aucune migration n'est nécessaire.</p>
+<p>Pour continuer, votre administration souscrit un abonnement auprès d'Interstis via le <trong>marché UGAP</strong>. L'équipe d'Interstis se tient à votre disposition pour vous accompagner dans la <strong>contractualisation</strong>, la <strong>formation de vos administrateurs</strong> et la <strong>communication auprès de vos utilisateurs</strong>.</p>
+<p>Pour toute question ou pour initier la démarche, n'hésitez pas à <a href="mailto:leslie.rialet@interstis.fr" class="underline">contacter l'équipe Interstis.</a></p>`,
+    },
+    {
       q: 'Si je décide de quitter Resana pour une autre solution, comment faire ?',
       a: `<p>Deux options sont possibles:</p>
 <ol class="list-decimal pl-5 my-3 space-y-2">
