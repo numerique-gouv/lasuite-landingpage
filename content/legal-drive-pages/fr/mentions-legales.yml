@@ -1,0 +1,41 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: mentions-legales
+title: Mentions légales - Fichiers
+body: |
+  ## **Éditeur**
+
+  Le service Fichiers est édité par la Direction interministérielle du numérique de l'Etat (DINUM) située :
+
+  20 avenue de Ségur\
+  75007 Paris\
+  Tel. Accueil : 01.71.21.01.70\
+  SIRET : 12000101100010 (secrétariat général du gouvernement)\
+  SIREN : 120 001 011
+
+  ## **Directeur de la publication**
+
+  La directrice de la publication est Madame Stéphanie Schaer, Directrice interministérielle du numérique.
+
+  ## **Hébergement**
+
+  Le service est hébergé par Outscale West-1 CloudGouv SecNumCloud situé en France.
+
+  ## **Accessibilité**
+
+  La conformité aux normes d'accessibilité numérique est un objectif ultérieur. Le site n'a pas encore été audité. Cependant, l'équipe s'efforce de créer un site accessible à tous en suivant les recommandations du RGAA.
+
+  Pour en savoir plus : lien vers la page d'accessibilité
+
+  **Etat d'accessibilité : non conforme**
+
+  ## **Réutilisation des contenus et liens**
+
+  Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous [licence ouverte Etalab 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf).
+
+  Vous êtes notamment libres de les reproduire, copier, modifier, extraire, transformer, communiquer diffuser, redistribuer, publier, transmettre et exploiter sous réserve de mentionner leur source, leur date de dernière mise à jour et ne pas induire en erreur des tiers quant aux informations qui y figurent.
+
+  Tout site public ou privé est autorisé à établir, sans autorisation préalable, un lien (y compris profond) vers les informations diffusées sur ce site.

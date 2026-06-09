@@ -168,9 +168,19 @@
         {
           "q": "Puis-je synchroniser Fichiers avec mon ordinateur ?",
           "a": "Fichiers fonctionne exclusivement via le navigateur web, sans synchronisation locale. Ce choix nous permet de vous garantir une expérience uniforme quel que soit votre système d'exploitation (Windows, macOS, Linux), de renforcer la sécurité de vos données grâce à des contrôles d'accès centralisés, et d'assurer une intégration fluide avec les autres produits de LaSuite. Vos fichiers restent accessibles depuis n'importe quel navigateur, sur n'importe quel appareil, sans installation ni configuration."
+        },
+        {
+          "q": "Où puis-je consulter les informations légales concernant LaSuite Fichiers ?",
+          "a": "Voici la liste des pages que vous pouvez consulter :<br>- <a href=\"/legal/drive/donnees-personnelles-cookies\">Données personnelles et cookies</a><br>- <a href=\"/legal/drive/modalite-utilisation\">Modalité d'utilisation</a><br>- <a href=\"/legal/drive/convention-mise-a-disposition\">Convention de mise à disposition de Fichiers</a><br>- <a href=\"/legal/drive\">Mentions légales</a>"
         }
       ],
       "links": [
+        {
+          "title": "Guide de l'utilisateur",
+          "icone": "book",
+          "url": "https://docs.numerique.gouv.fr/docs/ed153932-1e4d-4bd4-8726-414b65948441/",
+          "type": "primary_brand"
+        },
         {
           "title": "Assister à un webinaire",
           "icone": "visio",
