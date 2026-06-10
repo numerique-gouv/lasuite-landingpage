@@ -1,0 +1,41 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: mentions-legales
+title: Legal Notice - Drive
+body: |
+  ## **Publisher**
+
+  The Files service is published by the French Interministerial Digital Directorate (DINUM), located at:
+
+  20 avenue de Ségur\
+  75007 Paris\
+  Reception phone: +33 (0)1 71 21 01 70\
+  SIRET: 12000101100010 (General Secretariat of the Government)\
+  SIREN: 120 001 011
+
+  ## **Publication Director**
+
+  The Publication Director is Ms. Stéphanie Schaer, Interministerial Director for Digital Affairs.
+
+  ## **Hosting**
+
+  The service is hosted by Outscale West-1 CloudGouv SecNumCloud, located in France.
+
+  ## **Accessibility**
+
+  Compliance with digital accessibility standards is a future objective. The website has not yet been audited. However, the team strives to create a website accessible to everyone by following the recommendations of the RGAA (French General Accessibility Improvement Framework).
+
+  For more information: link to the accessibility page.
+
+  **Accessibility status: non-compliant**
+
+  ## **Content Reuse and Links**
+
+  Unless explicitly stated otherwise regarding third-party intellectual property rights, the content of this website is made available under the [Etalab Open Licence 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf).
+
+  You are free to reproduce, copy, modify, extract, transform, communicate, distribute, redistribute, publish, transmit, and reuse this content, provided that you mention its source, the date of its latest update, and do not mislead third parties regarding the information it contains.
+
+  Any public or private website may create a link (including a deep link) to the information published on this website without prior authorization.

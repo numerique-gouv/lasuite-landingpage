@@ -1,28 +1,35 @@
 /**
  * page content styles to easily write pure html without having to deal with tailwind css/react components
  * most of this is taken from the DSFR styles, just prefixed with a class to only use them on content pages */
+
+.content-page strong {
+  font-weight: 600;
+}
+
 .content-page h4 {
   font-size: 1.375rem;
+  font-weight: 600;
 }
 
 .content-page h3 {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 600;
 }
 
 .content-page :where(h2, h3) {
-  font-weight: 700;
   margin: 0 0 1.5rem;
 }
 
 .content-page h2 {
   font-size: 1.75rem;
+  font-weight: 600;
   line-height: 2.25rem;
 }
 
 .content-page h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 2.5rem;
   margin: 0 0 1.5rem;
 }
@@ -116,7 +123,6 @@
 
 .cms-text-width > * {
   width: 100%;
-  max-width: 54rem;
 }
 
 .cms-content > p > svg:only-child,

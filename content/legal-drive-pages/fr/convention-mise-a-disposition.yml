@@ -1,0 +1,286 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: false
+  nl: false
+slug: convention-mise-a-disposition
+title: Convention de mise à disposition de Fichiers
+body: |
+  ### Préambule
+
+  L’article 6 du décret n° 2019-1088 du 25 octobre 2019 relatif au système d'information et de communication de l'Etat prévoit en son 13° que la Direction interministérielle du numérique (DINUM) construit, met à disposition et opère des infrastructures et services numériques d'usage partagé ainsi que des outils numériques à destination des agents publics.
+
+  Dans ce cadre, la DINUM construit et opère des outils numériques d’usage partagé reposant sur des communs numériques libres. Ces outils sont mis à disposition des administrations de l'Etat et aux organismes sous sa tutelle et à leurs agents, partenaires ou prestataires de service.
+
+  ### Article 1 – Champs d’application
+
+  La présente convention définit les modalités de mise à disposition par la DINUM aux administrations de Fichiers, une application de stockage et partage de documents spécialement conçue pour les administrations de l'Etat et les organismes sous sa tutelle.
+
+  ### Article 2 – Présentation de Fichiers
+
+  Fichiers est développé et opéré par la DINUM. Son objectif est d'offrir aux agents publics, partenaires ou prestataires de services des administrations de l’État et organismes sous sa tutelle une solution sécurisée pour stocker, organiser, partager et éditer collaborativement des documents depuis un poste de travail standard ou un appareil mobile, liés à un compte identifiant, tout en garantissant le respect des exigences de souveraineté et de sécurité.
+
+  Il est rappelé, dans les modalités d'utilisation de Fichiers, aux utilisateurs et utilisatrices la nécessité de se rapprocher de leur administration de rattachement pour s'assurer du cadre d'utilisation en son sein de Fichiers, notamment en ce qui concerne des documents soumis à des obligations renforcées de confidentialité.
+
+  Fichiers est accessible en application mobile sur les magasins d'application et sur la page suivante : https://fichiers.numerique.gouv.fr.
+
+  ### Article 3 – Définitions
+
+  Fichiers est le produit décrit dans la présente convention et présenté sur la page suivante : https://fichiers.numerique.gouv.fr.
+
+  Les utilisateurs et utilisatrices de Fichiers sont toute personne utilisant l'application à des fins de stockage, partage et édition de document, qu’elles soient des agents, des partenaires ou des prestataires des administrations utilisatrices.
+
+  L’administration utilisatrice est l’administration de l’État ou l'organisme sous sa tutelle qui met à disposition Fichiers à ses agents, partenaires ou prestataires.
+
+  ### Article 4 – Accès au service
+
+  Fichiers est mis à disposition des administrations utilisatrices dans les conditions de la présente convention. La mise à disposition du service par la DINUM est libre et gratuite.
+
+  L’administration de rattachement est responsable de la mise à disposition de Fichiers à ses agents, partenaires ou prestataires de service dans le cadre de ses missions.
+
+  ### Article 5 - Fonctionnalités
+
+  L'application, accessible depuis le web permet à l’utilisateur ou l’utilisatrice de :
+
+  * stocker et organiser ses fichiers dans un espace sécurisé;
+  * éditer des fichiers bureautiques (textes, tableurs, présentations) de manière collaborative;
+  * partager des fichiers ou dossiers avec d’autres agents, sous sa responsabilité.
+
+  ### Article 6 - Engagements et responsabilités de la DINUM
+
+  La DINUM met à disposition de l’administration utilisatrice, dans les conditions du présent document, l'application Fichiers qu’elle développe et opère. 
+
+  #### 6.1 Enrôlement des administrations – responsabilité de traitement
+
+  La DINUM, en tant que responsable de traitement, est responsable de la gestion du contact responsable de la mise à disposition de Fichiers au sein de l’administration utilisatrice.
+
+  A ce titre la DINUM traite des données à caractère personnel relative à la personne désignée par l’administration utilisatrice comme contact responsable de la mise à disposition de Fichiers.
+
+  #### 6.2 Sécurité et accès au service
+
+  La DINUM s’engage à la sécurisation du service, notamment en prenant toutes les mesures nécessaires permettant de garantir la sécurité et la confidentialité des informations fournies.
+
+  La DINUM s’engage à fournir les moyens nécessaires et raisonnables pour assurer un accès continu au service.
+
+  La DINUM se réserve le droit de faire évoluer, de modifier ou de suspendre, sans préavis, le service pour des raisons de maintenance ou pour tout autre motif jugé nécessaire.
+
+  La DINUM se réserve le droit de suspendre ou supprimer l’accès à une administration utilisatrice, ou aux agents, partenaires ou prestataires de service de celle-ci, qui aurait méconnu la présente convention ou les modalités d'utilisation de Fichiers, sans préjudice des éventuelles actions qui pourraient être engagées.
+
+  L’homologation du système d’information Fichiers a été accordée par la DINUM pour l'instance qu'elle opère au bénéfice des administrations pour une durée de 1 an (jusqu'en avril 2027). 
+
+  #### 6.3 Support
+
+  La DINUM prend en charge un support de niveau 3, au sens de la bibliothèque pour l’infrastructure des technologies de l’information (ITIL), sur les services numériques mis à disposition de l’administration utilisatrice dans le cadre de la présente convention.
+
+  ### Article 7 - Engagements et responsabilités de l’administration utilisatrice
+
+  L’administration utilisatrice met à disposition Fichiers à ses agents, partenaires ou prestataires de service sous sa propre responsabilité.
+
+  L’administration utilisatrice fournit à la DINUM un contact permettant de faire le lien avec les équipes de la DINUM.
+
+  L’administration utilisatrice est responsable des traitements de données à caractère personnel réalisés pour ses propres finalités par ses agents, partenaires ou prestataires de service dans le cadre de l’utilisation de Fichiers.
+
+  L'administration utilisatrice est responsable de la gestion et de la collecte d'archives électroniques au sens du code du patrimoine. 
+
+  A ce titre, il lui appartient de définir, si besoin, une doctrine d’emploi spécifique à destination de ses agents, partenaires ou prestataires de service.
+
+  La DINUM agit en qualité de sous-traitant dans le cadre de la mise à disposition de Fichiers dans les conditions définies en annexe.
+
+  A ce titre, la DINUM s’engage à fournir, sur simple demande, à l’administration utilisatrice les données d’utilisation de Fichiers par ses agents, partenaires ou prestataires de service.
+
+  ### Article 8 - Propriété intellectuelle
+
+  La présente convention ne prévoit aucun transfert de droits de propriété intellectuelle. Le code source du service est libre et disponible ici : https://github.com/suitenumerique/drive.
+
+
+
+  ## ANNEXE 1 SOUS-TRAITANCE RGPD : ACCORD SUR LE TRAITEMENT DES DONNÉES À CARACTÈRE PERSONNEL (conformément à l’article 28 du RGPD)
+
+  La présente annexe a pour objet de décrire les obligations respectives de la DINUM et de l’administration utilisatrice en matière de données personnelles et fait partie intégrante de la convention de mise à disposition de Fichiers aux administrations.
+
+  Préambule : Définitions spécifiques
+
+  * Données personnelles désigne toute information se rapportant à une personne physique identifiée ou identifiable ; est réputée être une « personne physique identifiable » une personne physique qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant, tel qu’un nom, un numéro de téléphone, une adresse courriel, un numéro d’identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale.
+  * Traitement désigne toute opération ou tout ensemble d’opérations qui est réalisé sur les données à caractère personnel, de manière automatisée ou non, tels que la collecte, l’enregistrement, l’organisation, la conservation, l’adaptation ou la modification, l’extraction, la consultation, l’utilisation, la communication par transmission, la diffusion ou toute autre forme de mise à disposition, le rapprochement ou l’interconnexion, le verrouillage, l’effacement ou la destruction.
+  * Fichier désigne tout ensemble structuré de données personnelles que cet ensemble soit centralisé, décentralisé, ou réparti de manière fonctionnelle ou géographique. 
+  * Instruction désigne toute instruction écrite ou par saisie de données, reçue par la DINUM de la part de l’administration.
+
+  Responsable de Traitement désigne la personne physique ou morale, l’autorité publique, le service ou un autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement ; dans le cadre de la présente convention, le Responsable de Traitement est l’administration. 
+
+  Sous-traitant désigne la personne physique ou morale, l’autorité publique, le service ou un autre organisme qui traite des données personnelles pour le compte du Responsable du Traitement ; dans le cadre de la présente convention, le Sous-traitant est la DINUM.  
+
+  ### 1. Objet
+
+  Les présentes clauses ont pour objet de définir les conditions dans lesquelles le sous-traitant s’engage à effectuer pour le compte du responsable de traitement les opérations de traitement de données à caractère personnel définies ci-après.  
+
+  ### 2. Durée
+
+  Le présent accord entre en vigueur à compter de l’utilisation du service par l’administration utilisatrice et jusqu’à sa date de fin d’utilisation.  
+
+  ### 3 Protection du traitement des données personnelles
+
+  #### 3.1 Réglementation applicable
+
+  Dans le cadre de la présente convention, l’administration et la DINUM s’engagent à respecter leurs obligations, respectivement en leur qualité de Responsable de Traitement et de Sous-traitant telles que prévues par la réglementation (ci-après la « Réglementation concernant les Données personnelles ») :
+
+  * jusqu’au 25 mai 2018, par la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés telle que modifiée le 6 août 2004 ainsi que la directive 95/46/CE du Parlement européen et du Conseil du 24 octobre 1995, relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données ;
+  * à compter du 25 mai 2018, par la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, telle que modifiée le 6 août 2004, le cas échéant mise à jour, ainsi que le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données abrogeant la directive 95/46/CE ;
+  * les textes et décisions émanant d’autorités administratives indépendantes et notamment ceux de la Commission nationale de l’informatique et des libertés (CNIL) ;
+  * la jurisprudence émanant des tribunaux nationaux et communautaires applicable en matière de données personnelles ;
+
+  #### 3.2. Description du traitement faisant l’objet de la sous-traitance :
+
+  Dans le cadre du présent marché, l’administration confie à la DINUM le(s) traitement(s) ayant les caractéristiques suivantes :
+
+   
+
+  |                                                                     |                                                                                                                           |                                                                                                                               |                                                                                                           |                                                                                                                              |                                                                                                                                                   |                           |
+  | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+  | **Objet**                                                           | **Finalité**                                                                                                              | **Base légale**                                                                                                               | **Durée**                                                                                                 | **Type de données à caractère personnel**                                                                                    | **Catégories de personnes concernées**                                                                                                            | **Rôle de la DINUM**      |
+  | Traitement n° 1 : Identification de l'utilisateur ou l'utilisatrice | Vérification de l’éligibilité au service et notification de l’utilisateur quand un dossier ou un fichier lui est partagé. | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019)\
+  \ | Jusqu'à suppression du compte (compte supprimé automatique après 36 mois d'inactivité)                    | Données d’identification des utilisateurs et utilisatrices (nom, prénom, adresse professionnelle, etc.) issues de ProConnect | Utilisateurs et utilisatrices                                                                                                                     | Exploitation, Hébergement |
+  | Traitement n° 2 : Collaboration documentaire                        | Accéder à un fichier ou dossier importé ou créé, pouvoir la modifier et en partager le contenu                            | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019)    | Jusqu'à 30 jours après suppression du compte (compte supprimé automatiquement après 36 mois d'inactivité) | Toute donnée saisie par les utilisateurs et utilisatrices, sous leur responsabilité                                          | Utilisateurs et utilisatrices\
+  \
+  Toute personne dont les données peuvent être traitées, sous la responsabilité de l'utilisateur ou l'utilisatrice | Hébergement               |
+  | Traitement n°3 : Sécurisation du dispositif                         | Assurer la sécurité du compte  et répondre aux obligations légales                                                        | Obligation légale (article 32 du RGPD)                                                                                        | 12 mois                                                                                                   | Données techniques de connexion                                                                                              |                                                                                                                                                   | Exploitation, Hébergement |
+
+  #### 3.3. Obligations du sous-traitant vis-à-vis du responsable de traitement et droits des personnes concernées :
+
+  La DINUM s’engage à mettre en œuvre les programmes de formation et de sensibilisation relatifs à la protection de la vie privée et des données personnelles à destination de ses agents et sous-traitants au sens de la Loi Informatique et Libertés ayant accès en permanence ou régulièrement aux données personnelles.
+
+  Lorsque, dans le cadre de la présente convention, la DINUM est amenée à traiter des données personnelles pour le compte de l’administration en qualité de sous-traitant, la DINUM s’engage à :
+
+  a. traiter lesdites données personnelles uniquement sur la base d’Instructions de l’administration et dans la mesure raisonnablement nécessaire ou appropriée pour l’exécution de la présente convention ;
+
+  b. ne pas divulguer ces données personnelles excepté dans les conditions prévues par des dispositions législatives ou réglementaires ;
+
+  c. ne pas vendre, céder, louer ou exploiter commercialement ces données personnelles ;
+
+  d. mettre en place les mesures organisationnelles et techniques afin d’assurer la protection des données personnelles contre toute destruction accidentelle ou illicite, toute perte fortuite, altération, accès ou divulgation non autorisée ainsi que contre toute forme de traitement illicite ; 
+
+  e. transmettre, modifier ou supprimer à première demande de l’administration, à bref délai et en tout état de cause dans un délai de 15 jours calendaires maximum, les données personnelles identifiées par l’administration ;
+
+  f. respecter la durée de conservation des données personnelles au regard des finalités pour lesquelles elles ont été collectées ou transmises et à supprimer les données personnelles à expiration de la durée de conservation ; 
+
+  g. mettre à disposition de l’administration les informations nécessaires pour démontrer le respect de ses obligations prévues à la présente annexe et pour permettre la réalisation d’audits, y compris des inspections, par l’administration ou un autre auditeur qu’il a mandaté ;
+
+  h. renvoyer ou à supprimer, dans un délai de 15 jours à compter de la fin d’utilisation du service, et selon la préférence de l’administration, l’intégralité des données personnelles qui lui a été confiée par l’administration. Le cas échéant, le renvoi de toutes les données à caractère personnel s’effectue auprès du responsable de traitement ou auprès du sous-traitant désigné par le responsable de traitement. Le renvoi doit s’accompagner de la destruction de toutes les copies existantes dans les systèmes d’information de la DINUM.
+
+  i. respecter les droits d’accès, de rectification, d’opposition, de portabilité et de suppression et le droit à la limitation du traitement ainsi que le droit des personnes concernées, de ne pas faire l’objet d’une décision individuelle automatisée y compris le profilage. Dès lors, si une personne concernée par un traitement de données à caractère personnel dans le cadre de la présente convention devait contacter directement la DINUM pour exercer son droit d’accès, de rectification, de portabilité des données, de suppression et/ou d’opposition, cette dernière communiquera à l’administration dans un délai de trois (3) jours ouvrés les demandes d’exercice de ces droits qui lui seront parvenues et coopère avec l’administration. La DINUM ne fera droit à ces demandes que sur instruction écrite de l’administration à cette fin ;
+
+  j. la DINUM s’interdit par ailleurs : 
+
+  * la consultation, le traitement de données personnelles autres que celles concernées par la présente convention et ce, même si l’accès à ces données est techniquement possible ;
+  * de prendre copie ou de stocker, quelles qu’en soit la forme et la finalité, tout ou partie des données personnelles qui lui ont été transmises ou qu’il a collectées au cours de l’exécution de la convention en dehors de l’exécution de la présente convention ;
+  * de divulguer, sous quelque forme que ce soit, tout ou partie des données personnelles à des tiers, sauf dispositions législatives ou réglementaires l’y obligeant.
+
+  Délégué à la protection des données (DPO) :  [dpd@pm.gouv.fr](mailto:dpd@pm.gouv.fr) ou par voie postale à l’adresse suivante : Services du Premier ministre À l’attention du délégué à la protection des données (DPD) 56 rue de Varenne 75007 Paris 
+
+  #### 3.4. Sécurité des données personnelles
+
+  La DINUM s’engage à assurer la sécurité et la confidentialité des données personnelles qui lui sont communiquées et auxquelles il a accès sur son environnement. Les dispositions du présent article 3.4 visent expressément les mesures associées à un accès aux données personnelles sur le ou les systèmes d’information de la DINUM.
+
+  A ce titre, la DINUM s’engage à mettre en place des mesures de sécurité organisationnelles ainsi que des mesures de sécurité techniques appropriées pour préserver la sécurité et l’intégrité des données personnelles et les protéger contre toute déformation, altération, destruction fortuite ou illicite, endommagement, perte, divulgation ou accès à des tiers non autorisés, telles que décrites dans les sous-paragraphes (a) et (b) ci-dessous.
+
+  La DINUM s’engage à maintenir ces mesures et moyens pour toute la durée du marché et à défaut, à en informer immédiatement l’administration.
+
+  En tout état de cause, la DINUM s’engage, en cas de changement des moyens visant à assurer la sécurité, l’intégrité et la confidentialité des données personnelles, à les remplacer par des moyens équivalents ou d’une performance supérieure.
+
+  ##### a. Mesures de sécurité organisationnelles
+
+  La DINUM s’engage à mettre en place a minima les mesures de sécurité organisationnelles suivantes : 
+
+  * présence d’une politique d’habilitations individuelles et de sécurité appropriées pour restreindre l’accès aux données personnelles aux seules personnes qui ont à en connaitre ;   
+  * mise en place d’un engagement de confidentialité visant à ce que les personnes autorisées à traiter les données personnelles soient soumises à une obligation de confidentialité ;
+  * élaboration de mesures restrictives d’accès aux données personnelles permettant de s’assurer que les personnes habilitées à utiliser le système de traitement de données personnelles ne puissent accéder qu’aux Données personnelles auxquelles elles sont habilitées à accéder conformément à leurs droits d’accès et que, dans le cadre du traitement et de l’utilisation après stockage, les données personnelles ne puissent être lues, copiées, modifiées ou supprimées sans autorisation ;
+  * mise en place de mesures pour empêcher le transfert des données personnelles à toute personne/entité non autorisée ;
+  * mise en place de campagnes de sensibilisation des utilisateurs des applications à la sécurité et à la confidentialité des données , notamment au moyen de procédures internes, chartes, engagements de confidentialité, etc.
+
+  ##### b. Mesures de sécurité techniques
+
+  La DINUM s’engage à ce que les mesures de sécurité techniques mises en place répondent a minima aux exigences suivantes :
+
+  * mise en place d’outils permettant de s’assurer que les données personnelles ne peuvent être lues, copiées, modifiées ou supprimées sans autorisation au cours de leur transfert électronique, de leur transport ou de leur stockage, et que les entités destinataires de tout transfert de données personnelles via les installations servant au transfert de données peuvent être identifiées et vérifiées ; 
+  * mise en place de contrôles permettant de s’assurer que les données personnelles sont protégées contre les destructions ou les pertes accidentelles ;
+  * mesures sécurisées d’authentification pour l’accès à ses équipements ;
+  * mesures de sécurisation physique des locaux, du réseau interne, des matériels, des serveurs et des applications.
+  * en tout état de cause, assurer les moyens permettant de garantir la confidentialité, l’intégrité, la disponibilité et la résilience des systèmes et des services de traitement ainsi que les moyens permettant de rétablir la disponibilité des données à caractère personnel et l’accès à celles-ci dans des délais appropriés en cas d’incident physique ou technique ;
+  * engager une procédure visant à tester, à analyser et évaluer régulièrement l’efficacité des mesures techniques et organisationnelles afin d’assurer la sécurité du traitement.
+
+  #### 3.5. Transfert de données personnelles en dehors de l’Union Européenne
+
+  Les parties reconnaissent que l’exécution des prestations selon les modalités envisagées par la DINUM n’implique pas des transferts internationaux de données personnelles.
+
+  #### 3.6. Sous-traitance ultérieure(s)
+
+  Dans le cadre de la présente convention, la DINUM est autorisé à faire appel aux entités listées dans le tableau suivant (ci-après les sous-traitants ultérieurs) pour mener les activités de traitement décrites dans le tableau.
+
+  |               |                                      |                                                                                                              |
+  | ------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+  | Sous-traitant | Activité de traitement               | Garanties                                                                                                    |
+  | IndieHosters  | Administration du cluster Kubernetes | Clauses de sous-traitance. Accessibles sur https://indiehosters.net/politique-de-protection-des-donnees-dpa/ |
+  | Outscale      | Serveur hébergeant le service        | Clauses de sous-traitance. Accessible sur  https://fr.outscale.com/cgucgv/                                   |
+  | Posthog       | Statistiques d’usage                 | Clauses de sous-traitance. Accessible sur https://posthog.com/privacy                                        |
+  | Brévo         | Envoi d'email marketing              | Clauses de sous-traitance. Accessible sur\
+  https://www.brevo.com/fr/legal/privacypolicy/                     |
+
+  La DINUM peut faire appel à d’autres sous-traitants ultérieurs pour mener des activités de traitement spécifiques. Dans ce cas, elle informe préalablement l’administration de tout changement envisagé concernant l’ajout ou le remplacement d’autres sous-traitants. Cette information indique clairement les activités de traitement sous-traités, l’identité et les coordonnées du sous-traitant. L’administration dispose d’un délai maximum d’un mois à compter de la date de réception de cette information pour présenter ses objections.
+
+  En tout état de cause, la DINUM s’oblige à :
+
+  a. contractualiser avec son sous-traitant en mettant à sa charge des obligations identiques à celles contenues à la présente annexe et qui lui incombent;
+
+  b. informer l’administration de tout projet de modification des dispositions contractuelles et/ou des obligations relatives à la protection des données personnelles mises à la charge du sous-traitant.
+
+  c. la DINUM est et demeure pleinement responsable devant l’administration de l’exécution par ses sous-traitants de leurs obligations en matière de protection des données personnelles.
+
+  d. la DINUM tient à jour une liste des sous-traitants auquel il fait appel dans le cadre de la présente convention qu’il maintient à disposition de l’administration et lui communique à première demande de cette dernière.
+
+  ### 4. Notification d’incidents/faille de sécurité
+
+  Un incident de sécurité (ci-après désigné « Incident ») s’entend comme une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l’altération, la divulgation non autorisée à des tiers de données personnelles transmises, conservées ou traitées d’une autre manière, ou l’accès non autorisé à de telles données.
+
+  La DINUM s’engage à notifier dès qu’elle en a connaissance, et dans un délai maximum de 24h à l’administration, tout incident entraînant accidentellement ou de manière illicite la perte, l’altération, la divulgation ou l’accès non autorisé à des données personnelles faisant l’objet du traitement. Cette notification doit préciser :
+
+  * la nature et, si elles sont connues, les conséquences probables de l’incident,
+  * les mesures déjà prises par la DINUM ou celles qui sont proposées pour y remédier dans la mesure où elles relèvent de sa responsabilité;
+  * les personnes auprès desquelles des informations supplémentaires peuvent être obtenues;
+  * lorsque cela est possible, une estimation du nombre de personnes susceptibles d’être impactées par l’Incident.
+
+  Dès qu’elle est informée d’un incident dont elle est à l’origine, la DINUM procède à toutes investigations utiles sur les manquements aux règles de protection afin d’y remédier dans un délai aussi rapide que possible et de faire en sorte d’en diminuer l’impact pour les personnes concernées.
+
+  La DINUM s’engage à informer l’administration de ses investigations et ce de manière régulière. Les parties s’engagent à collaborer activement pour qu’elles soient en mesure de répondre à leurs obligations réglementaires et contractuelles.
+
+  Il revient à l’administration, en tant que responsable du traitement, de notifier cette violation de données personnelles à l’autorité de contrôle compétente ainsi que, le cas échéant, à la personne concernée dans un délai raisonnable après en avoir pris connaissance.
+
+  ### 5. Coopération avec les autorités de contrôle
+
+  En cas de contrôle d’une autorité compétente en relation avec les données personnelles traitées dans le cadre de la présente convention, les parties s’engagent à coopérer entre elles et avec l’autorité de contrôle.
+
+  Dans le cas où le contrôle mené ne concerne que les traitements mis en œuvre par la DINUM en tant que responsable du traitement, la DINUM fait son affaire d’un tel contrôle et s’interdit de communiquer ou de faire état des données personnelles de l’administration.
+
+  Dans le cas où le contrôle mené chez auprès de la DINUM concerne les traitements mis en œuvre au nom et pour le compte de l’administration, la DINUM s’engage à en informer immédiatement cette dernière, dans la mesure permise par la loi, et à ne prendre aucun engagement pour elle.
+
+  En cas de contrôle d’une autorité compétente auprès de l’administration portant notamment sur les services mis à disposition par la DINUM, cette dernière s’engage à coopérer avec l’administration et à lui fournir toute information demandée dont elle pourrait avoir besoin ou qui s’avèrerait nécessaire.
+
+  ### 6. Obligations particulières du sous-traitant
+
+  #### a. Tenue du registre :
+
+  La DINUM, en tant que sous-traitant de l’administration, s’engage à tenir un registre de toutes les catégories d’activités de traitement effectuées pour le compte du responsable du traitement, conformément au RGPD et comprenant :
+
+  * le nom et les coordonnées du responsable de traitement pour le compte duquel il agit, des éventuels sous-traitants et, le cas échéant, du délégué à la protection des données;  les catégories de traitements effectués pour le compte du responsable du traitement;  le cas échéant, les transferts de données à caractère personnel vers un pays tiers ou à une organisation internationale, y compris l’identification de ce pays tiers ou de cette organisation internationale et, dans le cas des transferts visés à l’article 49, paragraphe 1, deuxième alinéa du règlement européen sur la protection des données , les documents attestant de l’existence de garanties appropriées;
+  * dans la mesure du possible, une description générale des mesures de sécurité techniques et organisationnelles, y compris entre autres, selon les besoins :
+    * la pseudonymisation et le chiffrement des données à caractère personnel;
+    * des moyens permettant de garantir la confidentialité, l’intégrité, la disponibilité et la résilience constantes des systèmes et des services de traitement;
+    * des moyens permettant de rétablir la disponibilité des données à caractère personnel et l’accès à celles-ci dans des délais appropriés en cas d’incident physique ou technique;
+    * une procédure visant à tester, à analyser et à évaluer régulièrement l’efficacité des mesures techniques et organisationnelles pour assurer la sécurité du traitement.
+
+  #### b. Analyse d’impact (PIA) :
+
+  Conformément à l’article 28.3 du RGPD, la DINUM s’engage à collaborer avec l’administration pour permettre à celle-ci de réaliser toute analyse d’impact conformément à l’article 35 du RGPD, que ce dernier décidera de mener afin d’évaluer la probabilité et la gravité des risques inhérents à un traitement de données personnelles, compte tenu de sa nature, de sa portée, de son contexte, de ses finalités et des sources du risque. La DINUM assiste l’administration efficacement afin que cette analyse puisse comporter obligatoirement les éléments suivants :
+
+  * une description systématique des opérations de traitement envisagées et les finalités du traitement ;
+  * une évaluation de la nécessité et de la proportionnalité des opérations de traitement au regard des finalités;
+  * une évaluation des risques sur les droits et libertés des personnes concernées et ;
+  * les mesures envisagées pour faire face aux risques, y compris les garanties, mesures et mécanismes de sécurité visant à assurer la protection des données à caractère personnel et à apporter la preuve du respect du règlement.

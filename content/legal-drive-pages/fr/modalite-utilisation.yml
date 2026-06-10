@@ -1,0 +1,119 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: modalite-utilisation
+title: Modalités d'utilisation - Fichiers
+body: |
+  ## **1. Champ d’application**
+
+  Le présent document définit les modalités d’utilisation de LaSuite Fichiers (ci-après « Fichiers » ou « l’application »), une application de stockage et partage de documents spécialement conçue pour les administrations de l’Etat et les organismes sous sa tutelle.
+
+  ## **2. Objet de l’application**
+
+  Fichiers permet de favoriser la coopération des équipes des administrations de l’Etat et des organismes sous sa tutelle et de faciliter les échanges de documents dans le cadre de projets collaboratifs.
+
+  Fichiers permet de faciliter les échanges de documents entre agents publics, en s’adaptant aux différents usages du quotidien :
+
+  * **Déposer et organiser** ses fichiers dans un **espace privé et sécurisé** ;
+  * **Partager facilement des fichiers** et des dossiers avec des agents d’autres administrations, des partenaires et/ou prestataires ;
+  * **Éditer des fichiers bureautiques** directement dans le navigateur, de manière collaborative ;
+
+  Fichiers est développée et opérée par la Direction interministérielle du numérique (DINUM).
+
+  L’application est mise à disposition par la DINUM aux administrations de l’Etat et aux organismes sous sa tutelle, à destination de leurs agents, partenaires et prestataires invités.
+
+  Toute utilisation de Fichiers doit respecter les présentes modalités d’utilisation et, le cas échéant, la doctrine d’emploi de l’administration de rattachement.
+
+  ## **3. Définitions**
+
+  **Fichiers** est le produit dont l’utilisation est décrite dans les présentes modalités et présenté sur la page suivante : https://fichiers.numerique.gouv.fr.
+
+  **Les utilisateurs et utilisatrices** de Fichiers sont toute personne utilisant l'application à des fins de stockage, partage et coédition de documents, qu’elles soient des agents, des partenaires ou des prestataires des administrations de rattachement.
+
+  **L’administration de rattachement** est l’administration de l’État et des organismes sous sa tutelle qui met à disposition Fichiers à ses agents, partenaires ou prestataires.
+
+  ## **4. Accès à l’application**
+
+  Fichiers est mis à disposition des utilisateurs et utilisatrices par leur administration de rattachement. 
+
+  Les utilisateurs et utilisatrices y accèdent en se connectant au dispositif Proconnect. 
+
+  Les utilisateurs et utilisatrices peuvent ensuite transmettre des liens de partage permettant d'accéder à la ressource partagée, sous leur responsabilité.
+
+  ## **5. Fonctionnalités**
+
+  Fichiers offre aux utilisateurs et utilisatrices la possibilité de gérer, partager et éditer des documents dans le cadre de leurs missions. L’application permet notamment :
+
+  * un espace de stockage personnel : chaque utilisateur et utilisatrice dispose d’un espace privé et sécurisé pour déposer, organiser et conserver ses fichiers professionnels;
+  * un partage sécurisé : possibilité de partager des fichiers ou des dossiers avec des agents d’autres administrations, partenaires et prestataires;
+  * l’édition collaborative de fichiers bureautiques (textes, tableurs, présentations) dans le navigateur, avec des fonctionnalités de co-édition en temps réel.
+
+  Fichiers est hébergé sur une infrastructure SecNumCloud. Les agents sont invités à se référer à leur administration de rattachement pour toute question relative au cadre d’utilisation, en particulier pour les documents soumis à des obligations renforcées de confidentialité.
+
+  L’accès aux fichiers et dossiers partagés est géré par les utilisateurs et utilisatrices, sous leur responsabilité, dans le respect des droits d’accès définis.
+
+  ## **6. Engagements et responsabilités des utilisateurs et utilisatrices**
+
+  ### **6.1 Usages conformes**
+
+  Fichiers est mis à disposition pour faciliter la collaboration entre les agents et entre ces derniers et leurs collaborateurs extérieurs à l'administration.
+
+  L’utilisateur ou l’utilisatrice est responsable des données ou contenus qu’il ou elle stocke et/ou partage. Il ou elle veille à ne stocker et partager que des documents professionnels appropriés.
+
+  L’utilisateur ou l’utilisatrice se rapproche de son administration de rattachement pour prendre connaissance de la doctrine d’emploi de Fichiers définie en son sein.
+
+  ### **6.2 Usages interdits**
+
+  L’utilisateur ou l’utilisatrice s’engage à ne pas stocker et partager des contenus ou informations contraires aux dispositions légales et réglementaires en vigueur.
+
+  ## **7. Engagements et responsabilités de la DINUM**
+
+  ### **7.1. Sécurité de l’application**
+
+  La DINUM s’engage à la sécurisation de Fichiers, notamment en prenant toutes les mesures nécessaires permettant de garantir la sécurité et la confidentialité du stockage et partage de documents.
+
+  L’homologation du système d’information Fichiers a été accordée par la DINUM pour l'instance qu'elle opère au bénéfice des administrations pour une durée de 1 an (jusqu'en avril 2027). 
+
+  L’homologation ne couvre pas les traitements de données sensibles au sens du RGPD. Chaque administration doit évaluer la conformité du service à ses propres exigences avant toute utilisation avec des données sensibles. Il appartient à chaque autorité qualifiée d’une administration utilisatrice de réévaluer le niveau de sécurité du produit afin de déterminer si celui-ci est apte à répondre aux exigences de sécurité du traitement envisagé.
+
+  ### **7.2. Accès à l’application**
+
+  La DINUM s’engage à fournir les moyens nécessaires et raisonnables pour assurer un accès continu à l’application.
+
+  La plage d’ouverture de l’application est 24h/24 7j/7, hors période d’indisponibilité pour maintenance.
+
+  La DINUM poursuit un objectif de disponibilité annuelle de l’application de 99,5%, hors indisponibilités planifiées. En cas d’incident ou de maintenance, elle vise un délai de rétablissement de 72h en heures non ouvrables.
+
+  Dans le cadre d’une maintenance de l’environnement d’exécution de l’application, la DINUM se réserve le droit de suspendre temporairement le fonctionnement de l’application. Dans la mesure du possible, elle tient informée les utilisateurs et utilisatrices au minimum 48h à l’avance. En cas d’urgence, cette suspension peut intervenir sans préavis.
+
+  Ces arrêts exceptionnels peuvent être rendus nécessaires par exemple pour des opérations de gestion des données, de mise en production ou des changements d’architecture.
+
+  L’indisponibilité de l’application n’ouvre droit à aucune compensation de quelque nature que ce soit. 
+
+  ### **7.3. Gestion du support**
+
+  La DINUM assure le support de premier niveau auprès des utilisateurs et utilisatrices, exclusivement sur les parties techniques de l’application.
+
+  Ce support est joignable par le formulaire de contact en ligne.
+
+  L’objectif de réponse aux sollicitations est de deux jours ouvrés à compter de l’envoi du courriel, ce délai peut varier selon la complexité et le nombre de demandes à traiter.
+
+  ### **7.4. Contrôle de l’utilisation de l’application**
+
+  La DINUM se réserve le droit de suspendre ou supprimer un compte d’utilisateur ou d’utilisatrice qui aurait méconnu les présentes modalités d’utilisation, sans préjudice des éventuelles actions en responsabilité pénale et civile qui pourraient être engagées à l’encontre la personne concernée. Les éléments pourraient être transmis à l’administration de rattachement de l’utilisatrice ou de l’utilisateur, celle-ci étant responsable de la mise à disposition de l’application.
+
+  La suspension ou la révocation d’un ou plusieurs comptes ne donne lieu à aucune compensation d’aucune sorte.
+
+  ### **7.5. Conservation des données de connexion**
+
+  En application de la loi n° 2004-575 et des dispositions fixées par le décret n° 2021-1362, la DINUM est tenue de conserver pour une durée d’un an les données d’identification et de connexion afin de permettre l'identification de toute personne ayant contribué à la création d'un contenu mis en ligne.
+
+  ### **7.6. Open Source et Licences**
+
+  Le code source du service est libre et disponible ici : https://github.com/suitenumerique/drive. Les contenus proposés par la DINUM sont sous Licence Ouverte 2.0, à l’exception des logos et des représentations iconographiques et photographiques pouvant être régis par leurs licences propres.
+
+  ## **8. Évolution des modalités d’utilisation**
+
+  Les termes des présentes modalités d’utilisation peuvent être modifiés ou complétés à tout moment, sans préavis, en fonction des modifications apportées au service, de l’évolution de la législation ou pour tout autre motif jugé nécessaire. Ces modifications et mises à jour s’imposent à l’utilisateur ou l’utilisatrice qui doit, en conséquence, se référer régulièrement à cette rubrique pour vérifier les modalités en vigueur.
