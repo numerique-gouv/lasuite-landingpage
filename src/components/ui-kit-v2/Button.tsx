@@ -14,6 +14,7 @@ type ButtonVariant =
   | 'secondary_info'
   | 'tertiary_info'
   | 'tertiary_bordered'
+  | 'neutral_bordered'
   | 'none'
 type ButtonSize = 'large' | 'medium' | 'small' | 'nano'
 
