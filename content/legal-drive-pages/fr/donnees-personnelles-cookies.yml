@@ -20,28 +20,23 @@ body: |
 
   ## Pourquoi et comment vos données personnelles sont traitées ?
 
-  |                                                                                                                              |                                                                                                                           |                                                                                                                               |                                                                                                           |                  |
-  | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------- |
-  | Données                                                                                                                      | Finalité poursuivie                                                                                                       | Fondement juridique                                                                                                           | Durée de conservation                                                                                     | Destinataires\
-  \ |
-  | Données d’identification des utilisateurs et utilisatrices (nom, prénom, adresse professionnelle, etc.) issues de ProConnect | Vérification de l’éligibilité au service et notification de l’utilisateur quand un dossier ou un fichier lui est partagé. | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019)\
-  \ | Jusqu'à suppression du compte (compte supprimé automatique après 36 mois d'inactivité)                    | DINUM\
-  \         |
-  | Fichiers et dossiers créés ou importés dans l'application                                                                    | Accéder à un fichier ou dossier importé ou créé, pouvoir la modifier et en partager le contenu                            | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019)\   | Jusqu'à 30 jours après suppression du compte (compte supprimé automatiquement après 36 mois d'inactivité) | DINUM            |
-  | Données techniques de connexion                                                                                              | Assurer la sécurité du compte  et répondre aux obligations légales                                                        | Obligation légale (loi n° 2004-575 et article 5 du décret n° 2021-1362)                                                       | 12 mois                                                                                                   | DINUM            |
-
+  | Données                                                                                                   | Finalité poursuivie                                                                                                        | Fondement juridique                                                                                                          | Durée de conservation                                                                                      | Destinataires |
+  | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------- |
+  | Données d’identification des utilisateurs et utilisatrices (nom, prénom, adresse professionnelle, etc.) issues de ProConnect | Vérification de l’éligibilité au service et notification de l’utilisateur quand un dossier ou un fichier lui est partagé. | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019) | Jusqu'à suppression du compte (compte supprimé automatiquement après 36 mois d'inactivité)                | DINUM |
+  | Fichiers et dossiers créés ou importés dans l'application                                                 | Accéder à un fichier ou dossier importé ou créé, pouvoir le modifier et en partager le contenu                            | Mission d’intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019) | Jusqu'à 30 jours après suppression du compte (compte supprimé automatiquement après 36 mois d'inactivité) | DINUM |
+  | Données techniques de connexion                                                                           | Assurer la sécurité du compte et répondre aux obligations légales                                                          | Obligation légale (loi n° 2004-575 et article 5 du décret n° 2021-1362)                                                      | 12 mois                                                                                                    | DINUM |
+  
   ## Qui nous aide à traiter vos données personnelles ?
 
   Afin d’héberger vos données personnelles ou réaliser de la mesure d’audience, nous faisons appel à un sous-traitant. Avant de lui transmettre vos données, nous nous sommes assurés de la mise en œuvre par ses sous-traitants de garanties adéquates et du respect de conditions strictes de confidentialité, d’usage et de protection des données.
 
-  |              |                   |                                      |                                                                                                              |
-  | ------------ | ----------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
   | Partenaires  | Pays destinataire | Traitement réalisé                   | Garanties                                                                                                    |
+  | ------------ | ----------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
   | IndieHosters | France            | Administration du cluster Kubernetes | Clauses de sous-traitance. Accessibles sur https://indiehosters.net/politique-de-protection-des-donnees-dpa/ |
-  | Outscale     | France            | Hébergement                          | Clauses de sous-traitance. Accessible sur  https://fr.outscale.com/cgucgv/                                   |
+  | Outscale     | France            | Hébergement                          | Clauses de sous-traitance. Accessible sur https://fr.outscale.com/cgucgv/                                    |
   | Posthog      | Allemagne         | Mesure d’audience                    | Clauses de sous-traitance. Accessible sur https://posthog.com/privacy                                        |
   | Brévo        | France            | Emailing                             | Clauses de sous-traitance. Accessible sur https://www.brevo.com/fr/legal/privacypolicy/                      |
-
+  
   ## Quelles mesures de sécurité mettons-nous en place ?
 
   Nous mettons en place plusieurs mesures pour sécuriser les données :
@@ -73,3 +68,16 @@ body: |
   Pour vous aider dans votre démarche, vous trouverez un modèle de demande élaboré par la CNIL ici :  https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces
 
   Nous nous engageons à vous répondre dans un délai raisonnable qui ne saurait dépasser 1 mois à compter de la réception de votre demande.
+
+  ## Suivi d'audience et vie privée
+  ### Cookies déposés et opt-out
+  Ce site dépose un petit fichier texte (un « cookie ») sur votre appareil lorsque vous le consultez.
+
+  Nous déposons un cookie de session qui vous permet de rester authentifier à Docs tant que votre session ProConnect est active.
+
+  Nous utilisons également Crisp pour le support utilisateur et notifier des nouveautés apportées par chaque nouvelles versions.
+
+  Posthog, un outil de mesure d'audience open source, nous fournit des mesures statistiques comme le nombre de visites et de comprendre quelles sont les pages les plus consultées afin que nous puissions améliorer le produit en continu.
+
+  ### Ce site n'affiche pas de bannière de consentement aux cookies, pourquoi ?
+  Nous respectons simplement la loi, qui dit que certains outils de suivi d'audience, correctement configurés pour respecter la vie privée, sont exemptés d'autorisation préalable.
