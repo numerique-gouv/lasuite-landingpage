@@ -3,6 +3,7 @@ import logofullVisio from './logofull-visio.svg'
 import logofullRegie from './logofull-regie.svg'
 import logofullDocs from './logofull-docs.svg'
 import logofullFichiers from './logofull-fichiers.svg'
+import logofullTchap from './logofull-tchap.svg'
 
 export const productLogos: Record<string, { src: string }> = {
   messagerie: logofullMessagerie,
@@ -10,4 +11,5 @@ export const productLogos: Record<string, { src: string }> = {
   regie: logofullRegie,
   docs: logofullDocs,
   fichiers: logofullFichiers,
+  tchap: logofullTchap,
 }
