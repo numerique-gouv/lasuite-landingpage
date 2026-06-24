@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { ProductsHeader } from '@/components/content-blocks/ProductsHeader'
+import { TopToastBanner } from '@/components/content-blocks/TopToastBanner'
 import { Footer } from '@/components/Footer'
 import { TITLE_SITE, URL_SITE } from '@/constant'
 import { MetaHeader } from '@/components/MetaHeader'
@@ -45,6 +46,14 @@ export const LayoutProducts: React.FC<{
         />
       </Head>
       <MetaHeader description={content.hero?.subtitle} />
+      {content?.top_banner && (
+        <TopToastBanner
+          title={content.top_banner.title}
+          content={content.top_banner.content}
+          type={content.top_banner.type}
+          link={content.top_banner.link}
+        />
+      )}
       <ProductsHeader productContent={content} slug={product.slug} />
       <main>{children}</main>
       <Footer />
