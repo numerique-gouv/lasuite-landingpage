@@ -75,5 +75,9 @@
   height: auto !important;
 }
 .faq-answer a {
+<<<<<<< Updated upstream
   @apply underlined-link;
+=======
+    text-decoration: underline;
+>>>>>>> Stashed changes
 }
