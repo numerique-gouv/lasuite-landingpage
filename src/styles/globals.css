@@ -74,6 +74,3 @@
   opacity: 1;
   height: auto !important;
 }
-.faq-answer a {
-  @apply underlined-link;
-}
