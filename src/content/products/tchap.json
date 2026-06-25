@@ -75,7 +75,8 @@
           },
           {
             "title": "Ministère des Armées",
-            "src": "logo/armees.svg"
+            "src": "logo/armees.svg",
+            "width": "65"
           },
           {
             "title": "Direction générale des finances publiques",
