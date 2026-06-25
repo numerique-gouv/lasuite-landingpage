@@ -26,11 +26,6 @@
           "type": "tertiary_neutral"
         },
         {
-          "title": "Contact",
-          "url": "/",
-          "type": "tertiary_neutral"
-        },
-        {
           "title": "Se connecter",
           "url": "https://www.tchap.gouv.fr/",
           "type": "primary_brand"
@@ -288,19 +283,19 @@
         },
         {
           "src": "tchap/roadmap/desktop.png",
-          "alt": "Utiliser Tchap depuis une application de bureau native"
+          "alt": "Utiliser Tchap depuis une application de bureau native"
         },
         {
           "src": "tchap/roadmap/search.png",
-          "alt": "Rechercher par mot clé dans les conversations chiffrées"
+          "alt": "Rechercher par mot clé dans les conversations chiffrées"
         },
         {
           "src": "tchap/roadmap/status.png",
-          "alt": "Relier une réunion à une salle physique"
+          "alt": "Indiquer sa disponibilité"
         },
         {
           "src": "docs/roadmap/more.png",
-          "alt": "Indiquer sa disponibilité"
+          "alt": "Et bien plus encore"
         }
       ],
       "link": {

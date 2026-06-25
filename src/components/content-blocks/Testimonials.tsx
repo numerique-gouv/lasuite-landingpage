@@ -177,29 +177,26 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
               </p>
             )}
 
-            {(currentTestimonial.role || currentTestimonial.videoUrl) && (
-              <p className="text-sm text-gray-550">
-                {currentTestimonial.role && (
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: currentTestimonial.role,
-                    }}
-                  />
-                )}
-                {currentTestimonial.videoUrl && (
-                    <div className="pt-3">
-                      <Button 
-                        href={currentTestimonial.videoUrl}
-                        variant="tertiary_brand_bordered"
-                        icon={<PlayArrowIcon />}
-                        iconPosition="left"
-                        target="_blank"
-                      >
-                        Voir le témoignage
-                      </Button>
-                    </div>
-                )}
-              </p>
+            {currentTestimonial.role && (
+              <p
+                className="text-sm text-gray-550"
+                dangerouslySetInnerHTML={{
+                  __html: currentTestimonial.role,
+                }}
+              />
+            )}
+            {currentTestimonial.videoUrl && (
+              <div className="pt-3">
+                <Button
+                  href={currentTestimonial.videoUrl}
+                  variant="tertiary_brand_bordered"
+                  icon={<PlayArrowIcon />}
+                  iconPosition="left"
+                  target="_blank"
+                >
+                  Voir le témoignage
+                </Button>
+              </div>
             )}
           </div>
         </div>
