@@ -5,8 +5,8 @@
   },
   "fr": {
     "top_banner": {
-      "title": "Maintenance",
-      "content": "Tchap est en amélioration continue. Consultez les dernières nouveautés depuis la FAQ ou la feuille de route publique.",
+      "title": "",
+      "content": "",
       "type": "warning",
       "link": {
         "label": "En savoir plus",
