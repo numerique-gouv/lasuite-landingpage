@@ -40,9 +40,9 @@
   ];
 
   const PALETTE = {
-    blue: "#3558A2",
-    red:  "#DA1010",
-    navy: "#1E3A85",
+    blue: "#3E5DE7",
+    red:  "#C83F49",
+    navy: "#2845C1",
   };
 
   const state = {
