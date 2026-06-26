@@ -14,6 +14,15 @@ const nextConfig = {
     })
     return config
   },
+  async rewrites() {
+    return [
+      {
+        source: '/outil/avatar',
+        destination: '/outil/avatar/index.html',
+        locale: false,
+      },
+    ]
+  },
   async redirects() {
     return [
       {
