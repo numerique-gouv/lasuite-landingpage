@@ -1,0 +1,359 @@
+{
+  "global": {
+    "title": "Tchap",
+    "slug": "tchap"
+  },
+  "fr": {
+    "top_banner": {
+      "title": "",
+      "content": "",
+      "type": "warning",
+      "link": {
+        "label": "En savoir plus",
+        "url": "https://github.com/orgs/numerique-gouv/projects/12"
+      }
+    },
+    "header": {
+      "links": [
+        {
+          "title": "Découvrir LaSuite",
+          "url": "/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "FAQ",
+          "url": "https://aide.tchap.numerique.gouv.fr/fr/",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Contact",
+          "url": "mailto:tchap@numerique.gouv.fr",
+          "type": "tertiary_neutral"
+        },
+        {
+          "title": "Se connecter",
+          "url": "https://www.tchap.gouv.fr/",
+          "type": "primary_brand"
+        }
+      ]
+    },
+    "hero": {
+      "title": "Tchap, la messagerie instantanée du secteur public",
+      "subtitle": "Conçue et gérée par l'Administration française, au bénéfice de la fonction publique, pour communiquer facilement en toute sécurité. Utilisée par plus de 800 000 agents publics français.",
+      "alt_banner": "",
+      "image": {
+        "src": "tchap/tchap_hero.png",
+        "alt": ""
+      },
+      "links": [
+        {
+          "title": "iOS",
+          "url": "https://apps.apple.com/fr/app/tchap/id1446253779",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Android",
+          "url": "https://play.google.com/store/apps/details?id=fr.gouv.tchap.a",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Web",
+          "url": "https://www.tchap.gouv.fr/",
+          "type": "primary_brand"
+        }
+      ],
+      "social_proof": {
+        "title": "Tous les ministères et de nombreuses administrations utilisent déjà Tchap.",
+        "items": [
+          {
+            "title": "Ministère de l'intérieur",
+            "src": "logo/ministere-interieur.svg"
+          },
+          {
+            "title": "Ministère de l'Éducation nationale et de la jeunesse",
+            "src": "logo/education-nationale.svg"
+          },
+          {
+            "title": "Ministère des Armées",
+            "src": "logo/armees.svg",
+            "width": "65"
+          },
+          {
+            "title": "Direction générale des finances publiques",
+            "src": "logo/dgfp.svg",
+            "width": "100"
+          },
+
+          {
+            "title": "Gendarmerie nationale",
+            "src": "logo/gendarmerienationale.svg",
+            "width": "100"
+          },
+          {
+            "title": "CNRS",
+            "src": "logo/cnrs.svg",
+            "width": "40"
+          }
+        ]
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités principales",
+      "_cta": {
+        "title": "Regarder le film",
+        "url": "ttps://tube.numerique.gouv.fr/w/xajcQY1KnSjwc9L4ahhpkW?start=2s"
+      },
+      "items": [
+        {
+          "type": "full",
+          "title": "Retrouvez vos conversations sur tous vos appareils.",
+          "description": "Tchap est accessible simultanément sur plusieurs appareils: mobile, tablette, ordinateur et appareils sécurisés. Toutes les sessions partagent en temps réel les échanges.",
+          "image": {
+            "src": "tchap/multidevice.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Centralisez et sécurisez vos échanges.",
+          "description": "Un seul canal d'échange pour toute l'Administration : tous les agents publics peuvent s’inscrire et échanger sur Tchap. Ils peuvent également inviter des partenaires externes à rejoindre des conversations privées.",
+          "image": {
+            "src": "tchap/centralized.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Retrouvez facilement vos collaborateurs.",
+          "description": "L’annuaire intégré de Tchap vous permet de contacter l’ensemble des agents publics inscrits sur Tchap. Pas besoin de connaître le numéro de téléphone de vos interlocuteurs : retrouvez-les simplement en recherchant leur nom ou leur adresse mail professionnelle. Et si un agent n’est pas encore inscrit, vous pouvez directement l’inviter à rejoindre Tchap.",
+          "image": {
+            "src": "tchap/contactlist.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Collaborez à distance.",
+          "description": "Avec les appels audio et vidéo de groupe, organisez facilement des réunions à distance avec vos collaborateurs, en profitant d’une qualité optimale et d’un environnement sécurisé.",
+          "image": {
+            "src": "tchap/calls.png",
+            "alt": ""
+          }
+        },
+        {
+          "type": "",
+          "title": "Organisez vos conversations.",
+          "description": "Grâce aux espaces, Tchap permet de structurer une communauté en regroupant plusieurs salons et en facilitant l’invitation des membres à chacun d’eux..",
+          "image": {
+            "src": "tchap/spaces.png",
+            "alt": ""
+          }
+        }
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Il faut qu'on soit vigilant aux données qu’on partage. Tchap répond au besoin d'avoir des outils souverains qui permettent d'être dans un environnement sécurisé.",
+        "author": "Ludovic Leynaud",
+        "role": "Conseiller pédagogique numérique pour le département de la Savoie.",
+        "avatar": {
+          "src": "tchap/testimonials/leynaud.jpg",
+          "alt": ""
+        },
+        "videoUrl": "https://tube.numerique.gouv.fr/w/xajcQY1KnSjwc9L4ahhpkW?start=2s"
+      },
+      {
+        "quote": "Tchap me permet de parler avec des personnels du ministères et du régiment sans passer par les mails, depuis mon smartphone",
+        "author": "Lieutenant Delphine",
+        "role": "Centre d'opération Effets dans les Champs immatériels",
+        "avatar": {
+          "src": "tchap/testimonials/delphine.jpg",
+          "alt": ""
+        },
+        "videoUrl": "https://tube.numerique.gouv.fr/w/35yjrxF7fEUoVzNN5t9o9T?start=0s"
+      },
+      {
+        "quote": "Ça a créé du liant entre l’ANSSI et ses entités et entre les entités elles-mêmes.",
+        "author": "Chloé Chabanol",
+        "role": "Cheffe de Division à la Sous-direction Opérations CERT-FR, ANSSI",
+        "avatar": {
+          "src": "tchap/testimonials/chabanol.jpg",
+          "alt": ""
+        },
+        "videoUrl": "https://tube.numerique.gouv.fr/w/kns2DKQQc1a1Bji71fKJUB?start=0s"
+      },
+      {
+        "quote": "Tchap facilite l’échange d’information entre des acteurs du territoire.",
+        "author": "Laurent Flamant",
+        "role": "Directeur de la délégation départementale de l'Agence Régionale de Santé (ARS)",
+        "avatar": {
+          "src": "tchap/testimonials/flamant.jpg",
+          "alt": ""
+        },
+        "videoUrl": "https://tube.numerique.gouv.fr/w/kopvEJUFEHwatgz35wkFwm?start=0s"
+      },
+      {
+        "quote": "C’est l’outil du quotidien pour tous nos agents quelque soit leurs modalités de travail. On aurait du mal à s’en passer.",
+        "author": "Hugo Quérou",
+        "role": "Inspecteur des Finances publiques au Service d'Information aux Agents (SIA), Service RH",
+        "avatar": {
+          "src": "tchap/testimonials/querou.jpg",
+          "alt": ""
+        },
+        "videoUrl": "https://tube.numerique.gouv.fr/w/4Erq4jUrsvM73Gw2gRFEee?start=0s"
+      }
+    ],
+    "faq": {
+      "title": "Questions fréquentes",
+      "content": "Voici une liste des questions les plus fréquemment posées concernant Tchap.",
+      "questions": [
+        {
+          "q": "Pourquoi Tchap ?",
+          "a": "Dans le cadre de la transformation numérique de l’État et des organisations publiques, le choix d’une solution de messagerie sécurisée souveraine est un enjeu majeur. Tchap se présente comme une réponse idéale, alliant sécurité, souveraineté et efficience pour répondre aux besoins de l’Administration. Sur cette page, vous trouverez les points différenciants de Tchap par rapport aux autres outils disponibles sur étagère."
+        },
+        {
+          "q": "Qui peut utiliser Tchap ?",
+          "a": "Tous les agents publics peuvent s’inscrire si leur domaine de messagerie est autorisé. Les personne externes au secteur public peuvent être invitées mais ont des droits limités."
+        },
+        {
+          "q": "Quels sont les avantage de la technologie utilisée par Tchap ?",
+          "a": "Basé sur un protocole <a href='https://matrix.org/'>Matrix</a>, Tchap s’appuie sur une technologie open-source, garantissant une transparence totale dans son code et son fonctionnement. Cette approche favorise la confiance et la sécurité de ses utilisateurs, tout en permettant des évolutions adaptées aux besoins spécifiques des agents publics."
+        },
+        {
+          "q": "Qui gère et finance Tchap ?",
+          "a": "Financé par la <a href='https://www.numerique.gouv.fr/numerique-etat/'>DINUM</a>, Tchap incarne un investissement stratégique dans une infrastructure numérique souveraine, évitant les coûts récurrents et les dépendances à des licences propriétaires. Ce modèle collaboratif encourage également l’innovation, en permettant à la communauté des utilisateurs de Tchap de contribuer à son amélioration continue, assurant ainsi une solution pérenne, évolutive et alignée sur les valeurs du service public."
+        }
+      ],
+      "links": [
+        {
+          "title": "Guide de prise en main",
+          "icone": "book",
+          "url": "https://aide.tchap.numerique.gouv.fr/fr/article/guide-de-prise-en-main-de-tchap-oswyn1",
+          "type": "primary_brand"
+        },
+        {
+          "title": "Assister à un webinaire",
+          "icone": "visio",
+          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Rejoindre la communauté",
+          "url": "https://tchap.gouv.fr/#/room/#TchapretexQAD0C1J:agent.dinum.tchap.gouv.fr",
+          "icone": "tchap",
+          "type": "tertiary_brand_bordered"
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Principaux avantages",
+      "content": "Conçu pour être simple, performant et souverain",
+      "items": [
+        {
+          "icone": "person",
+          "title": "Construit par et pour les agents publics",
+          "description": "Tchap vise à répondre aux besoins spécifiques du secteur public, avec une maîtrise interne des évolutions définies en fonction de retours terrain."
+        },
+        {
+          "icone": "espace_lock",
+          "title": "Une application souveraine",
+          "description": "Tchap est conçue et hébergée en France. L'Etat en maîtrise donc l'infrastructure et les développements."
+        },
+        {
+          "icone": "shield_person",
+          "title": "Sécurité et confidentialité",
+          "description": "Chiffrement en transit, contrôles d’accès stricts, journaux d’audit détaillés. Conforme RGPD. Fonctions d’IA activables et configurables selon vos politiques."
+        },
+        {
+          "icone": "check",
+          "title": "Homologation ANSSI",
+          "description": "Tchap a reçu une homologation de sécurité après une consultation de tous les ministères et de l’ANSSI, qui le recommande pour les échanges professionnels de tous les agents publics."
+        },
+        {
+          "icone": "workspace",
+          "title": "Open source",
+          "description": "Le code de Tchap est consultable publiquement et se base sur le protocole Matrix. Le développement de l'application bénéficie ainsi des avancées de la communauté Matrix."
+        },
+        {
+          "icone": "check",
+          "title": "Support personnalisé",
+          "description": "L’équipe DINUM propose une assistance personnalisée et organise régulièrement des webinaires pour aider les utilisateurs à prendre en main l'outil."
+        }
+      ]
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "content": "Feuille de route prévisionnelle, guidée par vos retours : prochaines sorties, améliorations et expérimentations.",
+      "items": [
+        {
+          "src": "tchap/roadmap/app.png",
+          "alt": "Profiter d'une nouvelle application mobile"
+        },
+        {
+          "src": "tchap/roadmap/desktop.png",
+          "alt": "Utiliser Tchap depuis une application de bureau native"
+        },
+        {
+          "src": "tchap/roadmap/search.png",
+          "alt": "Rechercher par mot clé dans les conversations chiffrées"
+        },
+        {
+          "src": "tchap/roadmap/status.png",
+          "alt": "Indiquer sa disponibilité"
+        },
+        {
+          "src": "docs/roadmap/more.png",
+          "alt": "Et bien plus encore"
+        }
+      ],
+      "link": {
+        "title": "Voir la feuille de route publique",
+        "url": "https://docs.numerique.gouv.fr/docs/5b9a56f0-22cf-44e0-81fd-c9f6bec2de2d/"
+      }
+    },
+    "cta": {
+      "description": "Trouvez tous les outils pour communiquer sur Tchap, que ce soit au sein de votre organisation ou à destination de la presse.",
+      "button": {
+        "title_desktop": "Télécharger le kit de communication",
+        "title_mobile": "Télécharger le kit de communication",
+        "path": "#"
+      },
+      "image": {
+        "src": "tchap/cta.png",
+        "alt": ""
+      }
+    },
+    "decisions": {
+      "title": "Proposez Tchap à vos équipes",
+      "content": "Pour les DSI, RSSI et directions métiers : découvrez LaSuite, l’espace de travail souverain et open source du secteur public, dans lequel s’intègre Tchap.<br /><br />LaSuite réunit des outils cohérents, hébergés en France (SecNumCloud), avec un haut niveau de sécurité et une gouvernance publique maîtrisée. C’est une alternative aux solutions propriétaires : collaboration simple, données sécurisées, coûts de licences réduits, sans verrouillage ni engagement, avec une feuille de route pluriannuelle. Tchap s’intègre de manière fluide avec Docs, Tchap et vos systèmes d’information existants.<br /><br />Évaluez LaSuite en toute confiance : réservez un échange avec nos équipes. Nous passerons en revue l’architecture, la sécurité et les modes de déploiement pour définir un pilote adapté à votre organisation.",
+      "button": {
+        "title": "Prendre rendez-vous",
+        "url": "/rendez-vous"
+      },
+      "image": {
+        "src": "docs/lasuite.png",
+        "alt": ""
+      }
+    },
+    "footer": {
+      "text": "Simple. Open-source. <br /> Conçu pour le service public de demain.",
+      "links": [
+        {
+          "title": "iOS",
+          "url": "https://apps.apple.com/fr/app/tchap/id1446253779",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Android",
+          "url": "https://play.google.com/store/apps/details?id=fr.gouv.tchap.a",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Web",
+          "url": "https://www.tchap.gouv.fr/",
+          "type": "primary_brand"
+        }
+      ]
+    }
+  }
+}

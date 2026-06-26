@@ -4,6 +4,7 @@ import { BlockFull } from './BlockFull'
 import { BlockFull3Col } from './BlockFull3Col'
 import { BlockFAQ } from './BlockFAQ'
 import { ProductsFooter } from './ProductsFooter'
+import { TopToastBanner } from './TopToastBanner'
 
 export {
   BlockHero,
@@ -12,4 +13,5 @@ export {
   BlockFull3Col,
   BlockFAQ,
   ProductsFooter,
+  TopToastBanner,
 }
