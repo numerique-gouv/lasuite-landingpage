@@ -37,7 +37,10 @@ export const TopToastBanner: React.FC<TopToastBannerProps> = ({
         <div className="md:pr-4">
           {title && <p className="font-bold text-sm md:text-base">{title}</p>}
           {content && (
-            <p className="text-sm md:text-base mt-1" dangerouslySetInnerHTML={{ __html: content }} />
+            <p
+              className="text-sm md:text-base mt-1"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
           )}
         </div>
         {link?.label && link?.url && (

@@ -26,6 +26,11 @@
           "type": "tertiary_neutral"
         },
         {
+          "title": "Contact",
+          "url": "mailto:tchap@numerique.gouv.fr",
+          "type": "tertiary_neutral"
+        },
+        {
           "title": "Se connecter",
           "url": "https://www.tchap.gouv.fr/",
           "type": "primary_brand"
@@ -78,7 +83,7 @@
             "src": "logo/dgfp.svg",
             "width": "100"
           },
-          
+
           {
             "title": "Gendarmerie nationale",
             "src": "logo/gendarmerienationale.svg",
@@ -94,12 +99,15 @@
     },
     "features": {
       "title": "Fonctionnalités principales",
-      "_cta": { "title": "Regarder le film", "url": "ttps://tube.numerique.gouv.fr/w/xajcQY1KnSjwc9L4ahhpkW?start=2s" },
+      "_cta": {
+        "title": "Regarder le film",
+        "url": "ttps://tube.numerique.gouv.fr/w/xajcQY1KnSjwc9L4ahhpkW?start=2s"
+      },
       "items": [
         {
           "type": "full",
           "title": "Retrouvez vos conversations sur tous vos appareils.",
-          "description": "Un seul canal d'échange pour toute l'Administration : tous les agents publics peuvent s’inscrire et échanger sur Tchap. Ils peuvent également inviter des partenaires externes à rejoindre des conversations privées.",
+          "description": "Tchap est accessible simultanément sur plusieurs appareils: mobile, tablette, ordinateur et appareils sécurisés. Toutes les sessions partagent en temps réel les échanges.",
           "image": {
             "src": "tchap/multidevice.png",
             "alt": ""
@@ -108,7 +116,7 @@
         {
           "type": "",
           "title": "Centralisez et sécurisez vos échanges.",
-          "description": "Activez l’enregistrement et recevez la vidéo à la fin de l’appel, prête à être partagée ou archivée.",
+          "description": "Un seul canal d'échange pour toute l'Administration : tous les agents publics peuvent s’inscrire et échanger sur Tchap. Ils peuvent également inviter des partenaires externes à rejoindre des conversations privées.",
           "image": {
             "src": "tchap/centralized.png",
             "alt": ""
@@ -270,7 +278,7 @@
           "icone": "check",
           "title": "Support personnalisé",
           "description": "L’équipe DINUM propose une assistance personnalisée et organise régulièrement des webinaires pour aider les utilisateurs à prendre en main l'outil."
-        }      
+        }
       ]
     },
     "roadmap": {
