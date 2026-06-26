@@ -19,6 +19,7 @@ const nextConfig = {
       {
         source: '/outil/avatar',
         destination: '/outil/avatar/index.html',
+        locale: false,
       },
     ]
   },
