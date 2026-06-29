@@ -32,7 +32,7 @@ export default async function handler(
     {
       id: 1,
       name: 'Tchap',
-      url: 'https://tchap.numerique.gouv.fr',
+      url: 'https://lasuite.numerique.gouv.fr/produits/tchap',
       maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/tchap.svg',
     },
