@@ -146,17 +146,13 @@ const WEBINAIRES_RESANA = [
     time: '14h00 - 15h00',
     tag: {
       label: 'Pour administrateurs et animateurs',
-      bg: '#E7F2FF',
-      color: '#265EAA',
+      bg: '#FFEFD9',
+      color: '#984800',
     },
-    title: 'Outil de migration : présentation technique et fonctionnelle',
+    title:
+      '[COMPLET] Outil de migration : présentation technique et fonctionnelle',
     description:
       'Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers une autre solution.',
-    cta: {
-      type: 'register',
-      href: '',
-      label: '(Webinaire complet)',
-    },
   },
   {
     day: '23',
@@ -164,8 +160,8 @@ const WEBINAIRES_RESANA = [
     time: '14h00 - 15h00',
     tag: {
       label: 'Pour administrateurs et animateurs',
-      bg: '#DEF7E6',
-      color: '#2B695A',
+      bg: '#FFEFD9',
+      color: '#984800',
     },
     title: 'Outil de migration : résultats des premiers pilotes et évolutions',
     description:
@@ -537,7 +533,7 @@ function WebinairesResana2027() {
                 <p className="text-sm leading-relaxed text-gray-600">
                   {session.description}
                 </p>
-                {session.cta.type === 'replay' ? (
+                {session.cta?.type === 'replay' ? (
                   <Button
                     href={session.cta.href}
                     variant="neutral_bordered"
@@ -549,6 +545,9 @@ function WebinairesResana2027() {
                     {session.cta.label}
                   </Button>
                 ) : (
+                  ''
+                )}
+                {session.cta?.type === 'register' ? (
                   <Button
                     href={session.cta.href}
                     target="_blank"
@@ -558,6 +557,8 @@ function WebinairesResana2027() {
                   >
                     {session.cta.label}
                   </Button>
+                ) : (
+                  ''
                 )}
               </div>
             </li>
