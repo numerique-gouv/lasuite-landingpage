@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avatar Absent · LaSuite</title>
+    <meta name="description" content="Générez un avatar « absent » aux couleurs de LaSuite : overlay plein sur votre photo + icône (palmier, lune, avion…). 100 % navigateur." />
+    <meta property="og:title" content="Avatar Absent · LaSuite" />
+    <meta property="og:description" content="Uploadez votre photo, choisissez un motif, téléchargez votre avatar." />
+    <base href="/outil/avatar/" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u = 'https://stats.data.gouv.fr/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '298']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand-gouv" href="https://gouvernement.fr" target="_blank" rel="noopener" aria-label="Gouvernement - Liberté, Égalité, Fraternité">
+          <img class="brand-gouv__logo" src="./assets/gouv.svg" alt="GOUVERNEMENT - Liberté, Égalité, Fraternité" />
+        </a>
+        <span class="header-sep" aria-hidden="true"></span>
+        <a class="brand" href="https://lasuite.numerique.gouv.fr/" target="_blank" rel="noopener">
+          <img class="brand__logo" src="/assets/lasuite.svg" alt="LaSuite" />
+        </a>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section class="hero">
+        <h1>Générateur d'avatar d'absence</h1>
+        <p>
+          Ajoutez votre photo depuis votre ordinateur, choisissez un motif et
+          téléchargez un avatar aux couleurs de LaSuite, que vous pourrez ensuite
+          utiliser sur Tchap pour prévenir vos collègues de votre absence !
+          Aucun fichier n'est envoyé : tout reste dans votre navigateur.
+        </p>
+      </section>
+
+      <div class="grid">
+        <div class="preview-wrap">
+          <div class="card preview">
+            <div class="preview__head">
+              <span class="meta">Aperçu · 1024×1024 · PNG</span>
+            </div>
+            <div class="canvas-wrap">
+              <canvas id="avatar" width="1024" height="1024" aria-label="Aperçu de l'avatar"></canvas>
+            </div>
+            <div class="actions">
+              <button id="btn-download" class="btn btn--primary" type="button">Envoyer une photo</button>
+              <button id="btn-copy" class="btn btn--outline" type="button" hidden>Copier</button>
+              <button id="btn-reset" class="btn btn--ghost" type="button">Réinitialiser</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <section class="step">
+            <div class="step__head"><span class="step__n">1</span><h2>Votre photo</h2></div>
+            <label id="dropzone" class="dropzone" for="file">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M5 20h14"/></svg>
+              <span class="dropzone__title">Glissez une photo ou <span class="link">parcourez</span></span>
+              <span class="dropzone__hint">PNG / JPG · idéalement carré · traitée localement</span>
+              <input id="file" type="file" accept="image/*" hidden />
+            </label>
+            <div id="adjust" class="adjust" hidden>
+              <label class="slider">
+                <div class="slider__head"><span>Zoom</span><span id="zoom-val" class="mono">1.00</span></div>
+                <input id="zoom" type="range" min="1" max="3" step="0.02" value="1" />
+              </label>
+              <label class="slider">
+                <div class="slider__head"><span>Cadrage horizontal</span><span id="offx-val" class="mono">0.00</span></div>
+                <input id="offx" type="range" min="-1" max="1" step="0.02" value="0" />
+              </label>
+              <label class="slider">
+                <div class="slider__head"><span>Cadrage vertical</span><span id="offy-val" class="mono">0.00</span></div>
+                <input id="offy" type="range" min="-1" max="1" step="0.02" value="0" />
+              </label>
+            </div>
+          </section>
+
+          <section class="step">
+            <div class="step__head"><span class="step__n">2</span><h2>Motif</h2></div>
+            <div id="reasons" class="reasons"></div>
+          </section>
+
+          <section class="step">
+            <div class="step__head"><span class="step__n">3</span><h2>Style</h2></div>
+
+            <div class="field">
+              <div class="field__label">Couleur</div>
+              <div id="scheme" class="segmented" data-group="scheme">
+                <button type="button" data-value="blue" class="seg is-active"><span class="sw" style="background:var(--brand)"></span>Bleu LaSuite</button>
+                <button type="button" data-value="red" class="seg"><span class="sw" style="background:var(--red)"></span>Rouge</button>
+                <button type="button" data-value="navy" class="seg"><span class="sw" style="background:#1E3A85"></span>Bleu nuit</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field__label">Intensité</div>
+              <label class="slider">
+                <div class="slider__head"><span>Opacité du voile</span><span id="alpha-val" class="mono">0.55</span></div>
+                <input id="alpha" type="range" min="0.2" max="0.9" step="0.01" value="0.55" />
+              </label>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="tool-footer">
+        <span>Outil réalisé pour les agents de la fonction publique. Aucun fichier n'est envoyé&nbsp;: tout est traité localement dans votre navigateur.</span>
+        <span class="tool-footer__links">
+          <a href="https://lasuite.numerique.gouv.fr/" target="_blank" rel="noopener">LaSuite</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://tchap.gouv.fr/" target="_blank" rel="noopener">Tchap</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://docs.numerique.gouv.fr/docs/63680152-249d-4772-b0c8-4621737755d4/" target="_blank" rel="noopener">Comment changer son avatar sur Tchap&nbsp;?</a>
+        </span>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <a class="footer-brand" href="https://lasuite.numerique.gouv.fr/" target="_blank" rel="noopener" aria-label="LaSuite - Direction interministérielle du numérique">
+            <span class="footer-brand-sep" aria-hidden="true"></span>
+            <span class="footer-brand__text">Direction<br>interministérielle<br>du numérique</span>
+          </a>
+          <div class="footer-right">
+            <a href="https://numerique.gouv.fr" target="_blank" rel="noopener" aria-label="numerique.gouv.fr - Nouvelle fenêtre">
+              <img src="/numeriquegouv.png" alt="numerique.gouv.fr - L'alliance du numérique de l'État" class="footer-numerique-logo" />
+            </a>
+            <ul class="footer-external-links">
+              <li><a href="https://legifrance.gouv.fr/fr/" target="_blank" rel="noopener">legifrance.gouv.fr</a></li>
+              <li><a href="https://info.gouv.fr/fr/" target="_blank" rel="noopener">info.gouv.fr</a></li>
+              <li><a href="https://www.service-public.gouv.fr/" target="_blank" rel="noopener">service-public.gouv.fr</a></li>
+              <li><a href="https://www.data.gouv.fr/fr/" target="_blank" rel="noopener">data.gouv.fr</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <ul class="footer-internal-links">
+            <li><a href="https://lasuite.numerique.gouv.fr/mentions-legales" target="_blank" rel="noopener">Mentions légales</a></li>
+            <li><a href="https://lasuite.numerique.gouv.fr/suivi" target="_blank" rel="noopener">Politique de confidentialité</a></li>
+            <li><a href="https://lasuite.numerique.gouv.fr/accessibilite" target="_blank" rel="noopener">Accessibilité</a></li>
+            <li>
+              <a href="https://github.com/suitenumerique/" target="_blank" rel="noopener" aria-label="GitHub LaSuite - Nouvelle fenêtre">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                Code source
+              </a>
+            </li>
+          </ul>
+          <p class="footer-license">
+            Sauf mention contraire, tous les contenus de ce site sont sous
+            <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener">licence etalab-2.0</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
