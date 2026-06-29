@@ -19,7 +19,7 @@ export const BlockHero: React.FC<{
   if (!bannerProduct) return null
 
   return (
-    <div className="w-[100%] max-w-container mx-auto mt-[100px] md:mt-[140px] overflow-hidden md:overflow-visible md:px-3 xl:px-0">
+    <div className="w-[100%] max-w-container mx-auto mt-8 md:mt-12 overflow-hidden md:overflow-visible md:px-3 xl:px-0">
       <div className="md:flex gap-8 md:justify-between mb-8 md:mb-[74px]">
         <div className="text-left md:max-w-[700px] relative px-6 md:px-0 z-10">
           <h2
