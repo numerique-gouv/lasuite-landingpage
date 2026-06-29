@@ -39,7 +39,7 @@
     },
     "hero": {
       "title": "Tchap, la messagerie instantanée du secteur public",
-      "subtitle": "Conçue et gérée par l'Administration française, au bénéfice de la fonction publique, pour communiquer facilement en toute sécurité. Utilisée par plus de 800 000 agents publics français.",
+      "subtitle": "Conçue et gérée par l'administration française, au bénéfice de la fonction publique, pour communiquer facilement en toute sécurité. Utilisée par plus de 800 000 agents publics français.",
       "alt_banner": "",
       "image": {
         "src": "tchap/tchap_hero.png",
@@ -63,7 +63,7 @@
         }
       ],
       "social_proof": {
-        "title": "Tous les ministères et de nombreuses administrations utilisent déjà Tchap.",
+        "title": "Utilisé chaque mois par plus de 800 000 agents, tous les ministères et de nombreuses administrations utilisent déjà Tchap.",
         "items": [
           {
             "title": "Ministère de l'intérieur",
@@ -116,7 +116,7 @@
         {
           "type": "",
           "title": "Centralisez et sécurisez vos échanges.",
-          "description": "Un seul canal d'échange pour toute l'Administration : tous les agents publics peuvent s’inscrire et échanger sur Tchap. Ils peuvent également inviter des partenaires externes à rejoindre des conversations privées.",
+          "description": "Un seul canal d'échange pour toute l'administration : tous les agents publics peuvent s’inscrire et échanger sur Tchap. Ils peuvent également inviter des partenaires externes à rejoindre des conversations privées.",
           "image": {
             "src": "tchap/centralized.png",
             "alt": ""
@@ -209,7 +209,7 @@
       "questions": [
         {
           "q": "Pourquoi Tchap ?",
-          "a": "Dans le cadre de la transformation numérique de l’État et des organisations publiques, le choix d’une solution de messagerie sécurisée souveraine est un enjeu majeur. Tchap se présente comme une réponse idéale, alliant sécurité, souveraineté et efficience pour répondre aux besoins de l’Administration. Sur cette page, vous trouverez les points différenciants de Tchap par rapport aux autres outils disponibles sur étagère."
+          "a": "Dans le cadre de la transformation numérique de l’État et des organisations publiques, le choix d’une solution de messagerie sécurisée souveraine est un enjeu majeur. Tchap se présente comme une réponse idéale, alliant sécurité, souveraineté et efficience pour répondre aux besoins de l’administration. Sur cette page, vous trouverez les points différenciants de Tchap par rapport aux autres outils disponibles sur étagère."
         },
         {
           "q": "Qui peut utiliser Tchap ?",
