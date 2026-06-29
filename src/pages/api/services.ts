@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 interface Service {
   id: number
   name: string
+  accessibleName?: string
   url: string
   maturity: 'alpha' | 'beta' | 'stable'
   logo: string | null
@@ -67,6 +68,7 @@ export default async function handler(
     {
       id: 6,
       name: 'Fr. Transfert',
+      accessibleName: 'France Transfert',
       url: 'https://francetransfert.numerique.gouv.fr/',
       maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/france_transfert.svg',
