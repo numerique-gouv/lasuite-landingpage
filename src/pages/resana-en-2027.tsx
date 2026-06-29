@@ -117,9 +117,9 @@ const WEBINAIRES_RESANA = [
     description:
       "Revue des options à compter du 1er janvier 2027, au regard de la doctrine de l'État sur l'achat numérique. Session d'1h, avec un temps de questions-réponses.",
     cta: {
-      type: 'register',
-      href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
-      label: "S'inscrire",
+      type: 'replay',
+      href: 'https://tube.numerique.gouv.fr/w/bCgDhNge3U3Bj9tMUQEvGH',
+      label: 'Accéder au replay',
     },
   },
   {
@@ -150,6 +150,24 @@ const WEBINAIRES_RESANA = [
       color: '#265EAA',
     },
     title: 'Outil de migration : présentation technique et fonctionnelle',
+    description:
+      'Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers une autre solution.',
+    cta: {
+      type: 'register',
+      href: '',
+      label: '(Webinaire complet)',
+    },
+  },
+  {
+    day: '23',
+    month: 'juillet',
+    time: '14h00 - 15h00',
+    tag: {
+      label: 'Pour administrateurs et animateurs',
+      bg: '#DEF7E6',
+      color: '#2B695A',
+    },
+    title: 'Outil de migration : résultats des premiers pilotes et évolutions',
     description:
       'Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers une autre solution.',
     cta: {
