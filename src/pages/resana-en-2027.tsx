@@ -146,8 +146,8 @@ const WEBINAIRES_RESANA = [
     time: '14h00 - 15h00',
     tag: {
       label: 'Pour administrateurs et animateurs',
-      bg: '#E7F2FF',
-      color: '#265EAA',
+       bg: '#FFEFD9',
+      color: '#984800',
     },
     title: 'Outil de migration : présentation technique et fonctionnelle',
     description:
