@@ -340,12 +340,12 @@
       "links": [
         {
           "title": "iOS",
-          "url": "https://apps.apple.com/fr/app/tchap/id1446253779",
+          "url": "https://apps.apple.com/us/app/tchap/id6736991029",
           "type": "tertiary_brand_bordered"
         },
         {
           "title": "Android",
-          "url": "https://play.google.com/store/apps/details?id=fr.gouv.tchap.a",
+          "url": "https://play.google.com/store/apps/details?id=fr.gouv.tchap.android.x",
           "type": "tertiary_brand_bordered"
         },
         {
