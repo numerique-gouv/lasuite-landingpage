@@ -1,0 +1,53 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: mentions-legales
+title: Mentions légales - Docs
+body: |
+  ## Éditeur
+
+  Le site Docs est édité par la Direction interministérielle du numérique de l'Etat (DINUM) située :
+
+  20 avenue de Ségur
+  75007 Paris
+  Tel. Accueil : 01.71.21.01.70
+  SIRET : 12000101100010 (secrétariat général du gouvernement)
+  SIREN : 120 001 011
+
+  ## Directeur de la publication
+
+  La directrice de la publication est Madame Stéphanie Schaer, Directrice interministérielle du numérique.
+
+  ## Hébergement de la plateforme
+
+  La plateforme est hébergée par Outscale, situé :
+
+  1, rue Royale – 319 Bureaux de la Colline 92210 Saint-Cloud
+
+  ## Accessibilité
+
+  La plateforme est partiellement accessible.
+
+  ## En savoir plus
+
+  Pour en savoir plus sur la politique d'accessibilité numérique de l'État : <https://accessibilite.numerique.gouv.fr/>
+
+  ## Sécurité
+
+  La plateforme est protégée par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette protection participe à la confidentialité des échanges.
+
+  En aucun cas les services associés à la plateforme ne seront à l'origine d'envoi de courriels pour demander la saisie d'informations personnelles.
+
+  ## Réutilisation des contenus
+
+  Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous [licence ouverte Etalab 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf).
+
+  Vous êtes notamment libres de les reproduire, copier, modifier, extraire, transformer, communiquer diffuser, redistribuer, publier, transmettre et exploiter sous réserve de mentionner leur source, leur date de dernière mise à jour et ne pas induire en erreur des tiers quant aux informations qui y figurent.
+
+  Tout site public ou privé est autorisé à établir, sans autorisation préalable, un lien (y compris profond) vers les informations diffusées sur ce site.
+
+  ## Contact
+
+  L'adresse courriel de contact est la suivante : [lasuite@numerique.gouv.fr](mailto:lasuite@numerique.gouv.fr)

@@ -78,7 +78,7 @@ export const LASUITE_PRODUCTS: Record<
     // screenshotMobileEn: TchapScreenshotMobileEn,
     keepRawScreenshot: true,
     name: 'Tchap',
-    url: 'https://tchap.numerique.gouv.fr',
+    url: '/produits/tchap',
     caption: 'la messagerie instantanée de la sphère publique',
     items: [
       <>

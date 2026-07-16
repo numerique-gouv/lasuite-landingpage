@@ -14,8 +14,9 @@ type ButtonVariant =
   | 'secondary_info'
   | 'tertiary_info'
   | 'tertiary_bordered'
+  | 'neutral_bordered'
   | 'none'
-type ButtonSize = 'large' | 'medium' | 'small'
+type ButtonSize = 'large' | 'medium' | 'small' | 'nano'
 
 interface ButtonProps {
   children?: React.ReactNode
@@ -41,7 +42,7 @@ const core =
 const styles = {
   // base variants (brand by default)
   primary_brand: `${core} ${transition} font-medium text-brand-050 bg-brand-550 hover:bg-brand-650`,
-  secondary_brand: `${core} ${transition} font-medium bg-brand-050 text-brand-550 hover:bg-brand-150`,
+  secondary_brand: `${core} ${transition} font-medium bg-brand-100 text-brand-550 hover:bg-brand-150`,
   tertiary_brand: `${core} ${transition} font-medium text-brand-550 bg-transparent hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
   tertiary_brand_bordered: `${core} ${transition} font-medium text-brand-550 bg-transparent border border-gray-150 hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
   neutral_bordered: `${core} ${transition} font-medium text-gray-550 bg-transparent border border-gray-150 hover:bg-[#f2f5f4] active:bg-[#f2f5f4]`,
@@ -61,6 +62,7 @@ const styles = {
   large: '!text-xl md:!py-4 md:!px-8',
   medium: 'md:!py-2 md:!px-4 h-8',
   small: 'md:!py-1 h-8 text-xs',
+  nano: 'text-xs py-1 h-auto !px-2',
   fullWidth: '!w-full',
 }
 
@@ -97,6 +99,7 @@ export const Button: React.FC<ButtonProps> = ({
       [styles.large]: size === 'large' && !isNone,
       [styles.medium]: size === 'medium' && !isNone,
       [styles.small]: size === 'small' && !isNone,
+      [styles.nano]: size === 'nano' && !isNone,
       [styles.fullWidth]: fullWidth && !isNone,
     },
     extraBorderForTertiary,

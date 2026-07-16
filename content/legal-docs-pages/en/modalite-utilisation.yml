@@ -1,0 +1,88 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: modalite-utilisation
+title: Terms of Use - Docs
+body: |
+  ## Scope
+
+  This document defines the terms of use for Docs, an online text editor that allows users to co-edit text documents and export them.
+
+  ## Purpose of the Platform
+
+  The service allows users to edit text documents online alone or with others and export them.
+
+  Docs is developed and operated by the DINUM.
+
+  Any use of this service must comply with these terms of use.
+
+  ## Access to the Service
+
+  Docs is accessible at [docs.numerique.gouv.fr](https://docs.numerique.gouv.fr).
+
+  Docs is made available to ProConnect users.
+
+  The use of the service is free and free of charge, but creating an account on the platform is necessary to create a document.
+
+  ## Features
+
+  The user can log in with ProConnect, create text documents, export them, and invite other users to co-edit them.
+
+  ## User Commitments and Responsibilities
+
+  ### Compliant Uses
+
+  The user is responsible for the data or content they enter into Docs. They must ensure that they only enter appropriate messages.
+
+  ### Prohibited Uses
+
+  The user agrees not to enter into Docs any content or information that is contrary to applicable laws and regulations.
+
+  It is recalled that any person who makes a false declaration for themselves or for others is exposed, in particular, to the sanctions provided for in Article 441-1 of the Penal Code, which provides for penalties of up to three years' imprisonment and a fine of 45,000 euros.
+
+  ### Use of Artificial Intelligence Service
+
+  Docs provides an artificial intelligence service based on [Albert API](https://alliance.numerique.gouv.fr/albert/), a service deployed by the DINUM to provide generative AI models and services to products with impact developed in the French administration.
+
+  This artificial intelligence service is designed to facilitate writing, synthesis, layout, and translation.
+
+  This service is not intended to generate individual administrative decisions intended for the public.
+
+  The user must approach their administration to ensure the framework for using a device of this type for text writing.
+
+  ## DINUM Commitments and Responsibilities
+
+  ### Security and Access to the Platform
+
+  The DINUM undertakes to secure Docs, in particular by taking all necessary measures to guarantee the security and confidentiality of the information provided.
+
+  The DINUM undertakes to provide the necessary and reasonable means to ensure continuous access to Docs.
+
+  The DINUM reserves the right to evolve, modify or suspend, without notice, the service for maintenance reasons or for any other reason deemed necessary.
+
+  The DINUM reserves the right to suspend or delete a user account that has not complied with these terms of use, without prejudice to any criminal or civil proceedings that may be brought against the user.
+
+  ### Open Source and Licenses
+
+  The source code of Docs is free and available here: <https://github.com/suitenumerique/docs>
+
+  The content offered by the DINUM is under Open License, except for logos and iconographic and photographic representations which may be governed by their own licenses.
+
+  ## Evolution of Terms of Use
+
+  The terms of these terms of use may be modified or supplemented at any time, without notice, depending on the changes made to the service, the evolution of the legislation or for any other reason deemed necessary.
+
+  These changes are notified to the user.
+
+
+  These changes and updates are imposed on the user who must, therefore, regularly refer to this section to check the general conditions in force.
+
+  ## Accessibility
+
+  **DINUM - OPI - LaSuite** undertakes to make its digital services accessible, in accordance with Article 47 of Law No. 2005-102 of February 11, 2005.
+
+  ### Compliance Status
+
+  **[docs.numerique.gouv.fr](https://docs.numerique.gouv.fr)** is partially compliant with RGAA 4.1. The site was first audited in May 2026, the declaration issued on 12/05/2026 is accessible [via this link](/legal/docs/declaration-accessibilite), the audit report [here](https://ara.numerique.gouv.fr/rapport/NQm_a0q0oJUVhg9_jVjUE/).

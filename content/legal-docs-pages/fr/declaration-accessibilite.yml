@@ -1,0 +1,142 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: false
+  nl: false
+slug: declaration-accessibilite
+title: Déclaration d'accessibilité - Docs
+body: |
+  **OPI - La Suite numérique** s'engage à rendre ses sites internet, intranet, extranet et ses progiciels accessibles (et ses applications mobiles et mobilier urbain numérique) conformément à l'article 47 de la loi n° 2005-102 du 11 février 2005.
+
+  Cette déclaration d'accessibilité s'applique à **https://lasuite.numerique.gouv.fr/produits/docs**.
+
+  ## État de conformité
+
+  **Docs [https://lasuite.numerique.gouv.fr/produits/docs](https://lasuite.numerique.gouv.fr/produits/docs)** *(nouvelle fenêtre)* est **partiellement conforme** avec le référentiel général d'amélioration de l'accessibilité (RGAA).
+
+  ### Résultats des tests
+
+  L'audit de conformité réalisé par **DINUM - Pôle Accessibilité et Design** révèle que **63 %** des critères du RGAA version 4.1.2 sont respectés.
+
+  ## Contenus non accessibles
+
+  ### Non-conformités
+
+  **Les personnes aveugles et malvoyantes qui utilisent un clavier et/ou une synthèse vocale ne peuvent pas actuellement lire, éditer ou contribuer.**
+
+  * Les images informatives n'ont pas toujours une alternative textuelle ;
+
+  * Les images décoratives ne sont pas toutes ignorées par les aides techniques ;
+
+  * Les ratios de contrastes peuvent être insuffisants en fonction de la combinaison de couleurs proposées ;
+
+  * Certains liens et boutons ne sont pas explicites ou n'ont pas de nom accessible ne sont pas atteignables au clavier ou avec un lecteur d'écran ;
+
+  * Les messages d'état ne sont pas restitués aux aides techniques ;
+
+  * L'ordre de tabulation n'est pas toujours cohérent y compris dans les modales ;
+
+  * Les changements de langue ne sont pas toujours corrects ;
+
+  * Des balises sont utilisées à des fins de présentation ;
+
+  * Les titres et les balises ne sont pas toujours correctement structurées ;
+
+  * Les étiquettes de formulaires sont parfois pas pertinentes ;
+
+  * Il y a une perte d'information sur le contenu quand la page est zoomée à 200% ;
+
+  * Les documents bureautiques téléchargeables ne sont pas accessibles ;
+
+  * Le titre de la page n'est pas toujours pertinent ;
+
+  * Les vidéos n'ont pas de transcription textuelle, ni de sous-titres s'il y a du son ;
+
+  * Les cadres n'ont pas de titre.
+
+  #### Éditeur
+
+  * Certaines fonctionnalités de l'éditeur ne permettent pas d'utiliser un clavier ou avec un lecteur d'écran ;
+
+  * L'éditeur ne permet pas l'ajout d'alternative textuelle, ni de titre de tableau et d'associer certaines cellules à des entêtes ainsi que l'ajout de la langue sur un passage non traduit ;
+
+  * L'écriture collaborative n'est pas compatible avec les lecteurs d'écran.
+
+  ## Établissement de cette déclaration d'accessibilité
+
+  Cette déclaration a été établie le 12 mai 2026.
+
+  ### Technologies utilisées pour la réalisation de l'audit
+
+  * HTML
+
+  * CSS
+
+  * Javascript
+
+  * Django
+
+  * BlockNote React
+
+  * React (Next)
+
+  ### Environnement de test
+
+  Les vérifications de restitution de contenus ont été réalisées sur la base de la combinaison fournie par la base de référence du RGAA, avec les versions suivantes :
+
+  * Sur Ordinateur MacOS avec Safari et VoiceOver
+
+  * Sur Ordinateur Windows avec Firefox et JAWS
+
+  * Sur Ordinateur Windows avec Firefox et NVDA
+
+  ### Outils pour évaluer l'accessibilité
+
+  * Web Developer Toolbar
+
+  * Colour Contrast Analyser
+
+  * HeadingsMap
+
+  * ArcToolkit
+
+  * Inspecteur de composants
+
+  * Validateur HTML du W3C
+
+  ### Pages du site ayant fait l'objet de la vérification de conformité
+
+  * Accueil (non connecté) - Présentation du produit **https://docs.numerique.gouv.fr/**
+
+  * Tunnel de connexion (ProConnect) **https://auth.agentconnect.gouv.fr/api/v2/interaction/COkaeTNIoZmSbp93mRdB3**
+
+  * Accueil (connecté) - Docs **https://docs.numerique.gouv.fr/**
+
+  * Page mise en forme **https://docs.numerique.gouv.fr/docs/16cd8c6a-4965-4bff-bb30-e466fd4d9f3e/**
+
+  * Page Tableaux **https://docs.numerique.gouv.fr/docs/0d998bef-1b69-47ce-bd18-83d4d849c734/**
+
+  * Page Sauts de page **https://docs.numerique.gouv.fr/docs/fcfa6f78-1fd6-4e15-8efe-47a5d881c67f/**
+
+  * Page données personnelles **https://docs.numerique.gouv.fr/docs/eb863389-a5e5-4d18-879d-149a1122380e/**
+
+  ## Retour d'information et contact
+
+  Si vous n'arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de Docs pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.
+
+  * Contacter **OPI - La Suite numérique : [lasuite@numerique.gouv.fr](mailto:lasuite@numerique.gouv.fr)**
+
+  ## Voies de recours
+
+  Si vous constatez un défaut d'accessibilité vous empêchant d'accéder à un contenu ou une fonctionnalité du site, que vous nous le signalez et que vous ne parvenez pas à obtenir une réponse de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
+
+  Plusieurs moyens sont à votre disposition :
+
+  * [Écrire un message au Défenseur des droits](https://formulaire.defenseurdesdroits.fr/formulaire_saisine)
+
+  * [Contacter le délégué du Défenseur des droits dans votre région](https://www.defenseurdesdroits.fr/carte-des-delegues)
+
+  * Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) à :
+    Défenseur des droits
+    Libre réponse 71120
+    75342 Paris CEDEX 07

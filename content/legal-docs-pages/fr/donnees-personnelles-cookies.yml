@@ -1,0 +1,88 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: donnees-personnelles-cookies
+title: Données personnelles et cookies - Docs
+body: |
+  ## Politique de confidentialité de Docs
+
+  ### Qui est responsable de Docs ?
+
+  Le site de Docs est développé au sein de la DINUM. Docs est un éditeur de texte en ligne permettant à ses utilisateurs de co-éditer des documents textes et de les exporter.
+
+  Le responsable du traitement des données est la Direction interministérielle du numérique de l'Etat (DINUM), représentée par Madame Stéphanie Schaer, Directrice interministérielle du numérique.
+
+  ### Pourquoi et comment vos données personnelles sont traitées ?
+
+  | Données | Finalité poursuivie | Fondement juridique | Durée de conservation | Destinataires |
+  | --- | --- | --- | --- | --- |
+  | Courriel | Notifier l'utilisateur quand il est invité sur un document et pour se connecter à ProConnect | Mission d'intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019) | Jusqu'à suppression du compte par l'utilisateur | DINUM |
+  | Nom et prénom | Permet d'afficher qui collabore / crée des documents sur la plateforme | Mission d'intérêt public relevant de la compétence de la DINUM (article 6 – 11° du décret n° 2019-1088 du 25 octobre 2019) | Jusqu'à suppression du compte par l'utilisateur | DINUM |
+
+  ### Qui nous aide à traiter vos données personnelles ?
+
+  Afin d'héberger vos données personnelles ou réaliser de la mesure d'audience, nous faisons appel à un sous-traitant. Avant de lui transmettre vos données, nous nous sommes assurés de la mise en œuvre par ses sous-traitants de garanties adéquates et du respect de conditions strictes de confidentialité, d'usage et de protection des données.
+
+  | Partenaires | Pays destinataire | Traitement réalisé | Garanties |
+  | --- | --- | --- | --- |
+  | IndieHosters | France | Administration du cluster Kubernetes | Clauses de sous-traitance |
+  | Outscale | France | Hébergement | Clauses de sous-traitance |
+  | Posthog | Allemagne | Mesure d'audience | Clauses de sous-traitance |
+  | Crisp | France | Support / enquêtes utilisateur, annonce nouvelle versions | Clauses de sous-traitance |
+
+  ### Quelles mesures de sécurité mettons-nous en place ?
+
+  Nous mettons en place plusieurs mesures pour sécuriser les données :
+
+  * Stockage chez l'hébergeur Outscale en SecNumCloud sur le cluster Kubernetes de La Suite Numérique qui respecte les meilleurs pratiques en matière d'hébergement et d'administration serveur ;
+
+  * Organisation de programme de prime à la faille détectée (*bug bounty*) pour assurer la sécurité ;
+
+  * Protection anti-DDOS et Web Application Firewall ;
+
+  * Homologation de sécurité par les RSSI de la DINUM.
+
+  ### Quels sont vos droits ?
+
+  Vous disposez :
+
+  * d'un droit d'information et d'un droit d'accès à vos données ;
+
+  * d'un droit à la limitation du traitement de vos données ;
+
+  * d'un droit de rectification ;
+
+  * d'un droit d'opposition.
+
+  Pour les exercer, contactez-nous par message électronique : [dpd@pm.gouv.fr](mailto:dpd@pm.gouv.fr)
+
+  Ou par voie postale à l'adresse suivante :
+
+  Services du Premier ministre
+  À l'attention du délégué à la protection des données (DPD)
+  56 rue de Varenne
+  75007 Paris
+
+  Puisque ce sont des droits personnels, nous ne traiterons votre demande que si nous sommes en mesure de vous identifier. Dans le cas où nous ne parvenons pas à vous identifier, nous pouvons être amenés à vous demander une preuve de votre identité.
+
+  Pour vous aider dans votre démarche, vous trouverez un modèle de demande élaboré par la CNIL ici : <https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces>
+
+  Nous nous engageons à vous répondre dans un délai raisonnable qui ne saurait dépasser 1 mois à compter de la réception de votre demande.
+
+  ## Suivi d'audience et vie privée
+
+  ### Cookies déposés et opt-out
+
+  Ce site dépose un petit fichier texte (un « cookie ») sur votre appareil lorsque vous le consultez.
+
+  Nous déposons un cookie de session qui vous permet de rester authentifier à Docs tant que votre session ProConnect est active.
+
+  Nous utilisons également Crisp pour le support utilisateur et notifier des nouveautés apportées par chaque nouvelles versions.
+
+  Posthog, un outil de mesure d'audience open source, nous fournit des mesures statistiques comme le nombre de visites et de comprendre quelles sont les pages les plus consultées afin que nous puissions améliorer le produit en continu.
+
+  ### Ce site n'affiche pas de bannière de consentement aux cookies, pourquoi ?
+
+  Nous respectons simplement la loi, qui dit que certains outils de suivi d'audience, correctement configurés pour respecter la vie privée, sont exemptés d'autorisation préalable.

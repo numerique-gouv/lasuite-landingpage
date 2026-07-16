@@ -2,7 +2,7 @@ import logoGouv from '@/assets/logo/gouv.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { LaGaufre } from '@/components/LaGaufre'
-import { useState } from 'react'
+import { Fragment } from 'react'
 import { productLogos } from '@/assets/products/logosfull'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
@@ -17,7 +17,7 @@ const ProductsHeader: React.FC<{
   const logoProduct = productLogos[slug]
 
   return (
-    <header className="max-w-container w-[100%] mx-auto fade-in bg-white md:px-3 xl:px-0 absolute top-0 right-0 left-0 z-50 pr-6">
+    <header className="max-w-container w-[100%] mx-auto fade-in bg-white md:px-3 xl:px-0 px-4">
       <div className="flex items-center">
         <div className="relative sm:mx-0 sm:flex py-4 items-center fr-enlarge-link">
           <Image
@@ -90,9 +90,8 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
           links.map((link, idx) => {
             const variant = (link.variant || link.type) as any
             return (
-              <>
+              <Fragment key={`${link.title}-${idx}`}>
                 <Button
-                  key={`${link.title}-${idx}`}
                   target="_blank"
                   href={link.url}
                   variant={variant}
@@ -103,7 +102,7 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
                 {idx === 0 && links.length > 2 && (
                   <span className="h-6 w-px rounded-[2px] bg-gray-100" />
                 )}
-              </>
+              </Fragment>
             )
           })}
       </div>

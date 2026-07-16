@@ -1,0 +1,119 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: modalite-utilisation
+title: Terms of Usen - Drive
+body: |
+  ## **1. Scope**
+
+  This document defines the terms of use of LaSuite Files (hereinafter referred to as "Files" or "the application"), a document storage and sharing application specifically designed for State administrations and organizations under their supervision.
+
+  ## **2. Purpose of the application**
+
+  Files aims to foster collaboration among teams within State administrations and organizations under their supervision, and to facilitate document exchanges within collaborative projects.
+
+  Files facilitates document sharing between public servants by adapting to various day-to-day use cases:
+
+  * **Upload and organize** files in a **private and secure workspace**;
+  * **Easily share files and folders** with agents from other administrations, partners, and/or service providers;
+  * **Edit office documents** directly in the browser in a collaborative manner;
+
+  Files is developed and operated by the Interministerial Digital Directorate (DINUM).
+
+  The application is provided by DINUM to State administrations and organizations under their supervision, for use by their agents, partners, and invited service providers.
+
+  Any use of Files must comply with these terms of use and, where applicable, with the usage policies of the relevant administration.
+
+  ## **3. Definitions**
+
+  **Files** refers to the product whose use is described in these terms and presented on the following page: https://fichiers.numerique.gouv.fr.
+
+  **Users** of Files are any individuals using the application to store, share, and co-edit documents, whether they are agents, partners, or service providers of the relevant administrations.
+
+  **The relevant administration** refers to the State administration or organization under its supervision that provides Files to its agents, partners, or service providers.
+
+  ## **4. Access to the application**
+
+  Files is made available to users by their relevant administration.
+
+  Users access it by logging in through the ProConnect authentication service.
+
+  Users may then share links granting access to shared resources, under their own responsibility.
+
+  ## **5. Features**
+
+  Files provides users with the ability to manage, share, and edit documents as part of their professional activities. The application notably offers:
+
+  * a personal storage space: each user has a private and secure workspace to upload, organize, and retain professional files;
+  * secure sharing: the ability to share files or folders with agents from other administrations, partners, and service providers;
+  * collaborative editing of office documents (text documents, spreadsheets, presentations) directly in the browser, with real-time co-editing capabilities.
+
+  Files is hosted on a SecNumCloud-certified infrastructure. Users are encouraged to contact their relevant administration regarding any questions about the framework governing its use, particularly for documents subject to enhanced confidentiality requirements.
+
+  Access to shared files and folders is managed by users under their own responsibility, in compliance with the defined access rights.
+
+  ## **6. Commitments and responsibilities of users**
+
+  ### **6.1 Permitted use**
+
+  Files is provided to facilitate collaboration between public servants and with external collaborators.
+
+  Users are responsible for the data and content they store and/or share. They must ensure that only appropriate professional documents are stored and shared.
+
+  Users should consult their relevant administration to understand the internal usage policies governing Files.
+
+  ### **6.2 Prohibited use**
+
+  Users undertake not to store or share any content or information that violates applicable laws and regulations.
+
+  ## **7. DINUM commitments and responsibilities**
+
+  ### **7.1 Application security**
+
+  DINUM is committed to securing Files, notably by implementing all necessary measures to ensure the security and confidentiality of stored and shared documents.
+
+  The Files information system has been formally accredited by DINUM for the instance it operates on behalf of administrations for a period of one year (until April 2027).
+
+  This accreditation does not cover the processing of sensitive personal data within the meaning of the GDPR. Each administration must assess whether the service complies with its own requirements before using it with sensitive data. It is the responsibility of the competent authority within each administration to reassess the security level of the product and determine whether it meets the security requirements of the intended processing activities.
+
+  ### **7.2 Access to the application**
+
+  DINUM undertakes to provide the necessary and reasonable means to ensure continuous access to the application.
+
+  The application is intended to be available 24 hours a day, 7 days a week, except during maintenance periods.
+
+  DINUM targets an annual availability rate of 99.5%, excluding planned outages. In the event of an incident or maintenance operation, it aims for a recovery time objective of 72 hours outside business hours.
+
+  As part of maintenance operations on the application's runtime environment, DINUM reserves the right to temporarily suspend the application. Whenever possible, users will be informed at least 48 hours in advance. In emergency situations, such suspension may occur without prior notice.
+
+  Such exceptional interruptions may be necessary, for example, for data management operations, production deployments, or architectural changes.
+
+  Unavailability of the application does not entitle users to any form of compensation.
+
+  ### **7.3 Support management**
+
+  DINUM provides first-level support to users exclusively for technical aspects of the application.
+
+  This support service can be reached through the online contact form.
+
+  The target response time is two business days from the receipt of the request, although this may vary depending on the complexity and volume of requests.
+
+  ### **7.4 Monitoring application usage**
+
+  DINUM reserves the right to suspend or delete a user account that violates these terms of use, without prejudice to any criminal or civil liability proceedings that may be initiated against the individual concerned. Relevant information may be transmitted to the user's administration, which remains responsible for providing access to the application.
+
+  The suspension or revocation of one or more accounts does not entitle users to any form of compensation.
+
+  ### **7.5 Retention of connection data**
+
+  In accordance with Law No. 2004-575 and the provisions set out in Decree No. 2021-1362, DINUM is required to retain identification and connection data for a period of one year in order to enable the identification of any individual who has contributed to the creation of online content.
+
+  ### **7.6 Open Source and Licenses**
+
+  The source code of the service is open source and available here: https://github.com/suitenumerique/drive. Content provided by DINUM is distributed under the Open Licence 2.0, except for logos and iconographic or photographic representations, which may be governed by their own licenses.
+
+  ## **8. Changes to the terms of use**
+
+  These terms of use may be modified or supplemented at any time, without prior notice, to reflect changes to the service, legal developments, or any other reason deemed necessary. Such modifications and updates are binding upon users, who are therefore encouraged to review this section regularly to stay informed of the current terms.

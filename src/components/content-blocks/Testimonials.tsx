@@ -2,14 +2,18 @@ import React, { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
+import { Button } from '@/components/ui-kit-v2/Button'
 import { useTranslations } from '@/locales/useTranslations'
 import { useLiveAnnouncer } from '@/hooks/useLiveAnnouncer'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
 export type TestimonialType = {
   quote?: string
   author?: string
   role?: string
   avatar?: { src: string; alt?: string }
+  videoUrl?: string
 }
 
 export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
@@ -172,13 +176,27 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
                 {currentTestimonial.author}
               </p>
             )}
+
             {currentTestimonial.role && (
               <p
                 className="text-sm text-gray-550"
                 dangerouslySetInnerHTML={{
                   __html: currentTestimonial.role,
                 }}
-              ></p>
+              />
+            )}
+            {currentTestimonial.videoUrl && (
+              <div className="pt-3">
+                <Button
+                  href={currentTestimonial.videoUrl}
+                  variant="tertiary_brand_bordered"
+                  icon={<PlayArrowIcon />}
+                  iconPosition="left"
+                  target="_blank"
+                >
+                  Voir le témoignage
+                </Button>
+              </div>
             )}
           </div>
         </div>

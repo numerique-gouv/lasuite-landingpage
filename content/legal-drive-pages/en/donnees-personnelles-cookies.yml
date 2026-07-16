@@ -1,0 +1,73 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: donnees-personnelles-cookies
+title: Personal Data and Cookies - Drive
+body: |
+  ## Privacy Policy for Fichiers
+
+  ### Who is responsible for Fichiers?
+
+  Fichiers is developed and operated by the French Interministerial Digital Directorate (DINUM) and made available to public administrations to provide a document storage and sharing application specifically designed for employees of State administrations and organizations under their supervision, as well as, where applicable, their partners and service providers.
+
+  In this context, the data controller is:
+
+  * if you are a public employee authenticated through ProConnect: your affiliated administration;
+  * whether you are a public employee or not, if you have been invited to use Fichiers: the administration that invited you to use it.
+
+  DINUM acts as a data processor in the context of providing Fichiers to participating administrations.
+
+  ## Why and how is your personal data processed?
+
+  | Data | Purpose | Legal basis | Retention period | Recipients |
+  |------|---------|------------|------------------|------------|
+  | User identification data (surname, first name, professional email address, etc.) obtained through ProConnect | Verification of eligibility for the service and notification of users when a folder or file is shared with them | Public interest mission falling within DINUM's remit (Article 6-11° of Decree No. 2019-1088 of 25 October 2019) | Until account deletion (accounts are automatically deleted after 36 months of inactivity) | DINUM |
+  | Files and folders created or imported into the application | Accessing, modifying, and sharing imported or created files and folders | Public interest mission falling within DINUM's remit (Article 6-11° of Decree No. 2019-1088 of 25 October 2019) | Up to 30 days after account deletion (accounts are automatically deleted after 36 months of inactivity) | DINUM |
+  | Technical connection data | Ensuring account security and complying with legal obligations | Legal obligation (Law No. 2004-575 and Article 5 of Decree No. 2021-1362) | 12 months | DINUM |
+
+  ## Who helps us process your personal data?
+
+  To host your personal data or perform audience measurement, we rely on data processors. Before transferring your data, we ensure that they implement appropriate safeguards and comply with strict confidentiality, usage, and data protection requirements.
+
+  | Partner | Destination Country | Processing Activity | Safeguards |
+  |----------|--------------------|---------------------|------------|
+  | IndieHosters | France | Kubernetes cluster administration | Data processing agreement clauses. Available at https://indiehosters.net/politique-de-protection-des-donnees-dpa/ |
+  | Outscale | France | Hosting services | Data processing agreement clauses. Available at https://fr.outscale.com/cgucgv/ |
+  | PostHog | Germany | Audience measurement | Data processing agreement clauses. Available at https://posthog.com/privacy |
+  | Brevo | France | Email delivery services | Data processing agreement clauses. Available at https://www.brevo.com/legal/privacypolicy/ |
+
+  ## What security measures do we implement?
+
+  We implement several measures to secure your data:
+
+  * Storage on Outscale's SecNumCloud-certified infrastructure within the La Suite Numérique Kubernetes cluster, following industry best practices for hosting and server administration;
+  * A vulnerability disclosure and bug bounty program to strengthen security (currently being implemented);
+  * Security accreditation by DINUM's Information Systems Security Officers (RSSI), granted on 24 April 2026 for a period of one year.
+
+  ## What are your rights?
+
+  You have:
+
+  * the right to be informed and the right of access to your data;
+  * the right to restriction of processing;
+  * the right to rectification;
+  * the right to object.
+
+  To exercise these rights, contact us by email at: dpd@pm.gouv.fr
+
+  Or by post at:
+
+  > Prime Minister's Office\
+  > Attention: Data Protection Officer (DPO)\
+  > 56 rue de Varenne\
+  > 75007 Paris\
+  > France
+
+  Since these are personal rights, we will only process your request if we are able to identify you. If we cannot identify you, we may ask you to provide proof of identity.
+
+  To assist you with your request, a template provided by the French Data Protection Authority (CNIL) is available here:
+  https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces
+
+  We undertake to respond within a reasonable timeframe, not exceeding one month from receipt of your request.
