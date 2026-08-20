@@ -63,6 +63,12 @@ export const Footer = () => {
                 />
               </ExternalLink>
             </div>
+            <p className="text-xs md:px-5 md:text-right">
+              LaSuite est l’espace de travail collaboratif créé et opéré par la
+              direction interministérielle du numérique (DINUM) en charge de la
+              transformation numérique de l’État.{' '}
+            </p>
+
             <ul className="flex flex-wrap justify-end mt-2">
               {externalLinks.map((link) => (
                 <li
