@@ -27,7 +27,7 @@ const ROADMAP_MILESTONES = [
     date: 'Été 2026',
     description:
       "Ouverture d'un service d'aide à la migration des données pour les organisations qui le souhaitent",
-    active: false,
+    active: true,
   },
   {
     date: 'Septembre 2026',
@@ -389,7 +389,7 @@ function CalendrierResana2027() {
                     className={`w-[2px] min-h-0 flex-1 ${
                       index === 0
                         ? 'bg-transparent'
-                        : mobileRoadmapLineClass(index - 1, lastActiveIndex)
+                        : mobileRoadmapLineClass(index, lastActiveIndex)
                     }`}
                     aria-hidden
                   />
@@ -425,24 +425,32 @@ function CalendrierResana2027() {
                 key={milestone.date}
                 className={`relative flex flex-col items-center ${index === 0 ? 'pl-0' : 'pl-3'} ${index === ROADMAP_MILESTONES.length - 1 ? 'pr-0' : 'pr-3'}`}
               >
-                {index === 0 && (
+                {index <= lastActiveIndex && (
                   <div
                     className="absolute top-[8px] left-0 h-[2px] w-1/2 bg-brand-550 rounded-full"
                     aria-hidden
                   />
                 )}
-                {index > 0 && (
+                {index > lastActiveIndex && (
                   <div
                     className="absolute top-[8px] left-0 h-[2px] w-1/2 bg-gray-200"
                     aria-hidden
                   />
                 )}
-                {index < ROADMAP_MILESTONES.length && (
-                  <div
-                    className="absolute top-[8px] left-1/2 h-[2px] w-1/2 bg-gray-200"
-                    aria-hidden
-                  />
-                )}
+                {index < ROADMAP_MILESTONES.length &&
+                  index <= lastActiveIndex && (
+                    <div
+                      className="absolute top-[8px] left-1/2 h-[2px] w-1/2 bg-brand-550"
+                      aria-hidden
+                    />
+                  )}
+                {index < ROADMAP_MILESTONES.length &&
+                  index > lastActiveIndex && (
+                    <div
+                      className="absolute top-[8px] left-1/2 h-[2px] w-1/2 bg-gray-200"
+                      aria-hidden
+                    />
+                  )}
                 <RoadmapMilestoneMarker active={milestone.active} />
                 <div className="mt-5 w-full rounded-lg border border-gray-100 bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
                   <p className="text-sm font-medium text-brand-550 md:text-xl">
