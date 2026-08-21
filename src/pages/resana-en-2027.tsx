@@ -158,24 +158,6 @@ const WEBINAIRES_RESANA = [
       label: 'Accéder au replay',
     },
   },
-  {
-    day: '23',
-    month: 'juillet',
-    time: '14h00 - 15h00',
-    tag: {
-      label: 'Pour administrateurs et animateurs',
-      bg: '#FFEFD9',
-      color: '#984800',
-    },
-    title: 'Outil de migration : résultats des premiers pilotes et évolutions',
-    description:
-      'Webinaire à destination des équipes administrant et animant des périmètres et espaces Resana pour comprendre comment migrer vers une autre solution.',
-    cta: {
-      type: 'register',
-      href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
-      label: "S'inscrire",
-    },
-  },
 ]
 
 const RESSOURCES_RESANA = [
