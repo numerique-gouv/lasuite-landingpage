@@ -7,13 +7,15 @@ import { productLogos } from '@/assets/products/logosfull'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import { Button } from '@/components/ui-kit-v2/Button'
+import { useTranslations } from '@/locales/useTranslations'
 
 export type ProductContent = Record<string, any>
 
 const ProductsHeader: React.FC<{
   productContent: ProductContent
   slug: string
-}> = ({ productContent, slug }) => {
+  productTitle: string
+}> = ({ productContent, slug, productTitle }) => {
   const logoProduct = productLogos[slug]
 
   return (
@@ -37,7 +39,10 @@ const ProductsHeader: React.FC<{
             />
           </Link>
         </div>
-        <HeaderRight links={productContent?.header?.links} />
+        <HeaderRight
+          links={productContent?.header?.links}
+          productTitle={productTitle}
+        />
       </div>
     </header>
   )
@@ -66,7 +71,11 @@ const LoginIcon = () => (
   </svg>
 )
 
-const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
+const HeaderRight: React.FC<{
+  links?: HeaderLink[]
+  productTitle: string
+}> = ({ links, productTitle }) => {
+  const t = useTranslations()
   const loginLink =
     Array.isArray(links) && links.length > 0 ? links[links.length - 1] : null
 
@@ -81,6 +90,10 @@ const HeaderRight: React.FC<{ links?: HeaderLink[] }> = ({ links }) => {
             icon={<LoginIcon />}
             className="!p-2 !min-w-0"
             target="_blank"
+            aria-label={t('common.login_to_product', {
+              title: loginLink.title,
+              product: productTitle,
+            })}
           ></Button>
         )}
       </div>

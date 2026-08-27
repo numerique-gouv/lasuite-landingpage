@@ -4,6 +4,7 @@ common:
   new_window: Neues Fenster
   know_more: Mehr erfahren
   back_to_home: Zurück zur Startseite
+  login_to_product: '{title} bei {product}'
   menu: Menü
   close: Schließen
   view_more: Mehr anzeigen
