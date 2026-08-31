@@ -14,6 +14,7 @@ const ProductsHeader: React.FC<{
   slug: string
 }> = ({ productContent, slug }) => {
   const logoProduct = productLogos[slug]
+  const productName = slug.charAt(0).toUpperCase() + slug.slice(1)
 
   return (
     <header className="max-w-container w-[100%] mx-auto fade-in bg-white md:px-3 xl:px-0 px-4">
@@ -32,7 +33,7 @@ const ProductsHeader: React.FC<{
               height={40}
               className="md:block"
               src={logoProduct.src}
-              alt={`LaSuite ${slug}`}
+              alt={`LaSuite ${productName}`}
             />
           </Link>
         </div>
