@@ -2,7 +2,6 @@ import logoGouv from '@/assets/logo/gouv.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import { LaGaufre } from '@/components/LaGaufre'
-import { Fragment } from 'react'
 import { productLogos } from '@/assets/products/logosfull'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
@@ -17,6 +16,7 @@ const ProductsHeader: React.FC<{
   productTitle: string
 }> = ({ productContent, slug, productTitle }) => {
   const logoProduct = productLogos[slug]
+  const productName = slug.charAt(0).toUpperCase() + slug.slice(1)
 
   return (
     <header className="max-w-container w-[100%] mx-auto fade-in bg-white md:px-3 xl:px-0 px-4">
@@ -35,7 +35,7 @@ const ProductsHeader: React.FC<{
               height={40}
               className="md:block"
               src={logoProduct.src}
-              alt={`LaSuite ${slug}`}
+              alt={`LaSuite ${productName}`}
             />
           </Link>
         </div>
@@ -98,12 +98,18 @@ const HeaderRight: React.FC<{
         )}
       </div>
 
-      <div className="flex items-center gap-2 md:top-0 md:right-0 hidden lg:flex z-10 ml-auto">
-        {Array.isArray(links) &&
-          links.map((link, idx) => {
+      {Array.isArray(links) && links.length > 0 && (
+        <ul
+          role="list"
+          className="items-center gap-2 md:top-0 md:right-0 hidden lg:flex z-10 ml-auto list-none p-0 m-0"
+        >
+          {links.map((link, idx) => {
             const variant = (link.variant || link.type) as any
             return (
-              <Fragment key={`${link.title}-${idx}`}>
+              <li
+                key={`${link.title}-${idx}`}
+                className="flex items-center gap-2"
+              >
                 <Button
                   target="_blank"
                   href={link.url}
@@ -113,12 +119,16 @@ const HeaderRight: React.FC<{
                   {link.title}
                 </Button>
                 {idx === 0 && links.length > 2 && (
-                  <span className="h-6 w-px rounded-[2px] bg-gray-100" />
+                  <span
+                    className="h-6 w-px rounded-[2px] bg-gray-100"
+                    aria-hidden="true"
+                  />
                 )}
-              </Fragment>
+              </li>
             )
           })}
-      </div>
+        </ul>
+      )}
     </>
   )
 }

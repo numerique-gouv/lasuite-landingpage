@@ -106,23 +106,24 @@ export const FAQLinks: React.FC<FAQLinksProps> = ({ links }) => {
 
   return (
     <div className="max-w-container w-[100%] mx-auto pt-12 md:pt-8 px-6 md:px-3 xl:px-0">
-      <div className="flex flex-wrap gap-4">
+      <ul role="list" className="flex flex-wrap gap-4 list-none p-0 m-0">
         {links.map((link, idx) => {
           const icon = link.icone ? iconMap[link.icone] : undefined
           return (
-            <Button
-              key={`faq-link-${idx}`}
-              href={link.url}
-              variant={(link.type as any) || 'primary_brand'}
-              icon={icon}
-              iconPosition="left"
-              target="_blank"
-            >
-              {link.title}
-            </Button>
+            <li key={`faq-link-${idx}`} className="w-full md:w-auto">
+              <Button
+                href={link.url}
+                variant={(link.type as any) || 'primary_brand'}
+                icon={icon}
+                iconPosition="left"
+                target="_blank"
+              >
+                {link.title}
+              </Button>
+            </li>
           )
         })}
-      </div>
+      </ul>
     </div>
   )
 }
