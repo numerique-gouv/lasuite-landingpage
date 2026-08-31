@@ -109,9 +109,8 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
           </svg>
           <div id={carouselId} className="grid" aria-live="polite">
             {testimonials.map((testimonial, idx) => (
-              <p
+              <blockquote
                 key={idx}
-                role="group"
                 aria-roledescription={t('common.slide')}
                 aria-label={getSlidePositionLabel(idx)}
                 aria-hidden={idx !== currentIndex}
@@ -124,7 +123,7 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
                 }`}
               >
                 {testimonial.quote}
-              </p>
+              </blockquote>
             ))}
           </div>
           {total > 1 && (
@@ -174,9 +173,9 @@ export const Testimonials: React.FC<{ testimonials: TestimonialType[] }> = ({
           )}
           <div className="min-w-[200px] max-w-[300px]">
             {currentTestimonial.author && (
-              <p className="text-gray-850 text-base font-medium">
+              <cite className="block not-italic text-gray-850 text-base font-medium">
                 {currentTestimonial.author}
-              </p>
+              </cite>
             )}
 
             {currentTestimonial.role && (
