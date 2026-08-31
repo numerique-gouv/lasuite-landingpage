@@ -56,7 +56,11 @@ export const LayoutProducts: React.FC<{
           link={content.top_banner.link}
         />
       )}
-      <ProductsHeader productContent={content} slug={product.slug} />
+      <ProductsHeader
+        productContent={content}
+        slug={product.slug}
+        productTitle={product.title}
+      />
       <main>{children}</main>
       <Footer />
     </div>

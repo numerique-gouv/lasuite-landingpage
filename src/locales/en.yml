@@ -6,6 +6,7 @@ common:
   know_more: Know more
   back_to_home: Back to homepage
   login: Login
+  login_to_product: '{title} to {product}'
   menu: Menu
   close: Close
   view_more: See more
