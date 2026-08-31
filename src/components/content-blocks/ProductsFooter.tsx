@@ -10,6 +10,7 @@ export const ProductsFooter: React.FC<{
   slug: string
 }> = ({ productContent, slug }) => {
   const logoProduct = productLogos[slug]
+  const productName = slug.charAt(0).toUpperCase() + slug.slice(1)
 
   return productContent.footer ? (
     <div className="py-12 md:py-[120px] mx-auto bg-gray-025 text-center px-6 md:px-0">
@@ -19,7 +20,7 @@ export const ProductsFooter: React.FC<{
           src={logoProduct.src}
           width={432}
           height={96}
-          alt={`logo ${slug}`}
+          alt={`LaSuite ${productName}`}
         />
       ) : null}
 
