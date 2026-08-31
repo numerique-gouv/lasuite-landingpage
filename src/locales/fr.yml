@@ -1,5 +1,6 @@
 common:
   la_suite: LaSuite
+  la_suite_numerique: La Suite Numérique
   la_suite_territoriale: LaSuite Territoriale
   new_window: nouvelle fenêtre
   know_more: En savoir plus
@@ -8,6 +9,7 @@ common:
   send: Envoyer
   footer: Pied de page
   login: Se connecter
+  login_to_product: '{title} à {product}'
   menu: Menu
   close: Fermer
   view_more: Voir plus

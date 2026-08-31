@@ -16,15 +16,17 @@ export const LayoutProducts: React.FC<{
   locale: string
 }> = ({ title, productContent, locale, children }) => {
   const isHomepage = title === TITLE_SITE
-  const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   const t = useTranslations()
   const product = productContent.global
   const content = productContent[locale] || productContent['fr']
+  const pageTitle = isHomepage
+    ? title
+    : `${product.title || title} - ${t('common.la_suite_numerique')}`
 
   return (
     <div className={`min-h-screen flex flex-col text-body'`}>
       <Head>
-        <title>{product.title || pageTitle}</title>
+        <title>{pageTitle}</title>
         <meta
           key="ogtitle"
           property="og:title"
@@ -54,7 +56,11 @@ export const LayoutProducts: React.FC<{
           link={content.top_banner.link}
         />
       )}
-      <ProductsHeader productContent={content} slug={product.slug} />
+      <ProductsHeader
+        productContent={content}
+        slug={product.slug}
+        productTitle={product.title}
+      />
       <main>{children}</main>
       <Footer />
     </div>

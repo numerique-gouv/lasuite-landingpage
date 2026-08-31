@@ -1,10 +1,12 @@
 common:
   la_suite: LaSuite
+  la_suite_numerique: La Suite Numérique
   la_suite_territoriale: LaSuite Territoriale
   new_window: new window
   know_more: Know more
   back_to_home: Back to homepage
   login: Login
+  login_to_product: '{title} to {product}'
   menu: Menu
   close: Close
   view_more: See more
