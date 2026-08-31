@@ -1,5 +1,6 @@
 common:
   la_suite: LaSuite
+  la_suite_numerique: La Suite Numérique
   la_suite_territoriale: LaSuite Territoriale
   new_window: nouvelle fenêtre
   know_more: En savoir plus
