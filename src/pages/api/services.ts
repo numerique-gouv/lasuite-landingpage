@@ -76,7 +76,7 @@ export default async function handler(
     {
       id: 7,
       name: 'Resana',
-      url: 'https://resana.numerique.gouv.fr/',
+      url: 'https://lasuite.numerique.gouv.fr/resana-en-2027',
       maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/resana.svg',
     },
