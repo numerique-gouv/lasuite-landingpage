@@ -68,7 +68,7 @@ export default async function handler(
     {
       id: 6,
       name: 'Fr. Transfert',
-      accessibleName: 'France Transfert',
+      accessibleName: 'Fr. Transfert (France Transfert)',
       url: 'https://francetransfert.numerique.gouv.fr/',
       maturity: 'stable',
       logo: 'https://lasuite.numerique.gouv.fr/assets/products/france_transfert.svg',
