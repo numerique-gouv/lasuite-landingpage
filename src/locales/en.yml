@@ -37,6 +37,23 @@ footer:
   accessiblity: Accessiblity
   legal: Legal
   privacy_policy: Privacy policy
+support:
+  footer_link: Contact the team
+  title: Contact the team
+  subtitle: Bug, idea, question, or praise — the team reads everything and will get back to you if needed.
+  email_label: Your email
+  email_hint: So the team can get back to you
+  subject_label: Subject
+  subject_hint: Description
+  message_label: Your message
+  message_hint: Description
+  cancel: Cancel
+  send: Send
+  sending: Sending…
+  close: Close the contact form
+  success: Your message has been sent.
+  success_secondary: The team will get back to you if needed.
+  error: Something went wrong. Please try again later.
 not_found_page:
   title: Ooops !
   body: The page you're looking for does not exist.

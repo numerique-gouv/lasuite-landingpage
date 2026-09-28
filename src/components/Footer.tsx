@@ -3,8 +3,8 @@ import { ExternalLink, LinkProps } from '@/components/ExternalLink'
 import { useTranslations } from '@/locales/useTranslations'
 
 import Image from 'next/image'
-import { Button } from '@/components/ui-kit-v2/Button'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import { SupportButton } from '@/components/support/SupportButton'
 
 const hover =
   'hover:underline hover:decoration-2 hover:underline-offset-4 transition ease-in-out delay-50 duration-300 hover:cursor-pointer'
@@ -25,7 +25,11 @@ const pages = [
   { href: '/accessibilite', children: 'footer.accessiblity' as const },
 ]
 
-export const Footer = () => {
+export const Footer = ({
+  supportChannel,
+}: {
+  supportChannel?: string
+}) => {
   const t = useTranslations()
   return (
     <footer className="py-8 mt-auto bg-white border-t border-gray-025">
@@ -122,6 +126,11 @@ export const Footer = () => {
                   <span>Code source</span>
                 </ExternalLink>
               </li>
+              {supportChannel && (
+                <li className="inline internal-link-footer text-xs text-gray-700">
+                  <SupportButton channel={supportChannel} />
+                </li>
+              )}
             </ul>
           </div>
           <div className="mt-2">
