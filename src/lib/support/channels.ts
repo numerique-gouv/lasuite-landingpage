@@ -1,0 +1,15 @@
+export const SUPPORT_CHANNELS: Record<string, string> = {
+  lasuite: 'support-lasuite@numerique.gouv.fr',
+  accounts: 'support-lasuite@numerique.gouv.fr',
+  messagerie: 'support-messagerie@numerique.gouv.fr',
+  assistant: 'support-assistant@numerique.gouv.fr',
+  docs: 'support-docs@numerique.gouv.fr',
+  fichiers: 'support-fichiers@numerique.gouv.fr',
+  'france-transfert': 'support-france-transfert@numerique.gouv.fr',
+  grist: 'support-grist@numerique.gouv.fr',
+  regie: 'support-regie@numerique.gouv.fr',
+  resana: 'support-resana@numerique.gouv.fr',
+  tchap: 'support-tchap@numerique.gouv.fr',
+  transcripts: 'support-transcripts@numerique.gouv.fr',
+  visio: 'support-visio@numerique.gouv.fr',
+}

@@ -38,6 +38,28 @@ footer:
   accessiblity: 'Accessibilité : non conforme'
   legal: Mentions légales
   privacy_policy: Données personnelles et cookies
+support:
+  footer_link: Contacter l’équipe
+  title: Contacter l’équipe
+  subtitle: Bug, idée, question ou compliment — l’équipe lit tout et vous répond si besoin.
+  email_label: E-mail
+  email_invalid: Veuillez saisir une adresse e-mail valide.
+  reply_checkbox: Je souhaite recevoir une réponse par e-mail
+  subject_label: Objet
+  message_label: Votre message
+  upload: Ajouter un fichier
+  remove_file: Retirer le fichier
+  file_too_large: Fichier trop volumineux (max 10 Mo).
+  file_too_many: Un seul fichier autorisé.
+  file_type_invalid: Type de fichier non accepté.
+  file_read_error: Impossible de lire le fichier.
+  cancel: Annuler
+  send: Envoyer
+  sending: Envoi…
+  close: Fermer le formulaire de contact
+  success: Merci pour votre retour !
+  error: Une erreur est survenue. Réessayez plus tard.
+  altcha_required: Veuillez attendre la vérification anti-spam avant d’envoyer.
 not_found_page:
   title: Ooops !
   body:
