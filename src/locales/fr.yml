@@ -38,6 +38,23 @@ footer:
   accessiblity: 'Accessibilité : non conforme'
   legal: Mentions légales
   privacy_policy: Données personnelles et cookies
+support:
+  footer_link: Contacter l’équipe
+  title: Contacter l’équipe
+  subtitle: Bug, idée, question ou compliment — l’équipe lit tout et vous répond si besoin.
+  email_label: Votre e-mail
+  email_hint: Pour que l’équipe puisse vous répondre
+  subject_label: Objet
+  subject_hint: Description
+  message_label: Votre message
+  message_hint: Description
+  cancel: Annuler
+  send: Envoyer
+  sending: Envoi…
+  close: Fermer le formulaire de contact
+  success: Votre message a bien été envoyé.
+  success_secondary: L’équipe vous répondra si besoin.
+  error: Une erreur est survenue. Réessayez plus tard.
 not_found_page:
   title: Ooops !
   body:

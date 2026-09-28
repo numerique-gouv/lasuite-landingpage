@@ -65,7 +65,7 @@ export const Layout: React.FC<{
         translation={title == TITLE_SITE}
       />
       <main {...props}>{props.children}</main>
-      <Footer />
+      <Footer supportChannel={isHomepage ? 'lasuite' : undefined} />
     </div>
   )
 }

@@ -14,8 +14,6 @@ declare global {
   interface Window {
     _mtm?: any[]
     _paq?: any[]
-    $crisp?: any
-    CRISP_WEBSITE_ID?: string
   }
 }
 
