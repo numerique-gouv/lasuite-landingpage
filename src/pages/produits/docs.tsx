@@ -11,6 +11,7 @@ import Advantages from '@/components/content-blocks/Advantages'
 import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
+import { MaintenanceAlert } from '@/components/MaintenanceAlert'
 export default function DocsPage() {
   const { locale = 'fr' } = useRouter()
   const content: any = docsContent as any
@@ -59,6 +60,7 @@ export default function DocsPage() {
       <FadeInSection>
         <ProductsFooter productContent={localized} slug={product.slug} />
       </FadeInSection>
+      <MaintenanceAlert />
     </LayoutProducts>
   )
 }
