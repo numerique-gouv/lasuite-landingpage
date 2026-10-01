@@ -1,8 +1,8 @@
 import { useState, useSyncExternalStore } from 'react'
 
-const STORAGE_KEY = 'docs-maintenance-alert-2026-10-04'
-/** Hidden from Sunday 4 October 2026, 12:00 Europe/Paris. */
-const HIDDEN_FROM = Date.parse('2026-10-04T12:00:00+02:00')
+const STORAGE_KEY = 'docs-maintenance-alert-2026-10-11'
+/** Hidden from Sunday 11 October 2026, 12:00 Europe/Paris. */
+const HIDDEN_FROM = Date.parse('2026-10-11T12:00:00+02:00')
 
 const subscribe = () => () => {}
 
@@ -71,11 +71,11 @@ export const MaintenanceAlert = () => {
             <div className="min-w-0 flex-1">
               <span>
                 <strong className="font-bold">
-                  Maintenance programmée du Samedi 03/10 à 18h au Dimanche 04/10
+                  Maintenance programmée du Samedi 10/10 à 18h au Dimanche 11/10
                   à 12h
                 </strong>
                 {
-                  ' : Docs sera inaccessible sur la période. Merci de votre compréhension'
+                  ' : le service sera perturbé sur la période. Merci de votre compréhension'
                 }
               </span>
             </div>
