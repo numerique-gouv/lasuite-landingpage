@@ -5,14 +5,13 @@ import HeroHome from '@/assets/hero-home.png'
 import HeroHomeMobile from '@/assets/hero-home-mobile.png'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { SocialProof } from '@/components/content-blocks/SocialProof'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import ArrowOutward from '@mui/icons-material/ArrowOutward'
 import MiniatureVideo from '@/assets/miniature_video.png'
 import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
-  const videoUrl =
-    'https://tube.numerique.gouv.fr/w/gzwjk8H5Pm4MqrcUo5eMPG?start=12s'
+  const onFaitSuiteURL = 'https://onfaitsuite.numerique.gouv.fr/'
 
   return (
     <div className="w-[100%] lg:max-w-[70em] px-4 max-w-container mx-auto overflow-hidden md:overflow-visible">
@@ -74,7 +73,7 @@ export const Hero = ({ content }: { content: any }) => {
         <div className="flex items-center col-span-2 justify-center pt-6">
           <div className="">
             <a
-              href={videoUrl}
+              href={onFaitSuiteURL}
               target="_blank"
               className="block cursor-pointer"
               aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
@@ -90,15 +89,15 @@ export const Hero = ({ content }: { content: any }) => {
               </div>
             </a>
             <Button
-              href={videoUrl}
-              icon={<PlayArrowIcon />}
+              href={onFaitSuiteURL}
+              icon={<ArrowOutward />}
               iconPosition="left"
               className="relative mx-auto"
               variant="tertiary_neutral"
-              aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
+              aria-label={`Plus d’infos sur l’évènement - ${t('common.new_window')}`}
               target="_blank"
             >
-              Regarder la vidéo
+              Plus d’infos sur l’évènement
             </Button>
           </div>
         </div>
