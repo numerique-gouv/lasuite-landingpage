@@ -29,6 +29,54 @@ const nextConfig = {
         locale: false,
         basePath: false,
       },
+      // Ancien domaine → URL canonique sur lasuite
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'onfaitsuite.numerique.gouv.fr',
+          },
+        ],
+        destination: 'https://lasuite.numerique.gouv.fr/onfaitsuite',
+        permanent: true,
+        locale: false,
+        basePath: false,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'onfaitsuite.numerique.gouv.fr',
+          },
+        ],
+        destination: 'https://lasuite.numerique.gouv.fr/onfaitsuite/:path*',
+        permanent: true,
+        locale: false,
+        basePath: false,
+      },
+    ]
+  },
+  async rewrites() {
+    // Site On fait Suite exporté en statique dans public/onfaitsuite/
+    return [
+      {
+        source: '/onfaitsuite',
+        destination: '/onfaitsuite/index.html',
+      },
+      {
+        source: '/onfaitsuite/',
+        destination: '/onfaitsuite/index.html',
+      },
+      {
+        source: '/onfaitsuite/simulation',
+        destination: '/onfaitsuite/simulation.html',
+      },
+      {
+        source: '/onfaitsuite/mentions-legales',
+        destination: '/onfaitsuite/mentions-legales.html',
+      },
     ]
   },
 }

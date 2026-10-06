@@ -1,0 +1,370 @@
+{
+  "menu": {
+    "tracks": "Sujets",
+    "program": "Programme",
+    "info": "Infos pratiques",
+    "signup": "S’inscrire",
+    "winners": "Podium",
+    "apps": "Apps",
+    "recap": "Résumé"
+  },
+  "hero": {
+    "button": "Voir le résumé de l'événement",
+    "title": "Une expérience inédite autour de LaSuite, entre ambition de souveraineté et réalités du terrain.",
+    "film": "Revoir le film “Voici LaSuite”"
+  },
+  "europe": {
+    "europeans": "Européen.ne.s",
+    "subtitle": "La balle est dans notre camp."
+  },
+  "results": {
+    "tag": "Resultats",
+    "title": "Félicitations à nos gagnants !",
+    "description": "Félicitations pour les incroyables performances des quatre équipes exceptionnelles qui ont triomphé lors du hackathon ! Un grand merci à elles et à toutes les équipes participantes pour leur travail acharné et leur créativité. C'était une compétition passionnante !"
+  },
+  "thanks": {
+    "tags": {
+      "1": "On code",
+      "2": "On construit",
+      "3": "On transforme"
+    },
+    "title": "MERCI !",
+    "description": "Pendant trois jours, plus de <strong>300 participants</strong> ont formé <strong>53 équipes</strong> pour développer des applications de bureau open source visant à renforcer la <strong>souveraineté numérique européenne</strong>.",
+    "button": "Voir le recap",
+    "githubButton": "Voir tous les projets"
+  },
+  "winners": {
+    "tag": "Resultats",
+    "title": "Félicitations à nos gagnants&nbsp;!",
+    "description": "Félicitations pour les incroyables performances des quatre équipes exceptionnelles qui ont triomphé lors du hackathon ! Un grand merci à elles et aux 53 équipes participantes pour leur travail acharné et leur créativité. C'était une compétition passionnante !",
+    "medals": {
+      "gold": {
+        "tag": "Médaille d'or",
+        "title": "Visio Room Connector",
+        "authors": "Par Nicolas Tizon, Nicolas Meneceur et Etienne de Villeroche",
+        "description": "Rendre Meet compatible avec les salles de vidéoconférence réelles (interopérabilité vidéo SIP)."
+      },
+      "silver": {
+        "tag": "Médaille d'argent",
+        "title": "Docs × OpenProject Integration",
+        "authors": "Par Wieland Lindenthal, Eric Schubert, Bruno Pagno, Dominic Bräunlein et Parimal Satyal",
+        "description": "Docs et OpenProject s'intègrent désormais en profondeur via BlockNote, permettant aux utilisateurs de passer facilement des brouillons collaboratifs aux plans de projet."
+      },
+      "bronze": {
+        "tag": "Médaille de bronze",
+        "title": "Math & chart integration into Docs",
+        "authors": "Par Timothée Danneels, Mathis Dentraygues, Eloi Nautin, Paul Averous, Louis-Paul Flesselles et Samuel Perez-duarte",
+        "description": "Écrire et afficher LaTeX dans Docs."
+      },
+      "public": {
+        "tag": "Médaille du public",
+        "title": "Panographix",
+        "authors": "Par Matthieu de Canteloube, Anaïs Schlienger, Clément Di Domenico, Thomas Metzger et Marine Choquin",
+        "description": "Les fonctionnaires peuvent désormais créer et partager des bases de données et des graphiques interactifs directement dans Docs à l'aide de Grist."
+      }
+    }
+  },
+  "mission": {
+    "tags": {
+      "1": "On code",
+      "2": "On construit",
+      "3": "On transforme"
+    },
+    "title": "Votre Mission",
+    "description": "Pendant 3 jours, participez à la création d'applications bureautiques open source, destinées à renforcer la souveraineté numérique européenne.",
+    "button": "S'inscrire maintenant",
+    "githubButton": "Proposer un projet",
+    "disclaimer": "Places limitées."
+  },
+  "lasuite": {
+    "tag": "Les apps de La Suite",
+    "title": "Des communs numériques pour un État simple, efficace et souverain",
+    "description": "La Suite est un espace de travail numérique open source et souverain, développé pour le secteur public. Il offre des outils collaboratifs sécurisés : messagerie, transfert de fichiers, tableurs, documents et visioconférence. Rejoignez le mouvement pour renforcer la souveraineté numérique et promouvoir l'adoption de l'open source en Europe.",
+    "button": "Découvrir La Suite"
+  },
+  "products": {
+    "title": "Votre nouvel écosystème souverain",
+    "try": "Essayer",
+    "button": "En savoir plus sur LaSuite",
+    "items": {
+      "tchap": {
+        "name": "Tchap",
+        "description": "Échangez rapidement avec vos collègues, où que vous soyez."
+      },
+      "visio": {
+        "name": "Visio",
+        "description": "Organisez des réunions en ligne en toute confiance."
+      },
+      "fichiers": {
+        "name": "Fichiers",
+        "description": "Centralisez, organisez et partagez vos fichiers simplement."
+      },
+      "docs": {
+        "name": "Docs",
+        "description": "Rédigez, partagez et publiez vos documents à plusieurs."
+      },
+      "grist": {
+        "name": "Grist",
+        "description": "Structurez, analysez et partagez vos données en équipe."
+      },
+      "assistant": {
+        "name": "L'Assistant",
+        "description": "Résumez, recherchez et analysez vos documents avec l'IA."
+      },
+      "messagerie": {
+        "name": "Messagerie",
+        "description": "Accédez à vos e-mails professionnels et gérez vos échanges."
+      },
+      "francetransfert": {
+        "name": "FranceTransfert",
+        "description": "Envoyez et recevez facilement des fichiers volumineux."
+      },
+      "transcripts": {
+        "name": "Transcripts",
+        "description": "Transformez vos réunions et fichiers audio en texte."
+      }
+    }
+  },
+  "future": {
+    "title": "Un aperçu du futur",
+    "description": "Redécouvrez la vision des équipes de LaSuite pour l'avenir de la bureautique souveraine.",
+    "film": "Revoir \"Demain LaSuite\"",
+    "disclaimer": "Cette expérimentation présente des fonctionnalités encore à l'étude, dont la mise à disposition n'est pas garantie."
+  },
+  "experimentation": {
+    "title": "Démarrer une expérimentation LaSuite",
+    "description": "Vous envisagez de déployer LaSuite auprès de vos équipes ? Sélectionnez les applications qui vous intéressent, puis simulez le déroulement d’une expérimentation, en autonomie ou avec l’accompagnement de nos équipes.",
+    "selected": "{count} apps sélectionnées",
+    "button": "Simuler",
+    "apps": {
+      "tchap": "Tchap",
+      "visio": "Visio",
+      "fichiers": "Fichiers",
+      "docs": "Docs",
+      "grist": "Grist",
+      "assistant": "L'Assistant",
+      "messagerie": "Messagerie",
+      "francetransfert": "Fr. Transfert",
+      "transcripts": "Transcripts"
+    }
+  },
+  "simulation": {
+    "title": "Simulation",
+    "description": "Applications sélectionnées :",
+    "empty": "Aucune application sélectionnée."
+  },
+  "configurator": {
+    "back": "Retour",
+    "yes": "Oui",
+    "no": "Non",
+    "step1": {
+      "title": "Faites-vous partie de la fonction publique d’État ?",
+      "description": "Les entreprises, les associations et la fonction publique territoriale ne sont pas prises en compte de ce configurateur."
+    },
+    "step2": {
+      "title": "Qui est concerné par votre projet LaSuite ?",
+      "options": {
+        "1-10": "1 à 10 personnes",
+        "10-100": "10 à 100 personnes",
+        "100-1000": "100 à 1000 personnes",
+        "1000+": "Plus de 1000 personnes"
+      }
+    },
+    "eligible": {
+      "title": "Vous êtes éligible !",
+      "description": "Vous pouvez utiliser LaSuite dès maintenant, et gratuitement avec vos équipes. Si vous préférez un accompagnement, notre équipe sera ravie d'échanger avec vous pendant un rendez-vous personnalisé.",
+      "start": "Démarrer en autonomie",
+      "appointment": "Prendre rendez-vous",
+      "home": "Retour à l'accueil"
+    },
+    "unavailable": {
+      "title": "LaSuite n'est pas disponible pour votre organisation",
+      "description": "LaSuite est réservée aux agents publics. Vous pouvez toutefois être invité par un agent public ou <a class=\"underline\" href=\"https://github.com/suitenumerique\" target=\"_blank\" rel=\"noopener noreferrer\">déployer votre propre instance</a>.",
+      "home": "Retour à l'accueil",
+      "newsletter": "S'inscrire à la newsletter LaSuite",
+      "docs": "Documentation",
+      "products": "Découvrir les produits LaSuite"
+    }
+  },
+  "eventGallery": {
+    "title": "Revivez l’évènement",
+    "placeholder": "Les photos de l’événement seront disponibles prochainement.",
+    "prev": "Photo précédente",
+    "next": "Photo suivante",
+    "download": "Télécharger la photo"
+  },
+  "recap": {
+    "tag": "News",
+    "title": "Retour sur l’événement",
+    "description": "Pour en savoir plus sur l'événement, regardez le récapitulatif. Les démos des 20 meilleures équipes seront bientôt disponibles. Restez connectés !",
+    "button": "Voir le reportage de FranceInter"
+  },
+  "avosmarques": {
+    "tag": "Sujets de hack",
+    "title": "À vos marques.",
+    "description": "Rassemblons nos forces autour d'un sujet clair : les <strong>outils collaboratifs du quotidien</strong>. Edition de texte, tableurs, messagerie, vidéo-conférences, kanbans : tous ces terrains de jeu s'offrent à vous.</br> Découvrez les premières tracks :",
+    "cards": {
+      "1": {
+        "tag": "Travail collaboratif en local-first",
+        "title": "Liberty, Equality, CRDT",
+        "description": "Améliorez la collaboration en temps réel avec des CRDT, synchronisation offline, et outils décentralisés."
+      },
+      "2": {
+        "tag": "IA et automatisation",
+        "title": "AI boosted",
+        "description": "Injectez de l'IA dans les parcours utilisateurs : recherche intelligente, Agentic AI, transcription automatique....et toute autre application pertinente !"
+      },
+      "3": {
+        "tag": "Infrastructure et accessibilité pour tous",
+        "title": "Click. Deploy. Make history.",
+        "description": "Améliorez l’accessibilité des produits, et packagez les applications pour des déploiements optimisés pour tous !"
+      },
+      "4": {
+        "tag": "Custom blocks et extensions",
+        "title": "Blocks Unleashed",
+        "description": "Intégrez de nouveaux blocs (tableur, canvas, tableau blanc… ou votre solution ?), personnalisez les fonctionnalités pour enrichir les usages."
+      },
+      "5": {
+        "tag": "Adoption et nouveaux modèles",
+        "title": "Boost & Scale",
+        "description": "Construisez une marketplace d’extensions, améliorez le support utilisateur, et proposez des stratégies d’adoption et de croissance d'un écosystème d'apps."
+      },
+      "6": {
+        "tag": "Cas d'usages thématiques",
+        "title": "So, so many use cases",
+        "description": "Santé, Education, Recherche, Agriculture, etc... Imaginez les nouveaux parcours pour vos cas d'usage spécifiques"
+      },
+      "7": {
+        "tag": "Chiffrement de bout en bout",
+        "title": "Decipher me, if you can",
+        "description": "Proposez une communication et une collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, zero knowledge proof..."
+      },
+      "8": {
+        "tag": "Cybersécurité",
+        "title": "Make it safe",
+        "description": "Imaginez et développez des solutions pour rendre nos outils de travail collaboratif toujours plus sécurisés."
+      },
+      "9": {
+        "tag": "Migration",
+        "title": "Lost in Migration",
+		"description": "Libérez votre flux de travail des outils propriétaires. Venez créer les outils de migration qui permettront à chacun de rompre proprement et de passer en douceur des jardins clos des géants de la tech vers les alternatives open source de La Suite."
+      },
+	  "10": {
+        "tag": "Système d'exploitation",
+		"title": "Collaboration Backbone",
+		"description": "Concevez, développez et testez une architecture OS robuste pour les apps collaboratives. Rendez-la personnalisable, avec mises à jour atomiques, suivi des updates, chiffrement disque et mode hors ligne."
+      },
+	  "11": {
+        "tag": "Carte blanche",
+        "title": "Bring your own track",
+        "description": "Si aucun sujet ne vous convient, vous pourrez évidemment proposer le votre."
+      }
+    },
+    "githubButton": "GitHub du hackathon"
+  },
+  "prets": {
+    "tag": "Ressources",
+    "title": "PRÊTS ?",
+    "description": "Familiarisez-vous dès maintenant avec les apps open-source Docs, Visio et Grist.",
+    "docs": {
+      "description": "L’éditeur de documents open source basé sur la librairie <a class=\"underline\" href=\"https://www.blocknotejs.org/\" target=\"_blank\">BlockNote.js</a>."
+    },
+    "visio": {
+      "description": "L’app de visioconférence nouvelle génération, basée sur <a class=\"underline\" href=\"https://livekit.io/\" target=\"_blank\">Livekit</a>."
+    },
+    "grist": {
+      "description": "Le tableur collaboratif open-source pour structurer vos bases de données et créer des application sans coder."
+    },
+    "mystere": {
+      "title": "App mystère",
+      "description": "Participez à l’évènement pour découvrir une app open-source inédite !"
+    }
+  },
+  "partez": {
+    "tag": "Programme",
+    "title": "Partez !",
+    "description": "3 jours pour sprinter vers la souveraineté numérique ! Sur les trois jours, des plateaux repas seront mis à disposition.",
+    "button": "S’inscrire maintenant",
+    "days": {
+      "1": {
+        "date": "2 Juin",
+        "title": "Développement",
+        "description": "Présentation des tracks, création des équipes, début du développement.",
+        "chip": "Réservé aux hackers"
+      },
+      "2": {
+        "date": "3 Juin",
+        "title": "Développement",
+        "description": "Journée entièrement dédiée au développement.",
+        "chip": "Réservé aux hackers"
+      },
+      "3": {
+        "date": "4 Juin",
+        "title": "Démonstrations et talks",
+        "description": "Présentation des projets devant un jury suivi de talks. Les intervenants seront affichés ici prochainement.",
+        "chip": "Ouvert aux visiteurs"
+      }
+    },
+    "githubButton": "Voir les projets proposés",
+    "programButton": "Voir le programme détaillé"
+  },
+  "histoire": {
+    "tag": "News",
+    "title": "L'histoire est déjà en train de s'écrire !",
+    "news": {
+      "hn": {
+        "title": "Docs #1 sur Hacker News",
+        "description": "Docs a fait top 1 du site Hacker News le 16 mars dernier.",
+        "button": "Voir le post",
+        "target": "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "franceinfo": {
+        "title": "Docs sur France Info",
+        "description": "Docs a fait parler de lui à la radio.",
+        "button": "Écouter",
+        "target": "https://www.radiofrance.fr/franceinfo/podcasts/aujourd-hui-c-est-demain"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Docs et Visio sont mis en avant sur les réseaux.",
+        "button": "Voir le post",
+        "target": "https://www.linkedin.com/posts/tbiarneix_access-a11y-souverainetaeznumaezrique-activity-7308786406565265411-bFl7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "reddit": {
+        "title": "Docs sur Reddit",
+        "description": "Ça discute des apps ici aussi !",
+        "button": "Voir le post",
+        "target": "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
+      },
+      "frandroid": {
+        "title": "Frandroid",
+        "description": "La presse parle de Docs et de Visio.",
+        "button": "Voir l’article",
+        "target": "https://www.frandroid.com/culture-tech/web/2549907_voici-la-solution-francaise-publique-pour-vous-faire-oublier-google-docs-gmail-et-meet"
+      },
+      "bfm": {
+        "title": "BFM Business",
+        "description": "François Sorel parle des apps dans Tech & Co.",
+        "button": "Écouter",
+        "target": "https://podcasts.apple.com/fr/podcast/tech-co-la-quotidienne/id975125188?i=1000700819499&t=2475"
+      }
+    }
+  },
+  "informations": {
+    "tag": "Informations pratiques",
+    "title": "RDV À L’ENS",
+    "description": "Le lieu est facile à rejoindre en transport en commun : vous pouvez prendre le <strong>RER B</strong>, le métro <strong>ligne 4</strong>, le <strong>tram 3a</strong> ou les <strong>bus 92, 68</strong> et <strong>38</strong>. Il est conseillé de réserver un hôtel proche de ces lignes.",
+    "days": "Lundi 2 juin <br /> Mardi 3 juin <br /> Mercredi 4 juin",
+    "hours": "9h00 - 00h00  <br /> 9h00 - 00h00  <br /> 9h00 - 18h00",
+    "buttonSignup": "S'inscrire",
+    "buttonContact": "Nous contacter",
+    "organizers": "Organisateurs",
+    "partners": "Partenaires"
+  },
+  "footer": {
+    "event": "29 septembre 2026  •  15h-19h  •  Bibliothèque nationale de France  •  Sur invitation",
+    "license": "Sauf mention contraire, les contenus de ce site sont disponibles sous <a class=\"underline external-link-grey\" href=\"hhttps://github.com/etalab/licence-ouverte/blob/master/LO.md\" target=\"_blank\">licence etalab-2.0</a>",
+    "accessiblity": "Accessibilité : audit en cours",
+    "legal": "Mentions légales"
+  }
+}

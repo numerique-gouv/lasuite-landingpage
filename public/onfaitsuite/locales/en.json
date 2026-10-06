@@ -1,0 +1,359 @@
+{
+  "menu": {
+    "tracks": "Tracks",
+    "program": "Program",
+    "info": "Info",
+    "signup": "Sign Up",
+    "winners": "Winners",
+    "apps": "Apps",
+    "recap": "Recap"
+  },
+  "hero": {
+    "button": "Watch the recap",
+    "title": "An unprecedented experience around LaSuite, between the ambition of sovereignty and on-the-ground realities.",
+    "film": "Rewatch the film “Voici LaSuite”"
+  },
+  "europe": {
+    "europeans": "Europeans",
+    "subtitle": "The ball is in our court."
+  },
+  "mission": {
+    "tags": {
+      "1": "We code",
+      "2": "We build",
+      "3": "We transform"
+    },
+    "title": "Your Mission",
+    "description": "For three days, take part in the creation of open-source apps aimed at strengthening European digital sovereignty.",
+    "button": "Register now",
+    "githubButton": "Propose a project",
+    "disclaimer": "Limited places."
+  },
+  "thanks": {
+    "tags": {
+      "1": "We code",
+      "2": "We build",
+      "3": "We transform"
+    },
+    "title": "THANK YOU!",
+    "description": "Over the course of three days, more than <strong>300 participants</strong> formed <strong>53 teams</strong> to develop open-source desktop applications aimed at strengthening <strong>European digital sovereignty</strong>.",
+    "button": "See the recap",
+    "githubButton": "See all projects"
+  },
+  "winners": {
+    "tag": "Results",
+    "title": "Congrats to our winners!",
+    "description": "Celebrate the incredible achievements of the 4 standout teams that triumphed in the hackathon! A huge shoutout to them and all 53 participating teams for their hard work and creativity. It was an exhilarating competition!",
+    "medals": {
+      "gold": {
+        "tag": "Gold medal",
+        "title": "Visio Room Connector",
+        "authors": "By Nicolas Tizon, Nicolas Meneceur and Etienne de Villeroche",
+        "description": "Make Meet compatible with real-world video conference rooms (SIP Video Interoperability)."
+      },
+      "silver": {
+        "tag": "Silver medal",
+        "title": "Docs × OpenProject Integration",
+        "authors": "By Wieland Lindenthal, Eric Schubert, Bruno Pagno, Dominic Bräunlein and Parimal Satyal",
+        "description": "Docs and OpenProject now integrate deeply through BlockNote, allowing users to easily transition from collaborative drafts to project plans."
+      },
+      "bronze": {
+        "tag": "Bronze medal",
+        "title": "Math & chart integration into Docs",
+        "authors": "By Timothée Danneels, Mathis Dentraygues, Eloi Nautin, Paul Averous, Louis-Paul Flesselles and Samuel Perez-duarte",
+        "description": "Write and display LaTeX in Docs."
+      },
+      "public": {
+        "tag": "Public medal",
+        "title": "Panographix",
+        "authors": "By Matthieu de Canteloube, Anaïs Schlienger, Clément Di Domenico, Thomas Metzger and Marine Choquin",
+        "description": "Public servants can now create and share interactive databases and charts directly within Docs using Grist."
+      }
+    }
+  },
+  "lasuite": {
+    "tag": "The apps of LaSuite",
+    "title": "Digital commons for a simpler, more effective, and sovereign State",
+    "description": "LaSuite is an open-source, sovereign digital workspace developed for the public sector. It offers secure, collaborative tools—messaging, file transfer, spreadsheets, documents, and videoconferencing. Join the movement to strengthen digital sovereignty and advance open-source adoption in Europe.",
+    "button": "Discover LaSuite"
+  },
+  "products": {
+    "title": "Your new sovereign ecosystem",
+    "try": "Try it",
+    "button": "Learn more about LaSuite",
+    "items": {
+      "tchap": {
+        "name": "Tchap",
+        "description": "Chat quickly with your colleagues, wherever you are."
+      },
+      "visio": {
+        "name": "Visio",
+        "description": "Host online meetings with confidence."
+      },
+      "fichiers": {
+        "name": "Fichiers",
+        "description": "Centralize, organize and share your files with ease."
+      },
+      "docs": {
+        "name": "Docs",
+        "description": "Write, share and publish documents together."
+      },
+      "grist": {
+        "name": "Grist",
+        "description": "Structure, analyze and share your data as a team."
+      },
+      "assistant": {
+        "name": "L'Assistant",
+        "description": "Summarize, search and analyze your documents with AI."
+      },
+      "messagerie": {
+        "name": "Messagerie",
+        "description": "Access your professional emails and manage your exchanges."
+      },
+      "francetransfert": {
+        "name": "FranceTransfert",
+        "description": "Send and receive large files easily."
+      },
+      "transcripts": {
+        "name": "Transcripts",
+        "description": "Turn your meetings and audio files into text."
+      }
+    }
+  },
+  "future": {
+    "title": "A glimpse of the future",
+    "description": "Rediscover the vision of LaSuite teams for the future of sovereign office software.",
+    "film": "Rewatch \"Demain LaSuite\"",
+    "disclaimer": "This experiment showcases features still under study; their availability is not guaranteed."
+  },
+  "experimentation": {
+    "title": "Start a LaSuite experiment",
+    "description": "Select the apps that interest you to simulate an experiment.",
+    "selected": "{count} apps selected",
+    "button": "Simulate",
+    "apps": {
+      "tchap": "Tchap",
+      "visio": "Visio",
+      "fichiers": "Fichiers",
+      "docs": "Docs",
+      "grist": "Grist",
+      "assistant": "L'Assistant",
+      "messagerie": "Messagerie",
+      "francetransfert": "Fr. Transfert",
+      "transcripts": "Transcripts"
+    }
+  },
+  "simulation": {
+    "title": "Simulation",
+    "description": "Selected apps:",
+    "empty": "No app selected."
+  },
+  "configurator": {
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "step1": {
+      "title": "Are you part of the State civil service?",
+      "description": "Companies, associations and local public services are not covered by this configurator."
+    },
+    "step2": {
+      "title": "Who is concerned by your LaSuite project?",
+      "options": {
+        "1-10": "1 to 10 people",
+        "10-100": "10 to 100 people",
+        "100-1000": "100 to 1000 people",
+        "1000+": "More than 1000 people"
+      }
+    },
+    "eligible": {
+      "title": "You are eligible!",
+      "description": "You can start using LaSuite right away, free of charge with your teams. If you prefer support, our team will be happy to talk with you during a personalized appointment.",
+      "start": "Start on your own",
+      "appointment": "Book an appointment",
+      "home": "Back to home"
+    },
+    "unavailable": {
+      "title": "LaSuite is not available for your organization",
+      "description": "LaSuite is reserved for public agents. You can still be invited by a public agent or <a class=\"underline\" href=\"https://github.com/suitenumerique\" target=\"_blank\" rel=\"noopener noreferrer\">deploy your own instance</a>.",
+      "home": "Back to home",
+      "newsletter": "Subscribe to the LaSuite newsletter",
+      "docs": "Documentation",
+      "products": "Discover LaSuite products"
+    }
+  },
+  "eventGallery": {
+    "title": "Relive the event",
+    "placeholder": "Event photos will be available soon.",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "download": "Download photo"
+  },
+  "recap": {
+    "tag": "News",
+    "title": "Event recap",
+    "description": "Learn more about the event by watching the recap. The demos from the top 20 teams will be available soon. Stay tuned!",
+    "button": "Watch the FranceInter report"
+  },
+  "avosmarques": {
+    "tag": "Tracks",
+    "title": "GET SET.",
+    "description": "Let’s unite our efforts around a clear topic: <strong>everyday collaborative tools</strong>. Text editing, spreadsheets, messaging, video conferencing, kanbans: all these playgrounds are available to you. Discover the first tracks:",
+    "cards": {
+      "1": {
+        "tag": "Local-first collaborative work",
+        "title": "Liberty, Equality, CRDT",
+        "description": "Enhance real-time collaboration with CRDTs, offline synchronization, and decentralized tools."
+      },
+      "2": {
+        "tag": "AI and automation",
+        "title": "AI boosted",
+        "description": "Inject AI into user journeys: smart search, agentic AI, automatic transcription... and any other relevant applications!"
+      },
+      "3": {
+        "tag": "Infrastructure and accessibility for all",
+        "title": "Click. Deploy. Make history.",
+        "description": "Enhance the accessibility of products, and package applications for optimised deployments for everyone!"
+      },
+      "4": {
+        "tag": "Custom blocks and extensions",
+        "title": "Blocks Unleashed",
+        "description": "Integrate new blocks (spreadsheet, canvas, whiteboard… or your solution?), customise the features to enhance usage."
+      },
+      "5": {
+        "tag": "Adoption and new models",
+        "title": "Boost & Scale",
+        "description": "Build a marketplace for extensions, enhance user support, and offer strategies for the adoption and growth of an app ecosystem."
+      },
+      "6": {
+        "tag": "Thematic Use Cases",
+        "title": "So, so many use cases",
+        "description": "Health, Education, Research, Agriculture… Imagine new workflows tailored to your specific use cases."
+      },
+      "7": {
+        "tag": "End to end encryption",
+        "title": "Decipher me, if you can",
+        "description": "Propose fully encrypted communication and collaboration for total sovereignty. E2EE, quantum-resistant encryption, Matrix protocol, PGP, zero-knowledge proof..."
+      },
+      "8": {
+        "tag": "Cybersecurity",
+        "title": "Make it safe",
+        "description": "Imagine and develop solutions to make our collaborative work tools increasingly secure."
+      },
+	  "9": {
+        "tag": "Migration",
+		"title": "Lost in Migration",
+		"description": "Embark on a journey to liberate your workflow from proprietary tools. Come build the migration tools to give everyone a clean a breakup and smooth transition from big tech's walled gardens to La Suite open source alternatives."
+      },
+	  "10": {
+        "tag": "Operating System",
+		"title": "Collaboration Backbone",
+		"description": "Design, develop and test an Operating System architecture as a solid base for all collaborative apps. Fully customisable, atomic updates, update monitoring, full-disk encryption, offline-first, ..."
+      },
+      "11": {
+        "tag": "Carte blanche",
+        "title": "Bring your own track",
+        "description": "If none of the topics suit you, you can, of course, propose your own."
+      }
+    },
+    "githubButton": "Hackathon GitHub"
+  },
+  "prets": {
+    "tag": "Resources",
+    "title": "READY?",
+    "description": "Familiarise yourself now with open-source applications Docs, Visio and Grist.",
+    "docs": {
+      "description": "The open-source document editor based on the <a class=\"underline\" href=\"https://www.blocknotejs.org/\" target=\"_blank\">Blocknote.js</a> library."
+    },
+    "visio": {
+      "description": "The next-generation video conferencing app, built on <a class=\"underline\" href=\"https://livekit.io/\" target=\"_blank\">Livekit</a>."
+    },
+    "grist": {
+      "description": "The open-source collaborative spreadsheet for structuring your databases and creating applications without coding."
+    },
+    "mystere": {
+      "title": "Mysterious app",
+      "description": "Join the event to discover a unique open-source app!"
+    }
+  },
+  "partez": {
+    "tag": "Program",
+    "title": "GO!",
+    "description": "3 days to sprint towards digital sovereignty! During the three days, meal trays will be provided.",
+    "button": "Register now",
+    "days": {
+      "1": {
+        "date": "2 June",
+        "title": "Development",
+        "description": "Presentation of the tracks, team validation, start of development.",
+        "chip": "Reserved for hackers"
+      },
+      "2": {
+        "date": "3 June",
+        "title": "Development",
+        "description": "A day fully dedicated to development.",
+        "chip": "Reserved for hackers"
+      },
+      "3": {
+        "date": "4 June",
+        "title": "Demonstrations and Conferences",
+        "description": "Presentation of projects before a jury followed by conferences. The speakers will be announced here soon.",
+        "chip": "Open to visitors"
+      }
+    },
+    "githubButton": "See the proposed projects",
+    "programButton": "See the detailed program"
+  },
+  "histoire": {
+    "tag": "News",
+    "title": "We are already making history!",
+    "news": {
+      "hn": {
+        "title": "Docs #1 on Hacker News",
+        "description": "Docs reached the top spot on Hacker News on 16th March.",
+        "button": "See post",
+        "target": "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "reddit": {
+        "title": "Docs on Reddit",
+        "description": "There’s also a discussion about Docs here!",
+        "button": "See post",
+        "target": "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
+      },
+      "techpost": {
+        "title": "Docs on Techspot",
+        "description": "This US journal talks about Docs as a potential replacement for US-made solutions.",
+        "button": "See article",
+        "target": "https://www.techspot.com/news/107225-france-germany-unveil-docs-collaborative-tool-rival-us.html"
+      },
+      "XDA": {
+        "title": "Docs on XDA",
+        "description": "This leading Canadian journal endorses Docs!",
+        "button": "See article",
+        "target": "https://www.xda-developers.com/docs-self-hosted-collaborative-note-taking-notion/"
+      },
+      "HowTo": {
+        "title": "Docs on How-To Geek",
+        "description": "Docs is presented as a strong European alternative.",
+        "button": "See article",
+        "target": "https://www.howtogeek.com/docs-alternative-google-docs-notion-france-germany/"
+      }
+    }
+  },
+  "informations": {
+    "tag": "Practical Information",
+    "title": "LET’S MEET AT ENS",
+    "description": "The place is easy to reach by public transport: you can take the <strong>RER B</strong>, metro <strong>line 4</strong>, <strong>tram 3a</strong>, or <strong>buses 92, 68,</strong> and <strong>38</strong>. It is recommended to book a hotel close to these lines.",
+    "days": "Mon 06/02 <br />Tues 06/03<br />Wed 06/04",
+    "hours": "9:00AM - 00:00PM<br />9:00AM - 00:00PM<br />9:00AM - 6:00PM",
+    "buttonSignup": "Sign Up",
+    "buttonContact": "Contact us",
+    "organizers": "Organizers",
+    "partners": "Partners"
+  },
+  "footer": {
+    "event": "29 September 2026  •  3–7 pm  •  Bibliothèque nationale de France  •  By invitation",
+    "license": "Unless stated otherwise, the contents of this site are available under <a class=\"underline external-link-grey\" href=\"hhttps://github.com/etalab/licence-ouverte/blob/master/LO.md\" target=\"_blank\">licence etalab-2.0</a>",
+    "accessiblity": "Accessibilité : audit en cours",
+    "legal": "Legal"
+  }
+}
