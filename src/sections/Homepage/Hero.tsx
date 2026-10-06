@@ -11,7 +11,7 @@ import { useTranslations } from '@/locales/useTranslations'
 
 export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
-  const onFaitSuiteURL = 'https://onfaitsuite.numerique.gouv.fr/'
+  const onFaitSuiteURL = '/onfaitsuite'
 
   return (
     <div className="w-[100%] lg:max-w-[70em] px-4 max-w-container mx-auto overflow-hidden md:overflow-visible">
@@ -74,9 +74,8 @@ export const Hero = ({ content }: { content: any }) => {
           <div className="">
             <a
               href={onFaitSuiteURL}
-              target="_blank"
               className="block cursor-pointer"
-              aria-label={`Regarder la vidéo - ${t('common.new_window')}`}
+              aria-label="On fait Suite"
             >
               <div className="relative w-full">
                 <Image
