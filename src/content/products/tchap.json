@@ -5,9 +5,13 @@
   },
   "fr": {
     "top_banner": {
-      "title": "⚠️ Difficultés de connexion à Tchap",
-      "content": "Certains utilisateurs peuvent actuellement rencontrer des difficultés ponctuelles pour se connecter à Tchap. Nos équipes suivent la situation. Merci pour votre patience.",
-      "type": "info"
+      "title": "Nouvelle application mobile",
+      "content": "Une toute nouvelle application Tchap est disponible ! Découvrez comment migrer depuis l'ancienne application tout en conservant vos messages.",
+      "type": "info",
+      "link": {
+        "label": "Consulter le guide",
+        "url": "https://fichiers.numerique.gouv.fr/explorer/items/files/a518752c-4e27-456b-a88d-d2017d582fbd"
+      }
     },
     "header": {
       "links": [
