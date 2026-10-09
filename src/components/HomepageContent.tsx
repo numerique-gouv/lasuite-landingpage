@@ -13,8 +13,6 @@ import { PlatformInformations } from '@/sections/Homepage/PlatformInformations'
 import { Ecosystem } from '@/sections/Homepage/Ecosystem'
 import { FooterLaSuite } from '@/sections/Homepage/FooterLaSuite'
 import FadeInSection from '@/components/FadeInSection'
-import { useEffect } from 'react'
-import { injectCrisp } from '@/utils/inject-crisp'
 
 /**
  * output the homepage content with data taken from the JSON file
@@ -23,10 +21,6 @@ import { injectCrisp } from '@/utils/inject-crisp'
  * here to abstract this notion from lower-level components
  */
 export const HomepageContent = ({ content }: { content: any }) => {
-  useEffect(() => {
-    injectCrisp()
-  }, [])
-
   return (
     <>
       <Hero content={content.hero} />

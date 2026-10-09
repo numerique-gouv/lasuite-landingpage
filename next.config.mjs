@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Keep `/api/support/.../` reachable for the support widget (no CORS-breaking 308).
+  skipTrailingSlashRedirect: true,
   i18n: {
     /* uncomment other locales when at least the homepage is translated */
     locales: ['fr', 'en'],
@@ -76,6 +78,20 @@ const nextConfig = {
       {
         source: '/onfaitsuite/mentions-legales',
         destination: '/onfaitsuite/mentions-legales.html',
+      },
+    ]
+  },
+  // Support widget appends trailing slashes (`config/`, `deliver/`).
+  // Rewrite instead of redirect so cross-origin CORS headers stay intact.
+  async rewrites() {
+    return [
+      {
+        source: '/api/support/config/',
+        destination: '/api/support/config',
+      },
+      {
+        source: '/api/support/deliver/',
+        destination: '/api/support/deliver',
       },
     ]
   },
