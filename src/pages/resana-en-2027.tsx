@@ -24,15 +24,15 @@ const ROADMAP_MILESTONES = [
     active: true,
   },
   {
-    date: 'Été 2026',
-    description:
-      "Ouverture d'un service d'aide à la migration des données pour les organisations qui le souhaitent",
+    date: 'Septembre 2026',
+    description: 'Échéance de positionnement',
     active: true,
   },
   {
-    date: 'Septembre 2026',
-    description: 'Échéance de positionnement',
-    active: false,
+    date: 'Octobre 2026',
+    description:
+      "Accès général à l'outil de migration des données pour les organisations qui le souhaitent",
+    active: true,
   },
   {
     date: 'Novembre 2026',
@@ -156,6 +156,20 @@ const WEBINAIRES_RESANA = [
       type: 'replay',
       href: 'https://tube.numerique.gouv.fr/w/f1t3GGmtvT1MKuMvmN2Uqd',
       label: 'Accéder au replay',
+    },
+  },
+  {
+    day: '4',
+    month: 'novembre',
+    time: '14h00 - 15h00',
+    tag: { label: 'Ouvert à tous', bg: '#E7F2FF', color: '#265EAA' },
+    title: "Resana : Prise en main de l'outil de migration",
+    description:
+      "Présentation du Migrateur et démonstration d'une migration, partage de la feuille de route. Revue des bonnes pratiques de migration. Session d'1h, avec un temps de questions-réponses.",
+    cta: {
+      type: 'register',
+      href: 'https://4f0df3d6.sibforms.com/serve/MUIFANKG0_ld5UMjxXkIpSSwuPobeso3ylF7NbwLSEvd4yN5j3cyZIlbeJeNmppLboGRRTtSDPpnAYVI46LLETFkBlpFbCpon420Jd7Erfkt3Q-YnlpczqU6-jKa0unDzOG9ijz5i3i7DkcxyfWCfmhvPcMSld2JWN-crelixw9iDNrL9tXZgyrQJRKtFdFRl8C_EszUy71dUBgI',
+      label: "S'inscrire",
     },
   },
 ]
@@ -476,88 +490,112 @@ function webinaireDateSquareBackground(semanticPrimary: string) {
 }
 
 function WebinairesResana2027() {
+  const [showPastEvents, setShowPastEvents] = useState(false)
+
+  const visibleSessions = WEBINAIRES_RESANA.filter(
+    (session) => showPastEvents || session.cta?.type !== 'replay'
+  )
+
   return (
     <div id="webinaires" className="py-12 md:py-[72px] scroll-mt-24">
       <div className="max-w-container mx-auto w-full px-6 md:px-3 xl:px-0">
         <h3 className="text-gray-850 md:text-[2.75rem] text-3xl font-bold leading-tight md:leading-[48px] pb-2">
           Webinaires
         </h3>
-        <p className="text-gray-550 text-sm md:text-lg mb-10">
+        <p className="text-gray-550 text-sm md:text-lg mb-6">
           Sessions d&apos;information, d&apos;accompagnement et d&apos;échanges
           techniques pour vous aider à comprendre l&apos;évolution du modèle
           Resana.
         </p>
-        <ul className="flex list-none flex-col gap-4 p-0 m-0">
-          {WEBINAIRES_RESANA.map((session) => (
-            <li
-              key={`${session.day}-${session.month}`}
-              className="flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] md:flex-row"
-            >
-              <div className="flex shrink-0 p-3 pb-0 md:items-center md:justify-center md:px-4 md:py-5">
-                <div
-                  className="flex size-[102px] shrink-0 flex-col items-center justify-center rounded w-full md:size-[144px]"
-                  style={{
-                    background: webinaireDateSquareBackground(session.tag.bg),
-                  }}
-                >
-                  <span className="text-[44px] font-bold leading-none text-gray-850">
-                    {session.day}
-                  </span>
-                  <span className="mt-1 text-lg lowercase font-medium text-gray-850">
-                    {session.month}
-                  </span>
-                </div>
-              </div>
-              <div className="flex min-w-0 flex-1 flex-col gap-1 p-5 md:pl-0">
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-gray-600">
-                  <span>{session.time}</span>
-                  <span
-                    className="rounded px-2 py-0.5 text-xs font-medium"
+        <div className="mb-8">
+          <Button
+            type="button"
+            size="medium"
+            variant={showPastEvents ? 'secondary_brand' : 'neutral_bordered'}
+            onClick={() => setShowPastEvents((prev) => !prev)}
+          >
+            {showPastEvents
+              ? 'Masquer les événements passés'
+              : 'Afficher les événements passés'}
+          </Button>
+        </div>
+        {visibleSessions.length === 0 ? (
+          <p className="text-sm text-gray-550 md:text-base">
+            Aucun webinaire à venir pour le moment.
+          </p>
+        ) : (
+          <ul className="flex list-none flex-col gap-4 p-0 m-0">
+            {visibleSessions.map((session) => (
+              <li
+                key={`${session.day}-${session.month}`}
+                className="flex flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] md:flex-row"
+              >
+                <div className="flex shrink-0 p-3 pb-0 md:items-center md:justify-center md:px-4 md:py-5">
+                  <div
+                    className="flex size-[102px] shrink-0 flex-col items-center justify-center rounded w-full md:size-[144px]"
                     style={{
-                      backgroundColor: session.tag.bg,
-                      color: session.tag.color,
+                      background: webinaireDateSquareBackground(session.tag.bg),
                     }}
                   >
-                    {session.tag.label}
-                  </span>
+                    <span className="text-[44px] font-bold leading-none text-gray-850">
+                      {session.day}
+                    </span>
+                    <span className="mt-1 text-lg lowercase font-medium text-gray-850">
+                      {session.month}
+                    </span>
+                  </div>
                 </div>
-                <h4 className="text-lg font-bold text-gray-850 md:text-xl">
-                  {session.title}
-                </h4>
-                <p className="text-sm leading-relaxed text-gray-600">
-                  {session.description}
-                </p>
-                {session.cta?.type === 'replay' ? (
-                  <Button
-                    href={session.cta.href}
-                    variant="neutral_bordered"
-                    size="medium"
-                    target="_blank"
-                    icon={<PlayIcon />}
-                    className="mt-1"
-                  >
-                    {session.cta.label}
-                  </Button>
-                ) : (
-                  ''
-                )}
-                {session.cta?.type === 'register' ? (
-                  <Button
-                    href={session.cta.href}
-                    target="_blank"
-                    size="medium"
-                    variant="primary_brand"
-                    className="mt-1"
-                  >
-                    {session.cta.label}
-                  </Button>
-                ) : (
-                  ''
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
+                <div className="flex min-w-0 flex-1 flex-col gap-1 p-5 md:pl-0">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-gray-600">
+                    <span>{session.time}</span>
+                    <span
+                      className="rounded px-2 py-0.5 text-xs font-medium"
+                      style={{
+                        backgroundColor: session.tag.bg,
+                        color: session.tag.color,
+                      }}
+                    >
+                      {session.tag.label}
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-850 md:text-xl">
+                    {session.title}
+                  </h4>
+                  <p className="text-sm leading-relaxed text-gray-600">
+                    {session.description}
+                  </p>
+                  {session.cta?.type === 'replay' ? (
+                    <Button
+                      href={session.cta.href}
+                      variant="neutral_bordered"
+                      size="medium"
+                      target="_blank"
+                      icon={<PlayIcon />}
+                      className="mt-1"
+                    >
+                      {session.cta.label}
+                    </Button>
+                  ) : (
+                    ''
+                  )}
+                  {session.cta?.type === 'register' ? (
+                    <Button
+                      href={session.cta.href}
+                      target="_blank"
+                      size="medium"
+                      variant="primary_brand"
+                      className="mt-1"
+                    >
+                      {session.cta.label}
+                    </Button>
+                  ) : (
+                    ''
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   )
