@@ -22,9 +22,59 @@ export const ALLOWED_ATTACHMENT_TYPES = [
   'image/png',
   'image/jpeg',
   'image/gif',
-  'application/pdf',
   'text/plain',
 ] as const
+export const ALLOWED_ATTACHMENT_EXTENSIONS = [
+  '.jpg',
+  '.jpeg',
+  '.png',
+  '.gif',
+  '.txt',
+] as const
+
+/** Value for `<input accept>` — extensions + MIME for native file picker. */
+export const ATTACHMENT_ACCEPT = [
+  ...ALLOWED_ATTACHMENT_EXTENSIONS,
+  ...ALLOWED_ATTACHMENT_TYPES,
+].join(',')
+
+export function isAllowedAttachment(file: {
+  name: string
+  type: string
+}): boolean {
+  const mime = file.type.toLowerCase()
+  if (
+    mime &&
+    ALLOWED_ATTACHMENT_TYPES.includes(
+      mime as (typeof ALLOWED_ATTACHMENT_TYPES)[number]
+    )
+  ) {
+    return true
+  }
+  const lower = file.name.toLowerCase()
+  return ALLOWED_ATTACHMENT_EXTENSIONS.some((ext) => lower.endsWith(ext))
+}
+
+export function resolveAttachmentMimeType(file: {
+  name: string
+  type: string
+}): string {
+  const mime = file.type.toLowerCase()
+  if (
+    mime &&
+    ALLOWED_ATTACHMENT_TYPES.includes(
+      mime as (typeof ALLOWED_ATTACHMENT_TYPES)[number]
+    )
+  ) {
+    return mime
+  }
+  const lower = file.name.toLowerCase()
+  if (lower.endsWith('.png')) return 'image/png'
+  if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) return 'image/jpeg'
+  if (lower.endsWith('.gif')) return 'image/gif'
+  if (lower.endsWith('.txt')) return 'text/plain'
+  return mime || 'application/octet-stream'
+}
 
 const DATA_URL_PREFIX = /^data:[^;]+;base64,/i
 

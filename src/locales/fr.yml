@@ -51,7 +51,7 @@ support:
   remove_file: Retirer le fichier
   file_too_large: Fichier trop volumineux (max 10 Mo).
   file_too_many: Un seul fichier autorisé.
-  file_type_invalid: Type de fichier non accepté.
+  file_type_invalid: Type de fichier non accepté (jpg, png, gif ou txt).
   file_read_error: Impossible de lire le fichier.
   cancel: Annuler
   send: Envoyer

@@ -1,9 +1,11 @@
 import { useRef } from 'react'
 import {
-  ALLOWED_ATTACHMENT_TYPES,
+  ATTACHMENT_ACCEPT,
   MAX_ATTACHMENTS,
   MAX_ATTACHMENT_BYTES,
+  isAllowedAttachment,
   readFileAsBase64,
+  resolveAttachmentMimeType,
   truncateFileName,
   type ClientAttachment,
 } from '@/lib/support/attachments'
@@ -15,8 +17,6 @@ type SupportAttachmentsProps = {
   onError: (message: string) => void
   disabled?: boolean
 }
-
-const ACCEPT = ALLOWED_ATTACHMENT_TYPES.join(',')
 
 export const SupportAttachments = ({
   attachments,
@@ -37,12 +37,7 @@ export const SupportAttachments = ({
         onError(t('support.file_too_many'))
         break
       }
-      const mimeType = file.type || 'application/octet-stream'
-      if (
-        !ALLOWED_ATTACHMENT_TYPES.includes(
-          mimeType as (typeof ALLOWED_ATTACHMENT_TYPES)[number]
-        )
-      ) {
+      if (!isAllowedAttachment(file)) {
         onError(t('support.file_type_invalid'))
         continue
       }
@@ -54,7 +49,7 @@ export const SupportAttachments = ({
         const data = await readFileAsBase64(file)
         next.push({
           fileName: file.name,
-          mimeType,
+          mimeType: resolveAttachmentMimeType(file),
           data,
         })
       } catch {
@@ -72,7 +67,7 @@ export const SupportAttachments = ({
         ref={inputRef}
         type="file"
         className="hidden"
-        accept={ACCEPT}
+        accept={ATTACHMENT_ACCEPT}
         disabled={disabled || attachments.length >= MAX_ATTACHMENTS}
         onChange={(e) => void addFiles(e.target.files)}
       />
