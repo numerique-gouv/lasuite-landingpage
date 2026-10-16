@@ -1,7 +1,13 @@
+import { useCallback, useRef, useState } from 'react'
 import { createRoot, type Root } from 'react-dom/client'
 import { SupportPanel } from '@/components/support/SupportPanel'
+import { SupportSuccessToast } from '@/components/support/SupportSuccessToast'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import widgetCss from '../dist/widget.css'
+// Inlined so SCRYPT works when the host page is cross-origin (accounts, dimail, …).
+import scryptWorkerSource from '../../../public/altcha/workers/scrypt.js?raw'
+
+window.__LASUITE_ALTCHA_SCRYPT_SOURCE__ = scryptWorkerSource
 
 const WIDGET = 'support'
 const HOST_ID = 'lasuite-widget-support-root'
@@ -41,24 +47,73 @@ function ensureTrailingSlash(url: string) {
   return url.endsWith('/') ? url : `${url}/`
 }
 
-function injectStyles() {
-  const id = 'lasuite-support-widget-css'
-  if (document.getElementById(id)) return
-  const style = document.createElement('style')
-  style.id = id
-  style.textContent = widgetCss
-  document.head.appendChild(style)
-}
-
 let root: Root | null = null
 let host: HTMLDivElement | null = null
 
-function closePanel() {
+function destroyHost() {
   root?.unmount()
   root = null
   host?.remove()
   host = null
+}
+
+function closePanel() {
+  destroyHost()
   emit('closed')
+}
+
+type WidgetAppProps = {
+  apiBase: string
+  channel: string
+  email?: string
+  position: NonNullable<InitOptions['position']>
+  onDismiss: () => void
+}
+
+function WidgetApp({
+  apiBase,
+  channel,
+  email,
+  position,
+  onDismiss,
+}: WidgetAppProps) {
+  const [panelOpen, setPanelOpen] = useState(true)
+  const [toastOpen, setToastOpen] = useState(false)
+  const keepForToast = useRef(false)
+
+  const handleSuccess = useCallback(() => {
+    keepForToast.current = true
+    setToastOpen(true)
+    emit('success')
+  }, [])
+
+  const handleClose = useCallback(() => {
+    setPanelOpen(false)
+    if (!keepForToast.current) {
+      onDismiss()
+    }
+  }, [onDismiss])
+
+  const dismissToast = useCallback(() => {
+    keepForToast.current = false
+    setToastOpen(false)
+    onDismiss()
+  }, [onDismiss])
+
+  return (
+    <>
+      <SupportPanel
+        channel={channel}
+        email={email}
+        open={panelOpen}
+        apiBase={apiBase}
+        position={position}
+        onClose={handleClose}
+        onSuccess={handleSuccess}
+      />
+      <SupportSuccessToast open={toastOpen} onDismiss={dismissToast} />
+    </>
+  )
 }
 
 function openPanel(options: InitOptions) {
@@ -67,27 +122,36 @@ function openPanel(options: InitOptions) {
     return
   }
 
-  injectStyles()
-  closePanel()
+  destroyHost()
 
+  // Shadow DOM isolates Tailwind from the host page (accounts, dimail, …)
+  // so global form styles cannot override the inputs.
   host = document.createElement('div')
   host.id = HOST_ID
   document.body.appendChild(host)
-  root = createRoot(host)
+
+  const shadow = host.attachShadow({ mode: 'open' })
+  const style = document.createElement('style')
+  style.textContent = widgetCss
+  shadow.appendChild(style)
+
+  const mount = document.createElement('div')
+  mount.id = 'lasuite-support-mount'
+  shadow.appendChild(mount)
+
+  root = createRoot(mount)
 
   const apiBase = ensureTrailingSlash(options.api)
   const locale = options.locale || document.documentElement.lang || 'fr'
 
   root.render(
     <TranslationsProvider locale={locale.split('-')[0]}>
-      <SupportPanel
+      <WidgetApp
+        apiBase={apiBase}
         channel={options.channel}
         email={options.email}
-        open
-        apiBase={apiBase}
         position={options.position || 'bottom-right'}
-        onClose={closePanel}
-        onSuccess={() => emit('success')}
+        onDismiss={closePanel}
       />
     </TranslationsProvider>
   )
