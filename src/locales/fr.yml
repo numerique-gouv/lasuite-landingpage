@@ -41,10 +41,9 @@ footer:
 support:
   footer_link: Contacter l’équipe
   title: Contacter l’équipe
-  subtitle: Bug, idée, question ou compliment — l’équipe lit tout et vous répond si besoin.
+  subtitle: Bug, idée, question ou compliment, l’équipe lit tout et vous répond si besoin.
   email_label: E-mail
   email_invalid: Veuillez saisir une adresse e-mail valide.
-  reply_checkbox: Je souhaite recevoir une réponse par e-mail
   subject_label: Objet
   message_label: Votre message
   upload: Ajouter un fichier
