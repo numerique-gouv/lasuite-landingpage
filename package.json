@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run copy-cms-assets && next build",
+    "build": "npm run build:widgets && npm run copy-cms-assets && next build",
+    "build:widgets": "node scripts/build-widgets.mjs",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check \"**/*.{css,ts,tsx,md,json,cjs,js}\"",
@@ -57,6 +58,7 @@
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
     "eslint-config-prettier": "9.1.0",
+    "esbuild": "0.25.0",
     "postcss": "8.5.23",
     "prettier": "3.2.5",
     "tailwindcss": "3.4.1",
