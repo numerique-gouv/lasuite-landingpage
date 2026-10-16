@@ -106,6 +106,25 @@ const cssTextPlugin = {
   },
 }
 
+const rawTextPlugin = {
+  name: 'raw-text',
+  setup(buildApi) {
+    buildApi.onResolve({ filter: /\?raw$/ }, (args) => ({
+      path: path.isAbsolute(args.path.replace(/\?raw$/, ''))
+        ? args.path.replace(/\?raw$/, '')
+        : path.join(args.resolveDir, args.path.replace(/\?raw$/, '')),
+      namespace: 'raw-text',
+    }))
+    buildApi.onLoad({ filter: /.*/, namespace: 'raw-text' }, async (args) => {
+      const text = await fs.promises.readFile(args.path, 'utf8')
+      return {
+        contents: `export default ${JSON.stringify(text)}`,
+        loader: 'js',
+      }
+    })
+  },
+}
+
 function resolveWithExtensions(basePath) {
   const candidates = [
     basePath,
@@ -152,7 +171,7 @@ await build({
   jsx: 'automatic',
   logLevel: 'info',
   define: { 'process.env.NODE_ENV': '"production"' },
-  plugins: [aliasPlugin, yamlPlugin, cssTextPlugin],
+  plugins: [aliasPlugin, yamlPlugin, cssTextPlugin, rawTextPlugin],
 })
 
 console.log(
