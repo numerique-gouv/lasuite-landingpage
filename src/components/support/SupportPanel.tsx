@@ -2,7 +2,7 @@ import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { useTranslations } from '@/locales/useTranslations'
 import type { ClientAttachment } from '@/lib/support/attachments'
-import { AltchaWidget } from './AltchaWidget'
+import { AltchaWidget, type AltchaWidgetHandle } from './AltchaWidget'
 import { SupportAttachments } from './SupportAttachments'
 import type { SupportPanelProps } from './types'
 
@@ -10,23 +10,36 @@ type FormState = 'idle' | 'submitting' | 'error'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+function ensureTrailingSlash(url: string) {
+  return url.endsWith('/') ? url : `${url}/`
+}
+
 export const SupportPanel = ({
   channel,
   email: emailFromProps,
   open,
   onClose,
   onSuccess,
+  apiBase = '/api/support/',
+  position = 'bottom-left',
 }: SupportPanelProps) => {
   const t = useTranslations()
   const titleId = useId()
   const panelRef = useRef<HTMLDivElement>(null)
   const formRef = useRef<HTMLFormElement>(null)
   const subjectRef = useRef<HTMLInputElement>(null)
+  const altchaRef = useRef<AltchaWidgetHandle>(null)
+  const api = ensureTrailingSlash(apiBase)
+  const isAbsoluteApi = /^https?:\/\//i.test(api)
+  const challengeUrl = `${api}challenge`
+  const deliverUrl = `${api}deliver/`
+  const scryptWorkerUrl = isAbsoluteApi
+    ? `${new URL(api).origin}/altcha/workers/scrypt.js`
+    : '/altcha/workers/scrypt.js'
 
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
   const [email, setEmail] = useState(emailFromProps || '')
-  const [wantReply, setWantReply] = useState(true)
   const [emailTouched, setEmailTouched] = useState(false)
   const [attachments, setAttachments] = useState<ClientAttachment[]>([])
   const [formState, setFormState] = useState<FormState>('idle')
@@ -45,7 +58,6 @@ export const SupportPanel = ({
     setErrorDetail('')
     setAltchaPayload('')
     setAttachments([])
-    setWantReply(true)
     setEmailTouched(false)
     setEmail(emailFromProps || '')
     setAltchaKey((key) => key + 1)
@@ -65,14 +77,16 @@ export const SupportPanel = ({
   if (!open) return null
 
   const resolvedEmail = (emailFromProps || email).trim()
-  const showEmailField = !emailFromProps && wantReply
+  const showEmailField = !emailFromProps
   const emailInvalid =
-    showEmailField && emailTouched && !EMAIL_RE.test(resolvedEmail)
-  const emailOk = !!emailFromProps || !wantReply || EMAIL_RE.test(resolvedEmail)
+    showEmailField &&
+    emailTouched &&
+    !!resolvedEmail &&
+    !EMAIL_RE.test(resolvedEmail)
+  const emailOk = !resolvedEmail || EMAIL_RE.test(resolvedEmail)
   const canSubmit =
     subject.trim().length > 0 &&
     message.trim().length > 0 &&
-    !!altchaPayload &&
     formState !== 'submitting' &&
     emailOk
 
@@ -85,7 +99,11 @@ export const SupportPanel = ({
 
     const formData = new FormData(event.currentTarget)
     const altchaFromForm = String(formData.get('altcha') || '').trim()
-    const altcha = altchaFromForm || altchaPayload.trim()
+    const altcha =
+      altchaFromForm ||
+      altchaPayload.trim() ||
+      (await altchaRef.current?.verify()) ||
+      ''
     if (!altcha) {
       setFormState('error')
       setErrorDetail(t('support.altcha_required'))
@@ -100,12 +118,12 @@ export const SupportPanel = ({
       ...(resolvedEmail ? { email: resolvedEmail } : {}),
       channel,
       altcha,
-      notify_sender: wantReply && !!resolvedEmail,
+      notify_sender: !!resolvedEmail,
       attachments,
     }
 
     try {
-      const response = await fetch('/api/support/deliver', {
+      const response = await fetch(deliverUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -121,7 +139,6 @@ export const SupportPanel = ({
       setMessage('')
       setAltchaPayload('')
       setAttachments([])
-      setWantReply(true)
       setEmailTouched(false)
       if (!emailFromProps) setEmail('')
       formRef.current?.reset()
@@ -143,13 +160,20 @@ export const SupportPanel = ({
   const inputErrorClass =
     'w-full rounded border border-[#ce0500] bg-transparent px-3 py-2.5 pr-10 text-sm text-greyscale-950 outline-none focus:border-[#ce0500] focus:shadow-[0_0_0_1px_#ce0500]'
 
+  const positionClass =
+    position === 'top-right'
+      ? 'md:inset-auto md:top-20 md:right-5 md:bottom-auto md:left-auto'
+      : position === 'bottom-right'
+        ? 'md:inset-auto md:bottom-5 md:right-5 md:left-auto md:top-auto'
+        : 'md:inset-auto md:bottom-5 md:left-5 md:right-auto md:top-auto'
+
   return (
     <div
       ref={panelRef}
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className="fixed z-[1000] inset-0 w-full max-w-none max-h-none rounded-none overflow-auto bg-white text-left shadow-none md:inset-auto md:bottom-5 md:left-5 md:right-auto md:top-auto md:w-[min(400px,calc(100vw-24px))] md:max-h-[calc(100vh-40px)] md:rounded-lg md:shadow-[0_2px_8px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.12)]"
+      className={`fixed z-[1000] inset-0 w-full max-w-none max-h-none rounded-none overflow-auto bg-white text-left shadow-none md:w-[min(400px,calc(100vw-24px))] md:max-h-[calc(100vh-40px)] md:rounded-lg md:shadow-[0_2px_8px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.12)] ${positionClass}`}
     >
       <button
         type="button"
@@ -235,68 +259,48 @@ export const SupportPanel = ({
             disabled={formState === 'submitting'}
           />
 
-          {!emailFromProps && (
-            <>
-              <label className="flex cursor-pointer items-start gap-2 text-sm text-greyscale-950">
-                <input
-                  type="checkbox"
-                  checked={wantReply}
-                  onChange={(e) => {
-                    setWantReply(e.target.checked)
-                    if (!e.target.checked) {
-                      setEmailTouched(false)
-                      setEmail('')
-                    }
-                  }}
-                  className="mt-0.5 h-4 w-4 shrink-0 accent-brand-550"
-                />
-                <span>{t('support.reply_checkbox')}</span>
+          {showEmailField && (
+            <div className="flex flex-col gap-1.5">
+              <label
+                htmlFor="support-email"
+                className="text-sm font-medium leading-[18px]"
+              >
+                {t('support.email_label')}
               </label>
-
-              {showEmailField && (
-                <div className="flex flex-col gap-1.5">
-                  <label
-                    htmlFor="support-email"
-                    className="text-sm font-medium leading-[18px]"
+              <div className="relative">
+                <input
+                  id="support-email"
+                  type="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onBlur={() => setEmailTouched(true)}
+                  aria-invalid={emailInvalid}
+                  className={emailInvalid ? inputErrorClass : inputClass}
+                />
+                {emailInvalid && (
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute right-3 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-[#ce0500] text-[11px] font-bold text-white"
                   >
-                    {t('support.email_label')}
-                  </label>
-                  <div className="relative">
-                    <input
-                      id="support-email"
-                      type="email"
-                      autoComplete="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      onBlur={() => setEmailTouched(true)}
-                      aria-invalid={emailInvalid}
-                      className={emailInvalid ? inputErrorClass : inputClass}
-                    />
-                    {emailInvalid && (
-                      <span
-                        aria-hidden="true"
-                        className="pointer-events-none absolute right-3 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-[#ce0500] text-[11px] font-bold text-white"
-                      >
-                        !
-                      </span>
-                    )}
-                  </div>
-                  {emailInvalid && (
-                    <p
-                      className="m-0 mt-1 text-[13px] text-[#ce0500]"
-                      role="alert"
-                    >
-                      {t('support.email_invalid')}
-                    </p>
-                  )}
-                </div>
+                    !
+                  </span>
+                )}
+              </div>
+              {emailInvalid && (
+                <p className="m-0 mt-1 text-[13px] text-[#ce0500]" role="alert">
+                  {t('support.email_invalid')}
+                </p>
               )}
-            </>
+            </div>
           )}
 
           <AltchaWidget
+            ref={altchaRef}
             remountKey={altchaKey}
             onPayloadChange={onAltchaPayloadChange}
+            challengeUrl={challengeUrl}
+            scryptWorkerUrl={scryptWorkerUrl}
           />
 
           {errorDetail && (
