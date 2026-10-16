@@ -61,8 +61,8 @@ const nextConfig = {
     ]
   },
   async rewrites() {
-    // Site On fait Suite exporté en statique dans public/onfaitsuite/
     return [
+      // Site On fait Suite exporté en statique dans public/onfaitsuite/
       {
         source: '/onfaitsuite',
         destination: '/onfaitsuite/index.html',
@@ -79,12 +79,8 @@ const nextConfig = {
         source: '/onfaitsuite/mentions-legales',
         destination: '/onfaitsuite/mentions-legales.html',
       },
-    ]
-  },
-  // Support widget appends trailing slashes (`config/`, `deliver/`).
-  // Rewrite instead of redirect so cross-origin CORS headers stay intact.
-  async rewrites() {
-    return [
+      // Support widget appends trailing slashes (`config/`, `deliver/`).
+      // Rewrite instead of redirect so cross-origin CORS headers stay intact.
       {
         source: '/api/support/config/',
         destination: '/api/support/config',
