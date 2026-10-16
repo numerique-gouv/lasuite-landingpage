@@ -68,12 +68,13 @@ export const SupportPanel = ({
   const showEmailField = !emailFromProps && wantReply
   const emailInvalid =
     showEmailField && emailTouched && !EMAIL_RE.test(resolvedEmail)
+  const emailOk = !!emailFromProps || !wantReply || EMAIL_RE.test(resolvedEmail)
   const canSubmit =
     subject.trim().length > 0 &&
     message.trim().length > 0 &&
     !!altchaPayload &&
     formState !== 'submitting' &&
-    (emailFromProps || (wantReply && EMAIL_RE.test(resolvedEmail)))
+    emailOk
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -96,10 +97,10 @@ export const SupportPanel = ({
     const payload = {
       subject: subject.trim(),
       textBody: message.trim(),
-      email: resolvedEmail,
+      ...(resolvedEmail ? { email: resolvedEmail } : {}),
       channel,
       altcha,
-      notify_sender: wantReply,
+      notify_sender: wantReply && !!resolvedEmail,
       attachments,
     }
 

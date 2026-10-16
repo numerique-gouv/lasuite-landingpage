@@ -9,16 +9,26 @@ import {
   isSupportConfigured,
 } from '@/lib/support/recipients'
 
-const deliverSchema = z.object({
-  subject: z.string().trim().min(1),
-  textBody: z.string().trim().min(1),
-  email: z.email(),
-  channel: z.string().trim().min(1).optional(),
-  productName: z.string().trim().min(1).optional(),
-  altcha: z.string().trim().min(1),
-  notify_sender: z.boolean().optional().default(true),
-  attachments: z.array(clientAttachmentSchema).max(1).optional().default([]),
-})
+const deliverSchema = z
+  .object({
+    subject: z.string().trim().min(1),
+    textBody: z.string().trim().min(1),
+    email: z.union([z.email(), z.literal('')]).optional(),
+    channel: z.string().trim().min(1).optional(),
+    productName: z.string().trim().min(1).optional(),
+    altcha: z.string().trim().min(1),
+    notify_sender: z.boolean().optional().default(true),
+    attachments: z.array(clientAttachmentSchema).max(1).optional().default([]),
+  })
+  .superRefine((data, ctx) => {
+    if (data.notify_sender && !data.email) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['email'],
+        message: 'Email is required when notify_sender is true.',
+      })
+    }
+  })
 
 type DeliverResponse = { success: true } | { success: false; detail: string }
 
@@ -82,13 +92,16 @@ export default async function handler(
 
   const { subject, textBody, email, altcha, attachments, notify_sender } =
     parsed.data
+  const userEmail = email?.trim() || ''
+  const replyTo = userEmail || `noreply-${channel}@undisclosed.domain`
+  const shouldNotify = notify_sender && !!userEmail
 
   const mailportBody: Record<string, unknown> = {
     to: recipient,
     subject,
     body: textBody,
-    reply_to: email,
-    notify_sender,
+    reply_to: replyTo,
+    notify_sender: shouldNotify,
     altcha,
   }
   if (attachments.length > 0) {
