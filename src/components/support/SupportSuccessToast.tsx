@@ -6,7 +6,7 @@ type SupportSuccessToastProps = {
   onDismiss: () => void
 }
 
-const TOAST_MS = 4000
+const TOAST_MS = 1000
 
 export const SupportSuccessToast = ({
   open,
@@ -26,7 +26,7 @@ export const SupportSuccessToast = ({
     <div
       role="status"
       aria-live="polite"
-      className="fixed z-[1001] bottom-5 left-5 right-5 flex w-auto max-w-[min(400px,calc(100vw-40px))] items-center gap-2 rounded-lg border border-brand-150 bg-brand-050 px-3 py-2 text-sm font-medium text-brand-650 shadow-[0_2px_8px_rgba(0,0,0,0.06),0_8px_24px_rgba(0,0,0,0.1)] md:right-auto"
+      className="fixed z-[1000] bottom-5 left-5 right-5 flex w-auto max-w-[min(400px,calc(100vw-40px))] items-center gap-2 rounded-lg border border-brand-150 bg-brand-050 px-3 py-2 text-sm font-medium text-brand-650 shadow-[0_2px_8px_rgba(0,0,0,0.06),0_8px_24px_rgba(0,0,0,0.1)] md:right-auto"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
