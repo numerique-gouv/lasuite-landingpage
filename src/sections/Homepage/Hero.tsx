@@ -26,7 +26,7 @@ const PlayIcon = () => (
 
 export const Hero = ({ content }: { content: any }) => {
   const t = useTranslations()
-  const teaserVoiciLaSuiteUrl = '#'
+  const teaserVoiciLaSuiteUrl = 'https://tube.numerique.gouv.fr/w/3dmYPdExb1rZUv57UreoXh'
 
   return (
     <div className="w-[100%] lg:max-w-[70em] px-4 max-w-container mx-auto overflow-hidden md:overflow-visible">
