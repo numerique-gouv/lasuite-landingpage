@@ -56,40 +56,63 @@ main_menu:
       - title: Guide de Démarrage
         href : https://docs.numerique.gouv.fr/docs/5da3aba2-9954-4ee0-9169-60083b59379b
         description : Une librairie de guides et de conseils
-      - title: Guide DSI/RSSI
-        href: https://docs.numerique.gouv.fr/docs/3c7b322e-1840-419a-ac05-6bc2843ae7dd/
-        description: Encadrer et sécuriser les usages de Grist
-      - title: 'Widgets, modèles et exemples'
-        href: https://docs.getgrist.com/9DZa7JFegUxz/GristHub/p/1
-        description: Une librairie d'extensions pour adapter Grist
+      - title: Formations
+        href : https://docs.numerique.gouv.fr/docs/f2c4bcf3-86a7-4ea4-97de-676f49b815bb/
+        description : Des formations proposées par la communauté
       - title: Tutoriels
         href: https://forum.grist.libre.sh/tag/tutoriel
         description: Des tutos pour mettre en place différents projets
+      - title: 'Widgets, modèles et exemples'
+        href: https://docs.getgrist.com/9DZa7JFegUxz/GristHub/p/1
+        description: Une librairie d'extensions pour adapter Grist
       - title: Experts
         href: https://comptoir-du-libre.org/fr/softwares/servicesProviders/659
         description: Trouvez des experts pour votre projet
       - title: Peertube
         href: https://tube.numerique.gouv.fr/c/grist/videos
-        description: Accédez au replays des webinaires de la DINUM et de l’ANCT
+        description: Revoyez les replays des webinaires de la DINUM et de l’ANCT
       - title : FAQ
         href: https://docs.numerique.gouv.fr/docs/16d9b834-e1bb-4e0c-b657-2084fc96de59/
         description: Vos questions, nos réponses
   - title: Communauté
     items:
-      - title: 'Forum'
+      - title: 'Forum francophone'
         href: https://forum.grist.libre.sh/
         description: Posez des questions, trouvez du soutien, partagez vos solutions
+      - title: 'Forum anglophone'
+        href: https://community.getgrist.com/
+        description: Échangez avec la communauté internationale de Grist, en anglais
       - title: Tchap
-        href: https://tchap.gouv.fr/#/room/!TLRWBCVNfbjgrNKmox:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.dev-durable.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr
+        href: https://tchap.gouv.fr/#/room/#GristisO6JEceWcU:agent.dinum.tchap.gouv.fr
         description: Aide rapide, échanges spontanés
       - title: Événements
         href: https://grist.numerique.gouv.fr/o/docs/cYXWdmoFt62T/Evenements-Communaute-Grist/p/4?embed=true
         description: Toutes les rencontres de la communauté
-      - title: Développeurs
-        href: https://github.com/gristlabs/grist-core
-        description: Documentation, Github, Contribuer
       - title: Webinaires
         href: https://grist.incubateur.anct.gouv.fr/o/anct/forms/h9jBoCCbpBvpBM1Yg46ZsL/7
         description: Participez aux prochains webinaires
+  - title: Technique
+    items:
+      - title: 'Informations sur l’instance DINUM'
+        href: https://grist.numerique.gouv.fr/o/dinum/2bvU3n7Xj1Cz/Informations-Grist
+        description: Version, fonctionnalités et conditions d’accès
+      - title: 'FAQ Sécurité et hébergement'
+        href: https://docs.numerique.gouv.fr/docs/3537d3d6-e8c2-43fb-b530-73b3361083c1/
+        description: Les réponses aux questions techniques et de conformité
+      - title: Guide DSI/RSSI
+        href: https://docs.numerique.gouv.fr/docs/3c7b322e-1840-419a-ac05-6bc2843ae7dd/
+        description: Encadrer et sécuriser les usages de Grist
+      - title: Développeurs
+        href: https://github.com/gristlabs/grist-core
+        description: Documentation, Code Source, Contribuer
+      - title: 'GitHub GristGouv'
+        href: https://github.com/gristgouv/
+        description: Widgets et outils de la communauté interministérielle
+      - title: 'Déployer Grist'
+        href: https://github.com/numerique-gouv/helm-charts/tree/main/charts/grist
+        description: Exemples de déploiement (charts Helm) par Grist Gouv
+      - title: 'Hébergeurs d’instance'
+        href: https://tchap.gouv.fr/#/room/!RhNhRnsSkJNUWNIopy:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr&via=agent.collectivites.tchap.gouv.fr
+        description: Le salon Tchap des équipes qui hébergent Grist
   - title: Contact
     href: /produits/grist#contact
