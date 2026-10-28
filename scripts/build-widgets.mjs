@@ -161,7 +161,7 @@ const aliasPlugin = {
   },
 }
 
-console.log('→ Bundle React SupportPanel → public/widgets/support.js…')
+console.log('→ Bundle SupportPanel with Preact → public/widgets/support.js…')
 await build({
   entryPoints: [path.join(supportDir, 'src/entry.tsx')],
   outfile: jsOut,
@@ -173,6 +173,15 @@ await build({
   jsx: 'automatic',
   logLevel: 'info',
   define: { 'process.env.NODE_ENV': '"production"' },
+  // Use preact instead of react in an attempt to significantly reduce the bundle size.
+  // Switch back to React if you notice weird behavior…
+  alias: {
+    react: 'preact/compat',
+    'react-dom/client': 'preact/compat/client',
+    'react-dom': 'preact/compat',
+    'react/jsx-runtime': 'preact/compat/jsx-runtime',
+    'react/jsx-dev-runtime': 'preact/compat/jsx-dev-runtime',
+  },
   plugins: [aliasPlugin, yamlPlugin, cssTextPlugin, rawTextPlugin],
 })
 

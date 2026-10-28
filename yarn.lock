@@ -6250,6 +6250,11 @@ postcss@8.5.23, postcss@^8.4.23:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+preact@11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-11.1.1.tgz#8f4c2dd333c0ba0d36b68ca4d8998d09854c02ec"
+  integrity sha512-vpFVfai437pbuLri7XVeslCPfrEZX6Z1S2gV+MOFrA/kji+NKUXvH7y01EnVjA1guLigfkVp77Sqipd4SIllCg==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
