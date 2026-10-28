@@ -1,7 +1,6 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { createRoot, type Root } from 'react-dom/client'
 import { SupportPanel } from '@/components/support/SupportPanel'
-import { SupportSuccessToast } from '@/components/support/SupportSuccessToast'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import widgetCss from '../dist/widget.css'
 // Inlined so SCRYPT works when the host page is cross-origin (accounts, dimail, …).
@@ -80,42 +79,27 @@ function WidgetApp({
   onDismiss,
 }: WidgetAppProps) {
   const [panelOpen, setPanelOpen] = useState(true)
-  const [toastOpen, setToastOpen] = useState(false)
-  const keepForToast = useRef(false)
 
   const handleSuccess = useCallback(() => {
-    keepForToast.current = true
-    setToastOpen(true)
     emit('success')
   }, [])
 
   const handleClose = useCallback(() => {
     setPanelOpen(false)
-    if (!keepForToast.current) {
-      onDismiss()
-    }
-  }, [onDismiss])
-
-  const dismissToast = useCallback(() => {
-    keepForToast.current = false
-    setToastOpen(false)
     onDismiss()
   }, [onDismiss])
 
   return (
-    <>
-      <SupportPanel
-        channel={channel}
-        email={email}
-        open={panelOpen}
-        apiBase={apiBase}
-        position={position}
-        onOpen={onOpen}
-        onClose={handleClose}
-        onSuccess={handleSuccess}
-      />
-      <SupportSuccessToast open={toastOpen} onDismiss={dismissToast} />
-    </>
+    <SupportPanel
+      channel={channel}
+      email={email}
+      open={panelOpen}
+      apiBase={apiBase}
+      position={position}
+      onOpen={onOpen}
+      onClose={handleClose}
+      onSuccess={handleSuccess}
+    />
   )
 }
 
