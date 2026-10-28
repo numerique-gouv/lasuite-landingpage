@@ -67,6 +67,7 @@ type WidgetAppProps = {
   channel: string
   email?: string
   position: NonNullable<InitOptions['position']>
+  onOpen: () => void
   onDismiss: () => void
 }
 
@@ -75,6 +76,7 @@ function WidgetApp({
   channel,
   email,
   position,
+  onOpen,
   onDismiss,
 }: WidgetAppProps) {
   const [panelOpen, setPanelOpen] = useState(true)
@@ -108,6 +110,7 @@ function WidgetApp({
         open={panelOpen}
         apiBase={apiBase}
         position={position}
+        onOpen={onOpen}
         onClose={handleClose}
         onSuccess={handleSuccess}
       />
@@ -151,12 +154,13 @@ function openPanel(options: InitOptions) {
         channel={options.channel}
         email={options.email}
         position={options.position || 'bottom-right'}
+        onOpen={() => {
+          emit('opened', options)
+        }}
         onDismiss={closePanel}
       />
     </TranslationsProvider>
   )
-
-  emit('opened', options)
 }
 
 function bootstrap() {
