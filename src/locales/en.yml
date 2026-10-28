@@ -41,21 +41,27 @@ support:
   footer_link: Contact the team
   title: Contact the team
   subtitle: Bug, idea, question, or praise, the team reads everything and will get back to you if needed.
-  email_label: E-mail
-  email_invalid: Please enter a valid e-mail address.
+  email_label: Email
+  email_required: 'The email is required. Format: name@domain.com'
+  email_invalid: 'Invalid email address. Example: m.dupont@lasuite.gouv.fr'
   subject_label: Subject
+  subject_required: The subject is required
   message_label: Your message
+  message_required: The message is required
   upload: Upload a file
+  upload_hint: Image (png, jpg, gif) or text file (txt), up to 10 MB
   remove_file: Remove file
-  file_too_large: File too large (max 10 MB).
-  file_too_many: Only one file is allowed.
-  file_type_invalid: File type not allowed (jpg, png, gif, or txt).
+  file_too_large: 'File is too large. Maximum size allowed: 10 megabytes'
+  file_too_many: Only one file is allowed
+  file_type_invalid: File must be of type jpg, png, gif, or txt
   file_read_error: Unable to read file.
   cancel: Cancel
   send: Send
   sending: Sending…
   close: Close the contact form
-  success: Thank you for your feedback!
+  success_title: Thank you for your feedback
+  success_text: If needed, a member of our support team will contact you by email.
+  success_close: Close
   error: Something went wrong. Please try again later.
   altcha_required: Please wait for the anti-spam check to finish before sending.
 not_found_page:

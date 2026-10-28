@@ -1,7 +1,6 @@
-import { useCallback, useState } from 'react'
+import { useState } from 'react'
 import { useTranslations } from '@/locales/useTranslations'
 import { SupportPanel } from './SupportPanel'
-import { SupportSuccessToast } from './SupportSuccessToast'
 import type { SupportChannel } from './types'
 
 type SupportButtonProps = {
@@ -17,10 +16,6 @@ export const SupportButton = ({
 }: SupportButtonProps) => {
   const t = useTranslations()
   const [open, setOpen] = useState(false)
-  const [toastOpen, setToastOpen] = useState(false)
-
-  const dismissToast = useCallback(() => setToastOpen(false), [])
-  const handleSuccess = useCallback(() => setToastOpen(true), [])
 
   return (
     <>
@@ -39,9 +34,7 @@ export const SupportButton = ({
         email={email}
         open={open}
         onClose={() => setOpen(false)}
-        onSuccess={handleSuccess}
       />
-      <SupportSuccessToast open={toastOpen} onDismiss={dismissToast} />
     </>
   )
 }

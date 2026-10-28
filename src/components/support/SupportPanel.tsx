@@ -4,11 +4,31 @@ import { useTranslations } from '@/locales/useTranslations'
 import type { ClientAttachment } from '@/lib/support/attachments'
 import { AltchaWidget, type AltchaWidgetHandle } from './AltchaWidget'
 import { SupportAttachments } from './SupportAttachments'
+import { SupportField } from './SupportField'
 import type { SupportPanelProps } from './types'
 
-type FormState = 'idle' | 'submitting' | 'error'
+type FormState = 'idle' | 'submitting' | 'error' | 'success'
+
+type FieldErrors = {
+  subject: string | null
+  message: string | null
+  email: string | null
+}
+
+const EMPTY_FIELD_ERRORS: FieldErrors = {
+  subject: null,
+  message: null,
+  email: null,
+}
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const MIN_SENDING_MS = 1500
+
+function delay(ms: number) {
+  return new Promise((resolve) => {
+    window.setTimeout(resolve, ms)
+  })
+}
 
 const FOCUSABLES = [
   'a[href]',
@@ -30,6 +50,130 @@ function getFocusableElements(container: HTMLElement) {
   )
 }
 
+function SuccessImage() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="80"
+      height="80"
+      fill="none"
+      viewBox="0 0 80 80"
+    >
+      <defs>
+        <linearGradient
+          id="bubbleFill"
+          x1="40"
+          x2="40"
+          y1="14.75"
+          y2="56"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FFF"></stop>
+          <stop offset="1" stopColor="#F6F8F9"></stop>
+        </linearGradient>
+        <linearGradient
+          id="bubbleStroke"
+          x1="40"
+          x2="40"
+          y1="15"
+          y2="65"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#dbdee3"></stop>
+          <stop offset="1" stopColor="#dbdee3"></stop>
+        </linearGradient>
+        <filter
+          id="shadow"
+          width="92"
+          height="92"
+          x="-6"
+          y="-4"
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+        >
+          <feGaussianBlur
+            in="SourceAlpha"
+            result="blur"
+            stdDeviation="3"
+          ></feGaussianBlur>
+          <feOffset dy="2" in="blur" result="offset"></feOffset>
+          <feComponentTransfer in="offset" result="shadow">
+            <feFuncA slope="0.05" type="linear"></feFuncA>
+          </feComponentTransfer>
+          <feFlood floodColor="#181B24" result="shadowColor"></feFlood>
+          <feComposite
+            in="shadowColor"
+            in2="shadow"
+            operator="in"
+            result="coloredShadow"
+          ></feComposite>
+          <feMerge>
+            <feMergeNode in="coloredShadow"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+        </filter>
+      </defs>
+      <g filter="url(#shadow)">
+        <path
+          fill="url(#bubbleFill)"
+          stroke="url(#bubbleStroke)"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M51.185 65.248q1.16 0 1.81-.743.65-.742.65-2.019v-6.59h2.111q3.225 0 5.709-1.37 2.46-1.369 3.875-3.921 1.392-2.552 1.392-6.08V26.146q0-3.527-1.369-6.08a9.43 9.43 0 0 0-3.898-3.921q-2.553-1.393-6.103-1.393H24.638q-3.551 0-6.103 1.393a9.26 9.26 0 0 0-3.899 3.922q-1.37 2.552-1.369 6.08v18.378q0 3.528 1.37 6.08a9.26 9.26 0 0 0 3.898 3.922q2.552 1.368 6.103 1.369h14.665l8.703 7.727q.95.86 1.67 1.23.72.395 1.509.395Z"
+        ></path>
+        <path
+          fill="#c6cbd3"
+          d="M20.168 24.841c0-.982.796-1.777 1.778-1.777h36.11a1.778 1.778 0 1 1 0 3.555h-36.11a1.78 1.78 0 0 1-1.778-1.778m0 5.334c0-.982.796-1.778 1.778-1.778h36.11a1.778 1.778 0 1 1 0 3.555h-36.11a1.78 1.78 0 0 1-1.778-1.777m0 5.333c0-.982.796-1.778 1.778-1.778h36.11a1.778 1.778 0 0 1 0 3.556h-36.11a1.78 1.78 0 0 1-1.778-1.778m0 5.333c0-.982.796-1.778 1.778-1.778h14.11a1.778 1.778 0 1 1 0 3.556h-14.11a1.78 1.78 0 0 1-1.778-1.778"
+        ></path>
+      </g>
+    </svg>
+  )
+}
+
+function SupportSuccess({
+  titleId,
+  onClose,
+}: {
+  titleId: string
+  onClose: () => void
+}) {
+  const t = useTranslations()
+  const actionsRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    window.setTimeout(() => {
+      actionsRef.current?.querySelector('button')?.focus()
+    }, 0)
+  }, [])
+
+  return (
+    <div className="flex flex-col items-center px-5 pb-5 pt-10 text-center">
+      <div role="status" className="flex flex-col items-center">
+        <SuccessImage />
+        <h2
+          id={titleId}
+          className="m-0 mt-4 text-xl font-bold leading-tight text-greyscale-950"
+        >
+          {t('support.success_title')}
+        </h2>
+        <p className="mt-2 mb-2 text-[13px] leading-snug text-greyscale-500">
+          {t('support.success_text')}
+        </p>
+      </div>
+      <div ref={actionsRef} className="mt-6 w-full">
+        <Button
+          type="button"
+          variant="secondary_brand"
+          onClick={onClose}
+          fullWidth
+        >
+          {t('support.success_close')}
+        </Button>
+      </div>
+    </div>
+  )
+}
+
 export const SupportPanel = ({
   channel,
   email: emailFromProps,
@@ -45,6 +189,8 @@ export const SupportPanel = ({
   const panelRef = useRef<HTMLDivElement>(null)
   const formRef = useRef<HTMLFormElement>(null)
   const subjectRef = useRef<HTMLInputElement>(null)
+  const messageRef = useRef<HTMLTextAreaElement>(null)
+  const emailRef = useRef<HTMLInputElement>(null)
   const altchaRef = useRef<AltchaWidgetHandle>(null)
   const api = ensureTrailingSlash(apiBase)
   const isAbsoluteApi = /^https?:\/\//i.test(api)
@@ -54,29 +200,39 @@ export const SupportPanel = ({
     ? `${new URL(api).origin}/altcha/workers/scrypt.js`
     : '/altcha/workers/scrypt.js'
 
+  const propsEmail = (emailFromProps || '').trim()
+  const trustedEmailFromProps = EMAIL_RE.test(propsEmail) ? propsEmail : ''
+  const showEmailField = !trustedEmailFromProps
+
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
-  const [email, setEmail] = useState(emailFromProps || '')
-  const [emailTouched, setEmailTouched] = useState(false)
+  const [email, setEmail] = useState('')
+  const [fieldErrors, setFieldErrors] =
+    useState<FieldErrors>(EMPTY_FIELD_ERRORS)
   const [attachments, setAttachments] = useState<ClientAttachment[]>([])
   const [formState, setFormState] = useState<FormState>('idle')
   const [errorDetail, setErrorDetail] = useState('')
   const [altchaPayload, setAltchaPayload] = useState('')
   // Remount ALTCHA after each attempt — challenges are single-use.
   const [altchaKey, setAltchaKey] = useState(0)
+  const submitAttempt = useRef(0)
 
   const onAltchaPayloadChange = useCallback((payload: string) => {
     setAltchaPayload(payload)
   }, [])
 
   useEffect(() => {
-    if (!open) return
+    if (!open) {
+      submitAttempt.current += 1
+      setFormState('idle')
+      return
+    }
     setFormState('idle')
     setErrorDetail('')
     setAltchaPayload('')
     setAttachments([])
-    setEmailTouched(false)
-    setEmail(emailFromProps || '')
+    setFieldErrors(EMPTY_FIELD_ERRORS)
+    setEmail('')
     setAltchaKey((key) => key + 1)
     const timer = window.setTimeout(() => subjectRef.current?.focus(), 0)
     return () => window.clearTimeout(timer)
@@ -124,23 +280,45 @@ export const SupportPanel = ({
 
   if (!open) return null
 
-  const resolvedEmail = (emailFromProps || email).trim()
-  const showEmailField = !emailFromProps
-  const emailInvalid =
-    showEmailField &&
-    emailTouched &&
-    !!resolvedEmail &&
-    !EMAIL_RE.test(resolvedEmail)
-  const emailOk = !resolvedEmail || EMAIL_RE.test(resolvedEmail)
-  const canSubmit =
-    subject.trim().length > 0 &&
-    message.trim().length > 0 &&
-    formState !== 'submitting' &&
-    emailOk
+  const resolvedEmail = showEmailField ? email.trim() : trustedEmailFromProps
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    if (!canSubmit) return
+    if (formState === 'submitting') return
+
+    const subjectOk = subject.trim().length > 0
+    const messageOk = message.trim().length > 0
+    const emailOk = EMAIL_RE.test(resolvedEmail)
+    const nextErrors: FieldErrors = {
+      subject: subjectOk ? null : t('support.subject_required'),
+      message: messageOk ? null : t('support.message_required'),
+      email:
+        !showEmailField || emailOk
+          ? null
+          : resolvedEmail
+            ? t('support.email_invalid')
+            : t('support.email_required'),
+    }
+    setFieldErrors(nextErrors)
+
+    const firstInvalid = (
+      [
+        { ok: subjectOk, el: subjectRef.current },
+        { ok: messageOk, el: messageRef.current },
+        ...(showEmailField ? [{ ok: emailOk, el: emailRef.current }] : []),
+      ] as const
+    ).find((field) => !field.ok)
+    if (firstInvalid) {
+      firstInvalid.el?.focus()
+      return
+    }
+
+    const attempt = ++submitAttempt.current
+    const sendingStartedAt = Date.now()
+    const ensureMinimumSending = async () => {
+      const remaining = MIN_SENDING_MS - (Date.now() - sendingStartedAt)
+      if (remaining > 0) await delay(remaining)
+    }
 
     setErrorDetail('')
     setFormState('submitting')
@@ -153,20 +331,25 @@ export const SupportPanel = ({
       (await altchaRef.current?.verify()) ||
       ''
     if (!altcha) {
+      await ensureMinimumSending()
+      if (attempt !== submitAttempt.current) return
       setFormState('error')
       setErrorDetail(t('support.altcha_required'))
       setAltchaPayload('')
       setAltchaKey((key) => key + 1)
+      window.setTimeout(() => {
+        panelRef.current?.querySelector<HTMLElement>('altcha')?.focus?.()
+      }, 0)
       return
     }
 
     const payload = {
       subject: subject.trim(),
       textBody: message.trim(),
-      ...(resolvedEmail ? { email: resolvedEmail } : {}),
+      email: resolvedEmail,
       channel,
       altcha,
-      notify_sender: !!resolvedEmail,
+      notify_sender: true,
       attachments,
     }
 
@@ -183,17 +366,20 @@ export const SupportPanel = ({
       if (!data.success) {
         throw new Error(data.detail || t('support.error'))
       }
+      await ensureMinimumSending()
+      if (attempt !== submitAttempt.current) return
       setSubject('')
       setMessage('')
       setAltchaPayload('')
       setAttachments([])
-      setEmailTouched(false)
-      if (!emailFromProps) setEmail('')
+      setFieldErrors(EMPTY_FIELD_ERRORS)
+      setEmail('')
       formRef.current?.reset()
-      setFormState('idle')
+      setFormState('success')
       onSuccess?.()
-      onClose()
     } catch (error) {
+      await ensureMinimumSending()
+      if (attempt !== submitAttempt.current) return
       setFormState('error')
       setErrorDetail(
         error instanceof Error ? error.message : t('support.error')
@@ -202,11 +388,6 @@ export const SupportPanel = ({
       setAltchaKey((key) => key + 1)
     }
   }
-
-  const inputClass =
-    'w-full rounded border border-[#cbcfd8] bg-transparent px-3 py-2.5 text-sm text-greyscale-950 outline-none focus:border-brand-550 focus:shadow-[0_0_0_1px_#3e5de7]'
-  const inputErrorClass =
-    'w-full rounded border border-[#ce0500] bg-transparent px-3 py-2.5 pr-10 text-sm text-greyscale-950 outline-none focus:border-[#ce0500] focus:shadow-[0_0_0_1px_#ce0500]'
 
   const positionClass =
     position === 'top-right'
@@ -246,140 +427,109 @@ export const SupportPanel = ({
         </svg>
       </button>
 
-      <div className="px-5 pt-5 pr-10">
-        <h2
-          id={titleId}
-          className="m-0 text-xl font-bold leading-tight text-greyscale-950"
-        >
-          {t('support.title')}
-        </h2>
-        <p className="mt-2 mb-0 text-[13px] leading-snug text-greyscale-500">
-          {t('support.subtitle')}
-        </p>
-      </div>
-
-      <div className="px-5 pb-5 pt-4">
-        <form
-          ref={formRef}
-          className="flex flex-col gap-3.5"
-          onSubmit={handleSubmit}
-          noValidate
-        >
-          <div className="flex flex-col gap-1.5">
-            <label
-              htmlFor="support-subject"
-              className="text-sm font-medium leading-[18px]"
+      {formState === 'success' ? (
+        <SupportSuccess titleId={titleId} onClose={onClose} />
+      ) : (
+        <>
+          <div className="px-5 pt-5 pr-10">
+            <h2
+              id={titleId}
+              className="m-0 text-xl font-bold leading-tight text-greyscale-950"
             >
-              {t('support.subject_label')}
-            </label>
-            <input
-              ref={subjectRef}
-              id="support-subject"
-              type="text"
-              required
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              className={inputClass}
-            />
+              {t('support.title')}
+            </h2>
+            <p className="mt-2 mb-0 text-[13px] leading-snug text-greyscale-500">
+              {t('support.subtitle')}
+            </p>
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <label
-              htmlFor="support-message"
-              className="text-sm font-medium leading-[18px]"
+          <div className="px-5 pb-5 pt-4">
+            <form
+              ref={formRef}
+              className="flex flex-col gap-3.5"
+              onSubmit={handleSubmit}
+              noValidate
             >
-              {t('support.message_label')}
-            </label>
-            <textarea
-              id="support-message"
-              required
-              rows={5}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className={`min-h-24 resize-y ${inputClass}`}
-            />
-          </div>
+              <SupportField
+                id="support-subject"
+                label={t('support.subject_label')}
+                error={fieldErrors.subject}
+                value={subject}
+                onChange={setSubject}
+                inputRef={subjectRef}
+                required
+              />
 
-          <SupportAttachments
-            attachments={attachments}
-            onChange={setAttachments}
-            onError={setErrorDetail}
-            disabled={formState === 'submitting'}
-          />
+              <SupportField
+                as="textarea"
+                id="support-message"
+                label={t('support.message_label')}
+                error={fieldErrors.message}
+                value={message}
+                onChange={setMessage}
+                inputRef={messageRef}
+                required
+                rows={5}
+              />
 
-          {showEmailField && (
-            <div className="flex flex-col gap-1.5">
-              <label
-                htmlFor="support-email"
-                className="text-sm font-medium leading-[18px]"
-              >
-                {t('support.email_label')}
-              </label>
-              <div className="relative">
-                <input
+              <SupportAttachments
+                attachments={attachments}
+                onChange={setAttachments}
+                onError={setErrorDetail}
+                disabled={formState === 'submitting'}
+              />
+
+              {showEmailField && (
+                <SupportField
                   id="support-email"
+                  label={t('support.email_label')}
+                  error={fieldErrors.email}
+                  value={email}
+                  onChange={setEmail}
+                  inputRef={emailRef}
                   type="email"
                   autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  onBlur={() => setEmailTouched(true)}
-                  aria-invalid={emailInvalid}
-                  className={emailInvalid ? inputErrorClass : inputClass}
+                  required
                 />
-                {emailInvalid && (
-                  <span
-                    aria-hidden="true"
-                    className="pointer-events-none absolute right-3 top-1/2 flex h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full bg-[#ce0500] text-[11px] font-bold text-white"
-                  >
-                    !
-                  </span>
-                )}
-              </div>
-              {emailInvalid && (
-                <p className="m-0 mt-1 text-[13px] text-[#ce0500]" role="alert">
-                  {t('support.email_invalid')}
+              )}
+
+              <AltchaWidget
+                ref={altchaRef}
+                remountKey={altchaKey}
+                onPayloadChange={onAltchaPayloadChange}
+                challengeUrl={challengeUrl}
+                scryptWorkerUrl={scryptWorkerUrl}
+              />
+
+              {errorDetail && (
+                <p className="m-0 text-[13px] text-[#ce0500]" role="alert">
+                  {errorDetail}
                 </p>
               )}
-            </div>
-          )}
 
-          <AltchaWidget
-            ref={altchaRef}
-            remountKey={altchaKey}
-            onPayloadChange={onAltchaPayloadChange}
-            challengeUrl={challengeUrl}
-            scryptWorkerUrl={scryptWorkerUrl}
-          />
-
-          {errorDetail && (
-            <p className="m-0 text-[13px] text-[#ce0500]" role="alert">
-              {errorDetail}
-            </p>
-          )}
-
-          <div className="mt-1 flex justify-end gap-2">
-            <Button
-              type="button"
-              variant="tertiary_brand_bordered"
-              onClick={onClose}
-              className="!min-w-10 !flex-1"
-            >
-              {t('support.cancel')}
-            </Button>
-            <Button
-              type="submit"
-              variant="primary_brand"
-              className={`!min-w-10 !flex-1${
-                !canSubmit ? ' !opacity-55 !pointer-events-none' : ''
-              }`}
-            >
-              {formState === 'submitting'
-                ? t('support.sending')
-                : t('support.send')}
-            </Button>
+              <div className="mt-1 flex justify-end gap-2">
+                <Button
+                  type="button"
+                  variant="tertiary_brand_bordered"
+                  onClick={onClose}
+                  className="!min-w-10 !flex-1"
+                >
+                  {t('support.cancel')}
+                </Button>
+                <Button
+                  type="submit"
+                  variant="primary_brand"
+                  className="!min-w-10 !flex-1"
+                >
+                  {formState === 'submitting'
+                    ? t('support.sending')
+                    : t('support.send')}
+                </Button>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
+        </>
+      )}
     </div>
   )
 }
