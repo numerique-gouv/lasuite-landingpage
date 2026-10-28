@@ -67,8 +67,8 @@ export const SupportPanel = ({
   }, [open, emailFromProps])
 
   useEffect(() => {
-    if (!open) return
-    onOpen?.()
+    if (!open || !panelRef.current) return
+    onOpen?.(panelRef.current)
   }, [open, onOpen])
 
   useEffect(() => {
