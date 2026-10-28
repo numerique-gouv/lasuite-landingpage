@@ -1,13 +1,9 @@
-import { z } from 'zod'
-
 /** Client / widget shape (also used by public/widgets/support.js). */
-export const clientAttachmentSchema = z.object({
-  fileName: z.string().trim().min(1),
-  mimeType: z.string().trim().min(1),
-  data: z.string().min(1),
-})
-
-export type ClientAttachment = z.infer<typeof clientAttachmentSchema>
+export type ClientAttachment = {
+  fileName: string
+  mimeType: string
+  data: string
+}
 
 /** Mailport POST /send attachment shape. */
 export type MailportAttachment = {

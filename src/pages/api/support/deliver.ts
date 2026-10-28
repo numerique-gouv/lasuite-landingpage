@@ -1,9 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { z } from 'zod'
-import {
-  clientAttachmentSchema,
-  toMailportAttachments,
-} from '@/lib/support/attachments'
+import { clientAttachmentSchema } from '@/lib/support/attachmentSchema'
+import { toMailportAttachments } from '@/lib/support/attachments'
 import {
   getSupportRecipient,
   isSupportConfigured,
