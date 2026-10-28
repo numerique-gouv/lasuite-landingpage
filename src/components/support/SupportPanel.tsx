@@ -19,6 +19,7 @@ export const SupportPanel = ({
   email: emailFromProps,
   open,
   onClose,
+  onOpen,
   onSuccess,
   apiBase = '/api/support/',
   position = 'bottom-left',
@@ -64,6 +65,11 @@ export const SupportPanel = ({
     const timer = window.setTimeout(() => subjectRef.current?.focus(), 0)
     return () => window.clearTimeout(timer)
   }, [open, emailFromProps])
+
+  useEffect(() => {
+    if (!open) return
+    onOpen?.()
+  }, [open, onOpen])
 
   useEffect(() => {
     if (!open) return
