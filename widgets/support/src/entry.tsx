@@ -67,7 +67,7 @@ type WidgetAppProps = {
   channel: string
   email?: string
   position: NonNullable<InitOptions['position']>
-  onOpen: () => void
+  onOpen: (dialog: HTMLDivElement) => void
   onDismiss: () => void
 }
 
@@ -154,8 +154,8 @@ function openPanel(options: InitOptions) {
         channel={options.channel}
         email={options.email}
         position={options.position || 'bottom-right'}
-        onOpen={() => {
-          emit('opened', options)
+        onOpen={(dialogElement) => {
+          emit('opened', { ...options, dialogElement })
         }}
         onDismiss={closePanel}
       />
