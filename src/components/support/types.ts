@@ -5,6 +5,7 @@ export type SupportPanelProps = {
   email?: string
   open: boolean
   onClose: () => void
+  onOpen?: (dialog: HTMLDivElement) => void
   onSuccess?: () => void
   /**
    * API base ending with `/` (e.g. `https://lasuite.numerique.gouv.fr/api/support/`).

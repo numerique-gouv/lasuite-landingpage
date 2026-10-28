@@ -78,13 +78,18 @@ export const SupportAttachments = ({
           className="inline-flex h-6 max-w-full items-center gap-1.5 rounded bg-[#dee2e9] px-2 text-[13px] leading-none text-[#555E74]"
         >
           <FileIcon />
-          <span className="max-w-[120px] truncate" title={file.fileName}>
+          <span
+            className="max-w-[120px] truncate"
+            title={file.fileName}
+            id={`support-attachment-${index}`}
+          >
             {truncateFileName(file.fileName)}
           </span>
           <button
             type="button"
             disabled={disabled}
             aria-label={t('support.remove_file')}
+            aria-describedby={`support-attachment-${index}`}
             onClick={() => onChange(attachments.filter((_, i) => i !== index))}
             className="flex h-4 w-4 shrink-0 items-center justify-center rounded hover:bg-gray-100"
           >
