@@ -46,6 +46,10 @@ export const TopToastBanner: React.FC<TopToastBannerProps> = ({
   link,
 }) => {
   if (!title && !content) return null
+  // only allow http(s) and mailto links: blocks `javascript:` urls typed in the CMS
+  const hasLink =
+    !!link?.label && !!link?.url && /^(https?:\/\/|mailto:)/i.test(link.url)
+  const isMailto = hasLink && /^mailto:/i.test(link!.url!)
 
   return (
     <section
@@ -56,23 +60,20 @@ export const TopToastBanner: React.FC<TopToastBannerProps> = ({
       <div className="max-w-container mx-auto px-8 md:px-3 xl:px-0 py-2 md:py-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <div className="md:pr-4">
           {title && <p className="font-bold text-sm md:text-base">{title}</p>}
-          {content && (
-            <p
-              className="text-sm md:text-base mt-1"
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
-          )}
+          {content && <p className="text-sm md:text-base mt-1">{content}</p>}
         </div>
-        {link?.label && link?.url && (
+        {hasLink && (
           <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={link!.url}
+            {...(!isMailto && {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            })}
             className="inline-flex items-center gap-1 text-sm md:text-base font-semibold underline underline-offset-2 whitespace-nowrap"
           >
             <ExternalLinkIcon />
-            {link.label}
-            <span className="sr-only"> (nouvelle fenêtre)</span>
+            {link!.label}
+            {!isMailto && <span className="sr-only"> (nouvelle fenêtre)</span>}
           </a>
         )}
       </div>
