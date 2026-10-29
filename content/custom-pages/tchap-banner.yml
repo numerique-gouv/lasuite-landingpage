@@ -1,0 +1,25 @@
+fr:
+  enabled: true
+  type: error
+  message: Une toute nouvelle application Tchap est disponible ! Découvrez comment
+    migrer depuis l'ancienne application tout en conservant vos messages.
+  link:
+    label: ""
+    url: ""
+de:
+  type: error
+  enabled: true
+  link:
+    url: ""
+en:
+  enabled: true
+  type: error
+  message: ""
+  link:
+    label: ""
+    url: ""
+nl:
+  type: error
+  enabled: true
+  link:
+    url: ""
