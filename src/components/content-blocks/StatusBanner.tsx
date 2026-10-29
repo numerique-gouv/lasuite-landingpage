@@ -74,6 +74,10 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({
 }) => {
   const [dismissed, setDismissed] = useState(false)
   if (!message || dismissed) return null
+  // only allow http(s) and mailto links: blocks `javascript:` urls typed in the CMS
+  const hasLink =
+    !!link?.label && !!link?.url && /^(https?:\/\/|mailto:)/i.test(link.url)
+  const isMailto = hasLink && /^mailto:/i.test(link!.url!)
 
   const tone = toneClasses[type] || toneClasses.default
   const buttonClasses = `flex items-center gap-1 h-6 px-1 rounded text-xs font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-0 ${tone.button}`
@@ -86,16 +90,18 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({
     >
       <p className="flex-1 text-xs font-bold leading-4">{message}</p>
       <div className="flex flex-row items-center gap-1 shrink-0">
-        {link?.label && link?.url && (
+        {hasLink && (
           <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={link!.url}
+            {...(!isMailto && {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            })}
             className={buttonClasses}
           >
             <ExternalLinkIcon />
-            <span>{link.label}</span>
-            <span className="sr-only"> (nouvelle fenêtre)</span>
+            <span>{link!.label}</span>
+            {!isMailto && <span className="sr-only"> (nouvelle fenêtre)</span>}
           </a>
         )}
         {dismissible && (
