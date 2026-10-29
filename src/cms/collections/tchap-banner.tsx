@@ -58,6 +58,10 @@ const config: CmsCollectionFile = {
           name: 'url',
           widget: 'string',
           required: false,
+          pattern: [
+            '^(https://|mailto:)',
+            'L’URL doit commencer par https:// ou mailto:',
+          ],
           i18n: 'duplicate',
         },
       ],
