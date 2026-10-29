@@ -1,0 +1,26 @@
+fr:
+  enabled: true
+  type: info
+  title: Nouvelle application mobile
+  message: Une toute nouvelle application Tchap est disponible ! Découvrez comment
+    migrer depuis l'ancienne application tout en conservant vos messages.
+  link:
+    label: Consulter le guide
+    url: https://fichiers.numerique.gouv.fr/explorer/items/files/a518752c-4e27-456b-a88d-d2017d582fbd
+de:
+  type: info
+  enabled: true
+  link:
+    url: ""
+en:
+  enabled: true
+  type: info
+  message: ""
+  link:
+    label: ""
+    url: ""
+nl:
+  type: info
+  enabled: true
+  link:
+    url: ""

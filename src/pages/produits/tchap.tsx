@@ -11,8 +11,34 @@ import Advantages from '@/components/content-blocks/Advantages'
 import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
+import { TopToastBanner } from '@/components/content-blocks/TopToastBanner'
+import type { GetStaticProps } from 'next'
+import { getFileEntry } from '@/cms/getEntry'
+import {
+  collection as tchapBannerCollection,
+  type EntrySchema as TchapBannerEntry,
+} from '@/cms/collections/tchap-banner'
 
-export default function TchapPage() {
+export const getStaticProps: GetStaticProps = async ({ locale = 'fr' }) => {
+  let banner: TchapBannerEntry | null = null
+  try {
+    banner = await getFileEntry(tchapBannerCollection, locale)
+  } catch (error) {
+    banner = null
+  }
+  return {
+    // JSON round-trip drops `undefined` values, which Next can't serialize
+    props: {
+      banner: banner?.enabled ? JSON.parse(JSON.stringify(banner)) : null,
+    },
+  }
+}
+
+export default function TchapPage({
+  banner,
+}: {
+  banner: TchapBannerEntry | null
+}) {
   const { locale = 'fr' } = useRouter()
   const content: any = tchapContent as any
   const product = content.global
@@ -28,6 +54,16 @@ export default function TchapPage() {
       }
       productContent={content}
       locale={locale}
+      statusBanner={
+        banner && (
+          <TopToastBanner
+            title={banner.title}
+            content={banner.message}
+            type={banner.type}
+            link={banner.link}
+          />
+        )
+      }
     >
       <h1 className="sr-only">{content.global?.title}</h1>
       <FadeInSection>
