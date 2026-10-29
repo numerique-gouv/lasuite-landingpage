@@ -14,7 +14,8 @@ export const LayoutProducts: React.FC<{
   title: string
   productContent: ProductContent
   locale: string
-}> = ({ title, productContent, locale, children }) => {
+  statusBanner?: React.ReactNode
+}> = ({ title, productContent, locale, statusBanner, children }) => {
   const isHomepage = title === TITLE_SITE
   const t = useTranslations()
   const product = productContent.global
@@ -48,6 +49,7 @@ export const LayoutProducts: React.FC<{
         />
       </Head>
       <MetaHeader description={content.hero?.subtitle} />
+      {statusBanner}
       {content?.top_banner && (
         <TopToastBanner
           title={content.top_banner.title}
