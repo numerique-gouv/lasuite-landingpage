@@ -5,3 +5,9 @@
 #lasuite-support-mount {
   font-family: Marianne, arial, sans-serif;
 }
+
+:host {
+  /* Host pages can override this on #lasuite-widget-support-root. */
+  --widget-font-size: 1rem;
+  font-size: var(--widget-font-size);
+}

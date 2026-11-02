@@ -76,7 +76,7 @@ export const SupportAttachments = ({
         {attachments.map((file, index) => (
           <div
             key={`${file.fileName}-${index}`}
-            className="inline-flex h-6 max-w-full items-center gap-1.5 rounded bg-[#dee2e9] px-2 text-[13px] leading-none text-[#555E74]"
+            className="inline-flex h-6 max-w-full items-center gap-1.5 rounded bg-[#dee2e9] px-2 text-xs leading-none text-[#555E74]"
           >
             <FileIcon />
             <span
