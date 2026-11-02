@@ -152,11 +152,11 @@ function SupportSuccess({
         <SuccessImage />
         <h2
           id={titleId}
-          className="m-0 mt-4 text-xl font-bold leading-tight text-greyscale-950"
+          className="m-0 mt-4 text-lg font-bold leading-tight text-greyscale-950"
         >
           {t('support.success_title')}
         </h2>
-        <p className="mt-2 mb-2 text-[13px] leading-snug text-greyscale-500">
+        <p className="mt-2 mb-2 text-sm leading-snug text-greyscale-500">
           {t('support.success_text')}
         </p>
       </div>
@@ -434,11 +434,11 @@ export const SupportPanel = ({
           <div className="px-5 pt-5 pr-10">
             <h2
               id={titleId}
-              className="m-0 text-xl font-bold leading-tight text-greyscale-950"
+              className="m-0 text-lg font-bold leading-tight text-greyscale-950"
             >
               {t('support.title')}
             </h2>
-            <p className="mt-2 mb-0 text-[13px] leading-snug text-greyscale-500">
+            <p className="mt-2 mb-0 text-sm leading-snug text-greyscale-500">
               {t('support.subtitle')}
             </p>
           </div>
@@ -502,7 +502,7 @@ export const SupportPanel = ({
               />
 
               {errorDetail && (
-                <p className="m-0 text-[13px] text-[#ce0500]" role="alert">
+                <p className="m-0 text-xs text-[#ce0500]" role="alert">
                   {errorDetail}
                 </p>
               )}

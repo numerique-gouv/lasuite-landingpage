@@ -93,6 +93,13 @@ document.addEventListener('lasuite-widget-support-opened', (event) => {
   /* Here, you can tinker with the popup's styles if needed. Example: */
   // event.detail.dialogElement.style.setProperty('top', '56px', 'important');
   // event.detail.dialogElement.style.setProperty('right', '64px', 'important'); */
+
+  /* The popup expects the <html> to have a font-size of 16px and uses rem units for font sizes.
+   * If your html's font-size is not 16px, you can change the scale by changing the appropriate variable on the popup:
+   */
+  // document
+  //   .getElementById('lasuite-widget-support-root')
+  //   ?.style.setProperty('--widget-font-size', '1.23076923077rem') // Example if your html font-size is 13px. 16/13 = 1.2307…
 })
 
 document.addEventListener('lasuite-widget-support-closed', () => {

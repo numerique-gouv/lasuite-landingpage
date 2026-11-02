@@ -40,7 +40,7 @@ export function SupportField({
 
   return (
     <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm font-medium leading-[18px]">
+      <label htmlFor={id} className="text-sm font-medium">
         {label}
       </label>
       <div className="relative">
@@ -94,7 +94,7 @@ export function SupportField({
         )}
       </div>
       {invalid && (
-        <p id={errorId} className="m-0 text-[13px] text-[#ce0500]">
+        <p id={errorId} className="m-0 text-xs text-[#ce0500]">
           {error}
         </p>
       )}
