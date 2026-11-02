@@ -102,7 +102,7 @@ main_menu:
       - title: Guide DSI/RSSI
         href: https://docs.numerique.gouv.fr/docs/3c7b322e-1840-419a-ac05-6bc2843ae7dd/
         description: Encadrer et sécuriser les usages de Grist
-      - title: Développeurs
+      - title: Développement
         href: https://github.com/gristlabs/grist-core
         description: Documentation, Code Source, Contribuer
       - title: 'GitHub GristGouv'
@@ -111,7 +111,7 @@ main_menu:
       - title: 'Déployer Grist'
         href: https://github.com/numerique-gouv/helm-charts/tree/main/charts/grist
         description: Exemples de déploiement (charts Helm) par Grist Gouv
-      - title: 'Hébergeurs d’instance'
+      - title: 'Hébergement d’instance'
         href: https://tchap.gouv.fr/#/room/!RhNhRnsSkJNUWNIopy:agent.dinum.tchap.gouv.fr?via=agent.dinum.tchap.gouv.fr&via=agent.interieur.tchap.gouv.fr&via=agent.collectivites.tchap.gouv.fr
         description: Le salon Tchap des équipes qui hébergent Grist
   - title: Contact
