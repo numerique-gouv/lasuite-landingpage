@@ -23,6 +23,7 @@ interface ButtonProps {
   href?: string
   target?: '_blank'
   'aria-label'?: string
+  'aria-describedby'?: string
   variant?: ButtonVariant | string
   // color supprimé: la couleur est encodée dans variant (ex: primary_brand)
   size?: ButtonSize
@@ -76,6 +77,7 @@ export const Button: React.FC<ButtonProps> = ({
   size,
   fullWidth = false,
   'aria-label': ariaLabel,
+  'aria-describedby': ariaDescribedBy,
   className,
   style,
   onClick,
@@ -143,6 +145,7 @@ export const Button: React.FC<ButtonProps> = ({
         target={target}
         className={classes}
         aria-label={finalAriaLabel}
+        aria-describedby={ariaDescribedBy}
         style={inlineStyle}
         onClick={onClick}
       >
@@ -155,6 +158,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       className={classes}
       aria-label={finalAriaLabel}
+      aria-describedby={ariaDescribedBy}
       style={inlineStyle}
       onClick={onClick}
       type={type}
