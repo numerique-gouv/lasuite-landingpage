@@ -2,26 +2,62 @@
  * Builds the embeddable support widget from the React SupportPanel.
  *
  *   yarn build:widgets
+ *   yarn build:widgets -- 1.2.3
+ *   yarn build:widgets -- --version 1.2.3
  *
- * Output: public/widgets/support.js
+ * Output:
+ *   public/widgets/support.js
+ *   public/widgets/support-v[version].js  (when a version is passed)
  *
  * Source of truth: src/components/support/* (bundled via widgets/support/src/entry.tsx)
  */
 import { execFileSync } from 'node:child_process'
+import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
-import { createRequire } from 'node:module'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import yaml from 'js-yaml'
+
+function parseVersion(argv) {
+  const args = argv.slice(2)
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i]
+    if (arg === '--version' || arg === '-v') {
+      const value = args[i + 1]
+      if (!value || value.startsWith('-')) {
+        throw new Error(`Missing value for ${arg}`)
+      }
+      return value
+    }
+    if (arg.startsWith('--version=')) {
+      return arg.slice('--version='.length)
+    }
+    if (!arg.startsWith('-')) {
+      return arg
+    }
+  }
+  return process.env.WIDGET_VERSION || null
+}
+
+const version = parseVersion(process.argv)
+if (version !== null && !/^[0-9A-Za-z][0-9A-Za-z._-]*$/.test(version)) {
+  throw new Error(
+    `Invalid version "${version}" — use letters, digits, dots, underscores, or hyphens`
+  )
+}
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const supportDir = path.join(root, 'widgets/support')
 const distDir = path.join(supportDir, 'dist')
 const cssOut = path.join(distDir, 'widget.css')
-const jsOut = path.join(root, 'public/widgets/support.js')
+const widgetsDir = path.join(root, 'public/widgets')
+const jsOut = path.join(widgetsDir, 'support.js')
+const jsVersionedOut = version
+  ? path.join(widgetsDir, `support-v${version}.js`)
+  : null
 
 fs.mkdirSync(distDir, { recursive: true })
-fs.mkdirSync(path.dirname(jsOut), { recursive: true })
+fs.mkdirSync(widgetsDir, { recursive: true })
 
 async function loadEsbuild() {
   const candidates = [
@@ -185,6 +221,16 @@ await build({
   plugins: [aliasPlugin, yamlPlugin, cssTextPlugin, rawTextPlugin],
 })
 
-console.log(
-  `✓ ${path.relative(root, jsOut)} (${fs.statSync(jsOut).size.toLocaleString()} bytes)`
-)
+const sizeLabel = `${fs.statSync(jsOut).size.toLocaleString()} bytes`
+
+console.log(`✓ ${path.relative(root, jsOut)} (${sizeLabel})`)
+
+if (jsVersionedOut) {
+  fs.copyFileSync(jsOut, jsVersionedOut)
+  console.log(`✓ ${path.relative(root, jsVersionedOut)} (${sizeLabel})`)
+  const integrity = `sha384-${crypto
+    .createHash('sha384')
+    .update(fs.readFileSync(jsOut))
+    .digest('base64')}`
+  console.log(`  integrity: ${integrity}`)
+}

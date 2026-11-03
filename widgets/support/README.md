@@ -23,8 +23,11 @@ Here is a complete, annotated, vanilla JS example on how to embed the widget in 
 Adapt it to your app's context, but please keep in mind: aria attributes and keyboard behavior should match the example, to ensure an accessible experience for every users.
 
 ```js
+/* See below for more information on script versioning */
 const SUPPORT_SCRIPT_SRC =
-  'https://lasuite.numerique.gouv.fr/widgets/support.js'
+  'https://lasuite.numerique.gouv.fr/widgets/support-v1.0.0.js'
+const SUPPORT_SCRIPT_INTEGRITY =
+  'sha384-6nbJvljqwiFzIRxXjto3vT834fuUFQtvUC6g1qcrbsergKqNXoSI6hXY0AKVpeDo'
 const SUPPORT_API = 'https://lasuite.numerique.gouv.fr/api/support/'
 /* To fill-in with your app name, e.g. "grist". Check out the list of accepted channels in src/lib/support/channels.ts */
 const SUPPORT_CHANNEL = YOUR_CHANNEL_NAME
@@ -81,6 +84,8 @@ supportButton.addEventListener('click', () => {
     const script = document.createElement('script')
     script.id = 'lasuite-support-widget'
     script.src = SUPPORT_SCRIPT_SRC
+    script.integrity = SUPPORT_SCRIPT_INTEGRITY
+    script.crossOrigin = 'anonymous'
     script.async = true
     document.body.appendChild(script)
   }
@@ -111,3 +116,43 @@ document.addEventListener('lasuite-widget-support-closed', () => {
 /* Obviously at some point, render the trigger button! */
 document.body.appendChild(supportButton)
 ```
+
+## Script versioning
+
+You can decide to either directly use latest version of the widget by targeting `https://lasuite.numerique.gouv.fr/widgets/support.js`, or to stick to a specific version by targeting `https://lasuite.numerique.gouv.fr/widgets/support-vX.X.X.js`.
+
+For production, we recommend sticking to a specific version and using the `integrity` attribute to ensure the script is not tampered with.
+
+<details>
+<summary>List of version-integrity attribute pairs</summary>
+
+- 1.0.0 (latest): `sha384-6nbJvljqwiFzIRxXjto3vT834fuUFQtvUC6g1qcrbsergKqNXoSI6hXY0AKVpeDo`
+
+</details>
+
+## Development
+
+The widget is both used internally in the landingpage website through the `SupportButton` component, and exposed as a standalone widget through the `/widgets/support/entry.tsx` file. When making changes, make sure to test both cases!
+
+To build the standalone version while developing, run:
+
+```bash
+yarn build:widgets
+```
+
+It generates the `public/widgets/support.js` file, that is meant to be included as is in a webpage (see usage instructions above).
+
+### Production build
+
+To build for production, run:
+
+```bash
+yarn build:widgets -- --version X.X.X
+```
+
+It generates both `public/widgets/support.js` and `public/widgets/support-vX.X.X.js` files **that must be committed to the repository** (if you want to improve that: please do!).
+
+When building a new version:
+
+- add the new integrity info in the list in the "Script versioning" section of this file. The integrity string is shown in the build script output.
+- in the Usage code example above in this file, update SUPPORT_SCRIPT_SRC and SUPPORT_SCRIPT_INTEGRITY.
