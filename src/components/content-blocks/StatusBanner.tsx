@@ -33,6 +33,13 @@ const toneClasses: Record<
   },
 }
 
+// read by screen readers to tell the banner's tone
+const ariaLabels: Record<StatusBannerType, string> = {
+  default: 'Information',
+  warning: 'Avertissement',
+  error: 'Important',
+}
+
 const ExternalLinkIcon = () => (
   <svg
     aria-hidden="true"
@@ -84,8 +91,8 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({
 
   return (
     <section
-      role="status"
-      aria-live="polite"
+      role="banner"
+      aria-label={ariaLabels[type] || ariaLabels.default}
       className={`w-full min-h-8 flex flex-row items-center justify-between gap-4 py-1 pr-1 pl-3 border-b border-[#DFE2EA] ${tone.banner}`}
     >
       <p className="flex-1 text-xs font-bold leading-4">{message}</p>
@@ -109,7 +116,7 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({
             type="button"
             onClick={() => setDismissed(true)}
             className={`${buttonClasses} w-6 justify-center`}
-            aria-label="Fermer le bandeau"
+            aria-label="Fermer la bannière"
           >
             <CloseIcon />
           </button>
