@@ -148,7 +148,7 @@ function SupportSuccess({
 
   return (
     <div className="flex flex-col items-center px-5 pb-5 pt-10 text-center">
-      <div role="status" className="flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <SuccessImage />
         <h2
           id={titleId}
@@ -165,6 +165,7 @@ function SupportSuccess({
           type="button"
           variant="secondary_brand"
           onClick={onClose}
+          aria-describedby={titleId}
           fullWidth
         >
           {t('support.success_close')}
