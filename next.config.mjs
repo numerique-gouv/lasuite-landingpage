@@ -107,6 +107,12 @@ const nextConfig = {
           { key: 'Access-Control-Allow-Methods', value: 'GET, OPTIONS' },
         ],
       },
+      {
+        source: '/widgets/support-v:version.js',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+        ],
+      },
     ]
   },
 }
