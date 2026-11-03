@@ -1,25 +1,14 @@
 fr:
   enabled: true
-  type: error
+  type: default
   message: Une toute nouvelle application Tchap est disponible ! Découvrez comment
     migrer depuis l'ancienne application tout en conservant vos messages.
   link:
-    label: ""
-    url: ""
-de:
-  type: error
-  enabled: true
-  link:
-    url: ""
+    label: Consulter le guide
+    url: https://fichiers.numerique.gouv.fr/explorer/items/files/a518752c-4e27-456b-a88d-d2017d582fbd
 en:
-  enabled: true
-  type: error
-  message: ""
-  link:
-    label: ""
-    url: ""
+  enabled: false
+de:
+  enabled: false
 nl:
-  type: error
-  enabled: true
-  link:
-    url: ""
+  enabled: false
