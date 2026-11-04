@@ -1,14 +1,24 @@
 fr:
   enabled: true
-  type: default
-  message: Une toute nouvelle application Tchap est disponible ! Découvrez comment
-    migrer depuis l'ancienne application tout en conservant vos messages.
+  type: warning
+  message: ⚠️ Perturbations en cours sur Tchap. Nos équipes sont pleinement
+    mobilisées et des correctifs sont en cours de déploiement.
   link:
-    label: Consulter le guide
-    url: https://fichiers.numerique.gouv.fr/explorer/items/files/a518752c-4e27-456b-a88d-d2017d582fbd
-en:
-  enabled: false
+    label: Mettre à jour l'application web
+    url: https://tchap.gouv.fr
 de:
   enabled: false
+  type: warning
+  link:
+    label: ""
+    url: https://tchap.gouv.fr
+en:
+  enabled: false
+  type: warning
+  link:
+    url: https://tchap.gouv.fr
 nl:
   enabled: false
+  type: warning
+  link:
+    url: https://tchap.gouv.fr
