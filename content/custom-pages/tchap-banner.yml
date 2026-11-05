@@ -1,5 +1,5 @@
 fr:
-  enabled: true
+  enabled: false
   type: warning
   message: ⚠️ Perturbations en cours sur Tchap. Nos équipes sont pleinement
     mobilisées et des correctifs sont en cours de déploiement.
