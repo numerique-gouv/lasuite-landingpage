@@ -64,7 +64,7 @@ export const LayoutProducts: React.FC<{
         productTitle={product.title}
       />
       <main>{children}</main>
-      <Footer />
+      <Footer links={content.footer_links} />
     </div>
   )
 }

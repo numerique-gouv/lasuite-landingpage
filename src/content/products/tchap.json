@@ -13,7 +13,7 @@
         },
         {
           "title": "FAQ",
-          "url": "https://aide.tchap.numerique.gouv.fr/fr/",
+          "url": "https://docs.numerique.gouv.fr/docs/515fddba-0568-469f-bb24-b78d64221ea5/",
           "type": "tertiary_neutral"
         },
         {
@@ -45,6 +45,11 @@
         {
           "title": "Android",
           "url": "https://play.google.com/store/apps/details?id=fr.gouv.tchap.android.x",
+          "type": "tertiary_brand_bordered"
+        },
+        {
+          "title": "Windows",
+          "url": "https://docs.numerique.gouv.fr/docs/426927c4-68e5-4a68-9ad8-b6678d688d1d/",
           "type": "tertiary_brand_bordered"
         },
         {
@@ -204,7 +209,7 @@
         },
         {
           "q": "Qui peut utiliser Tchap ?",
-          "a": "Tous les agents publics peuvent s’inscrire si leur domaine de messagerie est autorisé. Les personne externes au secteur public peuvent être invitées mais ont des droits limités."
+          "a": "Tous les agents publics peuvent s’inscrire si leur domaine de messagerie est autorisé. Les personne externes au secteur public peuvent être invitées mais ont des droits limités. <br><a href=\"https://outils.tchap.numerique.gouv.fr/domaines\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Vérifier votre éligibilité ici</a>"
         },
         {
           "q": "Quels sont les avantage de la technologie utilisée par Tchap ?",
@@ -223,7 +228,7 @@
         {
           "title": "Guide de prise en main",
           "icone": "book",
-          "url": "https://aide.tchap.numerique.gouv.fr/fr/article/guide-de-prise-en-main-de-tchap-oswyn1",
+          "url": "https://docs.numerique.gouv.fr/docs/515fddba-0568-469f-bb24-b78d64221ea5/",
           "type": "primary_brand"
         },
         {
@@ -344,11 +349,45 @@
           "type": "tertiary_brand_bordered"
         },
         {
+          "title": "Windows",
+          "url": "https://docs.numerique.gouv.fr/docs/426927c4-68e5-4a68-9ad8-b6678d688d1d/",
+          "type": "tertiary_brand_bordered"
+        },
+        {
           "title": "Web",
           "url": "https://www.tchap.gouv.fr/",
           "type": "primary_brand"
         }
       ]
-    }
+    },
+    "footer_links": [
+      {
+        "title": "Code source",
+        "url": "https://github.com/tchapgouv",
+        "aria-label": "Github Tchap - Nouvelle fenêtre"
+      },
+      {
+        "title": "Statistiques",
+        "url": "https://stats.tchap.incubateur.net/public/dashboard/8c6560e3-c27a-487b-b242-eb1636912f1a",
+        "aria-label": "Nouvelle fenêtre"
+      },
+      {
+        "title": "Etat des services",
+        "url": "https://status.tchap.numerique.gouv.fr",
+        "aria-label": "Nouvelle fenêtre"
+      },
+      {
+        "title": "Modalités d’utilisation",
+        "url": "/tchap-cgu"
+      },
+      {
+        "title": "Politique de confidentialité",
+        "url": "/tchap-politique"
+      },
+      {
+        "title": "Accessibilité : non conforme",
+        "url": "/accessibilite"
+      }
+    ]
   }
 }
