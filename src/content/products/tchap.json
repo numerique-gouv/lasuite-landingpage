@@ -359,6 +359,35 @@
           "type": "primary_brand"
         }
       ]
-    }
+    },
+    "footer_links": [
+      {
+        "title": "Code source",
+        "url": "https://github.com/tchapgouv",
+        "aria-label": "Github Tchap - Nouvelle fenêtre"
+      },
+      {
+        "title": "Statistiques",
+        "url": "https://stats.tchap.incubateur.net/public/dashboard/8c6560e3-c27a-487b-b242-eb1636912f1a",
+        "aria-label": "Nouvelle fenêtre"
+      },
+      {
+        "title": "Etat des services",
+        "url": "https://status.tchap.numerique.gouv.fr",
+        "aria-label": "Nouvelle fenêtre"
+      },
+      {
+        "title": "Modalités d’utilisation",
+        "url": "/tchap-cgu"
+      },
+      {
+        "title": "Politique de confidentialité",
+        "url": "/tchap-politique"
+      },
+      {
+        "title": "Accessibilité : non conforme",
+        "url": "/accessibilite"
+      }
+    ]
   }
 }
