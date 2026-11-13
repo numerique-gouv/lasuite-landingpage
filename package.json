@@ -46,7 +46,7 @@
     "sharp": "0.33.5",
     "styled-components": "^6.1.15",
     "unified": "11.0.4",
-    "zod": "4.0.5"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@types/js-yaml": "4.0.9",
