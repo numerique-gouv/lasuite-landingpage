@@ -1,9 +1,9 @@
 enabled: true
-id: tchap-politique
 enabled_i18n:
   de: false
-  en: false
-slug: tchap-politique
+  en: true
+  nl: false
+slug: politique
 title: Politique de confidentialité de Tchap
 body: |
   La DINUM est responsable des traitements de données à caractère personnel réalisés dans l’Application. Elle s’engage à assurer un traitement de ces données conforme au Règlement (UE) 2016/679 relatif à la protection des données à caractère personnel et à la libre circulation de ces données et à la loi n° 78-17 du 6 janvier 1978 relative à l’informatique aux fichiers et aux libertés.

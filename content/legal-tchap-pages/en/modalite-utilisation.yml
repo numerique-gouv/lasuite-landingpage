@@ -1,0 +1,204 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: modalite-utilisation
+title: Terms of use of Tchap
+body: |
+  *Last updated: 14 March 2025*
+
+  ## 1. Scope
+
+  This document sets out the terms and conditions governing the use of Tchap (hereinafter referred to as “Tchap” or the “Application”), the French government’s instant messaging service, by its users (hereinafter referred to as “Users”).
+
+  The Application allows Users to exchange text and multimedia messages and make audio calls (VoIP) with one or more other Users.
+
+  Tchap is developed and operated by the French Interministerial Directorate for Digital Affairs (Direction interministérielle du numérique – DINUM), under the authority of the Prime Minister’s Office.
+
+  All use of Tchap must comply with these General Terms and Conditions of Use.
+
+  The Application is free of charge and freely available.
+
+  ## 2. Terms of Use
+
+  ### 2.1 Access to the Tchap Application
+
+  Tchap is made available to public sector employees and can be used by their external contacts upon invitation.
+
+  ### 2.2 Registration
+
+  Users must choose a password that cannot easily be guessed or discovered by another person. Using a password that has already been used for another application is not recommended.
+
+  Users register on the Application by creating a profile. Registration is personal.
+
+  Email domains belonging to central government departments are automatically authorised on the Application. Other eligible domains are authorised once their registration request has been approved by DINUM (contact: [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr)).
+
+  Creating an account using an email address belonging to an authorised domain allows the creation of an “Agent” profile. Anyone with an email address from an authorised domain may register. Once registration has been approved, all features become available.
+
+  Creating an account using an email address that does not belong to a domain authorised on Tchap is only possible following an email invitation. Such accounts are assigned an “External” profile, which only allows users to participate in private exchanges to which they have been invited.
+
+  Certain restrictions therefore apply to users with an “External” profile:
+
+  * “External” profiles cannot access the list of public rooms, join public rooms or be invited to public rooms.
+  * They cannot create public or private rooms or initiate conversations.
+  * They cannot access the user directory.
+
+  If the domain associated with an “External” User’s email address subsequently becomes authorised, the User must close their “External” account and create an “Agent” account in order to benefit from all Tchap features.
+
+  ### 2.3 Account Renewal
+
+  To ensure that only public sector employees and their contacts have access to Tchap, accounts are regularly renewed.
+
+  11 months after registration, Users receive an email containing a link allowing them to renew their account for an additional 13 months.
+
+  If the User does not click the link, a reminder is sent 30 days after the first email, followed by a second reminder 15 days later. If the link is still not validated, the account expires 60 days after the first email was sent.
+
+  An expired account can be renewed by visiting the Tchap login page and requesting a new validation link. If no action is taken, the account is automatically deleted after 4 months of expiration.
+
+  This procedure applies where the User's administration has not implemented a specific account verification system.
+
+  ## 3. Users' Commitments and Responsibilities
+
+  ### 3.1 Appropriate Use
+
+  The Application is provided to facilitate professional exchanges between public sector employees and between them and external collaborators.
+
+  Users are responsible for the data and content they exchange through the Application. They must ensure that they only share multimedia content that is appropriate in a professional context and comply with the principles of online etiquette (netiquette).
+
+  Users must keep their login credentials confidential and avoid any careless behaviour that could facilitate fraudulent use of the Application.
+
+  Users must use the Application in compliance with professional confidentiality requirements and exercise professional discretion with regard to all facts, information and documents they become aware of in the course of, or in connection with, their duties.
+
+  If Users believe their password has been compromised, they must change it immediately.
+
+  In the event that their account is compromised, Users must contact the Tchap team at: [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr).
+
+  ### 3.2 Prohibited Use
+
+  Users undertake not to upload or communicate any content or information that violates applicable laws and regulations.
+
+  In particular, Users must never make insulting, defamatory or indecent statements or exchange such content.
+
+  Users must not send attachments containing viruses, corrupted files or any other similar software or programmes that could damage the operation of another computer, jeopardise the IT security of the Application or be used to commit offences.
+
+  ### 3.3 Limitations of the Service
+
+  The Application does not secure the mobile phone itself, which therefore remains exposed to cyber threats.
+
+  For the exchange of classified information and documents, Users must use the means approved by their Information Systems Security Authority.
+
+  Protective measures compliant with applicable regulations must be implemented, such as those defined in Article 14 of Interministerial Instruction No. 901, for data bearing the “Restricted Distribution” classification.
+
+  Messages exchanged in rooms are automatically deleted three years after their date of transmission.
+
+  Tchap is not intended to serve as an archiving system for information exchanged through the messaging service. However, Users can export the contents of a room.
+
+  The service cannot guarantee availability outside business hours (Monday to Friday, between 8 a.m. and 6 p.m.).
+
+  In the event of a service interruption, Tchap will be restored within 4 business hours.
+
+  ### 3.4 Room Moderation
+
+  Rooms can be either public or private.
+
+  A public room, also known as a forum, can be found by any User through a search engine and can be joined without an invitation. However, access may be restricted to a specific field or area of affiliation (e.g. sustainable development, social affairs, culture, etc.).
+
+  A private room is only visible to its participants. For confidentiality reasons, new members of a private room cannot access messages sent before they joined.
+
+  Users who create public or private rooms are responsible for moderating their content. They are therefore responsible for managing discussions and removing any content that violates these Terms of Use.
+
+  The creator of a room may grant administrator rights to other participants and may also remove or ban participants.
+
+  It is recommended that each room have at least two administrators.
+
+  More information about rooms is available in the [FAQ](https://tchap.beta.gouv.fr/faq).
+
+  Any User who notices illegal, inappropriate or otherwise non-compliant content in a private room or public forum may report it to DINUM at: [support@tchap.beta.gouv.fr](mailto:support@tchap.beta.gouv.fr).
+
+  ## 4. DINUM's Commitments and Responsibilities
+
+  DINUM endeavours to ensure the availability of the Application.
+
+  DINUM undertakes to take all appropriate precautions to preserve the integrity of the information exchanged.
+
+  DINUM reserves the right to suspend or delete any User account that has breached these Terms of Use, without prejudice to any potential civil or criminal proceedings that may be brought against the User.
+
+  DINUM may also close a public or private room in the event of behaviour that violates these Terms of Use.
+
+  Anonymised usage statistics may be collected to improve the service.
+
+  ## 5. Security
+
+  Private messages are end-to-end encrypted and inaccessible to any third party.
+
+  End-to-end encryption means that messages are encrypted and decrypted on Users' devices.
+
+  When a message is sent, it is encrypted before leaving the User's device.
+
+  Activity traces (“metadata”) transmitted over unsecured networks are protected through encryption of the communication channel between the Application and the Tchap server.
+
+  Files exchanged are checked before being delivered to recipients. Files are not delivered until their contents have been verified.
+
+  This process involves decrypting the document in an isolated technical environment, checking the file type and scanning for virus signatures, immediately followed by the secure destruction of the copy.
+
+  This process does not constitute a guarantee by DINUM that the file is harmless.
+
+  ## 6. Changes to the Terms of Use
+
+  DINUM reserves the right to modify, update or suspend the Application without prior notice for maintenance purposes or for any other reason deemed necessary.
+
+  These Terms of Use may be amended or supplemented at any time, without prior notice, in response to changes made to the Application, developments in legislation or any other reason deemed necessary.
+
+  Such amendments and updates are binding on Users, who must therefore regularly consult this section to check the applicable Terms and Conditions.
+
+  ## 7. Accessibility
+
+  If you identify an accessibility issue that prevents you from accessing content or a feature on the website, and you report it to us but do not receive a prompt response, you are entitled to submit a complaint or request for intervention to the French Defender of Rights (Défenseur des droits).
+
+  This can be done free of charge, without postage, by writing to:
+
+  Défenseur des droits  
+  Libre réponse 71120  
+  75342 Paris CEDEX 07
+
+  By telephone: 09 69 39 00 00
+
+  Or via the online form.
+
+  ## 8. Legal Information
+
+  **Websites:** [www.tchap.gouv.fr](https://www.tchap.gouv.fr) and [tchap.beta.gouv.fr](https://tchap.beta.gouv.fr/)
+
+  **Publisher:** French Interministerial Directorate for Digital Affairs (Direction interministérielle du numérique – DINUM).
+
+  20 avenue de Ségur  
+  75007 Paris  
+  Telephone: 01.71.21.01.70
+
+  SIRET: 12000101100010 (General Secretariat of the Government)  
+  SIREN: 120 001 011
+
+  **Publication Director:** Ms Stéphanie Schaer, Interministerial Director for Digital Affairs.
+
+  **Design and Management:** Editorial and graphic supervision is provided by DINUM.
+
+  **Source Code:** Any public or private website is authorised to create a link (including a deep link) to information published on this website without prior authorisation.
+
+  **Hosting of the Tchap messaging service** ([tchap.gouv.fr](https://tchap.gouv.fr)):
+
+  Ministry of the Interior  
+  Place Beauvau  
+  75800 Paris CEDEX 08
+
+  **Hosting provider for the Tchap showcase website** ([tchap.beta.gouv.fr](https://tchap.beta.gouv.fr)):
+
+  Scalingo SAS  
+  15 avenue du Rhin  
+  67100 Strasbourg, France.
+
+  ## 9. Contact
+
+  The contact email address is:
+
+  [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr)

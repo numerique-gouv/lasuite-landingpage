@@ -1,0 +1,202 @@
+enabled: true
+enabled_i18n:
+  de: false
+  en: true
+  nl: false
+slug: politique
+title: Privacy Policy of Tchap
+body: |
+  DINUM is responsible for the processing of personal data carried out through the Application. It undertakes to ensure that such data is processed in compliance with Regulation (EU) 2016/679 on the protection of personal data and the free movement of such data (GDPR), and French Law No. 78-17 of 6 January 1978 on Information Technology, Data Files and Civil Liberties.
+
+  ## 1. Personal Data Processed
+
+  Only data strictly necessary for the operation of the Application is processed. Under no circumstances may this data be used to monitor or supervise Users' activities.
+
+  The personal data concerned includes:
+
+  * **Profile data:** first name, last name, organisation and professional email address (mandatory), profile photograph (optional);
+  * **Connection data:** IP address.
+
+  ## 2. Purposes of Processing
+
+  The purpose of this processing is to provide government departments with a shared digital collaborative messaging service.
+
+  It includes the processing necessary for account management, the management of cross-functional messaging services, and the operation and improvement of the Application.
+
+  ## 3. Legal Basis
+
+  ### 3.1 Profile Data
+
+  The processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the data controller, within the meaning of Article 6(1)(e) of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data.
+
+  The public interest task consists of providing and developing collaborative tools by DINUM for their integration into government ministries (Article 6 of Decree No. 2019-1088 of 25 October 2019 on the State's information and communication system and the Interministerial Directorate for Digital Affairs).
+
+  [https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/2019-10-28#_blank](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/2019-10-28#_blank)
+
+  ### 3.2 Content Data from the Instant Messaging Service
+
+  The processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the data controller, within the meaning of Article 6(1)(e) of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data.
+
+  The public interest task consists of providing and developing collaborative tools by DINUM for their integration into government ministries (Article 6 of Decree No. 2019-1088 of 25 October 2019 on the State's information and communication system and the Interministerial Directorate for Digital Affairs).
+
+  [https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/2019-10-28#_blank](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/2019-10-28#_blank)
+
+  ### 3.3 Connection Data
+
+  This processing is necessary for compliance with a legal obligation to which the data controller is subject, within the meaning of Article 6(1)(c) of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data.
+
+  This legal obligation is established by French Law No. 2004-575 of 21 June 2004 on Confidence in the Digital Economy (LCEN) and Article 5 of Decree No. 2021-1362 of 20 October 2021.
+
+  ## 4. Data Retention Period
+
+  Users may request the deletion of their account at any time. When doing so, they may choose to make their messages invisible to any new participant joining a room in which those messages were posted.
+
+  An inactive account that has not been renewed, as specified in Section 2.3 of the General Terms and Conditions of Use, is automatically deleted after 4 months.
+
+  Regarding telephone contacts, the Application accesses the User's phone contacts in read-only mode. However, these contacts are neither imported nor stored on the servers.
+
+  Connection data is retained for 1 year following account deletion, in accordance with Decree No. 2021-1362 of 20 October 2021.
+
+  When a User changes their profile picture, previous profile pictures are not deleted. Instead, they are retained as a history and stored securely.
+
+  Finally, cookies are retained until consent is withdrawn, where applicable, or for a maximum period of 13 months, in accordance with CNIL recommendations.
+
+  Messages exchanged in rooms are automatically and permanently deleted three years after their date of transmission.
+
+  ## 5. Recipients
+
+  The data controller undertakes to ensure that personal data is processed only by authorised persons who need to access it.
+
+  Profile information is visible to:
+
+  * Users of the Application when they use the directory search function, unless the User has configured their account to appear on the “red list” (liste rouge). In this case, other Users will not be able to find their account through searches;
+  * Participants in the rooms that the User has joined.
+
+  In private conversations and private rooms, instant messaging content is encrypted. It is only visible to the Users participating in the conversation or room.
+
+  In public rooms, content is not encrypted. The Tchap team and room participants have access to the content of the instant messaging service.
+
+  Government departments have access to the list of their employees registered on the Application.
+
+  DINUM does not respond to requests from government departments for the disclosure of messages exchanged by their employees, except in cases involving judicial orders or requisitions.
+
+  ## 6. Data Processors
+
+  The Ministry of the Interior's Cloud service is responsible for hosting and sending email addresses in France, in accordance with the safeguards described on its website:
+
+  https://www.numerique.gouv.fr/services/cloud/cloud-interne/
+
+  Crisp manages user support by email, with data processing carried out in the Netherlands and Germany. The applicable safeguards are available here:
+
+  https://crisp.chat/fr/
+
+  Dolist provides an information email delivery service, with data processing carried out in France and Switzerland, under the safeguards detailed here:
+
+  https://www.dolist.com/societe/politique-rgpd/
+
+  Sendinblue provides the backup email delivery service, with data processing carried out within and outside the EU, as explained in its GDPR policy:
+
+  https://fr.sendinblue.com/rgpd/
+
+  Finally, Scalingo hosts the homepage, with data processing carried out in France, under the safeguards detailed here:
+
+  https://scalingo.com/fr/privacy-policy
+
+  ## 7. Access to the Phone's Local Contact List
+
+  When using Tchap on a mobile phone, the Application asks for your permission to access your local contact list.
+
+  Granting this permission is optional. The Application works without it.
+
+  This data is not uploaded to our servers.
+
+  When you grant access, Tchap uses your contacts in two ways:
+
+  * Tchap scans the email addresses in your contacts to identify other Users registered on Tchap. These Users are listed in the “Contacts” section of the Application. They are also suggested when you want to invite new members to a room. No email addresses are stored on the servers;
+  * When you want to invite new people to join Tchap, the contact details stored locally on your phone are suggested to you.
+
+  ## 8. Cookies
+
+  The website uses audience measurement cookies (number of visits, pages viewed) that comply with the exemption conditions for user consent established by the French Data Protection Authority (Commission nationale de l'informatique et des libertés – CNIL) in its “Cookies” recommendation.
+
+  This means, in particular, that these cookies are used solely to generate anonymous statistics and do not track users' browsing activity across other websites.
+
+  For this purpose, we use Matomo, an open-source web analytics tool configured to comply with the CNIL's “Cookies” recommendation.
+
+  This means that your IP address, for example, is anonymised before being recorded. It is therefore impossible to associate your visits to this website with your identity.
+
+  Please note that:
+
+  * The data collected is not cross-referenced with other processing activities.
+  * Cookies do not track users' browsing activity across other websites.
+
+  [Change settings](https://tchap.beta.gouv.fr/gestion-des-cookies)
+
+  For further information, you can consult the guidance provided by the French Data Protection Authority (Commission Nationale de l'Informatique et des Libertés – CNIL):
+
+  * [Cookies & trackers: what does the law say?](https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi)
+  * [Cookies: tools to manage them](https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser)
+
+  Tchap also uses cookies that are strictly necessary for the proper functioning of the Application, without which full access to the platform cannot be guaranteed.
+
+  ## 9. Security
+
+  For security reasons, private content is encrypted and inaccessible to any third party.
+
+  All interactions carried out through the Application are protected.
+
+  As a result, DINUM cannot perform any content moderation and will not process any requests to delete content.
+
+  End-to-end encryption means that messages are encrypted and decrypted on Users' devices.
+
+  When you send a message to someone, it is encrypted before leaving your device.
+
+  Furthermore, your activity traces (“metadata”) on unsecured networks are protected through encryption of the communication channel between the Application and the Tchap server (TLS 1.2).
+
+  Documents exchanged are checked before being delivered to recipients. Documents are not delivered until their contents have been verified.
+
+  This process involves decrypting the document in an isolated technical environment, checking the file type and scanning for virus signatures, immediately followed by the secure destruction of the copy.
+
+  This process does not constitute a guarantee by DINUM that the document is harmless.
+
+  ## 10. Exercising Your Personal Data Protection Rights
+
+  You have the right to access and amend the personal data concerning you.
+
+  You may also object to the processing carried out through the Application.
+
+  These rights may be exercised by contacting DINUM at:
+
+  [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr)
+
+  You may also exercise your rights by contacting the Data Protection Officer (DPO) of the Prime Minister's Office:
+
+  * By email: [dpd@pm.gouv.fr](mailto:dpd@pm.gouv.fr)
+  * By post at the following address:
+
+  Prime Minister's Office  
+  For the attention of the Data Protection Officer (DPO)  
+  56 rue de Varenne  
+  75007 Paris  
+  France
+
+  In accordance with the General Data Protection Regulation (GDPR), you also have the right to lodge a complaint with the CNIL:
+
+  3 place de Fontenoy  
+  TSA 80715  
+  75334 PARIS CEDEX 07  
+  France
+
+  The procedure for lodging a complaint is explained on the CNIL website:
+
+  [www.cnil.fr](https://www.cnil.fr/)
+
+  Tchap uses professional email addresses belonging to authorised domains, as well as the first and last names associated with those addresses.
+
+  Any request relating to a change of professional email address or to first and last names must be addressed to the relevant government department.
+
+  ## 11. Contact
+
+  The contact email address is:
+
+  [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr)

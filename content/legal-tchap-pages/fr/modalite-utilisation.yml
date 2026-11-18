@@ -1,9 +1,9 @@
 enabled: true
-id: tchap-cgu
 enabled_i18n:
   de: false
-  en: false
-slug: tchap-cgu
+  en: true
+  nl: false
+slug: modalite-utilisation
 title: Modalités d’utilisation de Tchap
 body: |
   *Mise à jour: 14 mars 2025* 
@@ -81,4 +81,3 @@ body: |
   ## 9. Contact
 
   L'adresse e-mail de contact est la suivante : [tchap@beta.gouv.fr](mailto:tchap@beta.gouv.fr)
-
