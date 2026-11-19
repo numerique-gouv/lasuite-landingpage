@@ -45,7 +45,6 @@ export const CoupDOeil = ({ content }: { content: any }) => {
             </p>
             <Button
               className="md:self-center"
-              target="_blank"
               variant="primary_brand"
               href={content.webinaire.href}
             >
