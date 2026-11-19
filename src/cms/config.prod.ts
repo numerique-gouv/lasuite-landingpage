@@ -9,6 +9,10 @@ const prodConfig: CmsConfig = {
     repo: 'numerique-gouv/lasuite-landingpage',
     branch: process.env.NEXT_PUBLIC_CMS_BRANCH,
     base_url: process.env.NEXT_PUBLIC_CMS_AUTH_URL,
+    // let GitHub users without write access propose changes: the CMS works
+    // on a fork of the repo and opens a pull request when they publish
+    // https://decapcms.org/docs/open-authoring/
+    open_authoring: true,
     commit_messages: {
       create: '💬(cms-bot) create {{collection}} “{{slug}}”',
       update: '💬(cms-bot) update {{collection}} “{{slug}}”',
