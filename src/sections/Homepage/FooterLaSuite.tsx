@@ -3,7 +3,7 @@ import { Button } from '@/components/ui-kit-v2/Button'
 import SuiteLogo from '@/assets/logo/lasuite.svg'
 import SuiteLogoAnime from '@/assets/logo/lasuite-anime.gif'
 
-import { NEWSLETTER_FORM } from '@/constant'
+import { NEWSLETTER_PAGE } from '@/constant'
 import { useTranslations } from '@/locales/useTranslations'
 
 import { ContentSection } from '@/components/ContentSection'
@@ -49,7 +49,6 @@ const FadeInList = ({
 }
 
 export const FooterLaSuite = ({ content }: { content: any }) => {
-  const urlForm = NEWSLETTER_FORM
   const t = useTranslations()
 
   return (
@@ -74,8 +73,7 @@ export const FooterLaSuite = ({ content }: { content: any }) => {
         <FadeInSection delay={1500}>
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center">
             <Button
-              href={urlForm}
-              target="_blank"
+              href={NEWSLETTER_PAGE}
               variant="primary_brand"
               iconPosition="left"
             >
