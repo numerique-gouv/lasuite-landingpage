@@ -3,7 +3,7 @@ import { getFileEntry } from './getEntry'
 import {
   statusBannerCollections,
   type EntrySchema as StatusBannerEntry,
-  type StatusBannerProduct,
+  type StatusBannerPage,
 } from './collections/status-banner'
 
 export type StatusBannerPageProps = {
@@ -11,17 +11,17 @@ export type StatusBannerPageProps = {
 }
 
 /**
- * build a `getStaticProps` that loads the CMS status banner of a product page.
+ * build a `getStaticProps` that loads the CMS status banner of a page.
  * returns `statusBanner: null` when the banner is disabled, empty or missing.
  *
  * usage in a page: `export const getStaticProps = getStatusBannerStaticProps('docs')`
  */
 export const getStatusBannerStaticProps =
-  (product: StatusBannerProduct): GetStaticProps<StatusBannerPageProps> =>
+  (page: StatusBannerPage): GetStaticProps<StatusBannerPageProps> =>
   async ({ locale = 'fr' }) => {
     let banner: StatusBannerEntry | null = null
     try {
-      banner = await getFileEntry(statusBannerCollections[product], locale)
+      banner = await getFileEntry(statusBannerCollections[page], locale)
     } catch (error) {
       banner = null
     }

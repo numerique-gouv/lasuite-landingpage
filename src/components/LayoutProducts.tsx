@@ -54,13 +54,7 @@ export const LayoutProducts: React.FC<{
         />
       </Head>
       <MetaHeader description={content.hero?.subtitle} />
-      {statusBanner && (
-        <StatusBanner
-          message={statusBanner.message}
-          type={statusBanner.type}
-          link={statusBanner.link}
-        />
-      )}
+      {statusBanner && <StatusBanner {...statusBanner} />}
       {content?.top_banner && (
         <TopToastBanner
           title={content.top_banner.title}
