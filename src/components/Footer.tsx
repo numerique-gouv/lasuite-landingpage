@@ -25,8 +25,25 @@ const pages = [
   { href: '/accessibilite', children: 'footer.accessiblity' as const },
 ]
 
-export const Footer = ({ supportChannel }: { supportChannel?: string }) => {
+export type FooterPageLink = {
+  title: string
+  url: string
+  'aria-label'?: string
+}
+
+const isExternalUrl = (url: string) => /^https?:\/\//i.test(url)
+
+export const Footer = ({
+  supportChannel,
+  links,
+}: {
+  supportChannel?: string
+  links?: FooterPageLink[]
+}) => {
   const t = useTranslations()
+  const customLinks = Array.isArray(links)
+    ? links.filter((link) => link?.title && link?.url)
+    : []
   return (
     <footer className="py-8 mt-auto bg-white border-t border-gray-025">
       <div className="fr-container max-w-container">
@@ -89,39 +106,70 @@ export const Footer = ({ supportChannel }: { supportChannel?: string }) => {
         <div className="mt-4 border-t border-gray-100 flex flex-row flex-wrap">
           <div className="mt-2 mb-4 sm:mb-0 w-[75%] m-w-[75%]">
             <ul className="block justify-start flex-wrap">
-              {pages.map((link) => (
-                <li
-                  key={link.children}
-                  className="inline internal-link-footer text-xs text-gray-700"
-                >
-                  <Link
-                    {...link}
-                    locale={false}
-                    className={`border-grey-1 ${hover}`}
+              {customLinks.length > 0
+                ? customLinks.map((link) => {
+                    const ariaLabel = link['aria-label']?.trim() || undefined
+                    return (
+                      <li
+                        key={`${link.title}-${link.url}`}
+                        className="inline internal-link-footer text-xs text-gray-700"
+                      >
+                        {isExternalUrl(link.url) ? (
+                          <ExternalLink
+                            href={link.url}
+                            aria-label={ariaLabel}
+                            className={`border-grey-1 ${hover} external-link-grey`}
+                          >
+                            {link.title}
+                          </ExternalLink>
+                        ) : (
+                          <Link
+                            href={link.url}
+                            locale={false}
+                            aria-label={ariaLabel}
+                            className={`border-grey-1 ${hover}`}
+                          >
+                            {link.title}
+                          </Link>
+                        )}
+                      </li>
+                    )
+                  })
+                : pages.map((link) => (
+                    <li
+                      key={link.children}
+                      className="inline internal-link-footer text-xs text-gray-700"
+                    >
+                      <Link
+                        {...link}
+                        locale={false}
+                        className={`border-grey-1 ${hover}`}
+                      >
+                        {t(link.children)}
+                      </Link>
+                    </li>
+                  ))}
+              {customLinks.length === 0 && (
+                <li className="inline internal-link-footer text-xs text-gray-700">
+                  <ExternalLink
+                    href="https://github.com/suitenumerique/"
+                    className={`border-grey-1 ${hover} gap-1 external-link-grey`}
+                    aria-label="GitHub LaSuite - Nouvelle fenêtre"
                   >
-                    {t(link.children)}
-                  </Link>
+                    <GitHubIcon
+                      className="text-[14px] mr-1"
+                      aria-hidden="true"
+                      style={{
+                        marginTop: '-3px',
+                        fontSize: '14px',
+                        lineHeight: '1.2',
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                    <span>Code source</span>
+                  </ExternalLink>
                 </li>
-              ))}
-              <li className="inline internal-link-footer text-xs text-gray-700">
-                <ExternalLink
-                  href="https://github.com/suitenumerique/"
-                  className={`border-grey-1 ${hover} gap-1 external-link-grey`}
-                  aria-label="GitHub LaSuite - Nouvelle fenêtre"
-                >
-                  <GitHubIcon
-                    className="text-[14px] mr-1"
-                    aria-hidden="true"
-                    style={{
-                      marginTop: '-3px',
-                      fontSize: '14px',
-                      lineHeight: '1.2',
-                      verticalAlign: 'middle',
-                    }}
-                  />
-                  <span>Code source</span>
-                </ExternalLink>
-              </li>
+              )}
               {supportChannel && (
                 <li className="inline internal-link-footer text-xs text-gray-700">
                   <SupportButton channel={supportChannel} />
