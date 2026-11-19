@@ -3,47 +3,48 @@ import { createCollection } from '../createCollection'
 import type { FileCollection } from '../types'
 import {
   StatusBanner,
-  type StatusBannerType,
+  type StatusBannerProps,
 } from '@/components/content-blocks/StatusBanner'
 
 /**
- * products that can display a CMS-driven status banner on their landing page.
- * key = product slug (page lives at /produits/{slug}), value = display name.
+ * pages that can display a CMS-driven status banner at their top.
+ * key = banner id, `label` = name shown in the CMS, `path` = page url.
  *
- * to add a product: add it here, create `content/custom-pages/{slug}-banner.yml`
- * and use `getStatusBannerStaticProps('{slug}')` in its page.
+ * to add a page: add it here, create `content/custom-pages/{id}-banner.yml`
+ * and use `getStatusBannerStaticProps('{id}')` in the page.
  */
-export const STATUS_BANNER_PRODUCTS = {
-  tchap: 'Tchap',
-  docs: 'Docs',
-  fichiers: 'Fichiers',
-  visio: 'Visio',
+export const STATUS_BANNER_PAGES = {
+  home: { label: 'Accueil', path: '/' },
+  tchap: { label: 'Tchap', path: '/produits/tchap' },
+  docs: { label: 'Docs', path: '/produits/docs' },
+  fichiers: { label: 'Fichiers', path: '/produits/fichiers' },
+  visio: { label: 'Visio', path: '/produits/visio' },
+  grist: { label: 'Grist', path: '/produits/grist' },
 } as const
 
-export type StatusBannerProduct = keyof typeof STATUS_BANNER_PRODUCTS
+export type StatusBannerPage = keyof typeof STATUS_BANNER_PAGES
+type StatusBannerPageConfig = (typeof STATUS_BANNER_PAGES)[StatusBannerPage]
 
-export type EntrySchema = {
+// the CMS entry is the banner props, plus a switch to show/hide it
+export type EntrySchema = Pick<
+  StatusBannerProps,
+  'message' | 'type' | 'link'
+> & {
   enabled?: boolean
-  type?: StatusBannerType
-  message?: string
-  link?: {
-    label?: string
-    url?: string
-  }
 }
 
 const createConfig = (
-  slug: StatusBannerProduct,
-  productName: string
+  id: StatusBannerPage,
+  { label, path }: StatusBannerPageConfig
 ): CmsCollectionFile => ({
-  label: `Bandeau de statut ${productName}`,
-  name: `${slug}-banner`,
-  file: `content/custom-pages/${slug}-banner.yml`,
+  label: `Bandeau de statut ${label}`,
+  name: `${id}-banner`,
+  file: `content/custom-pages/${id}-banner.yml`,
   i18n: true,
   fields: [
     {
       label: 'Afficher le bandeau ?',
-      hint: `Affiche le bandeau en haut de la landing ${productName} (/produits/${slug})`,
+      hint: `Affiche le bandeau en haut de la page ${label} (${path})`,
       name: 'enabled',
       widget: 'boolean',
       required: false,
@@ -103,23 +104,21 @@ const createConfig = (
 const entryParser = async (json: EntrySchema) => structuredClone(json)
 
 const entryPreview = (data: EntrySchema) => (
-  <StatusBanner
-    message={data.message}
-    type={data.type}
-    link={data.link}
-    dismissible={false}
-  />
+  <StatusBanner {...data} dismissible={false} />
 )
 
 export const statusBannerCollections = Object.fromEntries(
   (
-    Object.entries(STATUS_BANNER_PRODUCTS) as [StatusBannerProduct, string][]
-  ).map(([slug, name]) => [
-    slug,
+    Object.entries(STATUS_BANNER_PAGES) as [
+      StatusBannerPage,
+      StatusBannerPageConfig,
+    ][]
+  ).map(([id, page]) => [
+    id,
     createCollection<EntrySchema>({
-      config: createConfig(slug, name),
+      config: createConfig(id, page),
       entryParser,
       entryPreview,
     }),
   ])
-) as Record<StatusBannerProduct, FileCollection<EntrySchema>>
+) as Record<StatusBannerPage, FileCollection<EntrySchema>>
