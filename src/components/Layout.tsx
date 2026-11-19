@@ -5,6 +5,8 @@ import { TITLE_SITE } from '@/constant'
 import { MetaHeader } from '@/components/MetaHeader'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
+import { StatusBanner } from '@/components/content-blocks/StatusBanner'
+import type { EntrySchema as StatusBannerEntry } from '@/cms/collections/status-banner'
 
 export const Layout: React.FC<{
   children: React.ReactNode
@@ -16,7 +18,11 @@ export const Layout: React.FC<{
    * The website name is appended to the title automatically.
    */
   title: string
-}> = ({ title, background, logo, loginUrl, ...props }) => {
+  /**
+   * CMS status banner data, see `getStatusBannerStaticProps`
+   */
+  statusBanner?: StatusBannerEntry | null
+}> = ({ title, background, logo, loginUrl, statusBanner, ...props }) => {
   const isHomepage = title === TITLE_SITE
   const pageTitle = isHomepage ? title : `${title} - ${TITLE_SITE}`
   const t = useTranslations()
@@ -59,6 +65,7 @@ export const Layout: React.FC<{
             : `${pageTitle} - ${t('head.tagline')}`
         }
       />
+      {statusBanner && <StatusBanner {...statusBanner} />}
       <NavBar
         logo={logo}
         loginUrl={loginUrl}

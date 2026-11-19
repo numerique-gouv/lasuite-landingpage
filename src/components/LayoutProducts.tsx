@@ -6,6 +6,8 @@ import { TITLE_SITE, URL_SITE } from '@/constant'
 import { MetaHeader } from '@/components/MetaHeader'
 import React from 'react'
 import { useTranslations } from '@/locales/useTranslations'
+import { StatusBanner } from '@/components/content-blocks/StatusBanner'
+import type { EntrySchema as StatusBannerEntry } from '@/cms/collections/status-banner'
 
 export type ProductContent = Record<string, any>
 
@@ -14,7 +16,10 @@ export const LayoutProducts: React.FC<{
   title: string
   productContent: ProductContent
   locale: string
-  statusBanner?: React.ReactNode
+  /**
+   * CMS status banner data, see `getStatusBannerStaticProps`
+   */
+  statusBanner?: StatusBannerEntry | null
 }> = ({ title, productContent, locale, statusBanner, children }) => {
   const isHomepage = title === TITLE_SITE
   const t = useTranslations()
@@ -49,7 +54,7 @@ export const LayoutProducts: React.FC<{
         />
       </Head>
       <MetaHeader description={content.hero?.subtitle} />
-      {statusBanner}
+      {statusBanner && <StatusBanner {...statusBanner} />}
       {content?.top_banner && (
         <TopToastBanner
           title={content.top_banner.title}

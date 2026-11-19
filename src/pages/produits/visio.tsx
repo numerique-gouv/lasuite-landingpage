@@ -12,7 +12,14 @@ import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
 
-export default function VisioPage() {
+import {
+  getStatusBannerStaticProps,
+  type StatusBannerPageProps,
+} from '@/cms/getStatusBanner'
+
+export const getStaticProps = getStatusBannerStaticProps('visio')
+
+export default function VisioPage({ statusBanner }: StatusBannerPageProps) {
   const { locale = 'fr' } = useRouter()
   const content: any = visioContent as any
   const product = content.global
@@ -28,6 +35,7 @@ export default function VisioPage() {
       }
       productContent={content}
       locale={locale}
+      statusBanner={statusBanner}
     >
       <h1 className="sr-only">{content.global?.title}</h1>
       <FadeInSection>
