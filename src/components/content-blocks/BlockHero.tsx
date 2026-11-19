@@ -4,8 +4,7 @@ import { ProConnectButton } from '@/components/ProConnectButton'
 import { productBanners } from '@/assets/products/banners'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { SocialProof } from '@/components/content-blocks/SocialProof'
-import { useTranslations } from '@/locales/useTranslations'
-import { WEBINAIRE_URL } from '@/constant'
+import { WEBINAIRE_PAGE } from '@/constant'
 
 export type ProductContent = Record<string, any>
 
@@ -13,7 +12,6 @@ export const BlockHero: React.FC<{
   productContent: ProductContent
   slug: string
 }> = ({ productContent, slug }) => {
-  const t = useTranslations()
   const bannerProduct = productBanners[slug]
 
   if (!bannerProduct) return null
@@ -51,9 +49,7 @@ export const BlockHero: React.FC<{
           <span className="text-gray-550">
             <a
               className="text-gray-550 underline underline-offset-2"
-              href={WEBINAIRE_URL}
-              target="_blank"
-              aria-label={`Inscrivez-vous au prochain webinaire - ${t('common.new_window')}`}
+              href={WEBINAIRE_PAGE}
             >
               Inscrivez-vous
             </a>

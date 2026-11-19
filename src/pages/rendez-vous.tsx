@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { useState } from 'react'
 import ChevronRight from '@mui/icons-material/ChevronRight'
-import { CALCOM_URL, NEWSLETTER_FORM, WEBINAIRE_URL } from '@/constant'
+import { CALCOM_URL, NEWSLETTER_FORM, WEBINAIRE_PAGE } from '@/constant'
 import {
   AppointmentIcon,
   ArrowBackIcon,
@@ -406,13 +406,8 @@ export default function RendezVous() {
 
               <WarningHospital role={answers.role} />
 
-              <Button
-                href={WEBINAIRE_URL}
-                target="_blank"
-                icon={<WebinarIcon />}
-                fullWidth
-              >
-                S'incrire à un webinaire
+              <Button href={WEBINAIRE_PAGE} icon={<WebinarIcon />} fullWidth>
+                S'inscrire à un webinaire
               </Button>
               <Button
                 className="mt-2"
