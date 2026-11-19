@@ -14,12 +14,22 @@ import BeforeContactBlockImg from '@/assets/grist/before-contact-block.png'
 import GristLogo from '@/assets/products/grist.svg'
 import Image from 'next/image'
 
-export default function GristLandingPage() {
+import {
+  getStatusBannerStaticProps,
+  type StatusBannerPageProps,
+} from '@/cms/getStatusBanner'
+
+export const getStaticProps = getStatusBannerStaticProps('grist')
+
+export default function GristLandingPage({
+  statusBanner,
+}: StatusBannerPageProps) {
   const t = useTranslations({ useFallback: true })
 
   return (
     <Layout
       title={'Grist'}
+      statusBanner={statusBanner}
       loginUrl="https://grist.numerique.gouv.fr/o/docs/login?next=%2F&mtm_campaign=landing&mtm_source=website&mtm_medium=nav"
       logo={
         <Image

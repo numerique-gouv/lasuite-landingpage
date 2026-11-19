@@ -1,0 +1,9 @@
+fr:
+  enabled: false
+  type: default
+en:
+  enabled: false
+de:
+  enabled: false
+nl:
+  enabled: false
