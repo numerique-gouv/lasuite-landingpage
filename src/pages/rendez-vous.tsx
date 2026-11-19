@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui-kit-v2/Button'
 import { useState } from 'react'
 import ChevronRight from '@mui/icons-material/ChevronRight'
-import { CALCOM_URL, NEWSLETTER_FORM, WEBINAIRE_URL } from '@/constant'
+import { CALCOM_URL, NEWSLETTER_PAGE, WEBINAIRE_URL } from '@/constant'
 import {
   AppointmentIcon,
   ArrowBackIcon,
@@ -292,8 +292,7 @@ export default function RendezVous() {
               <div className="my-4 flex flex-col gap-[5px]">
                 <Button
                   className="!justify-start !text-left"
-                  href={NEWSLETTER_FORM}
-                  target="_blank"
+                  href={NEWSLETTER_PAGE}
                   size="small"
                   fullWidth
                   variant="tertiary_neutral"
