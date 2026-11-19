@@ -12,7 +12,14 @@ import RoadMap from '@/components/content-blocks/RoadMap'
 import Decisions from '@/components/content-blocks/Decisions'
 import CTA from '@/components/content-blocks/CTA'
 import { MaintenanceAlert } from '@/components/MaintenanceAlert'
-export default function DocsPage() {
+import {
+  getStatusBannerStaticProps,
+  type StatusBannerPageProps,
+} from '@/cms/getStatusBanner'
+
+export const getStaticProps = getStatusBannerStaticProps('docs')
+
+export default function DocsPage({ statusBanner }: StatusBannerPageProps) {
   const { locale = 'fr' } = useRouter()
   const content: any = docsContent as any
   const product = content.global
@@ -28,6 +35,7 @@ export default function DocsPage() {
       }
       productContent={content}
       locale={locale}
+      statusBanner={statusBanner}
     >
       <h1 className="sr-only">{content.global?.title}</h1>
       <FadeInSection>
