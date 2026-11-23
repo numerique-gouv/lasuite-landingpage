@@ -56,7 +56,7 @@ export default async function handler(
       name: 'Fichiers',
       url: 'https://fichiers.numerique.gouv.fr/',
       maturity: 'stable',
-      logo: 'https://lasuite.numerique.gouv.fr/assets/products/fichiers.svg',
+      logo: 'https://lasuite.numerique.gouv.fr/assets/products/fichiers.svg?v=2',
     },
     {
       id: 5,
