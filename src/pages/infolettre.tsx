@@ -24,9 +24,9 @@ export default function Infolettre() {
 
     const value = email.trim()
     const nextError = !value
-      ? 'Vous devez renseigner ce champ.'
+      ? 'Vous devez renseigner ce champ. Exemple : prenom.nom@ministere.gouv.fr'
       : !EMAIL_RE.test(value)
-        ? 'Adresse email invalide. Ex. : prenom.nom@ministere.gouv.fr'
+        ? 'Adresse e-mail invalide. Exemple : prenom.nom@ministere.gouv.fr'
         : null
     setError(nextError)
     if (nextError) {
@@ -72,7 +72,7 @@ export default function Infolettre() {
                 tabIndex={-1}
                 ref={(el) => el?.focus()}
               >
-                Vous êtes inscrit !
+                Vous êtes inscrit&nbsp;!
               </h1>
               <p className="mt-2 text-sm text-gray-600">
                 Vous recevrez la prochaine infolettre LaSuite à l&apos;adresse{' '}
@@ -105,7 +105,7 @@ export default function Infolettre() {
               <form noValidate onSubmit={onSubmit} className="mt-6 text-left">
                 <SupportField
                   id="infolettre-email"
-                  label="Adresse email"
+                  label="Adresse e-mail"
                   type="email"
                   autoComplete="email"
                   value={email}
@@ -130,13 +130,21 @@ export default function Infolettre() {
                   className="hidden"
                 />
 
-                <Button className="mt-4" type="submit" fullWidth>
+                <Button
+                  className="mt-4"
+                  type="submit"
+                  fullWidth
+                  aria-describedby="infolettre-info-desabonnement"
+                >
                   {status === 'submitting'
                     ? 'Inscription en cours…'
                     : "S'abonner"}
                 </Button>
-                <p className="mt-3 text-center text-xs text-gray-550">
-                  Désinscription possible à tout moment depuis chaque email.
+                <p
+                  className="mt-3 text-center text-xs text-gray-550"
+                  id="infolettre-info-desabonnement"
+                >
+                  Désinscription possible à tout moment depuis chaque e-mail.
                 </p>
               </form>
             </>
