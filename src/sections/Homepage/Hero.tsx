@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { TITLE_SITE, WEBINAIRE_URL } from '@/constant'
+import { TITLE_SITE, WEBINAIRE_PAGE } from '@/constant'
 import { ContentSection } from '@/components/ContentSection'
 import HeroHome from '@/assets/hero-home.png'
 import HeroHomeMobile from '@/assets/hero-home-mobile.png'
@@ -76,9 +76,7 @@ export const Hero = ({ content }: { content: any }) => {
           <span className="text-gray-550">
             <a
               className="text-gray-550 underline underline-offset-2"
-              href={WEBINAIRE_URL}
-              target="_blank"
-              aria-label={`Inscrivez-vous au prochain webinaire - ${t('common.new_window')}`}
+              href={WEBINAIRE_PAGE}
             >
               Inscrivez-vous
             </a>

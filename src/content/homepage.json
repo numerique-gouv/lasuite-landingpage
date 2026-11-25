@@ -138,7 +138,7 @@
       "webinaire": {
         "description": "LaSuite réunit les outils essentiels au travail des agents publics : rédaction, visioconférence, gestion de données, partage de fichiers, messagerie ou intelligence artificielle, dans un ensemble cohérent, sécurisé et interopérable.",
         "button_title": "Inscription au webinaire",
-        "href": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS"
+        "href": "/webinaires"
       }
     },
     "testimonials": [
@@ -319,7 +319,7 @@
         {
           "title": "Assister à un webinaire",
           "icone": "visio_light",
-          "url": "https://4f0df3d6.sibforms.com/serve/MUIFAM04omZ5l-BIAyEWSC8KKbXjrZ-mnM3gywzBFVt7yJJVATMb_Kct_JEuCEWaSiBnPSxUDSLkcMf-3DCTy1DHEjgVrxiY4BIZA43L5amMjiqTOpczMPvxkZfg--0pIED0XaSsrpxocCSicdRGPQGvszgHDnmaJfWaJuIDw5h0i3pDotP-XZpY-usa2LRZj6MadTh0C_sVMLHS",
+          "url": "/webinaires",
           "type": "primary_brand"
         },
         {

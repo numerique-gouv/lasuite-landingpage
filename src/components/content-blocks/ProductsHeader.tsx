@@ -111,7 +111,9 @@ const HeaderRight: React.FC<{
                 className="flex items-center gap-2"
               >
                 <Button
-                  target="_blank"
+                  target={
+                    /^https?:\/\//.test(link.url ?? '') ? '_blank' : undefined
+                  }
                   href={link.url}
                   variant={variant}
                   size="medium"
